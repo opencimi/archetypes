@@ -1,0 +1,58 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-CLUSTER.laboratory_test_result_item.v1
+
+specialize
+	CIMI-CORE-CLUSTER.finding_item.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			>
+	>
+	lifecycle_state = <"initial">
+
+definition
+	CLUSTER[at0000.1.1] matches { -- Laboratory Test Result Item
+		item matches {
+			ELEMENT[at0.0.1] occurrences matches {0..1} matches { -- Result value
+				value matches {
+					DATA_VALUE matches {*}
+				}
+			}
+			ELEMENT[at0.0.2] occurrences matches {0..1} matches { -- Poct indicator
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			use_archetype CLUSTER [CIMI-CORE-CLUSTER.specimen.v3] -- Specimen
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			["at0000.1.1"] = <
+				text = <"Laboratory Test Result Item">
+				description = <"Laboratory Test Result Item">
+			>
+			["at0.0.1"] = <
+				text = <"Result value">
+				description = <"Result value">
+			>
+			["at0.0.2"] = <
+				text = <"Poct indicator">
+				description = <"Poct indicator">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0000.1.1"] = <[SNOMED-CT::441742003]>
+			>
+		>
+	>
