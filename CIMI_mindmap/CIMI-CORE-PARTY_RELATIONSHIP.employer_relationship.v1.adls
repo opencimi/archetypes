@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1.0.0
 
 specialize
 	CIMI-CORE-PARTY_RELATIONSHIP.organisation_relationship.v1
@@ -11,65 +11,66 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	PARTY_RELATIONSHIP[at0000.1.1] matches { -- Employer
+	PARTY_RELATIONSHIP[id1.1.1] matches {	-- Employer
 		details matches {
-			ELEMENT[at0.0.1] occurrences matches {0..1} matches { -- Role
+			ELEMENT[id0.0.1] occurrences matches {0..1} matches {	-- Role
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.6] 
 				}
 			}
-			ELEMENT[at0.0.2] occurrences matches {0..1} matches { -- Rank
+			ELEMENT[id0.0.2] occurrences matches {0..1} matches {	-- Rank
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.7] 
 				}
 			}
-			ELEMENT[at0.0.3] occurrences matches {0..1} matches { -- Occupation
+			ELEMENT[id0.0.3] occurrences matches {0..1} matches {	-- Occupation
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.8] 
 				}
 			}
-			ELEMENT[at0.0.4] occurrences matches {0..1} matches { -- Salary type
+			ELEMENT[id0.0.4] occurrences matches {0..1} matches {	-- Salary type
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.9] 
 				}
 			}
-			ELEMENT[at0.0.5] occurrences matches {0..1} matches { -- Salary quantity
+			ELEMENT[id0.0.5] occurrences matches {0..1} matches {	-- Salary quantity
 				value matches {
-					QUANTITY matches {*}
+					QUANTITY[id0.0.10] 
 				}
 			}
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1"] = <
+			["id1.1.1"] = <
 				text = <"Employer">
 				description = <"Employer">
 			>
-			["at0.0.1"] = <
+			["id0.0.1"] = <
 				text = <"Role">
 				description = <"Role">
 			>
-			["at0.0.2"] = <
+			["id0.0.2"] = <
 				text = <"Rank">
 				description = <"Rank">
 			>
-			["at0.0.3"] = <
+			["id0.0.3"] = <
 				text = <"Occupation">
 				description = <"Occupation">
 			>
-			["at0.0.4"] = <
+			["id0.0.4"] = <
 				text = <"Salary type">
 				description = <"Salary type">
 			>
-			["at0.0.5"] = <
+			["id0.0.5"] = <
 				text = <"Salary quantity">
 				description = <"Salary quantity">
 			>
@@ -77,12 +78,10 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["at0000.1.1"] = <[SNOMED-CT::138875005]>
-				["at0.0.1"] = <[SNOMED-CT::138875005]>
-				["at0.0.2"] = <[SNOMED-CT::138875005]>
-				["at0.0.3"] = <[SNOMED-CT::138875005]>
-				["at0.0.4"] = <[SNOMED-CT::138875005]>
-			>
+			["id1.1.1"] = <http://snomedct.info/id/138875005>
+			["id0.0.1"] = <http://snomedct.info/id/138875005>
+			["id0.0.2"] = <http://snomedct.info/id/138875005>
+			["id0.0.3"] = <http://snomedct.info/id/138875005>
+			["id0.0.4"] = <http://snomedct.info/id/138875005>
 		>
 	>

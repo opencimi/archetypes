@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-CLUSTER.laboratory_test_result_item.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-CLUSTER.laboratory_test_result_item.v1.0.0
 
 specialize
 	CIMI-CORE-CLUSTER.finding_item.v1
@@ -11,39 +11,40 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	CLUSTER[at0000.1.1] matches { -- Laboratory Test Result Item
+	CLUSTER[id1.1.1] matches {	-- Laboratory Test Result Item
 		item matches {
-			ELEMENT[at0.0.1] occurrences matches {0..1} matches { -- Result value
+			ELEMENT[id0.0.1] occurrences matches {0..1} matches {	-- Result value
 				value matches {
-					DATA_VALUE matches {*}
+					DATA_VALUE[id0.0.3] 
 				}
 			}
-			ELEMENT[at0.0.2] occurrences matches {0..1} matches { -- Poct indicator
+			ELEMENT[id0.0.2] occurrences matches {0..1} matches {	-- Poct indicator
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.4] 
 				}
 			}
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.specimen.v3] -- Specimen
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.specimen.v3] 
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1"] = <
+			["id1.1.1"] = <
 				text = <"Laboratory Test Result Item">
 				description = <"Laboratory Test Result Item">
 			>
-			["at0.0.1"] = <
+			["id0.0.1"] = <
 				text = <"Result value">
 				description = <"Result value">
 			>
-			["at0.0.2"] = <
+			["id0.0.2"] = <
 				text = <"Poct indicator">
 				description = <"Poct indicator">
 			>
@@ -51,8 +52,6 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["at0000.1.1"] = <[SNOMED-CT::441742003]>
-			>
+			["id1.1.1"] = <http://snomedct.info/id/441742003>
 		>
 	>

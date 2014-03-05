@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-ENTRY.complete_blood_count.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-ENTRY.complete_blood_count.v1.0.0
 
 specialize
 	CIMI-CORE-ENTRY.laboratory_test_observation.v2
@@ -11,29 +11,31 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	ENTRY[at0000.1.1.1] matches { -- Complete Blood Count
+	ENTRY[id1.1.1.1] matches {	-- Complete Blood Count
 		data matches {
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.complete_blood_count_observable.v1] -- Test observable
-			CLUSTER[at0.0.0.1] occurrences matches {0..1} matches { -- Test results
-			item matches {
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.complete_blood_count_automated_result_group.v1] -- Complete blood count by automated count
-			}}
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.complete_blood_count_observable.v1] 
+			CLUSTER[id0.0.0.1] occurrences matches {0..1} matches {	-- Test results REF<CIMI-CORE-CLUSTER.complete_blood_count_result_group>
+				item matches {
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.complete_blood_count_automated_result_group.v1] 
+				}
+			}
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1.1"] = <
+			["id1.1.1.1"] = <
 				text = <"Complete Blood Count">
 				description = <"Complete Blood Count">
 			>
-			["at0.0.0.1"] = <
+			["id0.0.0.1"] = <
 				text = <"Test results REF<CIMI-CORE-CLUSTER.complete_blood_count_result_group>">
 				description = <"Test results REF<CIMI-CORE-CLUSTER.complete_blood_count_result_group>">
 			>
@@ -41,7 +43,5 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-			>
 		>
 	>

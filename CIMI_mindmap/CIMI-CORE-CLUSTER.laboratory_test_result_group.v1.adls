@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-CLUSTER.laboratory_test_result_group.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-CLUSTER.laboratory_test_result_group.v1.0.0
 
 specialize
 	CIMI-CORE-CLUSTER.finding_group.v1
@@ -11,41 +11,42 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	CLUSTER[at0000.1.1] matches { -- Laboratory Test Result Group
+	CLUSTER[id1.1.1] matches {	-- Laboratory Test Result Group
 		/item matches {
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.laboratory_test_result_item.v1] -- Result item
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.laboratory_test_result_group.v1] -- Result subgroup
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.specimen.v3] -- Specimen
-			ELEMENT[at0.0.1] occurrences matches {0..*} matches { -- Diagnosis
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.laboratory_test_result_item.v1] 
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.laboratory_test_result_group.v1] 
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.specimen.v3] 
+			ELEMENT[id0.0.1] occurrences matches {0..*} matches {	-- Diagnosis
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.3] 
 				}
 			}
-			ELEMENT[at0.0.2] occurrences matches {0..*} matches { -- Conclusions
+			ELEMENT[id0.0.2] occurrences matches {0..*} matches {	-- Conclusions
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.4] 
 				}
 			}
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1"] = <
+			["id1.1.1"] = <
 				text = <"Laboratory Test Result Group">
 				description = <"Laboratory Test Result Group">
 			>
-			["at0.0.1"] = <
+			["id0.0.1"] = <
 				text = <"Diagnosis">
 				description = <"Diagnosis">
 			>
-			["at0.0.2"] = <
+			["id0.0.2"] = <
 				text = <"Conclusions">
 				description = <"Conclusions">
 			>
@@ -53,10 +54,8 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["at0000.1.1"] = <[SNOMED-CT::441742003]>
-				["at0.0.1"] = <[SNOMED-CT::123038009]>
-				["at0.0.2"] = <[SNOMED-CT::123038009]>
-			>
+			["id1.1.1"] = <http://snomedct.info/id/441742003>
+			["id0.0.1"] = <http://snomedct.info/id/123038009>
+			["id0.0.2"] = <http://snomedct.info/id/123038009>
 		>
 	>

@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-ENTRY.gas_and_carbon_monoxide_panel.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-ENTRY.gas_and_carbon_monoxide_panel.v1.0.0
 
 specialize
 	CIMI-CORE-ENTRY.laboratory_test_observation.v2
@@ -11,33 +11,35 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	ENTRY[at0000.1.1.1] matches { -- Gas and Carbon Monoxide Panel
+	ENTRY[id1.1.1.1] matches {	-- Gas and Carbon Monoxide Panel
 		/data matches {
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.gas_and_carbon_monoxide_observable.v1] -- Test observable
-			CLUSTER[at0.0.0.1] occurrences matches {0..1} matches { -- Test results
-			item matches {
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.ph_of_blood.v1] -- pH of blood
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
-				use_archetype CLUSTER [CIMI-CORE-CLUSTER.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
-			}}
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.gas_and_carbon_monoxide_observable.v1] 
+			CLUSTER[id0.0.0.1] occurrences matches {0..1} matches {	-- Test results REF<CIMI-CORE-CLUSTER.gas_and_carbon_monoxide_result_group>
+				item matches {
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.ph_of_blood.v1] 
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.ph_of_blood_adjusted_to_patient_temperature.v1] 
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.carbon_dioxide_partial_pressure_blood.v1] 
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] 
+					use_archetype CLUSTER[CIMI-CORE-CLUSTER.oxygen_partial_pressure_in_blood.v1] 
+				}
+			}
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1.1"] = <
+			["id1.1.1.1"] = <
 				text = <"Gas and Carbon Monoxide Panel">
 				description = <"Gas and Carbon Monoxide Panel">
 			>
-			["at0.0.0.1"] = <
+			["id0.0.0.1"] = <
 				text = <"Test results REF<CIMI-CORE-CLUSTER.gas_and_carbon_monoxide_result_group>">
 				description = <"Test results REF<CIMI-CORE-CLUSTER.gas_and_carbon_monoxide_result_group>">
 			>
@@ -45,8 +47,6 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["at0000.1.1.1"] = <[SNOMED-CT::441742003]>
-			>
+			["id1.1.1.1"] = <http://snomedct.info/id/441742003>
 		>
 	>

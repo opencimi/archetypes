@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-CLUSTER.complete_blood_count_auto_diff_result_group.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-CLUSTER.complete_blood_count_auto_diff_result_group.v1.0.0
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -8,23 +8,24 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	CLUSTER[at0000] matches { -- Complete blood count auto diff result group
+	CLUSTER[id1] matches {	-- Complete blood count auto diff result group
 		item matches {
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.auto_differential_panel_blood_result_group.v1] -- Auto differential panel blood
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.laboratory_test_result_group.v1] -- Result subgroup
-			use_archetype CLUSTER [CIMI-CORE-CLUSTER.laboratory_test_result_item.v1] -- Result item
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.auto_differential_panel_blood_result_group.v1] 
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.laboratory_test_result_group.v1] 
+			use_archetype CLUSTER[CIMI-CORE-CLUSTER.laboratory_test_result_item.v1] 
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000"] = <
+			["id1"] = <
 				text = <"Complete blood count auto diff result group">
 				description = <"Complete blood count auto diff result group">
 			>
@@ -32,7 +33,5 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-			>
 		>
 	>

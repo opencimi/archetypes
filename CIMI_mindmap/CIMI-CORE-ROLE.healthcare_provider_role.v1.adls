@@ -1,5 +1,5 @@
-archetype (adl_version=1.5; generated)
-	CIMI-CORE-ROLE.healthcare_provider_role.v1
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-ROLE.healthcare_provider_role.v1.0.0
 
 specialize
 	CIMI-CORE-ROLE.role.v1
@@ -11,68 +11,69 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			>
+			purpose = <"???">
+		>
 	>
-	lifecycle_state = <"initial">
+	lifecycle_state = <"unmanaged">
 
 definition
-	ROLE[at0000.1.1] matches { -- Healthcare provider role
+	ROLE[id1.1.1] matches {	-- Healthcare provider role
 		details matches {
-			ELEMENT[at0.0.1] occurrences matches {0..*} matches { -- Field of practice
+			ELEMENT[id0.0.1] occurrences matches {0..*} matches {	-- Field of practice
 				value matches {
-					 CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.6] 
 				}
 			}
-				ELEMENT[at0.0.2] occurrences matches {1} matches { -- Value
-					value matches {
-						CODED_TEXT matches {*}
-					}
-				}
-				ELEMENT[at0.0.3] occurrences matches {0..1} matches { -- Primary indicator
-					value matches {
-						CODED_TEXT matches {*}
-					}
-				}
-			ELEMENT[at0.0.4] occurrences matches {0..1} matches { -- Provider type
+			ELEMENT[id0.0.2] occurrences matches {1} matches {	-- Value
 				value matches {
-					TEXT matches {*}
+					CODED_TEXT[id0.0.7] 
 				}
 			}
-			ELEMENT[at0.0.5] occurrences matches {0..1} matches { -- Provider classification
+			ELEMENT[id0.0.3] occurrences matches {0..1} matches {	-- Primary indicator
 				value matches {
-					TEXT matches {*}
+					CODED_TEXT[id0.0.8] 
+				}
+			}
+			ELEMENT[id0.0.4] occurrences matches {0..1} matches {	-- Provider type
+				value matches {
+					TEXT[id0.0.9] 
+				}
+			}
+			ELEMENT[id0.0.5] occurrences matches {0..1} matches {	-- Provider classification
+				value matches {
+					TEXT[id0.0.10] 
 				}
 			}
 		}
 		relationship matches {
-			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.organisation_relationship.v1] -- Organisation relationship
+			use_archetype PARTY_RELATIONSHIP[CIMI-CORE-PARTY_RELATIONSHIP.organisation_relationship.v1] 
 		}
 	}
 
-ontology
+terminology
 	term_definitions = <
 		["en"] = <
-			["at0000.1.1"] = <
+			["id1.1.1"] = <
 				text = <"Healthcare provider role">
 				description = <"Healthcare provider role">
 			>
-			["at0.0.1"] = <
+			["id0.0.1"] = <
 				text = <"Field of practice">
 				description = <"Field of practice">
 			>
-			["at0.0.2"] = <
+			["id0.0.2"] = <
 				text = <"Value">
 				description = <"Value">
 			>
-			["at0.0.3"] = <
+			["id0.0.3"] = <
 				text = <"Primary indicator">
 				description = <"Primary indicator">
 			>
-			["at0.0.4"] = <
+			["id0.0.4"] = <
 				text = <"Provider type">
 				description = <"Provider type">
 			>
-			["at0.0.5"] = <
+			["id0.0.5"] = <
 				text = <"Provider classification">
 				description = <"Provider classification">
 			>
@@ -80,13 +81,11 @@ ontology
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["at0000.1.1"] = <[SNOMED-CT::138875005]>
-				["at0.0.1"] = <[SNOMED-CT::138875005]>
-				["at0.0.2"] = <[SNOMED-CT::138875005]>
-				["at0.0.3"] = <[SNOMED-CT::138875005]>
-				["at0.0.4"] = <[SNOMED-CT::138875005]>
-				["at0.0.5"] = <[SNOMED-CT::138875005]>
-			>
+			["id1.1.1"] = <http://snomedct.info/id/138875005>
+			["id0.0.1"] = <http://snomedct.info/id/138875005>
+			["id0.0.2"] = <http://snomedct.info/id/138875005>
+			["id0.0.3"] = <http://snomedct.info/id/138875005>
+			["id0.0.4"] = <http://snomedct.info/id/138875005>
+			["id0.0.5"] = <http://snomedct.info/id/138875005>
 		>
 	>
