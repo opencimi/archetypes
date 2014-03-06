@@ -1,0 +1,42 @@
+template (adl_version=1.5.1)
+	CIMI-Core-ENTRY.t_bedside.v1.0.0
+
+specialize
+	CIMI-Core-ENTRY.lab_result_panel.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"CIMI">
+		["email"] = <"thomas.beale@oceaninformatics.com">
+		["date"] = <"10/02/2014">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"CIMI bedside panel example">
+			copyright = <"© 2014 CIMI">
+		>
+	>
+	lifecycle_state = <"unmanaged">
+
+definition
+	ENTRY[id1.1] matches {	-- Bedside panel
+		/data matches {
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hematocrit.v1.0.0] occurrences matches {1} 
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.t_bedside_blood_pressure.v1.0.0] occurrences matches {1} 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Bedside panel">
+				description = <"Bedside panel">
+			>
+		>
+	>

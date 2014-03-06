@@ -1,0 +1,37 @@
+template_overlay (adl_version=1.5.1)
+	CIMI-Core-CLINICAL_DATA_GROUP.t_bedside_blood_pressure.v1.0.0
+
+specialize
+	CIMI-Core-CLINICAL_DATA_GROUP.blood_pressure.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+definition
+	CLINICAL_DATA_GROUP[id1.1] matches {	-- Blood Pressure for bedside
+		/item[id7]/item matches {
+			ELEMENT[id1007] occurrences matches {0} 
+			ELEMENT[id1008] occurrences matches {0} 
+		}
+		/item[id10]/item matches {
+			ELEMENT[id1053] occurrences matches {0} 
+			allow_archetype CLUSTER[id1031] occurrences matches {0} 
+			ELEMENT[id1044] occurrences matches {0} 
+			ELEMENT[id1006] occurrences matches {0} 
+		}
+		/item[id11]/item matches {
+			ELEMENT[id1039] occurrences matches {0} 
+			ELEMENT[id1011] occurrences matches {0} 
+			allow_archetype CLUSTER[id1026] occurrences matches {0} 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Blood Pressure for bedside">
+				description = <"Bedside BP">
+			>
+		>
+	>
