@@ -1,7 +1,7 @@
 archetypes
 ==========
 
-The archetypes in this repository can be worked with using the [ADL Workbench tool](https://www.google.com "ADL Workbench home") .
+The archetypes in this repository can be worked with using the [ADL Workbench tool](http://www.openehr.org/downloads/ADLworkbench/home "ADL Workbench home") .
 
 CIMI Mindmap
 ------------
