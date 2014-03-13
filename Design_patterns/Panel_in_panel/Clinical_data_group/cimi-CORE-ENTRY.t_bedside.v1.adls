@@ -26,7 +26,7 @@ description
 definition
 	ENTRY[id1.1] matches {	-- Bedside panel
 		/data matches {
-			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hematocrit.v1.0.0] occurrences matches {1} 
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hematocrit_result.v1.0.0] occurrences matches {1} 
 			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.t_bedside_blood_pressure.v1.0.0] occurrences matches {1} 
 		}
 	}

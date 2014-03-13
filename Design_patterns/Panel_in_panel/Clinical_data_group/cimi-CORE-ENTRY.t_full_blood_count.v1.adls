@@ -26,12 +26,12 @@ description
 definition
 	ENTRY[id1.1] matches {	-- FBC panel
 		/data matches {
-			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hemoglobin.v1.0.0] occurrences matches {1} 
-			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.red_cell_count.v1.0.0] occurrences matches {1} 
-			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hematocrit.v1.0.0] occurrences matches {1} 
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hemoglobin_result.v1.0.0] occurrences matches {1} 
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.red_cell_count_result.v1.0.0] occurrences matches {1} 
+			use_archetype CLINICAL_DATA_GROUP[id8, CIMI-Core-CLINICAL_DATA_GROUP.hematocrit_result.v1.0.0] occurrences matches {1} 
 			CLUSTER[id9.1] matches {	-- White cell differential
 				item matches {
-					use_archetype CLINICAL_DATA_GROUP[id10, CIMI-Core-CLINICAL_DATA_GROUP.lymphocytes.v1.0.0] occurrences matches {1} 
+					use_archetype CLINICAL_DATA_GROUP[id10, CIMI-Core-CLINICAL_DATA_GROUP.lymphocytes_result.v1.0.0] occurrences matches {1} 
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1)
-	CIMI-Core-CLINICAL_DATA_GROUP.std_lab_obs.v1.0.0
+	CIMI-Core-CLINICAL_DATA_GROUP.std_lab_obs_quantitative.v1.0.0
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -36,6 +36,11 @@ definition
 			ELEMENT[id6] occurrences matches {0..1} matches {	-- Abnormal interpretation
 				value matches {[ac1]}		-- Abnormal interpretations
 			}
+			ELEMENT[id7] occurrences matches {1} matches {	-- Value
+				value matches {
+					ORDERED_VALUE[id8] 
+				}
+			}
 		}
 	}
 
@@ -43,8 +48,8 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1"] = <
-				text = <"Standard lab panel item">
-				description = <"Standard lab panel item">
+				text = <"Standard quantitative lab panel item">
+				description = <"Standard quantitative lab panel item">
 			>
 			["id2"] = <
 				text = <"Reference range">
@@ -57,6 +62,10 @@ terminology
 			["id6"] = <
 				text = <"Abnormal interpretation">
 				description = <"Abnormal interpretation">
+			>
+			["id7"] = <
+				text = <"Value">
+				description = <"Quantitative value">
 			>
 			["ac1"] = <
 				text = <"Abnormal interpretations">

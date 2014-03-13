@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1)
-	CIMI-Core-CLINICAL_DATA_GROUP.lymphocytes.v1.0.0
+	CIMI-Core-CLINICAL_DATA_GROUP.lymphocytes_result.v1.0.0
 
 specialize
-	CIMI-Core-CLINICAL_DATA_GROUP.std_lab_obs.v1
+	CIMI-Core-CLINICAL_DATA_GROUP.std_lab_obs_quantitative.v1
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -25,15 +25,11 @@ description
 
 definition
 	CLINICAL_DATA_GROUP[id1.1] matches {	-- Lymphocytes
-		item matches {
-			ELEMENT[id0.1] occurrences matches {1} matches {	-- Lymphocytes
-				value matches {
-					QUANTITY[id0.2] matches {
+		/item[id7.1]/value matches {
+					QUANTITY[id8.1] matches {
 						value matches {|>=0.0|}
 						units matches {[at0.1]}
 					}
-				}
-			}
 		}
 	}
 
@@ -41,12 +37,12 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1"] = <
-				text = <"Lymphocytes">
+				text = <"Lymphocytes Result">
 				description = <"Lymphocytes panel item">
 			>
-			["id0.1"] = <
-				text = <"Lymphocytes">
-				description = <"Lymphocytes panel item element">
+			["id7.1"] = <
+				text = <"Lymphocytes concentration">
+				description = <"Lymphocytes concentration in blood">
 			>
 			["at0.1"] = <
 				text = <"g/dl">
