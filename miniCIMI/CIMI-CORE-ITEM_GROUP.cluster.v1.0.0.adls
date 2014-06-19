@@ -1,0 +1,43 @@
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-ITEM_GROUP.cluster.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"????">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+		>
+	>
+	lifecycle_state = <"unmanaged">
+
+definition
+	ITEM_GROUP[id1] matches {	-- Cluster
+		item matches {
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
+			ELEMENT[id2] occurrences matches {0..*} 	-- Element
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Cluster">
+				description = <"Cluster">
+			>
+			["id2"] = <
+				text = <"Element">
+				description = <"Element">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+		>
+	>

@@ -1,0 +1,46 @@
+archetype (adl_version=1.5.1; generated)
+	CIMI-CORE-ITEM_GROUP.compound_clinical_statement.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.clinical_statement.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"????">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+		>
+	>
+	lifecycle_state = <"unmanaged">
+
+definition
+	ITEM_GROUP[id1.1] matches {	-- Compound Clinical Statement
+		item matches {
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {2..*} 
+			ITEM[id0.2] occurrences matches {0} 	-- Item
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Compound Clinical Statement">
+				description = <"Compound Clinical Statement">
+			>
+			["id0.2"] = <
+				text = <"Item">
+				description = <"Item">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+		>
+	>
