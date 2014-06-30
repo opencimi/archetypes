@@ -43,10 +43,6 @@ terminology
 				text = <"Compound Clinical Statement">
 				description = <"Compound Clinical Statement">
 			>
-			["id0.2"] = <
-				text = <"Item">
-				description = <"Item">
-			>
 		>
 	>
 	term_bindings = <
