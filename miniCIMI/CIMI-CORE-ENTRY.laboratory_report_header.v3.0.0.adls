@@ -1,0 +1,69 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ENTRY.laboratory_report_header.v3.0.0
+
+specialize
+	CIMI-CORE-ENTRY.clinical_report_header.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'laboratory report header' concept">
+      use = <"Use for laboratory report header.">
+      keywords = <"laboratory report header", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ENTRY[id1.1.1] matches { -- Laboratory Report Header
+		/data matches {
+			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Report Type
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.2] occurrences matches {0..*} matches { -- Diagnosis
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1"] = <
+				text = <"Laboratory Report Header">
+				description = <"Laboratory Report Header">
+			>
+			["id1.1.1"] = <
+				text = <"Report Type">
+				description = <"Report Type">
+			>
+			["id1.1.2"] = <
+				text = <"Diagnosis">
+				description = <"Diagnosis">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <[SNOMED-CT::364712009]>
+				["id1.1.2"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

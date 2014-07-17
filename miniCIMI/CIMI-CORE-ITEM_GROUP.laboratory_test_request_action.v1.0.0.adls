@@ -1,0 +1,79 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.laboratory_test_request_action.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.request_action.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'laboratory test request action' concept">
+      use = <"Use for laboratory test request action.">
+      keywords = <"laboratory test request action", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1.1] matches { -- Laboratory Test Request Action
+		/item matches {
+			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Requester request identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Receiver request identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id1.1.3] occurrences matches {1} matches { -- Action type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1"] = <
+				text = <"Laboratory Test Request Action">
+				description = <"Laboratory Test Request Action">
+			>
+			["id1.1.1"] = <
+				text = <"Requester request identifier">
+				description = <"Requester request identifier">
+			>
+			["id1.1.2"] = <
+				text = <"Receiver request identifier">
+				description = <"Receiver request identifier">
+			>
+			["id1.1.3"] = <
+				text = <"Action type">
+				description = <"Action type">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <[SNOMED-CT::129264002]>
+				["id1.1.2"] = <[SNOMED-CT::138875005]>
+				["id1.1.3"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

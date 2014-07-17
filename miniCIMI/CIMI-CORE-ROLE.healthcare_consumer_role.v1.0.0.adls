@@ -1,0 +1,134 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ROLE.healthcare_consumer_role.v1.0.0
+
+specialize
+	CIMI-CORE-ROLE.person_role.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'healthcare consumer role' concept">
+      use = <"Use for healthcare consumer role.">
+      keywords = <"healthcare consumer role", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ROLE[id1.1.1.1] matches { -- Healthcare consumer role
+		details matches {
+			ELEMENT[id1.1.1.1] occurrences matches {1} matches { -- Role type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.2] occurrences matches {0..1} matches { -- Importance
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.3] occurrences matches {0..1} matches { -- Paper record location
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.4] occurrences matches {0..1} matches { -- Organ donor type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.5] occurrences matches {0..1} matches { -- Diet
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.6] occurrences matches {0..1} matches { -- Importance
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.7] occurrences matches {0..1} matches { -- Importance
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.1.8] occurrences matches {0..1} matches { -- Importance
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+		relationship matches {
+			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1] -- Healthcare provider
+			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.next_of_kin_relationship.v1] -- Next of kin
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1.1"] = <
+				text = <"Healthcare consumer role">
+				description = <"Healthcare consumer role">
+			>
+			["id1.1.1.1"] = <
+				text = <"Role type">
+				description = <"Role type">
+			>
+			["id1.1.1.2"] = <
+				text = <"Importance">
+				description = <"Importance">
+			>
+			["id1.1.1.3"] = <
+				text = <"Paper record location">
+				description = <"Paper record location">
+			>
+			["id1.1.1.4"] = <
+				text = <"Organ donor type">
+				description = <"Organ donor type">
+			>
+			["id1.1.1.5"] = <
+				text = <"Diet">
+				description = <"Diet">
+			>
+			["id1.1.1.6"] = <
+				text = <"Importance">
+				description = <"Importance">
+			>
+			["id1.1.1.7"] = <
+				text = <"Importance">
+				description = <"Importance">
+			>
+			["id1.1.1.8"] = <
+				text = <"Importance">
+				description = <"Importance">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.2"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.3"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.4"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.5"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.6"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.7"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.8"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

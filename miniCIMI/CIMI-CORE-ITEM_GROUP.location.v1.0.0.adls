@@ -1,0 +1,249 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.location.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.cluster.v1
+	
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'location' concept">
+      use = <"Use for location.">
+      keywords = <"location", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1] matches { -- Location
+		item matches {
+			ELEMENT[id2] occurrences matches {0..*} matches { -- Identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id3] occurrences matches {0..1} matches { -- Description
+				value matches {
+					PLAIN_TEXT matches {*}
+				}
+			}
+			ITEM_GROUP[id4] occurrences matches {0..*} matches { -- Location Name
+			item matches {
+				ELEMENT[id5] occurrences matches {1} matches { -- Value
+					value matches {
+						PLAIN_TEXT matches {*}
+					}
+				}
+				ELEMENT[id6] occurrences matches {0..1} matches { -- Use
+					value matches {
+						CODED_TEXT matches {*}
+					}
+				}
+				ELEMENT[id7] occurrences matches {0..1} matches { -- Datetime range
+					value matches {
+						INTERVAL_VALUE<DATE_TIME> matches {*}
+					}
+				}
+			}
+			}
+			ELEMENT[id8] occurrences matches {0..1} matches { -- Type
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id9] occurrences matches {0..1} matches { -- Condition
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.address.v2] -- Address
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
+			ELEMENT[id10] occurrences matches {0..1} matches { -- Datetime range
+				value matches {
+					INTERVAL_VALUE<DATE_TIME> matches {*}
+				}
+			}
+			ELEMENT[id11] occurrences matches {0..1} matches { -- Status
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id12] occurrences matches {0..1} matches { -- Mobile indicator
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id13] occurrences matches {0..1} matches { -- Directions
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id14] occurrences matches {0..1} matches { -- Position
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id15] occurrences matches {0..1} matches { -- Gps location
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id16] occurrences matches {0..1} matches { -- Point of care
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id20] occurrences matches {0..1} matches { -- Room
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id21] occurrences matches {0..1} matches { -- Bed
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id22] occurrences matches {0..1} matches { -- Floor
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id23] occurrences matches {0..1} matches { -- Building
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+		participation matches {
+			PARTICIPATION[id17] occurrences matches {0..1} -- Organization
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Location">
+				description = <"Location">
+			>
+			["id2"] = <
+				text = <"Identifier">
+				description = <"Identifier">
+			>
+			["id3"] = <
+				text = <"Description">
+				description = <"Description">
+			>
+			["id4"] = <
+				text = <"Location Name">
+				description = <"Location Name">
+			>
+			["id5"] = <
+				text = <"Value">
+				description = <"Value">
+			>
+			["id6"] = <
+				text = <"Use">
+				description = <"Use">
+			>
+			["id7"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id8"] = <
+				text = <"Type">
+				description = <"Type">
+			>
+			["id9"] = <
+				text = <"Condition">
+				description = <"Condition">
+			>
+			["id10"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id11"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+			["id12"] = <
+				text = <"Mobile indicator">
+				description = <"Mobile indicator">
+			>
+			["id13"] = <
+				text = <"Directions">
+				description = <"Directions">
+			>
+			["id14"] = <
+				text = <"Position">
+				description = <"Position">
+			>
+			["id15"] = <
+				text = <"Gps location">
+				description = <"Gps location">
+			>
+			["id16"] = <
+				text = <"Point of care">
+				description = <"Point of care">
+			>
+			["id20"] = <
+				text = <"Room">
+				description = <"Room">
+			>
+			["id21"] = <
+				text = <"Bed">
+				description = <"Bed">
+			>
+			["id22"] = <
+				text = <"Floor">
+				description = <"Floor">
+			>
+			["id23"] = <
+				text = <"Building">
+				description = <"Building">
+			>
+			["id17"] = <
+				text = <"Organization">
+				description = <"Organization">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1"] = <[SNOMED-CT::129264002]>
+				["id2"] = <[SNOMED-CT::138875005]>
+				["id3"] = <[SNOMED-CT::138875005]>
+				["id4"] = <[SNOMED-CT::138875005]>
+				["id5"] = <[SNOMED-CT::129264002]>
+				["id6"] = <[SNOMED-CT::129264002]>
+				["id7"] = <[SNOMED-CT::364713004]>
+				["id8"] = <[SNOMED-CT::138875005]>
+				["id9"] = <[SNOMED-CT::138875005]>
+				["id10"] = <[SNOMED-CT::138875005]>
+				["id11"] = <[SNOMED-CT::138875005]>
+				["id12"] = <[SNOMED-CT::138875005]>
+				["id13"] = <[SNOMED-CT::138875005]>
+				["id14"] = <[SNOMED-CT::138875005]>
+				["id15"] = <[SNOMED-CT::138875005]>
+				["id16"] = <[SNOMED-CT::138875005]>
+				["id20"] = <[SNOMED-CT::138875005]>
+				["id21"] = <[SNOMED-CT::138875005]>
+				["id22"] = <[SNOMED-CT::138875005]>
+				["id23"] = <[SNOMED-CT::138875005]>
+				["id17"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

@@ -1,0 +1,72 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-PARTY.party.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'party' concept">
+      use = <"Use for party.">
+      keywords = <"party", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	PARTY[id1] matches { -- Party
+		details matches {
+			ITEM_GROUP[id2] occurrences matches {0..*} matches {  -- Identifier
+				item matches {
+					ELEMENT[id3] occurrences matches {1} matches { -- Value
+						value matches {
+							IDENTIFIER matches {*}
+						}
+					}
+				}
+			}
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.party_name.v1] -- Name
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.address.v2] -- Address
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
+			ELEMENT[id4] occurrences matches {1} matches { -- Party type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+		}
+		relationship matches {
+			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1] -- Relationship
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Party">
+				description = <"Party">
+			>
+			["id2"] = <
+				text = <"Identifier">
+				description = <"Identifier">
+			>
+			["id3"] = <
+				text = <"Value">
+				description = <"Value">
+			>
+			["id4"] = <
+				text = <"Party type">
+				description = <"Party type">
+			>
+		>
+	>

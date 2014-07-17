@@ -1,0 +1,188 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.person_name.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.actor_name.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'person name' concept">
+      use = <"Use for person name.">
+      keywords = <"person name", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1.1] matches { -- Person name
+		item matches {
+			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Value
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ITEM_GROUP[id1.1.3] occurrences matches {0..*} matches {-- Part
+			item matches {
+				ELEMENT[id1.1.4] occurrences matches {0..1} matches { -- Part number
+					value matches {
+						COUNT matches {*}
+					}
+				}
+				ELEMENT[id1.1.5] occurrences matches {0..1} matches { -- Value
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.6] occurrences matches {0..1} matches { -- Type
+					value matches {
+						CODED_TEXT matches {*}
+					}
+				}
+			}
+			}
+			ITEM_GROUP[id1.1.7] occurrences matches {0..*} matches { -- Use
+			item matches {
+				ELEMENT[id1.1.8] occurrences matches {1} matches { -- Value
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.9] occurrences matches {0..1} matches { -- Datetime range
+					value matches {
+						DATE_TIME matches {*}
+					}
+				}
+				ELEMENT[id1.1.10] occurrences matches {0..1} matches { -- Identifier
+					value matches {
+						IDENTIFIER matches {*}
+					}
+				}
+			}
+			}
+			ELEMENT[id1.1.11] occurrences matches {0..1} matches { -- Datetime range
+				value matches {
+					INTERVAL_VALUE<DATE> matches {*}
+				}
+			}
+			ELEMENT[id1.1.12] occurrences matches {0..1} matches { -- Usage conditions
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.13] occurrences matches {0..1} matches { -- Status
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.14] occurrences matches {0..1} matches { -- Preferred flag
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1"] = <
+				text = <"Person name">
+				description = <"Person name">
+			>
+			["id1.1.1"] = <
+				text = <"Value">
+				description = <"Value">
+			>
+			["id1.1.2"] = <
+				text = <"Identifier">
+				description = <"Identifier">
+			>
+			["id1.1.3"] = <
+				text = <"Part">
+				description = <"Part">
+			>
+			["id1.1.4"] = <
+				text = <"Part number">
+				description = <"Part number">
+			>
+			["id1.1.5"] = <
+				text = <"Value">
+				description = <"Value">
+			>
+			["id1.1.6"] = <
+				text = <"Type">
+				description = <"Type">
+			>
+			["id1.1.7"] = <
+				text = <"Use">
+				description = <"Use">
+			>
+			["id1.1.8"] = <
+				text = <"Value">
+				description = <"Value">
+			>
+			["id1.1.9"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id1.1.10"] = <
+				text = <"Identifier">
+				description = <"Identifier">
+			>
+			["id1.1.11"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id1.1.12"] = <
+				text = <"Usage conditions">
+				description = <"Usage conditions">
+			>
+			["id1.1.13"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+			["id1.1.14"] = <
+				text = <"Preferred flag">
+				description = <"Preferred flag">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.2"] = <[SNOMED-CT::138875005]>
+				["id1.1.3"] = <[SNOMED-CT::138875005]>
+				["id1.1.4"] = <[SNOMED-CT::138875005]>
+				["id1.1.5"] = <[SNOMED-CT::138875005]>
+				["id1.1.6"] = <[SNOMED-CT::138875005]>
+				["id1.1.7"] = <[SNOMED-CT::138875005]>
+				["id1.1.8"] = <[SNOMED-CT::138875005]>
+				["id1.1.9"] = <[SNOMED-CT::138875005]>
+				["id1.1.10"] = <[SNOMED-CT::138875005]>
+				["id1.1.11"] = <[SNOMED-CT::138875005]>
+				["id1.1.12"] = <[SNOMED-CT::138875005]>
+				["id1.1.13"] = <[SNOMED-CT::138875005]>
+				["id1.1.14"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

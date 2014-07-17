@@ -1,0 +1,180 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.specimen.v3.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.material_entity.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'specimen' concept">
+      use = <"Use for specimen.">
+      keywords = <"specimen", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Specimen
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {0..1} matches { -- Specimen identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Container identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Source specimen identifier
+				value matches {
+					IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Specimen type
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Specimen description
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Specimen volume
+				value matches {
+					QUANTITY matches {*}
+				}
+			}
+			ELEMENT[id1.7] occurrences matches {0..*} matches { -- Specimen weight
+				value matches {
+					QUANTITY matches {*}
+				}
+			}
+			ELEMENT[id1.8] occurrences matches {0..*} matches { -- Specimen dimension
+				value matches {
+					QUANTITY matches {*}
+				}
+			}
+			ELEMENT[id1.9] occurrences matches {0..1} matches { -- Specimen size description
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.10] occurrences matches {0..1} matches { -- Sequence number
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.11] occurrences matches {0..1} matches { -- Specimen additive
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.12] occurrences matches {0..1} matches { -- Specimen handling risk
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.13] occurrences matches {0..*} matches { -- Special handling instructions
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.collect_action.v1] -- Collect action
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.receive_action.v1] -- Receive action
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Specimen">
+				description = <"Specimen">
+			>
+			["id1.1"] = <
+				text = <"Specimen identifier">
+				description = <"Specimen identifier">
+			>
+			["id1.2"] = <
+				text = <"Container identifier">
+				description = <"Container identifier">
+			>
+			["id1.3"] = <
+				text = <"Source specimen identifier">
+				description = <"Source specimen identifier">
+			>
+			["id1.4"] = <
+				text = <"Specimen type">
+				description = <"Specimen type">
+			>
+			["id1.5"] = <
+				text = <"Specimen description">
+				description = <"Specimen description">
+			>
+			["id1.6"] = <
+				text = <"Specimen volume">
+				description = <"Specimen volume">
+			>
+			["id1.7"] = <
+				text = <"Specimen weight">
+				description = <"Specimen weight">
+			>
+			["id1.8"] = <
+				text = <"Specimen dimension">
+				description = <"Specimen dimension">
+			>
+			["id1.9"] = <
+				text = <"Specimen size description">
+				description = <"Specimen size description">
+			>
+			["id1.10"] = <
+				text = <"Sequence number">
+				description = <"Sequence number">
+			>
+			["id1.11"] = <
+				text = <"Specimen additive">
+				description = <"Specimen additive">
+			>
+			["id1.12"] = <
+				text = <"Specimen handling risk">
+				description = <"Specimen handling risk">
+			>
+			["id1.13"] = <
+				text = <"Special handling instructions">
+				description = <"Special handling instructions">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::123038009]>
+				["id1.1"] = <[SNOMED-CT::423901009]>
+				["id1.2"] = <[SNOMED-CT::423901009]>
+				["id1.3"] = <[SNOMED-CT::423901009]>
+				["id1.4"] = <[SNOMED-CT::123038009]>
+				["id1.5"] = <[SNOMED-CT::123038009]>
+				["id1.6"] = <[SNOMED-CT::404230009]>
+				["id1.7"] = <[SNOMED-CT::371506001]>
+				["id1.8"] = <[SNOMED-CT::371475003]>
+				["id1.9"] = <[SNOMED-CT::371475003]>
+				["id1.10"] = <[SNOMED-CT::410681005]>
+				["id1.11"] = <[SNOMED-CT::105590001]>
+			>
+		>
+	>

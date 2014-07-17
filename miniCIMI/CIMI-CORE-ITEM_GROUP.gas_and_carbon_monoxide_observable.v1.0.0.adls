@@ -1,0 +1,59 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.observable.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'gas and carbon monoxide observable' concept">
+      use = <"Use for gas and carbon monoxide observable.">
+      keywords = <"gas and carbon monoxide observable", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Gas and carbon monoxide observable
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Test name
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Gas and carbon monoxide observable">
+				description = <"Gas and carbon monoxide observable">
+			>
+			["id1.1"] = <
+				text = <"Test name">
+				description = <"Test name">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+			>
+		>
+	>

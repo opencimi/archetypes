@@ -1,0 +1,59 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ENTRY.observation_request.v2.0.0
+
+specialize
+	CIMI-CORE-ENTRY.request.v2.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'observation request' concept">
+      use = <"Use for observation request.">
+      keywords = <"observation request", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ENTRY[id1.1.1.1] matches { -- Observation Request
+		data matches {
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.observable.v1] -- Requested observable
+		}
+		link matches {
+			LINK[id1.1.1.1] occurrences matches {0..*} -- Requested observation link
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1.1"] = <
+				text = <"Observation Request">
+				description = <"Observation Request">
+			>
+			["id1.1.1.1"] = <
+				text = <"Requested observation link">
+				description = <"Requested observation link">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1.1"] = <[SNOMED-CT::363787002]>
+			>
+		>
+	>

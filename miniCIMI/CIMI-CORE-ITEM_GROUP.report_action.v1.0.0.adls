@@ -1,0 +1,130 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.report_action.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.action.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'report action' concept">
+      use = <"Use for report action.">
+      keywords = <"report action", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Report Action
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Report datetime
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Report datetime range
+				value matches {
+					INTERVAL_VALUE<DATE_TIME> matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Report duration
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Report timing offset
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Report timing offset origin
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+		}
+		participation matches {
+			PARTICIPATION[id1.7] occurrences matches {0..*} -- Reporter
+			PARTICIPATION[id1.8] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id1.9] occurrences matches {0..1} -- Locationof reporter
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Report Action">
+				description = <"Report Action">
+			>
+			["id1.1"] = <
+				text = <"Action type">
+				description = <"Action type">
+			>
+			["id1.2"] = <
+				text = <"Report datetime">
+				description = <"Report datetime">
+			>
+			["id1.3"] = <
+				text = <"Report datetime range">
+				description = <"Report datetime range">
+			>
+			["id1.4"] = <
+				text = <"Report duration">
+				description = <"Report duration">
+			>
+			["id1.5"] = <
+				text = <"Report timing offset">
+				description = <"Report timing offset">
+			>
+			["id1.6"] = <
+				text = <"Report timing offset origin">
+				description = <"Report timing offset origin">
+			>
+			["id1.7"] = <
+				text = <"Reporter">
+				description = <"Reporter">
+			>
+			["id1.8"] = <
+				text = <"Locationof subject">
+				description = <"Locationof subject">
+			>
+			["id1.9"] = <
+				text = <"Locationof reporter">
+				description = <"Locationof reporter">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::308561006]>
+				["id1.1"] = <[SNOMED-CT::308561006]>
+				["id1.2"] = <[SNOMED-CT::399651003]>
+				["id1.3"] = <[SNOMED-CT::399651003]>
+				["id1.4"] = <[SNOMED-CT::364713004]>
+				["id1.5"] = <[SNOMED-CT::364713004]>
+				["id1.6"] = <[SNOMED-CT::364713004]>
+				["id1.7"] = <[SNOMED-CT::48176007]>
+				["id1.8"] = <[SNOMED-CT::308916002]>
+				["id1.9"] = <[SNOMED-CT::308916002]>
+			>
+		>
+	>

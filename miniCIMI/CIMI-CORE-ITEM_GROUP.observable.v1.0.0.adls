@@ -1,0 +1,92 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.observable.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.cluster.v1
+	
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'observable' concept">
+      use = <"Use for observable.">
+      keywords = <"observable", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1] matches { -- Observable
+		item matches {
+			ELEMENT[id2] occurrences matches {1} matches { -- Name
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ITEM[id3] occurrences matches {0..*} -- Reason
+			ITEM[id4] occurrences matches {0..*} -- Method
+			ELEMENT[id5] occurrences matches {0..1} matches { -- Status
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id6] occurrences matches {0..1} matches { -- Priority
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Observable">
+				description = <"Observable">
+			>
+			["id2"] = <
+				text = <"Name">
+				description = <"Name">
+			>
+			["id3"] = <
+				text = <"Reason">
+				description = <"Reason">
+			>
+			["id4"] = <
+				text = <"Method">
+				description = <"Method">
+			>
+			["id5"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+			["id6"] = <
+				text = <"Priority">
+				description = <"Priority">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1"] = <[SNOMED-CT::363787002]>
+				["id2"] = <[SNOMED-CT::363787002]>
+				["id3"] = <[SNOMED-CT::138875005]>
+				["id4"] = <[SNOMED-CT::138875005]>
+				["id5"] = <[SNOMED-CT::288532009]>
+				["id6"] = <[SNOMED-CT::272125009]>
+			>
+		>
+	>
