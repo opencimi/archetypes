@@ -24,10 +24,10 @@ description
     >
   >
   lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-    other_details = <
-        ["model_level"] = <"reference">
-    >
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+  other_details = <
+    ["model_level"] = <"reference">
+  >
 
 definition
   ITEM_GROUP[id1.1]  -- Indivisible Clinical Statement

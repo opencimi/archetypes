@@ -17,17 +17,14 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Top-level reference archetype for CIMI 'compound clinical statement' concept">
-      use = <"Use as a specialisation precursor for other high-level reference archetypes.">
+      purpose = <"Archetype for CIMI 'compound clinical statement' concept">
+      use = <"Use for compound clinical statement.">
       keywords = <"compound clinical statement", ...>
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-    other_details = <
-        ["model_level"] = <"reference">
-    >
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
   ITEM_GROUP[id1.1] matches {  -- Compound Clinical Statement
