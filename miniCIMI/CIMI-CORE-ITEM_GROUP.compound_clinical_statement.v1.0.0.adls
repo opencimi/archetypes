@@ -32,7 +32,7 @@ description
 definition
 	ITEM_GROUP[id1.1] matches {	-- Compound Clinical Statement
 		item matches {
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {2..*} 
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.clinical_statement.v1]
 		}
 	}
 

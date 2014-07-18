@@ -29,8 +29,9 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches {	-- Complete Blood Count
 		item matches {
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.complete_blood_count_automated.v1] occurrences matches {0..*} 
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.complete_blood_count_manual.v1] occurrences matches {0..*} 
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.complete_blood_count_automated.v1]
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.complete_blood_count_manual.v1]
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.laboratory_test.v1]  occurrences matches {0}
 		}
 	}
 

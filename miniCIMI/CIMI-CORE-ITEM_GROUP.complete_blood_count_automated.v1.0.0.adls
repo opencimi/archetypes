@@ -29,8 +29,9 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches {	-- Complete Blood Count Automated
 		item matches {
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1] occurrences matches {0..*} 
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1] occurrences matches {0..*} 
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
+			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.laboratory_test.v1] occurrences matches {0} 
 		}
 	}
 
