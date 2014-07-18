@@ -1,0 +1,139 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.requested_action.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.action.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'requested action' concept">
+      use = <"Use for requested action.">
+      keywords = <"requested action", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Requested Action
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Requested datetime
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Requested datetime range
+				value matches {
+					INTERVAL_VALUE<DATE_TIME> matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Requested duration
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Requested timing offset
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Requested timing offset origin
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+			ITEM[id1.7] occurrences matches {0..1} -- Status
+			ITEM[id1.8] occurrences matches {0..*} -- Clinical information provided
+		}
+		participation matches {
+			PARTICIPATION[id1.9] occurrences matches {0..*} -- Requested participant
+			PARTICIPATION[id1.10] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id1.11] occurrences matches {0..1} -- Locationof requested participant
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Requested Action">
+				description = <"Requested Action">
+			>
+			["id1.1"] = <
+				text = <"Action type">
+				description = <"Action type">
+			>
+			["id1.2"] = <
+				text = <"Requested datetime">
+				description = <"Requested datetime">
+			>
+			["id1.3"] = <
+				text = <"Requested datetime range">
+				description = <"Requested datetime range">
+			>
+			["id1.4"] = <
+				text = <"Requested duration">
+				description = <"Requested duration">
+			>
+			["id1.5"] = <
+				text = <"Requested timing offset">
+				description = <"Requested timing offset">
+			>
+			["id1.6"] = <
+				text = <"Requested timing offset origin">
+				description = <"Requested timing offset origin">
+			>
+			["id1.7"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+			["id1.8"] = <
+				text = <"Clinical information provided">
+				description = <"Clinical information provided">
+			>
+			["id1.9"] = <
+				text = <"Requested participant">
+				description = <"Requested participant">
+			>
+			["id1.10"] = <
+				text = <"Locationof subject">
+				description = <"Locationof subject">
+			>
+			["id1.11"] = <
+				text = <"Locationof requested participant">
+				description = <"Locationof requested participant">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::71388002]>
+				["id1.2"] = <[SNOMED-CT::71388002]>
+				["id1.3"] = <[SNOMED-CT::252129004]>
+				["id1.4"] = <[SNOMED-CT::252131008]>
+				["id1.5"] = <[SNOMED-CT::442371002]>
+				["id1.6"] = <[SNOMED-CT::288532009]>
+				["id1.7"] = <[SNOMED-CT::48176007]>
+				["id1.8"] = <[SNOMED-CT::308916002]>
+				["id1.9"] = <[SNOMED-CT::308916002]>
+			>
+		>
+	>

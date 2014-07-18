@@ -1,0 +1,82 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ENTRY.laboratory_test_observation.v2.0.0
+
+specialize
+	CIMI-CORE-ENTRY.observation.v4.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'laboratory test observation' concept">
+      use = <"Use for laboratory test observation.">
+      keywords = <"laboratory test observation", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ENTRY[id1.1.1] matches { -- Laboratory Test Observation
+		/data matches {
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_observable.v1] -- Test observable
+			ITEM_GROUP[id1.1.1] occurrences matches {0..1} matches { -- Test results
+			item matches {
+				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_result_item.v1] -- Result item
+				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_result_group.v1] -- Result subgroup
+				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+				ELEMENT[id1.1.2] occurrences matches {0..*} matches { -- Diagnosis
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.3] occurrences matches {0..*} matches { -- Conclusions
+					value matches {
+						TEXT matches {*}
+					}
+				}
+			}}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1"] = <
+				text = <"Laboratory Test Observation">
+				description = <"Laboratory Test Observation">
+			>
+			["id1.1.1"] = <
+				text = <"Test results REF<CIMI-CORE-ITEM_GROUP.laboratory_test_result_group>">
+				description = <"Test results REF<CIMI-CORE-ITEM_GROUP.laboratory_test_result_group>">
+			>
+			["id1.1.2"] = <
+				text = <"Diagnosis">
+				description = <"Diagnosis">
+			>
+			["id1.1.3"] = <
+				text = <"Conclusions">
+				description = <"Conclusions">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <[SNOMED-CT::364712009]>
+				["id1.1.1"] = <[SNOMED-CT::441742003]>
+				["id1.1.2"] = <[SNOMED-CT::123038009]>
+				["id1.1.3"] = <[SNOMED-CT::123038009]>
+			>
+		>
+	>

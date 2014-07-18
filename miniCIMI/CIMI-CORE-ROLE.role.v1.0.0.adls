@@ -1,0 +1,90 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ROLE.role.v1.0.0
+
+specialize
+	CIMI-CORE-PARTY.party.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'role' concept">
+      use = <"Use for role.">
+      keywords = <"role", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ROLE[id1.1] matches { -- Role
+		details matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Role type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Datetime range
+				value matches {
+					INTERVAL_VALUE<DATE> matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..*} matches { -- Confidentialty level
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Status
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Role">
+				description = <"Role">
+			>
+			["id1.1"] = <
+				text = <"Role type">
+				description = <"Role type">
+			>
+			["id1.2"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id1.3"] = <
+				text = <"Confidentialty level">
+				description = <"Confidentialty level">
+			>
+			["id1.4"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1"] = <[SNOMED-CT::138875005]>
+				["id1.2"] = <[SNOMED-CT::138875005]>
+				["id1.3"] = <[SNOMED-CT::138875005]>
+				["id1.4"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

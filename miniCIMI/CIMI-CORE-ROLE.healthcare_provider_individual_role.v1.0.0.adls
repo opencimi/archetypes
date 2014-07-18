@@ -1,0 +1,169 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ROLE.healthcare_provider_individual_role.v1.0.0
+
+specialize
+	CIMI-CORE-ROLE.healthcare_provider_role.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'healthcare provider individual role' concept">
+      use = <"Use for healthcare provider individual role.">
+      keywords = <"healthcare provider individual role", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ROLE[id1.1.1.1] matches { -- Healthcare provider individual role
+		details matches {
+			ITEM_GROUP[id1.1.1.1] occurrences matches {0..*} matches { -- Registration
+			item matches {
+				ELEMENT[id1.1.1.2] occurrences matches {0..1} matches { -- Identifier
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.3] occurrences matches {0..1} matches { -- Registering organization
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.4] occurrences matches {0..1} matches { -- Status
+					value matches {
+						CODED_TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.5] occurrences matches {0..1} matches { -- Datetime range
+					value matches {
+						INTERVAL_VALUE<DATE_TIME> matches {*}
+					}
+				}
+			}}
+			ITEM_GROUP[id1.1.1.6] occurrences matches {0..*} matches { -- Qualification
+			item matches {
+				ELEMENT[id1.1.1.7] occurrences matches {1} matches { -- Name
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.8] occurrences matches {0..1} matches { -- Level
+					value matches {
+						CODED_TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.9] occurrences matches {0..1} matches { -- Issuing institution
+					value matches {
+						TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.10] occurrences matches {0..1} matches { -- Issuing country
+					value matches {
+						CODED_TEXT matches {*}
+					}
+				}
+				ELEMENT[id1.1.1.11] occurrences matches {0..1} matches { -- Date
+					value matches {
+						DATE matches {*}
+					}
+				}
+			}}
+			ELEMENT[id1.1.1.12] occurrences matches {0..*} matches { -- Role
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+		relationship matches {
+			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1] -- Employer
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1.1"] = <
+				text = <"Healthcare provider individual role">
+				description = <"Healthcare provider individual role">
+			>
+			["id1.1.1.1"] = <
+				text = <"Registration">
+				description = <"Registration">
+			>
+			["id1.1.1.2"] = <
+				text = <"Identifier">
+				description = <"Identifier">
+			>
+			["id1.1.1.3"] = <
+				text = <"Registering organization">
+				description = <"Registering organization">
+			>
+			["id1.1.1.4"] = <
+				text = <"Status">
+				description = <"Status">
+			>
+			["id1.1.1.5"] = <
+				text = <"Datetime range">
+				description = <"Datetime range">
+			>
+			["id1.1.1.6"] = <
+				text = <"Qualification">
+				description = <"Qualification">
+			>
+			["id1.1.1.7"] = <
+				text = <"Name">
+				description = <"Name">
+			>
+			["id1.1.1.8"] = <
+				text = <"Level">
+				description = <"Level">
+			>
+			["id1.1.1.9"] = <
+				text = <"Issuing institution">
+				description = <"Issuing institution">
+			>
+			["id1.1.1.10"] = <
+				text = <"Issuing country">
+				description = <"Issuing country">
+			>
+			["id1.1.1.11"] = <
+				text = <"Date">
+				description = <"Date">
+			>
+			["id1.1.1.12"] = <
+				text = <"Role">
+				description = <"Role">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.1"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.2"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.3"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.4"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.5"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.6"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.7"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.8"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.9"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.10"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.11"] = <[SNOMED-CT::138875005]>
+				["id1.1.1.12"] = <[SNOMED-CT::138875005]>
+			>
+		>
+	>

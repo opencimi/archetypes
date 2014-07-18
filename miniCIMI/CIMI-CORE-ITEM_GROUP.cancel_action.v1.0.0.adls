@@ -1,0 +1,125 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.cancel_action.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.action.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'cancel action' concept">
+      use = <"Use for cancel action.">
+      keywords = <"cancel action", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Cancel Action
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Cancel datetime
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Cancel datetime range
+				value matches {
+					INTERVAL_VALUE<DATE_TIME> matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Cancel duration
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Cancel timing offset
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Cancel timing offset origin
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+		}
+		participation matches {
+			PARTICIPATION[id1.7] occurrences matches {0..*} -- Canceller
+			PARTICIPATION[id1.8] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id1.9] occurrences matches {0..1} -- Locationof canceller
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Cancel Action">
+				description = <"Cancel Action">
+			>
+			["id1.1"] = <
+				text = <"Action type">
+				description = <"Action type">
+			>
+			["id1.2"] = <
+				text = <"Cancel datetime">
+				description = <"Cancel datetime">
+			>
+			["id1.3"] = <
+				text = <"Cancel datetime range">
+				description = <"Cancel datetime range">
+			>
+			["id1.4"] = <
+				text = <"Cancel duration">
+				description = <"Cancel duration">
+			>
+			["id1.5"] = <
+				text = <"Cancel timing offset">
+				description = <"Cancel timing offset">
+			>
+			["id1.6"] = <
+				text = <"Cancel timing offset origin">
+				description = <"Cancel timing offset origin">
+			>
+			["id1.7"] = <
+				text = <"Canceller">
+				description = <"Canceller">
+			>
+			["id1.8"] = <
+				text = <"Locationof subject">
+				description = <"Locationof subject">
+			>
+			["id1.9"] = <
+				text = <"Locationof canceller">
+				description = <"Locationof canceller">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::364713004]>
+				["id1.2"] = <[SNOMED-CT::364713004]>
+				["id1.3"] = <[SNOMED-CT::48176007]>
+				["id1.4"] = <[SNOMED-CT::308916002]>
+				["id1.5"] = <[SNOMED-CT::308916002]>
+			>
+		>
+	>

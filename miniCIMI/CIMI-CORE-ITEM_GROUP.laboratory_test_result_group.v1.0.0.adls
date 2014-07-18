@@ -1,0 +1,73 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.laboratory_test_result_group.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.finding_group.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'laboratory test result group' concept">
+      use = <"Use for laboratory test result group.">
+      keywords = <"laboratory test result group", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1.1] matches { -- Laboratory Test Result Group
+		/item matches {
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_result_item.v1] -- Result item
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_result_group.v1] -- Result subgroup
+			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+			ELEMENT[id1.1.1] occurrences matches {0..*} matches { -- Diagnosis
+				value matches {
+					TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.1.2] occurrences matches {0..*} matches { -- Conclusions
+				value matches {
+					TEXT matches {*}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1.1"] = <
+				text = <"Laboratory Test Result Group">
+				description = <"Laboratory Test Result Group">
+			>
+			["id1.1.1"] = <
+				text = <"Diagnosis">
+				description = <"Diagnosis">
+			>
+			["id1.1.2"] = <
+				text = <"Conclusions">
+				description = <"Conclusions">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <[SNOMED-CT::441742003]>
+				["id1.1.1"] = <[SNOMED-CT::123038009]>
+				["id1.1.2"] = <[SNOMED-CT::123038009]>
+			>
+		>
+	>

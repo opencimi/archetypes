@@ -1,0 +1,126 @@
+archetype (adl_version=1.5; generated)
+	CIMI-CORE-ITEM_GROUP.receive_action.v1.0.0
+
+specialize
+	CIMI-CORE-ITEM_GROUP.action.v1.0.0
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'receive action' concept">
+      use = <"Use for receive action.">
+      keywords = <"receive action", ...>
+      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+	ITEM_GROUP[id1.1] matches { -- Receive Action
+		/item matches {
+			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+				value matches {
+					CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Received datetime
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Received datetime range
+				value matches {
+					INTERVAL_VALUE<DATE_TIME> matches {*}
+				}
+			}
+			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Received duration
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Received timing offset
+				value matches {
+					DURATION matches {*}
+				}
+			}
+			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Recevied timing offset origin
+				value matches {
+					DATE_TIME matches {*}
+				}
+			}
+		}
+		participation matches {
+			PARTICIPATION[id1.7] occurrences matches {0..*} -- Receiver
+			PARTICIPATION[id1.8] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id1.9] occurrences matches {0..1} -- Locationof receiver
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"Receive Action">
+				description = <"Receive Action">
+			>
+			["id1.1"] = <
+				text = <"Action type">
+				description = <"Action type">
+			>
+			["id1.2"] = <
+				text = <"Received datetime">
+				description = <"Received datetime">
+			>
+			["id1.3"] = <
+				text = <"Received datetime range">
+				description = <"Received datetime range">
+			>
+			["id1.4"] = <
+				text = <"Received duration">
+				description = <"Received duration">
+			>
+			["id1.5"] = <
+				text = <"Received timing offset">
+				description = <"Received timing offset">
+			>
+			["id1.6"] = <
+				text = <"Recevied timing offset origin">
+				description = <"Recevied timing offset origin">
+			>
+			["id1.7"] = <
+				text = <"Receiver">
+				description = <"Receiver">
+			>
+			["id1.8"] = <
+				text = <"Locationof subject">
+				description = <"Locationof subject">
+			>
+			["id1.9"] = <
+				text = <"Locationof receiver">
+				description = <"Locationof receiver">
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <[SNOMED-CT::252129004]>
+				["id1.2"] = <[SNOMED-CT::252131008]>
+				["id1.3"] = <[SNOMED-CT::442371002]>
+				["id1.4"] = <[SNOMED-CT::125676002]>
+				["id1.5"] = <[SNOMED-CT::308916002]>
+				["id1.6"] = <[SNOMED-CT::308916002]>
+			>
+		>
+	>
