@@ -28,9 +28,8 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1] matches {  -- Laboratory Panel
-    item matches {
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.observation.v1] occurrences matches {0} 
+    /item matches {
+      use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
     }
   }
 
@@ -40,6 +39,10 @@ terminology
       ["id1.1.1.1"] = <
         text = <"Laboratory Panel">
         description = <"Laboratory Panel">
+      >
+      ["id0.1.1.1"] = <
+        text = <"Laboratory test">
+        description = <"Laboratory test">
       >
     >
   >

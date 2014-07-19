@@ -31,8 +31,8 @@ description
 
 definition
 	ITEM_GROUP[id1.1] matches {	-- Compound Clinical Statement
-		item matches {
-			use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.clinical_statement.v1]
+		/item matches {
+			use_archetype ITEM_GROUP[id0.1, CIMI-CORE-ITEM_GROUP.clinical_statement.v1]
 		}
 	}
 
@@ -43,9 +43,9 @@ terminology
 				text = <"Compound Clinical Statement">
 				description = <"Compound Clinical Statement">
 			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
+			["id0.1"] = <
+				text = <"Clinical Statement">
+				description = <"Clinical Statement">
+			>
 		>
 	>

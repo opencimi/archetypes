@@ -28,10 +28,8 @@ description
 
 definition
   ITEM_GROUP[id1.1.1] matches {  -- Observation Set
-    item matches {
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.observation.v1]
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {0} 
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
+    /item matches {
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1]
       ELEMENT[id4] occurrences matches {0}   
     }
   }
@@ -42,6 +40,10 @@ terminology
       ["id1.1.1"] = <
         text = <"Observation Set">
         description = <"Observation Set">
+      >
+      ["id0.1.1"] = <
+        text = <"Observation">
+        description = <"Observation">
       >
     >
   >

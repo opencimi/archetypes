@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1] matches {  -- Cluster
     item matches {
-      use_archetype ITEM_GROUP[CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
+      use_archetype ITEM_GROUP[id3, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
       ELEMENT[id2] occurrences matches {0..*}   -- Element
     }
   }
@@ -44,6 +44,10 @@ terminology
       ["id2"] = <
         text = <"Element">
         description = <"Element">
+      >
+      ["id3"] = <
+        text = <"Cluster">
+        description = <"Cluster">
       >
     >
   >
