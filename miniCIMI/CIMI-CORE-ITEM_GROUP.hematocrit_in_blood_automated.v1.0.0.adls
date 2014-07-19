@@ -28,18 +28,20 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1.1] matches { -- Hematocrit in Blood Automated
-    item matches {
-      ELEMENT[id1.1.1.1.2] occurrences matches {1} matches { -- Name
+    /item matches {
+	use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
+      ELEMENT[id4.0.0.0.1] occurrences matches {1} matches { -- Name
         value matches {
-          TEXT[id1.1.1.1.3] matches {*}
+          TEXT[id0.0.0.0.1] matches {*}
         }
       }
-      ELEMENT[id1.1.1.1.4] occurrences matches {1} matches { -- Result value
+      ELEMENT[id4.0.0.0.2] occurrences matches {1} matches { -- Result value
         value matches {
-          QUANTITY[id1.1.1.1.5] matches {*}
+          QUANTITY[id0.0.0.0.2] matches {*}
         }
       }
     }
+  }
 
 terminology
   term_definitions = <
@@ -48,11 +50,11 @@ terminology
         text = <"Hematocrit in Blood Automated">
         description = <"Hematocrit in Blood Automated">
       >
-      ["id1.1.1.1.3"] = <
+      ["id4.0.0.0.1"] = <
         text = <"Name">
         description = <"Name">
       >
-      ["id1.1.1.1.5"] = <
+      ["id4.0.0.0.2"] = <
         text = <"Result value">
         description = <"Result value">
       >
@@ -61,8 +63,8 @@ terminology
   term_bindings = <
     ["SNOMED-CT"] = <
       items = <
-        ["id1.1.1.1.3"] = <[SNOMED-CT::138875005]>
-        ["id1.1.1.1.5"] = <[SNOMED-CT::138875005]>
+        ["id4.0.0.0.1"] = <http://snomedct.info/id/138875005>
+        ["id4.0.0.0.2"] = <http://snomedct.info/id/138875005>
       >
     >
   >
