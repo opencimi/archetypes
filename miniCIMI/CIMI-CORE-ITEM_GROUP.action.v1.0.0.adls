@@ -31,37 +31,37 @@ definition
 		item matches {
 			ELEMENT[id1.2] occurrences matches {1} matches { -- Action type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id1.17] matches {*}
 				}
 			}
 			ELEMENT[id1.3] occurrences matches {0..*} matches { -- Identifier
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id1.18] matches {*}
 				}
 			}
 			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Datetime
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id1.19] matches {*}
 				}
 			}
 			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id1.20] matches {*}
 				}
 			}
 			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Duration
 				value matches {
-					DURATION matches {*}
+					DURATION[id1.21] matches {*}
 				}
 			}
 			ELEMENT[id1.7] occurrences matches {0..1} matches { -- Timing offset
 				value matches {
-					DURATION matches {*}
+					DURATION[id1.22] matches {*}
 				}
 			}
 			ELEMENT[id1.8] occurrences matches {0..1} matches { -- Timing offset origin
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id1.23] matches {*}
 				}
 			}
 			ITEM[id1.9] occurrences matches {0..*} -- Timing
@@ -69,7 +69,7 @@ definition
 			ITEM[id1.11] occurrences matches {0..*} -- Method
 			ELEMENT[id1.12] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id1.24] matches {*}
 				}
 			}
 		}

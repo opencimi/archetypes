@@ -4,7 +4,7 @@ archetype (adl_version=1.5.1; generated)
 specialize
 	CIMI-CORE-ITEM_GROUP.indivisible_clinical_statement.v1
 
-llanguage
+language
   original_language = <[ISO_639-1::en]>
 
 description
@@ -27,25 +27,25 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Clinical Activity
+	ITEM_GROUP[id1.1.1] matches { -- Clinical Activity
 		participation matches {
-			PARTICIPATION[id1.1] occurrences matches {0..1} -- Subject of care
-			PARTICIPATION[id1.2] occurrences matches {0..1} -- Information subject
+			PARTICIPATION[id2.1.1] occurrences matches {0..1} -- Subject of care
+			PARTICIPATION[id3.1.1] occurrences matches {0..1} -- Information subject
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
+			["id1.1.1"] = <
 				text = <"Clinical Activity">
 				description = <"Clinical Activity">
 			>
-			["id1.1"] = <
+			["id2.1.1"] = <
 				text = <"Subject of care">
 				description = <"Subject of care">
 			>
-			["id1.2"] = <
+			["id3.1.1"] = <
 				text = <"Information subject">
 				description = <"Information subject">
 			>
@@ -54,9 +54,9 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/71388002>
-				["id1.1"] = <http://snomedct.info/id/125676002>
-				["id1.2"] = <http://snomedct.info/id/125676002>
+				["id1.1.1"] = <http://snomedct.info/id/71388002>
+				["id2.1.1"] = <http://snomedct.info/id/125676002>
+				["id3.1.1"] = <http://snomedct.info/id/125676002>
 			>
 		>
 	>

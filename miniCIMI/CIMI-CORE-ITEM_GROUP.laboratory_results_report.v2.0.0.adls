@@ -4,7 +4,7 @@ archetype (adl_version=1.5.1; generated)
 specialize
 	CIMI-CORE-ITEM_GROUP.clinical_document.v2
 
-llanguage
+language
   original_language = <[ISO_639-1::en]>
 
 description
