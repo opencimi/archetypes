@@ -77,13 +77,13 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id1.1"] = <[SNOMED-CT::138875005]>
---				["id1.2"] = <[SNOMED-CT::138875005]>
---				["id1.3"] = <[SNOMED-CT::138875005]>
---				["id1.4"] = <[SNOMED-CT::138875005]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <http://snomedct.info/id/138875005>
+				["id1.2"] = <http://snomedct.info/id/138875005>
+				["id1.3"] = <http://snomedct.info/id/138875005>
+				["id1.4"] = <http://snomedct.info/id/138875005>
+			>
+		>
+	>

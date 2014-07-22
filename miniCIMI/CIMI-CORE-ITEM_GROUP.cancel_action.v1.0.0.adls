@@ -112,14 +112,14 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id1.1"] = <[SNOMED-CT::364713004]>
---				["id1.2"] = <[SNOMED-CT::364713004]>
---				["id1.3"] = <[SNOMED-CT::48176007]>
---				["id1.4"] = <[SNOMED-CT::308916002]>
---				["id1.5"] = <[SNOMED-CT::308916002]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <http://snomedct.info/id/364713004>
+				["id1.2"] = <http://snomedct.info/id/364713004>
+				["id1.3"] = <http://snomedct.info/id/48176007>
+				["id1.4"] = <http://snomedct.info/id/308916002>
+				["id1.5"] = <http://snomedct.info/id/308916002>
+			>
+		>
+	>

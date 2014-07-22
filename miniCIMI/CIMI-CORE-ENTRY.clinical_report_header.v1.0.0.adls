@@ -133,19 +133,19 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id1.1"] = <[SNOMED-CT::423901009]>
---				["id1.2"] = <[SNOMED-CT::423901009]>
---				["id1.3"] = <[SNOMED-CT::138875005]>
---				["id1.4"] = <[SNOMED-CT::138875005]>
---				["id1.5"] = <[SNOMED-CT::138875005]>
---				["id1.6"] = <[SNOMED-CT::138875005]>
---				["id1.7"] = <[SNOMED-CT::138875005]>
---				["id1.8"] = <[SNOMED-CT::138875005]>
---				["id1.9"] = <[SNOMED-CT::138875005]>
---				["id1.10"] = <[SNOMED-CT::138875005]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1"] = <http://snomedct.info/id/423901009>
+				["id1.2"] = <http://snomedct.info/id/423901009>
+				["id1.3"] = <http://snomedct.info/id/138875005>
+				["id1.4"] = <http://snomedct.info/id/138875005>
+				["id1.5"] = <http://snomedct.info/id/138875005>
+				["id1.6"] = <http://snomedct.info/id/138875005>
+				["id1.7"] = <http://snomedct.info/id/138875005>
+				["id1.8"] = <http://snomedct.info/id/138875005>
+				["id1.9"] = <http://snomedct.info/id/138875005>
+				["id1.10"] = <http://snomedct.info/id/138875005>
+			>
+		>
+	>

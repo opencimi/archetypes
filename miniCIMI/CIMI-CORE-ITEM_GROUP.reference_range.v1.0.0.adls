@@ -68,11 +68,11 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id2"] = <[SNOMED-CT::138875005]>
---				["id3"] = <[SNOMED-CT::138875005]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id2"] = <http://snomedct.info/id/138875005>
+				["id3"] = <http://snomedct.info/id/138875005>
+			>
+		>
+	>

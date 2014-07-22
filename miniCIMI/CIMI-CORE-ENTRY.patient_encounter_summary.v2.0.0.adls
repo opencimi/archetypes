@@ -51,12 +51,12 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id1.1.1"] = <[SNOMED-CT::308335008]>
---				["id1.1.1"] = <[SNOMED-CT::125676002]>
---				["id1.1.2"] = <[SNOMED-CT::125676002]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id1.1.1"] = <http://snomedct.info/id/308335008>
+				["id1.1.1"] = <http://snomedct.info/id/125676002>
+				["id1.1.2"] = <http://snomedct.info/id/125676002>
+			>
+		>
+	>

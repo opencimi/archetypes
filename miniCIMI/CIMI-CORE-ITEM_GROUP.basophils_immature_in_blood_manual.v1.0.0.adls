@@ -59,11 +59,11 @@ terminology
 			>
 		>
 	>
---	term_bindings = <
---		["SNOMED-CT"] = <
---			items = <
---				["id4"] = <[SNOMED-CT::138875005]>
---				["id6"] = <[SNOMED-CT::138875005]>
---			>
---		>
---	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id4"] = <http://snomedct.info/id/138875005>
+				["id6"] = <http://snomedct.info/id/138875005>
+			>
+		>
+	>

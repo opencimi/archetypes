@@ -60,11 +60,11 @@ terminology
       >
     >
   >
---  term_bindings = <
---    ["SNOMED-CT"] = <
---      items = <
---        ["id4.0.0.0.1"] = <http://snomedct.info/id/138875005>
---        ["id4.0.0.0.2"] = <http://snomedct.info/id/138875005>
---      >
---    >
---  >
+  term_bindings = <
+    ["SNOMED-CT"] = <
+      items = <
+        ["id4.0.0.0.1"] = <http://snomedct.info/id/138875005>
+        ["id4.0.0.0.2"] = <http://snomedct.info/id/138875005>
+      >
+    >
+  >
