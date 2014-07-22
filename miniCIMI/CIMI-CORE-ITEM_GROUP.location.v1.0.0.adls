@@ -1,4 +1,4 @@
-archetype (adl_version=1.5; generated)
+archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.location.v1.0.0
 
 specialize
