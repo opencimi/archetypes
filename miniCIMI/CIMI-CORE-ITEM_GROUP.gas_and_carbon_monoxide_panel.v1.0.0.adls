@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ENTRY.gas_and_carbon_monoxide_panel.v1.0.0
+	CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_panel.v1.0.0
 
 specialize
-	CIMI-CORE-ENTRY.laboratory_test_observation.v2.0.0
+	CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
 
 language
   original_language = <[ISO_639-1::en]>
@@ -27,7 +27,7 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ENTRY[id1.1.1.1] matches { -- Gas and Carbon Monoxide Panel
+	ITEM_GROUP[id1.1.1.1] matches { -- Gas and Carbon Monoxide Panel
 		/data matches {
 			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
 			ITEM_GROUP[id1.1.1.1] occurrences matches {0..1} matches { -- Test results

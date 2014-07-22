@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ENTRY.observation_request.v2.0.0
+	CIMI-CORE-ITEM_GROUP.observation_request.v2.0.0
 
 specialize
-	CIMI-CORE-ENTRY.request.v2.0.0
+	CIMI-CORE-ITEM_GROUP.request.v2
 
 language
   original_language = <[ISO_639-1::en]>
@@ -27,13 +27,13 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ENTRY[id1.1.1.1] matches { -- Observation Request
+	ITEM_GROUP[id1.1.1.1] matches { -- Observation Request
 		data matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.observable.v1] -- Requested observable
+			use_archetype ITEM_GROUP [id1.1.1.3, CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
+			use_archetype ITEM_GROUP [id1.1.1.4, CIMI-CORE-ITEM_GROUP.observable.v1] -- Requested observable
 		}
 		link matches {
-			LINK[id1.1.1.1] occurrences matches {0..*} -- Requested observation link
+			LINK[id1.1.1.2] occurrences matches {0..*} -- Requested observation link
 		}
 	}
 
@@ -44,9 +44,17 @@ terminology
 				text = <"Observation Request">
 				description = <"Observation Request">
 			>
-			["id1.1.1.1"] = <
+			["id1.1.1.2"] = <
 				text = <"Requested observation link">
 				description = <"Requested observation link">
+			>
+			["id1.1.1.3"] = <
+				text = <"Request Action">
+				description = <"Request Action">
+			>
+			["id1.1.1.4"] = <
+				text = <"Requested observable">
+				description = <"Requested observable">
 			>
 		>
 	>
