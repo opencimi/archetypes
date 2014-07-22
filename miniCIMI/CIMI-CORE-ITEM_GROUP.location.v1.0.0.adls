@@ -220,30 +220,30 @@ terminology
 			>
 		>
 	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1"] = <[SNOMED-CT::129264002]>
-				["id2"] = <[SNOMED-CT::138875005]>
-				["id3"] = <[SNOMED-CT::138875005]>
-				["id4"] = <[SNOMED-CT::138875005]>
-				["id5"] = <[SNOMED-CT::129264002]>
-				["id6"] = <[SNOMED-CT::129264002]>
-				["id7"] = <[SNOMED-CT::364713004]>
-				["id8"] = <[SNOMED-CT::138875005]>
-				["id9"] = <[SNOMED-CT::138875005]>
-				["id10"] = <[SNOMED-CT::138875005]>
-				["id11"] = <[SNOMED-CT::138875005]>
-				["id12"] = <[SNOMED-CT::138875005]>
-				["id13"] = <[SNOMED-CT::138875005]>
-				["id14"] = <[SNOMED-CT::138875005]>
-				["id15"] = <[SNOMED-CT::138875005]>
-				["id16"] = <[SNOMED-CT::138875005]>
-				["id20"] = <[SNOMED-CT::138875005]>
-				["id21"] = <[SNOMED-CT::138875005]>
-				["id22"] = <[SNOMED-CT::138875005]>
-				["id23"] = <[SNOMED-CT::138875005]>
-				["id17"] = <[SNOMED-CT::138875005]>
-			>
-		>
-	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1"] = <[SNOMED-CT::129264002]>
+--				["id2"] = <[SNOMED-CT::138875005]>
+--				["id3"] = <[SNOMED-CT::138875005]>
+--				["id4"] = <[SNOMED-CT::138875005]>
+--				["id5"] = <[SNOMED-CT::129264002]>
+--				["id6"] = <[SNOMED-CT::129264002]>
+--				["id7"] = <[SNOMED-CT::364713004]>
+--				["id8"] = <[SNOMED-CT::138875005]>
+--				["id9"] = <[SNOMED-CT::138875005]>
+--				["id10"] = <[SNOMED-CT::138875005]>
+--				["id11"] = <[SNOMED-CT::138875005]>
+--				["id12"] = <[SNOMED-CT::138875005]>
+--				["id13"] = <[SNOMED-CT::138875005]>
+--				["id14"] = <[SNOMED-CT::138875005]>
+--				["id15"] = <[SNOMED-CT::138875005]>
+--				["id16"] = <[SNOMED-CT::138875005]>
+--				["id20"] = <[SNOMED-CT::138875005]>
+--				["id21"] = <[SNOMED-CT::138875005]>
+--				["id22"] = <[SNOMED-CT::138875005]>
+--				["id23"] = <[SNOMED-CT::138875005]>
+--				["id17"] = <[SNOMED-CT::138875005]>
+--			>
+--		>
+--	>

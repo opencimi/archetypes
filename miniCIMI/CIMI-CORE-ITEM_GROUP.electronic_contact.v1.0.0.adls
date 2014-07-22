@@ -113,18 +113,18 @@ terminology
 			>
 		>
 	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1"] = <[SNOMED-CT::138875005]>
-				["id2"] = <[SNOMED-CT::138875005]>
-				["id3"] = <[SNOMED-CT::138875005]>
-				["id4"] = <[SNOMED-CT::138875005]>
-				["id5"] = <[SNOMED-CT::138875005]>
-				["id6"] = <[SNOMED-CT::138875005]>
-				["id7"] = <[SNOMED-CT::138875005]>
-				["id8"] = <[SNOMED-CT::138875005]>
-				["id9"] = <[SNOMED-CT::138875005]>
-			>
-		>
-	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1"] = <[SNOMED-CT::138875005]>
+--				["id2"] = <[SNOMED-CT::138875005]>
+--				["id3"] = <[SNOMED-CT::138875005]>
+--				["id4"] = <[SNOMED-CT::138875005]>
+--				["id5"] = <[SNOMED-CT::138875005]>
+--				["id6"] = <[SNOMED-CT::138875005]>
+--				["id7"] = <[SNOMED-CT::138875005]>
+--				["id8"] = <[SNOMED-CT::138875005]>
+--				["id9"] = <[SNOMED-CT::138875005]>
+--			>
+--		>
+--	>

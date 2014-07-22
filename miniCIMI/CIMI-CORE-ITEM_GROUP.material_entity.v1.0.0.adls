@@ -68,13 +68,13 @@ terminology
 			>
 		>
 	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1"] = <[SNOMED-CT::123037004]>
-				["id2"] = <[SNOMED-CT::423901009]>
-				["id3"] = <[SNOMED-CT::123037004]>
-				["id4"] = <[SNOMED-CT::123037004]>
-			>
-		>
-	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1"] = <[SNOMED-CT::123037004]>
+--				["id2"] = <[SNOMED-CT::423901009]>
+--				["id3"] = <[SNOMED-CT::123037004]>
+--				["id4"] = <[SNOMED-CT::123037004]>
+--			>
+--		>
+--	>

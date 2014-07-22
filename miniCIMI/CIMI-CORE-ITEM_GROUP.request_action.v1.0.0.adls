@@ -126,19 +126,19 @@ terminology
 			>
 		>
 	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1.1"] = <[SNOMED-CT::308539001]>
-				["id1.2"] = <[SNOMED-CT::308539001]>
-				["id1.3"] = <[SNOMED-CT::423901009]>
-				["id1.4"] = <[SNOMED-CT::252129004]>
-				["id1.5"] = <[SNOMED-CT::252131008]>
-				["id1.6"] = <[SNOMED-CT::442371002]>
-				["id1.7"] = <[SNOMED-CT::138875005]>
-				["id1.8"] = <[SNOMED-CT::125676002]>
-				["id1.9"] = <[SNOMED-CT::308916002]>
-				["id1.10"] = <[SNOMED-CT::308916002]>
-			>
-		>
-	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1.1"] = <[SNOMED-CT::308539001]>
+--				["id1.2"] = <[SNOMED-CT::308539001]>
+--				["id1.3"] = <[SNOMED-CT::423901009]>
+--				["id1.4"] = <[SNOMED-CT::252129004]>
+--				["id1.5"] = <[SNOMED-CT::252131008]>
+--				["id1.6"] = <[SNOMED-CT::442371002]>
+--				["id1.7"] = <[SNOMED-CT::138875005]>
+--				["id1.8"] = <[SNOMED-CT::125676002]>
+--				["id1.9"] = <[SNOMED-CT::308916002]>
+--				["id1.10"] = <[SNOMED-CT::308916002]>
+--			>
+--		>
+--	>

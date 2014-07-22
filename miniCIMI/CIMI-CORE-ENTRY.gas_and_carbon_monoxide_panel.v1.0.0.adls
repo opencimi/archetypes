@@ -54,10 +54,10 @@ terminology
 			>
 		>
 	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1.1.1.1"] = <[SNOMED-CT::441742003]>
-			>
-		>
-	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1.1.1.1"] = <[SNOMED-CT::441742003]>
+--			>
+--		>
+--	>
