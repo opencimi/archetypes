@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-COMPOSITION.laboratory_results_report.v2.0.0
+	CIMI-CORE-ITEM_GROUP.laboratory_results_report.v2.0.0
 
 specialize
-	CIMI-CORE-COMPOSITION.clinical_report.v2.0.0
+	CIMI-CORE-ITEM_GROUP.clinical_document.v2
 
 llanguage
   original_language = <[ISO_639-1::en]>
@@ -27,14 +27,14 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	COMPOSITION[id1.1] matches { -- Laboratory Results Report
-		content matches {
-			use_archetype ENTRY [CIMI-CORE-ENTRY.laboratory_report_header.v3] -- Laboratory report header
-			use_archetype ENTRY [CIMI-CORE-ENTRY.patient_encounter_summary.v2] -- Patient encounter summary
-			use_archetype ENTRY [CIMI-CORE-ENTRY.laboratory_test_request_summary.v2] -- Laboratory test request summary
+	ITEM_GROUP[id1.1] matches { -- Laboratory Results Report
+		item matches {
+			use_archetype ITEM_GROUP [id1.3, CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3] -- Laboratory report header
+			use_archetype ITEM_GROUP [id1.4, CIMI-CORE-ITEM_GROUP.patient_encounter_summary.v2] -- Patient encounter summary
+			use_archetype ITEM_GROUP [id1.5, CIMI-CORE-ITEM_GROUP.laboratory_test_request_summary.v2] -- Laboratory test request summary
 		}
 		link matches {
-			LINK[id1.1] occurrences matches {0..*} -- Patient encounter
+			LINK[id1.2] occurrences matches {0..*} -- Patient encounter
 		}
 	}
 
@@ -45,17 +45,29 @@ terminology
 				text = <"Laboratory Results Report">
 				description = <"Laboratory Results Report">
 			>
-			["id1.1"] = <
+			["id1.2"] = <
 				text = <"Patient encounter">
 				description = <"Patient encounter">
 			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1.1"] = <[SNOMED-CT::371528001]>
-				["id1.1"] = <[SNOMED-CT::308335008]>
+			["id1.3"] = <
+				text = <"Laboratory Report Header">
+				description = <"Laboratory Report Header">
+			>
+			["id1.4"] = <
+				text = <"Patient Encounter Summary">
+				description = <"Patient Encounter Summary">
+			>
+			["id1.5"] = <
+				text = <"Laboratory Test Request Summary">
+				description = <"Laboratory Test Request Summary">
 			>
 		>
 	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1.1"] = <[SNOMED-CT::371528001]>
+--				["id1.2"] = <[SNOMED-CT::308335008]>
+--			>
+--		>
+--	>

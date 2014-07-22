@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-COMPOSITION.clinical_report.v2.0.0
+	CIMI-CORE-ITEM_GROUP.clinical_document.v2.0.0
 
 language
   original_language = <[ISO_639-1::en]>
@@ -14,9 +14,9 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'clinical report' concept">
-      use = <"Use for clinical report.">
-      keywords = <"clinical report", ...>
+      purpose = <"Archetype for CIMI 'clinical document' concept">
+      use = <"Use for clinical document.">
+      keywords = <"clinical document", ...>
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
@@ -24,9 +24,9 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	COMPOSITION[id1] matches { -- Clinical Report
-		content matches {
-			use_archetype ENTRY [CIMI-CORE-ENTRY.report_header.v1] -- Report header
+	ITEM_GROUP[id1] matches { -- Clinical Document
+		item matches {
+			use_archetype ITEM_GROUP [id3, CIMI-CORE-ITEM_GROUP.report_header.v1] -- Report header
 		}
 		participation matches {
 			PARTICIPATION[id2] occurrences matches {0..1} -- Subject of Care
@@ -44,13 +44,17 @@ terminology
 				text = <"Subject of Care">
 				description = <"Subject of Care">
 			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1"] = <[SNOMED-CT::371524004]>
-				["id2"] = <[SNOMED-CT::125676002]>
+			["id3"] = <
+				text = <"Report Header">
+				description = <"Report Header">
 			>
 		>
 	>
+--	term_bindings = <
+--		["SNOMED-CT"] = <
+--			items = <
+--				["id1"] = <[SNOMED-CT::371524004]>
+--				["id2"] = <[SNOMED-CT::125676002]>
+--			>
+--		>
+--	>
