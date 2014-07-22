@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.anatomical_location.v2.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.material_entity.v1.0.0
+	CIMI-CORE-ITEM_GROUP.material_entity.v1
 
 language
   original_language = <[ISO_639-1::en]>

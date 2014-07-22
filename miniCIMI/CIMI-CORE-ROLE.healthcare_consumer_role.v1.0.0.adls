@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ROLE.healthcare_consumer_role.v1.0.0
 
 specialize
-	CIMI-CORE-ROLE.person_role.v1.0.0
+	CIMI-CORE-ROLE.person_role.v1
 
 language
   original_language = <[ISO_639-1::en]>
