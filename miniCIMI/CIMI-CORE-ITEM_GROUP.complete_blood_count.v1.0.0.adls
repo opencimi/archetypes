@@ -30,9 +30,7 @@ definition
   ITEM_GROUP[id1.1.1] matches {  -- Complete Blood Count
     /item matches {
       ELEMENT[id4] occurrences matches {0} 
-	use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
-     use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.complete_blood_count_automated.v1]
-      use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.complete_blood_count_manual.v1]
+	    use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
     }
   }
 
@@ -43,13 +41,9 @@ terminology
         text = <"Complete Blood Count">
         description = <"Complete Blood Count">
       >
-      ["id0.1.1"] = <
-        text = <"CBC automated">
-        description = <"CBC automated">
-      >
-      ["id0.1.2"] = <
-        text = <"CBC manual">
-        description = <"CBC manual">
+      ["id4"] = <
+        text = <"Some Element">
+        description = <"Some Element">
       >
     >
   >
