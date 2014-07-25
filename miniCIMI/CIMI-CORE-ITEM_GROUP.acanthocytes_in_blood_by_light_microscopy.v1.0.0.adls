@@ -45,15 +45,15 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
+			["id1.1.1.1.1"] = <
 				text = <"Acanthocytes in blood by light microscopy">
 				description = <"Acanthocytes in blood by light microscopy">
 			>
-			["id4"] = <
+			["id1.1.1.1.2"] = <
 				text = <"Name">
 				description = <"Name">
 			>
-			["id6"] = <
+			["id1.1.1.1.4"] = <
 				text = <"Result value">
 				description = <"Result value">
 			>
@@ -62,8 +62,8 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id4"] = <http://snomedct.info/id/138875005>
-				["id6"] = <http://snomedct.info/id/138875005>
+				["id1.1.1.1.2"] = <http://snomedct.info/id/138875005>
+				["id1.1.1.1.4"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>
