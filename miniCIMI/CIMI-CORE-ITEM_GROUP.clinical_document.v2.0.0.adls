@@ -22,14 +22,17 @@ description
   >
   lifecycle_state = <"unmanaged">
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+  other_details = <
+      ["model_level"] = <"reference">
+    >
 
 definition
-	ITEM_GROUP[id1] matches { -- Clinical Document
+	ITEM_GROUP[id1] matches { -- Clinical document
 		item matches {
 			use_archetype ITEM_GROUP [id3, CIMI-CORE-ITEM_GROUP.report_header.v1] -- Report header
 		}
 		participation matches {
-			PARTICIPATION[id2] occurrences matches {0..1} -- Subject of Care
+			PARTICIPATION[id2] occurrences matches {0..1} -- Subject of care
 		}
 	}
 
@@ -37,16 +40,16 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1"] = <
-				text = <"Clinical Report">
-				description = <"Clinical Report">
+				text = <"Clinical report">
+				description = <"Clinical report">
 			>
 			["id2"] = <
-				text = <"Subject of Care">
-				description = <"Subject of Care">
+				text = <"Subject of care">
+				description = <"Subject of care">
 			>
 			["id3"] = <
-				text = <"Report Header">
-				description = <"Report Header">
+				text = <"Report header">
+				description = <"Report header">
 			>
 		>
 	>

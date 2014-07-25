@@ -27,9 +27,10 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1] matches {  -- Laboratory Panel
+  ITEM_GROUP[id1.1.1.1] matches {  -- Laboratory panel
     /item matches {
       use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
+      use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1]
     }
   }
 
@@ -37,12 +38,16 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1"] = <
-        text = <"Laboratory Panel">
-        description = <"Laboratory Panel">
+        text = <"Laboratory panel">
+        description = <"Laboratory panel">
       >
       ["id0.1.1.1"] = <
         text = <"Laboratory test">
         description = <"Laboratory test">
+      >
+      ["id0.1.2.1"] = <
+        text = <"Laboratory panel">
+        description = <"Laboratory panel">
       >
     >
   >

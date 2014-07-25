@@ -1,9 +1,9 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ITEM_GROUP.complete_blood_count_result_group.v1.0.0
+  CIMI-CORE-ITEM_GROUP.automated_diff.v1.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.cluster.v1
-	
+  CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
 language
   original_language = <[ISO_639-1::en]>
 
@@ -17,9 +17,9 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'complete blood count result group' concept">
-      use = <"Use for complete blood count result group.">
-      keywords = <"complete blood count result group", ...>
+      purpose = <"Archetype for CIMI 'automated diff' concept">
+      use = <"Use as automated diff.">
+      keywords = <"automated diff", ...>
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
@@ -27,18 +27,14 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1] matches { -- Complete blood count result group
-		item matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.complete_blood_count_automated_result_group.v1] -- Complete blood count by automated count
-		}
-	}
+  ITEM_GROUP[id1.1.1.1.1]  -- Automated diff
 
 terminology
-	term_definitions = <
-		["en"] = <
-			["id1"] = <
-				text = <"Complete blood count result group">
-				description = <"Complete blood count result group">
-			>
-		>
-	>
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <
+        text = <"Automated diff">
+        description = <"Automated diff">
+      >
+    >
+  >

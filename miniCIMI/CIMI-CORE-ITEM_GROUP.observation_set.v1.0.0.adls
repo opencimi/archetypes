@@ -27,10 +27,10 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1] matches {  -- Observation Set
+  ITEM_GROUP[id1.1.1] matches {  -- Observation set
     /item matches {
       use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1]
-      ELEMENT[id4] occurrences matches {0}   
+      use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1]
     }
   }
 
@@ -38,12 +38,16 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1"] = <
-        text = <"Observation Set">
-        description = <"Observation Set">
+        text = <"Observation set">
+        description = <"Observation set">
       >
       ["id0.1.1"] = <
         text = <"Observation">
         description = <"Observation">
+      >
+      ["id0.1.2"] = <
+        text = <"Observation set">
+        description = <"Observation set">
       >
     >
   >
