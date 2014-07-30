@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.laboratory_test.v1
+CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
   original_language = <[ISO_639-1::en]>
@@ -27,16 +27,16 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1] matches { -- Carbon dioxide partial pressure in blood
+	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Carbon dioxide partial pressure in blood
 		item matches {
-			ELEMENT[id1.1.1] occurrences matches {1} matches { -- Name
+			ELEMENT[id4.0.2.1.0.1] occurrences matches {1} matches { -- Name
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.17.1.0.1]
 				}
 			}
-			ELEMENT[id1.1.2] occurrences matches {1} matches { -- Result value
+			ELEMENT[id4.0.7.0.0.1] occurrences matches {1} matches { -- Result value
 				value matches {
-					DATA_VALUE matches {*}
+					TEXT[id4.0.22.0.0.1]
 				}
 			}
 		}
@@ -45,15 +45,15 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
+			["id1.1.1.1.1.1"] = <
 				text = <"Carbon dioxide partial pressure in blood">
 				description = <"Carbon dioxide partial pressure in blood">
 			>
-			["id1.1.1"] = <
+			["id4.0.2.1.0.1"] = <
 				text = <"Name">
 				description = <"Name">
 			>
-			["id1.1.2"] = <
+			["id4.0.7.0.0.1"] = <
 				text = <"Result value">
 				description = <"Result value">
 			>
@@ -62,8 +62,8 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
+				["id4.0.2.1.0.1"] = <http://snomedct.info/id/138875005>
+				["id4.0.7.0.0.1"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

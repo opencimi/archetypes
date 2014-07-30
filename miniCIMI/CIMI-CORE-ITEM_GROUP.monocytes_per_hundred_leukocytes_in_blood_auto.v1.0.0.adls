@@ -2,9 +2,8 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.monocytes_per_hundred_leukocytes_in_blood_auto.v1.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.laboratory_test.v1
+	CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 	
-language
 language
   original_language = <[ISO_639-1::en]>
 
@@ -28,36 +27,41 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1] matches { -- Monocytes per hundred leukocytes in blood by automated count
+	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Monocytes per hundred leukocytes in blood by automated count
 		item matches {
-			ELEMENT[id4] occurrences matches {1} matches { -- Name
+			ELEMENT[id4.0.2.1.0.1] occurrences matches {1} matches { -- Name
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.17.1.0.1]
 				}
 			}
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.platelet_adequacy_in_blood_by_light_microscopy.v1] -- Platelet adequacy in blood by light microscopy
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
+			use_archetype ITEM_GROUP [id0.0.0.0.0.1, CIMI-CORE-ITEM_GROUP.platelet_adequacy_in_blood_by_light_microscopy.v1] -- Platelet adequacy in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
+			use_archetype ITEM_GROUP [id0.0.0.0.0.3, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
+			["id1.1.1.1.1.1"] = <
 				text = <"Monocytes per hundred leukocytes in blood by automated count">
 				description = <"Monocytes per hundred leukocytes in blood by automated count">
 			>
-			["id4"] = <
+			["id4.0.2.1.0.1"] = <
 				text = <"Name">
 				description = <"Name">
 			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id4"] = <http://snomedct.info/id/364712009>
+			["id0.0.0.0.0.1"] = <
+				text = <"Platelet adequacy in blood">
+				description = <"Platelet adequacy in blood">
+			>
+			["id0.0.0.0.0.2"] = <
+				text = <"Erythrocyte morphology panel">
+				description = <"Erythrocyte morphology panel">
+			>
+			["id0.0.0.0.0.3"] = <
+				text = <"Leukocyte morphology panel">
+				description = <"Leukocyte morphology panel">
 			>
 		>
 	>

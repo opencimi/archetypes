@@ -27,88 +27,88 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Encounter Action
-		/item matches {
-			ELEMENT[id1.1] occurrences matches {0..*} matches { -- Encounter identifier
+	ITEM_GROUP[id1.1.1] matches { -- Encounter action
+		item matches {
+			ELEMENT[id2.2.1] matches { -- Encounter identifier
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id2.17.1]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Encounter datetime
+			ELEMENT[id2.3.1] matches { -- Encounter datetime
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.18.1]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Encounter datetime range
+			ELEMENT[id2.4.1]  matches { -- Encounter datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Encounter duration
+			ELEMENT[id2.5.1] matches { -- Encounter duration
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.20.1]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Patient class
+			ELEMENT[id0.0.1] matches { -- Patient class
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.5]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Hospital service
+			ELEMENT[id0.0.2] matches { -- Hospital service
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.6]
 				}
 			}
 		}
 		link matches {
-			LINK[id1.7] occurrences matches {0..1} -- Encounter activity
+			LINK[id2.13.1] -- Encounter activity
 		}
 		participation matches {
-			PARTICIPATION[id1.8] occurrences matches {0..*} -- Healthcare provider
-			PARTICIPATION[id1.9] occurrences matches {0..*} -- Healthcare organization
+			PARTICIPATION[id0.0.3] occurrences matches {0..*} -- Healthcare provider
+			PARTICIPATION[id0.0.4] occurrences matches {0..*} -- Healthcare organization
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
-				text = <"Encounter Action">
-				description = <"Encounter Action">
+			["id1.1.1"] = <
+				text = <"Encounter action">
+				description = <"Encounter action">
 			>
-			["id1.1"] = <
+			["id2.2.1"] = <
 				text = <"Encounter identifier">
 				description = <"Encounter identifier">
 			>
-			["id1.2"] = <
+			["id2.3.1"] = <
 				text = <"Encounter datetime">
 				description = <"Encounter datetime">
 			>
-			["id1.3"] = <
+			["id2.4.1"] = <
 				text = <"Encounter datetime range">
 				description = <"Encounter datetime range">
 			>
-			["id1.4"] = <
+			["id2.5.1"] = <
 				text = <"Encounter duration">
 				description = <"Encounter duration">
 			>
-			["id1.5"] = <
+			["id0.0.1"] = <
 				text = <"Patient class">
 				description = <"Patient class">
 			>
-			["id1.6"] = <
+			["id0.0.2"] = <
 				text = <"Hospital service">
 				description = <"Hospital service">
 			>
-			["id1.7"] = <
+			["id2.13.1"] = <
 				text = <"Encounter activity">
 				description = <"Encounter activity">
 			>
-			["id1.8"] = <
+			["id0.0.3"] = <
 				text = <"Healthcare provider">
 				description = <"Healthcare provider">
 			>
-			["id1.9"] = <
+			["id0.0.4"] = <
 				text = <"Healthcare organization">
 				description = <"Healthcare organization">
 			>
@@ -117,16 +117,16 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/308335008>
-				["id1.1"] = <http://snomedct.info/id/423901009>
-				["id1.2"] = <http://snomedct.info/id/364713004>
-				["id1.3"] = <http://snomedct.info/id/364713004>
-				["id1.4"] = <http://snomedct.info/id/364713004>
-				["id1.5"] = <http://snomedct.info/id/129264002>
-				["id1.6"] = <http://snomedct.info/id/129264002>
-				["id1.7"] = <http://snomedct.info/id/364713004>
-				["id1.8"] = <http://snomedct.info/id/48176007>
-				["id1.9"] = <http://snomedct.info/id/48176007>
+				["id1.1.1"] = <http://snomedct.info/id/308335008>
+				["id2.2.1"] = <http://snomedct.info/id/423901009>
+				["id2.3.1"] = <http://snomedct.info/id/364713004>
+				["id2.4.1"] = <http://snomedct.info/id/364713004>
+				["id2.5.1"] = <http://snomedct.info/id/364713004>
+				["id0.0.1"] = <http://snomedct.info/id/129264002>
+				["id0.0.2"] = <http://snomedct.info/id/129264002>
+				["id2.13.1"] = <http://snomedct.info/id/364713004>
+				["id0.0.3"] = <http://snomedct.info/id/48176007>
+				["id0.0.4"] = <http://snomedct.info/id/48176007>
 			>
 		>
 	>

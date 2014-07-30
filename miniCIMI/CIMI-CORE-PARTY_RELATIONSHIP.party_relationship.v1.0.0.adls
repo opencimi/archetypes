@@ -24,14 +24,14 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	PARTY_RELATIONSHIP[id1] -- Relationship
+	PARTY_RELATIONSHIP[id1] -- Party relationship
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1"] = <
-				text = <"Relationship">
-				description = <"Relationship">
+				text = <"Party relationship">
+				description = <"Party relationship">
 			>
 		>
 	>

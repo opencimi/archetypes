@@ -27,16 +27,16 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1] matches { -- Laboratory Report Header
-		/data matches {
-			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Report Type
+	ITEM_GROUP[id1.1.1.1] matches { -- Laboratory report header
+		item matches {
+			ELEMENT[id4.0.5.1] matches { -- Report type
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.15.1]
 				}
 			}
-			ELEMENT[id1.1.2] occurrences matches {0..*} matches { -- Diagnosis
+			ELEMENT[id4.0.6.1] matches { -- Diagnosis
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.16.1]
 				}
 			}
 		}
@@ -45,15 +45,15 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Laboratory Report Header">
-				description = <"Laboratory Report Header">
+			["id1.1.1.1"] = <
+				text = <"Laboratory report header">
+				description = <"Laboratory report header">
 			>
-			["id1.1.1"] = <
-				text = <"Report Type">
-				description = <"Report Type">
+			["id4.0.5.1"] = <
+				text = <"Report type">
+				description = <"Report type">
 			>
-			["id1.1.2"] = <
+			["id4.0.6.1"] = <
 				text = <"Diagnosis">
 				description = <"Diagnosis">
 			>
@@ -62,8 +62,8 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1"] = <http://snomedct.info/id/364712009>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
+				["id1.1.1.1"] = <http://snomedct.info/id/364712009>
+				["id4.0.5.1"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

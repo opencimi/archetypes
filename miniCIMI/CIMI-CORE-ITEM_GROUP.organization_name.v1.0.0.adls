@@ -27,16 +27,16 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1] matches { -- Organization name
-		/item matches {
-			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Identifier
+	ITEM_GROUP[id1.1.1.1] matches { -- Organization name
+		item matches {
+			ELEMENT[id0.0.0.1] occurrences matches {0..1} matches { -- Identifier
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id0.0.0.3]
 				}
 			}
-			ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Usage
+			ELEMENT[id0.0.0.2] occurrences matches {0..1} matches { -- Usage
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.0.4]
 				}
 			}
 		}
@@ -45,15 +45,15 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
+			["id1.1.1.1"] = <
 				text = <"Organization name">
 				description = <"Organization name">
 			>
-			["id1.1.1"] = <
+			["id0.0.0.1"] = <
 				text = <"Identifier">
 				description = <"Identifier">
 			>
-			["id1.1.2"] = <
+			["id0.0.0.2"] = <
 				text = <"Usage">
 				description = <"Usage">
 			>
@@ -62,9 +62,9 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
+				["id1.1.1.1"] = <http://snomedct.info/id/138875005>
+				["id0.0.0.1"] = <http://snomedct.info/id/138875005>
+				["id0.0.0.2"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

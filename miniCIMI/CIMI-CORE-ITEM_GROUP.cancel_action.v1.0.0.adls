@@ -27,99 +27,99 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Cancel Action
-		/item matches {
-			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+	ITEM_GROUP[id1.1.1] matches { -- Cancel action
+		item matches {
+			ELEMENT[id2.1.1] matches { -- Action type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.16.1]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Cancel datetime
+			ELEMENT[id2.3.1] matches { -- Cancel datetime
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.18.1]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Cancel datetime range
+			ELEMENT[id2.4.1] matches { -- Cancel datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Cancel duration
+			ELEMENT[id2.5.1] matches { -- Cancel duration
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.20.1]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Cancel timing offset
+			ELEMENT[id2.6.1] matches { -- Cancel timing offset
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.21.1]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Cancel timing offset origin
+			ELEMENT[id2.7.1] matches { -- Cancel timing offset origin
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.22.1]
 				}
 			}
 		}
 		participation matches {
-			PARTICIPATION[id1.7] occurrences matches {0..*} -- Canceller
-			PARTICIPATION[id1.8] occurrences matches {0..1} -- Locationof subject
-			PARTICIPATION[id1.9] occurrences matches {0..1} -- Locationof canceller
+			PARTICIPATION[id2.12.1] -- Canceller
+			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Location of subject
+			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Location of canceller
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
-				text = <"Cancel Action">
-				description = <"Cancel Action">
+			["id1.1.1"] = <
+				text = <"Cancel action">
+				description = <"Cancel action">
 			>
-			["id1.1"] = <
+			["id2.1.1"] = <
 				text = <"Action type">
 				description = <"Action type">
 			>
-			["id1.2"] = <
+			["id2.3.1"] = <
 				text = <"Cancel datetime">
 				description = <"Cancel datetime">
 			>
-			["id1.3"] = <
+			["id2.4.1"] = <
 				text = <"Cancel datetime range">
 				description = <"Cancel datetime range">
 			>
-			["id1.4"] = <
+			["id2.5.1"] = <
 				text = <"Cancel duration">
 				description = <"Cancel duration">
 			>
-			["id1.5"] = <
+			["id2.6.1"] = <
 				text = <"Cancel timing offset">
 				description = <"Cancel timing offset">
 			>
-			["id1.6"] = <
+			["id2.7.1"] = <
 				text = <"Cancel timing offset origin">
 				description = <"Cancel timing offset origin">
 			>
-			["id1.7"] = <
+			["id2.12.1"] = <
 				text = <"Canceller">
 				description = <"Canceller">
 			>
-			["id1.8"] = <
-				text = <"Locationof subject">
-				description = <"Locationof subject">
+			["id2.12.2"] = <
+				text = <"Location of subject">
+				description = <"Location of subject">
 			>
-			["id1.9"] = <
-				text = <"Locationof canceller">
-				description = <"Locationof canceller">
+			["id2.12.3"] = <
+				text = <"Location of canceller">
+				description = <"Location of canceller">
 			>
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/364713004>
-				["id1.2"] = <http://snomedct.info/id/364713004>
-				["id1.3"] = <http://snomedct.info/id/48176007>
-				["id1.4"] = <http://snomedct.info/id/308916002>
-				["id1.5"] = <http://snomedct.info/id/308916002>
+				["id1.1.1"] = <http://snomedct.info/id/364713004>
+				["id2.1.1"] = <http://snomedct.info/id/364713004>
+				["id2.3.1"] = <http://snomedct.info/id/48176007>
+				["id2.4.1"] = <http://snomedct.info/id/308916002>
+				["id2.5.1"] = <http://snomedct.info/id/308916002>
 			>
 		>
 	>

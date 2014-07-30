@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
   CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.laboratory_test.v1
+  CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
   original_language = <[ISO_639-1::en]>
@@ -27,17 +27,17 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Hematocrit in Blood Automated
-    /item matches {
-	use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
-      ELEMENT[id4.0.0.0.1] occurrences matches {1} matches { -- Name
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hematocrit in blood automated
+    item matches {
+	    use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
+      ELEMENT[id4.0.2.1.0.1] occurrences matches {1} matches { -- Name
         value matches {
-          TEXT[id0.0.0.0.1] matches {*}
+          TEXT[id4.0.17.1.0.1]
         }
       }
-      ELEMENT[id4.0.0.0.2] occurrences matches {1} matches { -- Result value
+      ELEMENT[id4.0.7.0.0.1] occurrences matches {1} matches { -- Result value
         value matches {
-          QUANTITY[id0.0.0.0.2] matches {*}
+          TEXT[id4.0.22.0.0.1]
         }
       }
     }
@@ -46,15 +46,15 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <
-        text = <"Hematocrit in Blood Automated">
-        description = <"Hematocrit in Blood Automated">
+      ["id1.1.1.1.1.1"] = <
+        text = <"Hematocrit in blood automated">
+        description = <"Hematocrit in blood automated">
       >
-      ["id4.0.0.0.1"] = <
+      ["id4.0.2.1.0.1"] = <
         text = <"Name">
         description = <"Name">
       >
-      ["id4.0.0.0.2"] = <
+      ["id4.0.7.0.0.1"] = <
         text = <"Result value">
         description = <"Result value">
       >
@@ -63,8 +63,8 @@ terminology
   term_bindings = <
     ["SNOMED-CT"] = <
       items = <
-        ["id4.0.0.0.1"] = <http://snomedct.info/id/138875005>
-        ["id4.0.0.0.2"] = <http://snomedct.info/id/138875005>
+        ["id4.0.2.1.0.1"] = <http://snomedct.info/id/138875005>
+        ["id4.0.7.0.0.1"] = <http://snomedct.info/id/138875005>
       >
     >
   >

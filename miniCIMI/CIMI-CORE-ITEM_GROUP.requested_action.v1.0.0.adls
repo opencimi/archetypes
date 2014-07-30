@@ -27,96 +27,96 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Requested Action
-		/item matches {
-			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+	ITEM_GROUP[id1.1.1] matches { -- Requested action
+		item matches {
+			ELEMENT[id2.1.1] matches { -- Action type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.16.1]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Requested datetime
+			ELEMENT[id2.3.1] matches { -- Requested datetime
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.18.1]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Requested datetime range
+			ELEMENT[id2.4.1] matches { -- Requested datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Requested duration
+			ELEMENT[id2.5.1] matches { -- Requested duration
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.20.1]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Requested timing offset
+			ELEMENT[id2.6.1] matches { -- Requested timing offset
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.21.1]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Requested timing offset origin
+			ELEMENT[id2.7.1] matches { -- Requested timing offset origin
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.22.1]
 				}
 			}
-			ITEM[id1.7] occurrences matches {0..1} -- Status
-			ITEM[id1.8] occurrences matches {0..*} -- Clinical information provided
+			ELEMENT[id2.11.1] -- Status
+			ITEM[id0.0.1] occurrences matches {0..*} -- Clinical information provided
 		}
 		participation matches {
-			PARTICIPATION[id1.9] occurrences matches {0..*} -- Requested participant
-			PARTICIPATION[id1.10] occurrences matches {0..1} -- Locationof subject
-			PARTICIPATION[id1.11] occurrences matches {0..1} -- Locationof requested participant
+			PARTICIPATION[id2.12.1] -- Requested participant
+			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Locationof requested participant
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
-				text = <"Requested Action">
-				description = <"Requested Action">
+			["id1.1.1"] = <
+				text = <"Requested action">
+				description = <"Requested action">
 			>
-			["id1.1"] = <
+			["id2.1.1"] = <
 				text = <"Action type">
 				description = <"Action type">
 			>
-			["id1.2"] = <
+			["id2.3.1"] = <
 				text = <"Requested datetime">
 				description = <"Requested datetime">
 			>
-			["id1.3"] = <
+			["id2.4.1"] = <
 				text = <"Requested datetime range">
 				description = <"Requested datetime range">
 			>
-			["id1.4"] = <
+			["id2.5.1"] = <
 				text = <"Requested duration">
 				description = <"Requested duration">
 			>
-			["id1.5"] = <
+			["id2.6.1"] = <
 				text = <"Requested timing offset">
 				description = <"Requested timing offset">
 			>
-			["id1.6"] = <
+			["id2.7.1"] = <
 				text = <"Requested timing offset origin">
 				description = <"Requested timing offset origin">
 			>
-			["id1.7"] = <
+			["id2.11.1"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id1.8"] = <
+			["id0.0.1"] = <
 				text = <"Clinical information provided">
 				description = <"Clinical information provided">
 			>
-			["id1.9"] = <
+			["id2.12.1"] = <
 				text = <"Requested participant">
 				description = <"Requested participant">
 			>
-			["id1.10"] = <
+			["id2.12.2"] = <
 				text = <"Locationof subject">
 				description = <"Locationof subject">
 			>
-			["id1.11"] = <
+			["id2.12.3"] = <
 				text = <"Locationof requested participant">
 				description = <"Locationof requested participant">
 			>
@@ -125,15 +125,15 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/71388002>
-				["id1.2"] = <http://snomedct.info/id/71388002>
-				["id1.3"] = <http://snomedct.info/id/252129004>
-				["id1.4"] = <http://snomedct.info/id/252131008>
-				["id1.5"] = <http://snomedct.info/id/442371002>
-				["id1.6"] = <http://snomedct.info/id/288532009>
-				["id1.7"] = <http://snomedct.info/id/48176007>
-				["id1.8"] = <http://snomedct.info/id/308916002>
-				["id1.9"] = <http://snomedct.info/id/308916002>
+				["id2.1.1"] = <http://snomedct.info/id/71388002>
+				["id2.3.1"] = <http://snomedct.info/id/71388002>
+				["id2.4.1"] = <http://snomedct.info/id/252129004>
+				["id2.5.1"] = <http://snomedct.info/id/252131008>
+				["id2.6.1"] = <http://snomedct.info/id/442371002>
+				["id2.7.1"] = <http://snomedct.info/id/288532009>
+				["id2.11.1"] = <http://snomedct.info/id/48176007>
+				["id2.12.2"] = <http://snomedct.info/id/308916002>
+				["id2.12.3"] = <http://snomedct.info/id/308916002>
 			>
 		>
 	>

@@ -27,34 +27,38 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory Test Request Summary
-		data matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_request_action.v1] -- Request action
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.laboratory_test_observable.v1] -- Test requested
+	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Laboratory test request summary
+		item matches {
+			use_archetype ITEM_GROUP [id0.0.0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test_request_action.v1] -- Request action
+			-- use_archetype ITEM_GROUP [id0.0.0.2.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test_observable.v1] -- Test requested
 		}
 		link matches {
-			LINK[id1.1.1.0.1] occurrences matches {0..*} -- Requested laboratory test link
+			LINK[id0.0.0.3.1.1] -- Requested laboratory test link
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1"] = <
-				text = <"Laboratory Test Request Summary">
-				description = <"Laboratory Test Request Summary">
+			["id1.1.1.1.1.1"] = <
+				text = <"Laboratory test request summary">
+				description = <"Laboratory test request summary">
 			>
-			["id1.1.1.0.1"] = <
+			["id0.0.0.3.1.1"] = <
 				text = <"Requested laboratory test link">
 				description = <"Requested laboratory test link">
+			>
+			["id0.0.0.1.1.1"] = <
+				text = <"Request action">
+				description = <"Request action">
 			>
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1.1.1"] = <http://snomedct.info/id/394838008>
-				["id1.1.1.0.1"] = <http://snomedct.info/id/364712009>
+				["id1.1.1.1.1.1"] = <http://snomedct.info/id/394838008>
+				["id0.0.0.3.1.1"] = <http://snomedct.info/id/364712009>
 			>
 		>
 	>

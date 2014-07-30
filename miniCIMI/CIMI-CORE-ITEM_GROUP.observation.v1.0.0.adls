@@ -27,7 +27,90 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1] -- Observation
+  ITEM_GROUP[id1.1.1] matches {-- Observation
+    item matches {
+      ELEMENT[id4.0.1] occurrences matches {1} matches { -- Identifier
+        value matches {
+          IDENTIFIER[id4.0.16]
+        }
+      }
+      ELEMENT[id4.0.2] matches { -- Name
+        value matches {
+          TEXT[id4.0.17]
+        }
+      }
+      ELEMENT[id4.0.3] matches { -- Reason
+        value matches {
+          TEXT[id4.0.18]
+        }
+      }
+      ELEMENT[id4.0.4] matches { -- Method
+        value matches {
+          TEXT[id4.0.19]
+        }
+      }
+      ELEMENT[id4.0.5] occurrences matches {0..1} matches { -- Status
+        value matches {
+          TEXT[id4.0.20]
+        }
+      }
+      ELEMENT[id4.0.6] occurrences matches {0..1} matches { -- Priority
+        value matches {
+          TEXT[id4.0.21]
+        }
+      }
+      ELEMENT[id4.0.7] occurrences matches {0..1} matches { -- Result
+        value matches {
+          TEXT[id4.0.22]
+        }
+      }
+      ELEMENT[id4.0.8] occurrences matches {0..1} matches { -- Interpretation category
+        value matches {
+          TEXT[id4.0.23]
+        }
+      }
+      ELEMENT[id4.0.9] occurrences matches {0..1} matches { -- Normal range
+        value matches {
+          TEXT[id4.0.24]
+        }
+      }
+      ELEMENT[id4.0.10] matches { -- Reference range
+        value matches {
+          TEXT[id4.0.25]
+        }
+      }
+      ELEMENT[id4.0.11] occurrences matches {0..1} matches { -- Sequence
+        value matches {
+          TEXT[id4.0.26]
+        }
+      }
+      ELEMENT[id4.0.12] occurrences matches {0..1} matches { -- Delta flag
+        value matches {
+          TEXT[id4.0.27]
+        }
+      }
+      ELEMENT[id4.0.13] occurrences matches {0..1} matches { -- Signal flag
+        value matches {
+          TEXT[id4.0.28]
+        }
+      }
+      ELEMENT[id4.0.14] matches { -- Comment
+        value matches {
+          TEXT[id4.0.29]
+        }
+      }
+      ITEM_GROUP[id0.0.1] matches { -- Actions
+        item matches {
+          use_archetype ITEM_GROUP [id0.0.2, CIMI-CORE-ITEM_GROUP.observe_action.v1]
+          use_archetype ITEM_GROUP [id0.0.3, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
+          use_archetype ITEM_GROUP [id0.0.4, CIMI-CORE-ITEM_GROUP.approve_action.v1]
+          use_archetype ITEM_GROUP [id0.0.5, CIMI-CORE-ITEM_GROUP.report_action.v1]
+          use_archetype ITEM_GROUP [id0.0.6, CIMI-CORE-ITEM_GROUP.cancel_action.v1]
+          use_archetype ITEM_GROUP [id0.0.7, CIMI-CORE-ITEM_GROUP.update_action.v1]
+        }
+      }
+    }
+  }
 
 terminology
   term_definitions = <
@@ -35,6 +118,90 @@ terminology
       ["id1.1.1"] = <
         text = <"Observation">
         description = <"Observation">
+      >
+      ["id4.0.1"] = <
+        text = <"Identifier">
+        description = <"Identifier">
+      >
+      ["id4.0.2"] = <
+        text = <"Name">
+        description = <"Name">
+      >
+      ["id4.0.3"] = <
+        text = <"Reason">
+        description = <"Reason">
+      >
+      ["id4.0.4"] = <
+        text = <"Method">
+        description = <"Method">
+      >
+      ["id4.0.5"] = <
+        text = <"Status">
+        description = <"Status">
+      >
+      ["id4.0.6"] = <
+        text = <"Priority">
+        description = <"Priority">
+      >
+      ["id4.0.7"] = <
+        text = <"Result">
+        description = <"Result">
+      >
+      ["id4.0.8"] = <
+        text = <"Interpretation cateogry">
+        description = <"Interpretation cateogry">
+      >
+      ["id4.0.9"] = <
+        text = <"Normal range">
+        description = <"Normal range">
+      >
+      ["id4.0.10"] = <
+        text = <"Reference range">
+        description = <"Reference range">
+      >
+      ["id4.0.11"] = <
+        text = <"Sequence">
+        description = <"Sequence">
+      >
+      ["id4.0.12"] = <
+        text = <"Delta flag">
+        description = <"Delta flag">
+      >
+      ["id4.0.13"] = <
+        text = <"Signal flag">
+        description = <"Signal flag">
+      >
+      ["id4.0.14"] = <
+        text = <"Comment">
+        description = <"Comment">
+      >
+      ["id0.0.1"] = <
+        text = <"Actions">
+        description = <"Actions">
+      >
+      ["id0.0.2"] = <
+        text = <"Observe action">
+        description = <"Observe action">
+      >
+      ["id0.0.3"] = <
+        text = <"Interpret action">
+        description = <"Interpret action">
+      >
+      ["id0.0.4"] = <
+        text = <"Approve action">
+        description = <"Approve action">
+      >
+      ["id0.0.5"] = <
+        text = <"Report action">
+        description = <"Report action">
+      >
+      ["id0.0.6"] = <
+        text = <"Cancel action">
+        description = <"Cancel action">
+      >
+      ["id0.0.7"] = <
+        text = <"Update action">
+        description = <"Update action">
       >
     >
   >

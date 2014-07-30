@@ -27,37 +27,62 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1] matches { -- Gas and Carbon Monoxide Panel
-		/data matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
-			ITEM_GROUP[id1.1.1.1] occurrences matches {0..1} matches { -- Test results
-			item matches {
-				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
-				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
-				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
-				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
-				use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
-			}}
+	ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and carbon monoxide panel
+		item matches {
+			-- use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
+			ITEM_GROUP[id0.0.0.0.1] occurrences matches {0..1} matches { -- Test results
+				item matches {
+					use_archetype ITEM_GROUP [id1.1.1.1.2, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
+					use_archetype ITEM_GROUP [id1.1.1.1.3, CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
+					use_archetype ITEM_GROUP [id1.1.1.1.4, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
+					use_archetype ITEM_GROUP [id1.1.1.1.5, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
+					use_archetype ITEM_GROUP [id1.1.1.1.6, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
+				}
+			}
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1"] = <
-				text = <"Gas and Carbon Monoxide Panel">
-				description = <"Gas and Carbon Monoxide Panel">
+			["id1.1.1.1.1"] = <
+				text = <"Gas and carbon monoxide panel">
+				description = <"Gas and carbon monoxide panel">
 			>
-			["id1.1.1.1"] = <
-				text = <"Test results REF<CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_result_group>">
-				description = <"Test results REF<CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_result_group>">
+			-- ["id0.0.0.0.1"] = <
+			--	text = <"Test observable">
+			--	description = <"Test observable">
+			-- >
+			["id0.0.0.0.1"] = <
+				text = <"Test results">
+				description = <"Test results">
+			>
+			["id1.1.1.1.2"] = <
+				text = <"pH of blood">
+				description = <"pH of blood">
+			>
+			["id1.1.1.1.3"] = <
+				text = <"pH of blood adjusted to patients actual temperature">
+				description = <"pH of blood adjusted to patients actual temperature">
+			>
+			["id1.1.1.1.4"] = <
+				text = <"Carbon dioxide partial pressure in blood">
+				description = <"Carbon dioxide partial pressure in blood">
+			>
+			["id1.1.1.1.5"] = <
+				text = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
+				description = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
+			>
+			["id1.1.1.1.6"] = <
+				text = <"Oxygen partial pressure in blood">
+				description = <"Oxygen partial pressure in blood">
 			>
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1.1"] = <http://snomedct.info/id/441742003>
+				["id1.1.1.1.1"] = <http://snomedct.info/id/441742003>
 			>
 		>
 	>

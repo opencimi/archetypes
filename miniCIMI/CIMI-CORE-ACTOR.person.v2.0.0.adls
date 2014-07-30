@@ -28,7 +28,7 @@ description
 
 definition
 	ACTOR[id1.1.1] matches { -- Person
-		/details matches {
+		details matches {
 			ITEM_GROUP[id1.1.1] occurrences matches {0..*} matches { -- Identifier
 			item matches {
 				ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Use

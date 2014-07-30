@@ -27,7 +27,7 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Laboratory Results Report
+	ITEM_GROUP[id1.1] matches { -- Laboratory results report
 		item matches {
 			use_archetype ITEM_GROUP [id1.3, CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3] -- Laboratory report header
 			use_archetype ITEM_GROUP [id1.4, CIMI-CORE-ITEM_GROUP.patient_encounter_summary.v2] -- Patient encounter summary
@@ -42,8 +42,8 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1"] = <
-				text = <"Laboratory Results Report">
-				description = <"Laboratory Results Report">
+				text = <"Laboratory results report">
+				description = <"Laboratory results report">
 			>
 			["id1.2"] = <
 				text = <"Patient encounter">

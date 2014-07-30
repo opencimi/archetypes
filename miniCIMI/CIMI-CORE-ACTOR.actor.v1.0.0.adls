@@ -28,7 +28,7 @@ description
 
 definition
 	ACTOR[id1.1] matches { -- Actor
-		/details matches {
+		details matches {
 			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.actor_name.v1] -- Name
 			ELEMENT[id1.1] occurrences matches {0..*} matches { -- Language
 				value matches {

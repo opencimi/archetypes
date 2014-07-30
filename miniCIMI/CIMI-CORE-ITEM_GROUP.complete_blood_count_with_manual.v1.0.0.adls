@@ -27,22 +27,22 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches {  -- Complete Blood Count With Manual
+  ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with manual
     item matches {
-      use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_manual.v1]
+      use_archetype ITEM_GROUP[id0.0.0.1.0.1, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_manual.v1]
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <
-        text = <"Complete Blood Count With Manual">
-        description = <"Complete Blood Count With Manual">
+      ["id1.1.1.1.1.1"] = <
+        text = <"Complete blood count with manual">
+        description = <"Complete blood count with manual">
       >
-      ["id0.1.1.1.1"] = <
-        text = <"Leukocytes in blood Manual">
-        description = <"Leukocytes in blood Manual">
+      ["id0.0.0.1.0.1"] = <
+        text = <"Leukocytes in blood manual">
+        description = <"Leukocytes in blood manual">
       >
     >
   >

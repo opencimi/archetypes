@@ -28,9 +28,64 @@ description
 
 definition
   ITEM_GROUP[id1.1.1] matches {  -- Observation set
-    /item matches {
-      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1]
-      use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1]
+    item matches {
+      ELEMENT[id4.0.1] occurrences matches {1} matches { -- Identifier
+        value matches {
+          IDENTIFIER[id4.0.10]
+        }
+      }
+      ELEMENT[id4.0.2] matches { -- Name
+        value matches {
+          TEXT[id4.0.11]
+        }
+      }
+      ELEMENT[id4.0.3] matches { -- Reason
+        value matches {
+          TEXT[id4.0.12]
+        }
+      }
+      ELEMENT[id4.0.4] matches { -- Method
+        value matches {
+          TEXT[id4.0.13]
+        }
+      }
+      ELEMENT[id4.0.5] occurrences matches {0..1}matches { -- Status
+        value matches {
+          TEXT[id4.0.14]
+        }
+      }
+      ELEMENT[id4.0.6] occurrences matches {0..1} matches { -- Priority
+        value matches {
+          TEXT[id4.0.15]
+        }
+      }
+      use_archetype ITEM_GROUP[id0.0.8, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
+      use_archetype ITEM_GROUP[id0.0.9, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
+      ELEMENT[id4.0.7] occurrences matches {0..1} matches { -- Interpretation category
+        value matches {
+          TEXT[id4.0.16]
+        }
+      }
+      ELEMENT[id4.0.8] occurrences matches {0..1} matches { -- Sequence
+        value matches {
+          TEXT[id4.0.17]
+        }
+      }
+      ELEMENT[id4.0.9] matches { -- Comment
+        value matches {
+          TEXT[id4.0.18]
+        }
+      }
+      ITEM_GROUP[id0.0.1] matches { -- Actions
+        item matches {
+          use_archetype ITEM_GROUP [id0.0.2, CIMI-CORE-ITEM_GROUP.observe_action.v1]
+          use_archetype ITEM_GROUP [id0.0.3, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
+          use_archetype ITEM_GROUP [id0.0.4, CIMI-CORE-ITEM_GROUP.approve_action.v1]
+          use_archetype ITEM_GROUP [id0.0.5, CIMI-CORE-ITEM_GROUP.report_action.v1]
+          use_archetype ITEM_GROUP [id0.0.6, CIMI-CORE-ITEM_GROUP.cancel_action.v1]
+          use_archetype ITEM_GROUP [id0.0.7, CIMI-CORE-ITEM_GROUP.update_action.v1]
+        }
+      }
     }
   }
 
@@ -41,11 +96,75 @@ terminology
         text = <"Observation set">
         description = <"Observation set">
       >
-      ["id0.1.1"] = <
+      ["id4.0.1"] = <
+        text = <"Identifier">
+        description = <"Identifier">
+      >
+      ["id4.0.2"] = <
+        text = <"Name">
+        description = <"Name">
+      >
+      ["id4.0.3"] = <
+        text = <"Reason">
+        description = <"Reason">
+      >
+      ["id4.0.4"] = <
+        text = <"Method">
+        description = <"Method">
+      >
+      ["id4.0.5"] = <
+        text = <"Status">
+        description = <"Status">
+      >
+      ["id4.0.6"] = <
+        text = <"Priority">
+        description = <"Priority">
+      >
+      ["id4.0.7"] = <
+        text = <"Interpretation cateogry">
+        description = <"Interpretation cateogry">
+      >
+      ["id4.0.8"] = <
+        text = <"Sequence">
+        description = <"Sequence">
+      >
+      ["id4.0.9"] = <
+        text = <"Comment">
+        description = <"Comment">
+      >
+      ["id0.0.1"] = <
+        text = <"Actions">
+        description = <"Actions">
+      >
+      ["id0.0.2"] = <
+        text = <"Observe action">
+        description = <"Observe action">
+      >
+      ["id0.0.3"] = <
+        text = <"Interpret action">
+        description = <"Interpret action">
+      >
+      ["id0.0.4"] = <
+        text = <"Approve action">
+        description = <"Approve action">
+      >
+      ["id0.0.5"] = <
+        text = <"Report action">
+        description = <"Report action">
+      >
+      ["id0.0.6"] = <
+        text = <"Cancel action">
+        description = <"Cancel action">
+      >
+      ["id0.0.7"] = <
+        text = <"Update action">
+        description = <"Update action">
+      >
+      ["id0.0.8"] = <
         text = <"Observation">
         description = <"Observation">
       >
-      ["id0.1.2"] = <
+      ["id0.0.9"] = <
         text = <"Observation set">
         description = <"Observation set">
       >

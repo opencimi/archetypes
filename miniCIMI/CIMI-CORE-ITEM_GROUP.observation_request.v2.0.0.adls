@@ -27,41 +27,37 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1] matches { -- Observation Request
-		data matches {
-			use_archetype ITEM_GROUP [id1.1.1.3, CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
-			use_archetype ITEM_GROUP [id1.1.1.4, CIMI-CORE-ITEM_GROUP.observable.v1] -- Requested observable
+	ITEM_GROUP[id1.1.1.1.1] matches { -- Observation Request
+		item matches {
+			use_archetype ITEM_GROUP [id0.0.0.1.1, CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
+			-- use_archetype ITEM_GROUP [id0.0.0.2.1, CIMI-CORE-ITEM_GROUP.observation.v1] -- Request observation
 		}
 		link matches {
-			LINK[id1.1.1.2] occurrences matches {0..*} -- Requested observation link
+			LINK[id0.0.0.3.1] -- Requested observation link
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1"] = <
+			["id1.1.1.1.1"] = <
 				text = <"Observation Request">
 				description = <"Observation Request">
 			>
-			["id1.1.1.2"] = <
+			["id0.0.0.3.1"] = <
 				text = <"Requested observation link">
-				description = <"Requested observation link">
+				description = <"Requested of bservation link">
 			>
-			["id1.1.1.3"] = <
+			["id0.0.0.1.1"] = <
 				text = <"Request Action">
 				description = <"Request Action">
-			>
-			["id1.1.1.4"] = <
-				text = <"Requested observable">
-				description = <"Requested observable">
 			>
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1.1"] = <http://snomedct.info/id/363787002>
+				["id1.1.1.1.1"] = <http://snomedct.info/id/363787002>
 			>
 		>
 	>

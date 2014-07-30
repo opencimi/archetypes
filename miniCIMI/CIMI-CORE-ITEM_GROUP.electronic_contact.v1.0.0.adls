@@ -27,46 +27,46 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1] matches { -- Electronic contact
+	ITEM_GROUP[id1.1] matches { -- Electronic contact
 		item matches {
-			ELEMENT[id2] occurrences matches {0..1} matches { -- Value
+			ELEMENT[id2.1] occurrences matches {0..1} matches { -- Value
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.9]
 				}
 			}
-			ELEMENT[id3] occurrences matches {0..1} matches { -- Protocol
+			ELEMENT[id2.2] occurrences matches {0..1} matches { -- Protocol
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.10]
 				}
 			}
-			ELEMENT[id4] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id2.3] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.11]
 				}
 			}
-			ELEMENT[id5] occurrences matches {0..1} matches { -- Medium
+			ELEMENT[id2.4] occurrences matches {0..1} matches { -- Medium
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.12]
 				}
 			}
-			ELEMENT[id6] occurrences matches {0..1} matches { -- Use
+			ELEMENT[id2.5] occurrences matches {0..1} matches { -- Use
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.13]
 				}
 			}
-			ELEMENT[id7] occurrences matches {0..1} matches { -- Preferred timing
+			ELEMENT[id2.6] occurrences matches {0..1} matches { -- Preferred timing
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.14]
 				}
 			}
-			ELEMENT[id8] occurrences matches {0..1} matches { -- Datetime range
+			ELEMENT[id2.7] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.15]
 				}
 			}
-			ELEMENT[id9] occurrences matches {0..1} matches { -- Preference indicator
+			ELEMENT[id2.8] occurrences matches {0..1} matches { -- Preference indicator
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.16]
 				}
 			}
 		}
@@ -75,39 +75,39 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
+			["id1.1"] = <
 				text = <"Electronic contact">
 				description = <"Electronic contact">
 			>
-			["id2"] = <
+			["id2.1"] = <
 				text = <"Value">
 				description = <"Value">
 			>
-			["id3"] = <
+			["id2.2"] = <
 				text = <"Protocol">
 				description = <"Protocol">
 			>
-			["id4"] = <
+			["id2.3"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id5"] = <
+			["id2.4"] = <
 				text = <"Medium">
 				description = <"Medium">
 			>
-			["id6"] = <
+			["id2.5"] = <
 				text = <"Use">
 				description = <"Use">
 			>
-			["id7"] = <
+			["id2.6"] = <
 				text = <"Preferred timing">
 				description = <"Preferred timing">
 			>
-			["id8"] = <
+			["id2.7"] = <
 				text = <"Datetime range">
 				description = <"Datetime range">
 			>
-			["id9"] = <
+			["id2.8"] = <
 				text = <"Preference indicator">
 				description = <"Preference indicator">
 			>
@@ -116,15 +116,15 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1"] = <http://snomedct.info/id/138875005>
-				["id2"] = <http://snomedct.info/id/138875005>
-				["id3"] = <http://snomedct.info/id/138875005>
-				["id4"] = <http://snomedct.info/id/138875005>
-				["id5"] = <http://snomedct.info/id/138875005>
-				["id6"] = <http://snomedct.info/id/138875005>
-				["id7"] = <http://snomedct.info/id/138875005>
-				["id8"] = <http://snomedct.info/id/138875005>
-				["id9"] = <http://snomedct.info/id/138875005>
+				["id1.1"] = <http://snomedct.info/id/138875005>
+				["id2.1"] = <http://snomedct.info/id/138875005>
+				["id2.2"] = <http://snomedct.info/id/138875005>
+				["id2.3"] = <http://snomedct.info/id/138875005>
+				["id2.4"] = <http://snomedct.info/id/138875005>
+				["id2.5"] = <http://snomedct.info/id/138875005>
+				["id2.6"] = <http://snomedct.info/id/138875005>
+				["id2.7"] = <http://snomedct.info/id/138875005>
+				["id2.8"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

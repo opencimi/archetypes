@@ -27,14 +27,67 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1] -- Laboratory Test
+  ITEM_GROUP[id1.1.1.1] matches {-- Laboratory test
+    item matches {
+      ELEMENT[id4.0.2.1] matches { -- Test name
+        value matches {
+          TEXT[id4.0.17.1]
+        }
+      }
+      ELEMENT[id0.0.0.1] matches { -- Diagnostic service
+        value matches {
+          TEXT[id0.0.0.6]
+        }
+      }
+      use_archetype ITEM_GROUP [id0.0.0.2, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+      ELEMENT[id0.0.0.3] matches { -- Poct indicator
+        value matches {
+          CODED_TEXT[id0.0.0.7]
+        }
+      }
+      ELEMENT[id0.0.0.4] matches { -- Diagnosis
+        value matches {
+          CODED_TEXT[id0.0.0.8]
+        }
+      }
+      ELEMENT[id0.0.0.5] matches { -- Conclusions
+        value matches {
+          CODED_TEXT[id0.0.0.9]
+        }
+      }
+    }
+  }
 
 terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1"] = <
-        text = <"Laboratory Test">
-        description = <"Laboratory Test">
+        text = <"Laboratory test">
+        description = <"Laboratory test">
+      >
+      ["id4.0.2.1"] = <
+        text = <"Test name">
+        description = <"Test name">
+      >
+      ["id0.0.0.1"] = <
+        text = <"Diagnostic service">
+        description = <"Diagnostic service">
+      >
+      ["id0.0.0.2"] = <
+        text = <"Specimen">
+        description = <"Specimen">
+      >
+      ["id0.0.0.3"] = <
+        text = <"Poct indicator">
+        description = <"Poct indicator">
+      >
+      ["id0.0.0.4"] = <
+        text = <"Diagnosis">
+        description = <"Diagnosis">
+      >
+      ["id0.0.0.5"] = <
+        text = <"Conclusion">
+        description = <"Conclusion">
       >
     >
   >

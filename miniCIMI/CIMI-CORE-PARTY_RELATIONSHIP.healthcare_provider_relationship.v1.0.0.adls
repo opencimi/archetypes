@@ -29,24 +29,24 @@ description
 definition
 	PARTY_RELATIONSHIP[id1.1] matches { -- Accreditation organization
 		details matches {
-			ELEMENT[id1.1] occurrences matches {0..1} matches { -- Datetime range
+			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id1.6]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id1.7]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..*} matches { -- Identifier
+			ELEMENT[id1.4] matches { -- Identifier
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id1.8]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Priority
+			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Priority
 				value matches {
-					COUNT matches {*}
+					COUNT[id1.9]
 				}
 			}
 		}
@@ -59,19 +59,19 @@ terminology
 				text = <"Accreditation organization">
 				description = <"Accreditation organization">
 			>
-			["id1.1"] = <
+			["id1.2"] = <
 				text = <"Datetime range">
 				description = <"Datetime range">
 			>
-			["id1.2"] = <
+			["id1.3"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id1.3"] = <
+			["id1.4"] = <
 				text = <"Identifier">
 				description = <"Identifier">
 			>
-			["id1.4"] = <
+			["id1.5"] = <
 				text = <"Priority">
 				description = <"Priority">
 			>

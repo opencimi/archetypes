@@ -27,7 +27,21 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1]  -- Automated diff
+  ITEM_GROUP[id1.1.1.1.1] matches {  -- Automated diff
+    item matches {
+      ELEMENT[id4] occurrences matches {1} matches { -- Name
+        value matches {
+          TEXT matches {*}
+        }
+      }
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.neutrophils_per_hundred_leukocytes_in_blood_auto.v1] -- Neutrophils/100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_hundred_leukocytes_in_blood_auto.v1] -- Neutrophils band form/100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.granulocytes_per_hundred_leukocytes_in_blood_auto.v1] -- Granulocytes/100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.lymphocytes_per_hundred_leukocytes_in_blood_auto.v1] -- Lymphocytes/100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_hundred_in_blood_auto.v1] -- Lymphocytes variant/100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.monocytes_per_hundred_leukocytes_in_blood_auto.v1] -- Monocytes/100 leukocytes in blood by automated count
+    }
+  }
 
 terminology
   term_definitions = <

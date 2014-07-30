@@ -27,27 +27,27 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches {  -- Complete Blood Count With Automated
+  ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with automated
     item matches {
-      use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
-      use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.0.1.0.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.0.1.0.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <
-        text = <"Complete Blood Count With Automated">
-        description = <"Complete Blood Count With Automated">
+      ["id1.1.1.1.1.1"] = <
+        text = <"Complete blood count with automated">
+        description = <"Complete blood count with automated">
       >
-      ["id0.1.1.1.1"] = <
-        text = <"HCT in blood Automated">
-        description = <"HCT in blood Automated">
+      ["id0.0.0.1.0.1"] = <
+        text = <"HCT in blood automated">
+        description = <"HCT in blood automated">
       >
-      ["id0.1.1.1.2"] = <
-        text = <"Leukocytes in blood Automated">
-        description = <"Leukocytes in blood Automated">
+      ["id0.0.0.1.0.2"] = <
+        text = <"Leukocytes in blood automated">
+        description = <"Leukocytes in blood automated">
       >
     >
   >

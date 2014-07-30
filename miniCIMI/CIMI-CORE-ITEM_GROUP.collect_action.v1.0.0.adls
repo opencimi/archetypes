@@ -27,112 +27,116 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Collect Action
-		/item matches {
-			ELEMENT[id1.1] occurrences matches {1} matches { -- Action type
+	ITEM_GROUP[id1.1.1] matches { -- Collect action
+		item matches {
+			ELEMENT[id2.1.1] matches { -- Action type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.16.1]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Collection datetime
+			ELEMENT[id2.3.1] matches { -- Collection datetime
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.18.1]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Collection datetime range
+			ELEMENT[id2.4.1]  matches { -- Collection datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Collection duration
+			ELEMENT[id2.5.1] matches { -- Collection duration
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.20.1]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Collection timing offset
+			ELEMENT[id2.6.1] matches { -- Collection timing offset
 				value matches {
-					DURATION matches {*}
+					DURATION[id2.21.1]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Collection timing offset origin
+			ELEMENT[id2.7.1] matches { -- Collection timing offset origin
 				value matches {
-					DATE_TIME matches {*}
+					DATE_TIME[id2.22.1]
 				}
 			}
-			ELEMENT[id1.7] occurrences matches {0..1} matches { -- Collection description
+			ELEMENT[id0.0.1] matches { -- Collection description
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.5]
 				}
 			}
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1] -- Collection body site
-			ELEMENT[id1.8] occurrences matches {0..1} matches { -- Collection priority
+			use_archetype ITEM_GROUP [id0.0.2, CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1] -- Collection body site
+			ELEMENT[id0.0.3] matches { -- Collection priority
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.6]
 				}
 			}
 		}
 		link matches {
-			LINK[id1.9] occurrences matches {0..1} -- Collection procedure
+			LINK[id0.0.4] occurrences matches {0..1} -- Collection procedure
 		}
 		participation matches {
-			PARTICIPATION[id1.10] occurrences matches {0..*} -- Collector
-			PARTICIPATION[id1.11] occurrences matches {0..1} -- Locationof subject
-			PARTICIPATION[id1.12] occurrences matches {0..1} -- Locationof collector
+			PARTICIPATION[id2.12.1] -- Collector
+			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Locationof subject
+			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Locationof collector
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
-				text = <"Collect Action">
-				description = <"Collect Action">
+			["id1.1.1"] = <
+				text = <"Collect action">
+				description = <"Collect action">
 			>
-			["id1.1"] = <
+			["id2.1.1"] = <
 				text = <"Action type">
 				description = <"Action type">
 			>
-			["id1.2"] = <
+			["id2.3.1"] = <
 				text = <"Collection datetime">
 				description = <"Collection datetime">
 			>
-			["id1.3"] = <
+			["id2.4.1"] = <
 				text = <"Collection datetime range">
 				description = <"Collection datetime range">
 			>
-			["id1.4"] = <
+			["id2.5.1"] = <
 				text = <"Collection duration">
 				description = <"Collection duration">
 			>
-			["id1.5"] = <
+			["id2.6.1"] = <
 				text = <"Collection timing offset">
 				description = <"Collection timing offset">
 			>
-			["id1.6"] = <
+			["id2.7.1"] = <
 				text = <"Collection timing offset origin">
 				description = <"Collection timing offset origin">
 			>
-			["id1.7"] = <
+			["id0.0.1"] = <
 				text = <"Collection description">
 				description = <"Collection description">
 			>
-			["id1.8"] = <
+			["id0.0.2"] = <
+				text = <"Collection body site">
+				description = <"Collection body site">
+			>
+			["id0.0.3"] = <
 				text = <"Collection priority">
 				description = <"Collection priority">
 			>
-			["id1.9"] = <
+			["id0.0.4"] = <
 				text = <"Collection procedure">
 				description = <"Collection procedure">
 			>
-			["id1.10"] = <
+			["id2.12.1"] = <
 				text = <"Collector">
 				description = <"Collector">
 			>
-			["id1.11"] = <
+			["id2.12.2"] = <
 				text = <"Locationof subject">
 				description = <"Locationof subject">
 			>
-			["id1.12"] = <
+			["id2.12.3"] = <
 				text = <"Locationof collector">
 				description = <"Locationof collector">
 			>
@@ -141,15 +145,15 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/71388002>
-				["id1.2"] = <http://snomedct.info/id/252129004>
-				["id1.3"] = <http://snomedct.info/id/442371002>
-				["id1.4"] = <http://snomedct.info/id/138875005>
-				["id1.5"] = <http://snomedct.info/id/138875005>
-				["id1.6"] = <http://snomedct.info/id/138875005>
-				["id1.7"] = <http://snomedct.info/id/125676002>
-				["id1.8"] = <http://snomedct.info/id/308916002>
-				["id1.9"] = <http://snomedct.info/id/308916002>
+				["id2.1.1"] = <http://snomedct.info/id/71388002>
+				["id2.3.1"] = <http://snomedct.info/id/252129004>
+				["id2.4.1"] = <http://snomedct.info/id/442371002>
+				["id2.5.1"] = <http://snomedct.info/id/138875005>
+				["id2.6.1"] = <http://snomedct.info/id/138875005>
+				["id2.7.1"] = <http://snomedct.info/id/138875005>
+				["id2.12.1"] = <http://snomedct.info/id/125676002>
+				["id2.12.2"] = <http://snomedct.info/id/308916002>
+				["id2.12.3"] = <http://snomedct.info/id/308916002>
 			>
 		>
 	>

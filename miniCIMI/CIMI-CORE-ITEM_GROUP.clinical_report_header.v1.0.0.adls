@@ -27,125 +27,125 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Clinical Report Header
-		/data matches {
-			ELEMENT[id1.1] occurrences matches {0..1} matches { -- Report id
+	ITEM_GROUP[id1.1.1] matches { -- Clinical report header
+		item matches {
+			ELEMENT[id4.0.1] occurrences matches {0..1} matches { -- Report id
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id4.0.11]
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Versioned report id
+			ELEMENT[id4.0.2] occurrences matches {0..1} matches { -- Versioned report id
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id4.0.12]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Report version
+			ELEMENT[id4.0.3] occurrences matches {0..1} matches { -- Report version
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.13]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id4.0.4] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id4.0.14]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Report type
+			ELEMENT[id4.0.5] occurrences matches {0..1} matches { -- Report type
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.15]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Conclusions
+			ELEMENT[id4.0.6] occurrences matches {0..1} matches { -- Conclusions
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.16]
 				}
 			}
-			ELEMENT[id1.7] occurrences matches {0..*} matches { -- Recommendations
+			ELEMENT[id4.0.7] matches { -- Recommendations
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.17]
 				}
 			}
-			ELEMENT[id1.8] occurrences matches {0..*} matches { -- Comments
+			ELEMENT[id4.0.8] matches { -- Comments
 				value matches {
-					TEXT matches {*}
+					TEXT[id4.0.18]
 				}
 			}
-			ELEMENT[id1.9] occurrences matches {0..*} matches { -- Report representation
+			ELEMENT[id4.0.9] matches { -- Report representation
 				value matches {
-					MULTIMEDIA matches {*}
+					MULTIMEDIA[id4.0.19]
 				}
 			}
-			ELEMENT[id1.10] occurrences matches {0..1} matches { -- Report link
+			ELEMENT[id4.0.10] occurrences matches {0..1} matches { -- Report link
 				value matches {
-					URI matches {*}
+					URI_VALUE[id4.0.20]
 				}
 			}
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.author_action.v1] -- Author action
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.issue_action.v1] -- Issue action
+			use_archetype ITEM_GROUP [id0.0.1, CIMI-CORE-ITEM_GROUP.author_action.v1] -- Author action
+			use_archetype ITEM_GROUP [id0.0.2, CIMI-CORE-ITEM_GROUP.issue_action.v1] -- Issue action
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
-				text = <"Clinical Report Header">
-				description = <"Clinical Report Header">
+			["id1.1.1"] = <
+				text = <"Clinical report header">
+				description = <"Clinical report header">
 			>
-			["id1.1"] = <
+			["id4.0.1"] = <
 				text = <"Report id">
 				description = <"Report id">
 			>
-			["id1.2"] = <
+			["id4.0.2"] = <
 				text = <"Versioned report id">
 				description = <"Versioned report id">
 			>
-			["id1.3"] = <
+			["id4.0.3"] = <
 				text = <"Report version">
 				description = <"Report version">
 			>
-			["id1.4"] = <
+			["id4.0.4"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id1.5"] = <
+			["id4.0.5"] = <
 				text = <"Report type">
 				description = <"Report type">
 			>
-			["id1.6"] = <
+			["id4.0.6"] = <
 				text = <"Conclusions">
 				description = <"Conclusions">
 			>
-			["id1.7"] = <
+			["id4.0.7"] = <
 				text = <"Recommendations">
 				description = <"Recommendations">
 			>
-			["id1.8"] = <
+			["id4.0.8"] = <
 				text = <"Comments">
 				description = <"Comments">
 			>
-			["id1.9"] = <
+			["id4.0.9"] = <
 				text = <"Report representation">
 				description = <"Report representation">
 			>
-			["id1.10"] = <
+			["id4.0.10"] = <
 				text = <"Report link">
 				description = <"Report link">
+			>
+			["id0.0.1"] = <
+				text = <"Author action">
+				description = <"Author action">
+			>
+			["id0.0.2"] = <
+				text = <"Issue action">
+				description = <"Issue action">
 			>
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/423901009>
-				["id1.2"] = <http://snomedct.info/id/423901009>
-				["id1.3"] = <http://snomedct.info/id/138875005>
-				["id1.4"] = <http://snomedct.info/id/138875005>
-				["id1.5"] = <http://snomedct.info/id/138875005>
-				["id1.6"] = <http://snomedct.info/id/138875005>
-				["id1.7"] = <http://snomedct.info/id/138875005>
-				["id1.8"] = <http://snomedct.info/id/138875005>
-				["id1.9"] = <http://snomedct.info/id/138875005>
-				["id1.10"] = <http://snomedct.info/id/138875005>
+				["id1.1.1"] = <http://snomedct.info/id/423901009>
+				["id4.0.1"] = <http://snomedct.info/id/423901009>
 			>
 		>
 	>

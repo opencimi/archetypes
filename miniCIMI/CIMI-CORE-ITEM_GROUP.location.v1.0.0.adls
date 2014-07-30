@@ -27,194 +27,194 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1] matches { -- Location
+	ITEM_GROUP[id1.1] matches { -- Location
 		item matches {
-			ELEMENT[id2] occurrences matches {0..*} matches { -- Identifier
+			ELEMENT[id2.1] matches { -- Identifier
 				value matches {
-					IDENTIFIER matches {*}
+					IDENTIFIER[id2.23]
 				}
 			}
-			ELEMENT[id3] occurrences matches {0..1} matches { -- Description
+			ELEMENT[id2.2] occurrences matches {0..1} matches { -- Description
 				value matches {
-					PLAIN_TEXT matches {*}
+					PLAIN_TEXT[id2.24]
 				}
 			}
-			ITEM_GROUP[id4] occurrences matches {0..*} matches { -- Location Name
-			item matches {
-				ELEMENT[id5] occurrences matches {1} matches { -- Value
-					value matches {
-						PLAIN_TEXT matches {*}
+			ITEM_GROUP[id2.3] matches { -- Location Name
+				item matches {
+					ELEMENT[id2.4] occurrences matches {1} matches { -- Value
+						value matches {
+							PLAIN_TEXT[id2.25]
+						}
+					}
+					ELEMENT[id2.5] occurrences matches {0..1} matches { -- Use
+						value matches {
+							CODED_TEXT[id2.26]
+						}
+					}
+					ELEMENT[id2.6] occurrences matches {0..1} matches { -- Datetime range
+						value matches {
+							INTERVAL_VALUE<DATE_TIME>[id2.27]
+						}
 					}
 				}
-				ELEMENT[id6] occurrences matches {0..1} matches { -- Use
-					value matches {
-						CODED_TEXT matches {*}
-					}
-				}
-				ELEMENT[id7] occurrences matches {0..1} matches { -- Datetime range
-					value matches {
-						INTERVAL_VALUE<DATE_TIME> matches {*}
-					}
-				}
 			}
-			}
-			ELEMENT[id8] occurrences matches {0..1} matches { -- Type
+			ELEMENT[id2.7] occurrences matches {0..1} matches { -- Type
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.28]
 				}
 			}
-			ELEMENT[id9] occurrences matches {0..1} matches { -- Condition
+			ELEMENT[id2.8] occurrences matches {0..1} matches { -- Condition
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.29]
 				}
 			}
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.address.v2] -- Address
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
-			ELEMENT[id10] occurrences matches {0..1} matches { -- Datetime range
+			use_archetype ITEM_GROUP [id2.9, CIMI-CORE-ITEM_GROUP.address.v2] -- Address
+			use_archetype ITEM_GROUP [id2.10, CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
+			ELEMENT[id2.11] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME> matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.30]
 				}
 			}
-			ELEMENT[id11] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id2.12] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.31]
 				}
 			}
-			ELEMENT[id12] occurrences matches {0..1} matches { -- Mobile indicator
+			ELEMENT[id2.13] occurrences matches {0..1} matches { -- Mobile indicator
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id2.32]
 				}
 			}
-			ELEMENT[id13] occurrences matches {0..1} matches { -- Directions
+			ELEMENT[id2.14] occurrences matches {0..1} matches { -- Directions
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.33]
 				}
 			}
-			ELEMENT[id14] occurrences matches {0..1} matches { -- Position
+			ELEMENT[id2.15] occurrences matches {0..1} matches { -- Position
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.34]
 				}
 			}
-			ELEMENT[id15] occurrences matches {0..1} matches { -- Gps location
+			ELEMENT[id2.16] occurrences matches {0..1} matches { -- Gps location
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.35]
 				}
 			}
-			ELEMENT[id16] occurrences matches {0..1} matches { -- Point of care
+			ELEMENT[id2.17] occurrences matches {0..1} matches { -- Point of care
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.36]
 				}
 			}
-			ELEMENT[id20] occurrences matches {0..1} matches { -- Room
+			ELEMENT[id2.18] occurrences matches {0..1} matches { -- Room
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.37]
 				}
 			}
-			ELEMENT[id21] occurrences matches {0..1} matches { -- Bed
+			ELEMENT[id2.19] occurrences matches {0..1} matches { -- Bed
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.38]
 				}
 			}
-			ELEMENT[id22] occurrences matches {0..1} matches { -- Floor
+			ELEMENT[id2.20] occurrences matches {0..1} matches { -- Floor
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.39]
 				}
 			}
-			ELEMENT[id23] occurrences matches {0..1} matches { -- Building
+			ELEMENT[id2.21] occurrences matches {0..1} matches { -- Building
 				value matches {
-					TEXT matches {*}
+					TEXT[id2.40]
 				}
 			}
 		}
 		participation matches {
-			PARTICIPATION[id17] occurrences matches {0..1} -- Organization
+			PARTICIPATION[id2.22] occurrences matches {0..1} -- Organization
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
+			["id1.1"] = <
 				text = <"Location">
 				description = <"Location">
 			>
-			["id2"] = <
+			["id2.1"] = <
 				text = <"Identifier">
 				description = <"Identifier">
 			>
-			["id3"] = <
+			["id2.2"] = <
 				text = <"Description">
 				description = <"Description">
 			>
-			["id4"] = <
+			["id2.3"] = <
 				text = <"Location Name">
 				description = <"Location Name">
 			>
-			["id5"] = <
+			["id2.4"] = <
 				text = <"Value">
 				description = <"Value">
 			>
-			["id6"] = <
+			["id2.5"] = <
 				text = <"Use">
 				description = <"Use">
 			>
-			["id7"] = <
+			["id2.6"] = <
 				text = <"Datetime range">
 				description = <"Datetime range">
 			>
-			["id8"] = <
+			["id2.7"] = <
 				text = <"Type">
 				description = <"Type">
 			>
-			["id9"] = <
+			["id2.8"] = <
 				text = <"Condition">
 				description = <"Condition">
 			>
-			["id10"] = <
+			["id2.9"] = <
 				text = <"Datetime range">
 				description = <"Datetime range">
 			>
-			["id11"] = <
+			["id2.10"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id12"] = <
+			["id2.11"] = <
 				text = <"Mobile indicator">
 				description = <"Mobile indicator">
 			>
-			["id13"] = <
+			["id2.12"] = <
 				text = <"Directions">
 				description = <"Directions">
 			>
-			["id14"] = <
+			["id2.13"] = <
 				text = <"Position">
 				description = <"Position">
 			>
-			["id15"] = <
+			["id2.14"] = <
 				text = <"Gps location">
 				description = <"Gps location">
 			>
-			["id16"] = <
+			["id2.15"] = <
 				text = <"Point of care">
 				description = <"Point of care">
 			>
-			["id20"] = <
+			["id2.16"] = <
 				text = <"Room">
 				description = <"Room">
 			>
-			["id21"] = <
+			["id2.17"] = <
 				text = <"Bed">
 				description = <"Bed">
 			>
-			["id22"] = <
+			["id2.18"] = <
 				text = <"Floor">
 				description = <"Floor">
 			>
-			["id23"] = <
+			["id2.19"] = <
 				text = <"Building">
 				description = <"Building">
 			>
-			["id17"] = <
+			["id2.20"] = <
 				text = <"Organization">
 				description = <"Organization">
 			>
@@ -223,27 +223,27 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1"] = <http://snomedct.info/id/129264002>
-				["id2"] = <http://snomedct.info/id/138875005>
-				["id3"] = <http://snomedct.info/id/138875005>
-				["id4"] = <http://snomedct.info/id/138875005>
-				["id5"] = <http://snomedct.info/id/129264002>
-				["id6"] = <http://snomedct.info/id/129264002>
-				["id7"] = <http://snomedct.info/id/364713004>
-				["id8"] = <http://snomedct.info/id/138875005>
-				["id9"] = <http://snomedct.info/id/138875005>
-				["id10"] = <http://snomedct.info/id/138875005>
-				["id11"] = <http://snomedct.info/id/138875005>
-				["id12"] = <http://snomedct.info/id/138875005>
-				["id13"] = <http://snomedct.info/id/138875005>
-				["id14"] = <http://snomedct.info/id/138875005>
-				["id15"] = <http://snomedct.info/id/138875005>
-				["id16"] = <http://snomedct.info/id/138875005>
-				["id20"] = <http://snomedct.info/id/138875005>
-				["id21"] = <http://snomedct.info/id/138875005>
-				["id22"] = <http://snomedct.info/id/138875005>
-				["id23"] = <http://snomedct.info/id/138875005>
-				["id17"] = <http://snomedct.info/id/138875005>
+				["id1.1"] = <http://snomedct.info/id/129264002>
+				["id2.1"] = <http://snomedct.info/id/138875005>
+				["id2.2"] = <http://snomedct.info/id/138875005>
+				["id2.3"] = <http://snomedct.info/id/138875005>
+				["id2.4"] = <http://snomedct.info/id/129264002>
+				["id2.5"] = <http://snomedct.info/id/129264002>
+				["id2.6"] = <http://snomedct.info/id/364713004>
+				["id2.7"] = <http://snomedct.info/id/138875005>
+				["id2.8"] = <http://snomedct.info/id/138875005>
+				["id2.9"] = <http://snomedct.info/id/138875005>
+				["id2.10"] = <http://snomedct.info/id/138875005>
+				["id2.11"] = <http://snomedct.info/id/138875005>
+				["id2.12"] = <http://snomedct.info/id/138875005>
+				["id2.13"] = <http://snomedct.info/id/138875005>
+				["id2.14"] = <http://snomedct.info/id/138875005>
+				["id2.15"] = <http://snomedct.info/id/138875005>
+				["id2.16"] = <http://snomedct.info/id/138875005>
+				["id2.17"] = <http://snomedct.info/id/138875005>
+				["id2.18"] = <http://snomedct.info/id/138875005>
+				["id2.19"] = <http://snomedct.info/id/138875005>
+				["id2.20"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

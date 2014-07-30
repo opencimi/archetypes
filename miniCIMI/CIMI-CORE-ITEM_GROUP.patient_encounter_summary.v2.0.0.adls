@@ -27,25 +27,25 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1] matches { -- Patient Encounter Summary
+	ITEM_GROUP[id1.1.1.1] matches { -- Patient encounter summary
 		participation matches {
-			PARTICIPATION[id1.1.1] occurrences matches {0..1} -- Subject of care
-			PARTICIPATION[id1.1.2] occurrences matches {0..1} -- Information subject
+			PARTICIPATION[id2.0.1.1] -- Subject of care
+			PARTICIPATION[id3.0.1.1] -- Information subject
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Patient Encounter Summary">
-				description = <"Patient Encounter Summary">
+			["id1.1.1.1"] = <
+				text = <"Patient encounter summary">
+				description = <"Patient encounter summary">
 			>
-			["id1.1.1"] = <
+			["id2.0.1.1"] = <
 				text = <"Subject of care">
 				description = <"Subject of care">
 			>
-			["id1.1.2"] = <
+			["id3.0.1.1"] = <
 				text = <"Information subject">
 				description = <"Information subject">
 			>
@@ -54,9 +54,9 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1"] = <http://snomedct.info/id/308335008>
-				["id1.1.1"] = <http://snomedct.info/id/125676002>
-				["id1.1.2"] = <http://snomedct.info/id/125676002>
+				["id1.1.1.1"] = <http://snomedct.info/id/308335008>
+				["id2.0.1.1"] = <http://snomedct.info/id/125676002>
+				["id3.0.1.1"] = <http://snomedct.info/id/125676002>
 			>
 		>
 	>

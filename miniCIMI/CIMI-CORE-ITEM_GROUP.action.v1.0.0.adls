@@ -29,57 +29,57 @@ description
 definition
 	ITEM_GROUP[id1.1] matches { -- Action
 		item matches {
-			ELEMENT[id1.2] occurrences matches {1} matches { -- Action type
+			ELEMENT[id2.1] occurrences matches {1} matches { -- Action type
 				value matches {
-					CODED_TEXT[id1.17] matches {*}
+					CODED_TEXT[id2.16]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..*} matches { -- Identifier
+			ELEMENT[id2.2] matches { -- Identifier
 				value matches {
-					IDENTIFIER[id1.18] matches {*}
+					IDENTIFIER[id2.17]
 				}
 			}
-			ELEMENT[id1.4] occurrences matches {0..1} matches { -- Datetime
+			ELEMENT[id2.3] occurrences matches {0..1} matches { -- Datetime
 				value matches {
-					DATE_TIME[id1.19] matches {*}
+					DATE_TIME[id2.18]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Datetime range
+			ELEMENT[id2.4] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id1.20] matches {*}
+					INTERVAL_VALUE<DATE_TIME>[id2.19]
 				}
 			}
-			ELEMENT[id1.6] occurrences matches {0..1} matches { -- Duration
+			ELEMENT[id2.5] occurrences matches {0..1} matches { -- Duration
 				value matches {
-					DURATION[id1.21] matches {*}
+					DURATION[id2.20]
 				}
 			}
-			ELEMENT[id1.7] occurrences matches {0..1} matches { -- Timing offset
+			ELEMENT[id2.6] occurrences matches {0..1} matches { -- Timing offset
 				value matches {
-					DURATION[id1.22] matches {*}
+					DURATION[id2.21]
 				}
 			}
-			ELEMENT[id1.8] occurrences matches {0..1} matches { -- Timing offset origin
+			ELEMENT[id2.7] occurrences matches {0..1} matches { -- Timing offset origin
 				value matches {
-					DATE_TIME[id1.23] matches {*}
+					DATE_TIME[id2.22]
 				}
 			}
-			ITEM[id1.9] occurrences matches {0..*} -- Timing
-			ITEM[id1.10] occurrences matches {0..*} -- Reason
-			ITEM[id1.11] occurrences matches {0..*} -- Method
-			ELEMENT[id1.12] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id2.8] -- Timing
+			ELEMENT[id2.9] -- Reason
+			ELEMENT[id2.10] -- Method
+			ELEMENT[id2.11] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT[id1.24] matches {*}
+					CODED_TEXT[id2.23]
 				}
 			}
 		}
 		participation matches {
-			PARTICIPATION[id1.13] occurrences matches {0..*} -- Location
+			PARTICIPATION[id2.12] -- Location
 		}
 		link matches {
-			LINK[id1.14] occurrences matches {0..1} -- Associated activity
-			LINK[id1.15] occurrences matches {0..*} -- Previous action
-			LINK[id1.16] occurrences matches {0..*} -- Subsequent action
+			LINK[id2.13] occurrences matches {0..1} -- Associated activity
+			LINK[id2.14] -- Previous action
+			LINK[id2.15] -- Subsequent action
 		}
 	}
 
@@ -90,63 +90,63 @@ terminology
 				text = <"Action">
 				description = <"Action">
 			>
-			["id1.2"] = <
+			["id2.1"] = <
 				text = <"Action type">
 				description = <"Action type">
 			>
-			["id1.3"] = <
+			["id2.2"] = <
 				text = <"Identifier">
 				description = <"Identifier">
 			>
-			["id1.4"] = <
+			["id2.3"] = <
 				text = <"Datetime">
 				description = <"Datetime">
 			>
-			["id1.5"] = <
+			["id2.4"] = <
 				text = <"Datetime range">
 				description = <"Datetime range">
 			>
-			["id1.6"] = <
+			["id2.5"] = <
 				text = <"Duration">
 				description = <"Duration">
 			>
-			["id1.7"] = <
+			["id2.6"] = <
 				text = <"Timing offset">
 				description = <"Timing offset">
 			>
-			["id1.8"] = <
+			["id2.7"] = <
 				text = <"Timing offset origin">
 				description = <"Timing offset origin">
 			>
-			["id1.9"] = <
+			["id2.8"] = <
 				text = <"Timing">
 				description = <"Timing">
 			>
-			["id1.10"] = <
+			["id2.9"] = <
 				text = <"Reason">
 				description = <"Reason">
 			>
-			["id1.11"] = <
+			["id2.10"] = <
 				text = <"Method">
 				description = <"Method">
 			>
-			["id1.12"] = <
+			["id2.11"] = <
 				text = <"Status">
 				description = <"Status">
 			>
-			["id1.13"] = <
+			["id2.12"] = <
 				text = <"Location">
 				description = <"Location">
 			>
-			["id1.14"] = <
+			["id2.13"] = <
 				text = <"Associated activity">
 				description = <"Associated activity">
 			>
-			["id1.15"] = <
+			["id2.14"] = <
 				text = <"Previous action">
 				description = <"Previous action">
 			>
-			["id1.16"] = <
+			["id2.15"] = <
 				text = <"Subsequent action">
 				description = <"Subsequent action">
 			>
@@ -156,21 +156,21 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1"] = <http://snomedct.info/id/129264002>
-				["id1.2"] = <http://snomedct.info/id/129264002>
-				["id1.3"] = <http://snomedct.info/id/129264002>
-				["id1.4"] = <http://snomedct.info/id/364713004>
-				["id1.5"] = <http://snomedct.info/id/364713004>
-				["id1.6"] = <http://snomedct.info/id/364713004>
-				["id1.7"] = <http://snomedct.info/id/364713004>
-				["id1.8"] = <http://snomedct.info/id/364713004>
-				["id1.9"] = <http://snomedct.info/id/364713004>
-				["id1.10"] = <http://snomedct.info/id/138875005>
-				["id1.11"] = <http://snomedct.info/id/272394005>
-				["id1.12"] = <http://snomedct.info/id/288532009>
-				["id1.13"] = <http://snomedct.info/id/308916002>
-				["id1.14"] = <http://snomedct.info/id/71388002>
-				["id1.15"] = <http://snomedct.info/id/71388002>
-				["id1.16"] = <http://snomedct.info/id/71388002>
+				["id2.1"] = <http://snomedct.info/id/129264002>
+				["id2.2"] = <http://snomedct.info/id/129264002>
+				["id2.3"] = <http://snomedct.info/id/364713004>
+				["id2.4"] = <http://snomedct.info/id/364713004>
+				["id2.5"] = <http://snomedct.info/id/364713004>
+				["id2.6"] = <http://snomedct.info/id/364713004>
+				["id2.7"] = <http://snomedct.info/id/364713004>
+				["id2.8"] = <http://snomedct.info/id/364713004>
+				["id2.9"] = <http://snomedct.info/id/138875005>
+				["id2.10"] = <http://snomedct.info/id/272394005>
+				["id2.11"] = <http://snomedct.info/id/288532009>
+				["id2.12"] = <http://snomedct.info/id/308916002>
+				["id2.13"] = <http://snomedct.info/id/71388002>
+				["id2.14"] = <http://snomedct.info/id/71388002>
+				["id2.15"] = <http://snomedct.info/id/71388002>
 			>
 		>
 	>

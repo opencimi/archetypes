@@ -27,11 +27,11 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1] matches { -- Anatomical Location
-		/item matches {
-			ELEMENT[id1.1] occurrences matches {0..1} matches { -- Body side
+	ITEM_GROUP[id1.1.1] matches { -- Anatomical location
+		item matches {
+			ELEMENT[id0.0.1] occurrences matches {0..1} matches { -- Body side
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.2]
 				}
 			}
 		}
@@ -40,11 +40,11 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1"] = <
+			["id1.1.1"] = <
 				text = <"Anatomical Location">
 				description = <"Anatomical Location">
 			>
-			["id1.1"] = <
+			["id0.0.1"] = <
 				text = <"Body side">
 				description = <"Body side">
 			>
@@ -53,8 +53,8 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/123037004>
-				["id1.1"] = <http://snomedct.info/id/182353008>
+				["id1.1.1"] = <http://snomedct.info/id/123037004>
+				["id0.0.1"] = <http://snomedct.info/id/182353008>
 			>
 		>
 	>
