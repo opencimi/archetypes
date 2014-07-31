@@ -29,7 +29,7 @@ description
 definition
 	ITEM_GROUP[id1] matches { -- Clinical document
 		item matches {
-			use_archetype ITEM_GROUP [id3, CIMI-CORE-ITEM_GROUP.report_header.v1] -- Report header
+			use_archetype ITEM_GROUP [id3, CIMI-CORE-ITEM_GROUP.clinical_report_header.v1] -- Report header
 		}
 		participation matches {
 			PARTICIPATION[id2] occurrences matches {0..1} -- Subject of care
