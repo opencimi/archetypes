@@ -29,34 +29,34 @@ description
 definition
 	ROLE[id1.1.1] matches { -- Healthcare provider role
 		details matches {
-			ELEMENT[id1.1.1] occurrences matches {0..*} matches { -- Field of practice
+			ELEMENT[id0.0.1] occurrences matches {0..*} matches { -- Field of practice
 				value matches {
-					 CODED_TEXT matches {*}
+					 CODED_TEXT[id0.0.7] matches {*}
 				}
 			}
-				ELEMENT[id1.1.2] occurrences matches {1} matches { -- Value
+				ELEMENT[id0.0.2] occurrences matches {1} matches { -- Value
 					value matches {
-						CODED_TEXT matches {*}
+						CODED_TEXT[id0.0.8] matches {*}
 					}
 				}
-				ELEMENT[id1.1.3] occurrences matches {0..1} matches { -- Primary indicator
+				ELEMENT[id0.0.3] occurrences matches {0..1} matches { -- Primary indicator
 					value matches {
-						CODED_TEXT matches {*}
+						CODED_TEXT[id0.0.9] matches {*}
 					}
 				}
-			ELEMENT[id1.1.4] occurrences matches {0..1} matches { -- Provider type
+			ELEMENT[id0.0.4] occurrences matches {0..1} matches { -- Provider type
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.10] matches {*}
 				}
 			}
-			ELEMENT[id1.1.5] occurrences matches {0..1} matches { -- Provider classification
+			ELEMENT[id0.0.5] occurrences matches {0..1} matches { -- Provider classification
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.11] matches {*}
 				}
 			}
 		}
 		relationship matches {
-			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.organization_relationship.v1] -- Organization relationship
+			use_archetype PARTY_RELATIONSHIP [id0.0.6, CIMI-CORE-PARTY_RELATIONSHIP.organization_relationship.v1] -- Organization relationship
 		}
 	}
 
@@ -65,27 +65,24 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Healthcare provider role">
-				description = <"Healthcare provider role">
 			>
-			["id1.1.1"] = <
+			["id0.0.1"] = <
 				text = <"Field of practice">
-				description = <"Field of practice">
 			>
-			["id1.1.2"] = <
+			["id0.0.2"] = <
 				text = <"Value">
-				description = <"Value">
 			>
-			["id1.1.3"] = <
+			["id0.0.3"] = <
 				text = <"Primary indicator">
-				description = <"Primary indicator">
 			>
-			["id1.1.4"] = <
+			["id0.0.4"] = <
 				text = <"Provider type">
-				description = <"Provider type">
 			>
-			["id1.1.5"] = <
+			["id0.0.5"] = <
 				text = <"Provider classification">
-				description = <"Provider classification">
+			>
+			["id0.0.6"] = <
+				text = <"Organization relationship">
 			>
 		>
 	>
@@ -93,11 +90,11 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
-				["id1.1.3"] = <http://snomedct.info/id/138875005>
-				["id1.1.4"] = <http://snomedct.info/id/138875005>
-				["id1.1.5"] = <http://snomedct.info/id/138875005>
+				["id0.0.1"] = <http://snomedct.info/id/138875005>
+				["id0.0.2"] = <http://snomedct.info/id/138875005>
+				["id0.0.3"] = <http://snomedct.info/id/138875005>
+				["id0.0.4"] = <http://snomedct.info/id/138875005>
+				["id0.0.5"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

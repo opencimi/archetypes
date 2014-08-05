@@ -29,7 +29,7 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Observation Request
 		item matches {
-			use_archetype ITEM_GROUP [id0.0.0.1.1, CIMI-CORE-ITEM_GROUP.observation_request_action.v1] -- Request action
+			use_archetype ITEM_GROUP [id0.0.0.1.1, CIMI-CORE-ITEM_GROUP.request_action.v1] -- Request action
 			-- use_archetype ITEM_GROUP [id0.0.0.2.1, CIMI-CORE-ITEM_GROUP.observation.v1] -- Request observation
 		}
 		link matches {

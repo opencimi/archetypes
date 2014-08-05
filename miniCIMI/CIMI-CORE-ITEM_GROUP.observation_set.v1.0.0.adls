@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1] matches {  -- Observation set
     item matches {
-      ELEMENT[id4.0.1] occurrences matches {1} matches { -- Identifier
+      ELEMENT[id4.0.1] matches { -- Identifier
         value matches {
           IDENTIFIER[id4.0.10]
         }

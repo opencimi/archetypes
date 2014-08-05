@@ -54,19 +54,27 @@ terminology
 		["en"] = <
 			["id1"] = <
 				text = <"Party">
-				description = <"Party">
 			>
 			["id2"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id3"] = <
 				text = <"Value">
-				description = <"Value">
+			>
+			["id4"] = <
+				text = <"Name">
+			>
+			["id5"] = <
+				text = <"Address">
+			>
+			["id6"] = <
+				text = <"Contact">
 			>
 			["id7"] = <
 				text = <"Party type">
-				description = <"Party type">
+			>
+			["id8"] = <
+				text = <"Relationship">
 			>
 		>
 	>

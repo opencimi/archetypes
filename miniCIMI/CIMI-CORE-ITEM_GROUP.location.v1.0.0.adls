@@ -29,105 +29,105 @@ description
 definition
 	ITEM_GROUP[id1.1] matches { -- Location
 		item matches {
-			ELEMENT[id2.1] matches { -- Identifier
+			ELEMENT[id0.1] matches { -- Identifier
 				value matches {
-					IDENTIFIER[id2.23]
+					IDENTIFIER[id0.23]
 				}
 			}
-			ELEMENT[id2.2] occurrences matches {0..1} matches { -- Description
+			ELEMENT[id0.2] occurrences matches {0..1} matches { -- Description
 				value matches {
-					PLAIN_TEXT[id2.24]
+					PLAIN_TEXT[id0.24]
 				}
 			}
-			ITEM_GROUP[id2.3] matches { -- Location Name
+			ITEM_GROUP[id0.3] matches { -- Location Name
 				item matches {
-					ELEMENT[id2.4] occurrences matches {1} matches { -- Value
+					ELEMENT[id0.4] occurrences matches {1} matches { -- Value
 						value matches {
-							PLAIN_TEXT[id2.25]
+							PLAIN_TEXT[id0.25]
 						}
 					}
-					ELEMENT[id2.5] occurrences matches {0..1} matches { -- Use
+					ELEMENT[id0.5] occurrences matches {0..1} matches { -- Use
 						value matches {
-							CODED_TEXT[id2.26]
+							CODED_TEXT[id0.26]
 						}
 					}
-					ELEMENT[id2.6] occurrences matches {0..1} matches { -- Datetime range
+					ELEMENT[id0.6] occurrences matches {0..1} matches { -- Datetime range
 						value matches {
-							INTERVAL_VALUE<DATE_TIME>[id2.27]
+							INTERVAL_VALUE<DATE_TIME>[id0.27]
 						}
 					}
 				}
 			}
-			ELEMENT[id2.7] occurrences matches {0..1} matches { -- Type
+			ELEMENT[id0.7] occurrences matches {0..1} matches { -- Type
 				value matches {
-					TEXT[id2.28]
+					TEXT[id0.28]
 				}
 			}
-			ELEMENT[id2.8] occurrences matches {0..1} matches { -- Condition
+			ELEMENT[id0.8] occurrences matches {0..1} matches { -- Condition
 				value matches {
-					TEXT[id2.29]
+					TEXT[id0.29]
 				}
 			}
-			use_archetype ITEM_GROUP [id2.9, CIMI-CORE-ITEM_GROUP.address.v2] -- Address
-			use_archetype ITEM_GROUP [id2.10, CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
-			ELEMENT[id2.11] occurrences matches {0..1} matches { -- Datetime range
+			use_archetype ITEM_GROUP [id0.9, CIMI-CORE-ITEM_GROUP.address.v2] -- Address
+			use_archetype ITEM_GROUP [id0.10, CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
+			ELEMENT[id0.11] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.30]
+					INTERVAL_VALUE<DATE_TIME>[id0.30]
 				}
 			}
-			ELEMENT[id2.12] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id0.12] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT[id2.31]
+					CODED_TEXT[id0.31]
 				}
 			}
-			ELEMENT[id2.13] occurrences matches {0..1} matches { -- Mobile indicator
+			ELEMENT[id0.13] occurrences matches {0..1} matches { -- Mobile indicator
 				value matches {
-					CODED_TEXT[id2.32]
+					CODED_TEXT[id0.32]
 				}
 			}
-			ELEMENT[id2.14] occurrences matches {0..1} matches { -- Directions
+			ELEMENT[id0.14] occurrences matches {0..1} matches { -- Directions
 				value matches {
-					TEXT[id2.33]
+					TEXT[id0.33]
 				}
 			}
-			ELEMENT[id2.15] occurrences matches {0..1} matches { -- Position
+			ELEMENT[id0.15] occurrences matches {0..1} matches { -- Position
 				value matches {
-					TEXT[id2.34]
+					TEXT[id0.34]
 				}
 			}
-			ELEMENT[id2.16] occurrences matches {0..1} matches { -- Gps location
+			ELEMENT[id0.16] occurrences matches {0..1} matches { -- Gps location
 				value matches {
-					TEXT[id2.35]
+					TEXT[id0.35]
 				}
 			}
-			ELEMENT[id2.17] occurrences matches {0..1} matches { -- Point of care
+			ELEMENT[id0.17] occurrences matches {0..1} matches { -- Point of care
 				value matches {
-					TEXT[id2.36]
+					TEXT[id0.36]
 				}
 			}
-			ELEMENT[id2.18] occurrences matches {0..1} matches { -- Room
+			ELEMENT[id0.18] occurrences matches {0..1} matches { -- Room
 				value matches {
-					TEXT[id2.37]
+					TEXT[id0.37]
 				}
 			}
-			ELEMENT[id2.19] occurrences matches {0..1} matches { -- Bed
+			ELEMENT[id0.19] occurrences matches {0..1} matches { -- Bed
 				value matches {
-					TEXT[id2.38]
+					TEXT[id0.38]
 				}
 			}
-			ELEMENT[id2.20] occurrences matches {0..1} matches { -- Floor
+			ELEMENT[id0.20] occurrences matches {0..1} matches { -- Floor
 				value matches {
-					TEXT[id2.39]
+					TEXT[id0.39]
 				}
 			}
-			ELEMENT[id2.21] occurrences matches {0..1} matches { -- Building
+			ELEMENT[id0.21] occurrences matches {0..1} matches { -- Building
 				value matches {
-					TEXT[id2.40]
+					TEXT[id0.40]
 				}
 			}
 		}
 		participation matches {
-			PARTICIPATION[id2.22] occurrences matches {0..1} -- Organization
+			PARTICIPATION[id0.22] occurrences matches {0..1} -- Organization
 		}
 	}
 
@@ -136,87 +136,72 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Location">
-				description = <"Location">
 			>
-			["id2.1"] = <
+			["id0.1"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
-			["id2.2"] = <
+			["id0.2"] = <
 				text = <"Description">
-				description = <"Description">
 			>
-			["id2.3"] = <
+			["id0.3"] = <
 				text = <"Location Name">
-				description = <"Location Name">
 			>
-			["id2.4"] = <
+			["id0.4"] = <
 				text = <"Value">
-				description = <"Value">
 			>
-			["id2.5"] = <
+			["id0.5"] = <
 				text = <"Use">
-				description = <"Use">
 			>
-			["id2.6"] = <
+			["id0.6"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
-			["id2.7"] = <
+			["id0.7"] = <
 				text = <"Type">
-				description = <"Type">
 			>
-			["id2.8"] = <
+			["id0.8"] = <
 				text = <"Condition">
-				description = <"Condition">
 			>
-			["id2.9"] = <
+			["id0.9"] = <
+				text = <"Address">
+			>
+			["id0.10"] = <
+				text = <"Contact">
+			>
+			["id0.11"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
-			["id2.10"] = <
+			["id0.12"] = <
 				text = <"Status">
-				description = <"Status">
 			>
-			["id2.11"] = <
+			["id0.13"] = <
 				text = <"Mobile indicator">
-				description = <"Mobile indicator">
 			>
-			["id2.12"] = <
+			["id0.14"] = <
 				text = <"Directions">
-				description = <"Directions">
 			>
-			["id2.13"] = <
+			["id0.15"] = <
 				text = <"Position">
-				description = <"Position">
 			>
-			["id2.14"] = <
+			["id0.16"] = <
 				text = <"Gps location">
-				description = <"Gps location">
 			>
-			["id2.15"] = <
+			["id0.17"] = <
 				text = <"Point of care">
-				description = <"Point of care">
 			>
-			["id2.16"] = <
+			["id0.18"] = <
 				text = <"Room">
-				description = <"Room">
 			>
-			["id2.17"] = <
+			["id0.19"] = <
 				text = <"Bed">
-				description = <"Bed">
 			>
-			["id2.18"] = <
+			["id0.20"] = <
 				text = <"Floor">
-				description = <"Floor">
 			>
-			["id2.19"] = <
+			["id0.21"] = <
 				text = <"Building">
-				description = <"Building">
 			>
-			["id2.20"] = <
+			["id0.22"] = <
 				text = <"Organization">
-				description = <"Organization">
 			>
 		>
 	>
@@ -224,26 +209,26 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1"] = <http://snomedct.info/id/129264002>
-				["id2.1"] = <http://snomedct.info/id/138875005>
-				["id2.2"] = <http://snomedct.info/id/138875005>
-				["id2.3"] = <http://snomedct.info/id/138875005>
-				["id2.4"] = <http://snomedct.info/id/129264002>
-				["id2.5"] = <http://snomedct.info/id/129264002>
-				["id2.6"] = <http://snomedct.info/id/364713004>
-				["id2.7"] = <http://snomedct.info/id/138875005>
-				["id2.8"] = <http://snomedct.info/id/138875005>
-				["id2.9"] = <http://snomedct.info/id/138875005>
-				["id2.10"] = <http://snomedct.info/id/138875005>
-				["id2.11"] = <http://snomedct.info/id/138875005>
-				["id2.12"] = <http://snomedct.info/id/138875005>
-				["id2.13"] = <http://snomedct.info/id/138875005>
-				["id2.14"] = <http://snomedct.info/id/138875005>
-				["id2.15"] = <http://snomedct.info/id/138875005>
-				["id2.16"] = <http://snomedct.info/id/138875005>
-				["id2.17"] = <http://snomedct.info/id/138875005>
-				["id2.18"] = <http://snomedct.info/id/138875005>
-				["id2.19"] = <http://snomedct.info/id/138875005>
-				["id2.20"] = <http://snomedct.info/id/138875005>
+				["id0.1"] = <http://snomedct.info/id/138875005>
+				["id0.2"] = <http://snomedct.info/id/138875005>
+				["id0.3"] = <http://snomedct.info/id/138875005>
+				["id0.4"] = <http://snomedct.info/id/129264002>
+				["id0.5"] = <http://snomedct.info/id/129264002>
+				["id0.6"] = <http://snomedct.info/id/364713004>
+				["id0.7"] = <http://snomedct.info/id/138875005>
+				["id0.8"] = <http://snomedct.info/id/138875005>
+				["id0.9"] = <http://snomedct.info/id/138875005>
+				["id0.10"] = <http://snomedct.info/id/138875005>
+				["id0.11"] = <http://snomedct.info/id/138875005>
+				["id0.12"] = <http://snomedct.info/id/138875005>
+				["id0.13"] = <http://snomedct.info/id/138875005>
+				["id0.14"] = <http://snomedct.info/id/138875005>
+				["id0.15"] = <http://snomedct.info/id/138875005>
+				["id0.16"] = <http://snomedct.info/id/138875005>
+				["id0.17"] = <http://snomedct.info/id/138875005>
+				["id0.18"] = <http://snomedct.info/id/138875005>
+				["id0.19"] = <http://snomedct.info/id/138875005>
+				["id0.20"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

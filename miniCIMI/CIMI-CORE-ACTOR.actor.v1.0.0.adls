@@ -29,20 +29,19 @@ description
 definition
 	ACTOR[id1.1] matches { -- Actor
 		details matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.actor_name.v1] -- Name
-			ELEMENT[id1.1] occurrences matches {0..*} matches { -- Language
+			ELEMENT[id0.2] occurrences matches {0..*} matches { -- Language
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.5] matches {*}
 				}
 			}
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Description
+			ELEMENT[id0.3] occurrences matches {0..1} matches { -- Description
 				value matches {
-					PLAIN_TEXT matches {*}
+					PLAIN_TEXT[id0.6] matches {*}
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {1} matches { -- Actor type
+			ELEMENT[id0.4] occurrences matches {1} matches { -- Actor type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.7] matches {*}
 				}
 			}
 		}
@@ -53,19 +52,15 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Actor">
-				description = <"Actor">
 			>
-			["id1.1"] = <
+			["id0.2"] = <
 				text = <"Language">
-				description = <"Language">
 			>
-			["id1.2"] = <
+			["id0.3"] = <
 				text = <"Description">
-				description = <"Description">
 			>
-			["id1.3"] = <
+			["id0.4"] = <
 				text = <"Actor type">
-				description = <"Actor type">
 			>
 		>
 	>
@@ -73,9 +68,9 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1"] = <http://snomedct.info/id/138875005>
-				["id1.2"] = <http://snomedct.info/id/138875005>
-				["id1.3"] = <http://snomedct.info/id/138875005>
+				["id0.2"] = <http://snomedct.info/id/138875005>
+				["id0.3"] = <http://snomedct.info/id/138875005>
+				["id0.4"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

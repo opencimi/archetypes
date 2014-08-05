@@ -29,53 +29,52 @@ description
 definition
 	ACTOR[id1.1.1] matches { -- Organization
 		details matches {
-			use_archetype ITEM_GROUP [CIMI-CORE-ITEM_GROUP.organization_name.v1] -- Name
-			ELEMENT[id1.1.1] occurrences matches {0..1} matches { -- Department/ unit
+			ELEMENT[id0.0.1] occurrences matches {0..1} matches { -- Department/ unit
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.11] matches {*}
 				}
 			}
-			ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Industry
+			ELEMENT[id0.0.2] occurrences matches {0..1} matches { -- Industry
 				value matches {
-					TEXT matches {*}
+					TEXT[id0.0.12] matches {*}
 				}
 			}
-			ELEMENT[id1.1.3] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id0.0.3] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.13] matches {*}
 				}
 			}
-			ITEM_GROUP[id1.1.4] occurrences matches {0..*} matches { -- Accreditation
+			ITEM_GROUP[id0.0.4] occurrences matches {0..*} matches { -- Accreditation
 			item matches {
-				ELEMENT[id1.1.5] occurrences matches {0..1} matches { -- Identifier
+				ELEMENT[id0.0.5] occurrences matches {0..1} matches { -- Identifier
 					value matches {
-						IDENTIFIER matches {*}
+						IDENTIFIER[id0.0.14] matches {*}
 					}
 				}
-				ELEMENT[id1.1.6] occurrences matches {0..1} matches { -- Type
+				ELEMENT[id0.0.6] occurrences matches {0..1} matches { -- Type
 					value matches {
-						TEXT matches {*}
+						TEXT[id0.0.15] matches {*}
 					}
 				}
-				ELEMENT[id1.1.7] occurrences matches {0..1} matches { -- Date range
+				ELEMENT[id0.0.7] occurrences matches {0..1} matches { -- Date range
 					value matches {
-						INTERVAL_VALUE<DATE> matches {*}
+						INTERVAL_VALUE<DATE>[id0.0.16] matches {*}
 					}
 				}
 			}}
-			ELEMENT[id1.1.8] occurrences matches {0..1} matches { -- Date range
+			ELEMENT[id0.0.8] occurrences matches {0..1} matches { -- Date range
 				value matches {
-					INTERVAL_VALUE<DATE> matches {*}
+					INTERVAL_VALUE<DATE>[id0.0.17] matches {*}
 				}
 			}
-			ELEMENT[id1.1.9] occurrences matches {1} matches { -- Organization type
+			ELEMENT[id0.0.9] occurrences matches {1} matches { -- Organization type
 				value matches {
-					CODED_TEXT matches {*}
+					CODED_TEXT[id0.0.18] matches {*}
 				}
 			}
 		}
 		relationship matches {
-			use_archetype PARTY_RELATIONSHIP [CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1] -- Accreditation organization
+			use_archetype PARTY_RELATIONSHIP [id0.0.10, CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1] -- Accreditation organization
 		}
 	}
 
@@ -84,43 +83,36 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Organization">
-				description = <"Organization">
 			>
-			["id1.1.1"] = <
+			["id0.0.1"] = <
 				text = <"Department/ unit">
-				description = <"Department/ unit">
 			>
-			["id1.1.2"] = <
+			["id0.0.2"] = <
 				text = <"Industry">
-				description = <"Industry">
 			>
-			["id1.1.3"] = <
+			["id0.0.3"] = <
 				text = <"Status">
-				description = <"Status">
 			>
-			["id1.1.4"] = <
+			["id0.0.4"] = <
 				text = <"Accreditation">
-				description = <"Accreditation">
 			>
-			["id1.1.5"] = <
+			["id0.0.5"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
-			["id1.1.6"] = <
+			["id0.0.6"] = <
 				text = <"Type">
-				description = <"Type">
 			>
-			["id1.1.7"] = <
+			["id0.0.7"] = <
 				text = <"Date range">
-				description = <"Date range">
 			>
-			["id1.1.8"] = <
+			["id0.0.8"] = <
 				text = <"Date range">
-				description = <"Date range">
 			>
-			["id1.1.9"] = <
+			["id0.0.9"] = <
 				text = <"Organization type">
-				description = <"Organization type">
+			>
+			["id0.0.10"] = <
+				text = <"Accreditation organization">
 			>
 		>
 	>
@@ -128,15 +120,15 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
-				["id1.1.3"] = <http://snomedct.info/id/138875005>
-				["id1.1.4"] = <http://snomedct.info/id/138875005>
-				["id1.1.5"] = <http://snomedct.info/id/138875005>
-				["id1.1.6"] = <http://snomedct.info/id/138875005>
-				["id1.1.7"] = <http://snomedct.info/id/138875005>
-				["id1.1.8"] = <http://snomedct.info/id/138875005>
-				["id1.1.9"] = <http://snomedct.info/id/138875005>
+				["id0.0.1"] = <http://snomedct.info/id/138875005>
+				["id0.0.2"] = <http://snomedct.info/id/138875005>
+				["id0.0.3"] = <http://snomedct.info/id/138875005>
+				["id0.0.4"] = <http://snomedct.info/id/138875005>
+				["id0.0.5"] = <http://snomedct.info/id/138875005>
+				["id0.0.6"] = <http://snomedct.info/id/138875005>
+				["id0.0.7"] = <http://snomedct.info/id/138875005>
+				["id0.0.8"] = <http://snomedct.info/id/138875005>
+				["id0.0.9"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>

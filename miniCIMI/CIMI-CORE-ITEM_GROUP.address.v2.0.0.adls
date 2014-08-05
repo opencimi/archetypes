@@ -124,79 +124,60 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Address">
-				description = <"Address">
 			>
 			["id0.1"] = <
 				text = <"No fixed address indicator">
-				description = <"No fixed address indicator">
 			>
 			["id0.2"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.3"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id0.4"] = <
 				text = <"Use">
-				description = <"Use">
 			>
 			["id0.5"] = <
 				text = <"Preference indicator">
-				description = <"Preference indicator">
 			>
 			["id0.6"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id0.7"] = <
 				text = <"Address part">
-				description = <"Address part">
 			>
 			["id0.8"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.9"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.10"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.11"] = <
 				text = <"Address line">
-				description = <"Address line">
 			>
 			["id0.12"] = <
 				text = <"Line number">
-				description = <"Line number">
 			>
 			["id0.13"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.14"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.15"] = <
 				text = <"Address part">
-				description = <"Address part">
 			>
 			["id0.16"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.17"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.18"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 		>
 	>

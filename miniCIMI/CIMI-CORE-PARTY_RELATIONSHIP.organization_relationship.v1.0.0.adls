@@ -43,11 +43,12 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Organization relationship">
-				description = <"Organization relationship">
 			>
 			["id1.2"] = <
 				text = <"Scoping status">
-				description = <"Scoping status">
+			>
+			["id1.3"] = <
+				text = <"Location">
 			>
 		>
 	>

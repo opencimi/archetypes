@@ -29,29 +29,29 @@ description
 definition
 	PARTY_RELATIONSHIP[id1.1.1] matches { -- Employer
 		details matches {
-			ELEMENT[id1.1.2] occurrences matches {0..1} matches { -- Role
+			ELEMENT[id0.0.1] occurrences matches {0..1} matches { -- Role
 				value matches {
-					TEXT[id1.1.7]
+					TEXT[id0.0.6]
 				}
 			}
-			ELEMENT[id1.1.3] occurrences matches {0..1} matches { -- Rank
+			ELEMENT[id0.0.2] occurrences matches {0..1} matches { -- Rank
 				value matches {
-					TEXT[id1.1.8]
+					TEXT[id0.0.7]
 				}
 			}
-			ELEMENT[id1.1.4] occurrences matches {0..1} matches { -- Occupation
+			ELEMENT[id0.0.3] occurrences matches {0..1} matches { -- Occupation
 				value matches {
-					TEXT[id1.1.9]
+					TEXT[id0.0.8]
 				}
 			}
-			ELEMENT[id1.1.5] occurrences matches {0..1} matches { -- Salary type
+			ELEMENT[id0.0.4] occurrences matches {0..1} matches { -- Salary type
 				value matches {
-					TEXT[id1.1.10]
+					TEXT[id0.0.9]
 				}
 			}
-			ELEMENT[id1.1.6] occurrences matches {0..1} matches { -- Salary quantity
+			ELEMENT[id0.0.5] occurrences matches {0..1} matches { -- Salary quantity
 				value matches {
-					QUANTITY[id1.1.11]
+					QUANTITY[id0.0.10]
 				}
 			}
 		}
@@ -62,38 +62,21 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Employer">
-				description = <"Employer">
 			>
-			["id1.1.2"] = <
+			["id0.0.1"] = <
 				text = <"Role">
-				description = <"Role">
 			>
-			["id1.1.3"] = <
+			["id0.0.2"] = <
 				text = <"Rank">
-				description = <"Rank">
 			>
-			["id1.1.4"] = <
+			["id0.0.3"] = <
 				text = <"Occupation">
-				description = <"Occupation">
 			>
-			["id1.1.5"] = <
+			["id0.0.4"] = <
 				text = <"Salary type">
-				description = <"Salary type">
 			>
-			["id1.1.6"] = <
+			["id0.0.5"] = <
 				text = <"Salary quantity">
-				description = <"Salary quantity">
-			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1.1.1"] = <http://snomedct.info/id/138875005>
-				["id1.1.2"] = <http://snomedct.info/id/138875005>
-				["id1.1.3"] = <http://snomedct.info/id/138875005>
-				["id1.1.4"] = <http://snomedct.info/id/138875005>
-				["id1.1.5"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>
