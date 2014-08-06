@@ -29,294 +29,294 @@ description
 definition
     ITEM_GROUP[id1.1.1] matches { -- Address detailed
         item matches {
-            ITEM_GROUP[id0.7.1] matches { -- Additional locator
+            ITEM_GROUP[id0.7.1] matches { -- Additional locator type
                 item matches {
-                    ELEMENT[id0.10.1] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.1] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.25]
+                            CODED_TEXT[id0.27.1]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.2] occurrences matches {0..1} matches { -- Site name
+            ITEM_GROUP[id0.7.2] matches { -- Site name
                 item matches {
-                    ELEMENT[id0.10.2] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.2] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.26]
+                            CODED_TEXT[id0.27.2]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.3] occurrences matches {0..1} matches { -- Unit number
+            ITEM_GROUP[id0.7.3] matches { -- Unit number
                 item matches {
-                    ELEMENT[id0.10.3] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.3] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.27]
+                            CODED_TEXT[id0.27.3]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.4] occurrences matches {0..1} matches { -- Unit type
+            ITEM_GROUP[id0.7.4] matches { -- Unit type
                 item matches {
-                    ELEMENT[id0.10.4] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.4] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.28]
+                            CODED_TEXT[id0.27.4]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.5] occurrences matches {0..1} matches { -- Postal box number
+            ITEM_GROUP[id0.7.5] matches { -- Postal box number
                 item matches {
-                    ELEMENT[id0.10.5] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.5] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.29]
+                            CODED_TEXT[id0.27.5]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.6] occurrences matches {0..1} matches { -- Floor/level number
+            ITEM_GROUP[id0.7.6] matches { -- Floor/level number
                 item matches {
-                    ELEMENT[id0.10.6] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.6] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.30]
+                            CODED_TEXT[id0.27.6]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.7] occurrences matches {0..1} matches { -- Floor/level type
+            ITEM_GROUP[id0.7.7] matches { -- Floor/level type
                 item matches {
-                    ELEMENT[id0.10.7] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.7] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.31]
+                            CODED_TEXT[id0.27.7]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.8] occurrences matches {0..1} matches { -- Lot number
+            ITEM_GROUP[id0.7.8] matches { -- Lot number
                 item matches {
-                    ELEMENT[id0.10.8] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.8] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.32]
+                            CODED_TEXT[id0.27.8]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.9] occurrences matches {0..1} matches { -- Street
+            ITEM_GROUP[id0.7.9] matches { -- Street
                 item matches {
-                    ELEMENT[id0.10.9] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.9] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.32]
+                            CODED_TEXT[id0.27.9]
                         }
                     }
-                    ELEMENT[id0.0.1] occurrences matches {0..1} matches { -- Name
+                    ELEMENT[id0.0.1]  matches { -- Name
                         value matches {
-                            CODED_TEXT[id0.10.33]
+                            CODED_TEXT[id0.0.101]
                         }
                     }
-                    ELEMENT[id0.0.2] occurrences matches {0..1} matches { -- Street type
+                    ELEMENT[id0.0.2] matches { -- Street type
                         value matches {
-                            TEXT[id0.0.x]
+                            TEXT[id0.0.102]
                         }
                     }
-                    ELEMENT[id0.0.3] occurrences matches {0..1} matches { -- Direction
+                    ELEMENT[id0.0.3] matches { -- Direction
                         value matches {
-                            CODED_TEXT[id0.10.34]
+                            CODED_TEXT[id0.0.103]
                         }
                     }
-                    ELEMENT[id0.0.4] occurrences matches {0..1} matches { -- Suffix
+                    ELEMENT[id0.0.4] matches { -- Suffix
                         value matches {
-                            TEXT[id0.0.x]
+                            TEXT[id0.0.104]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.10] occurrences matches {0..1} matches { -- Street number
+            ITEM_GROUP[id0.7.10] matches { -- Street number
                 item matches {
-                    ELEMENT[id0.10.10] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.10] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.01.35]
+                            CODED_TEXT[id0.27.10]
                         }
                     }
-                    ELEMENT[id0.0.5] occurrences matches {0..1} matches { -- Numeric
+                    ELEMENT[id0.0.5] matches { -- Numeric
                         value matches {
-                            TEXT[id0.10.36]
+                            TEXT[id0.0.105]
                         }
                     }
-                    ELEMENT[id0.0.6] occurrences matches {0..1} matches { -- Suffix
+                    ELEMENT[id0.0.6] matches { -- Suffix
                         value matches {
-                            TEXT[id0.10.37]
+                            TEXT[id0.0.106]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.11] occurrences matches {0..1} matches { -- Intersection description
+            ITEM_GROUP[id0.7.11] matches { -- Intersection description
                 item matches {
-                    ELEMENT[id0.10.11] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.11] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.38]
+                            CODED_TEXT[id0.27.11]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.12] occurrences matches {0..1} matches { -- Visualisation
+            ITEM_GROUP[id0.7.12] matches { -- Visualisation
                 item matches {
-                    ELEMENT[id0.10.12] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.12] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.39]
+                            CODED_TEXT[id0.27.12]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.13] occurrences matches {0..1} matches { -- Census area
+            ITEM_GROUP[id0.7.13] matches { -- Census area
                 item matches {
-                    ELEMENT[id0.10.13] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.13] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.40]
+                            CODED_TEXT[id0.27.13]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.14] occurrences matches {0..1} matches { -- Delivery point identifier
+            ITEM_GROUP[id0.7.14] matches { -- Delivery point identifier
                 item matches {
-                    ELEMENT[id0.10.14] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.14] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.41]
+                            CODED_TEXT[id0.27.14]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.15] occurrences matches {0..1} matches { -- Delivery number
+            ITEM_GROUP[id0.7.15] matches { -- Delivery number
                 item matches {
-                    ELEMENT[id0.10.15] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.15] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.42]
+                            CODED_TEXT[id0.27.15]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.16] occurrences matches {0..1} matches { -- Delivery installation type
+            ITEM_GROUP[id0.7.16] matches { -- Delivery installation type
                 item matches {
-                    ELEMENT[id0.10.16] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.16] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.43]
+                            CODED_TEXT[id0.27.16]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.17] occurrences matches {0..1} matches { -- Delivery installation area
+            ITEM_GROUP[id0.7.17] matches { -- Delivery installation area
                 item matches {
-                    ELEMENT[id0.10.17] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.17] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.44]
+                            CODED_TEXT[id0.27.17]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.18] occurrences matches {0..1} matches { -- Delivery installation qualifier
+            ITEM_GROUP[id0.7.18] matches { -- Delivery installation qualifier
                 item matches {
-                    ELEMENT[id0.10.18] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.18] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.45]
+                            CODED_TEXT[id0.27.18]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.19] occurrences matches {0..1} matches { -- Delivery mode
+            ITEM_GROUP[id0.7.19] matches { -- Delivery mode
                 item matches {
-                    ELEMENT[id0.10.19] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.19] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.46]
+                            CODED_TEXT[id0.27.19]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.20] occurrences matches {0..1} matches { -- Delivery mode identifier
+            ITEM_GROUP[id0.7.20] matches { -- Delivery mode identifier
                 item matches {
-                    ELEMENT[id0.10.20] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.20] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.47]
+                            CODED_TEXT[id0.27.20]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.21] occurrences matches {0..1} matches { -- Postal code
+            ITEM_GROUP[id0.7.21] matches { -- Postal code
                 item matches {
-                    ELEMENT[id0.10.21] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.21] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.48]
+                            CODED_TEXT[id0.27.21]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.22] occurrences matches {0..1} matches { -- District
+            ITEM_GROUP[id0.7.22] matches { -- District
                 item matches {
-                    ELEMENT[id0.10.22] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.22] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.49]
+                            CODED_TEXT[id0.27.22]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.23] occurrences matches {0..1} matches { -- Suburb/town/locality
+            ITEM_GROUP[id0.7.23] matches { -- Suburb/town/locality
                 item matches {
-                    ELEMENT[id0.10.23] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.23] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.50]
+                            CODED_TEXT[id0.27.23]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.24] occurrences matches {0..1} matches { -- City
+            ITEM_GROUP[id0.7.24] matches { -- City
                 item matches {
-                    ELEMENT[id0.10.24] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.24] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.51]
+                            CODED_TEXT[id0.27.24]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.25] occurrences matches {0..1} matches { -- State/territory/province
+            ITEM_GROUP[id0.7.25] matches { -- State/territory/province
                 item matches {
-                    ELEMENT[id0.10.25] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.25] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.52]
+                            CODED_TEXT[id0.27.25]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.26] occurrences matches {0..1} matches { -- Country
+            ITEM_GROUP[id0.7.26] matches { -- Country
                 item matches {
-                    ELEMENT[id0.10.26] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.26] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.53]
+                            CODED_TEXT[id0.27.26]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.27] occurrences matches {0..1} matches { -- Care of
+            ITEM_GROUP[id0.7.27] matches { -- Care of
                 item matches {
-                    ELEMENT[id0.10.27] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.27] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.54]
+                            CODED_TEXT[id0.27.27]
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.28] occurrences matches {0..1} matches { -- Delimiter
+            ITEM_GROUP[id0.7.28] matches { -- Delimiter
                 item matches {
-                    ELEMENT[id0.10.28] occurrences matches {0..1} matches { -- Type
+                    ELEMENT[id0.10.28] matches { -- Type
                         value matches {
-                            CODED_TEXT[id0.10.55]
+                            CODED_TEXT[id0.27.28]
                         }
                     }
                 }
             }
-            -- use_archetype ITEM_GROUP [id0.7.29, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Address line 1
-            -- use_archetype ITEM_GROUP [id0.7.30, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Address line 2
-            -- use_archetype ITEM_GROUP [id0.7.31, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Address line 3
-            -- use_archetype ITEM_GROUP [id0.7.32, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Address line 4
-            -- use_archetype ITEM_GROUP [id0.7.33, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Street address line
-            -- use_archetype ITEM_GROUP [id0.7.34, CIMI-CORE-ITEM_GROUP.address_line.v1.0.0] -- Delivery address line
+            use_archetype ITEM_GROUP [id0.11.1, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 1
+            use_archetype ITEM_GROUP [id0.11.2, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 2
+            use_archetype ITEM_GROUP [id0.11.3, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 3
+            use_archetype ITEM_GROUP [id0.11.4, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 4
+            use_archetype ITEM_GROUP [id0.11.5, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Street address line
+            use_archetype ITEM_GROUP [id0.11.6, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Delivery address line
         }
     }
 
@@ -405,6 +405,7 @@ terminology
                 text = <"Suffix">
             >
             ["id0.7.11"] = <
+                text = <"Intersection description">
             >
             ["id0.10.11"] = <
                 text = <"Type">
@@ -511,22 +512,22 @@ terminology
             ["id0.10.28"] = <
                 text = <"Type">
             >
-            ["id0.7.29"] = <
+            ["id0.11.1"] = <
                 text = <"Address line 1">
             >
-            ["id0.7.30"] = <
+            ["id0.11.2"] = <
                 text = <"Address line 2">
             >
-            ["id0.7.31"] = <
+            ["id0.11.3"] = <
                 text = <"Address line 3">
             >
-            ["id0.7.32"] = <
+            ["id0.11.4"] = <
                 text = <"Address line 4">
             >
-            ["id0.7.33"] = <
+            ["id0.11.5"] = <
                 text = <"Street address line">
             >
-            ["id0.7.34"] = <
+            ["id0.11.6"] = <
                 text = <"Delivery address line">
             >
         >
