@@ -34,7 +34,7 @@ definition
           IDENTIFIER[id4.0.10]
         }
       }
-      ELEMENT[id4.0.2] matches { -- Name
+      ELEMENT[id4.0.2] occurrences matches {1} matches { -- Name
         value matches {
           TEXT[id4.0.11]
         }
@@ -59,6 +59,7 @@ definition
           TEXT[id4.0.15]
         }
       }
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {0} -- Clinical statement
       use_archetype ITEM_GROUP[id0.0.8, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
       use_archetype ITEM_GROUP[id0.0.9, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
       ELEMENT[id4.0.7] occurrences matches {0..1} matches { -- Interpretation category
@@ -148,6 +149,9 @@ terminology
       >
       ["id0.0.9"] = <
         text = <"Observation set">
+      >
+      ["id0.1.1"] = <
+        text = <"Clinical statement">
       >
     >
   >
