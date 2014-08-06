@@ -39,15 +39,12 @@ terminology
 		["en"] = <
 			["id1.1.1.1"] = <
 				text = <"Patient encounter summary">
-				description = <"Patient encounter summary">
 			>
 			["id2.0.1.1"] = <
 				text = <"Subject of care">
-				description = <"Subject of care">
 			>
 			["id3.0.1.1"] = <
 				text = <"Information subject">
-				description = <"Information subject">
 			>
 		>
 	>

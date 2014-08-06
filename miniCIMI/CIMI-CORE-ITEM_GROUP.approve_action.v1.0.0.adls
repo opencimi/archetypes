@@ -72,43 +72,33 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Approve action">
-				description = <"Approve action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.3.1"] = <
 				text = <"Approval datetime">
-				description = <"Approval datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Approval datetime range">
-				description = <"Approval datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Approval duration">
-				description = <"Approval duration">
 			>
 			["id2.6.1"] = <
 				text = <"Approval timing offset">
-				description = <"Approval timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Approval timing offset origin">
-				description = <"Approval timing offset origin">
 			>
 			["id2.12.1"] = <
 				text = <"Approver">
-				description = <"Approver">
 			>
 			["id2.12.2"] = <
 				text = <"Location of subject">
-				description = <"Location of subject">
 			>
 			["id2.12.3"] = <
 				text = <"Location of approver">
-				description = <"Location of approver">
 			>
 		>
 	>

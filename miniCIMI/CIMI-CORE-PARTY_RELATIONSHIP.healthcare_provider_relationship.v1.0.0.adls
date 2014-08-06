@@ -57,23 +57,18 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Accreditation organization">
-				description = <"Accreditation organization">
 			>
 			["id1.2"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id1.3"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id1.4"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id1.5"] = <
 				text = <"Priority">
-				description = <"Priority">
 			>
 		>
 	>

@@ -142,95 +142,72 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1"] = <
 				text = <"Person name detailed">
-				description = <"Person name detailed">
 			>
 			["id2.1.1.1.1"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id2.1.1.2.1"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id0.0.0.0.1"] = <
 				text = <"Title">
-				description = <"Title">
 			>
 			["id0.0.0.0.2"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.0.3"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.0.4"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.0.0.0.5"] = <
 				text = <"Given name">
-				description = <"Given name">
 			>
 			["id0.0.0.0.6"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.0.7"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.0.8"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.0.0.0.9"] = <
 				text = <"Middle name">
-				description = <"Middle name">
 			>
 			["id0.0.0.0.10"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.0.11"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.0.12"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.0.0.0.13"] = <
 				text = <"Family name">
-				description = <"Family name">
 			>
 			["id0.0.0.0.14"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.0.15"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.0.16"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.0.0.0.17"] = <
 				text = <"Suffix">
-				description = <"Suffix">
 			>
 			["id0.0.0.0.18"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.0.19"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.0.20"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 		>
 	>

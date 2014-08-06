@@ -39,15 +39,12 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count with automated">
-        description = <"Complete blood count with automated">
       >
       ["id0.0.0.1.0.1"] = <
         text = <"HCT in blood automated">
-        description = <"HCT in blood automated">
       >
       ["id0.0.0.1.0.2"] = <
         text = <"Leukocytes in blood automated">
-        description = <"Leukocytes in blood automated">
       >
     >
   >

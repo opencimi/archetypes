@@ -117,91 +117,69 @@ terminology
     ["en"] = <
       ["id1.1.1"] = <
         text = <"Observation">
-        description = <"Observation">
       >
       ["id4.0.1"] = <
         text = <"Identifier">
-        description = <"Identifier">
       >
       ["id4.0.2"] = <
         text = <"Name">
-        description = <"Name">
       >
       ["id4.0.3"] = <
         text = <"Reason">
-        description = <"Reason">
       >
       ["id4.0.4"] = <
         text = <"Method">
-        description = <"Method">
       >
       ["id4.0.5"] = <
         text = <"Status">
-        description = <"Status">
       >
       ["id4.0.6"] = <
         text = <"Priority">
-        description = <"Priority">
       >
       ["id4.0.7"] = <
         text = <"Result">
-        description = <"Result">
       >
       ["id4.0.8"] = <
         text = <"Interpretation cateogry">
-        description = <"Interpretation cateogry">
       >
       ["id4.0.9"] = <
         text = <"Normal range">
-        description = <"Normal range">
       >
       ["id4.0.10"] = <
         text = <"Reference range">
-        description = <"Reference range">
       >
       ["id4.0.11"] = <
         text = <"Sequence">
-        description = <"Sequence">
       >
       ["id4.0.12"] = <
         text = <"Delta flag">
-        description = <"Delta flag">
       >
       ["id4.0.13"] = <
         text = <"Signal flag">
-        description = <"Signal flag">
       >
       ["id4.0.14"] = <
         text = <"Comment">
-        description = <"Comment">
       >
       ["id0.0.1"] = <
         text = <"Actions">
-        description = <"Actions">
       >
       ["id0.0.2"] = <
         text = <"Observe action">
-        description = <"Observe action">
       >
       ["id0.0.3"] = <
         text = <"Interpret action">
-        description = <"Interpret action">
       >
       ["id0.0.4"] = <
         text = <"Approve action">
-        description = <"Approve action">
       >
       ["id0.0.5"] = <
         text = <"Report action">
-        description = <"Report action">
       >
       ["id0.0.6"] = <
         text = <"Cancel action">
-        description = <"Cancel action">
       >
       ["id0.0.7"] = <
         text = <"Update action">
-        description = <"Update action">
       >
     >
   >

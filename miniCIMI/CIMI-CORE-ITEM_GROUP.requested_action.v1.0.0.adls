@@ -74,51 +74,39 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Requested action">
-				description = <"Requested action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.3.1"] = <
 				text = <"Requested datetime">
-				description = <"Requested datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Requested datetime range">
-				description = <"Requested datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Requested duration">
-				description = <"Requested duration">
 			>
 			["id2.6.1"] = <
 				text = <"Requested timing offset">
-				description = <"Requested timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Requested timing offset origin">
-				description = <"Requested timing offset origin">
 			>
 			["id2.11.1"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id0.0.1"] = <
 				text = <"Clinical information provided">
-				description = <"Clinical information provided">
 			>
 			["id2.12.1"] = <
 				text = <"Requested participant">
-				description = <"Requested participant">
 			>
 			["id2.12.2"] = <
 				text = <"Locationof subject">
-				description = <"Locationof subject">
 			>
 			["id2.12.3"] = <
 				text = <"Locationof requested participant">
-				description = <"Locationof requested participant">
 			>
 		>
 	>

@@ -72,43 +72,33 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Issue action">
-				description = <"Issue action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.3.1"] = <
 				text = <"Issue datetime">
-				description = <"Issue datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Issue datetime range">
-				description = <"Issue datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Issue duration">
-				description = <"Issue duration">
 			>
 			["id2.6.1"] = <
 				text = <"Issue timing offset">
-				description = <"Issue timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Issue timing offset origin">
-				description = <"Issue timing offset origin">
 			>
 			["id2.12.1"] = <
 				text = <"Issuer">
-				description = <"Issuer">
 			>
 			["id2.12.2"] = <
 				text = <"Locationof subject">
-				description = <"Locationof subject">
 			>
 			["id2.12.3"] = <
 				text = <"Locationof issuer">
-				description = <"Locationof issuer">
 			>
 		>
 	>

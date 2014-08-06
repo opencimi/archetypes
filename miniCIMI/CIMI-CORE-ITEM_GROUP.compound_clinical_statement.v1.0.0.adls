@@ -41,11 +41,9 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Compound clinical statement">
-				description = <"Compound clinical statement">
 			>
 			["id0.1"] = <
 				text = <"Clinical statement">
-				description = <"Clinical statement">
 			>
 		>
 	>

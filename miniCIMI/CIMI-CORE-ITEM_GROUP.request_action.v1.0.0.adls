@@ -78,51 +78,39 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Request action">
-				description = <"Request action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.2.1"] = <
 				text = <"Request identifier">
-				description = <"Request identifier">
 			>
 			["id2.3.1"] = <
 				text = <"Request datetime">
-				description = <"Request datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Request datetime range">
-				description = <"Request datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Request duration">
-				description = <"Request duration">
 			>
 			["id2.6.1"] = <
 				text = <"Request timing offset">
-				description = <"Request timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Request timing offset origin">
-				description = <"Request timing offset origin">
 			>
 			["id2.9.1"] = <
 				text = <"Clinical information provided">
-				description = <"Clinical information provided">
 			>
 			["id2.12.1"] = <
 				text = <"Requester">
-				description = <"Requester">
 			>
 			["id2.12.2"] = <
 				text = <"Location of subject">
-				description = <"Location of subject">
 			>
 			["id2.12.3"] = <
 				text = <"Location of requester">
-				description = <"Location of requester">
 			>
 		>
 	>

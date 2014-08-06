@@ -43,15 +43,12 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1"] = <
 				text = <"Erythrocyte morphology panel">
-				description = <"Erythrocyte morphology panel">
 			>
 			["id4.0.2.0.1"] = <
 				text = <"Name">
-				description = <"Name">
 			>
 			["id0.0.0.0.1"] = <
 				text = <"Acanthocytes in blood by light microscopy">
-				description = <"Acanthocytes in blood by light microscopy">
 			>
 		>
 	>

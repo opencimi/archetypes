@@ -41,15 +41,12 @@ terminology
 		["en"] = <
 			["id1"] = <
 				text = <"Clinical report">
-				description = <"Clinical report">
 			>
 			["id2"] = <
 				text = <"Subject of care">
-				description = <"Subject of care">
 			>
 			["id3"] = <
 				text = <"Report header">
-				description = <"Report header">
 			>
 		>
 	>

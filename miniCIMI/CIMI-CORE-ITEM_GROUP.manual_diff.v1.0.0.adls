@@ -39,11 +39,9 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1"] = <
         text = <"Manual diff">
-        description = <"Manual diff">
       >
       -- ["id0.0.0.0.1"] = <
       --  text = <"Complete blood count by automated count">
-      --  description = <"Complete blood count by automated count">
       -- >
     >
   >

@@ -42,15 +42,12 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1"] = <
 				text = <"Observation Request">
-				description = <"Observation Request">
 			>
 			["id0.0.0.3.1"] = <
 				text = <"Requested observation link">
-				description = <"Requested of bservation link">
 			>
 			["id0.0.0.1.1"] = <
 				text = <"Request Action">
-				description = <"Request Action">
 			>
 		>
 	>

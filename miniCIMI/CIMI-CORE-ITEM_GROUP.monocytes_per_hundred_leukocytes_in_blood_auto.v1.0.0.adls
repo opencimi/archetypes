@@ -45,23 +45,18 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Monocytes per hundred leukocytes in blood by automated count">
-				description = <"Monocytes per hundred leukocytes in blood by automated count">
 			>
 			["id4.0.2.1.0.1"] = <
 				text = <"Name">
-				description = <"Name">
 			>
 			["id0.0.0.0.0.1"] = <
 				text = <"Platelet adequacy in blood">
-				description = <"Platelet adequacy in blood">
 			>
 			["id0.0.0.0.0.2"] = <
 				text = <"Erythrocyte morphology panel">
-				description = <"Erythrocyte morphology panel">
 			>
 			["id0.0.0.0.0.3"] = <
 				text = <"Leukocyte morphology panel">
-				description = <"Leukocyte morphology panel">
 			>
 		>
 	>

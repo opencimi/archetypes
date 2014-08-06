@@ -47,15 +47,12 @@ terminology
 		["en"] = <
 			["id1.1.1.1"] = <
 				text = <"Organization name">
-				description = <"Organization name">
 			>
 			["id0.0.0.1"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id0.0.0.2"] = <
 				text = <"Usage">
-				description = <"Usage">
 			>
 		>
 	>

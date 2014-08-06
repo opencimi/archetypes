@@ -77,39 +77,30 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Electronic contact">
-				description = <"Electronic contact">
 			>
 			["id2.1"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id2.2"] = <
 				text = <"Protocol">
-				description = <"Protocol">
 			>
 			["id2.3"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id2.4"] = <
 				text = <"Medium">
-				description = <"Medium">
 			>
 			["id2.5"] = <
 				text = <"Use">
-				description = <"Use">
 			>
 			["id2.6"] = <
 				text = <"Preferred timing">
-				description = <"Preferred timing">
 			>
 			["id2.7"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id2.8"] = <
 				text = <"Preference indicator">
-				description = <"Preference indicator">
 			>
 		>
 	>

@@ -43,23 +43,18 @@ terminology
     ["en"] = <
       ["id1"] = <
         text = <"Clinical Statment">
-        description = <"Patient Encounter Summary">
       >
       ["id2"] = <
         text = <"Subject of care">
-        description = <"Subject of care">
       >
       ["id3"] = <
         text = <"Information subject">
-        description = <"Information subject">
       >
       ["id4"] = <
         text = <"Element">
-        description = <"Element">
       >
       ["id5"] = <
         text = <"Cluster">
-        description = <"Cluster">
       >
     >
   >

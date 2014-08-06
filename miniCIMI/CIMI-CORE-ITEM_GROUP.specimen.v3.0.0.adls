@@ -104,67 +104,51 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Specimen">
-				description = <"Specimen">
 			>
 			["id0.0.1"] = <
 				text = <"Specimen identifier">
-				description = <"Specimen identifier">
 			>
 			["id0.0.2"] = <
 				text = <"Container identifier">
-				description = <"Container identifier">
 			>
 			["id0.0.3"] = <
 				text = <"Source specimen identifier">
-				description = <"Source specimen identifier">
 			>
 			["id0.0.4"] = <
 				text = <"Specimen type">
-				description = <"Specimen type">
 			>
 			["id0.0.5"] = <
 				text = <"Specimen description">
-				description = <"Specimen description">
 			>
 			["id0.0.6"] = <
 				text = <"Specimen volume">
-				description = <"Specimen volume">
 			>
 			["id0.0.7"] = <
 				text = <"Specimen weight">
-				description = <"Specimen weight">
 			>
 			["id0.0.8"] = <
 				text = <"Specimen dimension">
-				description = <"Specimen dimension">
 			>
 			["id0.0.9"] = <
 				text = <"Specimen size description">
-				description = <"Specimen size description">
 			>
 			["id0.0.10"] = <
 				text = <"Sequence number">
-				description = <"Sequence number">
 			>
 			["id0.0.11"] = <
 				text = <"Specimen additive">
-				description = <"Specimen additive">
 			>
 			["id0.0.12"] = <
 				text = <"Specimen handling risk">
-				description = <"Specimen handling risk">
 			>
 			["id0.0.13"] = <
 				text = <"Special handling instructions">
-				description = <"Special handling instructions">
 			>
 			["id0.0.14"] = <
 				text = <"Collect action">
-				description = <"Collect action">
 			>
 			["id0.0.15"] = <
 				text = <"Receive action">
-				description = <"Receive action">
 			>
 		>
 	>

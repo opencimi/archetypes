@@ -63,31 +63,24 @@ terminology
     ["en"] = <
       ["id1.1.1.1"] = <
         text = <"Laboratory test">
-        description = <"Laboratory test">
       >
       ["id4.0.2.1"] = <
         text = <"Test name">
-        description = <"Test name">
       >
       ["id0.0.0.1"] = <
         text = <"Diagnostic service">
-        description = <"Diagnostic service">
       >
       ["id0.0.0.2"] = <
         text = <"Specimen">
-        description = <"Specimen">
       >
       ["id0.0.0.3"] = <
         text = <"Poct indicator">
-        description = <"Poct indicator">
       >
       ["id0.0.0.4"] = <
         text = <"Diagnosis">
-        description = <"Diagnosis">
       >
       ["id0.0.0.5"] = <
         text = <"Conclusion">
-        description = <"Conclusion">
       >
     >
   >

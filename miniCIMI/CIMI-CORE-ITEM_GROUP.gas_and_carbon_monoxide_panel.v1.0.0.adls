@@ -47,35 +47,27 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1"] = <
 				text = <"Gas and carbon monoxide panel">
-				description = <"Gas and carbon monoxide panel">
 			>
 			-- ["id0.0.0.0.1"] = <
 			--	text = <"Test observable">
-			--	description = <"Test observable">
 			-- >
 			["id0.0.0.0.1"] = <
 				text = <"Test results">
-				description = <"Test results">
 			>
 			["id1.1.1.1.2"] = <
 				text = <"pH of blood">
-				description = <"pH of blood">
 			>
 			["id1.1.1.1.3"] = <
 				text = <"pH of blood adjusted to patients actual temperature">
-				description = <"pH of blood adjusted to patients actual temperature">
 			>
 			["id1.1.1.1.4"] = <
 				text = <"Carbon dioxide partial pressure in blood">
-				description = <"Carbon dioxide partial pressure in blood">
 			>
 			["id1.1.1.1.5"] = <
 				text = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
-				description = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
 			>
 			["id1.1.1.1.6"] = <
 				text = <"Oxygen partial pressure in blood">
-				description = <"Oxygen partial pressure in blood">
 			>
 		>
 	>

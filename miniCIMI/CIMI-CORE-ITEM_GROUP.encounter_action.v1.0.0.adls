@@ -74,43 +74,33 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Encounter action">
-				description = <"Encounter action">
 			>
 			["id2.2.1"] = <
 				text = <"Encounter identifier">
-				description = <"Encounter identifier">
 			>
 			["id2.3.1"] = <
 				text = <"Encounter datetime">
-				description = <"Encounter datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Encounter datetime range">
-				description = <"Encounter datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Encounter duration">
-				description = <"Encounter duration">
 			>
 			["id0.0.1"] = <
 				text = <"Patient class">
-				description = <"Patient class">
 			>
 			["id0.0.2"] = <
 				text = <"Hospital service">
-				description = <"Hospital service">
 			>
 			["id2.13.1"] = <
 				text = <"Encounter activity">
-				description = <"Encounter activity">
 			>
 			["id0.0.3"] = <
 				text = <"Healthcare provider">
-				description = <"Healthcare provider">
 			>
 			["id0.0.4"] = <
 				text = <"Healthcare organization">
-				description = <"Healthcare organization">
 			>
 		>
 	>

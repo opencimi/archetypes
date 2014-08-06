@@ -39,11 +39,9 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1"] = <
         text = <"Complete blood count">
-        description = <"Complete blood count">
       >
       ["id5.0.0.0.1"] = <
         text = <"Cluster">
-        description = <"Cluster">
       >
     >
   >

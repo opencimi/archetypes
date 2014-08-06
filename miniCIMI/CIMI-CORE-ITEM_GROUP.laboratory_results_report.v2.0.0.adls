@@ -43,23 +43,18 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Laboratory results report">
-				description = <"Laboratory results report">
 			>
 			["id0.1"] = <
 				text = <"Patient encounter">
-				description = <"Patient encounter">
 			>
 			["id3.1"] = <
 				text = <"Laboratory Report Header">
-				description = <"Laboratory Report Header">
 			>
 			["id0.2"] = <
 				text = <"Patient Encounter Summary">
-				description = <"Patient Encounter Summary">
 			>
 			["id0.3"] = <
 				text = <"Laboratory Test Request Summary">
-				description = <"Laboratory Test Request Summary">
 			>
 		>
 	>

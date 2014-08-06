@@ -38,11 +38,9 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count with manual">
-        description = <"Complete blood count with manual">
       >
       ["id0.0.0.1.0.1"] = <
         text = <"Leukocytes in blood manual">
-        description = <"Leukocytes in blood manual">
       >
     >
   >

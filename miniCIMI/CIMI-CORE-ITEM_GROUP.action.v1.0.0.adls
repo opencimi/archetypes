@@ -88,67 +88,51 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"Action">
-				description = <"Action">
 			>
 			["id2.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.2"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id2.3"] = <
 				text = <"Datetime">
-				description = <"Datetime">
 			>
 			["id2.4"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id2.5"] = <
 				text = <"Duration">
-				description = <"Duration">
 			>
 			["id2.6"] = <
 				text = <"Timing offset">
-				description = <"Timing offset">
 			>
 			["id2.7"] = <
 				text = <"Timing offset origin">
-				description = <"Timing offset origin">
 			>
 			["id2.8"] = <
 				text = <"Timing">
-				description = <"Timing">
 			>
 			["id2.9"] = <
 				text = <"Reason">
-				description = <"Reason">
 			>
 			["id2.10"] = <
 				text = <"Method">
-				description = <"Method">
 			>
 			["id2.11"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id2.12"] = <
 				text = <"Location">
-				description = <"Location">
 			>
 			["id2.13"] = <
 				text = <"Associated activity">
-				description = <"Associated activity">
 			>
 			["id2.14"] = <
 				text = <"Previous action">
-				description = <"Previous action">
 			>
 			["id2.15"] = <
 				text = <"Subsequent action">
-				description = <"Subsequent action">
 			>
 		>
 	>

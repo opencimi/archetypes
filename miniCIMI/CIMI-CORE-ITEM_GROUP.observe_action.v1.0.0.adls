@@ -72,43 +72,33 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Observe action">
-				description = <"Observe action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.3.1"] = <
 				text = <"Observation datetime">
-				description = <"Observation datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Observation datetime range">
-				description = <"Observation datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Observation duration">
-				description = <"Observation duration">
 			>
 			["id2.6.1"] = <
 				text = <"Observation timing offset">
-				description = <"Observation timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Observation timing offset origin">
-				description = <"Observation timing offset origin">
 			>
 			["id2.12.1"] = <
 				text = <"Observer">
-				description = <"Observer">
 			>
 			["id2.12.2"] = <
 				text = <"Location of subject">
-				description = <"Location of subject">
 			>
 			["id2.12.3"] = <
 				text = <"Location of observer">
-				description = <"Location of observer">
 			>
 		>
 	>

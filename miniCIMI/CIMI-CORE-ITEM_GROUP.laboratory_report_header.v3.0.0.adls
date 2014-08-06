@@ -47,15 +47,12 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Laboratory report header">
-				description = <"Laboratory report header">
 			>
 			["id0.0.1"] = <
 				text = <"Report type">
-				description = <"Report type">
 			>
 			["id0.0.2"] = <
 				text = <"Diagnosis">
-				description = <"Diagnosis">
 			>
 		>
 	>

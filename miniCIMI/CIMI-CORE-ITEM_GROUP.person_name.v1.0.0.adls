@@ -105,63 +105,48 @@ terminology
 		["en"] = <
 			["id1.1.1.1"] = <
 				text = <"Person name">
-				description = <"Person name">
 			>
 			["id2.1.1.1"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id2.1.1.2"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id0.0.0.2"] = <
 				text = <"Part">
-				description = <"Part">
 			>
 			["id0.0.0.3"] = <
 				text = <"Part number">
-				description = <"Part number">
 			>
 			["id0.0.0.4"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.5"] = <
 				text = <"Type">
-				description = <"Type">
 			>
 			["id0.0.0.6"] = <
 				text = <"Use">
-				description = <"Use">
 			>
 			["id0.0.0.7"] = <
 				text = <"Value">
-				description = <"Value">
 			>
 			["id0.0.0.8"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id0.0.0.9"] = <
 				text = <"Identifier">
-				description = <"Identifier">
 			>
 			["id0.0.0.10"] = <
 				text = <"Datetime range">
-				description = <"Datetime range">
 			>
 			["id0.0.0.11"] = <
 				text = <"Usage conditions">
-				description = <"Usage conditions">
 			>
 			["id0.0.0.12"] = <
 				text = <"Status">
-				description = <"Status">
 			>
 			["id0.0.0.13"] = <
 				text = <"Preferred flag">
-				description = <"Preferred flag">
 			>
 		>
 	>

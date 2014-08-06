@@ -42,19 +42,15 @@ terminology
 		["en"] = <
 			["id1.1.1.1"] = <
 				text = <"Request">
-				description = <"Request">
 			>
 			["id0.0.0.2"] = <
 				text = <"Requested item">
-				description = <"Requested item">
 			>
 			["id0.0.0.3"] = <
 				text = <"Requested item link">
-				description = <"Requested item link">
 			>
 			["id0.0.0.1"] = <
 				text = <"Request Action">
-				description = <"Request Action">
 			>
 		>
 	>

@@ -52,19 +52,15 @@ terminology
 		["en"] = <
 			["id1.1.1.1"] = <
 				text = <"Laboratory test request action">
-				description = <"Laboratory test request action">
 			>
 			["id2.2.1.1"] = <
 				text = <"Requester request identifier">
-				description = <"Requester request identifier">
 			>
 			["id0.0.0.1"] = <
 				text = <"Receiver request identifier">
-				description = <"Receiver request identifier">
 			>
 			["id0.0.0.2"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 		>
 	>

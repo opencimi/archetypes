@@ -86,59 +86,45 @@ terminology
 		["en"] = <
 			["id1.1.1"] = <
 				text = <"Collect action">
-				description = <"Collect action">
 			>
 			["id2.1.1"] = <
 				text = <"Action type">
-				description = <"Action type">
 			>
 			["id2.3.1"] = <
 				text = <"Collection datetime">
-				description = <"Collection datetime">
 			>
 			["id2.4.1"] = <
 				text = <"Collection datetime range">
-				description = <"Collection datetime range">
 			>
 			["id2.5.1"] = <
 				text = <"Collection duration">
-				description = <"Collection duration">
 			>
 			["id2.6.1"] = <
 				text = <"Collection timing offset">
-				description = <"Collection timing offset">
 			>
 			["id2.7.1"] = <
 				text = <"Collection timing offset origin">
-				description = <"Collection timing offset origin">
 			>
 			["id0.0.1"] = <
 				text = <"Collection description">
-				description = <"Collection description">
 			>
 			["id0.0.2"] = <
 				text = <"Collection body site">
-				description = <"Collection body site">
 			>
 			["id0.0.3"] = <
 				text = <"Collection priority">
-				description = <"Collection priority">
 			>
 			["id0.0.4"] = <
 				text = <"Collection procedure">
-				description = <"Collection procedure">
 			>
 			["id2.12.1"] = <
 				text = <"Collector">
-				description = <"Collector">
 			>
 			["id2.12.2"] = <
 				text = <"Locationof subject">
-				description = <"Locationof subject">
 			>
 			["id2.12.3"] = <
 				text = <"Locationof collector">
-				description = <"Locationof collector">
 			>
 		>
 	>

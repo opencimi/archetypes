@@ -39,15 +39,12 @@ terminology
     ["en"] = <
       ["id1.1.1.1"] = <
         text = <"Laboratory panel">
-        description = <"Laboratory panel">
       >
       ["id0.0.0.1"] = <
         text = <"Laboratory test">
-        description = <"Laboratory test">
       >
       ["id0.0.0.2"] = <
         text = <"Laboratory panel">
-        description = <"Laboratory panel">
       >
     >
   >

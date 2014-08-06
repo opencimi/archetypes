@@ -47,15 +47,12 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Neutrophils band form per hundred leukocytes in blood by automated count">
-				description = <"Neutrophils band form per hundred leukocytes in blood by automated count">
 			>
 			["id4.0.2.1.0.1"] = <
 				text = <"Name">
-				description = <"Name">
 			>
 			["id4.0.7.0.0.1"] = <
 				text = <"Result value">
-				description = <"Result value">
 			>
 		>
 	>

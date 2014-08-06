@@ -48,15 +48,12 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <
         text = <"Hematocrit in blood automated">
-        description = <"Hematocrit in blood automated">
       >
       ["id4.0.2.1.0.1"] = <
         text = <"Name">
-        description = <"Name">
       >
       ["id4.0.7.0.0.1"] = <
         text = <"Result value">
-        description = <"Result value">
       >
     >
   >
