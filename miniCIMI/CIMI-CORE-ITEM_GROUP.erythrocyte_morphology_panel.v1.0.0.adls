@@ -29,9 +29,9 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Erythrocyte morphology panel
 		item matches {
-			ELEMENT[id4.0.2.0.1] occurrences matches {1} matches { -- Name
+			ELEMENT[id0.0.2.0.1] matches { -- Name
 				value matches {
-					TEXT[id4.0.11.0.1]
+					TEXT[id0.0.102.0.1]
 				}
 			}
 			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.acanthocytes_in_blood_by_light_microscopy.v1] -- Acanthocytes in blood by light microscopy
@@ -44,7 +44,7 @@ terminology
 			["id1.1.1.1.1"] = <
 				text = <"Erythrocyte morphology panel">
 			>
-			["id4.0.2.0.1"] = <
+			["id0.0.2.0.1"] = <
 				text = <"Name">
 			>
 			["id0.0.0.0.1"] = <
@@ -55,7 +55,7 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id4.0.2.0.1"] = <http://snomedct.info/id/364712009>
+				["id0.0.2.0.1"] = <http://snomedct.info/id/364712009>
 			>
 		>
 	>

@@ -29,7 +29,7 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and carbon monoxide panel
 		item matches {
-			-- use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
+			-- use_archetype ITEM_GROUP [id0.0.7.0.1, CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
 			ITEM_GROUP[id0.0.0.0.1] occurrences matches {0..1} matches { -- Test results
 				item matches {
 					use_archetype ITEM_GROUP [id1.1.1.1.2, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
@@ -48,7 +48,7 @@ terminology
 			["id1.1.1.1.1"] = <
 				text = <"Gas and carbon monoxide panel">
 			>
-			-- ["id0.0.0.0.1"] = <
+			-- ["id0.0.7.0.1"] = <
 			--	text = <"Test observable">
 			-- >
 			["id0.0.0.0.1"] = <

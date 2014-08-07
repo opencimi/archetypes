@@ -27,40 +27,32 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1.1] -- Leukocytes in blood automated
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Leukocytes in blood automated
     item matches {
-      ELEMENT[id4.0.2.0.0.1] occurrences matches {1} matches { -- Name
+      ELEMENT[id0.0.2.0.0.1] matches { -- Name
         value matches {
-          TEXT[id4.0.17.0.0.1]
+          TEXT[id0.0.102.0.0.1]
         }
       }
-      ELEMENT[id4.0.7.0.0.1] occurrences matches {1} matches { -- Result value
+      ELEMENT[id0.0.7.0.1.1] matches { -- Result value
         value matches {
-          TEXT[id4.0.22.0.0.1]
+          QUANTITY[id0.0.107.0.1.1]
         }
       }
     }
   }
-  
+
 terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1.1.1"] = <
         text = <"Leukocytes in blood automated">
       >
-      ["id4.0.2.0.0.1"] = <
+      ["id0.0.2.0.0.1"] = <
         text = <"Name">
       >
-      ["id4.0.7.0.0.1"] = <
+      ["id0.0.7.0.1.1"] = <
         text = <"Result value">
-      >
-    >
-  >
-  term_bindings = <
-    ["SNOMED-CT"] = <
-      items = <
-        ["id4.0.2.0.0.1"] = <http://snomedct.info/id/138875005>
-        ["id4.0.7.0.0.1"] = <http://snomedct.info/id/138875005>
       >
     >
   >

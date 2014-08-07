@@ -29,14 +29,14 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Basophils per hundred leukocytes in blood
 		item matches {
-			ELEMENT[id4.0.2.1.0.1] occurrences matches {1} matches { -- Name
+			ELEMENT[id0.0.2.0.0.1] matches { -- Name
 				value matches {
-					TEXT[id4.0.17.1.0.1]
+					TEXT[id0.0.102.0.0.1]
 				}
 			}
-			ELEMENT[id4.0.7.0.0.1] occurrences matches {1} matches { -- Result value
+			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
 				value matches {
-					TEXT[id4.0.22.0.0.1]
+					QUANTITY[id0.0.107.0.1.1]
 				}
 			}
 		}
@@ -48,19 +48,11 @@ terminology
 			["id1.1.1.1.1.1"] = <
 				text = <"Basophils per hundred leukocytes in blood">
 			>
-			["id4.0.2.1.0.1"] = <
+			["id0.0.2.0.0.1"] = <
 				text = <"Name">
 			>
-			["id4.0.7.0.0.1"] = <
+			["id0.0.7.0.1.1"] = <
 				text = <"Result value">
-			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id4.0.2.1.0.1"] = <http://snomedct.info/id/138875005>
-				["id4.0.7.0.0.1"] = <http://snomedct.info/id/138875005>
 			>
 		>
 	>
