@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with manual
     item matches {
-      use_archetype ITEM_GROUP[id0.0.0.1.0.1, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_manual.v1]
+      use_archetype ITEM_GROUP[id0.0.7.1.0.1, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_manual.v1]
     }
   }
 
@@ -39,7 +39,7 @@ terminology
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count with manual">
       >
-      ["id0.0.0.1.0.1"] = <
+      ["id0.0.7.1.0.1"] = <
         text = <"Leukocytes in blood manual">
       >
     >

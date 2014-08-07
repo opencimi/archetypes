@@ -29,8 +29,8 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with automated
     item matches {
-      use_archetype ITEM_GROUP[id0.0.0.1.0.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
-      use_archetype ITEM_GROUP[id0.0.0.1.0.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.7.1.0.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.7.1.0.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
     }
   }
 
@@ -40,10 +40,10 @@ terminology
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count with automated">
       >
-      ["id0.0.0.1.0.1"] = <
+      ["id0.0.7.1.0.1"] = <
         text = <"HCT in blood automated">
       >
-      ["id0.0.0.1.0.2"] = <
+      ["id0.0.7.1.0.2"] = <
         text = <"Leukocytes in blood automated">
       >
     >
