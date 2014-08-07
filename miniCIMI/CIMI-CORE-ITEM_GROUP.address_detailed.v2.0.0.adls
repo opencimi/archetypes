@@ -311,12 +311,12 @@ definition
                     }
                 }
             }
-            use_archetype ITEM_GROUP [id0.11.1, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 1
-            use_archetype ITEM_GROUP [id0.11.2, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 2
-            use_archetype ITEM_GROUP [id0.11.3, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 3
-            use_archetype ITEM_GROUP [id0.11.4, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 4
-            use_archetype ITEM_GROUP [id0.11.5, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Street address line
-            use_archetype ITEM_GROUP [id0.11.6, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Delivery address line
+            use_archetype ITEM_GROUP [id0.0.7, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 1
+            use_archetype ITEM_GROUP [id0.0.8, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 2
+            use_archetype ITEM_GROUP [id0.0.9, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 3
+            use_archetype ITEM_GROUP [id0.0.10, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 4
+            use_archetype ITEM_GROUP [id0.0.11, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Street address line
+            use_archetype ITEM_GROUP [id0.0.12, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Delivery address line
         }
     }
 
@@ -512,22 +512,22 @@ terminology
             ["id0.10.28"] = <
                 text = <"Type">
             >
-            ["id0.11.1"] = <
+            ["id0.0.7"] = <
                 text = <"Address line 1">
             >
-            ["id0.11.2"] = <
+            ["id0.0.8"] = <
                 text = <"Address line 2">
             >
-            ["id0.11.3"] = <
+            ["id0.0.9"] = <
                 text = <"Address line 3">
             >
-            ["id0.11.4"] = <
+            ["id0.0.10"] = <
                 text = <"Address line 4">
             >
-            ["id0.11.5"] = <
+            ["id0.0.11"] = <
                 text = <"Street address line">
             >
-            ["id0.11.6"] = <
+            ["id0.0.12"] = <
                 text = <"Delivery address line">
             >
         >
