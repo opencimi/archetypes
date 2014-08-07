@@ -27,13 +27,24 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] -- Laboratory test ordinal
+  ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory test ordinal
+    item matches {
+      ELEMENT[id0.0.7.0.1] occurrences matches {1} matches { -- Result value
+        value matches {
+          ORDINAL[id0.0.107.0.1]
+        }
+      }
+    }
+  }
 
 terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1.1"] = <
         text = <"Laboratory test ordinal">
+      >
+      ["id0.0.7.0.1"] = <
+        text = <"Result value">
       >
     >
   >

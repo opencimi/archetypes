@@ -29,30 +29,31 @@ description
 definition
   ITEM_GROUP[id1.1.1.1] matches {-- Laboratory test
     item matches {
-      ELEMENT[id4.0.2.1] matches { -- Test name
+      ELEMENT[id0.0.0.1] matches { -- Test name
         value matches {
-          TEXT[id4.0.17.1]
+          TEXT[id0.0.0.101]
         }
       }
-      ELEMENT[id0.0.0.1] matches { -- Diagnostic service
+      ELEMENT[id0.0.0.2] matches { -- Diagnostic service
         value matches {
-          TEXT[id0.0.0.6]
+          TEXT[id0.0.0.102]
         }
       }
-      use_archetype ITEM_GROUP [id0.0.0.2, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
-      ELEMENT[id0.0.0.3] matches { -- Poct indicator
+      use_archetype ITEM_GROUP [id0.0.0.3, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+      ELEMENT[id0.0.0.4] matches { -- Poct indicator
         value matches {
-          CODED_TEXT[id0.0.0.7]
+          CODED_TEXT[id0.0.0.103]
         }
       }
-      ELEMENT[id0.0.0.4] matches { -- Diagnosis
+      ELEMENT[id0.0.0.5] matches { -- Diagnosis
         value matches {
-          CODED_TEXT[id0.0.0.8]
+          CODED_TEXT[id0.0.0.104]
         }
       }
-      ELEMENT[id0.0.0.5] matches { -- Conclusions
+      before[id0.0.15]
+      ELEMENT[id0.0.0.6] matches { -- Conclusions
         value matches {
-          CODED_TEXT[id0.0.0.9]
+          CODED_TEXT[id0.0.0.105]
         }
       }
     }
@@ -64,22 +65,22 @@ terminology
       ["id1.1.1.1"] = <
         text = <"Laboratory test">
       >
-      ["id4.0.2.1"] = <
+      ["id0.0.0.1"] = <
         text = <"Test name">
       >
-      ["id0.0.0.1"] = <
+      ["id0.0.0.2"] = <
         text = <"Diagnostic service">
       >
-      ["id0.0.0.2"] = <
+      ["id0.0.0.3"] = <
         text = <"Specimen">
       >
-      ["id0.0.0.3"] = <
+      ["id0.0.0.4"] = <
         text = <"Poct indicator">
       >
-      ["id0.0.0.4"] = <
+      ["id0.0.0.5"] = <
         text = <"Diagnosis">
       >
-      ["id0.0.0.5"] = <
+      ["id0.0.0.6"] = <
         text = <"Conclusion">
       >
     >
