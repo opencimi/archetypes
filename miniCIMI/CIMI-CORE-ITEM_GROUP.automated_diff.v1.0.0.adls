@@ -28,7 +28,7 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1.1] matches {  -- Automated diff
-    /item matches {
+    item matches {
       use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.neutrophils_per_hundred_leukocytes_in_blood_auto.v1] -- Neutrophils/100 leukocytes in blood by automated count
       use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_hundred_leukocytes_in_blood_auto.v1] -- Neutrophils band form/100 leukocytes in blood by automated count
       use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.granulocytes_per_hundred_leukocytes_in_blood_auto.v1] -- Granulocytes/100 leukocytes in blood by automated count

@@ -27,24 +27,28 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with automated
+  ITEM_GROUP[id1.1.1.1.1.1.1] matches {  -- Complete blood count with automated
     item matches {
-      use_archetype ITEM_GROUP[id0.0.7.1.0.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
-      use_archetype ITEM_GROUP[id0.0.7.1.0.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.7.1.0.0.1, CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.7.1.0.0.2, CIMI-CORE-ITEM_GROUP.leukocytes_in_blood_automated.v1]
+      use_archetype ITEM_GROUP[id0.0.8.1.0.0.1, CIMI-CORE-ITEM_GROUP.automated_diff.v1]
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1.1"] = <
+      ["id1.1.1.1.1.1.1"] = <
         text = <"Complete blood count with automated">
       >
-      ["id0.0.7.1.0.1"] = <
+      ["id0.0.7.1.0.0.1"] = <
         text = <"HCT in blood automated">
       >
-      ["id0.0.7.1.0.2"] = <
+      ["id0.0.7.1.0.0.2"] = <
         text = <"Leukocytes in blood automated">
+      >
+      ["id0.0.8.1.0.0.1"] = <
+        text = <"Automated diff">
       >
     >
   >
