@@ -1,0 +1,8 @@
+--
+-- Logical archetype library definition
+--
+
+name = <"CIMI mindmap-based archetypes">
+short_name = <"v1 RM mindmap">
+maintainer = <"CIMI">
+description = <"CIMI mindmap-based archetypes, based on v1 RM">

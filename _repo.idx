@@ -7,5 +7,6 @@
 -- This file is an instance of the object type REPOSITORY_DEFINITION
 --
 
+maintainer = <"CIMI">
 name = <"CIMI archetypes">
-description = <"Primary CIMI archetype repository">
+description = <"Primary CIMI archetype repository.">
