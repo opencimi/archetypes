@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'custodian action' concept">
       use = <"Use for custodian action.">
-      keywords = <"custodian action", ...>
+      keywords = <"custodian","action">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

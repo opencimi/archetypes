@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'carbon dioxide partial pressure adjusted to patient temperature' concept">
       use = <"Use for carbon dioxide partial pressure adjusted to patient temperature.">
-      keywords = <"carbon dioxide partial pressure adjusted to patient temperature", ...>
+      keywords = <"carbon","dioxide","partial","pressure","adjusted","patient","temperature">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

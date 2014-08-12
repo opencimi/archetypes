@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'monocytes per hundred leukocytes in blood auto' concept">
       use = <"Use for monocytes per hundred leukocytes in blood auto.">
-      keywords = <"monocytes per hundred leukocytes in blood auto", ...>
+      keywords = <"monocytes","hundred","leukocytes","blood","auto">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

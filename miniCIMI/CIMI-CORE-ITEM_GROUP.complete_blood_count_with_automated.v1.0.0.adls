@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'complete blood count with automated' concept">
       use = <"Use for complete blood count with automated.">
-      keywords = <"complete blood count with automated", ...>
+      keywords = <"complete","blood","count","automated">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

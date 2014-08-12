@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'patient encounter summary' concept">
       use = <"Use for patient encounter summary.">
-      keywords = <"patient encounter summary", ...>
+      keywords = <"patient","encounter","summary">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

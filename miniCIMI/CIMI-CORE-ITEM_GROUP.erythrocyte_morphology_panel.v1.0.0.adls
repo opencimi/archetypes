@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'erythrocyte morphology panel' concept">
       use = <"Use for erythrocyte morphology panel.">
-      keywords = <"erythrocyte morphology panel", ...>
+      keywords = <"erythrocyte","morphology","panel">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

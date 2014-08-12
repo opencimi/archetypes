@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'platelet adequacy in blood by light microscopy' concept">
       use = <"Use for platelet adequacy in blood by light microscopy.">
-      keywords = <"platelet adequacy in blood by light microscopy", ...>
+      keywords = <"platelet","adequacy","blood","light","microscopy">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

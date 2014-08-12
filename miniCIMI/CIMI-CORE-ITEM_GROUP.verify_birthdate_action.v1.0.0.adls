@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'verify birthdate action' concept">
       use = <"Use for verify birthdate action.">
-      keywords = <"verify birthdate action", ...>
+      keywords = <"verify","birthdate","action">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

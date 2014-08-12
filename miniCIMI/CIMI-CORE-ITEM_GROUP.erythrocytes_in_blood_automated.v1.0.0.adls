@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'erythrocytes in blood automated' concept">
       use = <"Use for erythrocytes in blood automated.">
-      keywords = <"erythrocytes in blood automated", ...>
+      keywords = <"erythrocytes","blood","automated">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

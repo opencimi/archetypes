@@ -16,7 +16,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Top-level reference archetype for CIMI 'clinical statement' concept">
       use = <"Use as a specialisation precursor for other high-level reference archetypes.">
-      keywords = <"clinical statement", ...>
+      keywords = <"clinical","statement">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

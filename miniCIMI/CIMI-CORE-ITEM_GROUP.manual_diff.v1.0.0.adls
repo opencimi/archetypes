@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'manual diff' concept">
       use = <"Use as manual diff.">
-      keywords = <"manual diff", ...>
+      keywords = <"manual","diff">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

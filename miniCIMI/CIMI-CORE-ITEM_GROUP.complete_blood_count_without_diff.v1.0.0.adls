@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'complete blood count without diff' concept">
       use = <"Use as complete blood count without diff.">
-      keywords = <"complete blood count without diff", ...>
+      keywords = <"complete","blood","count","diff">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

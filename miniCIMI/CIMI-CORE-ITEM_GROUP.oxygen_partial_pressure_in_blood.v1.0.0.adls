@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'oxygen partial pressure in blood' concept">
       use = <"Use for oxygen partial pressure in blood.">
-      keywords = <"oxygen partial pressure in blood", ...>
+      keywords = <"oxygen","partial","pressure","blood">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

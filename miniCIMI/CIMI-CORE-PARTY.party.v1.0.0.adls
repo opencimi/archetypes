@@ -16,7 +16,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'party' concept">
       use = <"Use for party.">
-      keywords = <"party", ...>
+      keywords = <"party">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

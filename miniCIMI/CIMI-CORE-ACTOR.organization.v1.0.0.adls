@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'organization' concept">
       use = <"Use for organization.">
-      keywords = <"organization", ...>
+      keywords = <"organization">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

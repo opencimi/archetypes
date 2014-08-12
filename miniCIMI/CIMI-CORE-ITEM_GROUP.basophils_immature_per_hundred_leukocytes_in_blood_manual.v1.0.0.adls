@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'basophils immature per hundred leukocytes in blood manual' concept">
       use = <"Use for basophils immature per hundred leukocytes in blood manual.">
-      keywords = <"basophils immature per hundred leukocytes in blood manual", ...>
+      keywords = <"basophils","immature","hundred","leukocytes","blood","manual">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

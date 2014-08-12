@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'cancel action' concept">
       use = <"Use for cancel action.">
-      keywords = <"cancel action", ...>
+      keywords = <"cancel","action">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

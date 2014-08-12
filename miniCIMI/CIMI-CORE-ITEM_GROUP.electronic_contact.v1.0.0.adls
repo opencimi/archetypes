@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'electronic contact' concept">
       use = <"Use for electronic contact.">
-      keywords = <"electronic contact", ...>
+      keywords = <"electronic","contact">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

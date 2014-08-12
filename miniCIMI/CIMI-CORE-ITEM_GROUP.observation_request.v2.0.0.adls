@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'observation request' concept">
       use = <"Use for observation request.">
-      keywords = <"observation request", ...>
+      keywords = <"observation","request">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'material entity' concept">
       use = <"Use for material entity.">
-      keywords = <"material entity", ...>
+      keywords = <"material","entity">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

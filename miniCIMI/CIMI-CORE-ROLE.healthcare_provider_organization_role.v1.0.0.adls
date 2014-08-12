@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'healthcare provider organization role' concept">
       use = <"Use for healthcare provider organization role.">
-      keywords = <"healthcare provider organization role", ...>
+      keywords = <"healthcare","provider","organization","role">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

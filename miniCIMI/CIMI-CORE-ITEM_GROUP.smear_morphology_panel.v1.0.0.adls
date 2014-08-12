@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'smear morphology panel' concept">
       use = <"Use for smear morphology panel.">
-      keywords = <"smear morphology panel", ...>
+      keywords = <"smear","morphology","panel">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

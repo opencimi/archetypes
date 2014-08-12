@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'laboratory test request action' concept">
       use = <"Use for laboratory test request action.">
-      keywords = <"laboratory test request action", ...>
+      keywords = <"laboratory","test","request","action">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >

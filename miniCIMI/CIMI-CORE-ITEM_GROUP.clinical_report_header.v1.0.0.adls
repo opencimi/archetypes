@@ -19,7 +19,7 @@ description
       language = <[ISO_639-1::en]>
       purpose = <"Archetype for CIMI 'clinical report header' concept">
       use = <"Use for clinical report header.">
-      keywords = <"clinical report header", ...>
+      keywords = <"clinical","report","header">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
