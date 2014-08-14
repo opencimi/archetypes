@@ -27,14 +27,112 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] -- Blood by automated count
-  -- reference test archetypes from below LOINC 58410-2
+  ITEM_GROUP[id1.1.1.1.1] matches { -- Blood by automated count
+    item matches {
+    use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_blood_by_automated_count.v1] -- Leukocytes count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocytes_count_per_volume_in_blood_by_automated_count.v1] -- Erythrocytes count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.hemoglobin_mass_per_volume_in_blood.v1] -- Hemoglobin mass per volume in blood
+    use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.hematocrit_volume_fraction_of_blood_by_automated_count.v1] -- Hematocrit volume fraction of blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_volume_entitic_volume_by_automated_count.v1] -- Erythrocyte mean corpuscular volume entitic volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.6, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_hemoglobin_entitic_mass_by_automated_count.v1] -- Erythrocyte mean corpuscular hemoglobin entitic mass by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.7, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_hemoglobin_concentration_mass_per_volume_by_automated_count.v1] -- Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.8, CIMI-CORE-ITEM_GROUP.erythrocyte_distribution_width_entitic_volume_by_automated_count.v1] -- Erythrocyte distribution width entitic volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.9, CIMI-CORE-ITEM_GROUP.erythrocyte_distribution_width_ratio_by_automated_count.v1] -- Erythrocyte distribution width ratio by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.10, CIMI-CORE-ITEM_GROUP.platelets_count_per_volume_in_blood_by_automated_count.v1] -- Platelets count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.11, CIMI-CORE-ITEM_GROUP.platelet_distribution_width_entitic_volume_in_blood_by_automated_count.v1] -- Platelet distribution width entitic volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.12, CIMI-CORE-ITEM_GROUP.platelet_mean_volume_entitic_volume_in_blood_by_automated_count.v1] -- Platelet mean volume entitic volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.13, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_blood_by_automated_count.v1] -- Leukocytes count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.14, CIMI-CORE-ITEM_GROUP.erythrocytes_count_per_volume_in_blood_by_automated_count.v1] -- Erythrocytes count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.15, CIMI-CORE-ITEM_GROUP.hemoglobin_mass_per_volume_in_blood.v1] -- Hemoglobin mass per volume in blood
+    use_archetype ITEM_GROUP [id0.0.0.0.16, CIMI-CORE-ITEM_GROUP.hematocrit_volume_fraction_of_blood_by_automated_count.v1] -- Hematocrit volume fraction of blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.17, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_volume_entitic_volume_by_automated_count.v1] -- Erythrocyte mean corpuscular volume entitic volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.18, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_hemoglobin_entitic_mass_by_automated_count.v1] -- Erythrocyte mean corpuscular hemoglobin entitic mass by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.19, CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_hemoglobin_concentration_mass_per_volume_by_automated_count.v1] -- Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.20, CIMI-CORE-ITEM_GROUP.erythrocyte_distribution_width_entitic_volume_by_automated_count.v1] -- Erythrocyte distribution width entitic volume by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.21, CIMI-CORE-ITEM_GROUP.erythrocyte_distribution_width_ratio_by_automated_count.v1] -- Erythrocyte distribution width ratio by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.22, CIMI-CORE-ITEM_GROUP.platelets_count_per_volume_in_blood_by_automated_count.v1] -- Platelets count per volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.23, CIMI-CORE-ITEM_GROUP.platelet_distribution_width_entitic_volume_in_blood_by_automated_count.v1] -- Platelet distribution width entitic volume in blood by automated count
+    use_archetype ITEM_GROUP [id0.0.0.0.24, CIMI-CORE-ITEM_GROUP.platelet_mean_volume_entitic_volume_in_blood_by_automated_count.v1] -- Platelet mean volume entitic volume in blood by automated count
+    }
+  }
 
 terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1.1"] = <
         text = <"Blood by automated count">
+      >
+      ["id0.0.0.0.1"] = <
+        text = <"Leukocytes count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.2"] = <
+        text = <"Erythrocytes count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.3"] = <
+        text = <"Hemoglobin mass per volume in blood">
+      >
+      ["id0.0.0.0.4"] = <
+        text = <"Hematocrit volume fraction of blood by automated count">
+      >
+      ["id0.0.0.0.5"] = <
+        text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">
+      >
+      ["id0.0.0.0.6"] = <
+        text = <"Erythrocyte mean corpuscular hemoglobin entitic mass by automated count">
+      >
+      ["id0.0.0.0.7"] = <
+        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
+      >
+      ["id0.0.0.0.8"] = <
+        text = <"Erythrocyte distribution width entitic volume by automated count">
+      >
+      ["id0.0.0.0.9"] = <
+        text = <"Erythrocyte distribution width ratio by automated count">
+      >
+      ["id0.0.0.0.10"] = <
+        text = <"Platelets count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.11"] = <
+        text = <"Platelet distribution width entitic volume in blood by automated count">
+      >
+      ["id0.0.0.0.12"] = <
+        text = <"Platelet mean volume entitic volume in blood by automated count">
+      >
+      ["id0.0.0.0.13"] = <
+        text = <"Leukocytes count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.14"] = <
+        text = <"Erythrocytes count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.15"] = <
+        text = <"Hemoglobin mass per volume in blood">
+      >
+      ["id0.0.0.0.16"] = <
+        text = <"Hematocrit volume fraction of blood by automated count">
+      >
+      ["id0.0.0.0.17"] = <
+        text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">
+      >
+      ["id0.0.0.0.18"] = <
+        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
+      >
+      ["id0.0.0.0.19"] = <
+        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
+      >
+      ["id0.0.0.0.20"] = <
+        text = <"Erythrocyte distribution width entitic volume by automated count">
+      >
+      ["id0.0.0.0.21"] = <
+        text = <"Erythrocyte distribution width ratio by automated count">
+      >
+      ["id0.0.0.0.22"] = <
+        text = <"Platelets count per volume in blood by automated count">
+      >
+      ["id0.0.0.0.23"] = <
+        text = <"Platelet distribution width entitic volume in blood by automated count">
+      >
+      ["id0.0.0.0.24"] = <
+        text = <"Platelet mean volume entitic volume in blood by automated count">
       >
     >
   >
