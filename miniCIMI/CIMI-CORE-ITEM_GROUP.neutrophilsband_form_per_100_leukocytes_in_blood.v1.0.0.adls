@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1.0.0
+    CIMI-CORE-ITEM_GROUP.neutrophilsband_form_per_100_leukocytes_in_blood.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
@@ -17,9 +17,9 @@ description
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Oxygen partial pressure in blood' concept">
-        use = <"Use for oxygen partial pressure in blood.">
-        keywords = <"oxygen","partial","pressure","in","blood">
+        purpose = <"Archetype for CIMI 'Neutrophilsband form per 100 leukocytes in blood' concept">
+        use = <"Use for neutrophilsband form per 100 leukocytes in blood.">
+        keywords = <"neutrophilsband","form","per","100","leukocytes","in","blood">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
@@ -28,7 +28,7 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxygen partial pressure in blood
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophilsband form per 100 leukocytes in blood
         item matches {
             ELEMENT[id0.0.2.0.0.1] matches { -- Name
                 value matches {
@@ -37,8 +37,8 @@ definition
             }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
-                    QUANTITY[id0.0.107.0.1.1] occurrences matches {1}
-                    -- Ex. UCUM Units = mm Hg 
+                    QUANTITY[id0.0.107.0.1.1] -- conditional 
+                    -- Ex. UCUM Units = % 
                 }
             }
         }
@@ -47,7 +47,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
-                text = <"Oxygen partial pressure in blood">
+                text = <"Neutrophilsband form per 100 leukocytes in blood">
             >
             ["id0.0.2.0.0.1"] = <
                 text = <"Name">
@@ -61,7 +61,7 @@ terminology
     term_bindings = <
         ["loinc"] = <
             items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/11556-8>
+                ["id1.1.1.1.1.1"] = <http://loinc.org/id/26508-2>
             >
         >
     >
