@@ -37,9 +37,14 @@ definition
             }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
-                    QUANTITY[id0.0.107.0.1.1]
-                    -- Data Type = NM 
-                    -- Ex. UCUM Units = Cel 
+                    QUANTITY[id0.0.107.0.1.1] matches {
+                        units matches {
+                            CODED_TEXT[id0.0.0.0.0.1] matches {
+                                code matches {"Cel"} -- Units
+                            }
+                        }
+                    }
+                    -- Data Type = NM
                 }
             }
         }
@@ -55,6 +60,9 @@ terminology
             >
             ["id0.0.7.0.1.1"] = <
                 text = <"Result value">
+            >
+            ["id0.0.0.0.0.1"] = <
+                text = <"Units">
             >
         >
     >

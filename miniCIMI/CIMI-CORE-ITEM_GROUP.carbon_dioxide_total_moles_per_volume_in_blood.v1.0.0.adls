@@ -37,9 +37,14 @@ definition
             }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
-                    QUANTITY[id0.0.107.0.1.1] -- conditional 
-                    -- Data Type = NM per ST 
-                    -- Ex. UCUM Units = mmol per L 
+                    QUANTITY[id0.0.107.0.1.1] matches { -- conditional
+                        units matches {
+                            CODED_TEXT[id0.0.0.0.0.1] matches {
+                                code matches {"mmol/L"} -- Units
+                            }
+                        }
+                    }
+                    -- Data Type = NM/ST
                 }
             }
         }
@@ -55,6 +60,9 @@ terminology
             >
             ["id0.0.7.0.1.1"] = <
                 text = <"Result value">
+            >
+            ["id0.0.0.0.0.1"] = <
+                text = <"Units">
             >
         >
     >

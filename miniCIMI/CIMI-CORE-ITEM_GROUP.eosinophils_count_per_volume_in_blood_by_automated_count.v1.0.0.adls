@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood_by_automated_count.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -37,8 +37,13 @@ definition
             }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
-                    ORDINAL[id0.0.107.0.1.1]
-                    -- Ex. UCUM Units = 10*3 per uL 
+                    QUANTITY[id0.0.107.0.1.1] matches {
+                        units matches {
+                            CODED_TEXT[id0.0.0.0.0.1] matches {
+                                code matches {"10*3/uL"} -- Units
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -54,6 +59,9 @@ terminology
             >
             ["id0.0.7.0.1.1"] = <
                 text = <"Result value">
+            >
+            ["id0.0.0.0.0.1"] = <
+                text = <"Units">
             >
         >
     >
