@@ -27,19 +27,19 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1.1.1] matches {  -- Complete blood count without diff
+  ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count without diff
     item matches {
-      use_archetype ITEM_GROUP[id0.0.8.1.0.0.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0} -- Laboratory panel
+      use_archetype ITEM_GROUP[id0.0.8.1.0.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0} -- Laboratory panel
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1.1.1"] = <
+      ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count without diff">
       >
-      ["id0.0.8.1.0.0.1"] = <
+      ["id0.0.8.1.0.1"] = <
         text = <"Laboratory panel">
       >
     >
