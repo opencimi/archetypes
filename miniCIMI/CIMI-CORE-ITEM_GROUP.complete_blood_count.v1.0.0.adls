@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1] matches {  -- Complete blood count
     item matches {
-	    use_archetype ITEM_GROUP[id5.0.0.0.1, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
+	    use_archetype ITEM_GROUP[id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.blood_by_automated_count.v1]
     }
   }
 
@@ -39,8 +39,8 @@ terminology
       ["id1.1.1.1.1"] = <
         text = <"Complete blood count">
       >
-      ["id5.0.0.0.1"] = <
-        text = <"Cluster">
+      ["id0.0.0.0.1"] = <
+        text = <"Blood by automated count">
       >
     >
   >

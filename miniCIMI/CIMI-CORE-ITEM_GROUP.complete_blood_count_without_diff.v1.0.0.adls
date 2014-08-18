@@ -29,6 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count without diff
     item matches {
+      use_archetype ITEM_GROUP[id0.0.7.1.0.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1] occurrences matches {0} -- Laboratory test
       use_archetype ITEM_GROUP[id0.0.8.1.0.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0} -- Laboratory panel
     }
   }
@@ -38,6 +39,9 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count without diff">
+      >
+      ["id0.0.7.1.0.1"] = <
+        text = <"Laboratory test">
       >
       ["id0.0.8.1.0.1"] = <
         text = <"Laboratory panel">
