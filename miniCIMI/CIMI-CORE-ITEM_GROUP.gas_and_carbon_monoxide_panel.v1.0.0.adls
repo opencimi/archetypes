@@ -29,15 +29,11 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and carbon monoxide panel
 		item matches {
-			-- use_archetype ITEM_GROUP [id0.0.7.0.1, CIMI-CORE-ITEM_GROUP.gas_and_carbon_monoxide_observable.v1] -- Test observable
-			ITEM_GROUP[id0.0.0.0.1] occurrences matches {0..1} matches { -- Test results
-				item matches {
-					use_archetype ITEM_GROUP [id1.1.1.1.2, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
-					use_archetype ITEM_GROUP [id1.1.1.1.3, CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
-					use_archetype ITEM_GROUP [id1.1.1.1.4, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
-					use_archetype ITEM_GROUP [id1.1.1.1.5, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
-					use_archetype ITEM_GROUP [id1.1.1.1.6, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
-				}
+			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
+			use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
+			use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
+			use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
+			use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
 			}
 		}
 	}
@@ -48,25 +44,19 @@ terminology
 			["id1.1.1.1.1"] = <
 				text = <"Gas and carbon monoxide panel">
 			>
-			-- ["id0.0.7.0.1"] = <
-			--	text = <"Test observable">
-			-- >
 			["id0.0.0.0.1"] = <
-				text = <"Test results">
-			>
-			["id1.1.1.1.2"] = <
 				text = <"pH of blood">
 			>
-			["id1.1.1.1.3"] = <
+			["id0.0.0.0.2"] = <
 				text = <"pH of blood adjusted to patients actual temperature">
 			>
-			["id1.1.1.1.4"] = <
+			["id0.0.0.0.3"] = <
 				text = <"Carbon dioxide partial pressure in blood">
 			>
-			["id1.1.1.1.5"] = <
+			["id0.0.0.0.4"] = <
 				text = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
 			>
-			["id1.1.1.1.6"] = <
+			["id0.0.0.0.5"] = <
 				text = <"Oxygen partial pressure in blood">
 			>
 		>
