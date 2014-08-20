@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.neutrophilsband_form_count_per_volume_in_blood_by_automated_count.v1.0.0
+    CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_blood_by_automated_count.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
@@ -17,9 +17,9 @@ description
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Neutrophilsband form count per volume in blood by automated count' concept">
-        use = <"Use for neutrophilsband form count per volume in blood by automated count.">
-        keywords = <"neutrophilsband","form","count","per","volume","in","blood","by","automated","count">
+        purpose = <"Archetype for CIMI 'Neutrophils band form count per volume in blood by automated count' concept">
+        use = <"Use for neutrophils band form count per volume in blood by automated count.">
+        keywords = <"neutrophils","band","form","count","per","volume","in","blood","by","automated","count">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
@@ -28,7 +28,7 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophilsband form count per volume in blood by automated count
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils band form count per volume in blood by automated count
         item matches {
             ELEMENT[id0.0.2.0.0.1] matches { -- Name
                 value matches {
@@ -52,7 +52,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
-                text = <"Neutrophilsband form count per volume in blood by automated count">
+                text = <"Neutrophils band form count per volume in blood by automated count">
             >
             ["id0.0.2.0.0.1"] = <
                 text = <"Name">
