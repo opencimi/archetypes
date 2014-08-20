@@ -29,41 +29,37 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Smear morphology panel
 		item matches {
-			ELEMENT[id0.0.2.0.1] matches { -- Name
-				value matches {
-					TEXT[id0.0.102.0.1]
-				}
-			}
-			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.platelet_adequacy_in_blood_by_light_microscopy.v1] -- Platelet adequacy in blood by light microscopy
-			use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
-			use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
+			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.platelet_adequacy_presence_in_blood_by_light_microscopy.v1] -- Platelet adequacy presence in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.background_stain_presence_in_blood_by_light_microscopy.v1] -- Background stain presence in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.fibrin_strands_presence_in_blood_by_light_microscopy.v1] -- Fibrin strands presence in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.blood_smear_finding_identifier_in_blood_by_light_microscopy.v1] -- Blood smear finding identifier in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
+			use_archetype ITEM_GROUP [id0.0.0.0.6, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
 		}
 	}
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1"] = <
-				text = <"Smear morphology panel">
-			>
-			["id0.0.2.0.1"] = <
-				text = <"Name">
-			>
-			["id0.0.0.0.1"] = <
-				text = <"Platelet adequacy in blood by light microscopy">
-			>
-			["id0.0.0.0.2"] = <
-				text = <"Erythrocyte morphology panel">
-			>
-			["id0.0.0.0.3"] = <
-				text = <"Leukocyte morphology panel">
-			>
+			["id1.1.1.1.1"] = <text = <"Smear morphology panel">>
+			["id0.0.0.0.1"] = <text = <"Platelet adequacy presence in blood by light microscopy">>
+			["id0.0.0.0.2"] = <text = <"Background stain presence in blood by light microscopy">>
+			["id0.0.0.0.3"] = <text = <"Fibrin strands presence in blood by light microscopy">>
+			["id0.0.0.0.4"] = <text = <"Blood smear finding identifier in blood by light microscopy">>
+			["id0.0.0.0.5"] = <text = <"Erythrocyte morphology panel">>
+			["id0.0.0.0.6"] = <text = <"Leukocyte morphology panel">>
 		>
 	>
 	term_bindings = <
-		["SNOMED-CT"] = <
+		["loinc"] = <
 			items = <
-				["id4"] = <http://snomedct.info/id/364712009>
+				["id1.1.1.1.1"] = <http://loinc.org/id/34994-4>
+				["id0.0.0.0.1"] = <http://loinc.org/id/9317-9>
+				["id0.0.0.0.2"] = <http://loinc.org/id/18280-8>
+				["id0.0.0.0.3"] = <http://loinc.org/id/32778-3>
+				["id0.0.0.0.4"] = <http://loinc.org/id/5909-7>
+				["id0.0.0.0.5"] = <http://loinc.org/id/58408-6>
+				["id0.0.0.0.6"] = <http://loinc.org/id/58407-8>
 			>
 		>
 	>
