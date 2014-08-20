@@ -29,11 +29,6 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Leukocyte morphology panel
 		item matches {
-			ELEMENT[id0.0.2.0.1] matches { -- Name
-				value matches {
-					TEXT[id0.0.102.0.1]
-				}
-			}
 			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.auer_rods_in_blood_by_light_microscopy.v1] -- Auer rods in blood by light microscopy
 		}
 	}
@@ -43,9 +38,6 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1"] = <
 				text = <"Leukocyte morphology panel">
-			>
-			["id0.0.2.0.1"] = <
-				text = <"Name">
 			>
 			["id0.0.0.0.1"] = <
 				text = <"Auer rods in blood by light microscopy">
