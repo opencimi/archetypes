@@ -27,12 +27,85 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] -- Manual diff
-  -- ITEM_GROUP[id1.1.1.1.1] matches { -- Manual diff
-    -- item matches {
-    --   use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.complete_blood_count_automated_result_group.v1] -- Complete blood count by automated count
-    -- }
-  -- }
+  ITEM_GROUP[id1.1.1.1.1] matches { -- Manual diff
+    item matches {
+      use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_blood.v1] -- Leukocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood.v1] -- Basophils per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_blood.v1] -- Basophils count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.basophils_immature_per_100_leukocytes_in_blood.v1] -- Basophils immature per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.basophils_immature_count_per_volume_in_blood.v1] -- Basophils immature count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.6, CIMI-CORE-ITEM_GROUP.blasts_per_100_leukocytes_in_blood.v1] -- Blasts per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.7, CIMI-CORE-ITEM_GROUP.blasts_count_per_volume_in_blood.v1] -- Blasts count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.8, CIMI-CORE-ITEM_GROUP.eosinophils_per_100_leukocytes_in_blood.v1] -- Eosinophils per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.9, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood.v1] -- Eosinophils count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.10, CIMI-CORE-ITEM_GROUP.eosinophils_immature_per_100_leukocytes_in_blood.v1] -- Eosinophils immature per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.11, CIMI-CORE-ITEM_GROUP.eosinophils_immature_count_per_volume_in_blood.v1] -- Eosinophils immature count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.12, CIMI-CORE-ITEM_GROUP.granulocytes_per_100_leukocytes_in_blood.v1] -- Granulocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.13, CIMI-CORE-ITEM_GROUP.granulocytes_count_per_volume_in_blood.v1] -- Granulocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.14, CIMI-CORE-ITEM_GROUP.hairy_cells_per_100_leukocytes_in_blood.v1] -- Hairy cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.15, CIMI-CORE-ITEM_GROUP.hairy_cells_count_per_volume_in_blood.v1] -- Hairy cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.16, CIMI-CORE-ITEM_GROUP.large_unstained_cells_per_100_leukocytes_in_blood.v1] -- Large unstained cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.17, CIMI-CORE-ITEM_GROUP.large_unstained_cells_count_per_volume_in_blood.v1] -- Large unstained cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.18, CIMI-CORE-ITEM_GROUP.leukocytes_other_per_100_leukocytes_in_blood.v1] -- Leukocytes other per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.19, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_blood.v1] -- Leukocytes other count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.20, CIMI-CORE-ITEM_GROUP.lymphoblasts_per_100_leukocytes_in_blood.v1] -- Lymphoblasts per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.21, CIMI-CORE-ITEM_GROUP.lymphoblasts_count_per_volume_in_blood.v1] -- Lymphoblasts count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.22, CIMI-CORE-ITEM_GROUP.lymphocytes_per_100_leukocytes_in_blood.v1] -- Lymphocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.23, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_blood.v1] -- Lymphocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.24, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_per_100_leukocytes_in_blood.v1] -- Lymphocytes abnormal per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.25, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_count_per_volume_in_blood.v1] -- Lymphocytes abnormal count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.26, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_100_leukocytes_in_blood.v1] -- Lymphocytes variant per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.27, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_count_per_volume_in_blood.v1] -- Lymphocytes variant count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.28, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_per_100_leukocytes_in_blood.v1] -- Lymphocytes large granular per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.29, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_count_per_volume_in_blood.v1] -- Lymphocytes large granular count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.30, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_per_100_leukocytes_in_blood.v1] -- Lymphocytes plasmacytoid per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.31, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_count_per_volume_in_blood.v1] -- Lymphocytes plasmacytoid count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.32, CIMI-CORE-ITEM_GROUP.lymphoma_cells_per_100_leukocytes_in_blood.v1] -- Lymphoma cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.33, CIMI-CORE-ITEM_GROUP.lymphoma_cells_count_per_volume_in_blood.v1] -- Lymphoma cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.34, CIMI-CORE-ITEM_GROUP.malignant_cells_per_100_leukocytes_in_blood.v1] -- Malignant cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.35, CIMI-CORE-ITEM_GROUP.malignant_cells_count_per_volume_in_blood.v1] -- Malignant cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.36, CIMI-CORE-ITEM_GROUP.metamyelocytes_per_100_leukocytes_in_blood.v1] -- Metamyelocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.37, CIMI-CORE-ITEM_GROUP.metamyelocytes_count_per_volume_in_blood.v1] -- Metamyelocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.38, CIMI-CORE-ITEM_GROUP.monoblasts_per_100_leukocytes_in_blood.v1] -- Monoblasts per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.39, CIMI-CORE-ITEM_GROUP.monoblasts_count_per_volume_in_blood.v1] -- Monoblasts count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.40, CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_blood.v1] -- Monocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.41, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_blood.v1] -- Monocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.42, CIMI-CORE-ITEM_GROUP.monocytes_abnormal_per_100_leukocytes_in_blood.v1] -- Monocytes abnormal per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.43, CIMI-CORE-ITEM_GROUP.monocytes_abnormal_count_per_volume_in_blood.v1] -- Monocytes abnormal count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.44, CIMI-CORE-ITEM_GROUP.immature_monocytes_per_100_leukocytes_in_blood.v1] -- Immature monocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.45, CIMI-CORE-ITEM_GROUP.immature_monocytes_count_per_volume_in_blood.v1] -- Immature monocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.46, CIMI-CORE-ITEM_GROUP.myeloblasts_per_100_leukocytes_in_blood.v1] -- Myeloblasts per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.47, CIMI-CORE-ITEM_GROUP.myeloblasts_count_per_volume_in_blood.v1] -- Myeloblasts count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.48, CIMI-CORE-ITEM_GROUP.myelocytes_per_100_leukocytes_in_blood.v1] -- Myelocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.49, CIMI-CORE-ITEM_GROUP.myelocytes_count_per_volume_in_blood.v1] -- Myelocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.50, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood.v1] -- Neutrophils per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.51, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood.v1] -- Neutrophils count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.52, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_blood.v1] -- Neutrophils band form per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.53, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_blood.v1] -- Neutrophils band form count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.54, CIMI-CORE-ITEM_GROUP.neutrophilshypersegmented_per_100_leukocytes_in_blood.v1] -- Neutrophilshypersegmented per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.55, CIMI-CORE-ITEM_GROUP.neutrophilshypersegmented_count_per_volume_in_blood.v1] -- Neutrophilshypersegmented count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.56, CIMI-CORE-ITEM_GROUP.neutrophilssegmented_count_per_volume_in_blood.v1] -- Neutrophilssegmented count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.57, CIMI-CORE-ITEM_GROUP.neutrophilssegmented_per_100_leukocytes_in_blood.v1] -- Neutrophilssegmented per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.58, CIMI-CORE-ITEM_GROUP.plasma_cell_precursor_per_100_leukocytes_in_blood.v1] -- Plasma cell precursor per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.59, CIMI-CORE-ITEM_GROUP.plasma_cell_precursor_count_per_volume_in_blood.v1] -- Plasma cell precursor count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.60, CIMI-CORE-ITEM_GROUP.plasma_cells_per_100_leukocytes_in_blood.v1] -- Plasma cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.61, CIMI-CORE-ITEM_GROUP.plasma_cells_count_per_volume_in_blood.v1] -- Plasma cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.62, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_per_100_leukocytes_in_blood.v1] -- Polymorphonuclear cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.63, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_count_per_volume_in_blood.v1] -- Polymorphonuclear cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.64, CIMI-CORE-ITEM_GROUP.prolymphocytes_per_100_leukocytes_in_blood.v1] -- Prolymphocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.65, CIMI-CORE-ITEM_GROUP.prolymphocytes_count_per_volume_in_blood.v1] -- Prolymphocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.66, CIMI-CORE-ITEM_GROUP.promonocytes_per_100_leukocytes_in_blood.v1] -- Promonocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.67, CIMI-CORE-ITEM_GROUP.promonocytes_count_per_volume_in_blood.v1] -- Promonocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.68, CIMI-CORE-ITEM_GROUP.promyelocytes_per_100_leukocytes_in_blood.v1] -- Promyelocytes per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.69, CIMI-CORE-ITEM_GROUP.promyelocytes_count_per_volume_in_blood.v1] -- Promyelocytes count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.70, CIMI-CORE-ITEM_GROUP.sezary_cells_per_100_leukocytes_in_blood.v1] -- Sezary cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.71, CIMI-CORE-ITEM_GROUP.sezary_cells_count_per_volume_in_blood.v1] -- Sezary cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.72, CIMI-CORE-ITEM_GROUP.smudge_cells_per_100_leukocytes_in_blood.v1] -- Smudge cells per 100 leukocytes in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.73, CIMI-CORE-ITEM_GROUP.smudge_cells_count_per_volume_in_blood.v1] -- Smudge cells count per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.74, CIMI-CORE-ITEM_GROUP.cell_fractions_per_differential_interpretation_in_blood.v1] -- Cell fractions per differential interpretation in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.75, CIMI-CORE-ITEM_GROUP.smear_morphology_panel.v1] -- Smear morphology panel
+    }
+  }
 
 terminology
   term_definitions = <
@@ -40,8 +113,230 @@ terminology
       ["id1.1.1.1.1"] = <
         text = <"Manual diff">
       >
-      -- ["id0.0.0.0.1"] = <
-      --  text = <"Complete blood count by automated count">
-      -- >
+      ["id0.0.0.0.1"] = <
+        text = <"Leukocytes count per volume in blood">
+      >
+      ["id0.0.0.0.2"] = <
+        text = <"Basophils per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.3"] = <
+        text = <"Basophils count per volume in blood">
+      >
+      ["id0.0.0.0.4"] = <
+        text = <"Basophils immature per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.5"] = <
+        text = <"Basophils immature count per volume in blood">
+      >
+      ["id0.0.0.0.6"] = <
+        text = <"Blasts per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.7"] = <
+        text = <"Blasts count per volume in blood">
+      >
+      ["id0.0.0.0.8"] = <
+        text = <"Eosinophils per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.9"] = <
+        text = <"Eosinophils count per volume in blood">
+      >
+      ["id0.0.0.0.10"] = <
+        text = <"Eosinophils immature per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.11"] = <
+        text = <"Eosinophils immature count per volume in blood">
+      >
+      ["id0.0.0.0.12"] = <
+        text = <"Granulocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.13"] = <
+        text = <"Granulocytes count per volume in blood">
+      >
+      ["id0.0.0.0.14"] = <
+        text = <"Hairy cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.15"] = <
+        text = <"Hairy cells count per volume in blood">
+      >
+      ["id0.0.0.0.16"] = <
+        text = <"Large unstained cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.17"] = <
+        text = <"Large unstained cells count per volume in blood">
+      >
+      ["id0.0.0.0.18"] = <
+        text = <"Leukocytes other per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.19"] = <
+        text = <"Leukocytes other count per volume in blood">
+      >
+      ["id0.0.0.0.20"] = <
+        text = <"Lymphoblasts per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.21"] = <
+        text = <"Lymphoblasts count per volume in blood">
+      >
+      ["id0.0.0.0.22"] = <
+        text = <"Lymphocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.23"] = <
+        text = <"Lymphocytes count per volume in blood">
+      >
+      ["id0.0.0.0.24"] = <
+        text = <"Lymphocytes abnormal per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.25"] = <
+        text = <"Lymphocytes abnormal count per volume in blood">
+      >
+      ["id0.0.0.0.26"] = <
+        text = <"Lymphocytes variant per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.27"] = <
+        text = <"Lymphocytes variant count per volume in blood">
+      >
+      ["id0.0.0.0.28"] = <
+        text = <"Lymphocytes large granular per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.29"] = <
+        text = <"Lymphocytes large granular count per volume in blood">
+      >
+      ["id0.0.0.0.30"] = <
+        text = <"Lymphocytes plasmacytoid per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.31"] = <
+        text = <"Lymphocytes plasmacytoid count per volume in blood">
+      >
+      ["id0.0.0.0.32"] = <
+        text = <"Lymphoma cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.33"] = <
+        text = <"Lymphoma cells count per volume in blood">
+      >
+      ["id0.0.0.0.34"] = <
+        text = <"Malignant cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.35"] = <
+        text = <"Malignant cells count per volume in blood">
+      >
+      ["id0.0.0.0.36"] = <
+        text = <"Metamyelocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.37"] = <
+        text = <"Metamyelocytes count per volume in blood">
+      >
+      ["id0.0.0.0.38"] = <
+        text = <"Monoblasts per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.39"] = <
+        text = <"Monoblasts count per volume in blood">
+      >
+      ["id0.0.0.0.40"] = <
+        text = <"Monocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.41"] = <
+        text = <"Monocytes count per volume in blood">
+      >
+      ["id0.0.0.0.42"] = <
+        text = <"Monocytes abnormal per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.43"] = <
+        text = <"Monocytes abnormal count per volume in blood">
+      >
+      ["id0.0.0.0.44"] = <
+        text = <"Immature monocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.45"] = <
+        text = <"Immature monocytes count per volume in blood">
+      >
+      ["id0.0.0.0.46"] = <
+        text = <"Myeloblasts per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.47"] = <
+        text = <"Myeloblasts count per volume in blood">
+      >
+      ["id0.0.0.0.48"] = <
+        text = <"Myelocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.49"] = <
+        text = <"Myelocytes count per volume in blood">
+      >
+      ["id0.0.0.0.50"] = <
+        text = <"Neutrophils per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.51"] = <
+        text = <"Neutrophils count per volume in blood">
+      >
+      ["id0.0.0.0.52"] = <
+        text = <"Neutrophils band form per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.53"] = <
+        text = <"Neutrophils band form count per volume in blood">
+      >
+      ["id0.0.0.0.54"] = <
+        text = <"Neutrophilshypersegmented per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.55"] = <
+        text = <"Neutrophilshypersegmented count per volume in blood">
+      >
+      ["id0.0.0.0.56"] = <
+        text = <"Neutrophilssegmented count per volume in blood">
+      >
+      ["id0.0.0.0.57"] = <
+        text = <"Neutrophilssegmented per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.58"] = <
+        text = <"Plasma cell precursor per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.59"] = <
+        text = <"Plasma cell precursor count per volume in blood">
+      >
+      ["id0.0.0.0.60"] = <
+        text = <"Plasma cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.61"] = <
+        text = <"Plasma cells count per volume in blood">
+      >
+      ["id0.0.0.0.62"] = <
+        text = <"Polymorphonuclear cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.63"] = <
+        text = <"Polymorphonuclear cells count per volume in blood">
+      >
+      ["id0.0.0.0.64"] = <
+        text = <"Prolymphocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.65"] = <
+        text = <"Prolymphocytes count per volume in blood">
+      >
+      ["id0.0.0.0.66"] = <
+        text = <"Promonocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.67"] = <
+        text = <"Promonocytes count per volume in blood">
+      >
+      ["id0.0.0.0.68"] = <
+        text = <"Promyelocytes per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.69"] = <
+        text = <"Promyelocytes count per volume in blood">
+      >
+      ["id0.0.0.0.70"] = <
+        text = <"Sezary cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.71"] = <
+        text = <"Sezary cells count per volume in blood">
+      >
+      ["id0.0.0.0.72"] = <
+        text = <"Smudge cells per 100 leukocytes in blood">
+      >
+      ["id0.0.0.0.73"] = <
+        text = <"Smudge cells count per volume in blood">
+      >
+      ["id0.0.0.0.74"] = <
+        text = <"Cell fractions per differential interpretation in blood">
+      >
+      ["id0.0.0.0.75"] = <
+        text = <"Smear morphology panel">
+      >
     >
   >
