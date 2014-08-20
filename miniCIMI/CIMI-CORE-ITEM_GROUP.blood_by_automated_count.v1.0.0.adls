@@ -59,80 +59,61 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <
-        text = <"Blood by automated count">
-      >
-      ["id0.0.0.0.1"] = <
-        text = <"Leukocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.2"] = <
-        text = <"Erythrocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.3"] = <
-        text = <"Hemoglobin mass per volume in blood">
-      >
-      ["id0.0.0.0.4"] = <
-        text = <"Hematocrit volume fraction of blood by automated count">
-      >
-      ["id0.0.0.0.5"] = <
-        text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">
-      >
-      ["id0.0.0.0.6"] = <
-        text = <"Erythrocyte mean corpuscular hemoglobin entitic mass by automated count">
-      >
-      ["id0.0.0.0.7"] = <
-        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
-      >
-      ["id0.0.0.0.8"] = <
-        text = <"Erythrocyte distribution width entitic volume by automated count">
-      >
-      ["id0.0.0.0.9"] = <
-        text = <"Erythrocyte distribution width ratio by automated count">
-      >
-      ["id0.0.0.0.10"] = <
-        text = <"Platelets count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.11"] = <
-        text = <"Platelet distribution width entitic volume in blood by automated count">
-      >
-      ["id0.0.0.0.12"] = <
-        text = <"Platelet mean volume entitic volume in blood by automated count">
-      >
-      ["id0.0.0.0.13"] = <
-        text = <"Leukocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.14"] = <
-        text = <"Erythrocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.15"] = <
-        text = <"Hemoglobin mass per volume in blood">
-      >
-      ["id0.0.0.0.16"] = <
-        text = <"Hematocrit volume fraction of blood by automated count">
-      >
-      ["id0.0.0.0.17"] = <
-        text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">
-      >
-      ["id0.0.0.0.18"] = <
-        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
-      >
-      ["id0.0.0.0.19"] = <
-        text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
-      >
-      ["id0.0.0.0.20"] = <
-        text = <"Erythrocyte distribution width entitic volume by automated count">
-      >
-      ["id0.0.0.0.21"] = <
-        text = <"Erythrocyte distribution width ratio by automated count">
-      >
-      ["id0.0.0.0.22"] = <
-        text = <"Platelets count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.23"] = <
-        text = <"Platelet distribution width entitic volume in blood by automated count">
-      >
-      ["id0.0.0.0.24"] = <
-        text = <"Platelet mean volume entitic volume in blood by automated count">
+      ["id1.1.1.1.1"] = <text = <"Blood by automated count">>
+      ["id0.0.0.0.1"] = <text = <"Leukocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.2"] = <text = <"Erythrocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.3"] = <text = <"Hemoglobin mass per volume in blood">>
+      ["id0.0.0.0.4"] = <text = <"Hematocrit volume fraction of blood by automated count">>
+      ["id0.0.0.0.5"] = <text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">>
+      ["id0.0.0.0.6"] = <text = <"Erythrocyte mean corpuscular hemoglobin entitic mass by automated count">>
+      ["id0.0.0.0.7"] = <text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">>
+      ["id0.0.0.0.8"] = <text = <"Erythrocyte distribution width entitic volume by automated count">>
+      ["id0.0.0.0.9"] = <text = <"Erythrocyte distribution width ratio by automated count">>
+      ["id0.0.0.0.10"] = <text = <"Platelets count per volume in blood by automated count">>
+      ["id0.0.0.0.11"] = <text = <"Platelet distribution width entitic volume in blood by automated count">>
+      ["id0.0.0.0.12"] = <text = <"Platelet mean volume entitic volume in blood by automated count">>
+      ["id0.0.0.0.13"] = <text = <"Leukocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.14"] = <text = <"Erythrocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.15"] = <text = <"Hemoglobin mass per volume in blood">>
+      ["id0.0.0.0.16"] = <text = <"Hematocrit volume fraction of blood by automated count">>
+      ["id0.0.0.0.17"] = <text = <"Erythrocyte mean corpuscular volume entitic volume by automated count">>
+      ["id0.0.0.0.18"] = <text = <"Erythrocyte mean corpuscular hemoglobin entitic mass by automated count">>
+      ["id0.0.0.0.19"] = <text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">>
+      ["id0.0.0.0.20"] = <text = <"Erythrocyte distribution width entitic volume by automated count">>
+      ["id0.0.0.0.21"] = <text = <"Erythrocyte distribution width ratio by automated count">>
+      ["id0.0.0.0.22"] = <text = <"Platelets count per volume in blood by automated count">>
+      ["id0.0.0.0.23"] = <text = <"Platelet distribution width entitic volume in blood by automated count">>
+      ["id0.0.0.0.24"] = <text = <"Platelet mean volume entitic volume in blood by automated count">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+      ["id1.1.1.1.1"] = <http://loinc.org/id/58410-2>
+      ["id0.0.0.0.1"] = <http://loinc.org/id/6690-2>
+      ["id0.0.0.0.2"] = <http://loinc.org/id/789-8>
+      ["id0.0.0.0.3"] = <http://loinc.org/id/718-7>
+      ["id0.0.0.0.4"] = <http://loinc.org/id/4544-3>
+      ["id0.0.0.0.5"] = <http://loinc.org/id/787-2>
+      ["id0.0.0.0.6"] = <http://loinc.org/id/785-6>
+      ["id0.0.0.0.7"] = <http://loinc.org/id/786-4>
+      ["id0.0.0.0.8"] = <http://loinc.org/id/21000-5>
+      ["id0.0.0.0.9"] = <http://loinc.org/id/788-0>
+      ["id0.0.0.0.10"] = <http://loinc.org/id/777-3>
+      ["id0.0.0.0.11"] = <http://loinc.org/id/32207-3>
+      ["id0.0.0.0.12"] = <http://loinc.org/id/32623-1>
+      ["id0.0.0.0.13"] = <http://loinc.org/id/6690-2>
+      ["id0.0.0.0.14"] = <http://loinc.org/id/789-8>
+      ["id0.0.0.0.15"] = <http://loinc.org/id/718-7>
+      ["id0.0.0.0.16"] = <http://loinc.org/id/4544-3>
+      ["id0.0.0.0.17"] = <http://loinc.org/id/787-2>
+      ["id0.0.0.0.18"] = <http://loinc.org/id/785-6>
+      ["id0.0.0.0.19"] = <http://loinc.org/id/786-4>
+      ["id0.0.0.0.20"] = <http://loinc.org/id/21000-5>
+      ["id0.0.0.0.21"] = <http://loinc.org/id/788-0>
+      ["id0.0.0.0.22"] = <http://loinc.org/id/777-3>
+      ["id0.0.0.0.23"] = <http://loinc.org/id/32207-3>
+      ["id0.0.0.0.24"] = <http://loinc.org/id/32623-1>
       >
     >
   >
