@@ -54,62 +54,49 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <
-        text = <"Automated diff">
-      >
-      ["id0.0.0.0.1"] = <
-        text = <"Neutrophils per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.2"] = <
-        text = <"Neutrophils band form per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.3"] = <
-        text = <"Granulocytes per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.4"] = <
-        text = <"Lymphocytes per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.5"] = <
-        text = <"Lymphocytes variant per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.6"] = <
-        text = <"Monocytes per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.7"] = <
-        text = <"Eosinophils per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.8"] = <
-        text = <"Basophils per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.9"] = <
-        text = <"Other cells per 100 leukocytes in blood by automated count">
-      >
-      ["id0.0.0.0.10"] = <
-        text = <"Neutrophils count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.11"] = <
-        text = <"Neutrophils band form count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.12"] = <
-        text = <"Lymphocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.13"] = <
-        text = <"Lymphocytes variant count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.14"] = <
-        text = <"Monocytes count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.15"] = <
-        text = <"Eosinophils count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.16"] = <
-        text = <"Basophils count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.17"] = <
-        text = <"Leukocytes other count per volume in blood by automated count">
-      >
-      ["id0.0.0.0.18"] = <
-        text = <"Other cells count per volume in blood by automated count">
+      ["id1.1.1.1.1"] = <text = <"Automated diff">>
+      ["id0.0.0.0.1"] = <text = <"Neutrophils per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.2"] = <text = <"Neutrophils band form per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.3"] = <text = <"Granulocytes per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.4"] = <text = <"Lymphocytes per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.5"] = <text = <"Lymphocytes variant per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.6"] = <text = <"Monocytes per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.7"] = <text = <"Eosinophils per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.8"] = <text = <"Basophils per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.9"] = <text = <"Other cells per 100 leukocytes in blood by automated count">>
+      ["id0.0.0.0.10"] = <text = <"Neutrophils count per volume in blood by automated count">>
+      ["id0.0.0.0.11"] = <text = <"Neutrophils band form count per volume in blood by automated count">>
+      ["id0.0.0.0.12"] = <text = <"Lymphocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.13"] = <text = <"Lymphocytes variant count per volume in blood by automated count">>
+      ["id0.0.0.0.14"] = <text = <"Monocytes count per volume in blood by automated count">>
+      ["id0.0.0.0.15"] = <text = <"Eosinophils count per volume in blood by automated count">>
+      ["id0.0.0.0.16"] = <text = <"Basophils count per volume in blood by automated count">>
+      ["id0.0.0.0.17"] = <text = <"Leukocytes other count per volume in blood by automated count">>
+      ["id0.0.0.0.18"] = <text = <"Other cells count per volume in blood by automated count">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57023-4>
+        ["id0.0.0.0.1"] = <http://loinc.org/id/770-8>
+        ["id0.0.0.0.2"] = <http://loinc.org/id/35332-6>
+        ["id0.0.0.0.3"] = <http://loinc.org/id/19023-1>
+        ["id0.0.0.0.4"] = <http://loinc.org/id/736-9>
+        ["id0.0.0.0.5"] = <http://loinc.org/id/42250-1>
+        ["id0.0.0.0.6"] = <http://loinc.org/id/5905-5>
+        ["id0.0.0.0.7"] = <http://loinc.org/id/713-8>
+        ["id0.0.0.0.8"] = <http://loinc.org/id/706-2>
+        ["id0.0.0.0.9"] = <http://loinc.org/id/58409-4>
+        ["id0.0.0.0.10"] = <http://loinc.org/id/751-8>
+        ["id0.0.0.0.11"] = <http://loinc.org/id/30229-9>
+        ["id0.0.0.0.12"] = <http://loinc.org/id/731-0>
+        ["id0.0.0.0.13"] = <http://loinc.org/id/43743-4>
+        ["id0.0.0.0.14"] = <http://loinc.org/id/742-7>
+        ["id0.0.0.0.15"] = <http://loinc.org/id/711-2>
+        ["id0.0.0.0.16"] = <http://loinc.org/id/704-7>
+        ["id0.0.0.0.17"] = <http://loinc.org/id/51383-8>
+        ["id0.0.0.0.18"] = <http://loinc.org/id/58443-3>
       >
     >
   >
