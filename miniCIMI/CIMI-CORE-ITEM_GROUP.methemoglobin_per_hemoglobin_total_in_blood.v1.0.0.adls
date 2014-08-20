@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.methemoglobin_per_hemoglobintotal_in_blood.v1.0.0
+    CIMI-CORE-ITEM_GROUP.methemoglobin_per_hemoglobin_total_in_blood.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
@@ -17,9 +17,9 @@ description
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Methemoglobin per hemoglobintotal in blood' concept">
-        use = <"Use for methemoglobin per hemoglobintotal in blood.">
-        keywords = <"methemoglobin","per","hemoglobintotal","in","blood">
+        purpose = <"Archetype for CIMI 'Methemoglobin per hemoglobin total in blood' concept">
+        use = <"Use for methemoglobin per hemoglobin total in blood.">
+        keywords = <"methemoglobin","per","hemoglobin","total","blood">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
@@ -28,7 +28,7 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Methemoglobin per hemoglobintotal in blood
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Methemoglobin per hemoglobin total in blood
         item matches {
             ELEMENT[id0.0.2.0.0.1] matches { -- Name
                 value matches {
@@ -52,7 +52,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
-                text = <"Methemoglobin per hemoglobintotal in blood">
+                text = <"Methemoglobin per hemoglobin total in blood">
             >
             ["id0.0.2.0.0.1"] = <
                 text = <"Name">

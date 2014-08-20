@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.carboxyhemoglobin_per_hemoglobintotal_in_blood.v1.0.0
+    CIMI-CORE-ITEM_GROUP.carboxyhemoglobin_per_hemoglobin_total_in_blood.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
@@ -17,9 +17,9 @@ description
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Carboxyhemoglobin per hemoglobintotal in blood' concept">
-        use = <"Use for carboxyhemoglobin per hemoglobintotal in blood.">
-        keywords = <"carboxyhemoglobin","per","hemoglobintotal","in","blood">
+        purpose = <"Archetype for CIMI 'Carboxyhemoglobin per hemoglobin_total in blood' concept">
+        use = <"Use for carboxyhemoglobin per hemoglobin_total in blood.">
+        keywords = <"carboxyhemoglobin","per","hemoglobin","total","blood">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
@@ -28,7 +28,7 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Carboxyhemoglobin per hemoglobintotal in blood
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Carboxyhemoglobin per hemoglobin_total in blood
         item matches {
             ELEMENT[id0.0.2.0.0.1] matches { -- Name
                 value matches {
@@ -52,7 +52,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
-                text = <"Carboxyhemoglobin per hemoglobintotal in blood">
+                text = <"Carboxyhemoglobin per hemoglobin_total in blood">
             >
             ["id0.0.2.0.0.1"] = <
                 text = <"Name">
