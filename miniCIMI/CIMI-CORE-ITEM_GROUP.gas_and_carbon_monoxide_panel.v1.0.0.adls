@@ -27,44 +27,79 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and carbon monoxide panel
-		item matches {
-			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- pH of blood
-			use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patient_temperature.v1] -- pH of blood adjusted to patients actual temperature
-			use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_blood.v1] -- Carbon dioxide partial pressure in blood
-			use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patient_temperature.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
-			use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
-			}
-		}
-	}
+  ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and carbon monoxide panel
+    item matches {
+      use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.ph_of_blood.v1] -- Ph of blood
+      use_archetype ITEM_GROUP [id0.0.0.0.2, CIMI-CORE-ITEM_GROUP.ph_of_blood_adjusted_to_patients_actual_temperature.v1] -- Ph of blood adjusted to patients actual temperature
+      use_archetype ITEM_GROUP [id0.0.0.0.3, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_in_blood.v1] -- Carbon dioxide partial pressure in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.4, CIMI-CORE-ITEM_GROUP.carbon_dioxide_partial_pressure_adjusted_to_patients_actual_temperature_in_blood.v1] -- Carbon dioxide partial pressure adjusted to patients actual temperature in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.5, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_in_blood.v1] -- Oxygen partial pressure in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.6, CIMI-CORE-ITEM_GROUP.oxygen_partial_pressure_adjusted_to_patients_actual_temperature_in_blood.v1] -- Oxygen partial pressure adjusted to patients actual temperature in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.7, CIMI-CORE-ITEM_GROUP.oxygen_content_in_blood.v1] -- Oxygen content in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.8, CIMI-CORE-ITEM_GROUP.bicarbonate_moles_per_volume_in_blood.v1] -- Bicarbonate moles per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.9, CIMI-CORE-ITEM_GROUP.carbon_dioxide_total_moles_per_volume_in_blood.v1] -- Carbon dioxide total moles per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.10, CIMI-CORE-ITEM_GROUP.base_excess_in_blood_by_calculation.v1] -- Base excess in blood by calculation
+      use_archetype ITEM_GROUP [id0.0.0.0.11, CIMI-CORE-ITEM_GROUP.base_deficit_in_blood.v1] -- Base deficit in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.12, CIMI-CORE-ITEM_GROUP.fractional_oxyhemoglobin_in_blood.v1] -- Fractional oxyhemoglobin in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.13, CIMI-CORE-ITEM_GROUP.oxygen_saturation_in_blood.v1] -- Oxygen saturation in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.14, CIMI-CORE-ITEM_GROUP.carboxyhemoglobin_per_hemoglobin_total_in_blood.v1] -- Carboxyhemoglobin per hemoglobin total in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.15, CIMI-CORE-ITEM_GROUP.methemoglobin_per_hemoglobin_total_in_blood.v1] -- Methemoglobin per hemoglobin total in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.16, CIMI-CORE-ITEM_GROUP.hemoglobin_mass_per_volume_in_blood.v1] -- Hemoglobin mass per volume in blood
+      use_archetype ITEM_GROUP [id0.0.0.0.17, CIMI-CORE-ITEM_GROUP.inhaled_oxygen_concentration.v1] -- Inhaled oxygen concentration
+      use_archetype ITEM_GROUP [id0.0.0.0.18, CIMI-CORE-ITEM_GROUP.inhaled_oxygen_flow_rate.v1] -- Inhaled oxygen flow rate
+      use_archetype ITEM_GROUP [id0.0.0.0.19, CIMI-CORE-ITEM_GROUP.body_temperature.v1] -- Body temperature
+      }
+    }
+  }
 
 terminology
-	term_definitions = <
-		["en"] = <
-			["id1.1.1.1.1"] = <
-				text = <"Gas and carbon monoxide panel">
-			>
-			["id0.0.0.0.1"] = <
-				text = <"pH of blood">
-			>
-			["id0.0.0.0.2"] = <
-				text = <"pH of blood adjusted to patients actual temperature">
-			>
-			["id0.0.0.0.3"] = <
-				text = <"Carbon dioxide partial pressure in blood">
-			>
-			["id0.0.0.0.4"] = <
-				text = <"Carbon dioxide partial pressure adjusted to patients actual temperature">
-			>
-			["id0.0.0.0.5"] = <
-				text = <"Oxygen partial pressure in blood">
-			>
-		>
-	>
-	term_bindings = <
-		["SNOMED-CT"] = <
-			items = <
-				["id1.1.1.1.1"] = <http://snomedct.info/id/441742003>
-			>
-		>
-	>
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Gas and carbon monoxide panel">>
+      ["id0.0.0.0.1"] = <text = <"Ph of blood">>
+      ["id0.0.0.0.2"] = <text = <"Ph of blood adjusted to patients actual temperature">>
+      ["id0.0.0.0.3"] = <text = <"Carbon dioxide partial pressure in blood">>
+      ["id0.0.0.0.4"] = <text = <"Carbon dioxide partial pressure adjusted to patients actual temperature in blood">>
+      ["id0.0.0.0.5"] = <text = <"Oxygen partial pressure in blood">>
+      ["id0.0.0.0.6"] = <text = <"Oxygen partial pressure adjusted to patients actual temperature in blood">>
+      ["id0.0.0.0.7"] = <text = <"Oxygen content in blood">>
+      ["id0.0.0.0.8"] = <text = <"Bicarbonate moles per volume in blood">>
+      ["id0.0.0.0.9"] = <text = <"Carbon dioxide total moles per volume in blood">>
+      ["id0.0.0.0.10"] = <text = <"Base excess in blood by calculation">>
+      ["id0.0.0.0.11"] = <text = <"Base deficit in blood">>
+      ["id0.0.0.0.12"] = <text = <"Fractional oxyhemoglobin in blood">>
+      ["id0.0.0.0.13"] = <text = <"Oxygen saturation in blood">>
+      ["id0.0.0.0.14"] = <text = <"Carboxyhemoglobin per hemoglobin total in blood">>
+      ["id0.0.0.0.15"] = <text = <"Methemoglobin per hemoglobin total in blood">>
+      ["id0.0.0.0.16"] = <text = <"Hemoglobin mass per volume in blood">>
+      ["id0.0.0.0.17"] = <text = <"Inhaled oxygen concentration">>
+      ["id0.0.0.0.18"] = <text = <"Inhaled oxygen flow rate">>
+      ["id0.0.0.0.19"] = <text = <"Body temperature">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24343-6>
+        ["id0.0.0.0.1"] = <http://loinc.org/id/11558-4>
+        ["id0.0.0.0.2"] = <http://loinc.org/id/49701-6>
+        ["id0.0.0.0.3"] = <http://loinc.org/id/11557-6>
+        ["id0.0.0.0.4"] = <http://loinc.org/id/34705-4>
+        ["id0.0.0.0.5"] = <http://loinc.org/id/11556-8>
+        ["id0.0.0.0.6"] = <http://loinc.org/id/19254-2>
+        ["id0.0.0.0.7"] = <http://loinc.org/id/34163-6>
+        ["id0.0.0.0.8"] = <http://loinc.org/id/1959-6>
+        ["id0.0.0.0.9"] = <http://loinc.org/id/20565-8>
+        ["id0.0.0.0.10"] = <http://loinc.org/id/11555-0>
+        ["id0.0.0.0.11"] = <http://loinc.org/id/30318-0>
+        ["id0.0.0.0.12"] = <http://loinc.org/id/11559-2>
+        ["id0.0.0.0.13"] = <http://loinc.org/id/20564-1>
+        ["id0.0.0.0.14"] = <http://loinc.org/id/20563-3>
+        ["id0.0.0.0.15"] = <http://loinc.org/id/2614-6>
+        ["id0.0.0.0.16"] = <http://loinc.org/id/718-7>
+        ["id0.0.0.0.17"] = <http://loinc.org/id/3150-0>
+        ["id0.0.0.0.18"] = <http://loinc.org/id/3151-8>
+        ["id0.0.0.0.19"] = <http://loinc.org/id/8310-5>
+      >
+    >
+  >
