@@ -30,9 +30,9 @@ description
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Leukocytes count per volume in blood by automated count
         item matches {
-            ELEMENT[id0.0.2.0.0.1] matches { -- Name
+            ELEMENT[id0.0.2.1.0.1] matches { -- Name
                 value matches {
-                    TEXT[id0.0.102.0.0.1]
+                    TEXT[id0.0.102.1.0.1]
                 }
             }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
@@ -54,7 +54,7 @@ terminology
             ["id1.1.1.1.1.1"] = <
                 text = <"Leukocytes count per volume in blood by automated count">
             >
-            ["id0.0.2.0.0.1"] = <
+            ["id0.0.2.1.0.1"] = <
                 text = <"Name">
             >
             ["id0.0.7.0.1.1"] = <

@@ -29,9 +29,9 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils band form per hundred leukocytes in blood by automated count
 		item matches {
-			ELEMENT[id0.0.2.0.0.1] matches { -- Name
+			ELEMENT[id0.0.2.1.0.1] matches { -- Name
 				value matches {
-					TEXT[id0.0.102.0.0.1]
+					TEXT[id0.0.102.1.0.1]
 				}
 			}
 			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
@@ -48,7 +48,7 @@ terminology
 			["id1.1.1.1.1.1"] = <
 				text = <"Neutrophils band form per hundred leukocytes in blood by automated count">
 			>
-			["id0.0.2.0.0.1"] = <
+			["id0.0.2.1.0.1"] = <
 				text = <"Name">
 			>
 			["id0.0.7.0.1.1"] = <
