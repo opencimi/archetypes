@@ -29,11 +29,6 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Monocytes per hundred leukocytes in blood by automated count
 		item matches {
-			ELEMENT[id0.0.2.1.0.1] occurrences matches {1} matches { -- Name
-				value matches {
-					TEXT[id0.0.102.1.0.1]
-				}
-			}
 			use_archetype ITEM_GROUP [id0.0.0.0.0.1, CIMI-CORE-ITEM_GROUP.platelet_adequacy_in_blood_by_light_microscopy.v1] -- Platelet adequacy in blood by light microscopy
 			use_archetype ITEM_GROUP [id0.0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
 			use_archetype ITEM_GROUP [id0.0.0.0.0.3, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
@@ -45,9 +40,6 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Monocytes per hundred leukocytes in blood by automated count">
-			>
-			["id0.0.2.1.0.1"] = <
-				text = <"Name">
 			>
 			["id0.0.0.0.0.1"] = <
 				text = <"Platelet adequacy in blood">

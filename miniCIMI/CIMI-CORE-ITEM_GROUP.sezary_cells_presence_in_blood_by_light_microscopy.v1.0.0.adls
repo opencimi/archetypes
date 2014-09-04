@@ -30,11 +30,6 @@ description
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Sezary cells presence in blood by light microscopy
         item matches {
-            ELEMENT[id0.0.2.1.0.1] matches { -- Name
-                value matches {
-                    TEXT[id0.0.102.1.0.1]
-                }
-            }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
                     ORDINAL[id0.0.107.0.1.1]
@@ -47,9 +42,6 @@ terminology
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Sezary cells presence in blood by light microscopy">
-            >
-            ["id0.0.2.1.0.1"] = <
-                text = <"Name">
             >
             ["id0.0.7.0.1.1"] = <
                 text = <"Result value">

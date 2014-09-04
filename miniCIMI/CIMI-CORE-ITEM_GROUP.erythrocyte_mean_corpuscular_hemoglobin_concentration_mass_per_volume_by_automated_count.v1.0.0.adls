@@ -30,11 +30,6 @@ description
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count
         item matches {
-            ELEMENT[id0.0.2.1.0.1] matches { -- Name
-                value matches {
-                    TEXT[id0.0.102.1.0.1]
-                }
-            }
             ELEMENT[id0.0.7.0.1.1] matches { -- Result value
                 value matches {
                     QUANTITY[id0.0.107.0.1.1] occurrences matches {1} matches {
@@ -54,9 +49,6 @@ terminology
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
-            >
-            ["id0.0.2.1.0.1"] = <
-                text = <"Name">
             >
             ["id0.0.7.0.1.1"] = <
                 text = <"Result value">
