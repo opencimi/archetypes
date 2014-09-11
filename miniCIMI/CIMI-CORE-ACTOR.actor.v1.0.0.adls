@@ -67,10 +67,10 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1"] = <http://snomedct.info/id/138875005>
-				["id0.2"] = <http://snomedct.info/id/138875005>
-				["id0.3"] = <http://snomedct.info/id/138875005>
-				["id0.4"] = <http://snomedct.info/id/138875005>
+				["id1.1"] = <http://snomed.info/id/138875005>
+				["id0.2"] = <http://snomed.info/id/138875005>
+				["id0.3"] = <http://snomed.info/id/138875005>
+				["id0.4"] = <http://snomed.info/id/138875005>
 			>
 		>
 	>

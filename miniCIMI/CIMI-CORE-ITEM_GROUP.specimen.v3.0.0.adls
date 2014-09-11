@@ -155,18 +155,18 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.1.1"] = <http://snomedct.info/id/123038009>
-				["id0.0.1"] = <http://snomedct.info/id/423901009>
-				["id0.0.2"] = <http://snomedct.info/id/423901009>
-				["id0.0.3"] = <http://snomedct.info/id/423901009>
-				["id0.0.4"] = <http://snomedct.info/id/123038009>
-				["id0.0.5"] = <http://snomedct.info/id/123038009>
-				["id0.0.6"] = <http://snomedct.info/id/404230009>
-				["id0.0.7"] = <http://snomedct.info/id/371506001>
-				["id0.0.8"] = <http://snomedct.info/id/371475003>
-				["id0.0.9"] = <http://snomedct.info/id/371475003>
-				["id0.0.10"] = <http://snomedct.info/id/410681005>
-				["id0.0.11"] = <http://snomedct.info/id/105590001>
+				["id1.1.1"] = <http://snomed.info/id/123038009>
+				["id0.0.1"] = <http://snomed.info/id/423901009>
+				["id0.0.2"] = <http://snomed.info/id/423901009>
+				["id0.0.3"] = <http://snomed.info/id/423901009>
+				["id0.0.4"] = <http://snomed.info/id/123038009>
+				["id0.0.5"] = <http://snomed.info/id/123038009>
+				["id0.0.6"] = <http://snomed.info/id/404230009>
+				["id0.0.7"] = <http://snomed.info/id/371506001>
+				["id0.0.8"] = <http://snomed.info/id/371475003>
+				["id0.0.9"] = <http://snomed.info/id/371475003>
+				["id0.0.10"] = <http://snomed.info/id/410681005>
+				["id0.0.11"] = <http://snomed.info/id/105590001>
 			>
 		>
 	>
