@@ -29,67 +29,45 @@ description
 definition
   ITEM_GROUP[id1.1.1.1] matches {  -- Laboratory panel
     item matches {
-      ELEMENT[id0.0.2.1] matches { -- Panel name
+      ELEMENT[id5.0.2.1] -- Panel name
+      ELEMENT[id5.0.0.1] matches { -- Diagnostic service
         value matches {
-          TEXT[id0.0.102.1]
+          TEXT[id5.0.0.101]
         }
       }
-      ELEMENT[id0.0.0.1] matches { -- Diagnostic service
+      use_archetype ITEM_GROUP [id4.0.0.1, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
+      ELEMENT[id5.0.0.2] matches { -- Poct indicator
         value matches {
-          TEXT[id0.0.0.101]
+          CODED_TEXT[id5.0.0.102]
         }
       }
-      use_archetype ITEM_GROUP [id0.0.0.2, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
-      ELEMENT[id0.0.0.3] matches { -- Poct indicator
+      ELEMENT[id5.0.0.3] matches { -- Diagnosis
         value matches {
-          CODED_TEXT[id0.0.0.102]
-        }
-      }
-      ELEMENT[id0.0.0.4] matches { -- Diagnosis
-        value matches {
-          CODED_TEXT[id0.0.0.103]
+          CODED_TEXT[id5.0.0.103]
         }
       }
       before[id0.0.12]
-      ELEMENT[id0.0.0.5] matches { -- Conclusions
+      ELEMENT[id5.0.0.4] matches { -- Conclusions
         value matches {
-          CODED_TEXT[id0.0.0.104]
+          CODED_TEXT[id5.0.0.104]
         }
       }
-      use_archetype ITEM_GROUP[id0.0.7.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
-      use_archetype ITEM_GROUP[id0.0.8.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1]
+      use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
+      use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1]
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1"] = <
-        text = <"Laboratory panel">
-      >
-      ["id0.0.2.1"] = <
-        text = <"Panel name">
-      >
-      ["id0.0.0.1"] = <
-        text = <"Diagnostic service">
-      >
-      ["id0.0.0.2"] = <
-        text = <"Specimen">
-      >
-      ["id0.0.0.3"] = <
-        text = <"Poct indicator">
-      >
-      ["id0.0.0.4"] = <
-        text = <"Diagnosis">
-      >
-      ["id0.0.0.5"] = <
-        text = <"Conclusion">
-      >
-      ["id0.0.7.1"] = <
-        text = <"Laboratory test">
-      >
-      ["id0.0.8.1"] = <
-        text = <"Laboratory panel">
-      >
+      ["id1.1.1.1"] = < text = <"Laboratory panel"> >
+      ["id5.0.2.1"] = < text = <"Panel name"> >
+      ["id5.0.0.1"] = < text = <"Diagnostic service"> >
+      ["id4.0.0.1"] = < text = <"Specimen"> >
+      ["id5.0.0.2"] = < text = <"Poct indicator"> >
+      ["id5.0.0.3"] = < text = <"Diagnosis"> >
+      ["id5.0.0.4"] = < text = <"Conclusion"> >
+      ["id0.1.1.1"] = < text = <"Laboratory test"> >
+      ["id0.1.2.1"] = < text = <"Laboratory panel"> >
     >
   >

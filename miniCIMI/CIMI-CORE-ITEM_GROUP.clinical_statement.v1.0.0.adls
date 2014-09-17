@@ -33,8 +33,8 @@ definition
       PARTICIPATION[id3] occurrences matches {0..1}   -- Information subject
     }
     item matches {
-      use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
-      ELEMENT[id4] occurrences matches {0..*}   -- Element
+      use_archetype ITEM_GROUP[id4, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
+      ELEMENT[id5] occurrences matches {0..*}   -- Element
     }
   }
 
@@ -50,11 +50,11 @@ terminology
       ["id3"] = <
         text = <"Information subject">
       >
-      ["id4"] = <
-        text = <"Element">
-      >
       ["id5"] = <
         text = <"Cluster">
+      >
+      ["id4"] = <
+        text = <"Element">
       >
     >
   >

@@ -29,61 +29,25 @@ description
 definition
   ITEM_GROUP[id1.1.1] matches {  -- Observation set
     item matches {
-      ELEMENT[id0.0.1] matches { -- Identifier
-        value matches {
-          IDENTIFIER[id0.0.101]
-        }
-      }
-      ELEMENT[id0.0.2] occurrences matches {1} matches { -- Name
-        value matches {
-          TEXT[id0.0.102]
-        }
-      }
-      ELEMENT[id0.0.3] matches { -- Reason
-        value matches {
-          TEXT[id0.0.103]
-        }
-      }
-      ELEMENT[id0.0.4] matches { -- Method
-        value matches {
-          TEXT[id0.0.104]
-        }
-      }
-      ELEMENT[id0.0.5] occurrences matches {0..1}matches { -- Status
-        value matches {
-          TEXT[id0.0.105]
-        }
-      }
-      ELEMENT[id0.0.6] occurrences matches {0..1} matches { -- Priority
-        value matches {
-          TEXT[id0.0.106]
-        }
-      }
-      use_archetype ITEM_GROUP[id0.0.7, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
-      use_archetype ITEM_GROUP[id0.0.8, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
-      ELEMENT[id0.0.9] occurrences matches {0..1} matches { -- Interpretation category
-        value matches {
-          TEXT[id0.0.107]
-        }
-      }
-      ELEMENT[id0.0.10] occurrences matches {0..1} matches { -- Sequence
-        value matches {
-          TEXT[id0.0.108]
-        }
-      }
-      ELEMENT[id0.0.11] matches { -- Comment
-        value matches {
-          TEXT[id0.0.109]
-        }
-      }
-      ITEM_GROUP[id0.0.12] matches { -- Actions
+      ELEMENT[id5.0.1] -- Identifier
+      ELEMENT[id5.0.2] occurrences matches {1} -- Name
+      ELEMENT[id5.0.3] -- Reason
+      ELEMENT[id5.0.4] -- Method
+      ELEMENT[id5.0.5] occurrences matches {0..1} -- Status
+      ELEMENT[id5.0.6] occurrences matches {0..1} -- Priority
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
+      use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
+      ELEMENT[id5.0.7] occurrences matches {0..1} -- Interpretation category
+      ELEMENT[id5.0.8] occurrences matches {0..1} -- Sequence
+      ELEMENT[id5.0.9] -- Comment
+      ITEM_GROUP[id4.0.1] matches { -- Actions
         item matches {
-          use_archetype ITEM_GROUP [id0.0.13, CIMI-CORE-ITEM_GROUP.observe_action.v1]
-          use_archetype ITEM_GROUP [id0.0.14, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
-          use_archetype ITEM_GROUP [id0.0.15, CIMI-CORE-ITEM_GROUP.approve_action.v1]
-          use_archetype ITEM_GROUP [id0.0.16, CIMI-CORE-ITEM_GROUP.report_action.v1]
-          use_archetype ITEM_GROUP [id0.0.17, CIMI-CORE-ITEM_GROUP.cancel_action.v1]
-          use_archetype ITEM_GROUP [id0.0.18, CIMI-CORE-ITEM_GROUP.update_action.v1]
+          use_archetype ITEM_GROUP [id4.0.2, CIMI-CORE-ITEM_GROUP.observe_action.v1]
+          use_archetype ITEM_GROUP [id4.0.3, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
+          use_archetype ITEM_GROUP [id4.0.4, CIMI-CORE-ITEM_GROUP.approve_action.v1]
+          use_archetype ITEM_GROUP [id4.0.5, CIMI-CORE-ITEM_GROUP.report_action.v1]
+          use_archetype ITEM_GROUP [id4.0.6, CIMI-CORE-ITEM_GROUP.cancel_action.v1]
+          use_archetype ITEM_GROUP [id4.0.7, CIMI-CORE-ITEM_GROUP.update_action.v1]
         }
       }
       use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {0} -- Clinical statement
@@ -93,65 +57,25 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1"] = <
-        text = <"Observation set">
-      >
-      ["id0.0.1"] = <
-        text = <"Identifier">
-      >
-      ["id0.0.2"] = <
-        text = <"Name">
-      >
-      ["id0.0.3"] = <
-        text = <"Reason">
-      >
-      ["id0.0.4"] = <
-        text = <"Method">
-      >
-      ["id0.0.5"] = <
-        text = <"Status">
-      >
-      ["id0.0.6"] = <
-        text = <"Priority">
-      >
-      ["id0.0.7"] = <
-        text = <"Observation">
-      >
-      ["id0.0.8"] = <
-        text = <"Observation set">
-      >
-      ["id0.0.9"] = <
-        text = <"Interpretation cateogry">
-      >
-      ["id0.0.10"] = <
-        text = <"Sequence">
-      >
-      ["id0.0.11"] = <
-        text = <"Comment">
-      >
-      ["id0.0.12"] = <
-        text = <"Actions">
-      >
-      ["id0.0.13"] = <
-        text = <"Observe action">
-      >
-      ["id0.0.14"] = <
-        text = <"Interpret action">
-      >
-      ["id0.0.15"] = <
-        text = <"Approve action">
-      >
-      ["id0.0.16"] = <
-        text = <"Report action">
-      >
-      ["id0.0.17"] = <
-        text = <"Cancel action">
-      >
-      ["id0.0.18"] = <
-        text = <"Update action">
-      >
-      ["id0.1.1"] = <
-        text = <"Clinical statement">
-      >
+      ["id1.1.1"] = < text = <"Observation set"> >
+      ["id5.0.1"] = < text = <"Identifier"> >
+      ["id5.0.2"] = < text = <"Name"> >
+      ["id5.0.3"] = < text = <"Reason"> >
+      ["id5.0.4"] = < text = <"Method"> >
+      ["id5.0.5"] = < text = <"Status"> >
+      ["id5.0.6"] = < text = <"Priority"> >
+      ["id0.1.1"] = < text = <"Observation"> >
+      ["id0.1.2"] = < text = <"Observation set"> >
+      ["id5.0.7"] = < text = <"Interpretation cateogry"> >
+      ["id5.0.8"] = < text = <"Sequence"> >
+      ["id5.0.9"] = < text = <"Comment"> >
+      ["id4.0.1"] = < text = <"Actions"> >
+      ["id4.0.2"] = < text = <"Observe action"> >
+      ["id4.0.3"] = < text = <"Interpret action"> >
+      ["id4.0.3"] = < text = <"Approve action"> >
+      ["id4.0.4"] = < text = <"Report action"> >
+      ["id4.0.5"] = < text = <"Cancel action"> >
+      ["id4.0.6"] = < text = <"Update action"> >
+      ["id0.1.1"] = < text = <"Clinical statement"> >
     >
   >
