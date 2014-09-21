@@ -29,41 +29,12 @@ description
 definition
 	ITEM_GROUP[id1.1.1] matches { -- Request action
 		item matches {
-			ELEMENT[id2.1.1] matches { -- Action type
-				value matches {
-					CODED_TEXT[id2.16.1]
-				}
-			}
-			ELEMENT[id2.2.1] matches { -- Request identifier
-				value matches {
-					IDENTIFIER[id2.17.1]
-				}
-			}
-			ELEMENT[id2.3.1] matches { -- Request datetime
-				value matches {
-					DATE_TIME[id2.18.1]
-				}
-			}
-			ELEMENT[id2.4.1] matches { -- Request datetime range
-				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
-				}
-			}
-			ELEMENT[id2.5.1] matches { -- Request duration
-				value matches {
-					DURATION[id2.20.1]
-				}
-			}
-			ELEMENT[id2.6.1]  matches { -- Request timing offset
-				value matches {
-					DURATION[id2.21.1]
-				}
-			}
-			ELEMENT[id2.7.1] matches { -- Request timing offset origin
-				value matches {
-					DATE_TIME[id2.22.1]
-				}
-			}
+			ELEMENT[id2.2.1] -- Request identifier
+			ELEMENT[id2.3.1] -- Request datetime
+			ELEMENT[id2.4.1] -- Request datetime range
+			ELEMENT[id2.5.1] -- Request duration
+			ELEMENT[id2.6.1] -- Request timing offset
+			ELEMENT[id2.7.1] -- Request timing offset origin
 			ELEMENT[id2.9.1] -- Clinical information provided
 		}
 		participation matches {
@@ -76,49 +47,23 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Request action">
-			>
-			["id2.1.1"] = <
-				text = <"Action type">
-			>
-			["id2.2.1"] = <
-				text = <"Request identifier">
-			>
-			["id2.3.1"] = <
-				text = <"Request datetime">
-			>
-			["id2.4.1"] = <
-				text = <"Request datetime range">
-			>
-			["id2.5.1"] = <
-				text = <"Request duration">
-			>
-			["id2.6.1"] = <
-				text = <"Request timing offset">
-			>
-			["id2.7.1"] = <
-				text = <"Request timing offset origin">
-			>
-			["id2.9.1"] = <
-				text = <"Clinical information provided">
-			>
-			["id2.12.1"] = <
-				text = <"Requester">
-			>
-			["id2.12.2"] = <
-				text = <"Location of subject">
-			>
-			["id2.12.3"] = <
-				text = <"Location of requester">
-			>
+			["id1.1.1"] = < text = <"Request action"> >
+			["id2.2.1"] = < text = <"Request identifier"> >
+			["id2.3.1"] = < text = <"Request datetime"> >
+			["id2.4.1"] = < text = <"Request datetime range"> >
+			["id2.5.1"] = < text = <"Request duration"> >
+			["id2.6.1"] = < text = <"Request timing offset"> >
+			["id2.7.1"] = < text = <"Request timing offset origin"> >
+			["id2.9.1"] = < text = <"Clinical information provided"> >
+			["id2.12.1"] = < text = <"Requester"> >
+			["id2.12.2"] = < text = <"Location of subject"> >
+			["id2.12.3"] = < text = <"Location of requester"> >
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1.1"] = <http://snomed.info/id/308539001>
-				["id2.2.1"] = <http://snomed.info/id/308539001>
 				["id2.3.1"] = <http://snomed.info/id/423901009>
 				["id2.4.1"] = <http://snomed.info/id/252129004>
 				["id2.5.1"] = <http://snomed.info/id/252131008>

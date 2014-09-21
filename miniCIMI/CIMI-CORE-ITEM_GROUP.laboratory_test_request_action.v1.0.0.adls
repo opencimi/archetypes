@@ -32,12 +32,7 @@ definition
 			ELEMENT[id2.2.1.1] -- Requester request identifier
 			ELEMENT[id0.0.0.1] occurrences matches {0..1} matches { -- Receiver request identifier
 				value matches {
-					IDENTIFIER[id0.0.0.3]
-				}
-			}
-			ELEMENT[id0.0.0.2] occurrences matches {1} matches { -- Action type
-				value matches {
-					CODED_TEXT[id0.0.0.4]
+					IDENTIFIER[id0.0.0.101]
 				}
 			}
 		}
@@ -55,9 +50,6 @@ terminology
 			["id0.0.0.1"] = <
 				text = <"Receiver request identifier">
 			>
-			["id0.0.0.2"] = <
-				text = <"Action type">
-			>
 		>
 	>
 	term_bindings = <
@@ -65,7 +57,6 @@ terminology
 			items = <
 				["id2.2.1.1"] = <http://snomed.info/id/129264002>
 				["id0.0.0.1"] = <http://snomed.info/id/138875005>
-				["id0.0.0.2"] = <http://snomed.info/id/138875005>
 			>
 		>
 	>

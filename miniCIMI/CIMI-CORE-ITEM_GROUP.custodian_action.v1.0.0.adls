@@ -29,36 +29,11 @@ description
 definition
 	ITEM_GROUP[id1.1.1] matches { -- Custodian action
 		item matches {
-			ELEMENT[id2.1.1]  matches { -- Action type
-				value matches {
-					CODED_TEXT[id2.16.1]
-				}
-			}
-			ELEMENT[id2.3.1] matches { -- Custodian datetime
-				value matches {
-					DATE_TIME[id2.18.1]
-				}
-			}
-			ELEMENT[id2.4.1] matches { -- Custodian datetime range
-				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
-				}
-			}
-			ELEMENT[id2.5.1] matches { -- Custodian duration
-				value matches {
-					DURATION[id2.20.1]
-				}
-			}
-			ELEMENT[id2.6.1] matches { -- Custodian timing offset
-				value matches {
-					DURATION[id2.21.1]
-				}
-			}
-			ELEMENT[id2.7.1] matches { -- Custodian timing offset origin
-				value matches {
-					DATE_TIME[id2.22.1]
-				}
-			}
+			ELEMENT[id2.3.1] -- Custodian datetime
+			ELEMENT[id2.4.1] -- Custodian datetime range
+			ELEMENT[id2.5.1] -- Custodian duration
+			ELEMENT[id2.6.1] -- Custodian timing offset
+			ELEMENT[id2.7.1] -- Custodian timing offset origin
 		}
 		participation matches {
 			PARTICIPATION[id2.12.1] -- Custodian
@@ -70,42 +45,20 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Custodian action">
-			>
-			["id2.1.1"] = <
-				text = <"Action type">
-			>
-			["id2.3.1"] = <
-				text = <"Custodian datetime">
-			>
-			["id2.4.1"] = <
-				text = <"Custodian datetime range">
-			>
-			["id2.5.1"] = <
-				text = <"Custodian duration">
-			>
-			["id2.6.1"] = <
-				text = <"Custodian timing offset">
-			>
-			["id2.7.1"] = <
-				text = <"Custodian timing offset origin">
-			>
-			["id2.12.1"] = <
-				text = <"Custodian">
-			>
-			["id2.12.2"] = <
-				text = <"Location of subject">
-			>
-			["id2.12.3"] = <
-				text = <"Location of custodian">
-			>
+			["id1.1.1"] = < text = <"Custodian action"> >
+			["id2.3.1"] = < text = <"Custodian datetime"> >
+			["id2.4.1"] = < text = <"Custodian datetime range"> >
+			["id2.5.1"] = < text = <"Custodian duration"> >
+			["id2.6.1"] = < text = <"Custodian timing offset"> >
+			["id2.7.1"] = < text = <"Custodian timing offset origin"> >
+			["id2.12.1"] = < text = <"Custodian"> >
+			["id2.12.2"] = < text = <"Location of subject"> >
+			["id2.12.3"] = < text = <"Location of custodian"> >
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id2.1.1"] = <http://snomed.info/id/252129004>
 				["id2.3.1"] = <http://snomed.info/id/252131008>
 				["id2.4.1"] = <http://snomed.info/id/442371002>
 				["id2.5.1"] = <http://snomed.info/id/125676002>

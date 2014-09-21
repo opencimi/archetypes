@@ -29,31 +29,11 @@ description
 definition
 	ITEM_GROUP[id1.1.1] matches { -- Approve action
 		item matches {
-			ELEMENT[id2.3.1] matches { -- Approval datetime
-				value matches {
-					DATE_TIME[id2.18.1]
-				}
-			}
-			ELEMENT[id2.4.1] matches { -- Approval datetime range
-				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
-				}
-			}
-			ELEMENT[id2.5.1] matches { -- Approval duration
-				value matches {
-					DURATION[id2.20.1]
-				}
-			}
-			ELEMENT[id2.6.1] matches { -- Approval timing offset
-				value matches {
-					DURATION[id2.21.1]
-				}
-			}
-			ELEMENT[id2.7.1] matches { -- Approval timing offset origin
-				value matches {
-					DATE_TIME[id2.22.1]
-				}
-			}
+			ELEMENT[id2.3.1] -- Approval datetime
+			ELEMENT[id2.4.1] -- Approval datetime range
+			ELEMENT[id2.5.1] -- Approval duration
+			ELEMENT[id2.6.1] -- Approval timing offset
+			ELEMENT[id2.7.1] -- Approval timing offset origin
 		}
 		participation matches {
 			PARTICIPATION[id2.12.1] -- Approver
@@ -65,33 +45,15 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Approve action">
-			>
-			["id2.3.1"] = <
-				text = <"Approval datetime">
-			>
-			["id2.4.1"] = <
-				text = <"Approval datetime range">
-			>
-			["id2.5.1"] = <
-				text = <"Approval duration">
-			>
-			["id2.6.1"] = <
-				text = <"Approval timing offset">
-			>
-			["id2.7.1"] = <
-				text = <"Approval timing offset origin">
-			>
-			["id2.12.1"] = <
-				text = <"Approver">
-			>
-			["id2.12.2"] = <
-				text = <"Location of subject">
-			>
-			["id2.12.3"] = <
-				text = <"Location of approver">
-			>
+			["id1.1.1"] = < text = <"Approve action"> >
+			["id2.3.1"] = < text = <"Approval datetime"> >
+			["id2.4.1"] = < text = <"Approval datetime range"> >
+			["id2.5.1"] = < text = <"Approval duration"> >
+			["id2.6.1"] = < text = <"Approval timing offset"> >
+			["id2.7.1"] = < text = <"Approval timing offset origin"> >
+			["id2.12.1"] = < text = <"Approver"> >
+			["id2.12.2"] = < text = <"Location of subject"> >
+			["id2.12.3"] = < text = <"Location of approver"> >
 		>
 	>
 	term_bindings = <

@@ -29,36 +29,11 @@ description
 definition
 	ITEM_GROUP[id1.1.1] matches { -- Verify birthdate action
 		item matches {
-			ELEMENT[id2.1.1] matches { -- Action type
-				value matches {
-					CODED_TEXT[id2.16.1]
-				}
-			}
-			ELEMENT[id2.3.1]  matches { -- Verify birthdate datetime
-				value matches {
-					DATE_TIME[id2.18.1]
-				}
-			}
-			ELEMENT[id2.4.1] matches { -- Verify birthdate datetime range
-				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
-				}
-			}
-			ELEMENT[id2.5.1] matches { -- Verify birthdate duration
-				value matches {
-					DURATION[id2.20.1]
-				}
-			}
-			ELEMENT[id2.6.1] matches { -- Verify birthdate timing offset
-				value matches {
-					DURATION[id2.21.1]
-				}
-			}
-			ELEMENT[id2.7.1] matches { -- Verify birthdate timing offset origin
-				value matches {
-					DATE_TIME[id2.22.1]
-				}
-			}
+			ELEMENT[id2.3.1] -- Verify birthdate datetime
+			ELEMENT[id2.4.1] -- Verify birthdate datetime range
+			ELEMENT[id2.5.1] -- Verify birthdate duration
+			ELEMENT[id2.6.1] -- Verify birthdate timing offset
+			ELEMENT[id2.7.1] -- Verify birthdate timing offset origin
 		}
 		participation matches {
 			PARTICIPATION[id2.12.1] -- Verifier
@@ -70,42 +45,20 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Verify birthdate action">
-			>
-			["id2.1.1"] = <
-				text = <"Action type">
-			>
-			["id2.3.1"] = <
-				text = <"Verify birthdate datetime">
-			>
-			["id2.4.1"] = <
-				text = <"Verify birthdate datetime range">
-			>
-			["id2.5.1"] = <
-				text = <"Verify birthdate duration">
-			>
-			["id2.6.1"] = <
-				text = <"Verify birthdate timing offset">
-			>
-			["id2.7.1"] = <
-				text = <"Verify birthdate timing offset origin">
-			>
-			["id2.12.1"] = <
-				text = <"Verifier">
-			>
-			["id2.12.2"] = <
-				text = <"Locationof subject">
-			>
-			["id2.12.3"] = <
-				text = <"Locationof verifier">
-			>
+			["id1.1.1"] = < text = <"Verify birthdate action"> >
+			["id2.3.1"] = < text = <"Verify birthdate datetime"> >
+			["id2.4.1"] = < text = <"Verify birthdate datetime range"> >
+			["id2.5.1"] = < text = <"Verify birthdate duration"> >
+			["id2.6.1"] = < text = <"Verify birthdate timing offset"> >
+			["id2.7.1"] = < text = <"Verify birthdate timing offset origin"> >
+			["id2.12.1"] = < text = <"Verifier"> >
+			["id2.12.2"] = < text = <"Locationof subject"> >
+			["id2.12.3"] = < text = <"Locationof verifier"> >
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id2.1.1"] = <http://snomed.info/id/364713004>
 				["id2.3.1"] = <http://snomed.info/id/364713004>
 				["id2.4.1"] = <http://snomed.info/id/48176007>
 				["id2.5.1"] = <http://snomed.info/id/308916002>

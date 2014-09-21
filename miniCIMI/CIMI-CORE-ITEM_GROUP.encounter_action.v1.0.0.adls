@@ -29,26 +29,10 @@ description
 definition
 	ITEM_GROUP[id1.1.1] matches { -- Encounter action
 		item matches {
-			ELEMENT[id2.2.1] matches { -- Encounter identifier
-				value matches {
-					IDENTIFIER[id2.17.1]
-				}
-			}
-			ELEMENT[id2.3.1] matches { -- Encounter datetime
-				value matches {
-					DATE_TIME[id2.18.1]
-				}
-			}
-			ELEMENT[id2.4.1]  matches { -- Encounter datetime range
-				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id2.19.1]
-				}
-			}
-			ELEMENT[id2.5.1] matches { -- Encounter duration
-				value matches {
-					DURATION[id2.20.1]
-				}
-			}
+			ELEMENT[id2.2.1] -- Encounter identifier
+			ELEMENT[id2.3.1] -- Encounter datetime
+			ELEMENT[id2.4.1] -- Encounter datetime range
+			ELEMENT[id2.5.1] -- Encounter duration
 			ELEMENT[id0.0.1] matches { -- Patient class
 				value matches {
 					CODED_TEXT[id0.0.5]
@@ -72,36 +56,16 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1"] = <
-				text = <"Encounter action">
-			>
-			["id2.2.1"] = <
-				text = <"Encounter identifier">
-			>
-			["id2.3.1"] = <
-				text = <"Encounter datetime">
-			>
-			["id2.4.1"] = <
-				text = <"Encounter datetime range">
-			>
-			["id2.5.1"] = <
-				text = <"Encounter duration">
-			>
-			["id0.0.1"] = <
-				text = <"Patient class">
-			>
-			["id0.0.2"] = <
-				text = <"Hospital service">
-			>
-			["id2.13.1"] = <
-				text = <"Encounter activity">
-			>
-			["id0.0.3"] = <
-				text = <"Healthcare provider">
-			>
-			["id0.0.4"] = <
-				text = <"Healthcare organization">
-			>
+			["id1.1.1"] = < text = <"Encounter action"> >
+			["id2.2.1"] = < text = <"Encounter identifier"> >
+			["id2.3.1"] = < text = <"Encounter datetime"> >
+			["id2.4.1"] = < text = <"Encounter datetime range"> >
+			["id2.5.1"] = < text = <"Encounter duration"> >
+			["id0.0.1"] = < text = <"Patient class"> >
+			["id0.0.2"] = < text = <"Hospital service"> >
+			["id2.13.1"] = < text = <"Encounter activity"> >
+			["id0.0.3"] = < text = <"Healthcare provider"> >
+			["id0.0.4"] = < text = <"Healthcare organization"> >
 		>
 	>
 	term_bindings = <
