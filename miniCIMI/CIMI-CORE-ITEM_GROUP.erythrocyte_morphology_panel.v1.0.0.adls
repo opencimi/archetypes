@@ -29,7 +29,7 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Erythrocyte morphology panel
 		item matches {
-			use_archetype ITEM_GROUP [id0.0.0.0.1, CIMI-CORE-ITEM_GROUP.acanthocytes_in_blood_by_light_microscopy.v1] -- Acanthocytes in blood by light microscopy
+			use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.acanthocytes_in_blood_by_light_microscopy.v1] -- Acanthocytes in blood by light microscopy
 		}
 	}
 
@@ -39,7 +39,7 @@ terminology
 			["id1.1.1.1.1"] = <
 				text = <"Erythrocyte morphology panel">
 			>
-			["id0.0.0.0.1"] = <
+			["id0.1.1.1.1"] = <
 				text = <"Acanthocytes in blood by light microscopy">
 			>
 		>

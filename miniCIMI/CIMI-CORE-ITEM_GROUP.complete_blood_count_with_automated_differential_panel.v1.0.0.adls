@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with automated differential panel
     item matches {
-      use_archetype ITEM_GROUP[id0.0.0.0.0.1, CIMI-CORE-ITEM_GROUP.automated_differential_panel.v1]
+      use_archetype ITEM_GROUP[id0.1.2.1.0.1, CIMI-CORE-ITEM_GROUP.automated_differential_panel.v1]
     }
   }
 
@@ -39,7 +39,7 @@ terminology
       ["id1.1.1.1.1.1"] = <
         text = <"Complete blood count with automated differential panel">
       >
-      ["id0.0.0.0.0.1"] = <
+      ["id0.1.2.1.0.1"] = <
         text = <"Automated differential panel">
       >
     >
