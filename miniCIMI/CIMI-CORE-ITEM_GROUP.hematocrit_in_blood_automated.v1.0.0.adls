@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hematocrit in blood automated
     item matches {
-      use_archetype ITEM_GROUP[id5, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
+      use_archetype ITEM_GROUP[id4, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0} 
       ELEMENT[id0.0.7.0.1.1] matches { -- Result value
         value matches {
           QUANTITY[id0.0.107.0.1.1]
