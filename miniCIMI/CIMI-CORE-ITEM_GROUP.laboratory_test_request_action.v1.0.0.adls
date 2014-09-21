@@ -29,11 +29,7 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1] matches { -- Laboratory test request action
 		item matches {
-			ELEMENT[id2.2.1.1] matches { -- Requester request identifier
-				value matches {
-					IDENTIFIER[id2.17.1.1]
-				}
-			}
+			ELEMENT[id2.2.1.1] -- Requester request identifier
 			ELEMENT[id0.0.0.1] occurrences matches {0..1} matches { -- Receiver request identifier
 				value matches {
 					IDENTIFIER[id0.0.0.3]
