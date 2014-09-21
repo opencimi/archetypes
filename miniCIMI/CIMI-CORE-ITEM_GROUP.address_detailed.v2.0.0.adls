@@ -29,85 +29,16 @@ description
 definition
     ITEM_GROUP[id1.1.1] matches { -- Address detailed
         item matches {
-            ITEM_GROUP[id0.7.1] matches { -- Additional locator type
-                item matches {
-                    ELEMENT[id0.10.1] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.1]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.2] matches { -- Site name
-                item matches {
-                    ELEMENT[id0.10.2] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.2]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.3] matches { -- Unit number
-                item matches {
-                    ELEMENT[id0.10.3] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.3]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.4] matches { -- Unit type
-                item matches {
-                    ELEMENT[id0.10.4] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.4]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.5] matches { -- Postal box number
-                item matches {
-                    ELEMENT[id0.10.5] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.5]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.6] matches { -- Floor/level number
-                item matches {
-                    ELEMENT[id0.10.6] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.6]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.7] matches { -- Floor/level type
-                item matches {
-                    ELEMENT[id0.10.7] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.7]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.8] matches { -- Lot number
-                item matches {
-                    ELEMENT[id0.10.8] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.8]
-                        }
-                    }
-                }
-            }
+            ITEM_GROUP[id0.7.1] -- Additional locator type
+            ITEM_GROUP[id0.7.2] -- Site name
+            ITEM_GROUP[id0.7.3] -- Unit number
+            ITEM_GROUP[id0.7.4] -- Unit type
+            ITEM_GROUP[id0.7.5] -- Postal box number
+            ITEM_GROUP[id0.7.6] -- Floor/level number
+            ITEM_GROUP[id0.7.7] -- Floor/level type
+            ITEM_GROUP[id0.7.8] -- Lot number
             ITEM_GROUP[id0.7.9] matches { -- Street
                 item matches {
-                    ELEMENT[id0.10.9] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.9]
-                        }
-                    }
                     ELEMENT[id0.0.1]  matches { -- Name
                         value matches {
                             CODED_TEXT[id0.0.101]
@@ -132,11 +63,6 @@ definition
             }
             ITEM_GROUP[id0.7.10] matches { -- Street number
                 item matches {
-                    ELEMENT[id0.10.10] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.10]
-                        }
-                    }
                     ELEMENT[id0.0.5] matches { -- Numeric
                         value matches {
                             TEXT[id0.0.105]
@@ -149,168 +75,24 @@ definition
                     }
                 }
             }
-            ITEM_GROUP[id0.7.11] matches { -- Intersection description
-                item matches {
-                    ELEMENT[id0.10.11] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.11]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.12] matches { -- Visualisation
-                item matches {
-                    ELEMENT[id0.10.12] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.12]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.13] matches { -- Census area
-                item matches {
-                    ELEMENT[id0.10.13] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.13]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.14] matches { -- Delivery point identifier
-                item matches {
-                    ELEMENT[id0.10.14] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.14]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.15] matches { -- Delivery number
-                item matches {
-                    ELEMENT[id0.10.15] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.15]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.16] matches { -- Delivery installation type
-                item matches {
-                    ELEMENT[id0.10.16] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.16]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.17] matches { -- Delivery installation area
-                item matches {
-                    ELEMENT[id0.10.17] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.17]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.18] matches { -- Delivery installation qualifier
-                item matches {
-                    ELEMENT[id0.10.18] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.18]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.19] matches { -- Delivery mode
-                item matches {
-                    ELEMENT[id0.10.19] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.19]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.20] matches { -- Delivery mode identifier
-                item matches {
-                    ELEMENT[id0.10.20] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.20]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.21] matches { -- Postal code
-                item matches {
-                    ELEMENT[id0.10.21] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.21]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.22] matches { -- District
-                item matches {
-                    ELEMENT[id0.10.22] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.22]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.23] matches { -- Suburb/town/locality
-                item matches {
-                    ELEMENT[id0.10.23] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.23]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.24] matches { -- City
-                item matches {
-                    ELEMENT[id0.10.24] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.24]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.25] matches { -- State/territory/province
-                item matches {
-                    ELEMENT[id0.10.25] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.25]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.26] matches { -- Country
-                item matches {
-                    ELEMENT[id0.10.26] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.26]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.27] matches { -- Care of
-                item matches {
-                    ELEMENT[id0.10.27] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.27]
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.7.28] matches { -- Delimiter
-                item matches {
-                    ELEMENT[id0.10.28] matches { -- Type
-                        value matches {
-                            CODED_TEXT[id0.27.28]
-                        }
-                    }
-                }
-            }
+            ITEM_GROUP[id0.7.11] -- Intersection description
+            ITEM_GROUP[id0.7.12] -- Visualisation
+            ITEM_GROUP[id0.7.13] -- Census area
+            ITEM_GROUP[id0.7.14] -- Delivery point identifier
+            ITEM_GROUP[id0.7.15] -- Delivery number
+            ITEM_GROUP[id0.7.16] -- Delivery installation type
+            ITEM_GROUP[id0.7.17] -- Delivery installation area
+            ITEM_GROUP[id0.7.18] -- Delivery installation qualifier
+            ITEM_GROUP[id0.7.19] -- Delivery mode
+            ITEM_GROUP[id0.7.20] -- Delivery mode identifier
+            ITEM_GROUP[id0.7.21] -- Postal code
+            ITEM_GROUP[id0.7.22] -- District
+            ITEM_GROUP[id0.7.23] -- Suburb/town/locality
+            ITEM_GROUP[id0.7.24] -- City
+            ITEM_GROUP[id0.7.25] -- State/territory/province
+            ITEM_GROUP[id0.7.26] -- Country
+            ITEM_GROUP[id0.7.27] -- Care of
+            ITEM_GROUP[id0.7.28] -- Delimiter
             use_archetype ITEM_GROUP [id0.0.7, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 1
             use_archetype ITEM_GROUP [id0.0.8, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 2
             use_archetype ITEM_GROUP [id0.0.9, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 3
@@ -323,212 +105,46 @@ definition
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1"] = <
-                text = <"Address detailed">
-            >
-            ["id0.7.1"] = <
-                text = <"Additional locator">
-            >
-            ["id0.10.1"] = <
-                text = <"Type">
-            >
-            ["id0.7.2"] = <
-                text = <"Site name">
-            >
-            ["id0.10.2"] = <
-                text = <"Type">
-            >
-            ["id0.7.3"] = <
-                text = <"Unit number">
-            >
-            ["id0.10.3"] = <
-                text = <"Type">
-            >
-            ["id0.7.4"] = <
-                text = <"Unit type">
-            >
-            ["id0.10.4"] = <
-                text = <"Type">
-            >
-            ["id0.7.5"] = <
-                text = <"Postal box number">
-            >
-            ["id0.10.5"] = <
-                text = <"Type">
-            >
-            ["id0.7.6"] = <
-                text = <"Floor/level number">
-            >
-            ["id0.10.6"] = <
-                text = <"Type">
-            >
-            ["id0.7.7"] = <
-                text = <"Floor/level type">
-            >
-            ["id0.10.7"] = <
-                text = <"Type">
-            >
-            ["id0.7.8"] = <
-                text = <"Lot number">
-            >
-            ["id0.10.8"] = <
-                text = <"Type">
-            >
-            ["id0.7.9"] = <
-                text = <"Street">
-            >
-            ["id0.10.9"] = <
-                text = <"Type">
-            >
-            ["id0.0.1"] = <
-                text = <"Name">
-            >
-            ["id0.0.2"] = <
-                text = <"Street type">
-            >
-            ["id0.0.3"] = <
-                text = <"Direction">
-            >
-            ["id0.0.4"] = <
-                text = <"Suffix">
-            >
-            ["id0.7.10"] = <
-                text = <"Street number">
-            >
-            ["id0.10.10"] = <
-                text = <"Type">
-            >
-            ["id0.0.5"] = <
-                text = <"Numeric">
-            >
-            ["id0.0.6"] = <
-                text = <"Suffix">
-            >
-            ["id0.7.11"] = <
-                text = <"Intersection description">
-            >
-            ["id0.10.11"] = <
-                text = <"Type">
-            >
-            ["id0.7.12"] = <
-                text = <"Visualisation">
-            >
-            ["id0.10.12"] = <
-                text = <"Type">
-            >
-            ["id0.7.13"] = <
-                text = <"Census area">
-            >
-            ["id0.10.13"] = <
-                text = <"Type">
-            >
-            ["id0.7.14"] = <
-                text = <"Delivery point identifier">
-            >
-            ["id0.10.14"] = <
-                text = <"Type">
-            >
-            ["id0.7.15"] = <
-                text = <"Delivery number">
-            >
-            ["id0.10.15"] = <
-                text = <"Type">
-            >
-            ["id0.7.16"] = <
-                text = <"Delivery installation type">
-            >
-            ["id0.10.16"] = <
-                text = <"Type">
-            >
-            ["id0.7.17"] = <
-                text = <"Delivery installation area">
-            >
-            ["id0.10.17"] = <
-                text = <"Type">
-            >
-            ["id0.7.18"] = <
-                text = <"Delivery installation qualifier">
-            >
-            ["id0.10.18"] = <
-                text = <"Type">
-            >
-            ["id0.7.19"] = <
-                text = <"Delivery mode">
-            >
-            ["id0.10.19"] = <
-                text = <"Type">
-            >
-            ["id0.7.20"] = <
-                text = <"Delivery mode identifier">
-            >
-            ["id0.10.20"] = <
-                text = <"Type">
-            >
-            ["id0.7.21"] = <
-                text = <"Postal code">
-            >
-            ["id0.10.21"] = <
-                text = <"Type">
-            >
-            ["id0.7.22"] = <
-                text = <"District TEXT">
-            >
-            ["id0.10.22"] = <
-                text = <"Type">
-            >
-            ["id0.7.23"] = <
-                text = <"Suburb/town/locality">
-            >
-            ["id0.10.23"] = <
-                text = <"Type">
-            >
-            ["id0.7.24"] = <
-                text = <"City">
-            >
-            ["id0.10.24"] = <
-                text = <"Type">
-            >
-            ["id0.7.25"] = <
-                text = <"State/territory/province">
-            >
-            ["id0.10.25"] = <
-                text = <"Type">
-            >
-            ["id0.7.26"] = <
-                text = <"Country">
-            >
-            ["id0.10.26"] = <
-                text = <"Type">
-            >
-            ["id0.7.27"] = <
-                text = <"Care of">
-            >
-            ["id0.10.27"] = <
-                text = <"Type">
-            >
-            ["id0.7.28"] = <
-                text = <"Delimiter">
-            >
-            ["id0.10.28"] = <
-                text = <"Type">
-            >
-            ["id0.0.7"] = <
-                text = <"Address line 1">
-            >
-            ["id0.0.8"] = <
-                text = <"Address line 2">
-            >
-            ["id0.0.9"] = <
-                text = <"Address line 3">
-            >
-            ["id0.0.10"] = <
-                text = <"Address line 4">
-            >
-            ["id0.0.11"] = <
-                text = <"Street address line">
-            >
-            ["id0.0.12"] = <
-                text = <"Delivery address line">
-            >
+            ["id1.1.1"] = < text = <"Address detailed"> >
+            ["id0.7.1"] = < text = <"Additional locator"> >
+            ["id0.7.2"] = < text = <"Site name"> >
+            ["id0.7.3"] = < text = <"Unit number"> >
+            ["id0.7.4"] = < text = <"Unit type"> >
+            ["id0.7.5"] = < text = <"Postal box number"> >
+            ["id0.7.6"] = < text = <"Floor/level number"> >
+            ["id0.7.7"] = < text = <"Floor/level type"> >
+            ["id0.7.8"] = < text = <"Lot number"> >
+            ["id0.7.9"] = < text = <"Street"> >
+            ["id0.0.1"] = < text = <"Name"> >
+            ["id0.0.2"] = < text = <"Street type"> >
+            ["id0.0.3"] = < text = <"Direction"> >
+            ["id0.0.4"] = < text = <"Suffix"> >
+            ["id0.7.10"] = < text = <"Street number"> >
+            ["id0.0.5"] = < text = <"Numeric"> >
+            ["id0.0.6"] = < text = <"Suffix"> >
+            ["id0.7.11"] = < text = <"Intersection description"> >
+            ["id0.7.12"] = < text = <"Visualisation"> >
+            ["id0.7.13"] = < text = <"Census area"> >
+            ["id0.7.14"] = < text = <"Delivery point identifier"> >
+            ["id0.7.15"] = < text = <"Delivery number"> >
+            ["id0.7.16"] = < text = <"Delivery installation type"> >
+            ["id0.7.17"] = < text = <"Delivery installation area"> >
+            ["id0.7.18"] = < text = <"Delivery installation qualifier"> >
+            ["id0.7.19"] = < text = <"Delivery mode"> >
+            ["id0.7.20"] = < text = <"Delivery mode identifier"> >
+            ["id0.7.21"] = < text = <"Postal code"> >
+            ["id0.7.22"] = < text = <"District TEXT"> >
+            ["id0.7.23"] = < text = <"Suburb/town/locality"> >
+            ["id0.7.24"] = < text = <"City"> >
+            ["id0.7.25"] = < text = <"State/territory/province"> >
+            ["id0.7.26"] = < text = <"Country"> >
+            ["id0.7.27"] = < text = <"Care of"> >
+            ["id0.7.28"] = < text = <"Delimiter"> >
+            ["id0.0.7"] = < text = <"Address line 1"> >
+            ["id0.0.8"] = < text = <"Address line 2"> >
+            ["id0.0.9"] = < text = <"Address line 3"> >
+            ["id0.0.10"] = < text = <"Address line 4"> >
+            ["id0.0.11"] = < text = <"Street address line"> >
+            ["id0.0.12"] = < text = <"Delivery address line"> >
         >
     >
