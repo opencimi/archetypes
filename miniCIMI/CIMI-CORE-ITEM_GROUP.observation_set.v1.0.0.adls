@@ -29,17 +29,53 @@ description
 definition
   ITEM_GROUP[id1.1.1] matches {  -- Observation set
     item matches {
-      ELEMENT[id5.0.1] -- Identifier
-      ELEMENT[id5.0.2] occurrences matches {1} -- Name
-      ELEMENT[id5.0.3] -- Reason
-      ELEMENT[id5.0.4] -- Method
-      ELEMENT[id5.0.5] occurrences matches {0..1} -- Status
-      ELEMENT[id5.0.6] occurrences matches {0..1} -- Priority
+      ELEMENT[id5.0.1] matches { -- Identifier
+        value matches {
+          IDENTIFIER[id0.0.101]
+        }
+      }
+      ELEMENT[id5.0.2] occurrences matches {1} matches { -- Name
+        value matches {
+          TEXT[id0.0.102]
+        }
+      }
+      ELEMENT[id5.0.3] matches { -- Reason
+        value matches {
+          TEXT[id0.0.103]
+        }
+      }
+      ELEMENT[id5.0.4] matches { -- Method
+        value matches {
+          TEXT[id0.0.104]
+        }
+      }
+      ELEMENT[id5.0.5] occurrences matches {0..1}matches { -- Status
+        value matches {
+          TEXT[id0.0.105]
+        }
+      }
+      ELEMENT[id5.0.6] occurrences matches {0..1} matches { -- Priority
+        value matches {
+          TEXT[id0.0.106]
+        }
+      }
       use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
       use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
-      ELEMENT[id5.0.7] occurrences matches {0..1} -- Interpretation category
-      ELEMENT[id5.0.8] occurrences matches {0..1} -- Sequence
-      ELEMENT[id5.0.9] -- Comment
+      ELEMENT[id5.0.7] occurrences matches {0..1} matches { -- Interpretation category
+        value matches {
+          TEXT[id0.0.107]
+        }
+      }
+      ELEMENT[id5.0.8] occurrences matches {0..1} matches { -- Sequence
+        value matches {
+          TEXT[id0.0.108]
+        }
+      }
+      ELEMENT[id5.0.9] matches { -- Comment
+        value matches {
+          TEXT[id0.0.109]
+        }
+      }
       use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observe_action.v1]
       use_archetype ITEM_GROUP [id4.0.2, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
       use_archetype ITEM_GROUP [id4.0.3, CIMI-CORE-ITEM_GROUP.approve_action.v1]
