@@ -1,67 +1,43 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_per_100_leukocytes_in_blood.v1.0.0
+	CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_per_100_leukocytes_in_blood.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+	CIMI-CORE-ITEM_GROUP.per_100_leukocytes_in_blood.v1
 
 language
-    original_language = <[ISO_639-1::en]>
+	original_language = <[ISO_639-1::en]>
 
 description
-    original_author = <
-      ["name"] = <"Patrick Langford">
-      ["organisation"] = <"Intermountain Healthcare">
-      ["email"] = <"patrick@neuronsong.com">
-      ["date"] = <"11/13/2014">
-    >
-    details = <
-      ["en"] = <
-        language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Lymphocytes large granular per 100 leukocytes in blood' concept">
-        use = <"Use for lymphocytes large granular per 100 leukocytes in blood.">
-        keywords = <"lymphocytes","large","granular","per","100","leukocytes","in","blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
-      >
-    >
-    lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-'
+	original_author = <
+		["name"] = <"Patrick Langford">
+		["organisation"] = <"Intermountain Healthcare">
+		["email"] = <"patrick@neuronsong.com">
+		["date"] = <"11/13/2014">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Archetype for CIMI 'Lymphocytes large granular per 100 leukocytes in blood' concept">
+			use = <"Use for lymphocytes large granular per 100 leukocytes in blood.">
+			keywords = <"lymphocytes", "large", "granular", "per", "100", "leukocytes", "in", "blood">
+			copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+		>
+	>
+	lifecycle_state = <"unmanaged">
+	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Lymphocytes large granular per 100 leukocytes in blood
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"%"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	ITEM_GROUP[id1.1.1.1.1.1.1]
 terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Lymphocytes large granular per 100 leukocytes in blood">
-            >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
-            >
-        >
-    >
-
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/30420-4>
-            >
-        >
-    >
+	term_definitions = <
+		["en"] = <
+			["id1.1.1.1.1.1.1"] = <
+				text = <"Lymphocytes large granular per 100 leukocytes in blood">
+			>
+		>
+	>
+	term_bindings = <
+		["loinc"] = <
+			["id1.1.1.1.1.1.1"] = <http://loinc.org/id/30420-4>
+		>
+	>

@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.myelocytes_per_100_leukocytes_in_blood.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+    CIMI-CORE-ITEM_GROUP.per_100_leukocytes_in_blood.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -28,32 +28,12 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Myelocytes per 100 leukocytes in blood
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"%"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    ITEM_GROUP[id1.1.1.1.1.1.1] 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
+            ["id1.1.1.1.1.1.1"] = <
                 text = <"Myelocytes per 100 leukocytes in blood">
-            >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
             >
         >
     >
@@ -61,7 +41,7 @@ terminology
     term_bindings = <
         ["loinc"] = <
             items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/26498-6>
+                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/26498-6>
             >
         >
     >
