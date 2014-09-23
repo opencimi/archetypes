@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.basophils_immature_in_blood_manual.v1.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+	CIMI-CORE-ITEM_GROUP.laboratory_test_count.v1
 	
 language
   original_language = <[ISO_639-1::en]>
@@ -27,24 +27,13 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Basophils immature in blood manual
-		item matches {
-			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-				value matches {
-					QUANTITY[id0.0.107.0.1.1]
-				}
-			}
-		}
-	}
+	ITEM_GROUP[id1.1.1.1.1.1] 
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Basophils immature in blood">
-			>
-			["id0.0.7.0.1.1"] = <
-				text = <"Result value">
 			>
 		>
 	>
