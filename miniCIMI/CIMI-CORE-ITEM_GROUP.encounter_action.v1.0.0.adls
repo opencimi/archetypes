@@ -45,7 +45,7 @@ definition
 			}
 		}
 		link matches {
-			LINK[id2.13.1] -- Encounter activity
+			LINK[id0.110.1] -- Encounter activity
 		}
 		participation matches {
 			PARTICIPATION[id0.0.3] occurrences matches {0..*} -- Healthcare provider
@@ -63,7 +63,7 @@ terminology
 			["id2.5.1"] = < text = <"Encounter duration"> >
 			["id0.0.1"] = < text = <"Patient class"> >
 			["id0.0.2"] = < text = <"Hospital service"> >
-			["id2.13.1"] = < text = <"Encounter activity"> >
+			["id0.110.1"] = < text = <"Encounter activity"> >
 			["id0.0.3"] = < text = <"Healthcare provider"> >
 			["id0.0.4"] = < text = <"Healthcare organization"> >
 		>
@@ -78,7 +78,7 @@ terminology
 				["id2.5.1"] = <http://snomed.info/id/364713004>
 				["id0.0.1"] = <http://snomed.info/id/129264002>
 				["id0.0.2"] = <http://snomed.info/id/129264002>
-				["id2.13.1"] = <http://snomed.info/id/364713004>
+				["id0.110.1"] = <http://snomed.info/id/364713004>
 				["id0.0.3"] = <http://snomed.info/id/48176007>
 				["id0.0.4"] = <http://snomed.info/id/48176007>
 			>

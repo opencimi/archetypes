@@ -32,23 +32,23 @@ definition
       ELEMENT[id5.0.2.1] -- Panel name
       ELEMENT[id5.0.0.1] matches { -- Diagnostic service
         value matches {
-          TEXT[id5.0.0.101]
+          TEXT[id0.0.0.101]
         }
       }
       use_archetype ITEM_GROUP [id4.0.0.1, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
       ELEMENT[id5.0.0.2] matches { -- Poct indicator
         value matches {
-          CODED_TEXT[id5.0.0.102]
+          CODED_TEXT[id0.0.0.102]
         }
       }
       ELEMENT[id5.0.0.3] matches { -- Diagnosis
         value matches {
-          CODED_TEXT[id5.0.0.103]
+          CODED_TEXT[id0.0.0.103]
         }
       }
       ELEMENT[id5.0.0.4] matches { -- Conclusions
         value matches {
-          CODED_TEXT[id5.0.0.104]
+          CODED_TEXT[id0.0.0.104]
         }
       }
       use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]

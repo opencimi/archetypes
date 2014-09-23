@@ -29,24 +29,24 @@ description
 definition
 	PARTY_RELATIONSHIP[id1.1] matches { -- Accreditation organization
 		details matches {
-			ELEMENT[id1.2] occurrences matches {0..1} matches { -- Datetime range
+			ELEMENT[id0.2] occurrences matches {0..1} matches { -- Datetime range
 				value matches {
-					INTERVAL_VALUE<DATE_TIME>[id1.6]
+					INTERVAL_VALUE<DATE_TIME>[id0.6]
 				}
 			}
-			ELEMENT[id1.3] occurrences matches {0..1} matches { -- Status
+			ELEMENT[id0.3] occurrences matches {0..1} matches { -- Status
 				value matches {
-					CODED_TEXT[id1.7]
+					CODED_TEXT[id0.7]
 				}
 			}
-			ELEMENT[id1.4] matches { -- Identifier
+			ELEMENT[id0.4] matches { -- Identifier
 				value matches {
-					IDENTIFIER[id1.8]
+					IDENTIFIER[id0.8]
 				}
 			}
-			ELEMENT[id1.5] occurrences matches {0..1} matches { -- Priority
+			ELEMENT[id0.5] occurrences matches {0..1} matches { -- Priority
 				value matches {
-					COUNT[id1.9]
+					COUNT[id0.9]
 				}
 			}
 		}
@@ -58,16 +58,16 @@ terminology
 			["id1.1"] = <
 				text = <"Accreditation organization">
 			>
-			["id1.2"] = <
+			["id0.2"] = <
 				text = <"Datetime range">
 			>
-			["id1.3"] = <
+			["id0.3"] = <
 				text = <"Status">
 			>
-			["id1.4"] = <
+			["id0.4"] = <
 				text = <"Identifier">
 			>
-			["id1.5"] = <
+			["id0.5"] = <
 				text = <"Priority">
 			>
 		>
@@ -76,9 +76,9 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1"] = <http://snomed.info/id/138875005>
-				["id1.2"] = <http://snomed.info/id/138875005>
-				["id1.3"] = <http://snomed.info/id/138875005>
-				["id1.4"] = <http://snomed.info/id/138875005>
+				["id0.2"] = <http://snomed.info/id/138875005>
+				["id0.3"] = <http://snomed.info/id/138875005>
+				["id0.4"] = <http://snomed.info/id/138875005>
 			>
 		>
 	>

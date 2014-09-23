@@ -36,9 +36,9 @@ definition
 			ELEMENT[id2.7.1] -- Report timing offset origin
 		}
 		participation matches {
-			PARTICIPATION[id2.12.1] -- Reporter
-			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Location of subject
-			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Location of reporter
+			PARTICIPATION[id0.109.1] -- Reporter
+			PARTICIPATION[id0.109.2] occurrences matches {0..1} -- Location of subject
+			PARTICIPATION[id0.109.3] occurrences matches {0..1} -- Location of reporter
 		}
 	}
 
@@ -51,9 +51,9 @@ terminology
 			["id2.5.1"] = < text = <"Report duration"> >
 			["id2.6.1"] = < text = <"Report timing offset"> >
 			["id2.7.1"] = < text = <"Report timing offset origin"> >
-			["id2.12.1"] = < text = <"Reporter"> >
-			["id2.12.2"] = < text = <"Location of subject"> >
-			["id2.12.3"] = < text = <"Location of reporter"> >
+			["id0.109.1"] = < text = <"Reporter"> >
+			["id0.109.2"] = < text = <"Location of subject"> >
+			["id0.109.3"] = < text = <"Location of reporter"> >
 		>
 	>
 	term_bindings = <
@@ -65,9 +65,9 @@ terminology
 				["id2.5.1"] = <http://snomed.info/id/364713004>
 				["id2.6.1"] = <http://snomed.info/id/364713004>
 				["id2.7.1"] = <http://snomed.info/id/364713004>
-				["id2.12.1"] = <http://snomed.info/id/48176007>
-				["id2.12.2"] = <http://snomed.info/id/308916002>
-				["id2.12.3"] = <http://snomed.info/id/308916002>
+				["id0.109.1"] = <http://snomed.info/id/48176007>
+				["id0.109.2"] = <http://snomed.info/id/308916002>
+				["id0.109.3"] = <http://snomed.info/id/308916002>
 			>
 		>
 	>

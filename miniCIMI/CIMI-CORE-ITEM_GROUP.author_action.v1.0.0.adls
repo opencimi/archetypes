@@ -36,9 +36,9 @@ definition
 			ELEMENT[id2.7.1] -- Author timing offset origin
 		}
 		participation matches {
-			PARTICIPATION[id2.12.1] -- Author
-			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Location of subject
-			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Location of author
+			PARTICIPATION[id0.109.1] -- Author
+			PARTICIPATION[id0.109.2] occurrences matches {0..1} -- Location of subject
+			PARTICIPATION[id0.109.3] occurrences matches {0..1} -- Location of author
 		}
 	}
 
@@ -51,9 +51,9 @@ terminology
 			["id2.5.1"] = < text = <"Author duration"> >
 			["id2.6.1"] = < text = <"Author timing offset"> >
 			["id2.7.1"] = < text = <"Author timing offset origin"> >
-			["id2.12.1"] = < text = <"Author"> >
-			["id2.12.2"] = < text = <"Location of subject"> >
-			["id2.12.3"] = < text = <"Location of author"> >
+			["id0.109.1"] = < text = <"Author"> >
+			["id0.109.2"] = < text = <"Location of subject"> >
+			["id0.109.3"] = < text = <"Location of author"> >
 		>
 	>
 	term_bindings = <
