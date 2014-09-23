@@ -31,7 +31,7 @@ definition
     item matches {
       ELEMENT[id0.0.7.0.1] occurrences matches {1} matches { -- Result value
         value matches {
-          ORDINAL[id0.0.107.0.1]
+          ORDINAL[id0.0.0.0.1]
         }
       }
     }

@@ -29,33 +29,18 @@ description
 
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Erythrocyte distribution width entitic volume by automated count
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"fL"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+        /item[id0.0.7]/value[id0.0.0.0.1]/units matches  {[at0.0.0.0.0.1]}
+  }
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Erythrocyte distribution width entitic volume by automated count">
             >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
+             ["at0.0.0.0.0.1"] = <
+                text = <"fL">
             >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
-            >
-        >
+       >
     >
 
     term_bindings = <

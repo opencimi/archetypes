@@ -30,9 +30,9 @@ description
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Sezary cells count per volume in blood
         item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
+            ELEMENT[id0.0.7.0.1] matches { -- Result value
                 value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
+                    QUANTITY[id0.0.0.0.1] matches {
                         units matches {
                             CODED_TEXT[id0.0.0.0.0.1] matches {
                                 code matches {"10*3/uL"} -- Units
@@ -48,12 +48,6 @@ terminology
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Sezary cells count per volume in blood">
-            >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
             >
         >
     >

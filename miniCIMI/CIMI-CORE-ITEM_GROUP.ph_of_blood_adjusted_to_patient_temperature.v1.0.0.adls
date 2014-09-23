@@ -29,11 +29,7 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- pH of blood adjusted to patients actual temperature
 		item matches {
-			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-				value matches {
-					QUANTITY[id0.0.107.0.1.1]
-				}
-			}
+			ELEMENT[id0.0.7.0.1.1]
 		}
 	}
 

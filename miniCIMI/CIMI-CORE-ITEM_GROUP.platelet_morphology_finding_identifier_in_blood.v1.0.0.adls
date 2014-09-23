@@ -28,25 +28,15 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Platelet morphology finding identifier in blood
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    ORDINAL[id0.0.107.0.1.1]
-                }
-            }
-        }
-    }
+    ITEM_GROUP[id1.1.1.1.1.1]
+
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Platelet morphology finding identifier in blood">
             >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-        >
+       >
     >
 
     term_bindings = <

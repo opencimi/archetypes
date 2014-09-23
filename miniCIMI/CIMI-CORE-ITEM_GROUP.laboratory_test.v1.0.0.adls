@@ -29,11 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1] matches {-- Laboratory test
     item matches {
-      ELEMENT[id0.0.2.1] matches { -- Test name
-        value matches {
-          TEXT[id0.0.102.1]
-        }
-      }
+      ELEMENT[id0.0.2.1]
       ELEMENT[id0.0.0.1] matches { -- Diagnostic service
         value matches {
           TEXT[id0.0.0.101]

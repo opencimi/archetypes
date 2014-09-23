@@ -29,9 +29,9 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils per hundred leukocytes in blood by automated count
 		item matches {
-			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
+			ELEMENT[id0.0.7.0.1] matches { -- Result value
 				value matches {
-					QUANTITY[id0.0.107.0.1.1]
+					QUANTITY[id0.0.0.0.1]
 				}
 			}
 		}
@@ -42,9 +42,6 @@ terminology
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Neutrophils per hundred leukocytes in blood by automated count">
-			>
-			["id0.0.7.0.1.1"] = <
-				text = <"Result value">
 			>
 		>
 	>
