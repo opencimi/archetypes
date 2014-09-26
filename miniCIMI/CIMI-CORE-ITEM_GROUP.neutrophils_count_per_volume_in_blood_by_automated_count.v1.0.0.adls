@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood_by_automated_count.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+    CIMI-CORE-ITEM_GROUP.count_per_volume_in_blood.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -28,17 +28,17 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils count per volume in blood by automated count
-        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
+    ITEM_GROUP[id1.1.1.1.1.1.1] matches { -- Neutrophils count per volume in blood by automated count
+        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1.1]}
     }
     
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
+            ["id1.1.1.1.1.1.1"] = <
                 text = <"Neutrophils count per volume in blood by automated count">
             >
-            ["at0.0.0.0.0.1"] = <
+            ["at0.0.0.0.0.1.1"] = <
                 text = <"10*3/uL">
             >
         >
@@ -47,7 +47,7 @@ terminology
     term_bindings = <
         ["loinc"] = <
             items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/751-8  >
+                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/751-8  >
             >
         >
     >
