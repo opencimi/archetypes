@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ITEM_GROUP.basophils_per_hundred_leukocytes_in_blood_manual.v1.0.0
+	CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood_manual.v1.0.0
 
 specialize
 	CIMI-CORE-ITEM_GROUP.laboratory_test_count.v1
@@ -17,9 +17,9 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"Archetype for CIMI 'basophils per hundred leukocytes in blood manual' concept">
-			use = <"Use for basophils per hundred leukocytes in blood manual.">
-			keywords = <"basophils", "hundred", "leukocytes", "blood", "manual">
+			purpose = <"Archetype for CIMI 'basophils per 100 leukocytes in blood manual' concept">
+			use = <"Use for basophils per 100 leukocytes in blood manual.">
+			keywords = <"basophils", "100", "leukocytes", "blood", "manual">
 			copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
 		>
 	>
@@ -27,13 +27,13 @@ description
 	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] 	-- Basophils per hundred leukocytes in blood
+	ITEM_GROUP[id1.1.1.1.1.1] 	-- Basophils per 100 leukocytes in blood
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
-				text = <"Basophils per hundred leukocytes in blood">
+				text = <"Basophils per 100 leukocytes in blood">
 			>
 		>
 	>

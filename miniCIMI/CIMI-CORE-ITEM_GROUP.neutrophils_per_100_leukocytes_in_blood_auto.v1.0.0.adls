@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ITEM_GROUP.neutrophils_per_hundred_leukocytes_in_blood_auto.v1.0.0
+	CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood_auto.v1.0.0
 
 specialize
-CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 	
 language
   original_language = <[ISO_639-1::en]>
@@ -17,9 +17,9 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'neutrophils per hundred leukocytes in blood auto' concept">
-      use = <"Use for neutrophils per hundred leukocytes in blood auto.">
-      keywords = <"neutrophils","hundred","leukocytes","blood","auto">
+      purpose = <"Archetype for CIMI 'neutrophils per 100 leukocytes in blood auto' concept">
+      use = <"Use for neutrophils per 100 leukocytes in blood auto.">
+      keywords = <"neutrophils","100","leukocytes","blood","auto">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
@@ -27,13 +27,13 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] -- Neutrophils per hundred leukocytes in blood by automated count
+	ITEM_GROUP[id1.1.1.1.1.1] -- Neutrophils per 100 leukocytes in blood by automated count
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
-				text = <"Neutrophils per hundred leukocytes in blood by automated count">
+				text = <"Neutrophils per 100 leukocytes in blood by automated count">
 			>
 		>
 	>
