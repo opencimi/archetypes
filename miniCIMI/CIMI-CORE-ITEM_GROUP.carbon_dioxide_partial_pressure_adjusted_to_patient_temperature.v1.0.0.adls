@@ -27,15 +27,7 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Carbon dioxide partial pressure adjusted to patients actual temperature
-		item matches {
-			ELEMENT[id0.0.7.0.1] matches { -- Result value
-				value matches {
-					QUANTITY[id0.0.0.0.1]
-				}
-			}
-		}
-	}
+	ITEM_GROUP[id1.1.1.1.1.1] -- Carbon dioxide partial pressure adjusted to patients actual temperature
 
 terminology
 	term_definitions = <

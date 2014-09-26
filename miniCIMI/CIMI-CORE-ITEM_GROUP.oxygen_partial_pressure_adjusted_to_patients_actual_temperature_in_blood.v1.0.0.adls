@@ -29,19 +29,7 @@ description
 
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxygen partial pressure adjusted to patients actual temperature in blood
-        item matches {
-            ELEMENT[id0.0.7.0.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.0.0.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"mm[Hg]"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
     }
 
 terminology
@@ -49,6 +37,9 @@ terminology
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Oxygen partial pressure adjusted to patients actual temperature in blood">
+            >
+            ["at0.0.0.0.0.1"] = <
+                text = <"mm[Hg]">
             >
         >
     >

@@ -28,7 +28,7 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] 
+    ITEM_GROUP[id1.1.1.1.1.1] -- Manual differential comment interpretation in blood narrative
 
 terminology
     term_definitions = <
