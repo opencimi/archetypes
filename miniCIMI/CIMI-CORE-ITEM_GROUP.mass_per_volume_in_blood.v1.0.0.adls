@@ -1,8 +1,8 @@
 archetype (adl_version=1.5.1; generated)
-    CIMI-CORE-ITEM_GROUP.erythrocyte_distribution_width_entitic_volume_by_automated_count.v1.0.0
+    CIMI-CORE-ITEM_GROUP.hemoglobin_mass_per_volume_in_blood.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.entitic_volume_in_blood.v1
+    CIMI-CORE-ITEM_GROUP.mass_per_volume_in_blood.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -17,9 +17,9 @@ description
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Erythrocyte distribution width entitic volume by automated count' concept">
-        use = <"Use for erythrocyte distribution width entitic volume by automated count.">
-        keywords = <"erythrocyte","distribution","width","entitic","volume","by","automated","count">
+        purpose = <"Archetype for CIMI 'Hemoglobin mass per volume in blood' concept">
+        use = <"Use for hemoglobin mass per volume in blood.">
+        keywords = <"hemoglobin","mass","per","volume","in","blood">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
@@ -28,19 +28,18 @@ description
 '
 
 definition
-  ITEM_GROUP[id1.1.1.1.1.1.1] 
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- mass per volume in blood
+        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
+    }
 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1.1"] = <
-                text = <"Erythrocyte distribution width entitic volume by automated count">
+            ["id1.1.1.1.1.1"] = <
+                text = <"Mass per volume in blood">
             >
-        >
-    >
-
-    term_bindings = <
-        ["loinc"] = <
-                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/21000-5>
+            ["at0.0.0.0.0.1"] = <
+                text = <"g/dL">
+            >
         >
     >

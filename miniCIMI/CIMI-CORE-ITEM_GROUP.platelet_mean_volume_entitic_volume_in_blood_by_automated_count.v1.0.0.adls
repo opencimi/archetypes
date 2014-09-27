@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.platelet_mean_volume_entitic_volume_in_blood_by_automated_count.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+    CIMI-CORE-ITEM_GROUP.entitic_volume_in_blood.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -28,26 +28,19 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Platelet mean volume entitic volume in blood by automated count
-        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
-    }
+    ITEM_GROUP[id1.1.1.1.1.1.1]
     
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
+            ["id1.1.1.1.1.1.1"] = <
                 text = <"Platelet mean volume entitic volume in blood by automated count">
-            >
-            ["at0.0.0.0.0.1"] = <
-                text = <"fL">
             >
         >
     >
 
     term_bindings = <
         ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/32623-1>
-            >
+                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/32623-1>
         >
     >

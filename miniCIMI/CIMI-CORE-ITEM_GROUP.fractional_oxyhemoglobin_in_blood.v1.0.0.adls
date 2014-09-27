@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.fractional_oxyhemoglobin_in_blood.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+    CIMI-CORE-ITEM_GROUP.fraction_in_blood.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -28,26 +28,19 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Fractional oxyhemoglobin in blood
-        /item[id0.0.7]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
-    }
+    ITEM_GROUP[id1.1.1.1.1.1.1] 
     
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
+            ["id1.1.1.1.1.1.1"] = <
                 text = <"Fractional oxyhemoglobin in blood">
-            >
-            ["at0.0.0.0.0.1"] = <
-                text = <"%">
             >
         >
     >
 
     term_bindings = <
         ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/11559-2>
-            >
+                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/11559-2>
         >
     >
