@@ -29,30 +29,32 @@ description
 definition
   ITEM_GROUP[id1.1.1.1] matches {  -- Laboratory panel
     item matches {
-      ELEMENT[id5.0.2.1] -- Panel name
+      ELEMENT[id5.0.2.1] -- Panel code
       ELEMENT[id5.0.0.1] matches { -- Diagnostic service
         value matches {
-          TEXT[id0.0.0.101]
+          TEXT[id0.0.0.102]
         }
       }
       use_archetype ITEM_GROUP [id4.0.0.1, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
-      ELEMENT[id5.0.0.2] matches { -- Poct indicator
-        value matches {
-          CODED_TEXT[id0.0.0.102]
-        }
-      }
-      ELEMENT[id5.0.0.3] matches { -- Diagnosis
+      ELEMENT[id5.0.0.2] occurrences matches {0..1} matches { -- Poct indicator
         value matches {
           CODED_TEXT[id0.0.0.103]
         }
       }
-      ELEMENT[id5.0.0.4] matches { -- Conclusions
+      ELEMENT[id5.0.0.3] matches { -- Diagnosis
         value matches {
           CODED_TEXT[id0.0.0.104]
         }
       }
+      ELEMENT[id5.0.0.4] matches { -- Conclusions
+        value matches {
+          CODED_TEXT[id0.0.0.105]
+        }
+      }
       use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
       use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1]
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1] occurrences matches {0}
+      use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1] occurrences matches {0}
     }
   }
 
@@ -60,7 +62,7 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1"] = < text = <"Laboratory panel"> >
-      ["id5.0.2.1"] = < text = <"Panel name"> >
+      ["id5.0.2.1"] = < text = <"Panel code"> >
       ["id5.0.0.1"] = < text = <"Diagnostic service"> >
       ["id4.0.0.1"] = < text = <"Specimen"> >
       ["id5.0.0.2"] = < text = <"Poct indicator"> >
@@ -68,5 +70,12 @@ terminology
       ["id5.0.0.4"] = < text = <"Conclusion"> >
       ["id0.1.1.1"] = < text = <"Laboratory test"> >
       ["id0.1.2.1"] = < text = <"Laboratory panel"> >
+    >
+  >
+  term_bindings = <
+    ["SNOMED-CT"] = <
+      items = <
+        ["id4.0.0.1"] = <http://snomed.info/id/131195008> --  Has Specimen
+      >
     >
   >

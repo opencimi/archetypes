@@ -30,6 +30,7 @@ definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with manual differential panel
     item matches {
       use_archetype ITEM_GROUP[id0.1.2.1.0.1, CIMI-CORE-ITEM_GROUP.manual_differential_panel.v1]
+      use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
     }
   }
 

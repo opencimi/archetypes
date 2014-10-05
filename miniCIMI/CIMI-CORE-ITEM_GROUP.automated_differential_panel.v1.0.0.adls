@@ -28,6 +28,7 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1.1] matches {  -- Automated differential panel
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Panel code
     item matches {
       use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood_by_automated_count.v1] -- Neutrophils per 100 leukocytes in blood by automated count
       use_archetype ITEM_GROUP [id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_blood_by_automated_count.v1] -- Neutrophils band form per 100 leukocytes in blood by automated count
@@ -47,7 +48,7 @@ definition
       use_archetype ITEM_GROUP [id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_blood_by_automated_count.v1] -- Basophils count per volume in blood by automated count
       use_archetype ITEM_GROUP [id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_blood_by_automated_count.v1] -- Leukocytes other count per volume in blood by automated count
       use_archetype ITEM_GROUP [id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.other_cells_count_per_volume_in_blood_by_automated_count.v1] -- Other cells count per volume in blood by automated count
-
+      use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
     }
   }
 
@@ -55,6 +56,7 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1.1"] = <text = <"Automated differential panel">>
+      ["at0.0.0.0.1"] = <text = <"Panel code">>
       ["id0.1.1.1.1"] = <text = <"Neutrophils per 100 leukocytes in blood by automated count">>
       ["id0.1.1.1.2"] = <text = <"Neutrophils band form per 100 leukocytes in blood by automated count">>
       ["id0.1.1.1.3"] = <text = <"Granulocytes per 100 leukocytes in blood by automated count">>
@@ -79,6 +81,7 @@ terminology
     ["loinc"] = <
       items = <
         ["id1.1.1.1.1"] = <http://loinc.org/id/57023-4>
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57023-4>
         ["id0.1.1.1.1"] = <http://loinc.org/id/770-8>
         ["id0.1.1.1.2"] = <http://loinc.org/id/35332-6>
         ["id0.1.1.1.3"] = <http://loinc.org/id/19023-1>

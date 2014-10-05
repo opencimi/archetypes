@@ -29,8 +29,12 @@ description
 definition
   ITEM_GROUP[id1] matches {  -- Clinical Statment
     participation matches {
-      PARTICIPATION[id2] occurrences matches {0..1}   -- Subject of care
-      PARTICIPATION[id3] occurrences matches {0..1}   -- Information subject
+      PARTICIPATION[id2] occurrences matches {0..1} matches { -- Subject of record
+        function matches {[at1]}
+      }
+      PARTICIPATION[id3] occurrences matches {0..1} matches { -- Information subject
+        function matches {[at2]}
+      }
     }
     item matches {
       use_archetype ITEM_GROUP[id4, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
@@ -41,20 +45,19 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1"] = <
-        text = <"Clinical Statment">
-      >
-      ["id2"] = <
-        text = <"Subject of care">
-      >
-      ["id3"] = <
-        text = <"Information subject">
-      >
-      ["id4"] = <
-        text = <"Cluster">
-      >
-      ["id5"] = <
-        text = <"Element">
-      >
+      ["id1"] = <text = <"Clinical Statment">>
+      ["id2"] = <text = <"Subject of record">>
+      ["at1"] = <text = <"Subject of record">>
+      ["id3"] = <text = <"Information subject">>
+      ["at2"] = <text = <"Information subject">>
+      ["id4"] = <text = <"Cluster">>
+      ["id5"] = <text = <"Element">>
+    >
+  >
+  term_bindings = <
+    ["snomedct"] = <
+      ["at1"] = <http://snomed.info/id/410604004> -- Subject of record
+      ["at2"] = <http://snomed.info/id/xxxxxxxxx> -- Information subject
+      ["id3"] = <http://snomed.info/id/131195008> -- Subject of information
     >
   >

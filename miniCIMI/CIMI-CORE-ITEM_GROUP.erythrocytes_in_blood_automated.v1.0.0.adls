@@ -27,13 +27,27 @@ description
 	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] 	-- Erythrocytes in blood by automated count
+	ITEM_GROUP[id1.1.1.1.1.1] matches { 	-- Erythrocytes in blood by automated count
+      /item[id5.0.2.1]/value matches {[at0.0.0.0.0.1]}
+    }
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
 				text = <"Erythrocytes in blood by automated count">
+			>
+      		["at0.0.0.0.0.1"] = <
+				text = <"Qn">
+			>
+		>
+	>
+
+	term_bindings = <
+		["loinc"] = <
+			items = <
+				["id1.1.1.1.1.1"] = <http://loinc.org/id/789-8>
+				["at0.0.0.0.0.1"] = <http://loinc.org/id/789-8>
 			>
 		>
 	>

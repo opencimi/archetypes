@@ -34,9 +34,9 @@ definition
           IDENTIFIER[id0.0.101]
         }
       }
-      ELEMENT[id5.0.2] occurrences matches {1} matches { -- Name
+      ELEMENT[id5.0.2] occurrences matches {1} matches { -- Code
         value matches {
-          TEXT[id0.0.102]
+          CODED_TEXT[id0.0.102]
         }
       }
       ELEMENT[id5.0.3] matches { -- Reason
@@ -76,12 +76,8 @@ definition
           TEXT[id0.0.109]
         }
       }
-      use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observe_action.v1]
-      use_archetype ITEM_GROUP [id4.0.2, CIMI-CORE-ITEM_GROUP.interpret_action.v1]
-      use_archetype ITEM_GROUP [id4.0.3, CIMI-CORE-ITEM_GROUP.approve_action.v1]
-      use_archetype ITEM_GROUP [id4.0.4, CIMI-CORE-ITEM_GROUP.report_action.v1]
-      use_archetype ITEM_GROUP [id4.0.5, CIMI-CORE-ITEM_GROUP.cancel_action.v1]
-      use_archetype ITEM_GROUP [id4.0.6, CIMI-CORE-ITEM_GROUP.update_action.v1]
+      after[id5.0.9]
+      use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observation_actions.v1] -- Observation actions
       use_archetype ITEM_GROUP [id0.1.3, CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {0} -- Clinical statement
     }
   }
@@ -91,22 +87,28 @@ terminology
     ["en"] = <
       ["id1.1.1"] = < text = <"Observation set"> >
       ["id5.0.1"] = < text = <"Identifier"> >
-      ["id5.0.2"] = < text = <"Name"> >
+      ["id5.0.2"] = < text = <"Code"> >
       ["id5.0.3"] = < text = <"Reason"> >
       ["id5.0.4"] = < text = <"Method"> >
       ["id5.0.5"] = < text = <"Status"> >
       ["id5.0.6"] = < text = <"Priority"> >
-      ["id5.0.7"] = < text = <"Interpretation cateogry"> >
+      ["id5.0.7"] = < text = <"Interpretation category"> >
       ["id5.0.8"] = < text = <"Sequence"> >
       ["id5.0.9"] = < text = <"Comment"> >
-      ["id4.0.1"] = < text = <"Observe action"> >
-      ["id4.0.2"] = < text = <"Interpret action"> >
-      ["id4.0.3"] = < text = <"Approve action"> >
-      ["id4.0.4"] = < text = <"Report action"> >
-      ["id4.0.5"] = < text = <"Cancel action"> >
-      ["id4.0.6"] = < text = <"Update action"> >
+      ["id4.0.1"] = < text = <"Observation actions"> >
       ["id0.1.1"] = < text = <"Observation"> >
       ["id0.1.2"] = < text = <"Observation set"> >
       ["id0.1.3"] = < text = <"Clinical statement"> >
+    >
+  >
+  term_bindings = <
+    ["SNOMED-CT"] = <
+      items = <
+        ["id5.0.3"] = <http://snomed.info/id/363702006> -- Has focus
+        ["id5.0.4"] = <http://snomed.info/id/260686004> -- Method
+        ["id5.0.5"] = <http://snomed.info/id/408730004> -- Procedure context
+        ["id5.0.6"] = <http://snomed.info/id/260870009> -- Priority
+        ["id5.0.7"] = <http://snomed.info/id/363713009> -- Has interpretation
+      >
     >
   >

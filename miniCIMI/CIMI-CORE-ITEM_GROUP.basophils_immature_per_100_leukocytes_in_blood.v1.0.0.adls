@@ -27,13 +27,27 @@ description
 	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1.1] -- Basophils immature per 100 leukocytes in blood
+	ITEM_GROUP[id1.1.1.1.1.1.1] matches { -- Basophils immature per 100 leukocytes in blood
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.0.1]} -- Panel code
+    }
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1.1"] = <
 				text = <"Basophils immature per 100 leukocytes in blood">
+			>
+			["at0.0.0.0.0.0.1"] = <
+				text = <"Qn">
+			>
+		>
+	>
+
+	term_bindings = <
+		["loinc"] = <
+			items = <
+				["id1.1.1.1.1.1.1"] = <http://loinc.org/id/34911-8>
+				["at0.0.0.0.0.0.1"] = <http://loinc.org/id/34911-8>
 			>
 		>
 	>

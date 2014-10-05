@@ -28,12 +28,26 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] -- Hemoglobin in blood
-  
+     /item[id5.0.2.1]/value matches {[at0.0.0.0.0.1]}
+    }
+
 terminology
-	term_definitions = <
-		["en"] = <
-			["id1.1.1.1.1.1"] = <
-				text = <"Hemoglobin in blood">
-			>
-		>
-	>
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = <
+        text = <"Hemoglobin in blood">
+      >
+          ["at0.0.0.0.0.1"] = <
+        text = <"Qn">
+      >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/xxx-x>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/xxx-x>
+      >
+    >
+  >
