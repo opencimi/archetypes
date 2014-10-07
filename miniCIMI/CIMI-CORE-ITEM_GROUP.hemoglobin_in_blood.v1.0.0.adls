@@ -28,7 +28,7 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] -- Hemoglobin in blood
-     /item[id5.0.2.1]/value matches {[at0.0.0.0.0.1]}
+     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]}
     }
 
 terminology
@@ -37,7 +37,7 @@ terminology
       ["id1.1.1.1.1.1"] = <
         text = <"Hemoglobin in blood">
       >
-          ["at0.0.0.0.0.1"] = <
+      ["at0.0.0.0.0.1"] = <
         text = <"Qn">
       >
     >
@@ -46,8 +46,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1.1"] = <http://loinc.org/id/xxx-x>
-        ["at0.0.0.0.0.1"] = <http://loinc.org/id/xxx-x>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/718-7>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/718-7>
       >
     >
   >

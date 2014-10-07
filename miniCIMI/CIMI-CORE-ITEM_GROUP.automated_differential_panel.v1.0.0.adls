@@ -30,24 +30,24 @@ definition
   ITEM_GROUP[id1.1.1.1.1] matches {  -- Automated differential panel
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Panel code
     item matches {
-      use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood_by_automated_count.v1] -- Neutrophils per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_blood_by_automated_count.v1] -- Neutrophils band form per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.granulocytes_per_100_leukocytes_in_blood_by_automated_count.v1] -- Granulocytes per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.lymphocytes_per_100_leukocytes_in_blood_by_automated_count.v1] -- Lymphocytes per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_100_leukocytes_in_blood_by_automated_count.v1] -- Lymphocytes variant per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_blood_by_automated_count.v1] -- Monocytes per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.eosinophils_per_100_leukocytes_in_blood_by_automated_count.v1] -- Eosinophils per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood_by_automated_count.v1] -- Basophils per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.other_cells_per_100_leukocytes_in_blood_by_automated_count.v1] -- Other cells per 100 leukocytes in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood_by_automated_count.v1] -- Neutrophils count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_blood_by_automated_count.v1] -- Neutrophils band form count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_blood_by_automated_count.v1] -- Lymphocytes count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_count_per_volume_in_blood_by_automated_count.v1] -- Lymphocytes variant count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_blood_by_automated_count.v1] -- Monocytes count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood_by_automated_count.v1] -- Eosinophils count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_blood_by_automated_count.v1] -- Basophils count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_blood_by_automated_count.v1] -- Leukocytes other count per volume in blood by automated count
-      use_archetype ITEM_GROUP [id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.other_cells_count_per_volume_in_blood_by_automated_count.v1] -- Other cells count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches {1} -- Neutrophils per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Neutrophils band form per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.granulocytes_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Granulocytes per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.lymphocytes_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches {1} -- Lymphocytes per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Lymphocytes variant per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Monocytes per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.eosinophils_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Eosinophils per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Basophils per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.other_cells_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Other cells per 100 leukocytes in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Neutrophils count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Neutrophils band form count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Lymphocytes count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_count_per_volume_in_blood_by_automated_count.v1] occurrences matches{0..1} -- Lymphocytes variant count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Monocytes count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Eosinophils count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Basophils count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Leukocytes other count per volume in blood by automated count
+      use_archetype ITEM_GROUP [id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.other_cells_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Other cells count per volume in blood by automated count
       use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
     }
   }

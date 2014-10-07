@@ -35,7 +35,6 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <text = <"Basophils in blood">>
-      ["at0.0.0.0.1"] = <text = <"Panel code">>
       ["at0.0.0.0.0.1"] = <text = <"Qn">>
     >
   >
