@@ -55,7 +55,7 @@ terminology
     >
   >
   term_bindings = <
-    ["snomedct"] = <
+    ["SNOMED-CT"] = <
       ["at1"] = <http://snomed.info/id/410604004> -- Subject of record
       ["at2"] = <http://snomed.info/id/xxxxxxxxx> -- Information subject
       ["id3"] = <http://snomed.info/id/131195008> -- Subject of information
