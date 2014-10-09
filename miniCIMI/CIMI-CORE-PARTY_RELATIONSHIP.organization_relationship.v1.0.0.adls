@@ -33,6 +33,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.4]
 				}
+				null_flavor existence matches {0}
 			}
 			use_archetype ITEM_GROUP [id0.3, CIMI-CORE-ITEM_GROUP.location.v1] -- Location
 		}

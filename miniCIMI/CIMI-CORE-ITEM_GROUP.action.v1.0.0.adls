@@ -33,6 +33,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.101]
 				}
+				null_flavor existence matches {0}
 			}
 			ELEMENT[id2.2] matches { -- Identifier
 				value matches {

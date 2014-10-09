@@ -45,6 +45,7 @@ definition
 						value matches {
 							PLAIN_TEXT[id0.25]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.5] occurrences matches {0..1} matches { -- Use
 						value matches {

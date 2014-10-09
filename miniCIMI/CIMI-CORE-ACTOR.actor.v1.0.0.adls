@@ -43,6 +43,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.7] matches {*}
 				}
+				null_flavor existence matches {0}
 			}
 		}
 	}

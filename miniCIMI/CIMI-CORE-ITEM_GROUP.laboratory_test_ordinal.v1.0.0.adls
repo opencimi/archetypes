@@ -33,6 +33,7 @@ definition
         value matches {
           ORDINAL[id0.0.0.0.1]
         }
+        null_flavor existence matches {0}
       }
     }
   }

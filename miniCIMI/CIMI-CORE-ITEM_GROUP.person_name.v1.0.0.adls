@@ -59,6 +59,7 @@ definition
 						value matches {
 							TEXT[id0.0.0.17]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.0.8] matches { -- Datetime range
 						value matches {

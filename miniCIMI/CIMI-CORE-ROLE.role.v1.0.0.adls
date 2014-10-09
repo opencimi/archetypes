@@ -33,6 +33,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.5] matches {*}
 				}
+				null_flavor existence matches {0}
 			}
 			ELEMENT[id0.2] occurrences matches {0..1} matches { -- Datetime range
 				value matches {

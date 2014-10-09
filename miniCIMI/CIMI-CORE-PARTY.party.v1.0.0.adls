@@ -32,6 +32,7 @@ definition
 						value matches {
 							IDENTIFIER[id9]
 						}
+						null_flavor existence matches {0}
 					}
 				}
 			}
@@ -42,6 +43,7 @@ definition
 				value matches {
 					CODED_TEXT[id10]
 				}
+				null_flavor existence matches {0}
 			}
 		}
 		relationship matches {

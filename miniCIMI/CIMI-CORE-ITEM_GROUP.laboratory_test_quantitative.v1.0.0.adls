@@ -37,6 +37,7 @@ definition
 						}
 					}
 				}
+				null_flavor existence matches {0}
 			}
 		}
 	}
