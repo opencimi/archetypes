@@ -51,5 +51,15 @@ terminology
             ["id5.0.7.0.1"] = <
                 text = <"Result value">
             >
+            ["id0.0.0.0.1"] = <
+                text = <"Quantity">
+            >
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["id0.0.0.0.1"] = <http://snomed.info/id/246205007>
+			>
 		>
 	>

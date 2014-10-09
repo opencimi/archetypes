@@ -29,6 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1] matches {-- Observation
     item matches {
+      before[id4.0.1]
       ELEMENT[id5.0.1] matches { -- Identifier
         value matches {
           IDENTIFIER[id0.0.101]
@@ -60,12 +61,12 @@ definition
           TEXT[id0.0.106]
         }
       }
-      ELEMENT[id5.0.7] occurrences matches {0..1} -- Result
-      ELEMENT[id5.0.8] occurrences matches {0..1} matches { -- Interpretation category
+      ELEMENT[id5.0.7] occurrences matches {0..1} matches { -- Interpretation category
         value matches {
-          TEXT[id0.0.108]
+          TEXT[id0.0.107]
         }
       }
+      ELEMENT[id5.0.8] occurrences matches {0..1} -- Result
       ELEMENT[id5.0.9] occurrences matches {0..1} matches { -- Normal range
         value matches {
           TEXT[id0.0.109]
@@ -105,13 +106,13 @@ terminology
     ["en"] = <
       ["id1.1.1"] = < text = <"Observation"> >
       ["id5.0.1"] = < text = <"Identifier"> >
-      ["id5.0.2"] = < text = <"Name"> >
+      ["id5.0.2"] = < text = <"Code"> >
       ["id5.0.3"] = < text = <"Reason"> >
       ["id5.0.4"] = < text = <"Method"> >
       ["id5.0.5"] = < text = <"Status"> >
       ["id5.0.6"] = < text = <"Priority"> >
-      ["id5.0.7"] = < text = <"Result"> >
-      ["id5.0.8"] = < text = <"Interpretation category"> >
+      ["id5.0.7"] = < text = <"Interpretation category"> >
+      ["id5.0.8"] = < text = <"Result"> >
       ["id5.0.9"] = < text = <"Normal range"> >
       ["id5.0.10"] = < text = <"Reference range"> >
       ["id5.0.11"] = < text = <"Sequence"> >

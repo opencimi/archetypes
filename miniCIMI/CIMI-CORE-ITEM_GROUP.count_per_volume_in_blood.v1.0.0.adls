@@ -17,8 +17,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"Model archetype for CIMI archetypes of form 'xxx count per volume in blood' concept">
-			use = <"Specialise for any count per volume in blood.">
+			purpose = <"Model archetype for CIMI archetypes of form '_____ count per volume in blood' concept">
+			use = <"Specialise for any _____ count per volume in blood.">
 			keywords = <"count", "per", "volume", "in", "blood">
 			copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
 		>
@@ -27,7 +27,7 @@ description
 	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] matches {	-- count per volume in blood
+	ITEM_GROUP[id1.1.1.1.1.1] matches {	-- _____ count per volume in blood
 		/item[id5.0.7.0.1]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
 	}
 
@@ -35,7 +35,7 @@ terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = <
-				text = <"count per volume in blood">
+				text = <"_____ count per volume in blood">
 			>
 			["at0.0.0.0.0.1"] = <
 				text = <"10*3/uL">

@@ -46,10 +46,10 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1"] = <text = <"Clinical Statment">>
-      ["id2"] = <text = <"Subject of record">>
       ["at1"] = <text = <"Subject of record">>
-      ["id3"] = <text = <"Information subject">>
+      ["id2"] = <text = <"Subject of record">>
       ["at2"] = <text = <"Information subject">>
+      ["id3"] = <text = <"Information subject">>
       ["id4"] = <text = <"Cluster">>
       ["id5"] = <text = <"Element">>
     >
@@ -57,7 +57,7 @@ terminology
   term_bindings = <
     ["SNOMED-CT"] = <
       ["at1"] = <http://snomed.info/id/410604004> -- Subject of record
-      ["at2"] = <http://snomed.info/id/xxxxxxxxx> -- Information subject
+      ["at2"] = <http://snomed.info/id/_________> -- Information subject (CIMI extension)
       ["id3"] = <http://snomed.info/id/131195008> -- Subject of information
     >
   >
