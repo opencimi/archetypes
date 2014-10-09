@@ -96,7 +96,6 @@ definition
           TEXT[id0.0.114]
         }
       }
-      after[id5.0.14]
       use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observation_actions.v1] -- Observation actions
     }
   }
