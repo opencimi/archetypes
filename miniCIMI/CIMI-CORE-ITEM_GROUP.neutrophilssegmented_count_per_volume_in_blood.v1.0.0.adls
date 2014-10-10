@@ -29,31 +29,17 @@ description
 
 definition
     ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophilssegmented count per volume in blood
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"10*3/uL"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        /item[id5.0.7.0.1]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.1.1]}
     }
+    
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Neutrophilssegmented count per volume in blood">
             >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
+            ["at0.0.0.0.1.1"] = <
+                text = <"10*3/uL">
             >
         >
     >

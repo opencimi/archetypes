@@ -28,32 +28,13 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils band form per 100 leukocytes in blood by automated count
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches { -- conditional
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"%"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    ITEM_GROUP[id1.1.1.1.1.1] -- Neutrophils band form per 100 leukocytes in blood by automated count
+    
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Neutrophils band form per 100 leukocytes in blood by automated count">
-            >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
             >
         >
     >

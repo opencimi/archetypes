@@ -29,18 +29,14 @@ description
 definition
   ITEM_GROUP[id1.1.1.1] matches {-- Laboratory test
     item matches {
-      ELEMENT[id0.0.2.1] matches { -- Test name
-        value matches {
-          TEXT[id0.0.102.1]
-        }
-      }
+      ELEMENT[id5.0.2.1] -- Test code
       ELEMENT[id0.0.0.1] matches { -- Diagnostic service
         value matches {
           TEXT[id0.0.0.101]
         }
       }
       use_archetype ITEM_GROUP [id0.0.0.2, CIMI-CORE-ITEM_GROUP.specimen.v3] -- Specimen
-      ELEMENT[id0.0.0.3] matches { -- Poct indicator
+      ELEMENT[id0.0.0.3] occurrences matches {0..1} matches { -- Poct indicator
         value matches {
           CODED_TEXT[id0.0.0.102]
         }
@@ -50,7 +46,7 @@ definition
           CODED_TEXT[id0.0.0.103]
         }
       }
-      before[id0.0.15]
+      before[id4.0.1]
       ELEMENT[id0.0.0.5] matches { -- Conclusions
         value matches {
           CODED_TEXT[id0.0.0.104]
@@ -65,8 +61,8 @@ terminology
       ["id1.1.1.1"] = <
         text = <"Laboratory test">
       >
-      ["id0.0.2.1"] = <
-        text = <"Test name">
+      ["id5.0.2.1"] = <
+        text = <"Test code">
       >
       ["id0.0.0.1"] = <
         text = <"Diagnostic service">
@@ -82,6 +78,13 @@ terminology
       >
       ["id0.0.0.5"] = <
         text = <"Conclusion">
+      >
+    >
+  >
+  term_bindings = <
+    ["SNOMED-CT"] = <
+      items = <
+        ["id0.0.0.2"] = <http://snomed.info/id/116686009> -- Has Specimen
       >
     >
   >

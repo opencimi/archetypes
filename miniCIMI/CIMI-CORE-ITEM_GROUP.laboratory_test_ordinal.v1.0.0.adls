@@ -29,10 +29,11 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory test ordinal
     item matches {
-      ELEMENT[id0.0.7.0.1] occurrences matches {1} matches { -- Result value
+      ELEMENT[id5.0.7.0.1] occurrences matches {1} matches { -- Result value
         value matches {
-          ORDINAL[id0.0.107.0.1]
+          ORDINAL[id0.0.0.0.1]
         }
+        null_flavor existence matches {0}
       }
     }
   }
@@ -43,8 +44,18 @@ terminology
       ["id1.1.1.1.1"] = <
         text = <"Laboratory test ordinal">
       >
-      ["id0.0.7.0.1"] = <
+      ["id5.0.7.0.1"] = <
         text = <"Result value">
+      >
+      ["id0.0.0.0.1"] = <
+        text = <"Ordinal">
+      >
+    >
+  >
+  term_bindings = <
+    ["SNOMED-CT"] = <
+      items = <
+        ["id0.0.0.0.1"] = <http://snomed.info/id/zzzzzzzz>
       >
     >
   >

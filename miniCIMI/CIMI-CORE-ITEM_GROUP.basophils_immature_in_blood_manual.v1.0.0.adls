@@ -28,14 +28,8 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Basophils immature in blood manual
-		item matches {
-			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-				value matches {
-					QUANTITY[id0.0.107.0.1.1]
-				}
-			}
-		}
-	}
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Panel code
+  }
 
 terminology
 	term_definitions = <
@@ -43,8 +37,17 @@ terminology
 			["id1.1.1.1.1.1"] = <
 				text = <"Basophils immature in blood">
 			>
-			["id0.0.7.0.1.1"] = <
-				text = <"Result value">
-			>
-		>
-	>
+      ["at0.0.0.0.0.1"] = <
+        text = <"Qn">
+      >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+       items = <
+         ["id1.1.1.1.1.1"] = <http://loinc.org/id/33785-7>
+         ["at0.0.0.0.0.1"] = <http://loinc.org/id/33785-7>
+       >
+    >
+  >

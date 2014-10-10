@@ -29,12 +29,13 @@ description
 definition
 	PARTY_RELATIONSHIP[id1.1] matches { -- Organization relationship
 		details matches {
-			ELEMENT[id1.2] occurrences matches {1} matches { -- Scoping status
+			ELEMENT[id0.2] occurrences matches {1} matches { -- Scoping status
 				value matches {
-					CODED_TEXT[id1.4]
+					CODED_TEXT[id0.4]
 				}
+				null_flavor existence matches {0}
 			}
-			use_archetype ITEM_GROUP [id1.3, CIMI-CORE-ITEM_GROUP.location.v1] -- Location
+			use_archetype ITEM_GROUP [id0.3, CIMI-CORE-ITEM_GROUP.location.v1] -- Location
 		}
 	}
 
@@ -44,10 +45,10 @@ terminology
 			["id1.1"] = <
 				text = <"Organization relationship">
 			>
-			["id1.2"] = <
+			["id0.2"] = <
 				text = <"Scoping status">
 			>
-			["id1.3"] = <
+			["id0.3"] = <
 				text = <"Location">
 			>
 		>
@@ -55,7 +56,7 @@ terminology
 	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
-				["id1.2"] = <http://snomed.info/id/138875005>
+				["id0.2"] = <http://snomed.info/id/138875005>
 			>
 		>
 	>

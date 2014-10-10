@@ -28,6 +28,7 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Erythrocyte morphology panel
+		/item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Panel code
 		item matches {
 			use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.acanthocytes_in_blood_by_light_microscopy.v1] -- Acanthocytes in blood by light microscopy
 		}
@@ -36,11 +37,18 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1"] = <
-				text = <"Erythrocyte morphology panel">
-			>
-			["id0.1.1.1.1"] = <
-				text = <"Acanthocytes in blood by light microscopy">
+			["id1.1.1.1.1"] = <text = <"Erythrocyte morphology panel">>
+			["id0.1.1.1.1"] = <text = <"Acanthocytes in blood by light microscopy">>
+			["at0.0.0.0.1"] = <text = <"Qn">>
+		>
+	>
+
+	term_bindings = <
+		["loinc"] = <
+			items = <
+				["id1.1.1.1.1"] = <http://loinc.org/id/58408-6>
+				["id0.1.1.1.1"] = <http://loinc.org/id/7789-1>
+				["at0.0.0.0.1"] = <http://loinc.org/id/58408-6>
 			>
 		>
 	>

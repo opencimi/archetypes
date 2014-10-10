@@ -71,6 +71,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.0.18] matches {*}
 				}
+				null_flavor existence matches {0}
 			}
 		}
 		relationship matches {

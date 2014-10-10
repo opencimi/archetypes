@@ -29,16 +29,6 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches { -- Person name detailed
 		item matches {
-			ELEMENT[id2.1.1.1.1] matches { -- Value
-				value matches {
-					TEXT[id2.2.1.1.1]
-				}
-			}
-			ELEMENT[id2.1.1.2.1] matches { -- Identifier
-				value matches {
-					IDENTIFIER[id0.0.0.1.1]
-				}
-			}
 			ITEM_GROUP[id0.0.0.0.1] matches { -- Title
 				item matches {
 					ELEMENT[id0.0.0.0.2] occurrences matches {0..1} matches { -- Part number
@@ -143,12 +133,6 @@ terminology
 			["id1.1.1.1.1"] = <
 				text = <"Person name detailed">
 			>
-			["id2.1.1.1.1"] = <
-				text = <"Value">
-			>
-			["id2.1.1.2.1"] = <
-				text = <"Identifier">
-			>
 			["id0.0.0.0.1"] = <
 				text = <"Title">
 			>
@@ -215,8 +199,6 @@ terminology
 		["SNOMED-CT"] = <
 			items = <
 				["id1.1.1.1.1"] = <http://snomed.info/id/138875005>
-				["id2.1.1.1.1"] = <http://snomed.info/id/138875005>
-				["id2.1.1.2.1"] = <http://snomed.info/id/138875005>
 				["id0.0.0.0.1"] = <http://snomed.info/id/138875005>
 				["id0.0.0.0.2"] = <http://snomed.info/id/138875005>
 				["id0.0.0.0.3"] = <http://snomed.info/id/138875005>

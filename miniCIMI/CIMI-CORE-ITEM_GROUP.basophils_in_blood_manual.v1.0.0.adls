@@ -28,23 +28,22 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Basophils in blood manual
-		item matches {
-			ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-				value matches {
-					QUANTITY[id0.0.107.0.1.1]
-				}
-			}
-		}
-	}
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Panel code
+  }
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1.1"] = <
-				text = <"Basophils in blood">
-			>
-			["id0.0.7.0.1.1"] = <
-				text = <"Result value">
-			>
-		>
-	>
+			["id1.1.1.1.1.1"] = <text = <"Basophils in blood">>
+      ["at0.0.0.0.0.1"] = <text = <"Qn">>
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+       items = <
+         ["id1.1.1.1.1.1"] = <http://loinc.org/id/705-4>
+         ["at0.0.0.0.0.1"] = <http://loinc.org/id/705-4>
+       >
+    >
+  >

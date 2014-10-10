@@ -1,9 +1,9 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ITEM_GROUP.erythrocyte_mean_corpuscular_volume_automated.v1.0.0
+  CIMI-CORE-ITEM_GROUP.action_set.v1.0.0
 
 specialize
-CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
-	
+  CIMI-CORE-ITEM_GROUP.cluster.v1
+
 language
   original_language = <[ISO_639-1::en]>
 
@@ -17,9 +17,9 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'erythrocyte mean corpuscular volume automated' concept">
-      use = <"Use for erythrocyte mean corpuscular volume automated.">
-      keywords = <"erythrocyte","mean","corpuscular","volume","automated">
+      purpose = <"Top-level reference archetype for CIMI 'action set' concept">
+      use = <"Use for action sets.">
+      keywords = <"actions","set">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
@@ -27,13 +27,11 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] -- Erythrocyte mean corpuscular volume by automated count
+  ITEM_GROUP[id1.1] -- Action set
 
 terminology
-	term_definitions = <
-		["en"] = <
-			["id1.1.1.1.1.1"] = <
-				text = <"Erythrocyte mean corpuscular volume by automated count">
-			>
-		>
-	>
+  term_definitions = <
+    ["en"] = <
+      ["id1.1"] = < text = <"Action Set"> >
+    >
+  >

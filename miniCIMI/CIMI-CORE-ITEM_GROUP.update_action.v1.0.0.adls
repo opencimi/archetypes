@@ -36,9 +36,9 @@ definition
 			ELEMENT[id2.7.1] -- Update timing offset origin
 		}
 		participation matches {
-			PARTICIPATION[id2.12.1] -- Updater
-			PARTICIPATION[id2.12.2] occurrences matches {0..1} -- Location of subject
-			PARTICIPATION[id2.12.3] occurrences matches {0..1} -- Location of updater
+			PARTICIPATION[id0.109.1] -- Updater
+			PARTICIPATION[id0.109.2] occurrences matches {0..1} -- Location of subject
+			PARTICIPATION[id0.109.3] occurrences matches {0..1} -- Location of updater
 		}
 	}
 
@@ -51,9 +51,9 @@ terminology
 			["id2.5.1"] = < text = <"Update duration"> >
 			["id2.6.1"] = < text = <"Update timing offset"> >
 			["id2.7.1"] = < text = <"Update timing offset origin"> >
-			["id2.12.1"] = < text = <"Updater"> >
-			["id2.12.2"] = < text = <"Location of subject"> >
-			["id2.12.3"] = < text = <"Location of updater"> >
+			["id0.109.1"] = < text = <"Updater"> >
+			["id0.109.2"] = < text = <"Location of subject"> >
+			["id0.109.3"] = < text = <"Location of updater"> >
 		>
 	>
 	term_bindings = <

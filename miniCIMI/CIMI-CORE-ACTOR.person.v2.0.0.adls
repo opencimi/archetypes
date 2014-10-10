@@ -99,6 +99,7 @@ definition
 				value matches {
 					TEXT[id0.0.112]
 				}
+				null_flavor existence matches {0}
 			}
 			ELEMENT[id0.0.14] occurrences matches {0..1} matches { -- Date range
 				value matches {
@@ -111,6 +112,7 @@ definition
 						value matches {
 							CODED_TEXT[id0.0.114]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.17] occurrences matches {0..1} matches { -- Date range
 						value matches {
@@ -125,6 +127,7 @@ definition
 						value matches {
 							CODED_TEXT[id0.0.116]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.20] occurrences matches {0..1} matches { -- Datetime range
 						value matches {
@@ -170,6 +173,7 @@ definition
 								value matches {
 									DURATION[id0.0.123]
 								}
+								null_flavor existence matches {0}
 							}
 							ELEMENT[id0.0.30] occurrences matches {0..*} matches { -- Accuracy
 								value matches {
@@ -219,6 +223,7 @@ definition
 								value matches {
 									DATE_TIME[id0.0.131]
 								}
+								null_flavor existence matches {0}
 							}
 							ELEMENT[id0.0.40] occurrences matches {0..1} matches { -- Accuracy
 								value matches {
@@ -305,6 +310,7 @@ definition
 						value matches {
 							CODED_TEXT[id0.0.146]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.58] occurrences matches {0..1} matches { -- Mode
 						value matches {
@@ -354,6 +360,7 @@ definition
 						value matches {
 							TEXT[id0.0.155]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.68] occurrences matches {0..*} matches { -- Qualifier
 						value matches {
@@ -373,6 +380,7 @@ definition
 						value matches {
 							TEXT[id0.0.158]
 						}
+						null_flavor existence matches {0}
 					}
 					ELEMENT[id0.0.72] occurrences matches {0..*} matches { -- Qualifier
 						value matches {

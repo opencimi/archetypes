@@ -33,6 +33,7 @@ definition
 				value matches {
 					CODED_TEXT[id0.101]
 				}
+				null_flavor existence matches {0}
 			}
 			ELEMENT[id2.2] matches { -- Identifier
 				value matches {
@@ -74,12 +75,12 @@ definition
 			}
 		}
 		participation matches {
-			PARTICIPATION[id2.12] -- Location
+			PARTICIPATION[id0.109] -- Location
 		}
 		link matches {
-			LINK[id2.13] occurrences matches {0..1} -- Associated activity
-			LINK[id2.14] -- Previous action
-			LINK[id2.15] -- Subsequent action
+			LINK[id0.110] occurrences matches {0..1} -- Associated activity
+			LINK[id0.111] -- Previous action
+			LINK[id0.112] -- Subsequent action
 		}
 	}
 
@@ -122,16 +123,16 @@ terminology
 			["id2.11"] = <
 				text = <"Status">
 			>
-			["id2.12"] = <
+			["id0.109"] = <
 				text = <"Location">
 			>
-			["id2.13"] = <
+			["id0.110"] = <
 				text = <"Associated activity">
 			>
-			["id2.14"] = <
+			["id0.111"] = <
 				text = <"Previous action">
 			>
-			["id2.15"] = <
+			["id0.112"] = <
 				text = <"Subsequent action">
 			>
 		>
@@ -151,10 +152,10 @@ terminology
 				["id2.9"] = <http://snomed.info/id/138875005>
 				["id2.10"] = <http://snomed.info/id/272394005>
 				["id2.11"] = <http://snomed.info/id/288532009>
-				["id2.12"] = <http://snomed.info/id/308916002>
-				["id2.13"] = <http://snomed.info/id/71388002>
-				["id2.14"] = <http://snomed.info/id/71388002>
-				["id2.15"] = <http://snomed.info/id/71388002>
+				["id0.109"] = <http://snomed.info/id/308916002>
+				["id0.110"] = <http://snomed.info/id/71388002>
+				["id0.111"] = <http://snomed.info/id/71388002>
+				["id0.112"] = <http://snomed.info/id/71388002>
 			>
 		>
 	>

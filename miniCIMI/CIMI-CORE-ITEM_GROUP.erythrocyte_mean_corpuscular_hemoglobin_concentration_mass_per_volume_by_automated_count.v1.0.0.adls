@@ -28,41 +28,19 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] occurrences matches {1} matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"g/dL"} -- Units
-                            }
-                        }
-                    }
-                    -- Data Type = NM/ST
-                }
-            }
-        }
-    }
+    ITEM_GROUP[id1.1.1.1.1.1]
+    
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Erythrocyte mean corpuscular hemoglobin concentration mass per volume by automated count">
             >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
-            >
         >
     >
 
     term_bindings = <
         ["loinc"] = <
-            items = <
                 ["id1.1.1.1.1.1"] = <http://loinc.org/id/786-4>
-            >
         >
     >

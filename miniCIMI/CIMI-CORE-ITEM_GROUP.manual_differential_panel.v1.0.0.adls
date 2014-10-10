@@ -28,6 +28,7 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1.1] matches { -- Manual differential panel
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Panel code
     item matches {
       use_archetype ITEM_GROUP [id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_blood.v1] -- Leukocytes count per volume in blood
       use_archetype ITEM_GROUP [id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood.v1] -- Basophils per 100 leukocytes in blood
@@ -110,7 +111,8 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = < text = <"Manual differential panel"> >
+      ["id1.1.1.1.1"] = <text = <"Manual differential panel">>
+      ["at0.0.0.0.1"] = <text = <"Panel code">>
       ["id0.1.1.1.1"] = <text = <"Leukocytes count per volume in blood">>
       ["id0.1.1.1.2"] = <text = <"Basophils per 100 leukocytes in blood">>
       ["id0.1.1.1.3"] = <text = <"Basophils count per volume in blood">>
@@ -192,6 +194,7 @@ terminology
     ["loinc"] = <
       items = <
         ["id1.1.1.1.1"] = <http://loinc.org/id/24318-8>
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24318-8>
         ["id0.1.1.1.1"] = <http://loinc.org/id/26464-8>
         ["id0.1.1.1.2"] = <http://loinc.org/id/30180-4>
         ["id0.1.1.1.3"] = <http://loinc.org/id/26444-0>

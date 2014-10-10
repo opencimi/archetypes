@@ -28,40 +28,19 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Leukocytes other count per volume in blood by automated count
-        item matches {
-            ELEMENT[id0.0.7.0.1.1] matches { -- Result value
-                value matches {
-                    QUANTITY[id0.0.107.0.1.1] matches {
-                        units matches {
-                            CODED_TEXT[id0.0.0.0.0.1] matches {
-                                code matches {"10*3/uL"} -- Units
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    ITEM_GROUP[id1.1.1.1.1.1] -- Leukocytes other count per volume in blood by automated count
+
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = <
                 text = <"Leukocytes other count per volume in blood by automated count">
             >
-            ["id0.0.7.0.1.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.0.1"] = <
-                text = <"Units">
-            >
-        >
+         >
     >
 
     term_bindings = <
         ["loinc"] = <
-            items = <
                 ["id1.1.1.1.1.1"] = <http://loinc.org/id/51383-8  >
-            >
         >
     >
