@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
 	CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood.v1.0.0
 
 specialize
-	CIMI-CORE-ITEM_GROUP.count_per_volume_in_blood.v1
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -27,18 +27,18 @@ description
 	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1.1] 	-- Eosinophils count per volume in blood
+	ITEM_GROUP[id1.1.1.1.1.1] 	-- Eosinophils count per volume in blood
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1.1.1"] = <
+			["id1.1.1.1.1.1"] = <
 				text = <"Eosinophils count per volume in blood">
 			>
 		>
 	>
 	term_bindings = <
 		["loinc"] = <
-			["id1.1.1.1.1.1.1"] = <http://loinc.org/id/26449-9>
+			["id1.1.1.1.1.1"] = <http://loinc.org/id/26449-9>
 		>
 	>

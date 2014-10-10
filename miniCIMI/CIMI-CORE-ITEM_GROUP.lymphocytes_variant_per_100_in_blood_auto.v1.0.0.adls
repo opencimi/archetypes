@@ -27,12 +27,12 @@ description
   other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1.1] -- Lymphocytes variant per 100 leukocytes in blood by automated count
+	ITEM_GROUP[id1.1.1.1.1.1] -- Lymphocytes variant per 100 leukocytes in blood by automated count
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1.1.1"] = <
+			["id1.1.1.1.1.1"] = <
 				text = <"Lymphocytes variant per 100 leukocytes in blood by automated count">
 			>
 		>

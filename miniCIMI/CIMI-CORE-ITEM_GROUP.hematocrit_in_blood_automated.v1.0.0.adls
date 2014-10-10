@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
   CIMI-CORE-ITEM_GROUP.hematocrit_in_blood_automated.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.laboratory_test_count.v1
+  CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
   original_language = <[ISO_639-1::en]>

@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; generated)
     CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_per_100_leukocytes_in_blood.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.per_100_leukocytes_in_blood.v1
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
     original_language = <[ISO_639-1::en]>
@@ -28,12 +28,12 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1.1] -- Lymphocytes plasmacytoid per 100 leukocytes in blood
+    ITEM_GROUP[id1.1.1.1.1.1] -- Lymphocytes plasmacytoid per 100 leukocytes in blood
 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1.1"] = <
+            ["id1.1.1.1.1.1"] = <
                 text = <"Lymphocytes plasmacytoid per 100 leukocytes in blood">
             >
         >
@@ -42,7 +42,7 @@ terminology
     term_bindings = <
         ["loinc"] = <
             items = <
-                ["id1.1.1.1.1.1.1"] = <http://loinc.org/id/34921-7>
+                ["id1.1.1.1.1.1"] = <http://loinc.org/id/34921-7>
             >
         >
     >
