@@ -28,14 +28,15 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] -- Background stain presence in blood by light microscopy
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Background stain presence in blood by light microscopy
+        /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Test code
+    }
 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Background stain presence in blood by light microscopy">
-            >
+            ["id1.1.1.1.1.1"] = < text = <"Background stain presence in blood by light microscopy"> >
+            ["at0.0.0.0.0.1"] = < text = <"Ord"> >
         >
     >
 
@@ -43,6 +44,7 @@ terminology
         ["loinc"] = <
             items = <
                 ["id1.1.1.1.1.1"] = <http://loinc.org/id/18280-8>
+                ["at0.0.0.0.0.1"] = <http://loinc.org/id/18280-8>
             >
         >
     >
