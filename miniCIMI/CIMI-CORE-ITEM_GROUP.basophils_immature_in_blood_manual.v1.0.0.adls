@@ -28,18 +28,14 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Basophils immature in blood manual
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Panel code
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Test code
   }
 
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1.1"] = <
-				text = <"Basophils immature in blood">
-			>
-      ["at0.0.0.0.0.1"] = <
-        text = <"Qn">
-      >
+			["id1.1.1.1.1.1"] = < text = <"Basophils immature in blood"> >
+      ["at0.0.0.0.0.1"] = < text = <"Qn"> >
     >
   >
 

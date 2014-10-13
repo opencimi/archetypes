@@ -28,21 +28,23 @@ description
 '
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] -- Anisocytosis presence in blood by light microscopy
+    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Anisocytosis presence in blood by light microscopy
+        /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Test code
+    }
 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Anisocytosis presence in blood by light microscopy">
-            >
+            ["id1.1.1.1.1.1"] = < text = <"Anisocytosis presence in blood by light microscopy"> >
+            ["at0.0.0.0.0.1"] = < text = <"Ord"> >
         >
     >
 
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/702-1>
-            >
-        >
+  term_bindings = <
+    ["loinc"] = <
+       items = <
+         ["id1.1.1.1.1.1"] = <http://loinc.org/id/702-1>
+         ["at0.0.0.0.0.1"] = <http://loinc.org/id/702-1>
+       >
     >
+  >
