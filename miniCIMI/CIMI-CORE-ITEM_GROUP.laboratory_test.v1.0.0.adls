@@ -58,27 +58,13 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1"] = <
-        text = <"Laboratory test">
-      >
-      ["id5.0.2.1"] = <
-        text = <"Test code">
-      >
-      ["id0.0.0.1"] = <
-        text = <"Diagnostic service">
-      >
-      ["id0.0.0.2"] = <
-        text = <"Specimen">
-      >
-      ["id0.0.0.3"] = <
-        text = <"Poct indicator">
-      >
-      ["id0.0.0.4"] = <
-        text = <"Diagnosis">
-      >
-      ["id0.0.0.5"] = <
-        text = <"Conclusion">
-      >
+      ["id1.1.1.1"] = < text = <"Laboratory test"> >
+      ["id5.0.2.1"] = < text = <"Test code"> >
+      ["id0.0.0.1"] = < text = <"Diagnostic service"> >
+      ["id0.0.0.2"] = < text = <"Specimen"> >
+      ["id0.0.0.3"] = < text = <"Poct indicator"> >
+      ["id0.0.0.4"] = < text = <"Diagnosis"> >
+      ["id0.0.0.5"] = < text = <"Conclusion"> >
     >
   >
   term_bindings = <

@@ -97,7 +97,7 @@ definition
           TEXT[id0.0.114]
         }
       }
-      use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observation_action_set.v1] -- Observation action set
+      use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observation_action_set.v1] -- Action set
     }
   }
 
@@ -119,7 +119,7 @@ terminology
       ["id5.0.12"] = < text = <"Delta flag"> >
       ["id5.0.13"] = < text = <"Signal flag"> >
       ["id5.0.14"] = < text = <"Comment"> >
-      ["id4.0.1"] = < text = <"Observation action set"> >
+      ["id4.0.1"] = < text = <"Action set"> >
     >
   >
   term_bindings = <
