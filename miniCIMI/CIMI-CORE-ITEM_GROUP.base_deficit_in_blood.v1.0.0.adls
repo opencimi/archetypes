@@ -28,14 +28,14 @@ description
 
 definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Base deficit in blood
-        /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Test code
+        /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Base deficit in blood
     }
 
 terminology
 	term_definitions = <
 		["en"] = <
 			["id1.1.1.1.1.1"] = < text = <"Base deficit in blood"> >
-           ["at0.0.0.0.0.1"] = < text = <"Qn"> >
+           	["at0.0.0.0.0.1"] = < text = <"Base deficit in blood"> >
         >
     >
 
@@ -44,6 +44,11 @@ terminology
             items = <
                 ["id1.1.1.1.1.1"] = <http://loinc.org/id/59154-5>
                 ["at0.0.0.0.0.1"] = <http://loinc.org/id/59154-5>
+            >
+        >
+        ["SNOMED-CT"] = <
+            items = <
+                ["at0.0.0.0.0.1"] = <http://snomed.org/id/258813002>
             >
         >
     >

@@ -36,7 +36,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1.1.1.1.1.1"] = < text = <"Acanthocytes presence in blood by light microscopy"> >
-            ["at0.0.0.0.0.1"] = < text = <"Ord"> >
+            ["at0.0.0.0.0.1"] = < text = <"Acanthocytes presence in blood by light microscopy"> >
         >
     >
 

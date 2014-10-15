@@ -29,11 +29,11 @@ description
 definition
 	ITEM_GROUP[id1.1.1.1.1] matches {	-- Laboratory test quantitative
 		item matches {
-			ELEMENT[id5.0.7.0.1] occurrences matches {1} matches {
+			ELEMENT[id5.0.8.0.1] occurrences matches {1} matches { -- Result value
 				value matches {
 					QUANTITY[id0.0.0.0.1] matches {
 						units matches {
-							CODED_TEXT[id0.0.0.0.2] 
+							CODED_TEXT[id0.0.0.0.2]
 						}
 					}
 				}
@@ -45,21 +45,13 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1.1.1.1.1"] = <
-				text = <"Laboratory test quantitative">
-			>
-            ["id5.0.7.0.1"] = <
-                text = <"Result value">
-            >
-            ["id0.0.0.0.1"] = <
-                text = <"Quantity">
-            >
+			["id1.1.1.1.1"] = < text = <"Laboratory test quantitative"> >
+            ["id5.0.8.0.1"] = < text = <"Result value"> >
+            ["id0.0.0.0.1"] = < text = <"Quantity"> >
 		>
 	>
 	term_bindings = <
 		["SNOMED-CT"] = <
-			items = <
-				["id0.0.0.0.1"] = <http://snomed.info/id/246205007>
-			>
+			items = < ["id0.0.0.0.1"] = <http://snomed.info/id/246205007> >
 		>
 	>
