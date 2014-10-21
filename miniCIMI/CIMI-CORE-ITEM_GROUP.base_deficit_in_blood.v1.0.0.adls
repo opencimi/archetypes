@@ -48,7 +48,7 @@ terminology
         >
         ["SNOMED-CT"] = <
             items = <
-                ["at0.0.0.0.0.1"] = <http://snomed.org/id/258813002>
+                ["at0.0.0.0.0.1"] = <http://snomed.org/id/258813002> -- mmol/L
             >
         >
     >

@@ -37,11 +37,14 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1.1"] = <
-        text = <"Complete blood count with automated differential panel">
-      >
-      ["id0.1.2.1.0.1"] = <
-        text = <"Automated differential panel">
+      ["id1.1.1.1.1.1"] = < text = <"Complete blood count with automated differential panel"> >
+      ["id0.1.2.1.0.1"] = < text = <"Automated differential panel"> >
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/57021-8>
       >
     >
   >
