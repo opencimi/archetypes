@@ -29,7 +29,6 @@ description
 definition
   ITEM_GROUP[id1.1.1] matches {-- Observation
     item matches {
-      before[id4.0.1]
       ELEMENT[id5.0.1] matches { -- Identifier
         value matches {
           IDENTIFIER[id0.0.101]

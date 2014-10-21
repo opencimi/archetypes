@@ -77,7 +77,6 @@ definition
           TEXT[id0.0.109]
         }
       }
-      after[id5.0.9]
       use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.observation_action_set.v1] -- Action set
       use_archetype ITEM_GROUP [id0.1.3, CIMI-CORE-ITEM_GROUP.clinical_statement.v1] occurrences matches {0} -- Clinical statement
     }
