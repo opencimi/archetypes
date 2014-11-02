@@ -12,37 +12,43 @@ description
       ["name"] = <"Patrick Langford">
       ["organisation"] = <"Intermountain Healthcare">
       ["email"] = <"patrick@neuronsong.com">
-      ["date"] = <"11/13/2014">
+      ["date"] = <"10/16/2014">
     >
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Plasma cells per 100 leukocytes in blood' concept">
-        use = <"Use for plasma cells per 100 leukocytes in blood.">
+        purpose = <"Archetype for CIMI 'Plasma cells/100 leukocytes in Blood' concept">
+        use = <"Use for Plasma cells/100 leukocytes in Blood.">
         keywords = <"plasma","cells","per","100","leukocytes","in","blood">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-'
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] -- Plasma cells per 100 leukocytes in blood
-    
-terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Plasma cells per 100 leukocytes in blood">
-            >
-        >
-    >
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Plasma cells/100 leukocytes in Blood
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Plasma cells/100 leukocytes in Blood
+  }
 
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/13047-6>
-            >
-        >
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Plasma cells/100 leukocytes in Blood"> >
+      ["at0.0.0.0.0.1"] = < text = <"Plasma cells/100 leukocytes in Blood"> >
     >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/13047-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/13047-6>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- %
+      >
+    >
+  >

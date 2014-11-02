@@ -12,42 +12,43 @@ description
       ["name"] = <"Patrick Langford">
       ["organisation"] = <"Intermountain Healthcare">
       ["email"] = <"patrick@neuronsong.com">
-      ["date"] = <"11/13/2014">
+      ["date"] = <"10/16/2014">
     >
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Inhaled oxygen flow rate' concept">
-        use = <"Use for inhaled oxygen flow rate.">
+        use = <"Use for Inhaled oxygen flow rate.">
         keywords = <"inhaled","oxygen","flow","rate">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-'
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Inhaled oxygen flow rate
-        /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.1]}
-    }
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Inhaled oxygen flow rate
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Inhaled oxygen flow rate
+  }
 
 terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Inhaled oxygen flow rate">
-            >
-            ["at0.0.0.0.0.1"] = <
-                text = <"L/min">
-            >
-        >
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Inhaled oxygen flow rate"> >
+      ["at0.0.0.0.0.1"] = < text = <"Inhaled oxygen flow rate"> >
     >
+  >
 
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/3151-8>
-            >
-        >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/3151-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/3151-8>
+      >
     >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >

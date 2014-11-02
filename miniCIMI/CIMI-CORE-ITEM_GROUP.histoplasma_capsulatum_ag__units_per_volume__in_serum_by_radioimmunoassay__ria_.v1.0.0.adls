@@ -1,0 +1,54 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.histoplasma_capsulatum_ag__units_per_volume__in_serum_by_radioimmunoassay__ria_.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA)' concept">
+        use = <"Use for Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA).">
+        keywords = <"histoplasma","capsulatum","ag","","units","per","volume","","in","serum","by","radioimmunoassay","","ria">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA)
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA)
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA)"> >
+      ["at0.0.0.0.0.1"] = < text = <"Histoplasma capsulatum Ag [Units/volume] in Serum by Radioimmunoassay (RIA)"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/19107-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/19107-2>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- units
+      >
+    >
+  >

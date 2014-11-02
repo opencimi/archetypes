@@ -1,0 +1,54 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.date_and_time_of_pheresis_procedure.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Date and time of pheresis procedure' concept">
+        use = <"Use for Date and time of pheresis procedure.">
+        keywords = <"date","and","time","of","pheresis","procedure">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Date and time of pheresis procedure
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Date and time of pheresis procedure
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Date and time of pheresis procedure"> >
+      ["at0.0.0.0.0.1"] = < text = <"Date and time of pheresis procedure"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/49542-4>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/49542-4>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >

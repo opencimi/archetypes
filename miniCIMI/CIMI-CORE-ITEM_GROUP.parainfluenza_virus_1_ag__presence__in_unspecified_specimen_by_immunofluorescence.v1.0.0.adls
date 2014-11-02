@@ -1,0 +1,49 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.parainfluenza_virus_1_ag__presence__in_unspecified_specimen_by_immunofluorescence.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence' concept">
+        use = <"Use for Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence.">
+        keywords = <"parainfluenza","virus","1","ag","","presence","","in","unspecified","specimen","by","immunofluorescence">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence"> >
+      ["at0.0.0.0.0.1"] = < text = <"Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5869-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5869-3>
+      >
+    >
+  >

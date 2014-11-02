@@ -1,54 +1,54 @@
 archetype (adl_version=1.5.1; generated)
-	CIMI-CORE-ITEM_GROUP.base_deficit_in_blood.v1.0.0
+    CIMI-CORE-ITEM_GROUP.base_deficit_in_blood.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
 
 language
-	original_language = <[ISO_639-1::en]>
+    original_language = <[ISO_639-1::en]>
 
 description
-	original_author = <
-		["name"] = <"Patrick Langford">
-		["organisation"] = <"Intermountain Healthcare">
-		["email"] = <"patrick@neuronsong.com">
-		["date"] = <"11/13/2014">
-	>
-	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"Archetype for CIMI 'Base deficit in blood' concept">
-			use = <"Use for base deficit in blood.">
-			keywords = <"base", "deficit", "in", "blood">
-			copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
-		>
-	>
-	lifecycle_state = <"unmanaged">
-	other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Base deficit in Blood' concept">
+        use = <"Use for Base deficit in Blood.">
+        keywords = <"base","deficit","in","blood">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Base deficit in blood
-        /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Base deficit in blood
-    }
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Base deficit in Blood
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Base deficit in Blood
+  }
 
 terminology
-	term_definitions = <
-		["en"] = <
-			["id1.1.1.1.1.1"] = < text = <"Base deficit in blood"> >
-           	["at0.0.0.0.0.1"] = < text = <"Base deficit in blood"> >
-        >
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Base deficit in Blood"> >
+      ["at0.0.0.0.0.1"] = < text = <"Base deficit in Blood"> >
     >
+  >
 
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/59154-5>
-                ["at0.0.0.0.0.1"] = <http://loinc.org/id/59154-5>
-            >
-        >
-        ["SNOMED-CT"] = <
-            items = <
-                ["at0.0.0.0.0.1"] = <http://snomed.org/id/258813002> -- mmol/L
-            >
-        >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/30318-0>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/30318-0>
+      >
     >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- mmol/L
+      >
+    >
+  >

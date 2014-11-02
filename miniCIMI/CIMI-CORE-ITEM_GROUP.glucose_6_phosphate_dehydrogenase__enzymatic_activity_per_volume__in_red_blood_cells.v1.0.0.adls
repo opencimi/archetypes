@@ -1,0 +1,54 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.glucose_6_phosphate_dehydrogenase__enzymatic_activity_per_volume__in_red_blood_cells.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells' concept">
+        use = <"Use for Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells.">
+        keywords = <"glucose","6","phosphate","dehydrogenase","","enzymatic","activity","per","volume","","in","red","blood","cells">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells"> >
+      ["at0.0.0.0.0.1"] = < text = <"Glucose-6-Phosphate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/2357-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/2357-2>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >

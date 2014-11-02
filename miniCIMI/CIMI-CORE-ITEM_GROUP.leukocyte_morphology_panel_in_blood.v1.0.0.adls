@@ -1,0 +1,79 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel_in_blood.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Leukocyte morphology panel - Blood' concept">
+        use = <"Use for Leukocyte morphology panel - Blood.">
+        keywords = <"leukocyte","morphology","panel","in","blood">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Leukocyte morphology panel - Blood
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Leukocyte morphology panel - Blood
+      item matches {
+        use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_finding__identifier__in_blood.v1] occurrences matches {0..1} -- Leukocyte morphology finding [Identifier] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.auer_rods__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Auer rods [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.sezary_cells__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Sezary cells [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.pelger_huet_cells__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Pelger Huet cells [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.neutrophils_vacuolated__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Neutrophils.vacuolated [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.neutrophils_agranular__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Neutrophils.agranular [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.neutrophils_hypersegmented__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Neutrophils.hypersegmented [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.dohle_body__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Dohle body [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.smudge_cells__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Smudge cells [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.toxic_granules__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Toxic granules [Presence] in Blood by Light microscopy
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Leukocyte morphology panel - Blood">>
+      ["at0.0.0.0.1"] = <text = <"Leukocyte morphology panel - Blood">>
+      ["id0.1.1.1.1"] = <text = <"Leukocyte morphology finding [Identifier] in Blood">>
+      ["id0.1.1.1.2"] = <text = <"Auer rods [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.3"] = <text = <"Sezary cells [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.4"] = <text = <"Pelger Huet cells [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.5"] = <text = <"Neutrophils.vacuolated [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.6"] = <text = <"Neutrophils.agranular [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.7"] = <text = <"Neutrophils.hypersegmented [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.8"] = <text = <"Dohle body [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.9"] = <text = <"Smudge cells [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.10"] = <text = <"Toxic granules [Presence] in Blood by Light microscopy">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58407-8> -- Toxic granules [Presence] in Blood by Light microscopy
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58407-8> -- Toxic granules [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11156-7> -- Leukocyte morphology finding [Identifier] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11281-3> -- Auer rods [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.3"] = <http://loinc.org/id/13048-4> -- Sezary cells [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.4"] = <http://loinc.org/id/18311-1> -- Pelger Huet cells [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.5"] = <http://loinc.org/id/18319-4> -- Neutrophils.vacuolated [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.6"] = <http://loinc.org/id/33215-5> -- Neutrophils.agranular [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.7"] = <http://loinc.org/id/765-8> -- Neutrophils.hypersegmented [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.8"] = <http://loinc.org/id/7792-5> -- Dohle body [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.9"] = <http://loinc.org/id/7798-2> -- Smudge cells [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.10"] = <http://loinc.org/id/803-7> -- Toxic granules [Presence] in Blood by Light microscopy
+      >
+    >
+  >

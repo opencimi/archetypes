@@ -1,0 +1,54 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.5_hydroxyindoleacetate__mass_per_time__in_24_hour_urine.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI '5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine' concept">
+        use = <"Use for 5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine.">
+        keywords = <"5","hydroxyindoleacetate","","mass","per","time","","in","24","hour","urine">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- 5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- 5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine"> >
+      ["at0.0.0.0.0.1"] = < text = <"5-Hydroxyindoleacetate [Mass/time] in 24 hour Urine"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/1695-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/1695-6>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >

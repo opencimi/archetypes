@@ -1,0 +1,54 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.oxygen_gas_flow_setting_oxymiser.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Oxygen gas flow setting Oxymiser' concept">
+        use = <"Use for Oxygen gas flow setting Oxymiser.">
+        keywords = <"oxygen","gas","flow","setting","oxymiser">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxygen gas flow setting Oxymiser
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Oxygen gas flow setting Oxymiser
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Oxygen gas flow setting Oxymiser"> >
+      ["at0.0.0.0.0.1"] = < text = <"Oxygen gas flow setting Oxymiser"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/19942-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/19942-2>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >

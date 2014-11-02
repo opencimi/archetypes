@@ -1,0 +1,49 @@
+archetype (adl_version=1.5.1; generated)
+    CIMI-CORE-ITEM_GROUP.coccidioides_immitis_igm_ab__presence__in_serum_by_immunoassay.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford">
+      ["organisation"] = <"Intermountain Healthcare">
+      ["email"] = <"patrick@neuronsong.com">
+      ["date"] = <"10/16/2014">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay' concept">
+        use = <"Use for Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay.">
+        keywords = <"coccidioides","immitis","igm","ab","","presence","","in","serum","by","immunoassay">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay"> >
+      ["at0.0.0.0.0.1"] = < text = <"Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay"> >
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/13948-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/13948-5>
+      >
+    >
+  >

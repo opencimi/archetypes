@@ -12,42 +12,43 @@ description
       ["name"] = <"Patrick Langford">
       ["organisation"] = <"Intermountain Healthcare">
       ["email"] = <"patrick@neuronsong.com">
-      ["date"] = <"11/13/2014">
+      ["date"] = <"10/16/2014">
     >
     details = <
       ["en"] = <
         language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Erythrocytes count per volume in blood by automated count' concept">
-        use = <"Use for erythrocytes count per volume in blood by automated count.">
+        purpose = <"Archetype for CIMI 'Erythrocytes [#/volume] in Blood by Automated count' concept">
+        use = <"Use for Erythrocytes [#/volume] in Blood by Automated count.">
         keywords = <"erythrocytes","count","per","volume","in","blood","by","automated","count">
         copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
-'
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-    ITEM_GROUP[id1.1.1.1.1.1] matches { -- Erythrocytes count per volume in blood by automated count
-        /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.1.1]}
-    }
-    
-terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1.1.1.1"] = <
-                text = <"Erythrocytes count per volume in blood by automated count">
-            >
-            ["at0.0.0.0.1.1"] = <
-                text = <"10*6/uL">
-            >
-        >
-    >
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Erythrocytes [#/volume] in Blood by Automated count
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Erythrocytes [#/volume] in Blood by Automated count
+  }
 
-    term_bindings = <
-        ["loinc"] = <
-            items = <
-                ["id1.1.1.1.1.1"] = <http://loinc.org/id/789-8>
-            >
-        >
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = < text = <"Erythrocytes [#/volume] in Blood by Automated count"> >
+      ["at0.0.0.0.0.1"] = < text = <"Erythrocytes [#/volume] in Blood by Automated count"> >
     >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/789-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/789-8>
+      >
+    >
+    ["SNOMED-CT"] = <
+      items = <
+        ["at0.0.0.0.0.1"] = <http://snomed.org/id/______> -- 
+      >
+    >
+  >
