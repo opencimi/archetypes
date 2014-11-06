@@ -30,8 +30,8 @@ definition
 	ITEM_GROUP[id1.1.1.1.1.1] matches { -- Monocytes per 100 leukocytes in blood by automated count
 		item matches {
 			use_archetype ITEM_GROUP [id0.0.0.0.0.1, CIMI-CORE-ITEM_GROUP.platelet_adequacy_in_blood_by_light_microscopy.v1] -- Platelet adequacy in blood by light microscopy
-			use_archetype ITEM_GROUP [id0.0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel.v1] -- Erythrocyte morphology panel
-			use_archetype ITEM_GROUP [id0.0.0.0.0.3, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel.v1] -- Leukocyte morphology panel
+			use_archetype ITEM_GROUP [id0.0.0.0.0.2, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel_in_blood.v1] -- Erythrocyte morphology panel - Blood
+			use_archetype ITEM_GROUP [id0.0.0.0.0.3, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel_in_blood.v1] -- Leukocyte morphology panel - Blood
 		}
 	}
 
@@ -45,10 +45,10 @@ terminology
 				text = <"Platelet adequacy in blood">
 			>
 			["id0.0.0.0.0.2"] = <
-				text = <"Erythrocyte morphology panel">
+				text = <"Erythrocyte morphology panel - Blood">
 			>
 			["id0.0.0.0.0.3"] = <
-				text = <"Leukocyte morphology panel">
+				text = <"Leukocyte morphology panel - Blood">
 			>
 		>
 	>

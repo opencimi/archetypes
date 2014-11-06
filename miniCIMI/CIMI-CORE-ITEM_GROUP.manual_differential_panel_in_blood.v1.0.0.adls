@@ -97,15 +97,15 @@ definition
         use_archetype ITEM_GROUP[id0.1.1.1.65, CIMI-CORE-ITEM_GROUP.promonocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Promonocytes [#/volume] in Blood
         use_archetype ITEM_GROUP[id0.1.1.1.66, CIMI-CORE-ITEM_GROUP.smudge_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Smudge cells/100 leukocytes in Blood
         use_archetype ITEM_GROUP[id0.1.1.1.67, CIMI-CORE-ITEM_GROUP.smudge_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Smudge cells [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.68, CIMI-CORE-ITEM_GROUP.smear_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Smear morphology panel - Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.69, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells/100 leukocytes in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.70, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.71, CIMI-CORE-ITEM_GROUP.monoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Monoblasts [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.72, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Plasmacytoid [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.73, CIMI-CORE-ITEM_GROUP.lymphoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphoblasts [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.hairy_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Hairy cells/100 leukocytes in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.75, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Large Granular [#/volume] in Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.76, CIMI-CORE-ITEM_GROUP.manual_differential_comment__interpretation__in_blood_narrative.v1] occurrences matches {0..1} -- Manual differential comment [interpretation] in Blood Narrative
+        use_archetype ITEM_GROUP[id0.1.1.1.68, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells/100 leukocytes in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.69, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells [#/volume] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.70, CIMI-CORE-ITEM_GROUP.monoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Monoblasts [#/volume] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.71, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Plasmacytoid [#/volume] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.72, CIMI-CORE-ITEM_GROUP.lymphoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphoblasts [#/volume] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.73, CIMI-CORE-ITEM_GROUP.hairy_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Hairy cells/100 leukocytes in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Large Granular [#/volume] in Blood
+        use_archetype ITEM_GROUP[id0.1.1.1.75, CIMI-CORE-ITEM_GROUP.manual_differential_comment__interpretation__in_blood_narrative.v1] occurrences matches {0..1} -- Manual differential comment [interpretation] in Blood Narrative
+        use_archetype ITEM_GROUP[id0.1.2.1.1, CIMI-CORE-ITEM_GROUP.smear_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Smear morphology panel - Blood
         use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
@@ -181,15 +181,15 @@ terminology
       ["id0.1.1.1.65"] = <text = <"Promonocytes [#/volume] in Blood">>
       ["id0.1.1.1.66"] = <text = <"Smudge cells/100 leukocytes in Blood">>
       ["id0.1.1.1.67"] = <text = <"Smudge cells [#/volume] in Blood">>
-      ["id0.1.1.1.68"] = <text = <"Smear morphology panel - Blood">>
-      ["id0.1.1.1.69"] = <text = <"Polymorphonuclear cells/100 leukocytes in Blood">>
-      ["id0.1.1.1.70"] = <text = <"Polymorphonuclear cells [#/volume] in Blood">>
-      ["id0.1.1.1.71"] = <text = <"Monoblasts [#/volume] in Blood">>
-      ["id0.1.1.1.72"] = <text = <"Lymphocytes Plasmacytoid [#/volume] in Blood">>
-      ["id0.1.1.1.73"] = <text = <"Lymphoblasts [#/volume] in Blood">>
-      ["id0.1.1.1.74"] = <text = <"Hairy cells/100 leukocytes in Blood">>
-      ["id0.1.1.1.75"] = <text = <"Lymphocytes Large Granular [#/volume] in Blood">>
-      ["id0.1.1.1.76"] = <text = <"Manual differential comment [interpretation] in Blood Narrative">>
+      ["id0.1.1.1.68"] = <text = <"Polymorphonuclear cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.69"] = <text = <"Polymorphonuclear cells [#/volume] in Blood">>
+      ["id0.1.1.1.70"] = <text = <"Monoblasts [#/volume] in Blood">>
+      ["id0.1.1.1.71"] = <text = <"Lymphocytes Plasmacytoid [#/volume] in Blood">>
+      ["id0.1.1.1.72"] = <text = <"Lymphoblasts [#/volume] in Blood">>
+      ["id0.1.1.1.73"] = <text = <"Hairy cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.74"] = <text = <"Lymphocytes Large Granular [#/volume] in Blood">>
+      ["id0.1.1.1.75"] = <text = <"Manual differential comment [interpretation] in Blood Narrative">>
+      ["id0.1.2.1.1"] = <text = <"Smear morphology panel - Blood">>
     >
   >
   term_bindings = <
@@ -264,15 +264,15 @@ terminology
         ["id0.1.1.1.65"] = <http://loinc.org/id/34926-6> -- Promonocytes [#/volume] in Blood
         ["id0.1.1.1.66"] = <http://loinc.org/id/34992-8> -- Smudge cells/100 leukocytes in Blood
         ["id0.1.1.1.67"] = <http://loinc.org/id/34993-6> -- Smudge cells [#/volume] in Blood
-        ["id0.1.1.1.68"] = <http://loinc.org/id/34994-4> -- Smear morphology panel - Blood
-        ["id0.1.1.1.69"] = <http://loinc.org/id/34999-3> -- Polymorphonuclear cells/100 leukocytes in Blood
-        ["id0.1.1.1.70"] = <http://loinc.org/id/35003-3> -- Polymorphonuclear cells [#/volume] in Blood
-        ["id0.1.1.1.71"] = <http://loinc.org/id/35029-8> -- Monoblasts [#/volume] in Blood
-        ["id0.1.1.1.72"] = <http://loinc.org/id/35039-7> -- Lymphocytes Plasmacytoid [#/volume] in Blood
-        ["id0.1.1.1.73"] = <http://loinc.org/id/35050-4> -- Lymphoblasts [#/volume] in Blood
-        ["id0.1.1.1.74"] = <http://loinc.org/id/35058-7> -- Hairy cells/100 leukocytes in Blood
-        ["id0.1.1.1.75"] = <http://loinc.org/id/35082-7> -- Lymphocytes Large Granular [#/volume] in Blood
-        ["id0.1.1.1.76"] = <http://loinc.org/id/58445-8> -- Manual differential comment [interpretation] in Blood Narrative
+        ["id0.1.1.1.68"] = <http://loinc.org/id/34999-3> -- Polymorphonuclear cells/100 leukocytes in Blood
+        ["id0.1.1.1.69"] = <http://loinc.org/id/35003-3> -- Polymorphonuclear cells [#/volume] in Blood
+        ["id0.1.1.1.70"] = <http://loinc.org/id/35029-8> -- Monoblasts [#/volume] in Blood
+        ["id0.1.1.1.71"] = <http://loinc.org/id/35039-7> -- Lymphocytes Plasmacytoid [#/volume] in Blood
+        ["id0.1.1.1.72"] = <http://loinc.org/id/35050-4> -- Lymphoblasts [#/volume] in Blood
+        ["id0.1.1.1.73"] = <http://loinc.org/id/35058-7> -- Hairy cells/100 leukocytes in Blood
+        ["id0.1.1.1.74"] = <http://loinc.org/id/35082-7> -- Lymphocytes Large Granular [#/volume] in Blood
+        ["id0.1.1.1.75"] = <http://loinc.org/id/58445-8> -- Manual differential comment [interpretation] in Blood Narrative
+        ["id0.1.2.1.1"] = <http://loinc.org/id/34994-4> -- Smear morphology panel - Blood
       >
     >
   >

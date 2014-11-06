@@ -32,11 +32,11 @@ definition
       item matches {
         use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.background_stain__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Background stain [Presence] in Blood by Light microscopy
         use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.fibrin_strands__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Fibrin strands [Presence] in Blood by Light microscopy
-        use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.platelet_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Platelet morphology panel - Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Leukocyte morphology panel - Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Erythrocyte morphology panel - Blood
-        use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.blood_smear_finding__identifier__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Blood smear finding [Identifier] in Blood by Light microscopy
-        use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.platelet_adequacy__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Platelet adequacy [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.blood_smear_finding__identifier__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Blood smear finding [Identifier] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.platelet_adequacy__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Platelet adequacy [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.2.1.1, CIMI-CORE-ITEM_GROUP.platelet_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Platelet morphology panel - Blood
+        use_archetype ITEM_GROUP[id0.1.2.1.2, CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Leukocyte morphology panel - Blood
+        use_archetype ITEM_GROUP[id0.1.2.1.3, CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel_in_blood.v1] occurrences matches {0..1} -- Erythrocyte morphology panel - Blood
         use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
@@ -47,11 +47,11 @@ terminology
       ["at0.0.0.0.1"] = <text = <"Smear morphology panel - Blood">>
       ["id0.1.1.1.1"] = <text = <"Background stain [Presence] in Blood by Light microscopy">>
       ["id0.1.1.1.2"] = <text = <"Fibrin strands [Presence] in Blood by Light microscopy">>
-      ["id0.1.1.1.3"] = <text = <"Platelet morphology panel - Blood">>
-      ["id0.1.1.1.4"] = <text = <"Leukocyte morphology panel - Blood">>
-      ["id0.1.1.1.5"] = <text = <"Erythrocyte morphology panel - Blood">>
-      ["id0.1.1.1.6"] = <text = <"Blood smear finding [Identifier] in Blood by Light microscopy">>
-      ["id0.1.1.1.7"] = <text = <"Platelet adequacy [Presence] in Blood by Light microscopy">>
+      ["id0.1.1.1.3"] = <text = <"Blood smear finding [Identifier] in Blood by Light microscopy">>
+      ["id0.1.1.1.4"] = <text = <"Platelet adequacy [Presence] in Blood by Light microscopy">>
+      ["id0.1.2.1.1"] = <text = <"Platelet morphology panel - Blood">>
+      ["id0.1.2.1.2"] = <text = <"Leukocyte morphology panel - Blood">>
+      ["id0.1.2.1.3"] = <text = <"Erythrocyte morphology panel - Blood">>
     >
   >
   term_bindings = <
@@ -61,11 +61,11 @@ terminology
         ["at0.0.0.0.1"] = <http://loinc.org/id/34994-4> -- Platelet adequacy [Presence] in Blood by Light microscopy
         ["id0.1.1.1.1"] = <http://loinc.org/id/18280-8> -- Background stain [Presence] in Blood by Light microscopy
         ["id0.1.1.1.2"] = <http://loinc.org/id/32778-3> -- Fibrin strands [Presence] in Blood by Light microscopy
-        ["id0.1.1.1.3"] = <http://loinc.org/id/58406-0> -- Platelet morphology panel - Blood
-        ["id0.1.1.1.4"] = <http://loinc.org/id/58407-8> -- Leukocyte morphology panel - Blood
-        ["id0.1.1.1.5"] = <http://loinc.org/id/58408-6> -- Erythrocyte morphology panel - Blood
-        ["id0.1.1.1.6"] = <http://loinc.org/id/5909-7> -- Blood smear finding [Identifier] in Blood by Light microscopy
-        ["id0.1.1.1.7"] = <http://loinc.org/id/9317-9> -- Platelet adequacy [Presence] in Blood by Light microscopy
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5909-7> -- Blood smear finding [Identifier] in Blood by Light microscopy
+        ["id0.1.1.1.4"] = <http://loinc.org/id/9317-9> -- Platelet adequacy [Presence] in Blood by Light microscopy
+        ["id0.1.2.1.1"] = <http://loinc.org/id/58406-0> -- Platelet morphology panel - Blood
+        ["id0.1.2.1.2"] = <http://loinc.org/id/58407-8> -- Leukocyte morphology panel - Blood
+        ["id0.1.2.1.3"] = <http://loinc.org/id/58408-6> -- Erythrocyte morphology panel - Blood
       >
     >
   >
