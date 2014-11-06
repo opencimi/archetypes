@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1)
     CIMI-CORE-ITEM_GROUP.leukocyte_morphology_panel_in_blood.v1.0.0
 
 specialize
@@ -40,6 +40,7 @@ definition
         use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.dohle_body__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Dohle body [Presence] in Blood by Light microscopy
         use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.smudge_cells__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Smudge cells [Presence] in Blood by Light microscopy
         use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.toxic_granules__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Toxic granules [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
 terminology

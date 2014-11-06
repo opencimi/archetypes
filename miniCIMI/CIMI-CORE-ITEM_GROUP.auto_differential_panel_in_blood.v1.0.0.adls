@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1)
     CIMI-CORE-ITEM_GROUP.auto_differential_panel_in_blood.v1.0.0
 
 specialize
@@ -48,6 +48,7 @@ definition
         use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Monocytes [#/volume] in Blood by Automated count
         use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood_by_automated_count.v1] occurrences matches {0..1} -- Neutrophils [#/volume] in Blood by Automated count
         use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood_by_automated_count.v1] occurrences matches {1} -- Neutrophils/100 leukocytes in Blood by Automated count
+        use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
 terminology

@@ -29,7 +29,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches {  -- Complete blood count with automated differential panel
     item matches {
-      use_archetype ITEM_GROUP[id0.1.2.1.0.1, CIMI-CORE-ITEM_GROUP.automated_differential_panel.v1]
+      use_archetype ITEM_GROUP[id0.1.2.1.0.1, CIMI-CORE-ITEM_GROUP.auto_differential_panel_in_blood.v1]
       use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
     }
   }
@@ -38,7 +38,7 @@ terminology
   term_definitions = <
     ["en"] = <
       ["id1.1.1.1.1.1"] = < text = <"Complete blood count with automated differential panel"> >
-      ["id0.1.2.1.0.1"] = < text = <"Automated differential panel"> >
+      ["id0.1.2.1.0.1"] = < text = <"Auto differential panel in blood"> >
     >
   >
   term_bindings = <

@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1)
     CIMI-CORE-ITEM_GROUP.erythrocyte_morphology_panel_in_blood.v1.0.0
 
 specialize
@@ -68,6 +68,7 @@ definition
         use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.schistocytes__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Schistocytes [Presence] in Blood by Light microscopy
         use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.sickle_cells__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Sickle cells [Presence] in Blood by Light microscopy
         use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.spherocytes__presence__in_blood_by_light_microscopy.v1] occurrences matches {0..1} -- Spherocytes [Presence] in Blood by Light microscopy
+        use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
 terminology

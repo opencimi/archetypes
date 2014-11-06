@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1)
     CIMI-CORE-ITEM_GROUP.manual_differential_panel_in_blood.v1.0.0
 
 specialize
@@ -106,6 +106,7 @@ definition
         use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.hairy_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Hairy cells/100 leukocytes in Blood
         use_archetype ITEM_GROUP[id0.1.1.1.75, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Large Granular [#/volume] in Blood
         use_archetype ITEM_GROUP[id0.1.1.1.76, CIMI-CORE-ITEM_GROUP.manual_differential_comment__interpretation__in_blood_narrative.v1] occurrences matches {0..1} -- Manual differential comment [interpretation] in Blood Narrative
+        use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
 terminology
