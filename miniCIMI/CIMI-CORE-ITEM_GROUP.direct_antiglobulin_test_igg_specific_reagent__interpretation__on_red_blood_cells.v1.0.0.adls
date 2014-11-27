@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.direct_antiglobulin_test_igg_specific_reagent__interpretation__on_red_blood_cells.v1.0.0
 
 specialize

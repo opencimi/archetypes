@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.pathology_report_supplemental_reports_narrative.v1.0.0
 
 specialize

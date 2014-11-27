@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.protein_fractions__interpretation__in_serum_or_plasma_by_electrophoresis.v1.0.0
 
 specialize

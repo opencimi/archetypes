@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.streptococcus_agalactiae__presence__in_vaginal_fluid_by_organism_specific_culture.v1.0.0
 
 specialize

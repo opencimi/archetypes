@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.oxygen_saturation_in_arterial_blood_by_pulse_oximetry.v1.0.0
 
 specialize

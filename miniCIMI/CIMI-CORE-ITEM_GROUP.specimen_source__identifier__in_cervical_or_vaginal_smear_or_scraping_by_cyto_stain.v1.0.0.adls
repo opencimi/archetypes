@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.specimen_source__identifier__in_cervical_or_vaginal_smear_or_scraping_by_cyto_stain.v1.0.0
 
 specialize

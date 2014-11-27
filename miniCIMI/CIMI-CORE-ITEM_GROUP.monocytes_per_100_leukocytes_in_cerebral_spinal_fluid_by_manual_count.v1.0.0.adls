@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_cerebral_spinal_fluid_by_manual_count.v1.0.0
 
 specialize

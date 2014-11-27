@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.mthfr_gene_c_677c_gt_t__presence__in_blood_or_tissue_by_molecular_genetics_method.v1.0.0
 
 specialize

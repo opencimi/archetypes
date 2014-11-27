@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1; generated)
+archetype (adl_version=1.5.1; rm_release=2.0.2)
     CIMI-CORE-ITEM_GROUP.inhibin_a__multiple_of_the_median__adjusted_in_serum_or_plasma.v1.0.0
 
 specialize
