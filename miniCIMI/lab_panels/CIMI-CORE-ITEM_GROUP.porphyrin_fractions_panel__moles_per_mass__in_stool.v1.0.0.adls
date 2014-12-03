@@ -1,0 +1,84 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.porphyrin_fractions_panel__moles_per_mass__in_stool.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Porphyrin fractions panel [Moles/mass] - Stool' concept">
+        use = <"Use for Porphyrin fractions panel [Moles/mass] - Stool.">
+        keywords = <"Porphyrin","fractions","panel","[Moles/mass]","-","Stool">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/74445-8.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:18">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Porphyrin fractions panel [Moles/mass] - Stool
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Porphyrin fractions panel [Moles/mass] - Stool
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.protoporphyrin__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Protoporphyrin [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.coproporphyrin_1__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Coproporphyrin 1 [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.coproporphyrin_3__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Coproporphyrin 3 [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.deuteroporphyrin__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Deuteroporphyrin [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.mesoporphyrin__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Mesoporphyrin [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.porphyrins__interpretation__in_stool_narrative.v1] occurrences matches {0..1} -- Porphyrins [interpretation] in Stool Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.pemptoporphyrin__moles_per_mass__in_stool.v1] occurrences matches {0..1} -- Pemptoporphyrin [Moles/mass] in Stool
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.coproporphyrin_3_per_coproporphyrin_total_in_stool.v1] occurrences matches {0..1} -- Coproporphyrin 3/Coproporphyrin.total in Stool
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Porphyrin fractions panel [Moles/mass] - Stool">>
+      ["at0.0.0.0.1"] = <text = <"Porphyrin fractions panel [Moles/mass] - Stool">>
+      ["id0.1.1.1.1"] = <text = <"Protoporphyrin [Moles/mass] in Stool">>
+      ["id0.1.1.1.2"] = <text = <"Coproporphyrin 1 [Moles/mass] in Stool">>
+      ["id0.1.1.1.3"] = <text = <"Coproporphyrin 3 [Moles/mass] in Stool">>
+      ["id0.1.1.1.4"] = <text = <"Deuteroporphyrin [Moles/mass] in Stool">>
+      ["id0.1.1.1.5"] = <text = <"Mesoporphyrin [Moles/mass] in Stool">>
+      ["id0.1.1.1.6"] = <text = <"Porphyrins [interpretation] in Stool Narrative">>
+      ["id0.1.1.1.7"] = <text = <"Pemptoporphyrin [Moles/mass] in Stool">>
+      ["id0.1.1.1.8"] = <text = <"Coproporphyrin 3/Coproporphyrin.total in Stool">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74445-8> -- Porphyrin fractions panel [Moles/mass] - Stool
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74445-8> -- Porphyrin fractions panel [Moles/mass] - Stool
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/29267-2> -- Protoporphyrin [Moles/mass] in Stool
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/45305-0> -- Coproporphyrin 1 [Moles/mass] in Stool
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/45306-8> -- Coproporphyrin 3 [Moles/mass] in Stool
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/45307-6> -- Deuteroporphyrin [Moles/mass] in Stool
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/45310-0> -- Mesoporphyrin [Moles/mass] in Stool
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/49290-0> -- Porphyrins [interpretation] in Stool Narrative
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/74440-9> -- Pemptoporphyrin [Moles/mass] in Stool
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/75001-8> -- Coproporphyrin 3/Coproporphyrin.total in Stool
+      >
+    >
+  >

@@ -1,0 +1,282 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.differential_panel___method_unspecified.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Differential panel, method unspecified - Blood' concept">
+        use = <"Use for Differential panel, method unspecified - Blood.">
+        keywords = <"Differential","panel,","method","unspecified","-","Blood">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/69738-3.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:13">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Differential panel, method unspecified - Blood
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Differential panel, method unspecified - Blood
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Variant/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.plasma_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Plasma cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Basophils [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.blasts_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Blasts/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Eosinophils [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.eosinophils_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Eosinophils/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.large_unstained_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Large unstained cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.large_unstained_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Large unstained cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Leukocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.leukocytes_other_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Leukocytes other/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Variant [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.lymphocytes_per_100_leukocytes_in_blood.v1] occurrences matches {1} -- Lymphocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Monocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_blood.v1] occurrences matches {1} -- Monocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.myelocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Myelocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Neutrophils [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.neutrophils_segmented_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Neutrophils.segmented/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Neutrophils.band form [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Neutrophils.band form/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_blood.v1] occurrences matches {1} -- Neutrophils/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.promyelocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Promyelocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.promyelocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Promyelocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.metamyelocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Metamyelocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Basophils/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.blasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Blasts [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.granulocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Granulocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.granulocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Granulocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.hairy_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Hairy cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Leukocytes other [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Abnormal [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Abnormal/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Large Granular/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.lymphoma_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphoma cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.lymphoma_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphoma cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.metamyelocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Metamyelocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.monocytes_abnormal_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Monocytes Abnormal [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.monocytes_abnormal_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Monocytes Abnormal/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.39, CIMI-CORE-ITEM_GROUP.myeloblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Myeloblasts [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.40, CIMI-CORE-ITEM_GROUP.myeloblasts_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Myeloblasts/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.41, CIMI-CORE-ITEM_GROUP.myelocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Myelocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.42, CIMI-CORE-ITEM_GROUP.neutrophils_hypersegmented_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Neutrophils.hypersegmented [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.43, CIMI-CORE-ITEM_GROUP.neutrophils_hypersegmented_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Neutrophils.hypersegmented/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.44, CIMI-CORE-ITEM_GROUP.neutrophils_segmented_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Neutrophils.segmented [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.45, CIMI-CORE-ITEM_GROUP.plasma_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Plasma cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.46, CIMI-CORE-ITEM_GROUP.prolymphocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Prolymphocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.47, CIMI-CORE-ITEM_GROUP.prolymphocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Prolymphocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.48, CIMI-CORE-ITEM_GROUP.promonocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Promonocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.49, CIMI-CORE-ITEM_GROUP.cell_fractions_per_differential__interpretation__in_blood.v1] occurrences matches {0..1} -- Cell Fractions/Differential [interpretation] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.50, CIMI-CORE-ITEM_GROUP.basophils_immature_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Basophils Immature [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.51, CIMI-CORE-ITEM_GROUP.basophils_immature_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Basophils Immature/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.52, CIMI-CORE-ITEM_GROUP.eosinophils_immature_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Eosinophils Immature [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.53, CIMI-CORE-ITEM_GROUP.eosinophils_immature_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Eosinophils Immature/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.54, CIMI-CORE-ITEM_GROUP.malignant_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Malignant cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.55, CIMI-CORE-ITEM_GROUP.malignant_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Malignant cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.56, CIMI-CORE-ITEM_GROUP.plasma_cell_precursor_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Plasma cell precursor [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.57, CIMI-CORE-ITEM_GROUP.plasma_cell_precursor_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Plasma cell precursor/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.58, CIMI-CORE-ITEM_GROUP.sezary_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Sezary cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.59, CIMI-CORE-ITEM_GROUP.sezary_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Sezary cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.60, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Plasmacytoid/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.61, CIMI-CORE-ITEM_GROUP.lymphoblasts_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Lymphoblasts/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.62, CIMI-CORE-ITEM_GROUP.monoblasts_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Monoblasts/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.63, CIMI-CORE-ITEM_GROUP.immature_monocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Immature monocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.64, CIMI-CORE-ITEM_GROUP.immature_monocytes_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Immature monocytes/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.65, CIMI-CORE-ITEM_GROUP.promonocytes_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Promonocytes [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.66, CIMI-CORE-ITEM_GROUP.smudge_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Smudge cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.67, CIMI-CORE-ITEM_GROUP.smudge_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Smudge cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.68, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.69, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Polymorphonuclear cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.70, CIMI-CORE-ITEM_GROUP.monoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Monoblasts [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.71, CIMI-CORE-ITEM_GROUP.lymphocytes_plasmacytoid_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Plasmacytoid [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.72, CIMI-CORE-ITEM_GROUP.lymphoblasts_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphoblasts [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.73, CIMI-CORE-ITEM_GROUP.hairy_cells_per_100_leukocytes_in_blood.v1] occurrences matches {0..1} -- Hairy cells/100 leukocytes in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.lymphocytes_large_granular_count_per_volume_in_blood.v1] occurrences matches {0..1} -- Lymphocytes Large Granular [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Differential panel, method unspecified - Blood">>
+      ["at0.0.0.0.1"] = <text = <"Differential panel, method unspecified - Blood">>
+      ["id0.1.1.1.1"] = <text = <"Lymphocytes Variant/100 leukocytes in Blood">>
+      ["id0.1.1.1.2"] = <text = <"Plasma cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.3"] = <text = <"Basophils [#/volume] in Blood">>
+      ["id0.1.1.1.4"] = <text = <"Blasts/100 leukocytes in Blood">>
+      ["id0.1.1.1.5"] = <text = <"Eosinophils [#/volume] in Blood">>
+      ["id0.1.1.1.6"] = <text = <"Eosinophils/100 leukocytes in Blood">>
+      ["id0.1.1.1.7"] = <text = <"Large unstained cells [#/volume] in Blood">>
+      ["id0.1.1.1.8"] = <text = <"Large unstained cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.9"] = <text = <"Leukocytes [#/volume] in Blood">>
+      ["id0.1.1.1.10"] = <text = <"Leukocytes other/100 leukocytes in Blood">>
+      ["id0.1.1.1.11"] = <text = <"Lymphocytes [#/volume] in Blood">>
+      ["id0.1.1.1.12"] = <text = <"Lymphocytes Variant [#/volume] in Blood">>
+      ["id0.1.1.1.13"] = <text = <"Lymphocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.14"] = <text = <"Monocytes [#/volume] in Blood">>
+      ["id0.1.1.1.15"] = <text = <"Monocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.16"] = <text = <"Myelocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.17"] = <text = <"Neutrophils [#/volume] in Blood">>
+      ["id0.1.1.1.18"] = <text = <"Neutrophils.segmented/100 leukocytes in Blood">>
+      ["id0.1.1.1.19"] = <text = <"Neutrophils.band form [#/volume] in Blood">>
+      ["id0.1.1.1.20"] = <text = <"Neutrophils.band form/100 leukocytes in Blood">>
+      ["id0.1.1.1.21"] = <text = <"Neutrophils/100 leukocytes in Blood">>
+      ["id0.1.1.1.22"] = <text = <"Promyelocytes [#/volume] in Blood">>
+      ["id0.1.1.1.23"] = <text = <"Promyelocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.24"] = <text = <"Metamyelocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.25"] = <text = <"Basophils/100 leukocytes in Blood">>
+      ["id0.1.1.1.26"] = <text = <"Blasts [#/volume] in Blood">>
+      ["id0.1.1.1.27"] = <text = <"Granulocytes [#/volume] in Blood">>
+      ["id0.1.1.1.28"] = <text = <"Granulocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.29"] = <text = <"Hairy cells [#/volume] in Blood">>
+      ["id0.1.1.1.30"] = <text = <"Leukocytes other [#/volume] in Blood">>
+      ["id0.1.1.1.31"] = <text = <"Lymphocytes Abnormal [#/volume] in Blood">>
+      ["id0.1.1.1.32"] = <text = <"Lymphocytes Abnormal/100 leukocytes in Blood">>
+      ["id0.1.1.1.33"] = <text = <"Lymphocytes Large Granular/100 leukocytes in Blood">>
+      ["id0.1.1.1.34"] = <text = <"Lymphoma cells [#/volume] in Blood">>
+      ["id0.1.1.1.35"] = <text = <"Lymphoma cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.36"] = <text = <"Metamyelocytes [#/volume] in Blood">>
+      ["id0.1.1.1.37"] = <text = <"Monocytes Abnormal [#/volume] in Blood">>
+      ["id0.1.1.1.38"] = <text = <"Monocytes Abnormal/100 leukocytes in Blood">>
+      ["id0.1.1.1.39"] = <text = <"Myeloblasts [#/volume] in Blood">>
+      ["id0.1.1.1.40"] = <text = <"Myeloblasts/100 leukocytes in Blood">>
+      ["id0.1.1.1.41"] = <text = <"Myelocytes [#/volume] in Blood">>
+      ["id0.1.1.1.42"] = <text = <"Neutrophils.hypersegmented [#/volume] in Blood">>
+      ["id0.1.1.1.43"] = <text = <"Neutrophils.hypersegmented/100 leukocytes in Blood">>
+      ["id0.1.1.1.44"] = <text = <"Neutrophils.segmented [#/volume] in Blood">>
+      ["id0.1.1.1.45"] = <text = <"Plasma cells [#/volume] in Blood">>
+      ["id0.1.1.1.46"] = <text = <"Prolymphocytes [#/volume] in Blood">>
+      ["id0.1.1.1.47"] = <text = <"Prolymphocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.48"] = <text = <"Promonocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.49"] = <text = <"Cell Fractions/Differential [interpretation] in Blood">>
+      ["id0.1.1.1.50"] = <text = <"Basophils Immature [#/volume] in Blood">>
+      ["id0.1.1.1.51"] = <text = <"Basophils Immature/100 leukocytes in Blood">>
+      ["id0.1.1.1.52"] = <text = <"Eosinophils Immature [#/volume] in Blood">>
+      ["id0.1.1.1.53"] = <text = <"Eosinophils Immature/100 leukocytes in Blood">>
+      ["id0.1.1.1.54"] = <text = <"Malignant cells [#/volume] in Blood">>
+      ["id0.1.1.1.55"] = <text = <"Malignant cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.56"] = <text = <"Plasma cell precursor [#/volume] in Blood">>
+      ["id0.1.1.1.57"] = <text = <"Plasma cell precursor/100 leukocytes in Blood">>
+      ["id0.1.1.1.58"] = <text = <"Sezary cells [#/volume] in Blood">>
+      ["id0.1.1.1.59"] = <text = <"Sezary cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.60"] = <text = <"Lymphocytes Plasmacytoid/100 leukocytes in Blood">>
+      ["id0.1.1.1.61"] = <text = <"Lymphoblasts/100 leukocytes in Blood">>
+      ["id0.1.1.1.62"] = <text = <"Monoblasts/100 leukocytes in Blood">>
+      ["id0.1.1.1.63"] = <text = <"Immature monocytes [#/volume] in Blood">>
+      ["id0.1.1.1.64"] = <text = <"Immature monocytes/100 leukocytes in Blood">>
+      ["id0.1.1.1.65"] = <text = <"Promonocytes [#/volume] in Blood">>
+      ["id0.1.1.1.66"] = <text = <"Smudge cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.67"] = <text = <"Smudge cells [#/volume] in Blood">>
+      ["id0.1.1.1.68"] = <text = <"Polymorphonuclear cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.69"] = <text = <"Polymorphonuclear cells [#/volume] in Blood">>
+      ["id0.1.1.1.70"] = <text = <"Monoblasts [#/volume] in Blood">>
+      ["id0.1.1.1.71"] = <text = <"Lymphocytes Plasmacytoid [#/volume] in Blood">>
+      ["id0.1.1.1.72"] = <text = <"Lymphoblasts [#/volume] in Blood">>
+      ["id0.1.1.1.73"] = <text = <"Hairy cells/100 leukocytes in Blood">>
+      ["id0.1.1.1.74"] = <text = <"Lymphocytes Large Granular [#/volume] in Blood">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/69738-3> -- Differential panel, method unspecified - Blood
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/69738-3> -- Differential panel, method unspecified - Blood
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13046-8> -- Lymphocytes Variant/100 leukocytes in Blood
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13047-6> -- Plasma cells/100 leukocytes in Blood
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/26444-0> -- Basophils [#/volume] in Blood
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/26446-5> -- Blasts/100 leukocytes in Blood
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/26449-9> -- Eosinophils [#/volume] in Blood
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/26450-7> -- Eosinophils/100 leukocytes in Blood
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/26462-2> -- Large unstained cells [#/volume] in Blood
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/26463-0> -- Large unstained cells/100 leukocytes in Blood
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/26464-8> -- Leukocytes [#/volume] in Blood
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/26471-3> -- Leukocytes other/100 leukocytes in Blood
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/26474-7> -- Lymphocytes [#/volume] in Blood
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/26477-0> -- Lymphocytes Variant [#/volume] in Blood
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/26478-8> -- Lymphocytes/100 leukocytes in Blood
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/26484-6> -- Monocytes [#/volume] in Blood
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/26485-3> -- Monocytes/100 leukocytes in Blood
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/26498-6> -- Myelocytes/100 leukocytes in Blood
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/26499-4> -- Neutrophils [#/volume] in Blood
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/26505-8> -- Neutrophils.segmented/100 leukocytes in Blood
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/26507-4> -- Neutrophils.band form [#/volume] in Blood
+        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/26508-2> -- Neutrophils.band form/100 leukocytes in Blood
+        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/26511-6> -- Neutrophils/100 leukocytes in Blood
+        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/26523-1> -- Promyelocytes [#/volume] in Blood
+        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/26524-9> -- Promyelocytes/100 leukocytes in Blood
+        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/28541-1> -- Metamyelocytes/100 leukocytes in Blood
+        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/30180-4> -- Basophils/100 leukocytes in Blood
+        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/30376-8> -- Blasts [#/volume] in Blood
+        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/30394-1> -- Granulocytes [#/volume] in Blood
+        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/30395-8> -- Granulocytes/100 leukocytes in Blood
+        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/30397-4> -- Hairy cells [#/volume] in Blood
+        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/30406-3> -- Leukocytes other [#/volume] in Blood
+        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/30412-1> -- Lymphocytes Abnormal [#/volume] in Blood
+        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/30413-9> -- Lymphocytes Abnormal/100 leukocytes in Blood
+        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/30420-4> -- Lymphocytes Large Granular/100 leukocytes in Blood
+        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/30422-0> -- Lymphoma cells [#/volume] in Blood
+        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/30423-8> -- Lymphoma cells/100 leukocytes in Blood
+        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/30433-7> -- Metamyelocytes [#/volume] in Blood
+        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/30440-2> -- Monocytes Abnormal [#/volume] in Blood
+        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/30441-0> -- Monocytes Abnormal/100 leukocytes in Blood
+        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/30444-4> -- Myeloblasts [#/volume] in Blood
+        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/30445-1> -- Myeloblasts/100 leukocytes in Blood
+        ["id0.1.1.1.41"] = <configatron.adl.loinc.uri/30446-9> -- Myelocytes [#/volume] in Blood
+        ["id0.1.1.1.42"] = <configatron.adl.loinc.uri/30449-3> -- Neutrophils.hypersegmented [#/volume] in Blood
+        ["id0.1.1.1.43"] = <configatron.adl.loinc.uri/30450-1> -- Neutrophils.hypersegmented/100 leukocytes in Blood
+        ["id0.1.1.1.44"] = <configatron.adl.loinc.uri/30451-9> -- Neutrophils.segmented [#/volume] in Blood
+        ["id0.1.1.1.45"] = <configatron.adl.loinc.uri/30458-4> -- Plasma cells [#/volume] in Blood
+        ["id0.1.1.1.46"] = <configatron.adl.loinc.uri/30464-2> -- Prolymphocytes [#/volume] in Blood
+        ["id0.1.1.1.47"] = <configatron.adl.loinc.uri/30465-9> -- Prolymphocytes/100 leukocytes in Blood
+        ["id0.1.1.1.48"] = <configatron.adl.loinc.uri/30466-7> -- Promonocytes/100 leukocytes in Blood
+        ["id0.1.1.1.49"] = <configatron.adl.loinc.uri/33255-1> -- Cell Fractions/Differential [interpretation] in Blood
+        ["id0.1.1.1.50"] = <configatron.adl.loinc.uri/34910-0> -- Basophils Immature [#/volume] in Blood
+        ["id0.1.1.1.51"] = <configatron.adl.loinc.uri/34911-8> -- Basophils Immature/100 leukocytes in Blood
+        ["id0.1.1.1.52"] = <configatron.adl.loinc.uri/34912-6> -- Eosinophils Immature [#/volume] in Blood
+        ["id0.1.1.1.53"] = <configatron.adl.loinc.uri/34913-4> -- Eosinophils Immature/100 leukocytes in Blood
+        ["id0.1.1.1.54"] = <configatron.adl.loinc.uri/34914-2> -- Malignant cells [#/volume] in Blood
+        ["id0.1.1.1.55"] = <configatron.adl.loinc.uri/34915-9> -- Malignant cells/100 leukocytes in Blood
+        ["id0.1.1.1.56"] = <configatron.adl.loinc.uri/34916-7> -- Plasma cell precursor [#/volume] in Blood
+        ["id0.1.1.1.57"] = <configatron.adl.loinc.uri/34917-5> -- Plasma cell precursor/100 leukocytes in Blood
+        ["id0.1.1.1.58"] = <configatron.adl.loinc.uri/34918-3> -- Sezary cells [#/volume] in Blood
+        ["id0.1.1.1.59"] = <configatron.adl.loinc.uri/34919-1> -- Sezary cells/100 leukocytes in Blood
+        ["id0.1.1.1.60"] = <configatron.adl.loinc.uri/34921-7> -- Lymphocytes Plasmacytoid/100 leukocytes in Blood
+        ["id0.1.1.1.61"] = <configatron.adl.loinc.uri/34922-5> -- Lymphoblasts/100 leukocytes in Blood
+        ["id0.1.1.1.62"] = <configatron.adl.loinc.uri/34923-3> -- Monoblasts/100 leukocytes in Blood
+        ["id0.1.1.1.63"] = <configatron.adl.loinc.uri/34924-1> -- Immature monocytes [#/volume] in Blood
+        ["id0.1.1.1.64"] = <configatron.adl.loinc.uri/34925-8> -- Immature monocytes/100 leukocytes in Blood
+        ["id0.1.1.1.65"] = <configatron.adl.loinc.uri/34926-6> -- Promonocytes [#/volume] in Blood
+        ["id0.1.1.1.66"] = <configatron.adl.loinc.uri/34992-8> -- Smudge cells/100 leukocytes in Blood
+        ["id0.1.1.1.67"] = <configatron.adl.loinc.uri/34993-6> -- Smudge cells [#/volume] in Blood
+        ["id0.1.1.1.68"] = <configatron.adl.loinc.uri/34999-3> -- Polymorphonuclear cells/100 leukocytes in Blood
+        ["id0.1.1.1.69"] = <configatron.adl.loinc.uri/35003-3> -- Polymorphonuclear cells [#/volume] in Blood
+        ["id0.1.1.1.70"] = <configatron.adl.loinc.uri/35029-8> -- Monoblasts [#/volume] in Blood
+        ["id0.1.1.1.71"] = <configatron.adl.loinc.uri/35039-7> -- Lymphocytes Plasmacytoid [#/volume] in Blood
+        ["id0.1.1.1.72"] = <configatron.adl.loinc.uri/35050-4> -- Lymphoblasts [#/volume] in Blood
+        ["id0.1.1.1.73"] = <configatron.adl.loinc.uri/35058-7> -- Hairy cells/100 leukocytes in Blood
+        ["id0.1.1.1.74"] = <configatron.adl.loinc.uri/35082-7> -- Lymphocytes Large Granular [#/volume] in Blood
+      >
+    >
+  >

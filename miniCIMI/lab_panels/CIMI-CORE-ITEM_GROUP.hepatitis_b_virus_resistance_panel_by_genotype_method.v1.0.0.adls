@@ -1,0 +1,132 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_resistance_panel_by_genotype_method.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Hepatitis B virus resistance panel by Genotype method' concept">
+        use = <"Use for Hepatitis B virus resistance panel by Genotype method.">
+        keywords = <"Hepatitis","B","virus","resistance","panel","by","Genotype","method">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/49883-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:08">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis B virus resistance panel by Genotype method
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis B virus resistance panel by Genotype method
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.lamivudine__susceptibility__by_genotype_method.v1] occurrences matches {1} -- Lamivudine [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.adefovir__susceptibility__by_genotype_method.v1] occurrences matches {1} -- Adefovir [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.tenofovir__susceptibility__by_genotype_method.v1] occurrences matches {0..1} -- Tenofovir [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_173__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 173 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_180__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 180 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_181__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 181 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_204__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 204 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_236__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 236 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_80__identifier__by_genotype_method.v1] occurrences matches {1} -- Hepatitis B virus codon 80 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.entecavir__susceptibility__by_genotype_method.v1] occurrences matches {0..1} -- Entecavir [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.telbivudine__susceptibility__by_genotype_method.v1] occurrences matches {0..1} -- Telbivudine [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.famciclovir__susceptibility__by_genotype_method.v1] occurrences matches {0..1} -- Famciclovir [Susceptibility] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_250__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 250 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_237__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 237 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_233__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 233 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_215__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 215 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_214__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 214 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_202__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 202 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_194__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 194 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_191__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 191 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_184__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 184 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_169__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 169 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_85__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 85 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_codon_84__identifier__by_genotype_method.v1] occurrences matches {0..1} -- Hepatitis B virus codon 84 [Identifier] by Genotype method
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Hepatitis B virus resistance panel by Genotype method">>
+      ["at0.0.0.0.1"] = <text = <"Hepatitis B virus resistance panel by Genotype method">>
+      ["id0.1.1.1.1"] = <text = <"Lamivudine [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.2"] = <text = <"Adefovir [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.3"] = <text = <"Tenofovir [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.4"] = <text = <"Hepatitis B virus codon 173 [Identifier] by Genotype method">>
+      ["id0.1.1.1.5"] = <text = <"Hepatitis B virus codon 180 [Identifier] by Genotype method">>
+      ["id0.1.1.1.6"] = <text = <"Hepatitis B virus codon 181 [Identifier] by Genotype method">>
+      ["id0.1.1.1.7"] = <text = <"Hepatitis B virus codon 204 [Identifier] by Genotype method">>
+      ["id0.1.1.1.8"] = <text = <"Hepatitis B virus codon 236 [Identifier] by Genotype method">>
+      ["id0.1.1.1.9"] = <text = <"Hepatitis B virus codon 80 [Identifier] by Genotype method">>
+      ["id0.1.1.1.10"] = <text = <"Entecavir [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.11"] = <text = <"Telbivudine [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.12"] = <text = <"Famciclovir [Susceptibility] by Genotype method">>
+      ["id0.1.1.1.13"] = <text = <"Hepatitis B virus codon 250 [Identifier] by Genotype method">>
+      ["id0.1.1.1.14"] = <text = <"Hepatitis B virus codon 237 [Identifier] by Genotype method">>
+      ["id0.1.1.1.15"] = <text = <"Hepatitis B virus codon 233 [Identifier] by Genotype method">>
+      ["id0.1.1.1.16"] = <text = <"Hepatitis B virus codon 215 [Identifier] by Genotype method">>
+      ["id0.1.1.1.17"] = <text = <"Hepatitis B virus codon 214 [Identifier] by Genotype method">>
+      ["id0.1.1.1.18"] = <text = <"Hepatitis B virus codon 202 [Identifier] by Genotype method">>
+      ["id0.1.1.1.19"] = <text = <"Hepatitis B virus codon 194 [Identifier] by Genotype method">>
+      ["id0.1.1.1.20"] = <text = <"Hepatitis B virus codon 191 [Identifier] by Genotype method">>
+      ["id0.1.1.1.21"] = <text = <"Hepatitis B virus codon 184 [Identifier] by Genotype method">>
+      ["id0.1.1.1.22"] = <text = <"Hepatitis B virus codon 169 [Identifier] by Genotype method">>
+      ["id0.1.1.1.23"] = <text = <"Hepatitis B virus codon 85 [Identifier] by Genotype method">>
+      ["id0.1.1.1.24"] = <text = <"Hepatitis B virus codon 84 [Identifier] by Genotype method">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49883-2> -- Hepatitis B virus resistance panel by Genotype method
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49883-2> -- Hepatitis B virus resistance panel by Genotype method
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/30283-6> -- Lamivudine [Susceptibility] by Genotype method
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/30288-5> -- Adefovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/41396-3> -- Tenofovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/49877-4> -- Hepatitis B virus codon 173 [Identifier] by Genotype method
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/49878-2> -- Hepatitis B virus codon 180 [Identifier] by Genotype method
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/49879-0> -- Hepatitis B virus codon 181 [Identifier] by Genotype method
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/49880-8> -- Hepatitis B virus codon 204 [Identifier] by Genotype method
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/49881-6> -- Hepatitis B virus codon 236 [Identifier] by Genotype method
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/49882-4> -- Hepatitis B virus codon 80 [Identifier] by Genotype method
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/56791-7> -- Entecavir [Susceptibility] by Genotype method
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/56792-5> -- Telbivudine [Susceptibility] by Genotype method
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/72839-4> -- Famciclovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/72840-2> -- Hepatitis B virus codon 250 [Identifier] by Genotype method
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/72841-0> -- Hepatitis B virus codon 237 [Identifier] by Genotype method
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/72842-8> -- Hepatitis B virus codon 233 [Identifier] by Genotype method
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/72843-6> -- Hepatitis B virus codon 215 [Identifier] by Genotype method
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/72844-4> -- Hepatitis B virus codon 214 [Identifier] by Genotype method
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/72845-1> -- Hepatitis B virus codon 202 [Identifier] by Genotype method
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/72846-9> -- Hepatitis B virus codon 194 [Identifier] by Genotype method
+        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/72847-7> -- Hepatitis B virus codon 191 [Identifier] by Genotype method
+        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/72848-5> -- Hepatitis B virus codon 184 [Identifier] by Genotype method
+        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/72849-3> -- Hepatitis B virus codon 169 [Identifier] by Genotype method
+        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/72850-1> -- Hepatitis B virus codon 85 [Identifier] by Genotype method
+        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/72851-9> -- Hepatitis B virus codon 84 [Identifier] by Genotype method
+      >
+    >
+  >

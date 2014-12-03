@@ -1,0 +1,108 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.synthetic_cannabinoids_panel_in_urine_by_confirmatory_method.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Synthetic cannabinoids panel - Urine by Confirmatory method' concept">
+        use = <"Use for Synthetic cannabinoids panel - Urine by Confirmatory method.">
+        keywords = <"Synthetic","cannabinoids","panel","-","Urine","by","Confirmatory","method">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/72478-1.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:13">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Synthetic cannabinoids panel - Urine by Confirmatory method
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Synthetic cannabinoids panel - Urine by Confirmatory method
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.jwh_018_4_per_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-018 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.jwh_073_3oh_butyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-073 3-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.jwh_018_pentanoate_ur_ql_cfm.v1] occurrences matches {1} -- JWH-018 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.jwh_200_4oh_indole_ur_ql_cfm.v1] occurrences matches {1} -- JWH-200 4-hydroxyindole (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.am_2201_4oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- AM-2201 4-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.jwh_073_4oh_butyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-073 4-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.jwh_073_butanoate_ur_ql_cfm.v1] occurrences matches {1} -- JWH-073 butanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.jwh_250_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-250 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.jwh_250_5_carboxypentyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-250 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.rcs_4_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- RCS-4 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.rcs_4_5_carboxypentyl_ur_ql_cfm.v1] occurrences matches {1} -- RCS-4 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.mam_2201_pentanoate_ur_ql_cfm.v1] occurrences matches {1} -- MAM-2201 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.ur_144_4_per_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- UR-144 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.ur_144_pentanoate_ur_ql_cfm.v1] occurrences matches {1} -- UR-144 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.jwh_398_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-398 5 hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.jwh_122_5oh_pentyl_ur_ql_cfm.v1] occurrences matches {1} -- JWH-122 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Synthetic cannabinoids panel - Urine by Confirmatory method">>
+      ["at0.0.0.0.1"] = <text = <"Synthetic cannabinoids panel - Urine by Confirmatory method">>
+      ["id0.1.1.1.1"] = <text = <"JWH-018 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.2"] = <text = <"JWH-073 3-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.3"] = <text = <"JWH-018 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.4"] = <text = <"JWH-200 4-hydroxyindole (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.5"] = <text = <"AM-2201 4-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.6"] = <text = <"JWH-073 4-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.7"] = <text = <"JWH-073 butanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.8"] = <text = <"JWH-250 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.9"] = <text = <"JWH-250 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.10"] = <text = <"RCS-4 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.11"] = <text = <"RCS-4 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.12"] = <text = <"MAM-2201 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.13"] = <text = <"UR-144 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.14"] = <text = <"UR-144 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.15"] = <text = <"JWH-398 5 hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+      ["id0.1.1.1.16"] = <text = <"JWH-122 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72478-1> -- Synthetic cannabinoids panel - Urine by Confirmatory method
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72478-1> -- Synthetic cannabinoids panel - Urine by Confirmatory method
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/72459-1> -- JWH-018 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/72460-9> -- JWH-073 3-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/72461-7> -- JWH-018 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/72462-5> -- JWH-200 4-hydroxyindole (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/72463-3> -- AM-2201 4-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/72464-1> -- JWH-073 4-hydroxybutyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/72465-8> -- JWH-073 butanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/72466-6> -- JWH-250 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/72467-4> -- JWH-250 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/72468-2> -- RCS-4 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/72469-0> -- RCS-4 5-carboxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/72470-8> -- MAM-2201 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/72471-6> -- UR-144 4/5-hydroxypentyl (synthetic cannabinoid metabolites) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/72472-4> -- UR-144 pentanoate (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/72473-2> -- JWH-398 5 hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/72474-0> -- JWH-122 5-hydroxypentyl (synthetic cannabinoid metabolite) [Presence] in Urine by Confirmatory method
+      >
+    >
+  >

@@ -1,0 +1,99 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.paraneoplastic_ab_panel_in_serum.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Paraneoplastic Ab panel - Serum' concept">
+        use = <"Use for Paraneoplastic Ab panel - Serum.">
+        keywords = <"Paraneoplastic","Ab","panel","-","Serum">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/43104-9.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:06">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Paraneoplastic Ab panel - Serum
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Paraneoplastic Ab panel - Serum
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.acetylcholine_receptor_binding_ab__moles_per_volume__in_serum.v1] occurrences matches {0..1} -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.neuronal_nuclear_type_1_ab__titer__in_serum.v1] occurrences matches {0..1} -- Neuronal nuclear type 1 Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.neuronal_nuclear_type_2_ab__titer__in_serum.v1] occurrences matches {0..1} -- Neuronal nuclear type 2 Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.neuronal_nuclear_type_3_ab__titer__in_serum.v1] occurrences matches {0..1} -- Neuronal nuclear type 3 Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.purkinje_cells_type_2_ab__titer__in_serum.v1] occurrences matches {0..1} -- Purkinje cells type 2 Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.purkinje_cells_type_tr_ab__titer__in_serum.v1] occurrences matches {0..1} -- Purkinje cells type Tr Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.amphiphysin_ab__titer__in_serum.v1] occurrences matches {0..1} -- Amphiphysin Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.voltage_gated_calcium_channel_n_type_binding_ab__moles_per_volume__in_serum.v1] occurrences matches {0..1} -- Voltage-gated calcium channel N type binding Ab [Moles/volume] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.voltage_gated_calcium_channel_p_per_q_type_binding_ab__moles_per_volume__in_serum.v1] occurrences matches {0..1} -- Voltage-gated calcium channel P/Q type binding Ab [Moles/volume] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.cv2_igg_ab__titer__in_serum.v1] occurrences matches {0..1} -- CV2 IgG Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.paraneoplastic_ab__interpretation__in_serum_narrative.v1] occurrences matches {0..1} -- Paraneoplastic Ab [interpretation] in Serum Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.purkinje_cells_ab__titer__in_serum.v1] occurrences matches {0..1} -- Purkinje cells Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.striated_muscle_ab__titer__in_serum.v1] occurrences matches {0..1} -- Striated muscle Ab [Titer] in Serum
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Paraneoplastic Ab panel - Serum">>
+      ["at0.0.0.0.1"] = <text = <"Paraneoplastic Ab panel - Serum">>
+      ["id0.1.1.1.1"] = <text = <"Acetylcholine receptor binding Ab [Moles/volume] in Serum">>
+      ["id0.1.1.1.2"] = <text = <"Neuronal nuclear type 1 Ab [Titer] in Serum">>
+      ["id0.1.1.1.3"] = <text = <"Neuronal nuclear type 2 Ab [Titer] in Serum">>
+      ["id0.1.1.1.4"] = <text = <"Neuronal nuclear type 3 Ab [Titer] in Serum">>
+      ["id0.1.1.1.5"] = <text = <"Purkinje cells type 2 Ab [Titer] in Serum">>
+      ["id0.1.1.1.6"] = <text = <"Purkinje cells type Tr Ab [Titer] in Serum">>
+      ["id0.1.1.1.7"] = <text = <"Amphiphysin Ab [Titer] in Serum">>
+      ["id0.1.1.1.8"] = <text = <"Voltage-gated calcium channel N type binding Ab [Moles/volume] in Serum">>
+      ["id0.1.1.1.9"] = <text = <"Voltage-gated calcium channel P/Q type binding Ab [Moles/volume] in Serum">>
+      ["id0.1.1.1.10"] = <text = <"CV2 IgG Ab [Titer] in Serum">>
+      ["id0.1.1.1.11"] = <text = <"Paraneoplastic Ab [interpretation] in Serum Narrative">>
+      ["id0.1.1.1.12"] = <text = <"Purkinje cells Ab [Titer] in Serum">>
+      ["id0.1.1.1.13"] = <text = <"Striated muscle Ab [Titer] in Serum">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43104-9> -- Paraneoplastic Ab panel - Serum
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43104-9> -- Paraneoplastic Ab panel - Serum
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13997-2> -- Neuronal nuclear type 1 Ab [Titer] in Serum
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/13998-0> -- Neuronal nuclear type 2 Ab [Titer] in Serum
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/33924-2> -- Neuronal nuclear type 3 Ab [Titer] in Serum
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/33925-9> -- Purkinje cells type 2 Ab [Titer] in Serum
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/33926-7> -- Purkinje cells type Tr Ab [Titer] in Serum
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/33927-5> -- Amphiphysin Ab [Titer] in Serum
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/33979-6> -- Voltage-gated calcium channel N type binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/33980-4> -- Voltage-gated calcium channel P/Q type binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/35386-2> -- CV2 IgG Ab [Titer] in Serum
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/57771-8> -- Paraneoplastic Ab [interpretation] in Serum Narrative
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/6970-8> -- Purkinje cells Ab [Titer] in Serum
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/8097-8> -- Striated muscle Ab [Titer] in Serum
+      >
+    >
+  >

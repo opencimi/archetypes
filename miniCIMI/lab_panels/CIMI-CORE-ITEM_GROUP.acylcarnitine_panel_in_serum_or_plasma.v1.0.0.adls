@@ -1,0 +1,171 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.acylcarnitine_panel_in_serum_or_plasma.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Acylcarnitine panel - Serum or Plasma' concept">
+        use = <"Use for Acylcarnitine panel - Serum or Plasma.">
+        keywords = <"Acylcarnitine","panel","-","Serum","or","Plasma">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/43433-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:07">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Acylcarnitine panel - Serum or Plasma
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acylcarnitine panel - Serum or Plasma
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.3_hydroxytetradecenoylcarnitine__c14_1_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxytetradecenoylcarnitine (C14:1-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.acetylcarnitine__c2___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Acetylcarnitine (C2) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.3_hydroxydodecanoylcarnitine__c12_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxydodecanoylcarnitine (C12-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.3_hydroxypalmitoylcarnitine__c16_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxypalmitoylcarnitine (C16-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.3_hydroxypalmitoleylcarnitine__c16_1_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxypalmitoleylcarnitine (C16:1-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.3_hydroxyhexanoylcarnitine__c6_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.3_hydroxylinoleoylcarnitine__c18_2_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxylinoleoylcarnitine (C18:2-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.3_hydroxytetradecanoylcarnitine__c14_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxytetradecanoylcarnitine (C14-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.3_hydroxyoleoylcarnitine__c18_1_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxyoleoylcarnitine (C18:1-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.decanoylcarnitine__c10___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Decanoylcarnitine (C10) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.decenoylcarnitine__c10_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Decenoylcarnitine (C10:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.dodecanoylcarnitine__c12___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Dodecanoylcarnitine (C12) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.dodecenoylcarnitine__c12_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Dodecenoylcarnitine (C12:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.glutarylcarnitine__c5_dc___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Glutarylcarnitine (C5-DC) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.palmitoylcarnitine__c16___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Palmitoylcarnitine (C16) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.palmitoleylcarnitine__c16_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Palmitoleylcarnitine (C16:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.hexanoylcarnitine__c6___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Hexanoylcarnitine (C6) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.isovalerylcarnitine_plus_methylbutyrylcarnitine__c5___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.linoleoylcarnitine__c18_2___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Linoleoylcarnitine (C18:2) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.octanoylcarnitine__c8___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Octanoylcarnitine (C8) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.octenoylcarnitine__c8_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Octenoylcarnitine (C8:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.oleoylcarnitine__c18_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Oleoylcarnitine (C18:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.propionylcarnitine__c3___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Propionylcarnitine (C3) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.stearoylcarnitine__c18___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Stearoylcarnitine (C18) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.tetradecadienoylcarnitine__c14_2___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Tetradecadienoylcarnitine (C14:2) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.tetradecanoylcarnitine__c14___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Tetradecanoylcarnitine (C14) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.tetradecenoylcarnitine__c14_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Tetradecenoylcarnitine (C14:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.butyrylcarnitine__c4___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Butyrylcarnitine (C4) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.3_hydroxystearoylcarnitine__c18_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxystearoylcarnitine (C18-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.3_hydroxybutyrylcarnitine__c4_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.3_hydroxyisovalerylcarnitine__c5_oh___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- 3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.adipoylcarnitine__c6_dc___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Adipoylcarnitine (C6-DC) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.isovalerylcarnitine__c5___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Isovalerylcarnitine (C5) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.methylmalonylcarnitine__c4_dc___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Methylmalonylcarnitine (C4-DC) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.suberylcarnitine__c8_dc___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Suberylcarnitine (C8-DC) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.acrylylcarnitine__c3_1___moles_per_volume__in_serum_or_plasma.v1] occurrences matches {0..1} -- Acrylylcarnitine (C3:1) [Moles/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.acylcarnitine_pattern__interpretation__in_serum_or_plasma.v1] occurrences matches {0..1} -- Acylcarnitine pattern [interpretation] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Acylcarnitine panel - Serum or Plasma">>
+      ["at0.0.0.0.1"] = <text = <"Acylcarnitine panel - Serum or Plasma">>
+      ["id0.1.1.1.1"] = <text = <"3-Hydroxytetradecenoylcarnitine (C14:1-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.2"] = <text = <"Acetylcarnitine (C2) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.3"] = <text = <"3-Hydroxydodecanoylcarnitine (C12-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.4"] = <text = <"3-Hydroxypalmitoylcarnitine (C16-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.5"] = <text = <"3-Hydroxypalmitoleylcarnitine (C16:1-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.6"] = <text = <"3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.7"] = <text = <"3-Hydroxylinoleoylcarnitine (C18:2-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.8"] = <text = <"3-Hydroxytetradecanoylcarnitine (C14-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.9"] = <text = <"3-Hydroxyoleoylcarnitine (C18:1-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.10"] = <text = <"Decanoylcarnitine (C10) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.11"] = <text = <"Decenoylcarnitine (C10:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.12"] = <text = <"Dodecanoylcarnitine (C12) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.13"] = <text = <"Dodecenoylcarnitine (C12:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.14"] = <text = <"Glutarylcarnitine (C5-DC) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.15"] = <text = <"Palmitoylcarnitine (C16) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.16"] = <text = <"Palmitoleylcarnitine (C16:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.17"] = <text = <"Hexanoylcarnitine (C6) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.18"] = <text = <"Isovalerylcarnitine+Methylbutyrylcarnitine (C5) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.19"] = <text = <"Linoleoylcarnitine (C18:2) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.20"] = <text = <"Octanoylcarnitine (C8) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.21"] = <text = <"Octenoylcarnitine (C8:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.22"] = <text = <"Oleoylcarnitine (C18:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.23"] = <text = <"Propionylcarnitine (C3) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.24"] = <text = <"Stearoylcarnitine (C18) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.25"] = <text = <"Tetradecadienoylcarnitine (C14:2) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.26"] = <text = <"Tetradecanoylcarnitine (C14) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.27"] = <text = <"Tetradecenoylcarnitine (C14:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.28"] = <text = <"Butyrylcarnitine (C4) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.29"] = <text = <"3-Hydroxystearoylcarnitine (C18-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.30"] = <text = <"3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.31"] = <text = <"3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.32"] = <text = <"Adipoylcarnitine (C6-DC) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.33"] = <text = <"Isovalerylcarnitine (C5) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.34"] = <text = <"Methylmalonylcarnitine (C4-DC) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.35"] = <text = <"Suberylcarnitine (C8-DC) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.36"] = <text = <"Acrylylcarnitine (C3:1) [Moles/volume] in Serum or Plasma">>
+      ["id0.1.1.1.37"] = <text = <"Acylcarnitine pattern [interpretation] in Serum or Plasma">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43433-2> -- Acylcarnitine panel - Serum or Plasma
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43433-2> -- Acylcarnitine panel - Serum or Plasma
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/30190-3> -- 3-Hydroxytetradecenoylcarnitine (C14:1-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/30191-1> -- Acetylcarnitine (C2) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/30233-1> -- 3-Hydroxydodecanoylcarnitine (C12-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/30234-9> -- 3-Hydroxypalmitoylcarnitine (C16-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/30235-6> -- 3-Hydroxypalmitoleylcarnitine (C16:1-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/30236-4> -- 3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/30237-2> -- 3-Hydroxylinoleoylcarnitine (C18:2-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/30238-0> -- 3-Hydroxytetradecanoylcarnitine (C14-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/30312-3> -- 3-Hydroxyoleoylcarnitine (C18:1-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/30327-1> -- Decanoylcarnitine (C10) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/30328-9> -- Decenoylcarnitine (C10:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/30331-3> -- Dodecanoylcarnitine (C12) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/30332-1> -- Dodecenoylcarnitine (C12:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/30349-5> -- Glutarylcarnitine (C5-DC) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/30356-0> -- Palmitoylcarnitine (C16) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/30357-8> -- Palmitoleylcarnitine (C16:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/30358-6> -- Hexanoylcarnitine (C6) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/30531-8> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/30534-2> -- Linoleoylcarnitine (C18:2) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/30540-9> -- Octanoylcarnitine (C8) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/30541-7> -- Octenoylcarnitine (C8:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/30542-5> -- Oleoylcarnitine (C18:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/30551-6> -- Propionylcarnitine (C3) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/30560-7> -- Stearoylcarnitine (C18) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/30564-9> -- Tetradecadienoylcarnitine (C14:2) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/30565-6> -- Tetradecanoylcarnitine (C14) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/30566-4> -- Tetradecenoylcarnitine (C14:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/35655-0> -- Butyrylcarnitine (C4) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/35656-8> -- 3-Hydroxystearoylcarnitine (C18-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/39000-5> -- 3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/39001-3> -- 3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/39002-1> -- Adipoylcarnitine (C6-DC) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/39009-6> -- Isovalerylcarnitine (C5) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/39010-4> -- Methylmalonylcarnitine (C4-DC) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/39014-6> -- Suberylcarnitine (C8-DC) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/43235-1> -- Acrylylcarnitine (C3:1) [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/46252-3> -- Acylcarnitine pattern [interpretation] in Serum or Plasma
+      >
+    >
+  >

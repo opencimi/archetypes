@@ -1,0 +1,87 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.chronic_lyme_disease_panel_by_flow_cytometry__fc.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Chronic lyme disease panel - Blood by Flow cytometry (FC)' concept">
+        use = <"Use for Chronic lyme disease panel - Blood by Flow cytometry (FC).">
+        keywords = <"Chronic","lyme","disease","panel","-","Blood","by","Flow","cytometry","(FC)">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/73897-1.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:17">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Chronic lyme disease panel - Blood by Flow cytometry (FC)
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chronic lyme disease panel - Blood by Flow cytometry (FC)
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.cd8_cd57_plus_cells_per_100_cells_in_blood.v1] occurrences matches {0..1} -- CD8-CD57+ cells/100 cells in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.cd8_cd57_plus_cells_count_per_volume_in_blood.v1] occurrences matches {0..1} -- CD8-CD57+ cells [#/volume] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.cd8_cd57_plus_cells_per_100_lymphocytes_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD8-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.cd3__cd8__cd57_plus_cells_count_per_volume_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3- CD8- CD57+ Cells [#/volume] in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.cd3__cd8__cd57_plus_cells_per_100_leukocytes_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3- CD8- CD57+ Cells/100 leukocytes in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.cd3__cd8__cd57_plus_cells_per_100_lymphocytes_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3- CD8- CD57+ Cells/100 lymphocytes in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cd3_cd57_plus_cells_count_per_volume_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3-CD57+ cells [#/volume] in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.cd3_cd57_plus_cells_per_100_leukocytes_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3-CD57+ cells/100 leukocytes in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.cd3_cd57_plus_cells_per_100_lymphocytes_in_blood_by_flow_cytometry__fc.v1] occurrences matches {0..1} -- CD3-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Chronic lyme disease panel - Blood by Flow cytometry (FC)">>
+      ["at0.0.0.0.1"] = <text = <"Chronic lyme disease panel - Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.1"] = <text = <"CD8-CD57+ cells/100 cells in Blood">>
+      ["id0.1.1.1.2"] = <text = <"CD8-CD57+ cells [#/volume] in Blood">>
+      ["id0.1.1.1.3"] = <text = <"CD8-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.4"] = <text = <"CD3- CD8- CD57+ Cells [#/volume] in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.5"] = <text = <"CD3- CD8- CD57+ Cells/100 leukocytes in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.6"] = <text = <"CD3- CD8- CD57+ Cells/100 lymphocytes in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.7"] = <text = <"CD3-CD57+ cells [#/volume] in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.8"] = <text = <"CD3-CD57+ cells/100 leukocytes in Blood by Flow cytometry (FC)">>
+      ["id0.1.1.1.9"] = <text = <"CD3-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/73897-1> -- Chronic lyme disease panel - Blood by Flow cytometry (FC)
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/73897-1> -- Chronic lyme disease panel - Blood by Flow cytometry (FC)
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/61121-0> -- CD8-CD57+ cells/100 cells in Blood
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/61122-8> -- CD8-CD57+ cells [#/volume] in Blood
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/73898-9> -- CD8-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/73899-7> -- CD3- CD8- CD57+ Cells [#/volume] in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/73900-3> -- CD3- CD8- CD57+ Cells/100 leukocytes in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/73901-1> -- CD3- CD8- CD57+ Cells/100 lymphocytes in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/73902-9> -- CD3-CD57+ cells [#/volume] in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/73903-7> -- CD3-CD57+ cells/100 leukocytes in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/73904-5> -- CD3-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)
+      >
+    >
+  >

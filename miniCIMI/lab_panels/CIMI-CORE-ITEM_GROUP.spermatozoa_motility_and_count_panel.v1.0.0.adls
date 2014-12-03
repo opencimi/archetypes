@@ -1,0 +1,99 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.spermatozoa_motility_and_count_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Spermatozoa motility and count panel' concept">
+        use = <"Use for Spermatozoa motility and count panel.">
+        keywords = <"Spermatozoa","motility","count","panel">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/4463-6.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:07">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Spermatozoa motility and count panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Spermatozoa motility and count panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.cells_other_than_spermatozoa_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Cells other than spermatozoa [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Leukocytes [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.spermatozoa_immotile_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Immotile/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.spermatozoa_nonprogressive_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Nonprogressive/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.spermatozoa_rapid_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Rapid/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.spermatozoa_slow_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Slow/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.spermatozoa_progressive_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Progressive/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.spermatozoa_immotile_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Immotile [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.spermatozoa_motile_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Motile [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.spermatozoa_normal_motile_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Normal Motile [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.erythrocytes_count_per_volume_in_semen_by_light_microscopy.v1] occurrences matches {0..1} -- Erythrocytes [#/volume] in Semen by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.spermatozoa_motile_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Motile/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.spermatozoa_count_per_volume_in_semen.v1] occurrences matches {0..1} -- Spermatozoa [#/volume] in Semen
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Spermatozoa motility and count panel">>
+      ["at0.0.0.0.1"] = <text = <"Spermatozoa motility and count panel">>
+      ["id0.1.1.1.1"] = <text = <"Cells other than spermatozoa [#/volume] in Semen">>
+      ["id0.1.1.1.2"] = <text = <"Leukocytes [#/volume] in Semen">>
+      ["id0.1.1.1.3"] = <text = <"Spermatozoa Immotile/100 spermatozoa in Semen">>
+      ["id0.1.1.1.4"] = <text = <"Spermatozoa Nonprogressive/100 spermatozoa in Semen">>
+      ["id0.1.1.1.5"] = <text = <"Spermatozoa Rapid/100 spermatozoa in Semen">>
+      ["id0.1.1.1.6"] = <text = <"Spermatozoa Slow/100 spermatozoa in Semen">>
+      ["id0.1.1.1.7"] = <text = <"Spermatozoa Progressive/100 spermatozoa in Semen">>
+      ["id0.1.1.1.8"] = <text = <"Spermatozoa Immotile [#/volume] in Semen">>
+      ["id0.1.1.1.9"] = <text = <"Spermatozoa Motile [#/volume] in Semen">>
+      ["id0.1.1.1.10"] = <text = <"Spermatozoa Normal Motile [#/volume] in Semen">>
+      ["id0.1.1.1.11"] = <text = <"Erythrocytes [#/volume] in Semen by Light microscopy">>
+      ["id0.1.1.1.12"] = <text = <"Spermatozoa Motile/100 spermatozoa in Semen">>
+      ["id0.1.1.1.13"] = <text = <"Spermatozoa [#/volume] in Semen">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/4463-6> -- Spermatozoa motility and count panel
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/4463-6> -- Spermatozoa motility and count panel
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/10563-5> -- Cells other than spermatozoa [#/volume] in Semen
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/10579-1> -- Leukocytes [#/volume] in Semen
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/10611-2> -- Spermatozoa Immotile/100 spermatozoa in Semen
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/10620-3> -- Spermatozoa Nonprogressive/100 spermatozoa in Semen
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/10624-5> -- Spermatozoa Rapid/100 spermatozoa in Semen
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/10626-0> -- Spermatozoa Slow/100 spermatozoa in Semen
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/14194-5> -- Spermatozoa Progressive/100 spermatozoa in Semen
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/34657-7> -- Spermatozoa Immotile [#/volume] in Semen
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/42531-4> -- Spermatozoa Motile [#/volume] in Semen
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/42676-7> -- Spermatozoa Normal Motile [#/volume] in Semen
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/43245-0> -- Erythrocytes [#/volume] in Semen by Light microscopy
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/6800-7> -- Spermatozoa Motile/100 spermatozoa in Semen
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/9780-8> -- Spermatozoa [#/volume] in Semen
+      >
+    >
+  >

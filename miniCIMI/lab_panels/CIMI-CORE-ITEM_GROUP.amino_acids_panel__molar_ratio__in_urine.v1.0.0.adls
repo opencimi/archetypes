@@ -1,0 +1,183 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.amino_acids_panel__molar_ratio__in_urine.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Amino acids panel [Molar ratio] - Urine' concept">
+        use = <"Use for Amino acids panel [Molar ratio] - Urine.">
+        keywords = <"Amino","acids","panel","[Molar","ratio]","-","Urine">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/74991-1.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:18">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Amino acids panel [Molar ratio] - Urine
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amino acids panel [Molar ratio] - Urine
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.phenylalanine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Phenylalanine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.lysine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Lysine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.methionine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Methionine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.ornithine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Ornithine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.serine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Serine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.tyrosine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Tyrosine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cystine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Cystine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.threonine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Threonine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.proline_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Proline/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.aspartate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Aspartate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.valine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Valine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.leucine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Leucine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.citrulline_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Citrulline/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.arginine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Arginine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.alanine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Alanine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.histidine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Histidine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.isoleucine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Isoleucine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.glycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Glycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.glutamine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Glutamine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.glutamate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Glutamate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.beta_aminoisobutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Beta aminoisobutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.cystathionine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Cystathionine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.hydroxylysine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Hydroxylysine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.hydroxyproline_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Hydroxyproline/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.phosphoethanolamine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Phosphoethanolamine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.phosphoserine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Phosphoserine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.sarcosine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Sarcosine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.taurine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Taurine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.tryptophan_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Tryptophan/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.arsenic_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Arsenic/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.1_methylhistidine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- 1-Methylhistidine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.3_methylhistidine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- 3-Methylhistidine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.asparagine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Asparagine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.beta_alanine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Beta alanine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.carnosine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Carnosine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.gamma_aminobutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Gamma aminobutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.homocysteine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Homocysteine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.alpha_aminoadipate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Alpha aminoadipate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.39, CIMI-CORE-ITEM_GROUP.alpha_aminobutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Alpha aminobutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.40, CIMI-CORE-ITEM_GROUP.amino_beta_guanidinopropionate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {0..1} -- Amino beta guanidinopropionate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.41, CIMI-CORE-ITEM_GROUP.amino_acid_pattern__interpretation__in_urine.v1] occurrences matches {0..1} -- Amino acid pattern [interpretation] in Urine
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Amino acids panel [Molar ratio] - Urine">>
+      ["at0.0.0.0.1"] = <text = <"Amino acids panel [Molar ratio] - Urine">>
+      ["id0.1.1.1.1"] = <text = <"Phenylalanine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.2"] = <text = <"Lysine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.3"] = <text = <"Methionine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.4"] = <text = <"Ornithine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.5"] = <text = <"Serine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.6"] = <text = <"Tyrosine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.7"] = <text = <"Cystine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.8"] = <text = <"Threonine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.9"] = <text = <"Proline/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.10"] = <text = <"Aspartate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.11"] = <text = <"Valine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.12"] = <text = <"Leucine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.13"] = <text = <"Citrulline/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.14"] = <text = <"Arginine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.15"] = <text = <"Alanine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.16"] = <text = <"Histidine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.17"] = <text = <"Isoleucine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.18"] = <text = <"Glycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.19"] = <text = <"Glutamine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.20"] = <text = <"Glutamate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.21"] = <text = <"Beta aminoisobutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.22"] = <text = <"Cystathionine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.23"] = <text = <"Hydroxylysine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.24"] = <text = <"Hydroxyproline/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.25"] = <text = <"Phosphoethanolamine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.26"] = <text = <"Phosphoserine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.27"] = <text = <"Sarcosine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.28"] = <text = <"Taurine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.29"] = <text = <"Tryptophan/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.30"] = <text = <"Arsenic/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.31"] = <text = <"1-Methylhistidine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.32"] = <text = <"3-Methylhistidine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.33"] = <text = <"Asparagine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.34"] = <text = <"Beta alanine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.35"] = <text = <"Carnosine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.36"] = <text = <"Gamma aminobutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.37"] = <text = <"Homocysteine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.38"] = <text = <"Alpha aminoadipate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.39"] = <text = <"Alpha aminobutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.40"] = <text = <"Amino beta guanidinopropionate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.41"] = <text = <"Amino acid pattern [interpretation] in Urine">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74991-1> -- Amino acids panel [Molar ratio] - Urine
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74991-1> -- Amino acids panel [Molar ratio] - Urine
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/18475-4> -- Phenylalanine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/22679-5> -- Lysine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/22681-1> -- Methionine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/22682-9> -- Ornithine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/22684-5> -- Serine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/22685-2> -- Tyrosine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/22687-8> -- Cystine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/22688-6> -- Threonine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/22690-2> -- Proline/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/22691-0> -- Aspartate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/22692-8> -- Valine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/22693-6> -- Leucine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/22694-4> -- Citrulline/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/22697-7> -- Arginine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/22698-5> -- Alanine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/22703-3> -- Histidine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/22706-6> -- Isoleucine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/22709-0> -- Glycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/22710-8> -- Glutamine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/22711-6> -- Glutamate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/25086-0> -- Beta aminoisobutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/25092-8> -- Cystathionine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/25109-0> -- Hydroxylysine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/25110-8> -- Hydroxyproline/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/25122-3> -- Phosphoethanolamine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/25128-0> -- Phosphoserine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/25133-0> -- Sarcosine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/25138-9> -- Taurine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/25139-7> -- Tryptophan/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/25324-5> -- Arsenic/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/26574-4> -- 1-Methylhistidine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/26575-1> -- 3-Methylhistidine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/26577-7> -- Asparagine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/26578-5> -- Beta alanine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/26580-1> -- Carnosine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/26581-9> -- Gamma aminobutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/26582-7> -- Homocysteine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/26601-5> -- Alpha aminoadipate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/26919-1> -- Alpha aminobutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/27254-2> -- Amino beta guanidinopropionate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.41"] = <configatron.adl.loinc.uri/32296-6> -- Amino acid pattern [interpretation] in Urine
+      >
+    >
+  >

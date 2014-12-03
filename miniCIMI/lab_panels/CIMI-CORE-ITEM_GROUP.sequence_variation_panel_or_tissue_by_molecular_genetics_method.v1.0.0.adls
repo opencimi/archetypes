@@ -1,0 +1,99 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.sequence_variation_panel_or_tissue_by_molecular_genetics_method.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Sequence variation panel - Blood or Tissue by Molecular genetics method' concept">
+        use = <"Use for Sequence variation panel - Blood or Tissue by Molecular genetics method.">
+        keywords = <"Sequence","variation","panel","-","Blood","or","Tissue","by","Molecular","genetics","method">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/48014-5.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:07">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Sequence variation panel - Blood or Tissue by Molecular genetics method
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Sequence variation panel - Blood or Tissue by Molecular genetics method
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.genetic_variant_clin_sig_bld_per_t_imp.v1] occurrences matches {0..1} -- Genetic variant clinical significance [interpretation] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.dna_seq_var_display_name_bld_per_t.v1] occurrences matches {0..1} -- DNA sequence variation display name [Text] in Blood or Tissue by Molecular genetics method Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.dna_region_name__identifier__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- DNA region name [Identifier] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.chromosome__identifier__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Chromosome [Identifier] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.chromosome_region__identifier__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Chromosome region [Identifier] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.genomic_source_class__type__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Genomic source class [Type] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.dna_seq_var_id_bld_per_t.v1] occurrences matches {0..1} -- DNA sequence variation identifier [Identifier] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.dna_sequence_variation_in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- DNA sequence variation in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.amino_acid_change_in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Amino acid change in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.amino_acid_change_type_in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Amino acid change type in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.genetic_variant_allelic_state__type__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Genetic variant allelic state [Type] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.gene__identifier__in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- Gene [Identifier] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.dna_sequence_variation_type_in_blood_or_tissue_by_molecular_genetics_method.v1] occurrences matches {0..1} -- DNA sequence variation type in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Sequence variation panel - Blood or Tissue by Molecular genetics method">>
+      ["at0.0.0.0.1"] = <text = <"Sequence variation panel - Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.1"] = <text = <"Genetic variant clinical significance [interpretation] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.2"] = <text = <"DNA sequence variation display name [Text] in Blood or Tissue by Molecular genetics method Narrative">>
+      ["id0.1.1.1.3"] = <text = <"DNA region name [Identifier] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.4"] = <text = <"Chromosome [Identifier] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.5"] = <text = <"Chromosome region [Identifier] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.6"] = <text = <"Genomic source class [Type] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.7"] = <text = <"DNA sequence variation identifier [Identifier] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.8"] = <text = <"DNA sequence variation in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.9"] = <text = <"Amino acid change in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.10"] = <text = <"Amino acid change type in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.11"] = <text = <"Genetic variant allelic state [Type] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.12"] = <text = <"Gene [Identifier] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.13"] = <text = <"DNA sequence variation type in Blood or Tissue by Molecular genetics method">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48014-5> -- Sequence variation panel - Blood or Tissue by Molecular genetics method
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48014-5> -- Sequence variation panel - Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/47997-2> -- Genetic variant clinical significance [interpretation] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/47998-0> -- DNA sequence variation display name [Text] in Blood or Tissue by Molecular genetics method Narrative
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/47999-8> -- DNA region name [Identifier] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/48000-4> -- Chromosome [Identifier] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/48001-2> -- Chromosome region [Identifier] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/48002-0> -- Genomic source class [Type] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/48003-8> -- DNA sequence variation identifier [Identifier] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/48004-6> -- DNA sequence variation in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/48005-3> -- Amino acid change in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/48006-1> -- Amino acid change type in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/48007-9> -- Genetic variant allelic state [Type] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/48018-6> -- Gene [Identifier] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/48019-4> -- DNA sequence variation type in Blood or Tissue by Molecular genetics method
+      >
+    >
+  >

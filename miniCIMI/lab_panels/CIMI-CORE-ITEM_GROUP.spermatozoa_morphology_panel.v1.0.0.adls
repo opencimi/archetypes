@@ -1,0 +1,156 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.spermatozoa_morphology_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Spermatozoa morphology panel' concept">
+        use = <"Use for Spermatozoa morphology panel.">
+        keywords = <"Spermatozoa","morphology","panel">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/48812-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:07">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Spermatozoa morphology panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Spermatozoa morphology panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.spermatozoa_pyriform_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Pyriform Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.spermatozoa_tapering_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Tapering Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_midpiece_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal Midpiece/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_tail_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal Tail/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.spermatozoa_agglutinated_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Agglutinated/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.spermatozoa_amorphous_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Amorphous Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.spermatozoa_coiled_tail_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Coiled Tail/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.spermatozoa_cytoplasmic_droplet_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Cytoplasmic Droplet/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.spermatozoa_duplicate_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Duplicate Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.spermatozoa_duplicate_tail_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Duplicate Tail/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.spermatozoa_large_oval_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Large Oval Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.spermatozoa_normal_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Normal Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.spermatozoa_normal_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Normal/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.spermatozoa_pin_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Pin Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.spermatozoa_round_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Round Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.spermatozoa_small_oval_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Small Oval Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.spermatozoa_tail_swelling_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Tail Swelling/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.spermatozoa_vacuolated_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Vacuolated Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.spermatozoa_nonviable_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Nonviable/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.spermatozoa_isolated_head_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Isolated Head/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.spermatozoa_angled_midpiece_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Angled Midpiece/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.spermatozoa_isolated_tail_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Isolated Tail/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.spermatozoa_short_tail_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Short Tail/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.spermatozoa_immature_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Immature/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.spermatozoa_acrosome_defects_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Acrosome defects/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_head_shape_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal head shape/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.spermatozoa_abnormal_head_size_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Abnormal head size/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.spermatozoa_double_forms_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Double forms/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.spermatozoa_multiple_defects_per_100_spermatozoa_in_semen.v1] occurrences matches {0..1} -- Spermatozoa Multiple defects/100 spermatozoa in Semen
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.spermatozoa__morphology__in_semen.v1] occurrences matches {0..1} -- Spermatozoa [Morphology] in Semen
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Spermatozoa morphology panel">>
+      ["at0.0.0.0.1"] = <text = <"Spermatozoa morphology panel">>
+      ["id0.1.1.1.1"] = <text = <"Spermatozoa Pyriform Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.2"] = <text = <"Spermatozoa Tapering Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.3"] = <text = <"Spermatozoa Abnormal Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.4"] = <text = <"Spermatozoa Abnormal Midpiece/100 spermatozoa in Semen">>
+      ["id0.1.1.1.5"] = <text = <"Spermatozoa Abnormal Tail/100 spermatozoa in Semen">>
+      ["id0.1.1.1.6"] = <text = <"Spermatozoa Agglutinated/100 spermatozoa in Semen">>
+      ["id0.1.1.1.7"] = <text = <"Spermatozoa Amorphous Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.8"] = <text = <"Spermatozoa Coiled Tail/100 spermatozoa in Semen">>
+      ["id0.1.1.1.9"] = <text = <"Spermatozoa Cytoplasmic Droplet/100 spermatozoa in Semen">>
+      ["id0.1.1.1.10"] = <text = <"Spermatozoa Duplicate Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.11"] = <text = <"Spermatozoa Duplicate Tail/100 spermatozoa in Semen">>
+      ["id0.1.1.1.12"] = <text = <"Spermatozoa Large Oval Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.13"] = <text = <"Spermatozoa Normal Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.14"] = <text = <"Spermatozoa Normal/100 spermatozoa in Semen">>
+      ["id0.1.1.1.15"] = <text = <"Spermatozoa Pin Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.16"] = <text = <"Spermatozoa Round Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.17"] = <text = <"Spermatozoa Small Oval Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.18"] = <text = <"Spermatozoa Tail Swelling/100 spermatozoa in Semen">>
+      ["id0.1.1.1.19"] = <text = <"Spermatozoa Vacuolated Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.20"] = <text = <"Spermatozoa Abnormal/100 spermatozoa in Semen">>
+      ["id0.1.1.1.21"] = <text = <"Spermatozoa Nonviable/100 spermatozoa in Semen">>
+      ["id0.1.1.1.22"] = <text = <"Spermatozoa Isolated Head/100 spermatozoa in Semen">>
+      ["id0.1.1.1.23"] = <text = <"Spermatozoa Angled Midpiece/100 spermatozoa in Semen">>
+      ["id0.1.1.1.24"] = <text = <"Spermatozoa Isolated Tail/100 spermatozoa in Semen">>
+      ["id0.1.1.1.25"] = <text = <"Spermatozoa Short Tail/100 spermatozoa in Semen">>
+      ["id0.1.1.1.26"] = <text = <"Spermatozoa Immature/100 spermatozoa in Semen">>
+      ["id0.1.1.1.27"] = <text = <"Spermatozoa Acrosome defects/100 spermatozoa in Semen">>
+      ["id0.1.1.1.28"] = <text = <"Spermatozoa Abnormal head shape/100 spermatozoa in Semen">>
+      ["id0.1.1.1.29"] = <text = <"Spermatozoa Abnormal head size/100 spermatozoa in Semen">>
+      ["id0.1.1.1.30"] = <text = <"Spermatozoa Double forms/100 spermatozoa in Semen">>
+      ["id0.1.1.1.31"] = <text = <"Spermatozoa Multiple defects/100 spermatozoa in Semen">>
+      ["id0.1.1.1.32"] = <text = <"Spermatozoa [Morphology] in Semen">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48812-2> -- Spermatozoa morphology panel
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48812-2> -- Spermatozoa morphology panel
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/10593-2> -- Spermatozoa Pyriform Head/100 spermatozoa in Semen
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/10594-0> -- Spermatozoa Tapering Head/100 spermatozoa in Semen
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/10602-1> -- Spermatozoa Abnormal Head/100 spermatozoa in Semen
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/10603-9> -- Spermatozoa Abnormal Midpiece/100 spermatozoa in Semen
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/10604-7> -- Spermatozoa Abnormal Tail/100 spermatozoa in Semen
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/10605-4> -- Spermatozoa Agglutinated/100 spermatozoa in Semen
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/10606-2> -- Spermatozoa Amorphous Head/100 spermatozoa in Semen
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/10607-0> -- Spermatozoa Coiled Tail/100 spermatozoa in Semen
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/10608-8> -- Spermatozoa Cytoplasmic Droplet/100 spermatozoa in Semen
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/10609-6> -- Spermatozoa Duplicate Head/100 spermatozoa in Semen
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/10610-4> -- Spermatozoa Duplicate Tail/100 spermatozoa in Semen
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/10612-0> -- Spermatozoa Large Oval Head/100 spermatozoa in Semen
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/10621-1> -- Spermatozoa Normal Head/100 spermatozoa in Semen
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/10622-9> -- Spermatozoa Normal/100 spermatozoa in Semen
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/10623-7> -- Spermatozoa Pin Head/100 spermatozoa in Semen
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/10625-2> -- Spermatozoa Round Head/100 spermatozoa in Semen
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/10627-8> -- Spermatozoa Small Oval Head/100 spermatozoa in Semen
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/10628-6> -- Spermatozoa Tail Swelling/100 spermatozoa in Semen
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/10629-4> -- Spermatozoa Vacuolated Head/100 spermatozoa in Semen
+        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/15376-7> -- Spermatozoa Abnormal/100 spermatozoa in Semen
+        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/38498-2> -- Spermatozoa Nonviable/100 spermatozoa in Semen
+        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/48372-7> -- Spermatozoa Isolated Head/100 spermatozoa in Semen
+        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/48373-5> -- Spermatozoa Angled Midpiece/100 spermatozoa in Semen
+        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/48374-3> -- Spermatozoa Isolated Tail/100 spermatozoa in Semen
+        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/48375-0> -- Spermatozoa Short Tail/100 spermatozoa in Semen
+        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/48702-5> -- Spermatozoa Immature/100 spermatozoa in Semen
+        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/66494-6> -- Spermatozoa Acrosome defects/100 spermatozoa in Semen
+        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/66495-3> -- Spermatozoa Abnormal head shape/100 spermatozoa in Semen
+        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/66496-1> -- Spermatozoa Abnormal head size/100 spermatozoa in Semen
+        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/66497-9> -- Spermatozoa Double forms/100 spermatozoa in Semen
+        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/66498-7> -- Spermatozoa Multiple defects/100 spermatozoa in Semen
+        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/9704-8> -- Spermatozoa [Morphology] in Semen
+      >
+    >
+  >

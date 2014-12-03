@@ -1,0 +1,90 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.cell_count_panel_in_vitreous_fluid_by_manual_count.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Cell count panel - Vitreous fluid by Manual count' concept">
+        use = <"Use for Cell count panel - Vitreous fluid by Manual count.">
+        keywords = <"Cell","count","panel","-","Vitreous","fluid","by","Manual","count">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/72394-0.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:13">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Cell count panel - Vitreous fluid by Manual count
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cell count panel - Vitreous fluid by Manual count
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Basophils [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Eosinophils [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Lymphocytes [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.macrophages_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Macrophages [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.mesothelial_cells_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Mesothelial cells [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Monocytes [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Neutrophils [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_vitreous_fluid_by_manual_count.v1] occurrences matches {0..1} -- Leukocytes other [#/volume] in Vitreous fluid by Manual count
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_vitreous_fluid_by_automated_count.v1] occurrences matches {0..1} -- Leukocytes [#/volume] in Vitreous fluid by Automated count
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.erythrocytes_count_per_volume_in_vitreous_fluid_by_automated_count.v1] occurrences matches {0..1} -- Erythrocytes [#/volume] in Vitreous fluid by Automated count
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Cell count panel - Vitreous fluid by Manual count">>
+      ["at0.0.0.0.1"] = <text = <"Cell count panel - Vitreous fluid by Manual count">>
+      ["id0.1.1.1.1"] = <text = <"Basophils [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.2"] = <text = <"Eosinophils [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.3"] = <text = <"Lymphocytes [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.4"] = <text = <"Macrophages [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.5"] = <text = <"Mesothelial cells [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.6"] = <text = <"Monocytes [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.7"] = <text = <"Neutrophils [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.8"] = <text = <"Leukocytes other [#/volume] in Vitreous fluid by Manual count">>
+      ["id0.1.1.1.9"] = <text = <"Leukocytes [#/volume] in Vitreous fluid by Automated count">>
+      ["id0.1.1.1.10"] = <text = <"Erythrocytes [#/volume] in Vitreous fluid by Automated count">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72394-0> -- Cell count panel - Vitreous fluid by Manual count
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72394-0> -- Cell count panel - Vitreous fluid by Manual count
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/68397-9> -- Basophils [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/68402-7> -- Eosinophils [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/68407-6> -- Lymphocytes [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/68413-4> -- Macrophages [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/68419-1> -- Mesothelial cells [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/68424-1> -- Monocytes [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/68427-4> -- Neutrophils [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/68433-2> -- Leukocytes other [#/volume] in Vitreous fluid by Manual count
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/68434-0> -- Leukocytes [#/volume] in Vitreous fluid by Automated count
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/68435-7> -- Erythrocytes [#/volume] in Vitreous fluid by Automated count
+      >
+    >
+  >

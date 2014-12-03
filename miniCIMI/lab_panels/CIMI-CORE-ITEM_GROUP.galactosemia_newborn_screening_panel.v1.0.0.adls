@@ -1,0 +1,78 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.galactosemia_newborn_screening_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Galactosemia newborn screening panel' concept">
+        use = <"Use for Galactosemia newborn screening panel.">
+        keywords = <"Galactosemia","newborn","screening","panel">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/54079-9.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:11">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Galactosemia newborn screening panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Galactosemia newborn screening panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.galactose_1_phosphate_uridyl_transferase__presence__in_dried_blood_spot.v1] occurrences matches {0..1} -- Galactose 1 phosphate uridyl transferase [Presence] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.galactose_1_phosphate__mass_per_volume__in_dried_blood_spot.v1] occurrences matches {0..1} -- Galactose 1 phosphate [Mass/volume] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.gal1put_dbs_ccnc.v1] occurrences matches {0..1} -- Galactose 1 phosphate uridyl transferase [Enzymatic activity/volume] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.galactosemias_newborn_screen_interpretation.v1] occurrences matches {1} -- Galactosemias newborn screen interpretation
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.galactose__mass_per_volume__in_dried_blood_spot.v1] occurrences matches {0..1} -- Galactose [Mass/volume] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.galactosemias_newborn_screening_comment_discussion.v1] occurrences matches {0..1} -- Galactosemias newborn screening comment-discussion
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Galactosemia newborn screening panel">>
+      ["at0.0.0.0.1"] = <text = <"Galactosemia newborn screening panel">>
+      ["id0.1.1.1.1"] = <text = <"Galactose 1 phosphate uridyl transferase [Presence] in Dried blood spot">>
+      ["id0.1.1.1.2"] = <text = <"Galactose 1 phosphate [Mass/volume] in Dried blood spot">>
+      ["id0.1.1.1.3"] = <text = <"Galactose 1 phosphate uridyl transferase [Enzymatic activity/volume] in Dried blood spot">>
+      ["id0.1.1.1.4"] = <text = <"Galactosemias newborn screen interpretation">>
+      ["id0.1.1.1.5"] = <text = <"Galactose [Mass/volume] in Dried blood spot">>
+      ["id0.1.1.1.6"] = <text = <"Galactosemias newborn screening comment-discussion">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54079-9> -- Galactosemia newborn screening panel
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54079-9> -- Galactosemia newborn screening panel
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33288-2> -- Galactose 1 phosphate uridyl transferase [Presence] in Dried blood spot
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/40842-7> -- Galactose 1 phosphate [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/42906-8> -- Galactose 1 phosphate uridyl transferase [Enzymatic activity/volume] in Dried blood spot
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/46737-3> -- Galactosemias newborn screen interpretation
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/54084-9> -- Galactose [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/57704-9> -- Galactosemias newborn screening comment-discussion
+      >
+    >
+  >

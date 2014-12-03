@@ -1,0 +1,117 @@
+archetype (adl_version=1.5.1;rm_release=2.0.2)
+    CIMI-CORE-ITEM_GROUP.maternal_screen_clinical_predictors_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Maternal screen clinical predictors panel' concept">
+        use = <"Use for Maternal screen clinical predictors panel.">
+        keywords = <"Maternal","screen","clinical","predictors","panel">
+        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/49087-0.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2014-12-03T22:20:07">
+    >
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Maternal screen clinical predictors panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Maternal screen clinical predictors panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.delivery_date_estimated.v1] occurrences matches {0..1} -- Delivery date Estimated
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.number_of_fetuses_by_us.v1] occurrences matches {0..1} -- Number of fetuses by US
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.number_of___parity.v1] occurrences matches {0..1} -- [#] Parity
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.number_of___pregnancies.v1] occurrences matches {0..1} -- [#] Pregnancies
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.gestational_age.v1] occurrences matches {0..1} -- Gestational age
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.birth_date.v1] occurrences matches {0..1} -- Birth date
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.gestational_age_method.v1] occurrences matches {0..1} -- Gestational age method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.mother_s_race.v1] occurrences matches {0..1} -- Mother's race
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.body_weight.v1] occurrences matches {0..1} -- Body weight
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.age.v1] occurrences matches {1} -- Age
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.race.v1] occurrences matches {0..1} -- Race
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.diabetes_status__identifier.v1] occurrences matches {0..1} -- Diabetes status [Identifier]
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.ultrasound_date.v1] occurrences matches {0..1} -- Ultrasound date
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.age_at_delivery.v1] occurrences matches {0..1} -- Age at delivery
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.insulin_dependent_diabetes_mellitus__presence.v1] occurrences matches {0..1} -- Insulin dependent diabetes mellitus [Presence]
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.history_of_neural_tube_defect_narrative.v1] occurrences matches {0..1} -- History of neural tube defect Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.egg_donor_age.v1] occurrences matches {0..1} -- Egg donor age
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.previous_fetus_defect.v1] occurrences matches {0..1} -- Previous fetus defect
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.last_menstrual_period_start_date.v1] occurrences matches {0..1} -- Last menstrual period start date
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Maternal screen clinical predictors panel">>
+      ["at0.0.0.0.1"] = <text = <"Maternal screen clinical predictors panel">>
+      ["id0.1.1.1.1"] = <text = <"Delivery date Estimated">>
+      ["id0.1.1.1.2"] = <text = <"Number of fetuses by US">>
+      ["id0.1.1.1.3"] = <text = <"[#] Parity">>
+      ["id0.1.1.1.4"] = <text = <"[#] Pregnancies">>
+      ["id0.1.1.1.5"] = <text = <"Gestational age">>
+      ["id0.1.1.1.6"] = <text = <"Birth date">>
+      ["id0.1.1.1.7"] = <text = <"Gestational age method">>
+      ["id0.1.1.1.8"] = <text = <"Mother's race">>
+      ["id0.1.1.1.9"] = <text = <"Body weight">>
+      ["id0.1.1.1.10"] = <text = <"Age">>
+      ["id0.1.1.1.11"] = <text = <"Race">>
+      ["id0.1.1.1.12"] = <text = <"Diabetes status [Identifier]">>
+      ["id0.1.1.1.13"] = <text = <"Ultrasound date">>
+      ["id0.1.1.1.14"] = <text = <"Age at delivery">>
+      ["id0.1.1.1.15"] = <text = <"Insulin dependent diabetes mellitus [Presence]">>
+      ["id0.1.1.1.16"] = <text = <"History of neural tube defect Narrative">>
+      ["id0.1.1.1.17"] = <text = <"Egg donor age">>
+      ["id0.1.1.1.18"] = <text = <"Previous fetus defect">>
+      ["id0.1.1.1.19"] = <text = <"Last menstrual period start date">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49087-0> -- Maternal screen clinical predictors panel
+        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49087-0> -- Maternal screen clinical predictors panel
+        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11778-8> -- Delivery date Estimated
+        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11878-6> -- Number of fetuses by US
+        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/11977-6> -- [#] Parity
+        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/11996-6> -- [#] Pregnancies
+        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/18185-9> -- Gestational age
+        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/21112-8> -- Birth date
+        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/21299-3> -- Gestational age method
+        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/21484-1> -- Mother's race
+        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/29463-7> -- Body weight
+        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/30525-0> -- Age
+        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/32624-9> -- Race
+        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/33248-6> -- Diabetes status [Identifier]
+        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/34970-4> -- Ultrasound date
+        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/43993-5> -- Age at delivery
+        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/44877-9> -- Insulin dependent diabetes mellitus [Presence]
+        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/49053-2> -- History of neural tube defect Narrative
+        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/68327-6> -- Egg donor age
+        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/68328-4> -- Previous fetus defect
+        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/8665-2> -- Last menstrual period start date
+      >
+    >
+  >
