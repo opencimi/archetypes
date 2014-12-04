@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2)
-  CIMI-CORE-ITEM_GROUP.laboratory_test_nil.v1.0.0
+  CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1.0.0
 
 specialize
   CIMI-CORE-ITEM_GROUP.laboratory_test.v1
@@ -17,9 +17,9 @@ description
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'laboratory test nil' concept">
-      use = <"Use for laboratory test nil archetypes.">
-      keywords = <"laboratory","test","nil">
+      purpose = <"Archetype for CIMI 'laboratory test quantitative' concept">
+      use = <"Use for laboratory test quantitative archetypes.">
+      keywords = <"laboratory","test","qn","quantitative">
       copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
@@ -35,7 +35,7 @@ description
   >
 
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory test nil
+  ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory test quantitative
     item matches {
       ELEMENT[id5.0.8.0.1] occurrences matches {1} matches { -- Result value
         value matches {
@@ -49,9 +49,9 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = < text = <"Laboratory test nil"> >
+      ["id1.1.1.1.1"] = < text = <"Laboratory test quantitative"> >
       ["id5.0.8.0.1"] = < text = <"Result value"> >
-      ["id0.0.0.0.1"] = < text = <"Nil"> >
+      ["id0.0.0.0.1"] = < text = <"Qn"> >
     >
   >
   term_bindings = <
