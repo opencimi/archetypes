@@ -17,7 +17,6 @@ description
       purpose = <"Archetype for CIMI 'clinical document' concept">
       use = <"Use for clinical document.">
       keywords = <"clinical","document">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   other_details = <["model_level"] = <"reference">>

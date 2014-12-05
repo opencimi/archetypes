@@ -20,7 +20,6 @@ description
       purpose = <"Archetype for CIMI 'laboratory test' concept">
       use = <"Use for laboratory test archetypes.">
       keywords = <"laboratory","test">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">

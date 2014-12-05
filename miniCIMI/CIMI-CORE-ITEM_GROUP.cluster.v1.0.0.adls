@@ -17,7 +17,6 @@ description
       purpose = <"Top-level reference archetype for CIMI 'cluster' concept">
       use = <"Use as a specialisation precursor for other high-level reference archetypes.">
       keywords = <"cluster">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   other_details = <["model_level"] = <"reference">>

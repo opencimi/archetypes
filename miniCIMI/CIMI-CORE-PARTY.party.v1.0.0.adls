@@ -17,7 +17,6 @@ description
       purpose = <"Archetype for CIMI 'party' concept">
       use = <"Use for party.">
       keywords = <"party">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">

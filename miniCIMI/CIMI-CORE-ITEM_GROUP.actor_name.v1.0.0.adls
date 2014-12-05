@@ -20,7 +20,6 @@ description
       purpose = <"Archetype for CIMI 'actor name' concept">
       use = <"Use for actor name.">
       keywords = <"actor","name">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">

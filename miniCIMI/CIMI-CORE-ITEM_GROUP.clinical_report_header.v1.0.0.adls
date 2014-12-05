@@ -20,7 +20,6 @@ description
       purpose = <"Archetype for CIMI 'clinical report header' concept">
       use = <"Use for clinical report header.">
       keywords = <"clinical","report","header">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">

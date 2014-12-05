@@ -20,7 +20,6 @@ description
       purpose = <"Top-level reference archetype for CIMI 'observation action set' concept">
       use = <"Use for observation action set.">
       keywords = <"observation","action","set">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">

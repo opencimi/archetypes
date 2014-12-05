@@ -20,7 +20,6 @@ description
       purpose = <"Archetype for CIMI 'observation set' concept">
       use = <"Use as a container for observation archetypes.">
       keywords = <"observation","set">
-      copyright = <"© 2014 CIMI - Clinical Information Modelling Initiative">
     >
   >
   lifecycle_state = <"unmanaged">
