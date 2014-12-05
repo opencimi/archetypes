@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma' concept">
         use = <"Use for Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma.">
         keywords = <"Metanephrine.free","Normetanephrine.free","panel","[Moles/volume]","-","Serum","or","Plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57772-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57772-6> -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57772-6> -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/40851-8> -- Normetanephrine Free [Moles/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/49700-8> -- Metanephrine Free [Moles/volume] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57772-6> -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57772-6> -- Metanephrine.free and Normetanephrine.free panel [Moles/volume] - Serum or Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/40851-8> -- Normetanephrine Free [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/49700-8> -- Metanephrine Free [Moles/volume] in Serum or Plasma
       >
     >
   >

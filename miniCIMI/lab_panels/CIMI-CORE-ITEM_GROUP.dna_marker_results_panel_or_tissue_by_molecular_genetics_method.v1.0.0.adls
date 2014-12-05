@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'DNA marker results panel - Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for DNA marker results panel - Blood or Tissue by Molecular genetics method.">
         keywords = <"DNA","marker","results","panel","-","Blood","or","Tissue","by","Molecular","genetics","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/51960-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- DNA marker results panel - Blood or Tissue by Molecular genetics method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- DNA marker results panel - Blood or Tissue by Molecular genetics method
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/51960-3> -- DNA marker results panel - Blood or Tissue by Molecular genetics method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/51960-3> -- DNA marker results panel - Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/47998-0> -- DNA sequence variation display name [Text] in Blood or Tissue by Molecular genetics method Narrative
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/48002-0> -- Genomic source class [Type] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/51961-1> -- Drug efficacy sequence variation interpretation [interpretation] in Blood or Tissue Qualitative by Molecular genetics method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/53034-5> -- Allelic state in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/53037-8> -- Genetic disease sequence variation interpretation [interpretation] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/53040-2> -- Drug metabolism sequence variation interpretation [interpretation] in Blood or Tissue by Molecular genetics method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/53044-4> -- DNA marker identified panel - Blood or Tissue by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/51960-3> -- DNA marker results panel - Blood or Tissue by Molecular genetics method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/51960-3> -- DNA marker results panel - Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/47998-0> -- DNA sequence variation display name [Text] in Blood or Tissue by Molecular genetics method Narrative
+        ["id0.1.1.1.2"] = <http://loinc.org/id/48002-0> -- Genomic source class [Type] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/51961-1> -- Drug efficacy sequence variation interpretation [interpretation] in Blood or Tissue Qualitative by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/53034-5> -- Allelic state in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/53037-8> -- Genetic disease sequence variation interpretation [interpretation] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/53040-2> -- Drug metabolism sequence variation interpretation [interpretation] in Blood or Tissue by Molecular genetics method
+        ["id0.1.2.1.1"] = <http://loinc.org/id/53044-4> -- DNA marker identified panel - Blood or Tissue by Molecular genetics method
       >
     >
   >

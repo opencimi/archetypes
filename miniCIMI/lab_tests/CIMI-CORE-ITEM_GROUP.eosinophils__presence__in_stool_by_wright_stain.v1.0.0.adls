@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Eosinophils [Presence] in Stool by Wright stain' concept">
         use = <"Use for Eosinophils [Presence] in Stool by Wright stain.">
         keywords = <"Eosinophils","[Presence]","Stool","by","Wright","stain">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48049-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Eosinophils [Presence] in Stool by Wright stain
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Eosinophils [Presence] in Stool by Wright stain
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Eosinophils [Presence] in Stool by Wright stain
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Eosinophils [Presence] in Stool by Wright stain
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Eosinophils [Presence] in Stool by Wright stain">>
-      ["at0.0.0.0.1"] = <text = <"Eosinophils [Presence] in Stool by Wright stain">>
+      ["id1.1.1.1.1.1"] = <text = <"Eosinophils [Presence] in Stool by Wright stain">>
+      ["at0.0.0.0.0.1"] = <text = <"Eosinophils [Presence] in Stool by Wright stain">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48049-1>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48049-1>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/48049-1>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/48049-1>
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Severe combined immunodeficiency (SCID) newborn screening panel' concept">
         use = <"Use for Severe combined immunodeficiency (SCID) newborn screening panel.">
         keywords = <"Severe","combined","immunodeficiency","(SCID)","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62333-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Severe combined immunodeficiency (SCID) newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Severe combined immunodeficiency (SCID) newborn screening panel
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62333-0> -- Severe combined immunodeficiency (SCID) newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62333-0> -- Severe combined immunodeficiency (SCID) newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/62320-7> -- T-cell receptor excision circle [#/volume] in Dried blood spot by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/62321-5> -- Severe combined immunodeficiency newborn screen interpretation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/62322-3> -- Severe combined immunodeficiency newborn screening comment-discussion
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62333-0> -- Severe combined immunodeficiency (SCID) newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62333-0> -- Severe combined immunodeficiency (SCID) newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/62320-7> -- T-cell receptor excision circle [#/volume] in Dried blood spot by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/62321-5> -- Severe combined immunodeficiency newborn screen interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/62322-3> -- Severe combined immunodeficiency newborn screening comment-discussion
       >
     >
   >

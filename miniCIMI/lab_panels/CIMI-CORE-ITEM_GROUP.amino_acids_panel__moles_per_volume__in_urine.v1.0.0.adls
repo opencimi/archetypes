@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amino acids panel [Moles/volume] - Urine' concept">
         use = <"Use for Amino acids panel [Moles/volume] - Urine.">
         keywords = <"Amino","acids","panel","[Moles/volume]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74514-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Amino acids panel [Moles/volume] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amino acids panel [Moles/volume] - Urine
@@ -127,45 +127,45 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74514-1> -- Amino acids panel [Moles/volume] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74514-1> -- Amino acids panel [Moles/volume] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/25502-6> -- Phosphoethanolamine [Moles/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/26680-9> -- Aspartate [Moles/volume] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/26724-5> -- Sarcosine [Moles/volume] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/26726-0> -- Proline [Moles/volume] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/26738-5> -- Phosphoserine [Moles/volume] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/26740-1> -- Hydroxyproline [Moles/volume] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/26741-9> -- Serine [Moles/volume] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/26961-3> -- Valine [Moles/volume] in Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/26962-1> -- Cystine [Moles/volume] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/26963-9> -- Methionine [Moles/volume] in Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/26964-7> -- Cystathionine [Moles/volume] in Urine
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/26965-4> -- Isoleucine [Moles/volume] in Urine
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/26966-2> -- Tyrosine [Moles/volume] in Urine
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/26967-0> -- Phenylalanine [Moles/volume] in Urine
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/26968-8> -- Beta alanine [Moles/volume] in Urine
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/26973-8> -- Beta aminoisobutyrate [Moles/volume] in Urine
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/26999-3> -- Homocystine [Moles/volume] in Urine
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/27043-9> -- Glutamine [Moles/volume] in Urine
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/27044-7> -- 1-Methylhistidine [Moles/volume] in Urine
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/27047-0> -- Anserine [Moles/volume] in Urine
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/27056-1> -- Citrulline [Moles/volume] in Urine
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/27291-4> -- Hydroxylysine [Moles/volume] in Urine
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/27292-2> -- Ornithine [Moles/volume] in Urine
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/27294-8> -- Carnosine [Moles/volume] in Urine
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/27296-3> -- Arginine [Moles/volume] in Urine
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/27304-5> -- Lysine [Moles/volume] in Urine
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/27317-7> -- Asparagine [Moles/volume] in Urine
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/27322-7> -- Threonine [Moles/volume] in Urine
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/27323-5> -- Leucine [Moles/volume] in Urine
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/27325-0> -- Glycine [Moles/volume] in Urine
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/27326-8> -- Alanine [Moles/volume] in Urine
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/27341-7> -- Alpha aminobutyrate [Moles/volume] in Urine
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/27904-2> -- Histidine [Moles/volume] in Urine
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/27911-7> -- Gamma aminobutyrate [Moles/volume] in Urine
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/30348-7> -- Glutamate [Moles/volume] in Urine
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/30563-1> -- Taurine [Moles/volume] in Urine
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/34384-8> -- Tryptophan [Moles/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74514-1> -- Amino acids panel [Moles/volume] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74514-1> -- Amino acids panel [Moles/volume] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/25502-6> -- Phosphoethanolamine [Moles/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/26680-9> -- Aspartate [Moles/volume] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/26724-5> -- Sarcosine [Moles/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/26726-0> -- Proline [Moles/volume] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/26738-5> -- Phosphoserine [Moles/volume] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/26740-1> -- Hydroxyproline [Moles/volume] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/26741-9> -- Serine [Moles/volume] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/26961-3> -- Valine [Moles/volume] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/26962-1> -- Cystine [Moles/volume] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/26963-9> -- Methionine [Moles/volume] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/26964-7> -- Cystathionine [Moles/volume] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/26965-4> -- Isoleucine [Moles/volume] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/26966-2> -- Tyrosine [Moles/volume] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/26967-0> -- Phenylalanine [Moles/volume] in Urine
+        ["id0.1.1.1.15"] = <http://loinc.org/id/26968-8> -- Beta alanine [Moles/volume] in Urine
+        ["id0.1.1.1.16"] = <http://loinc.org/id/26973-8> -- Beta aminoisobutyrate [Moles/volume] in Urine
+        ["id0.1.1.1.17"] = <http://loinc.org/id/26999-3> -- Homocystine [Moles/volume] in Urine
+        ["id0.1.1.1.18"] = <http://loinc.org/id/27043-9> -- Glutamine [Moles/volume] in Urine
+        ["id0.1.1.1.19"] = <http://loinc.org/id/27044-7> -- 1-Methylhistidine [Moles/volume] in Urine
+        ["id0.1.1.1.20"] = <http://loinc.org/id/27047-0> -- Anserine [Moles/volume] in Urine
+        ["id0.1.1.1.21"] = <http://loinc.org/id/27056-1> -- Citrulline [Moles/volume] in Urine
+        ["id0.1.1.1.22"] = <http://loinc.org/id/27291-4> -- Hydroxylysine [Moles/volume] in Urine
+        ["id0.1.1.1.23"] = <http://loinc.org/id/27292-2> -- Ornithine [Moles/volume] in Urine
+        ["id0.1.1.1.24"] = <http://loinc.org/id/27294-8> -- Carnosine [Moles/volume] in Urine
+        ["id0.1.1.1.25"] = <http://loinc.org/id/27296-3> -- Arginine [Moles/volume] in Urine
+        ["id0.1.1.1.26"] = <http://loinc.org/id/27304-5> -- Lysine [Moles/volume] in Urine
+        ["id0.1.1.1.27"] = <http://loinc.org/id/27317-7> -- Asparagine [Moles/volume] in Urine
+        ["id0.1.1.1.28"] = <http://loinc.org/id/27322-7> -- Threonine [Moles/volume] in Urine
+        ["id0.1.1.1.29"] = <http://loinc.org/id/27323-5> -- Leucine [Moles/volume] in Urine
+        ["id0.1.1.1.30"] = <http://loinc.org/id/27325-0> -- Glycine [Moles/volume] in Urine
+        ["id0.1.1.1.31"] = <http://loinc.org/id/27326-8> -- Alanine [Moles/volume] in Urine
+        ["id0.1.1.1.32"] = <http://loinc.org/id/27341-7> -- Alpha aminobutyrate [Moles/volume] in Urine
+        ["id0.1.1.1.33"] = <http://loinc.org/id/27904-2> -- Histidine [Moles/volume] in Urine
+        ["id0.1.1.1.34"] = <http://loinc.org/id/27911-7> -- Gamma aminobutyrate [Moles/volume] in Urine
+        ["id0.1.1.1.35"] = <http://loinc.org/id/30348-7> -- Glutamate [Moles/volume] in Urine
+        ["id0.1.1.1.36"] = <http://loinc.org/id/30563-1> -- Taurine [Moles/volume] in Urine
+        ["id0.1.1.1.37"] = <http://loinc.org/id/34384-8> -- Tryptophan [Moles/volume] in Urine
       >
     >
   >

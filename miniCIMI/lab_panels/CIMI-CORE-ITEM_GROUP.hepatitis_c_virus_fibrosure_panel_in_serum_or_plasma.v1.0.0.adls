@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis C virus FibroSURE panel - Serum or Plasma' concept">
         use = <"Use for Hepatitis C virus FibroSURE panel - Serum or Plasma.">
         keywords = <"Hepatitis","C","virus","FibroSURE","panel","-","Serum","or","Plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48796-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis C virus FibroSURE panel - Serum or Plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis C virus FibroSURE panel - Serum or Plasma
@@ -73,18 +73,18 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48796-7> -- Hepatitis C virus FibroSURE panel - Serum or Plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48796-7> -- Hepatitis C virus FibroSURE panel - Serum or Plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/1743-4> -- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/1835-8> -- Alpha-2-Macroglobulin [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/1869-7> -- Apolipoprotein A-I [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/1975-2> -- Bilirubin.total [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/2324-2> -- Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/4542-7> -- Haptoglobin [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/48792-6> -- Necroinflammatory activity score
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/48793-4> -- Necroinflammatory activity grade
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/48794-2> -- Fibrosis stage
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/48795-9> -- Fibrosis score
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48796-7> -- Hepatitis C virus FibroSURE panel - Serum or Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48796-7> -- Hepatitis C virus FibroSURE panel - Serum or Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/1743-4> -- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P
+        ["id0.1.1.1.2"] = <http://loinc.org/id/1835-8> -- Alpha-2-Macroglobulin [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/1869-7> -- Apolipoprotein A-I [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/1975-2> -- Bilirubin.total [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/2324-2> -- Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.6"] = <http://loinc.org/id/4542-7> -- Haptoglobin [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.7"] = <http://loinc.org/id/48792-6> -- Necroinflammatory activity score
+        ["id0.1.1.1.8"] = <http://loinc.org/id/48793-4> -- Necroinflammatory activity grade
+        ["id0.1.1.1.9"] = <http://loinc.org/id/48794-2> -- Fibrosis stage
+        ["id0.1.1.1.10"] = <http://loinc.org/id/48795-9> -- Fibrosis score
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen' concept">
         use = <"Use for Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen.">
         keywords = <"Middle","east","respiratory","syndrome","coronavirus","(MERS-CoV)","RNA","panel","-","Unspecified","specimen">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74408-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74408-6> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74408-6> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/74472-2> -- Middle east respiratory syndrome coronavirus (MERS-CoV) N3 gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/74473-0> -- Middle east respiratory syndrome coronavirus (MERS-CoV) N2 gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/74474-8> -- Middle east respiratory syndrome coronavirus (MERS-CoV) upE gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/74475-5> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA [interpretation] in Unspecified specimen Qualitative by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74408-6> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74408-6> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA panel - Unspecified specimen
+        ["id0.1.1.1.1"] = <http://loinc.org/id/74472-2> -- Middle east respiratory syndrome coronavirus (MERS-CoV) N3 gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/74473-0> -- Middle east respiratory syndrome coronavirus (MERS-CoV) N2 gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/74474-8> -- Middle east respiratory syndrome coronavirus (MERS-CoV) upE gene RNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/74475-5> -- Middle east respiratory syndrome coronavirus (MERS-CoV) RNA [interpretation] in Unspecified specimen Qualitative by Probe and target amplification method
       >
     >
   >

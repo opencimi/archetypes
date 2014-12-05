@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Gaucher disease newborn screening panel' concept">
         use = <"Use for Gaucher disease newborn screening panel.">
         keywords = <"Gaucher","disease","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62311-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Gaucher disease newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Gaucher disease newborn screening panel
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62311-6> -- Gaucher disease newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62311-6> -- Gaucher disease newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/55917-9> -- Acid beta glucosidase [Enzymatic activity/volume] in Dried blood spot
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/62312-4> -- Gaucher disease newborn screen interpretation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/62313-2> -- Gaucher disease newborn screening comment-discussion
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62311-6> -- Gaucher disease newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62311-6> -- Gaucher disease newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/55917-9> -- Acid beta glucosidase [Enzymatic activity/volume] in Dried blood spot
+        ["id0.1.1.1.2"] = <http://loinc.org/id/62312-4> -- Gaucher disease newborn screen interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/62313-2> -- Gaucher disease newborn screening comment-discussion
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hemoglobinopathies newborn screening panel' concept">
         use = <"Use for Hemoglobinopathies newborn screening panel.">
         keywords = <"Hemoglobinopathies","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54081-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hemoglobinopathies newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hemoglobinopathies newborn screening panel
@@ -83,23 +83,23 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54081-5> -- Hemoglobinopathies newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54081-5> -- Hemoglobinopathies newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/46740-7> -- Hemoglobin disorders newborn screen interpretation
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/54068-2> -- Hemoglobin O - Arab/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/54069-0> -- Hemoglobin Barts/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/54070-8> -- Hemoglobin D/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/54071-6> -- Hemoglobin E/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/54072-4> -- Hemoglobin A/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/54073-2> -- Hemoglobin C/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/54074-0> -- Hemoglobin F/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/54103-7> -- Hemoglobin pattern in Dried blood spot by Electrophoresis
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/54104-5> -- Hemoglobin pattern in Dried blood spot by HPLC
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/54105-2> -- Hemoglobin pattern in Dried blood spot by Isoelectric focusing
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/56476-5> -- Hemoglobin S/Hemoglobin.total in Dried blood spot
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/57703-1> -- Hemoglobin disorders newborn screening comment-discussion
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/71592-0> -- Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/64116-7> -- Hemoglobin observations newborn screening panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54081-5> -- Hemoglobinopathies newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54081-5> -- Hemoglobinopathies newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/46740-7> -- Hemoglobin disorders newborn screen interpretation
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54068-2> -- Hemoglobin O - Arab/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.3"] = <http://loinc.org/id/54069-0> -- Hemoglobin Barts/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/54070-8> -- Hemoglobin D/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/54071-6> -- Hemoglobin E/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/54072-4> -- Hemoglobin A/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/54073-2> -- Hemoglobin C/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/54074-0> -- Hemoglobin F/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.9"] = <http://loinc.org/id/54103-7> -- Hemoglobin pattern in Dried blood spot by Electrophoresis
+        ["id0.1.1.1.10"] = <http://loinc.org/id/54104-5> -- Hemoglobin pattern in Dried blood spot by HPLC
+        ["id0.1.1.1.11"] = <http://loinc.org/id/54105-2> -- Hemoglobin pattern in Dried blood spot by Isoelectric focusing
+        ["id0.1.1.1.12"] = <http://loinc.org/id/56476-5> -- Hemoglobin S/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.13"] = <http://loinc.org/id/57703-1> -- Hemoglobin disorders newborn screening comment-discussion
+        ["id0.1.1.1.14"] = <http://loinc.org/id/71592-0> -- Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot
+        ["id0.1.2.1.1"] = <http://loinc.org/id/64116-7> -- Hemoglobin observations newborn screening panel
       >
     >
   >

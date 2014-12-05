@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amylase isoenzyme 7 panel - Serum' concept">
         use = <"Use for Amylase isoenzyme 7 panel - Serum.">
         keywords = <"Amylase","isoenzyme","7","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24334-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Amylase isoenzyme 7 panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amylase isoenzyme 7 panel - Serum
@@ -81,22 +81,22 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24334-5> -- Amylase isoenzyme 7 panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24334-5> -- Amylase isoenzyme 7 panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14589-6> -- Amylase isoenzymes [interpretation] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/15020-1> -- Amylase.P1/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/15021-9> -- Amylase.P2/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/15022-7> -- Amylase.P3/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/15023-5> -- Amylase S1/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/15024-3> -- Amylase S2/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/15025-0> -- Amylase S3/Amylase.total in Serum or Plasma
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/1798-8> -- Amylase [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/1802-8> -- Amylase.P1 [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/1803-6> -- Amylase.P2 [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/1804-4> -- Amylase.P3 [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/1806-9> -- Amylase S1 [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/1807-7> -- Amylase S2 [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/1808-5> -- Amylase S3 [Enzymatic activity/volume] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24334-5> -- Amylase isoenzyme 7 panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24334-5> -- Amylase isoenzyme 7 panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14589-6> -- Amylase isoenzymes [interpretation] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/15020-1> -- Amylase.P1/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/15021-9> -- Amylase.P2/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/15022-7> -- Amylase.P3/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/15023-5> -- Amylase S1/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.6"] = <http://loinc.org/id/15024-3> -- Amylase S2/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.7"] = <http://loinc.org/id/15025-0> -- Amylase S3/Amylase.total in Serum or Plasma
+        ["id0.1.1.1.8"] = <http://loinc.org/id/1798-8> -- Amylase [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.9"] = <http://loinc.org/id/1802-8> -- Amylase.P1 [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.10"] = <http://loinc.org/id/1803-6> -- Amylase.P2 [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.11"] = <http://loinc.org/id/1804-4> -- Amylase.P3 [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.12"] = <http://loinc.org/id/1806-9> -- Amylase S1 [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.13"] = <http://loinc.org/id/1807-7> -- Amylase S2 [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.14"] = <http://loinc.org/id/1808-5> -- Amylase S3 [Enzymatic activity/volume] in Serum or Plasma
       >
     >
   >

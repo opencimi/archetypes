@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cell count and Differential panel - Synovial fluid' concept">
         use = <"Use for Cell count and Differential panel - Synovial fluid.">
         keywords = <"Cell","count","Differential","panel","-","Synovial","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34560-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cell count and Differential panel - Synovial fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cell count and Differential panel - Synovial fluid
@@ -51,9 +51,9 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34560-3> -- Cell count and Differential panel - Synovial fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34560-3> -- Cell count and Differential panel - Synovial fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/34559-5> -- Cell count panel - Synovial fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34560-3> -- Cell count and Differential panel - Synovial fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34560-3> -- Cell count and Differential panel - Synovial fluid
+        ["id0.1.2.1.1"] = <http://loinc.org/id/34559-5> -- Cell count panel - Synovial fluid
       >
     >
   >

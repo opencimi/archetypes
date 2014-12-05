@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Fetal lung maturity panel - Amniotic fluid' concept">
         use = <"Use for Fetal lung maturity panel - Amniotic fluid.">
         keywords = <"Fetal","lung","maturity","panel","-","Amniotic","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50009-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Fetal lung maturity panel - Amniotic fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Fetal lung maturity panel - Amniotic fluid
@@ -79,21 +79,21 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50009-0> -- Fetal lung maturity panel - Amniotic fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50009-0> -- Fetal lung maturity panel - Amniotic fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/19098-3> -- Erythrocytes [Presence] in Amniotic fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/19125-4> -- Meconium [Presence] in Amniotic fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/20499-0> -- Phosphatidylglycerol/Surfactant.total in Amniotic fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2159-2> -- Creatinine [Mass/volume] in Amniotic fluid
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/33248-6> -- Diabetes status [Identifier]
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/33326-0> -- Turbidity of Amniotic fluid Qualitative
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/33901-0> -- Gestational age of fetus by Amniocentesis
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/38386-9> -- Color of Amniotic fluid
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/49574-7> -- Phosphatidylinositol+Phosphatidylserine/Surfactant.total in Amniotic fluid
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/49575-4> -- Sphingomyelin/Surfactant.total in Amniotic fluid
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/49576-2> -- Phosphatidylethanolamine/Surfactants.total in Amniotic fluid
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/49577-0> -- Lecithin/Surfactant.total in Amniotic fluid
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/49837-8> -- Dimethylphosphatidyl ethanolamine/Surfactant.total in Amniotic fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50009-0> -- Fetal lung maturity panel - Amniotic fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50009-0> -- Fetal lung maturity panel - Amniotic fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/19098-3> -- Erythrocytes [Presence] in Amniotic fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/19125-4> -- Meconium [Presence] in Amniotic fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/20499-0> -- Phosphatidylglycerol/Surfactant.total in Amniotic fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2159-2> -- Creatinine [Mass/volume] in Amniotic fluid
+        ["id0.1.1.1.5"] = <http://loinc.org/id/33248-6> -- Diabetes status [Identifier]
+        ["id0.1.1.1.6"] = <http://loinc.org/id/33326-0> -- Turbidity of Amniotic fluid Qualitative
+        ["id0.1.1.1.7"] = <http://loinc.org/id/33901-0> -- Gestational age of fetus by Amniocentesis
+        ["id0.1.1.1.8"] = <http://loinc.org/id/38386-9> -- Color of Amniotic fluid
+        ["id0.1.1.1.9"] = <http://loinc.org/id/49574-7> -- Phosphatidylinositol+Phosphatidylserine/Surfactant.total in Amniotic fluid
+        ["id0.1.1.1.10"] = <http://loinc.org/id/49575-4> -- Sphingomyelin/Surfactant.total in Amniotic fluid
+        ["id0.1.1.1.11"] = <http://loinc.org/id/49576-2> -- Phosphatidylethanolamine/Surfactants.total in Amniotic fluid
+        ["id0.1.1.1.12"] = <http://loinc.org/id/49577-0> -- Lecithin/Surfactant.total in Amniotic fluid
+        ["id0.1.1.1.13"] = <http://loinc.org/id/49837-8> -- Dimethylphosphatidyl ethanolamine/Surfactant.total in Amniotic fluid
       >
     >
   >

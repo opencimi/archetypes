@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Clostridium difficile toxin A+B [Presence] in Stool' concept">
         use = <"Use for Clostridium difficile toxin A+B [Presence] in Stool.">
         keywords = <"Clostridium","difficile","toxin","A+B","[Presence]","Stool">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34713-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:57:40">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Clostridium difficile toxin A+B [Presence] in Stool
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Clostridium difficile toxin A+B [Presence] in Stool
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Clostridium difficile toxin A+B [Presence] in Stool
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Clostridium difficile toxin A+B [Presence] in Stool
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Clostridium difficile toxin A+B [Presence] in Stool">>
-      ["at0.0.0.0.1"] = <text = <"Clostridium difficile toxin A+B [Presence] in Stool">>
+      ["id1.1.1.1.1.1"] = <text = <"Clostridium difficile toxin A+B [Presence] in Stool">>
+      ["at0.0.0.0.0.1"] = <text = <"Clostridium difficile toxin A+B [Presence] in Stool">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34713-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34713-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/34713-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/34713-8>
       >
     >
   >

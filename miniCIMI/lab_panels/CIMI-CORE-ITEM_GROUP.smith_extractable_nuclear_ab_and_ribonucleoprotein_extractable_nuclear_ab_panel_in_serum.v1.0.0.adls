@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum' concept">
         use = <"Use for Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum.">
         keywords = <"Smith","extractable","nuclear","Ab","Ribonucleoprotein","extractable","nuclear","Ab","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/56148-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/56148-0> -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/56148-0> -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11090-8> -- Smith extractable nuclear Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/27048-8> -- Smith extractable nuclear Ab+Ribonucleoprotein extractable nuclear Ab [Units/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/56148-0> -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/56148-0> -- Smith extractable nuclear Ab and Ribonucleoprotein extractable nuclear Ab panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11090-8> -- Smith extractable nuclear Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/27048-8> -- Smith extractable nuclear Ab+Ribonucleoprotein extractable nuclear Ab [Units/volume] in Serum
       >
     >
   >

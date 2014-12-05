@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Immunofixation [interpretation] for Urine' concept">
         use = <"Use for Immunofixation [interpretation] for Urine.">
         keywords = <"Immunofixation","[interpretation]","for","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13440-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Immunofixation [interpretation] for Urine
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Immunofixation [interpretation] for Urine
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Immunofixation [interpretation] for Urine
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Immunofixation [interpretation] for Urine
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Immunofixation [interpretation] for Urine">>
-      ["at0.0.0.0.1"] = <text = <"Immunofixation [interpretation] for Urine">>
+      ["id1.1.1.1.1.1"] = <text = <"Immunofixation [interpretation] for Urine">>
+      ["at0.0.0.0.0.1"] = <text = <"Immunofixation [interpretation] for Urine">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/13440-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/13440-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/13440-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/13440-3>
       >
     >
   >

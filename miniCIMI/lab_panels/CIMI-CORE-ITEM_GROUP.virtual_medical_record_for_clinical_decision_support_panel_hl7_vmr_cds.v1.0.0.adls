@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS' concept">
         use = <"Use for Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS.">
         keywords = <"Virtual","Medical","Record","for","Clinical","Decision","Support","panel","HL7.VMR-CDS">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74028-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74028-2> -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74028-2> -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74028-2> -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74028-2> -- Virtual Medical Record for Clinical Decision Support panel HL7.VMR-CDS
       >
     >
   >

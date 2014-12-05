@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Protein electrophoresis and Immunoglobulins panel - Serum' concept">
         use = <"Use for Protein electrophoresis and Immunoglobulins panel - Serum.">
         keywords = <"Protein","electrophoresis","Immunoglobulins","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55295-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Protein electrophoresis and Immunoglobulins panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Protein electrophoresis and Immunoglobulins panel - Serum
@@ -52,10 +52,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55295-0> -- Protein electrophoresis and Immunoglobulins panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55295-0> -- Protein electrophoresis and Immunoglobulins panel - Serum
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/24351-9> -- Protein electrophoresis panel - Serum or Plasma
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/34550-4> -- Immunoglobulin panel [Mass/volume] - Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55295-0> -- Protein electrophoresis and Immunoglobulins panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55295-0> -- Protein electrophoresis and Immunoglobulins panel - Serum
+        ["id0.1.2.1.1"] = <http://loinc.org/id/24351-9> -- Protein electrophoresis panel - Serum or Plasma
+        ["id0.1.2.1.2"] = <http://loinc.org/id/34550-4> -- Immunoglobulin panel [Mass/volume] - Serum
       >
     >
   >

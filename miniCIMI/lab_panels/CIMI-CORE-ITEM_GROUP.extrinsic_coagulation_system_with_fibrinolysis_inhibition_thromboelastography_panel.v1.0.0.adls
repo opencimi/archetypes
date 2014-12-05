@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood' concept">
         use = <"Use for Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood.">
         keywords = <"Extrinsic","coagulation","system","with","fibrinolysis","inhibition","thromboelastography","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/52764-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/52764-8> -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/52764-8> -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/52769-7> -- Clot formation.extrinsic coagulation system activated.fibrinolysis suppressed [Time] in Blood by Thromboelastography
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/52774-7> -- Clotting time.extrinsic coagulation system activated.fibrinolysis suppressed of Blood by Thromboelastography
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/52779-6> -- Maximum clot firmness.extrinsic coagulation system activated.fibrinolysis suppressed [Length] in Blood by Thromboelastography
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/52785-3> -- Maximum lysis.extrinsic coagulation system activated.fibrinolysis suppressed [Length fraction] in Blood by Thromboelastography
+        ["id1.1.1.1.1"] = <http://loinc.org/id/52764-8> -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/52764-8> -- Extrinsic coagulation system with fibrinolysis inhibition thromboelastography panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/52769-7> -- Clot formation.extrinsic coagulation system activated.fibrinolysis suppressed [Time] in Blood by Thromboelastography
+        ["id0.1.1.1.2"] = <http://loinc.org/id/52774-7> -- Clotting time.extrinsic coagulation system activated.fibrinolysis suppressed of Blood by Thromboelastography
+        ["id0.1.1.1.3"] = <http://loinc.org/id/52779-6> -- Maximum clot firmness.extrinsic coagulation system activated.fibrinolysis suppressed [Length] in Blood by Thromboelastography
+        ["id0.1.1.1.4"] = <http://loinc.org/id/52785-3> -- Maximum lysis.extrinsic coagulation system activated.fibrinolysis suppressed [Length fraction] in Blood by Thromboelastography
       >
     >
   >

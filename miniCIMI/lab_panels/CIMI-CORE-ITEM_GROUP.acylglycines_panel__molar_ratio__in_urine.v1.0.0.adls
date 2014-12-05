@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acylglycines panel [Molar ratio] - Urine' concept">
         use = <"Use for Acylglycines panel [Molar ratio] - Urine.">
         keywords = <"Acylglycines","panel","[Molar","ratio]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74914-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:54">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acylglycines panel [Molar ratio] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acylglycines panel [Molar ratio] - Urine
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74914-3> -- Acylglycines panel [Molar ratio] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74914-3> -- Acylglycines panel [Molar ratio] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/24435-0> -- 2-Methylbutyrylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/24437-6> -- Butyrylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/24438-4> -- Hexanoylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/24439-2> -- Isobutyrylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/24440-0> -- Isovalerylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/24441-8> -- Phenylpropionylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/24443-4> -- Suberylglycine/Creatinine [Molar ratio] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/53718-3> -- Acylglycines [interpretation] in Urine Narrative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74914-3> -- Acylglycines panel [Molar ratio] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74914-3> -- Acylglycines panel [Molar ratio] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/24435-0> -- 2-Methylbutyrylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/24437-6> -- Butyrylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/24438-4> -- Hexanoylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/24439-2> -- Isobutyrylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/24440-0> -- Isovalerylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/24441-8> -- Phenylpropionylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/24443-4> -- Suberylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/53718-3> -- Acylglycines [interpretation] in Urine Narrative
       >
     >
   >

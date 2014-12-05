@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Specimen source [Identifier] of Unspecified specimen' concept">
         use = <"Use for Specimen source [Identifier] of Unspecified specimen.">
         keywords = <"Specimen","source","[Identifier]","Unspecified","specimen">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/31208-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:58:58">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Specimen source [Identifier] of Unspecified specimen
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Specimen source [Identifier] of Unspecified specimen
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Specimen source [Identifier] of Unspecified specimen
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Specimen source [Identifier] of Unspecified specimen
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Specimen source [Identifier] of Unspecified specimen">>
-      ["at0.0.0.0.1"] = <text = <"Specimen source [Identifier] of Unspecified specimen">>
+      ["id1.1.1.1.1.1"] = <text = <"Specimen source [Identifier] of Unspecified specimen">>
+      ["at0.0.0.0.0.1"] = <text = <"Specimen source [Identifier] of Unspecified specimen">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/31208-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/31208-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/31208-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/31208-2>
       >
     >
   >

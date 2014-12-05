@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method' concept">
         use = <"Use for Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method.">
         keywords = <"Urinalysis","type","cast","panel","[#/volume]","-","Urine","by","Computer","assisted","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53281-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
@@ -71,17 +71,17 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/41868-1> -- Waxy casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/53282-0> -- Granular casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/53283-8> -- Mixed cellular casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/53284-6> -- Broad casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/53285-3> -- RBC casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/53286-1> -- WBC casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/53287-9> -- Epithelial casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/53288-7> -- Fatty casts [#/volume] in Urine by Computer assisted method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/53323-2> -- Casts type not specified [#/volume] in Urine by Computer assisted method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/41868-1> -- Waxy casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/53282-0> -- Granular casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/53283-8> -- Mixed cellular casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/53284-6> -- Broad casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/53285-3> -- RBC casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/53286-1> -- WBC casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/53287-9> -- Epithelial casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/53288-7> -- Fatty casts [#/volume] in Urine by Computer assisted method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/53323-2> -- Casts type not specified [#/volume] in Urine by Computer assisted method
       >
     >
   >

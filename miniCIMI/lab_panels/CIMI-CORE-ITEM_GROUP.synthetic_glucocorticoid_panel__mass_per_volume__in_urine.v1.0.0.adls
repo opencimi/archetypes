@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Synthetic glucocorticoid panel [Mass/volume] - Urine' concept">
         use = <"Use for Synthetic glucocorticoid panel [Mass/volume] - Urine.">
         keywords = <"Synthetic","glucocorticoid","panel","[Mass/volume]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/46959-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Synthetic glucocorticoid panel [Mass/volume] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Synthetic glucocorticoid panel [Mass/volume] - Urine
@@ -81,22 +81,22 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/46959-3> -- Synthetic glucocorticoid panel [Mass/volume] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/46959-3> -- Synthetic glucocorticoid panel [Mass/volume] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/46945-2> -- Beclomethasone dipropionate [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/46946-0> -- Betamethasone [Mass/volume] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/46947-8> -- Budesonide [Mass/volume] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/46948-6> -- Dexamethasone [Mass/volume] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/46949-4> -- Fludrocortisone [Mass/volume] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/46950-2> -- Flunisolide [Mass/volume] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/46951-0> -- Fluorometholone [Mass/volume] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/46952-8> -- Fluticasone propionate [Mass/volume] in Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/46953-6> -- Megestrol acetate [Mass/volume] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/46954-4> -- Methylprednisolone [Mass/volume] in Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/46955-1> -- Prednisolone [Mass/volume] in Urine
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/46956-9> -- Prednisone [Mass/volume] in Urine
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/46957-7> -- Triamcinolone [Mass/volume] in Urine
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/46958-5> -- Triamcinolone acetonide [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/46959-3> -- Synthetic glucocorticoid panel [Mass/volume] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/46959-3> -- Synthetic glucocorticoid panel [Mass/volume] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/46945-2> -- Beclomethasone dipropionate [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/46946-0> -- Betamethasone [Mass/volume] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/46947-8> -- Budesonide [Mass/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/46948-6> -- Dexamethasone [Mass/volume] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/46949-4> -- Fludrocortisone [Mass/volume] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/46950-2> -- Flunisolide [Mass/volume] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/46951-0> -- Fluorometholone [Mass/volume] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/46952-8> -- Fluticasone propionate [Mass/volume] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/46953-6> -- Megestrol acetate [Mass/volume] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/46954-4> -- Methylprednisolone [Mass/volume] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/46955-1> -- Prednisolone [Mass/volume] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/46956-9> -- Prednisone [Mass/volume] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/46957-7> -- Triamcinolone [Mass/volume] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/46958-5> -- Triamcinolone acetonide [Mass/volume] in Urine
       >
     >
   >

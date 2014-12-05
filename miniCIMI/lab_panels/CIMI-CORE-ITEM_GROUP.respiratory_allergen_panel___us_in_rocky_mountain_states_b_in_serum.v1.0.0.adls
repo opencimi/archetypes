@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Respiratory allergen panel, US - Rocky mountain states b - Serum' concept">
         use = <"Use for Respiratory allergen panel, US - Rocky mountain states b - Serum.">
         keywords = <"Respiratory","allergen","panel,","US","-","Rocky","mountain","states","b","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48927-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:44">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Respiratory allergen panel, US - Rocky mountain states b - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Respiratory allergen panel, US - Rocky mountain states b - Serum
@@ -97,30 +97,30 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48927-8> -- Respiratory allergen panel, US - Rocky mountain states b - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48927-8> -- Respiratory allergen panel, US - Rocky mountain states b - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/30170-5> -- American Cockroach IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/33982-0> -- California Walnut Pollen IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/6041-8> -- Bermuda grass IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/6085-5> -- Common Ragweed IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/6099-6> -- Dog epithelium IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/6109-3> -- White Elm IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/6110-1> -- English Plantain IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/6152-3> -- Johnson grass IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/6153-1> -- Kentucky blue grass IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/6182-0> -- Mucor racemosus IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/6189-5> -- White Oak IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/6212-5> -- Penicillium notatum IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/6233-1> -- Rough Pigweed IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/6234-9> -- Saltwort IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/6244-8> -- Sheep Sorrel IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/6252-1> -- Stemphylium botryosum IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/6263-8> -- American Sycamore IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/6278-6> -- White Ash IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/6286-9> -- Wormwood IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/7155-5> -- Boxelder IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/7514-3> -- Red mulberry IgE Ab [Units/volume] in Serum
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/51662-5> -- Core respiratory allergens panel - Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48927-8> -- Respiratory allergen panel, US - Rocky mountain states b - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48927-8> -- Respiratory allergen panel, US - Rocky mountain states b - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/30170-5> -- American Cockroach IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/33982-0> -- California Walnut Pollen IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/6041-8> -- Bermuda grass IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/6085-5> -- Common Ragweed IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/6099-6> -- Dog epithelium IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/6109-3> -- White Elm IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.7"] = <http://loinc.org/id/6110-1> -- English Plantain IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/6152-3> -- Johnson grass IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.9"] = <http://loinc.org/id/6153-1> -- Kentucky blue grass IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.10"] = <http://loinc.org/id/6182-0> -- Mucor racemosus IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.11"] = <http://loinc.org/id/6189-5> -- White Oak IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.12"] = <http://loinc.org/id/6212-5> -- Penicillium notatum IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.13"] = <http://loinc.org/id/6233-1> -- Rough Pigweed IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.14"] = <http://loinc.org/id/6234-9> -- Saltwort IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.15"] = <http://loinc.org/id/6244-8> -- Sheep Sorrel IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.16"] = <http://loinc.org/id/6252-1> -- Stemphylium botryosum IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.17"] = <http://loinc.org/id/6263-8> -- American Sycamore IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.18"] = <http://loinc.org/id/6278-6> -- White Ash IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.19"] = <http://loinc.org/id/6286-9> -- Wormwood IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.20"] = <http://loinc.org/id/7155-5> -- Boxelder IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.21"] = <http://loinc.org/id/7514-3> -- Red mulberry IgE Ab [Units/volume] in Serum
+        ["id0.1.2.1.1"] = <http://loinc.org/id/51662-5> -- Core respiratory allergens panel - Serum
       >
     >
   >

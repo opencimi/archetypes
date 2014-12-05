@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'HEDIS 2013 panel' concept">
         use = <"Use for HEDIS 2013 panel.">
         keywords = <"HEDIS","2013","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72199-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- HEDIS 2013 panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- HEDIS 2013 panel
@@ -85,24 +85,24 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72199-3> -- HEDIS 2013 panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72199-3> -- HEDIS 2013 panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/54038-5> -- HEDIS 2009-2013 Codes to identify cervical cancer screening tests (CCS-A)
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/54049-2> -- HEDIS 2009-2013 Codes to identify lead (LSC-A)
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/54065-8> -- HEDIS 2009-2013 Codes to identify postpartum visits (PPC-E)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57817-9> -- HEDIS 2010-2013 Codes to identify Chlamydia screening (CHL-C)
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/60447-0> -- HEDIS 2011-2013 Codes to identify evidence of nephropathy (CDC-K)
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/60479-3> -- HEDIS 2011-2013 Codes to identify LDLc screening (CMC-D)
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/60481-9> -- HEDIS 2011-2013 Codes to identify LDLc screening (CDC-H)
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/67757-5> -- HEDIS 2012, 2013 Codes to identify colorectal cancer screening (COL-A)
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/67759-1> -- HEDIS 2012, 2013 Codes to identify anticonvulsant serum concentration monitoring tests (MPM-E)
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/67761-7> -- HEDIS 2012, 2013 Codes to identify HbA1c tests (CDC-D)
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/67762-5> -- HEDIS 2012, 2013 Codes to identify nephropathy screening tests (CDC-J)
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/67765-8> -- HEDIS 2012, 2013 Codes to identify physiologic monitoring tests (MPM-A)
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/67770-8> -- HEDIS 2012, 2013 Tests used in early prenatal care (PPC-C)
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/67839-1> -- HEDIS 2012, 2013 Codes to identify exclusions (CHL-D)
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/72197-7> -- HEDIS 2013 Codes to identify group A Streptococcus tests (CWP-D)
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/72198-5> -- HEDIS 2013 Codes to identify sexually active women (CHL-B)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72199-3> -- HEDIS 2013 panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72199-3> -- HEDIS 2013 panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/54038-5> -- HEDIS 2009-2013 Codes to identify cervical cancer screening tests (CCS-A)
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54049-2> -- HEDIS 2009-2013 Codes to identify lead (LSC-A)
+        ["id0.1.1.1.3"] = <http://loinc.org/id/54065-8> -- HEDIS 2009-2013 Codes to identify postpartum visits (PPC-E)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57817-9> -- HEDIS 2010-2013 Codes to identify Chlamydia screening (CHL-C)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/60447-0> -- HEDIS 2011-2013 Codes to identify evidence of nephropathy (CDC-K)
+        ["id0.1.1.1.6"] = <http://loinc.org/id/60479-3> -- HEDIS 2011-2013 Codes to identify LDLc screening (CMC-D)
+        ["id0.1.1.1.7"] = <http://loinc.org/id/60481-9> -- HEDIS 2011-2013 Codes to identify LDLc screening (CDC-H)
+        ["id0.1.1.1.8"] = <http://loinc.org/id/67757-5> -- HEDIS 2012, 2013 Codes to identify colorectal cancer screening (COL-A)
+        ["id0.1.1.1.9"] = <http://loinc.org/id/67759-1> -- HEDIS 2012, 2013 Codes to identify anticonvulsant serum concentration monitoring tests (MPM-E)
+        ["id0.1.1.1.10"] = <http://loinc.org/id/67761-7> -- HEDIS 2012, 2013 Codes to identify HbA1c tests (CDC-D)
+        ["id0.1.1.1.11"] = <http://loinc.org/id/67762-5> -- HEDIS 2012, 2013 Codes to identify nephropathy screening tests (CDC-J)
+        ["id0.1.1.1.12"] = <http://loinc.org/id/67765-8> -- HEDIS 2012, 2013 Codes to identify physiologic monitoring tests (MPM-A)
+        ["id0.1.1.1.13"] = <http://loinc.org/id/67770-8> -- HEDIS 2012, 2013 Tests used in early prenatal care (PPC-C)
+        ["id0.1.1.1.14"] = <http://loinc.org/id/67839-1> -- HEDIS 2012, 2013 Codes to identify exclusions (CHL-D)
+        ["id0.1.1.1.15"] = <http://loinc.org/id/72197-7> -- HEDIS 2013 Codes to identify group A Streptococcus tests (CWP-D)
+        ["id0.1.1.1.16"] = <http://loinc.org/id/72198-5> -- HEDIS 2013 Codes to identify sexually active women (CHL-B)
       >
     >
   >

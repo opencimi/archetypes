@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Immunoelectrophoresis panel - 24 hour Urine' concept">
         use = <"Use for Immunoelectrophoresis panel - 24 hour Urine.">
         keywords = <"Immunoelectrophoresis","panel","-","24","hour","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34672-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Immunoelectrophoresis panel - 24 hour Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Immunoelectrophoresis panel - 24 hour Urine
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34672-6> -- Immunoelectrophoresis panel - 24 hour Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34672-6> -- Immunoelectrophoresis panel - 24 hour Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/30140-8> -- IgA [Presence] in 24 hour Urine by Immunoelectrophoresis
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/30141-6> -- IgG [Presence] in 24 hour Urine by Immunoelectrophoresis
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/30142-4> -- IgM [Presence] in 24 hour Urine by Immunoelectrophoresis
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57457-4> -- Immunoelectrophoresis [interpretation] for 24 hour Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34672-6> -- Immunoelectrophoresis panel - 24 hour Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34672-6> -- Immunoelectrophoresis panel - 24 hour Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/30140-8> -- IgA [Presence] in 24 hour Urine by Immunoelectrophoresis
+        ["id0.1.1.1.2"] = <http://loinc.org/id/30141-6> -- IgG [Presence] in 24 hour Urine by Immunoelectrophoresis
+        ["id0.1.1.1.3"] = <http://loinc.org/id/30142-4> -- IgM [Presence] in 24 hour Urine by Immunoelectrophoresis
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57457-4> -- Immunoelectrophoresis [interpretation] for 24 hour Urine
       >
     >
   >

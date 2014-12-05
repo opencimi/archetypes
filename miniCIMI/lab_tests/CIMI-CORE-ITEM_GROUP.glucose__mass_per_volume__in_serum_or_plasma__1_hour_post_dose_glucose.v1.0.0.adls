@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose' concept">
         use = <"Use for Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose.">
         keywords = <"Glucose","[Mass/volume]","Serum","or","Plasma","--1","hour","post","dose","glucose">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,33 +33,34 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20438-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:58:22">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units[id0.0.0.0.2] matches {[at0.0.0.0.2]} -- mg/dL
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mg/dL
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose">>
-      ["at0.0.0.0.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose">>
-      ["at0.0.0.0.2"] = <text = <"Qn">>
+      ["id1.1.1.1.1.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose">>
+      ["at0.0.0.0.0.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose">>
+      ["at0.0.0.0.0.2"] = <text = <"Qn">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/20438-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/20438-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/20438-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/20438-8>
       >
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.2"] = <configatron.adl.snomed.uri/______> -- mg/dL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mg/dL
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Occult blood panel - Stool by Immunologic method' concept">
         use = <"Use for Occult blood panel - Stool by Immunologic method.">
         keywords = <"Occult","blood","panel","-","Stool","by","Immunologic","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57803-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Occult blood panel - Stool by Immunologic method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Occult blood panel - Stool by Immunologic method
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57803-9> -- Occult blood panel - Stool by Immunologic method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57803-9> -- Occult blood panel - Stool by Immunologic method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/56490-6> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --2nd specimen
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/56491-4> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --3rd specimen
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/57804-7> -- Number of occult blood specimens recommended by testing kit protocol [#] in Stool
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57905-2> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --1st specimen
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/59841-7> -- Vendor name [Identifier] in Unspecified specimen
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57803-9> -- Occult blood panel - Stool by Immunologic method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57803-9> -- Occult blood panel - Stool by Immunologic method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/56490-6> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --2nd specimen
+        ["id0.1.1.1.2"] = <http://loinc.org/id/56491-4> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --3rd specimen
+        ["id0.1.1.1.3"] = <http://loinc.org/id/57804-7> -- Number of occult blood specimens recommended by testing kit protocol [#] in Stool
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57905-2> -- Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method --1st specimen
+        ["id0.1.1.1.5"] = <http://loinc.org/id/59841-7> -- Vendor name [Identifier] in Unspecified specimen
       >
     >
   >

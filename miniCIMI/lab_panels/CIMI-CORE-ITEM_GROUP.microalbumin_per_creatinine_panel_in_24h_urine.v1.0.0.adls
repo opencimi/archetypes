@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Microalbumin/Creatinine panel in 24H Urine' concept">
         use = <"Use for Microalbumin/Creatinine panel in 24H Urine.">
         keywords = <"Microalbumin/Creatinine","panel","24H","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58447-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Microalbumin/Creatinine panel in 24H Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Microalbumin/Creatinine panel in 24H Urine
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58447-4> -- Microalbumin/Creatinine panel in 24H Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58447-4> -- Microalbumin/Creatinine panel in 24H Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13362-9> -- Collection duration of Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/14956-7> -- Microalbumin [Mass/time] in 24 hour Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/14958-3> -- Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/30003-8> -- Microalbumin [Mass/volume] in 24 hour Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/3167-4> -- Volume of 24 hour Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/58448-2> -- Microalbumin ug/min [Mass/time] in 24 hour Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58447-4> -- Microalbumin/Creatinine panel in 24H Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58447-4> -- Microalbumin/Creatinine panel in 24H Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13362-9> -- Collection duration of Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/14956-7> -- Microalbumin [Mass/time] in 24 hour Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/14958-3> -- Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/30003-8> -- Microalbumin [Mass/volume] in 24 hour Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/3167-4> -- Volume of 24 hour Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/58448-2> -- Microalbumin ug/min [Mass/time] in 24 hour Urine
       >
     >
   >

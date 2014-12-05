@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Barbiturates panel - Urine' concept">
         use = <"Use for Barbiturates panel - Urine.">
         keywords = <"Barbiturates","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53746-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Barbiturates panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Barbiturates panel - Urine
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53746-4> -- Barbiturates panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53746-4> -- Barbiturates panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/16237-0> -- Butalbital [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/16238-8> -- Secobarbital [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/16239-6> -- Amobarbital [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/16240-4> -- Pentobarbital [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/16241-2> -- Phenobarbital [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/19270-8> -- Barbiturates [Presence] in Urine by Screen method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/53735-7> -- Barbiturates.other [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53746-4> -- Barbiturates panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53746-4> -- Barbiturates panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/16237-0> -- Butalbital [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/16238-8> -- Secobarbital [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/16239-6> -- Amobarbital [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/16240-4> -- Pentobarbital [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/16241-2> -- Phenobarbital [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/19270-8> -- Barbiturates [Presence] in Urine by Screen method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/53735-7> -- Barbiturates.other [Mass/volume] in Urine
       >
     >
   >

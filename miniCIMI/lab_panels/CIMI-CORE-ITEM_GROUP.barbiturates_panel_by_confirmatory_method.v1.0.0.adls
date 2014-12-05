@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Barbiturates panel - Blood by Confirmatory method' concept">
         use = <"Use for Barbiturates panel - Blood by Confirmatory method.">
         keywords = <"Barbiturates","panel","-","Blood","by","Confirmatory","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72480-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Barbiturates panel - Blood by Confirmatory method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Barbiturates panel - Blood by Confirmatory method
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72480-7> -- Barbiturates panel - Blood by Confirmatory method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72480-7> -- Barbiturates panel - Blood by Confirmatory method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/72396-5> -- Phenobarbital [Mass/volume] in Blood by Confirmatory method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/72397-3> -- Secobarbital [Mass/volume] in Blood by Confirmatory method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/72398-1> -- Butalbital [Mass/volume] in Blood by Confirmatory method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/72399-9> -- Amobarbital [Mass/volume] in Blood by Confirmatory method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72480-7> -- Barbiturates panel - Blood by Confirmatory method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72480-7> -- Barbiturates panel - Blood by Confirmatory method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/72396-5> -- Phenobarbital [Mass/volume] in Blood by Confirmatory method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/72397-3> -- Secobarbital [Mass/volume] in Blood by Confirmatory method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/72398-1> -- Butalbital [Mass/volume] in Blood by Confirmatory method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/72399-9> -- Amobarbital [Mass/volume] in Blood by Confirmatory method
       >
     >
   >

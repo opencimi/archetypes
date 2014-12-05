@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Microalbumin/Creatinine panel in random Urine' concept">
         use = <"Use for Microalbumin/Creatinine panel in random Urine.">
         keywords = <"Microalbumin/Creatinine","panel","random","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34535-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Microalbumin/Creatinine panel in random Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Microalbumin/Creatinine panel in random Urine
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34535-5> -- Microalbumin/Creatinine panel in random Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34535-5> -- Microalbumin/Creatinine panel in random Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14957-5> -- Microalbumin [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/14959-1> -- Microalbumin/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2161-8> -- Creatinine [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34535-5> -- Microalbumin/Creatinine panel in random Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34535-5> -- Microalbumin/Creatinine panel in random Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14957-5> -- Microalbumin [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/14959-1> -- Microalbumin/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2161-8> -- Creatinine [Mass/volume] in Urine
       >
     >
   >

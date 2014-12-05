@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Mycobacterium tuberculosis stimulated gamma interferon panel - Blood' concept">
         use = <"Use for Mycobacterium tuberculosis stimulated gamma interferon panel - Blood.">
         keywords = <"Mycobacterium","tuberculosis","stimulated","gamma","interferon","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/71775-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/71775-1> -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/71775-1> -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/46217-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Units/volume] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/64084-7> -- Mycobacterium tuberculosis stimulated gamma interferon [Units/volume] corrected for background in Blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/71772-8> -- Mitogen stimulated gamma interferon [Units/volume] in Blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/71773-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Presence] in Blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/71774-4> -- Mitogen stimulated gamma interferon [Units/volume] corrected for background in Blood
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/71776-9> -- Gamma interferon background [Units/volume] in Blood by Immunoassay
+        ["id1.1.1.1.1"] = <http://loinc.org/id/71775-1> -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/71775-1> -- Mycobacterium tuberculosis stimulated gamma interferon panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/46217-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Units/volume] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/64084-7> -- Mycobacterium tuberculosis stimulated gamma interferon [Units/volume] corrected for background in Blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/71772-8> -- Mitogen stimulated gamma interferon [Units/volume] in Blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/71773-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Presence] in Blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/71774-4> -- Mitogen stimulated gamma interferon [Units/volume] corrected for background in Blood
+        ["id0.1.1.1.6"] = <http://loinc.org/id/71776-9> -- Gamma interferon background [Units/volume] in Blood by Immunoassay
       >
     >
   >

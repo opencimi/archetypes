@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Differential panel - Peritoneal fluid' concept">
         use = <"Use for Differential panel - Peritoneal fluid.">
         keywords = <"Differential","panel","-","Peritoneal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29581-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Differential panel - Peritoneal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Differential panel - Peritoneal fluid
@@ -111,37 +111,37 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/29581-6> -- Differential panel - Peritoneal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/29581-6> -- Differential panel - Peritoneal fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/26468-9> -- Leukocytes [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/26482-0> -- Lymphocytes/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/26488-7> -- Monocytes/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/26495-2> -- Mononuclear cells/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/26502-5> -- Neutrophils [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/26514-0> -- Neutrophils/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/26520-7> -- Polymorphonuclear cells/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/30380-0> -- Eosinophils/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/30409-7> -- Leukocytes other/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/30432-9> -- Mesothelial cells/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/33369-0> -- Lymphocytes Variant/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/33372-4> -- Blasts/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/33384-9> -- Neutrophils.segmented/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/34982-9> -- Unidentified cells/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/34990-2> -- Unidentified cells [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/35005-8> -- Polymorphonuclear cells [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/35010-8> -- Neutrophils.segmented [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/35020-7> -- Monocytes+Macrophages/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/35023-1> -- Monocytes+Macrophages [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/35027-2> -- Monocytes [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/35032-2> -- Mesothelial cells [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/35041-3> -- Lymphocytes Variant [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/35054-6> -- Leukocytes other [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/35061-1> -- Eosinophils [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/35065-2> -- Blasts [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/35069-4> -- Basophils/100 leukocytes in Peritoneal fluid
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/35073-6> -- Basophils [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/35080-1> -- Mononuclear cells [#/volume] in Peritoneal fluid
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/35097-5> -- Lymphocytes [#/volume] in Peritoneal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/29581-6> -- Differential panel - Peritoneal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/29581-6> -- Differential panel - Peritoneal fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/26468-9> -- Leukocytes [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/26482-0> -- Lymphocytes/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/26488-7> -- Monocytes/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/26495-2> -- Mononuclear cells/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.5"] = <http://loinc.org/id/26502-5> -- Neutrophils [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.6"] = <http://loinc.org/id/26514-0> -- Neutrophils/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.7"] = <http://loinc.org/id/26520-7> -- Polymorphonuclear cells/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.8"] = <http://loinc.org/id/30380-0> -- Eosinophils/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.9"] = <http://loinc.org/id/30409-7> -- Leukocytes other/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.10"] = <http://loinc.org/id/30432-9> -- Mesothelial cells/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.11"] = <http://loinc.org/id/33369-0> -- Lymphocytes Variant/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.12"] = <http://loinc.org/id/33372-4> -- Blasts/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.13"] = <http://loinc.org/id/33384-9> -- Neutrophils.segmented/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.14"] = <http://loinc.org/id/34982-9> -- Unidentified cells/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.15"] = <http://loinc.org/id/34990-2> -- Unidentified cells [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.16"] = <http://loinc.org/id/35005-8> -- Polymorphonuclear cells [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.17"] = <http://loinc.org/id/35010-8> -- Neutrophils.segmented [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.18"] = <http://loinc.org/id/35020-7> -- Monocytes+Macrophages/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.19"] = <http://loinc.org/id/35023-1> -- Monocytes+Macrophages [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.20"] = <http://loinc.org/id/35027-2> -- Monocytes [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.21"] = <http://loinc.org/id/35032-2> -- Mesothelial cells [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.22"] = <http://loinc.org/id/35041-3> -- Lymphocytes Variant [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.23"] = <http://loinc.org/id/35054-6> -- Leukocytes other [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.24"] = <http://loinc.org/id/35061-1> -- Eosinophils [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.25"] = <http://loinc.org/id/35065-2> -- Blasts [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.26"] = <http://loinc.org/id/35069-4> -- Basophils/100 leukocytes in Peritoneal fluid
+        ["id0.1.1.1.27"] = <http://loinc.org/id/35073-6> -- Basophils [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.28"] = <http://loinc.org/id/35080-1> -- Mononuclear cells [#/volume] in Peritoneal fluid
+        ["id0.1.1.1.29"] = <http://loinc.org/id/35097-5> -- Lymphocytes [#/volume] in Peritoneal fluid
       >
     >
   >

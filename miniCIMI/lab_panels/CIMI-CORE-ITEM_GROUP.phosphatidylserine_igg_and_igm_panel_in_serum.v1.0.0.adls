@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Phosphatidylserine IgG and IgM panel - Serum' concept">
         use = <"Use for Phosphatidylserine IgG and IgM panel - Serum.">
         keywords = <"Phosphatidylserine","IgG","IgM","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34951-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Phosphatidylserine IgG and IgM panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Phosphatidylserine IgG and IgM panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34951-4> -- Phosphatidylserine IgG and IgM panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34951-4> -- Phosphatidylserine IgG and IgM panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14245-5> -- Phosphatidylserine IgG Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/14246-3> -- Phosphatidylserine IgM Ab [Units/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34951-4> -- Phosphatidylserine IgG and IgM panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34951-4> -- Phosphatidylserine IgG and IgM panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14245-5> -- Phosphatidylserine IgG Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/14246-3> -- Phosphatidylserine IgM Ab [Units/volume] in Serum
       >
     >
   >

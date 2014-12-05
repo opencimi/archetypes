@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method' concept">
         use = <"Use for Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method.">
         keywords = <"Hepatitis","B","virus","surface","Ag","[Presence]","Serum","or","Plasma","by","Confirmatory","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/65633-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:01:23">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method">>
-      ["at0.0.0.0.1"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method">>
+      ["id1.1.1.1.1.1"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method">>
+      ["at0.0.0.0.0.1"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/65633-0>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/65633-0>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/65633-0>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/65633-0>
       >
     >
   >

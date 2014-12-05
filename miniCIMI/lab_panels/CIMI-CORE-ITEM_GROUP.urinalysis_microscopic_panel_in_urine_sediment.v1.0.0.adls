@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis microscopic panel - Urine sediment' concept">
         use = <"Use for Urinalysis microscopic panel - Urine sediment.">
         keywords = <"Urinalysis","microscopic","panel","-","Urine","sediment">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24365-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis microscopic panel - Urine sediment
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis microscopic panel - Urine sediment
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24365-9> -- Urinalysis microscopic panel - Urine sediment
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24365-9> -- Urinalysis microscopic panel - Urine sediment
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11279-7> -- Urine sediment comments by Light microscopy Narrative
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/12235-8> -- Microscopic observation [Identifier] in Urine sediment by Light microscopy
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/58441-7> -- Other elements in Urine sediment
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/58432-6> -- Casts panel - Urine sediment
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/58433-4> -- Crystals panel - Urine sediment
-        ["idconfigatron.adl.test_use_archetype_at_prefix.3"] = <configatron.adl.loinc.uri/58434-2> -- Cells panel - Urine sediment
-        ["idconfigatron.adl.test_use_archetype_at_prefix.4"] = <configatron.adl.loinc.uri/58435-9> -- Microorganisms panel - Urine sediment
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24365-9> -- Urinalysis microscopic panel - Urine sediment
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24365-9> -- Urinalysis microscopic panel - Urine sediment
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11279-7> -- Urine sediment comments by Light microscopy Narrative
+        ["id0.1.1.1.2"] = <http://loinc.org/id/12235-8> -- Microscopic observation [Identifier] in Urine sediment by Light microscopy
+        ["id0.1.1.1.3"] = <http://loinc.org/id/58441-7> -- Other elements in Urine sediment
+        ["id0.1.2.1.1"] = <http://loinc.org/id/58432-6> -- Casts panel - Urine sediment
+        ["id0.1.2.1.2"] = <http://loinc.org/id/58433-4> -- Crystals panel - Urine sediment
+        ["id0.1.2.1.3"] = <http://loinc.org/id/58434-2> -- Cells panel - Urine sediment
+        ["id0.1.2.1.4"] = <http://loinc.org/id/58435-9> -- Microorganisms panel - Urine sediment
       >
     >
   >

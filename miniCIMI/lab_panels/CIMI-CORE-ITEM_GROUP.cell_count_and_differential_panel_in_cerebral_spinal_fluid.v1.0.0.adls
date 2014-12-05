@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cell count and Differential panel - Cerebral spinal fluid' concept">
         use = <"Use for Cell count and Differential panel - Cerebral spinal fluid.">
         keywords = <"Cell","count","Differential","panel","-","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34564-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cell count and Differential panel - Cerebral spinal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cell count and Differential panel - Cerebral spinal fluid
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/10333-3> -- Appearance of Cerebral spinal fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/10335-8> -- Color of Cerebral spinal fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/19157-7> -- Tube number of Cerebral spinal fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/20512-0> -- Turbidity of Cerebral spinal fluid Qualitative
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/29584-0> -- Differential panel - Cerebral spinal fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/34563-7> -- Cell count panel - Cerebral spinal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/10333-3> -- Appearance of Cerebral spinal fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/10335-8> -- Color of Cerebral spinal fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/19157-7> -- Tube number of Cerebral spinal fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/20512-0> -- Turbidity of Cerebral spinal fluid Qualitative
+        ["id0.1.2.1.1"] = <http://loinc.org/id/29584-0> -- Differential panel - Cerebral spinal fluid
+        ["id0.1.2.1.2"] = <http://loinc.org/id/34563-7> -- Cell count panel - Cerebral spinal fluid
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Myasthenia gravis evaluation pediatric panel - Serum' concept">
         use = <"Use for Myasthenia gravis evaluation pediatric panel - Serum.">
         keywords = <"Myasthenia","gravis","evaluation","pediatric","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53705-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Myasthenia gravis evaluation pediatric panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Myasthenia gravis evaluation pediatric panel - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53705-0> -- Myasthenia gravis evaluation pediatric panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53705-0> -- Myasthenia gravis evaluation pediatric panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11561-8> -- Acetylcholine receptor blocking Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/30192-9> -- Acetylcholine receptor modulation Ab/Acetylcholine Ab.total in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53705-0> -- Myasthenia gravis evaluation pediatric panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53705-0> -- Myasthenia gravis evaluation pediatric panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11561-8> -- Acetylcholine receptor blocking Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/30192-9> -- Acetylcholine receptor modulation Ab/Acetylcholine Ab.total in Serum
       >
     >
   >

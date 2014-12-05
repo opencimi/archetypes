@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Appearance of Cerebral spinal fluid' concept">
         use = <"Use for Appearance of Cerebral spinal fluid.">
         keywords = <"Appearance","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/10333-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:55">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Appearance of Cerebral spinal fluid
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Appearance of Cerebral spinal fluid
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Appearance of Cerebral spinal fluid
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Appearance of Cerebral spinal fluid
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Appearance of Cerebral spinal fluid">>
-      ["at0.0.0.0.1"] = <text = <"Appearance of Cerebral spinal fluid">>
+      ["id1.1.1.1.1.1"] = <text = <"Appearance of Cerebral spinal fluid">>
+      ["at0.0.0.0.0.1"] = <text = <"Appearance of Cerebral spinal fluid">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/10333-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/10333-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/10333-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/10333-3>
       >
     >
   >

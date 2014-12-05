@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi Ab [interpretation] in Serum' concept">
         use = <"Use for Borrelia burgdorferi Ab [interpretation] in Serum.">
         keywords = <"Borrelia","burgdorferi","Ab","[interpretation]","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9586-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:02:13">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Borrelia burgdorferi Ab [interpretation] in Serum
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Borrelia burgdorferi Ab [interpretation] in Serum
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Borrelia burgdorferi Ab [interpretation] in Serum
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Borrelia burgdorferi Ab [interpretation] in Serum
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Borrelia burgdorferi Ab [interpretation] in Serum">>
-      ["at0.0.0.0.1"] = <text = <"Borrelia burgdorferi Ab [interpretation] in Serum">>
+      ["id1.1.1.1.1.1"] = <text = <"Borrelia burgdorferi Ab [interpretation] in Serum">>
+      ["at0.0.0.0.0.1"] = <text = <"Borrelia burgdorferi Ab [interpretation] in Serum">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/9586-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/9586-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/9586-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/9586-9>
       >
     >
   >

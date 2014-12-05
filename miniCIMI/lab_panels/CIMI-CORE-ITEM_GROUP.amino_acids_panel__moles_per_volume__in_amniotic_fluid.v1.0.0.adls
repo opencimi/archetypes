@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amino acids panel [Moles/volume] - Amniotic fluid' concept">
         use = <"Use for Amino acids panel [Moles/volume] - Amniotic fluid.">
         keywords = <"Amino","acids","panel","[Moles/volume]","-","Amniotic","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35508-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Amino acids panel [Moles/volume] - Amniotic fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amino acids panel [Moles/volume] - Amniotic fluid
@@ -133,48 +133,48 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35508-1> -- Amino acids panel [Moles/volume] - Amniotic fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35508-1> -- Amino acids panel [Moles/volume] - Amniotic fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/26710-4> -- Leucine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/26730-2> -- Isoleucine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/26745-0> -- Citrulline [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/26750-0> -- Carnosine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/26787-2> -- Anserine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/26819-3> -- Alpha aminobutyrate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/26824-3> -- Phosphoserine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/26844-1> -- Methionine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/26852-4> -- Amino beta guanidinopropionate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/26861-5> -- Gamma aminobutyrate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/26873-0> -- Valine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/26882-1> -- Homocystine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/26894-6> -- Glutamine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/26909-2> -- Alpha aminoadipate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/26929-0> -- Glycine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/26932-4> -- Sarcosine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/26981-1> -- Phenylalanine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/26985-2> -- Arginine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/27013-2> -- Alanine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/27027-2> -- Cystine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/27033-0> -- Proline [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/27058-7> -- Beta alanine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/27089-2> -- Asparagine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/27104-9> -- Glutamate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/27107-2> -- Lysine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/27111-4> -- Histidine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/27135-3> -- Tryptophan [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/27162-7> -- 1-Methylhistidine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/27176-7> -- 3-Methylhistidine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/27179-1> -- Threonine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/27181-7> -- Hydroxyproline [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/27195-7> -- Hydroxylysine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/27217-9> -- Beta aminoisobutyrate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/27219-5> -- Ornithine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/27223-7> -- Serine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/27256-7> -- Aspartate [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/27278-1> -- Phosphoethanolamine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/27310-2> -- Taurine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/30069-9> -- Tyrosine [Moles/volume] in Amniotic fluid
-        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/30070-7> -- Cystathionine [Moles/volume] in Amniotic fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35508-1> -- Amino acids panel [Moles/volume] - Amniotic fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35508-1> -- Amino acids panel [Moles/volume] - Amniotic fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/26710-4> -- Leucine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/26730-2> -- Isoleucine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/26745-0> -- Citrulline [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/26750-0> -- Carnosine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.5"] = <http://loinc.org/id/26787-2> -- Anserine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.6"] = <http://loinc.org/id/26819-3> -- Alpha aminobutyrate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.7"] = <http://loinc.org/id/26824-3> -- Phosphoserine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.8"] = <http://loinc.org/id/26844-1> -- Methionine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.9"] = <http://loinc.org/id/26852-4> -- Amino beta guanidinopropionate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.10"] = <http://loinc.org/id/26861-5> -- Gamma aminobutyrate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.11"] = <http://loinc.org/id/26873-0> -- Valine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.12"] = <http://loinc.org/id/26882-1> -- Homocystine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.13"] = <http://loinc.org/id/26894-6> -- Glutamine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.14"] = <http://loinc.org/id/26909-2> -- Alpha aminoadipate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.15"] = <http://loinc.org/id/26929-0> -- Glycine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.16"] = <http://loinc.org/id/26932-4> -- Sarcosine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.17"] = <http://loinc.org/id/26981-1> -- Phenylalanine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.18"] = <http://loinc.org/id/26985-2> -- Arginine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.19"] = <http://loinc.org/id/27013-2> -- Alanine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.20"] = <http://loinc.org/id/27027-2> -- Cystine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.21"] = <http://loinc.org/id/27033-0> -- Proline [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.22"] = <http://loinc.org/id/27058-7> -- Beta alanine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.23"] = <http://loinc.org/id/27089-2> -- Asparagine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.24"] = <http://loinc.org/id/27104-9> -- Glutamate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.25"] = <http://loinc.org/id/27107-2> -- Lysine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.26"] = <http://loinc.org/id/27111-4> -- Histidine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.27"] = <http://loinc.org/id/27135-3> -- Tryptophan [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.28"] = <http://loinc.org/id/27162-7> -- 1-Methylhistidine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.29"] = <http://loinc.org/id/27176-7> -- 3-Methylhistidine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.30"] = <http://loinc.org/id/27179-1> -- Threonine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.31"] = <http://loinc.org/id/27181-7> -- Hydroxyproline [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.32"] = <http://loinc.org/id/27195-7> -- Hydroxylysine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.33"] = <http://loinc.org/id/27217-9> -- Beta aminoisobutyrate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.34"] = <http://loinc.org/id/27219-5> -- Ornithine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.35"] = <http://loinc.org/id/27223-7> -- Serine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.36"] = <http://loinc.org/id/27256-7> -- Aspartate [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.37"] = <http://loinc.org/id/27278-1> -- Phosphoethanolamine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.38"] = <http://loinc.org/id/27310-2> -- Taurine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.39"] = <http://loinc.org/id/30069-9> -- Tyrosine [Moles/volume] in Amniotic fluid
+        ["id0.1.1.1.40"] = <http://loinc.org/id/30070-7> -- Cystathionine [Moles/volume] in Amniotic fluid
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Creatinine 24H renal clearance adjusted for body surface area panel' concept">
         use = <"Use for Creatinine 24H renal clearance adjusted for body surface area panel.">
         keywords = <"Creatinine","24H","renal","clearance","adjusted","for","body","surface","area","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58446-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Creatinine 24H renal clearance adjusted for body surface area panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Creatinine 24H renal clearance adjusted for body surface area panel
@@ -81,22 +81,22 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58446-6> -- Creatinine 24H renal clearance adjusted for body surface area panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58446-6> -- Creatinine 24H renal clearance adjusted for body surface area panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/12195-4> -- Creatinine renal clearance/1.73 sq M in 24 hour
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13362-9> -- Collection duration of Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2160-0> -- Creatinine [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/3142-7> -- Body weight Stated
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/3167-4> -- Volume of 24 hour Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/33914-3> -- Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/48642-3> -- Glomerular filtration rate/1.73 sq M predicted among non-blacks by Creatinine-based formula (MDRD)
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/48643-1> -- Glomerular filtration rate/1.73 sq M predicted among blacks by Creatinine-based formula (MDRD)
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/50044-7> -- Glomerular filtration rate/1.73 sq M predicted among females by Creatinine-based formula (MDRD)
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/50210-4> -- Glomerular filtration rate/1.73 sq M.predicted by Cystatin-based formula
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/8277-6> -- Body surface area
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/8302-2> -- Body height
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58446-6> -- Creatinine 24H renal clearance adjusted for body surface area panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58446-6> -- Creatinine 24H renal clearance adjusted for body surface area panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/12195-4> -- Creatinine renal clearance/1.73 sq M in 24 hour
+        ["id0.1.1.1.2"] = <http://loinc.org/id/13362-9> -- Collection duration of Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2160-0> -- Creatinine [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/3142-7> -- Body weight Stated
+        ["id0.1.1.1.7"] = <http://loinc.org/id/3167-4> -- Volume of 24 hour Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/33914-3> -- Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)
+        ["id0.1.1.1.9"] = <http://loinc.org/id/48642-3> -- Glomerular filtration rate/1.73 sq M predicted among non-blacks by Creatinine-based formula (MDRD)
+        ["id0.1.1.1.10"] = <http://loinc.org/id/48643-1> -- Glomerular filtration rate/1.73 sq M predicted among blacks by Creatinine-based formula (MDRD)
+        ["id0.1.1.1.11"] = <http://loinc.org/id/50044-7> -- Glomerular filtration rate/1.73 sq M predicted among females by Creatinine-based formula (MDRD)
+        ["id0.1.1.1.12"] = <http://loinc.org/id/50210-4> -- Glomerular filtration rate/1.73 sq M.predicted by Cystatin-based formula
+        ["id0.1.1.1.13"] = <http://loinc.org/id/8277-6> -- Body surface area
+        ["id0.1.1.1.14"] = <http://loinc.org/id/8302-2> -- Body height
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Disaccharidases panel - Small intestine Tissue' concept">
         use = <"Use for Disaccharidases panel - Small intestine Tissue.">
         keywords = <"Disaccharidases","panel","-","Small","intestine","Tissue">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57765-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Disaccharidases panel - Small intestine Tissue
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Disaccharidases panel - Small intestine Tissue
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57765-0> -- Disaccharidases panel - Small intestine Tissue
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57765-0> -- Disaccharidases panel - Small intestine Tissue
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14168-9> -- Palatinase [Enzymatic activity/mass] in Tissue
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/30315-6> -- Acid alpha glucosidase [Enzymatic activity/mass] in Small intestine Tissue
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/30319-8> -- Beta galactosidase [Enzymatic activity/mass] in Small intestine Tissue
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/30372-7> -- Sucrase [Enzymatic activity/mass] in Small intestine Tissue
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57779-1> -- Disaccharidases [interpretation] in Small intestine Tissue Narrative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57765-0> -- Disaccharidases panel - Small intestine Tissue
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57765-0> -- Disaccharidases panel - Small intestine Tissue
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14168-9> -- Palatinase [Enzymatic activity/mass] in Tissue
+        ["id0.1.1.1.2"] = <http://loinc.org/id/30315-6> -- Acid alpha glucosidase [Enzymatic activity/mass] in Small intestine Tissue
+        ["id0.1.1.1.3"] = <http://loinc.org/id/30319-8> -- Beta galactosidase [Enzymatic activity/mass] in Small intestine Tissue
+        ["id0.1.1.1.4"] = <http://loinc.org/id/30372-7> -- Sucrase [Enzymatic activity/mass] in Small intestine Tissue
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57779-1> -- Disaccharidases [interpretation] in Small intestine Tissue Narrative
       >
     >
   >

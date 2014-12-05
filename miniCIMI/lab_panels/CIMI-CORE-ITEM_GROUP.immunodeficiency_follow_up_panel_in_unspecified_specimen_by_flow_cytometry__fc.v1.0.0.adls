@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)' concept">
         use = <"Use for Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC).">
         keywords = <"Immunodeficiency","follow-up","panel","-","Unspecified","specimen","by","Flow","cytometry","(FC)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49120-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:44">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
@@ -75,19 +75,19 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49120-9> -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49120-9> -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14135-8> -- CD3+CD8+ (T8 suppressor cells) cells [#/volume] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/20506-2> -- Specimen drawn from
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/26474-7> -- Lymphocytes [#/volume] in Blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/32515-9> -- CD3+CD4+ (T4 helper) cells [#/volume] in Unspecified specimen
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/45265-6> -- Immunodeficiency markers [interpretation] in Unspecified specimen Narrative
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/49314-8> -- Immunodeficiency markers [interpretation] in Unspecified specimen
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/54218-3> -- CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/8101-8> -- CD3+CD8+ (T8 suppressor cells) cells/100 cells in Blood
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/8122-4> -- CD3 cells [#/volume] in Blood
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/8123-2> -- CD3+CD4+ (T4 helper) cells/100 cells in Blood
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/8124-0> -- CD3 cells/100 cells in Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49120-9> -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49120-9> -- Immunodeficiency follow-up panel - Unspecified specimen by Flow cytometry (FC)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14135-8> -- CD3+CD8+ (T8 suppressor cells) cells [#/volume] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20506-2> -- Specimen drawn from
+        ["id0.1.1.1.3"] = <http://loinc.org/id/26474-7> -- Lymphocytes [#/volume] in Blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/32515-9> -- CD3+CD4+ (T4 helper) cells [#/volume] in Unspecified specimen
+        ["id0.1.1.1.5"] = <http://loinc.org/id/45265-6> -- Immunodeficiency markers [interpretation] in Unspecified specimen Narrative
+        ["id0.1.1.1.6"] = <http://loinc.org/id/49314-8> -- Immunodeficiency markers [interpretation] in Unspecified specimen
+        ["id0.1.1.1.7"] = <http://loinc.org/id/54218-3> -- CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood
+        ["id0.1.1.1.8"] = <http://loinc.org/id/8101-8> -- CD3+CD8+ (T8 suppressor cells) cells/100 cells in Blood
+        ["id0.1.1.1.9"] = <http://loinc.org/id/8122-4> -- CD3 cells [#/volume] in Blood
+        ["id0.1.1.1.10"] = <http://loinc.org/id/8123-2> -- CD3+CD4+ (T4 helper) cells/100 cells in Blood
+        ["id0.1.1.1.11"] = <http://loinc.org/id/8124-0> -- CD3 cells/100 cells in Blood
       >
     >
   >

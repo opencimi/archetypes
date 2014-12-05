@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amphetamines [Presence] in Serum or Plasma by Screen method' concept">
         use = <"Use for Amphetamines [Presence] in Serum or Plasma by Screen method.">
         keywords = <"Amphetamines","[Presence]","Serum","or","Plasma","by","Screen","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8149-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Amphetamines [Presence] in Serum or Plasma by Screen method
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amphetamines [Presence] in Serum or Plasma by Screen method
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Amphetamines [Presence] in Serum or Plasma by Screen method
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Amphetamines [Presence] in Serum or Plasma by Screen method
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Amphetamines [Presence] in Serum or Plasma by Screen method">>
-      ["at0.0.0.0.1"] = <text = <"Amphetamines [Presence] in Serum or Plasma by Screen method">>
+      ["id1.1.1.1.1.1"] = <text = <"Amphetamines [Presence] in Serum or Plasma by Screen method">>
+      ["at0.0.0.0.0.1"] = <text = <"Amphetamines [Presence] in Serum or Plasma by Screen method">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/8149-7>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/8149-7>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/8149-7>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/8149-7>
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Endocrine newborn screening panel' concept">
         use = <"Use for Endocrine newborn screening panel.">
         keywords = <"Endocrine","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54076-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Endocrine newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Endocrine newborn screening panel
@@ -52,10 +52,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54076-5> -- Endocrine newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54076-5> -- Endocrine newborn screening panel
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/54090-6> -- Thyroid newborn screening panel
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54076-5> -- Endocrine newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54076-5> -- Endocrine newborn screening panel
+        ["id0.1.2.1.1"] = <http://loinc.org/id/54090-6> -- Thyroid newborn screening panel
+        ["id0.1.2.1.2"] = <http://loinc.org/id/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
       >
     >
   >

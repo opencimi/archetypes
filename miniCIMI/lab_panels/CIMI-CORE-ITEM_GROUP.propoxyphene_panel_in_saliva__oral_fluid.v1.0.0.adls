@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Propoxyphene panel - Saliva (oral fluid)' concept">
         use = <"Use for Propoxyphene panel - Saliva (oral fluid).">
         keywords = <"Propoxyphene","panel","-","Saliva","(oral","fluid)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/73660-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Propoxyphene panel - Saliva (oral fluid)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Propoxyphene panel - Saliva (oral fluid)
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/73660-3> -- Propoxyphene panel - Saliva (oral fluid)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/73660-3> -- Propoxyphene panel - Saliva (oral fluid)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/72618-2> -- Propoxyphene + Norpropoxyphene [Presence] in Saliva (oral fluid)
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/72619-0> -- Norpropoxyphene [Mass/volume] in Saliva (oral fluid)
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/72620-8> -- Norpropoxyphene [Presence] in Saliva (oral fluid)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/72621-6> -- Propoxyphene [Mass/volume] in Saliva (oral fluid)
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/72622-4> -- Propoxyphene [Presence] in Saliva (oral fluid)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/73660-3> -- Propoxyphene panel - Saliva (oral fluid)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/73660-3> -- Propoxyphene panel - Saliva (oral fluid)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/72618-2> -- Propoxyphene + Norpropoxyphene [Presence] in Saliva (oral fluid)
+        ["id0.1.1.1.2"] = <http://loinc.org/id/72619-0> -- Norpropoxyphene [Mass/volume] in Saliva (oral fluid)
+        ["id0.1.1.1.3"] = <http://loinc.org/id/72620-8> -- Norpropoxyphene [Presence] in Saliva (oral fluid)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/72621-6> -- Propoxyphene [Mass/volume] in Saliva (oral fluid)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/72622-4> -- Propoxyphene [Presence] in Saliva (oral fluid)
       >
     >
   >

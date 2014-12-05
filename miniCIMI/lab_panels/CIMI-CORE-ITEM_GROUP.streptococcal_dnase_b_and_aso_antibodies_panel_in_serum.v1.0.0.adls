@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Streptococcal DNAse B and ASO antibodies panel - Serum' concept">
         use = <"Use for Streptococcal DNAse B and ASO antibodies panel - Serum.">
         keywords = <"Streptococcal","DNAse","B","ASO","antibodies","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58713-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Streptococcal DNAse B and ASO antibodies panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Streptococcal DNAse B and ASO antibodies panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58713-9> -- Streptococcal DNAse B and ASO antibodies panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58713-9> -- Streptococcal DNAse B and ASO antibodies panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/5133-4> -- Streptococcal DNAse B [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/5370-2> -- Streptolysin O Ab [Units/volume] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58713-9> -- Streptococcal DNAse B and ASO antibodies panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58713-9> -- Streptococcal DNAse B and ASO antibodies panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/5133-4> -- Streptococcal DNAse B [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5370-2> -- Streptolysin O Ab [Units/volume] in Serum or Plasma
       >
     >
   >

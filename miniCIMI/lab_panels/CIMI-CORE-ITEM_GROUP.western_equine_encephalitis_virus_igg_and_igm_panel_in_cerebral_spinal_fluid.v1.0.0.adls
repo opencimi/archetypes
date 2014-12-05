@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid' concept">
         use = <"Use for Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid.">
         keywords = <"Western","equine","encephalitis","virus","IgG","IgM","panel","-","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34955-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34955-5> -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34955-5> -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/31706-5> -- Western equine encephalitis virus IgG Ab [Units/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/34956-3> -- Western equine encephalitis virus IgM Ab [Units/volume] in Cerebral spinal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34955-5> -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34955-5> -- Western equine encephalitis virus IgG and IgM panel - Cerebral spinal fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/31706-5> -- Western equine encephalitis virus IgG Ab [Units/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/34956-3> -- Western equine encephalitis virus IgM Ab [Units/volume] in Cerebral spinal fluid
       >
     >
   >

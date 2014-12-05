@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Platelet aggregation panel - Platelet rich plasma' concept">
         use = <"Use for Platelet aggregation panel - Platelet rich plasma.">
         keywords = <"Platelet","aggregation","panel","-","Platelet","rich","plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48805-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Platelet aggregation panel - Platelet rich plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Platelet aggregation panel - Platelet rich plasma
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48805-6> -- Platelet aggregation panel - Platelet rich plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48805-6> -- Platelet aggregation panel - Platelet rich plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/21027-8> -- Platelet aggregation [interpretation] in Platelet poor plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/5992-3> -- Platelet aggregation ADP induced [Substance threshold] in Platelet rich plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/5993-1> -- Platelet aggregation arachidonate induced [Substance threshold] in Platelet rich plasma
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/5995-6> -- Platelet aggregation collagen induced [Mass threshold] in Platelet rich plasma
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/5998-0> -- Platelet aggregation ristocetin induced [Mass threshold] in Platelet rich plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48805-6> -- Platelet aggregation panel - Platelet rich plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48805-6> -- Platelet aggregation panel - Platelet rich plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/21027-8> -- Platelet aggregation [interpretation] in Platelet poor plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5992-3> -- Platelet aggregation ADP induced [Substance threshold] in Platelet rich plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5993-1> -- Platelet aggregation arachidonate induced [Substance threshold] in Platelet rich plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/5995-6> -- Platelet aggregation collagen induced [Mass threshold] in Platelet rich plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/5998-0> -- Platelet aggregation ristocetin induced [Mass threshold] in Platelet rich plasma
       >
     >
   >

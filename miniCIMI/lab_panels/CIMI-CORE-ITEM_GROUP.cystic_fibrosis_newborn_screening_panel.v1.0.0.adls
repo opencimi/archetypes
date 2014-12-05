@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cystic fibrosis newborn screening panel' concept">
         use = <"Use for Cystic fibrosis newborn screening panel.">
         keywords = <"Cystic","fibrosis","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54078-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cystic fibrosis newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cystic fibrosis newborn screening panel
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54078-1> -- Cystic fibrosis newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54078-1> -- Cystic fibrosis newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2077-6> -- Chloride [Moles/volume] in Sweat
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/46769-6> -- Cystic fibrosis newborn screen interpretation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/48633-2> -- Trypsinogen I Free [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/54083-1> -- CFTR gene mutations found [Identifier] in Dried blood spot Nominal
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57707-2> -- Cystic fibrosis newborn screening comment-discussion
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54078-1> -- Cystic fibrosis newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54078-1> -- Cystic fibrosis newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2077-6> -- Chloride [Moles/volume] in Sweat
+        ["id0.1.1.1.2"] = <http://loinc.org/id/46769-6> -- Cystic fibrosis newborn screen interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/48633-2> -- Trypsinogen I Free [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/54083-1> -- CFTR gene mutations found [Identifier] in Dried blood spot Nominal
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57707-2> -- Cystic fibrosis newborn screening comment-discussion
       >
     >
   >

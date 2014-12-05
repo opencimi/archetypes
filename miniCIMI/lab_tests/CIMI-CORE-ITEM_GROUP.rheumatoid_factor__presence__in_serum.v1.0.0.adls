@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Rheumatoid factor [Presence] in Serum' concept">
         use = <"Use for Rheumatoid factor [Presence] in Serum.">
         keywords = <"Rheumatoid","factor","[Presence]","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/33910-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:57:40">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Rheumatoid factor [Presence] in Serum
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Rheumatoid factor [Presence] in Serum
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Rheumatoid factor [Presence] in Serum
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Rheumatoid factor [Presence] in Serum
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Rheumatoid factor [Presence] in Serum">>
-      ["at0.0.0.0.1"] = <text = <"Rheumatoid factor [Presence] in Serum">>
+      ["id1.1.1.1.1.1"] = <text = <"Rheumatoid factor [Presence] in Serum">>
+      ["at0.0.0.0.0.1"] = <text = <"Rheumatoid factor [Presence] in Serum">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/33910-1>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/33910-1>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/33910-1>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/33910-1>
       >
     >
   >

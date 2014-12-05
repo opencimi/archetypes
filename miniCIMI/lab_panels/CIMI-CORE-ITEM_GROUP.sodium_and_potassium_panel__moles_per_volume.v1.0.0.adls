@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Sodium and Potassium panel [Moles/volume] - Blood' concept">
         use = <"Use for Sodium and Potassium panel [Moles/volume] - Blood.">
         keywords = <"Sodium","Potassium","panel","[Moles/volume]","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74353-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Sodium and Potassium panel [Moles/volume] - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Sodium and Potassium panel [Moles/volume] - Blood
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74353-4> -- Sodium and Potassium panel [Moles/volume] - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74353-4> -- Sodium and Potassium panel [Moles/volume] - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2947-0> -- Sodium [Moles/volume] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/6298-4> -- Potassium [Moles/volume] in Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74353-4> -- Sodium and Potassium panel [Moles/volume] - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74353-4> -- Sodium and Potassium panel [Moles/volume] - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2947-0> -- Sodium [Moles/volume] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/6298-4> -- Potassium [Moles/volume] in Blood
       >
     >
   >

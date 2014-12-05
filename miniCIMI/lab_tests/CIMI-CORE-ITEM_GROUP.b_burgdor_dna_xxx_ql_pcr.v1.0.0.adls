@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method' concept">
         use = <"Use for Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method.">
         keywords = <"Borrelia","burgdorferi","DNA","[Presence]","Unspecified","specimen","by","Probe","target","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/4991-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method">>
-      ["at0.0.0.0.1"] = <text = <"Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method">>
+      ["id1.1.1.1.1.1"] = <text = <"Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method">>
+      ["at0.0.0.0.0.1"] = <text = <"Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/4991-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/4991-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/4991-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/4991-6>
       >
     >
   >

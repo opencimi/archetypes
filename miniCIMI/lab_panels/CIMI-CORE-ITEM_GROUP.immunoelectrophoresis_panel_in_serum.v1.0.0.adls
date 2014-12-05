@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Immunoelectrophoresis panel - Serum' concept">
         use = <"Use for Immunoelectrophoresis panel - Serum.">
         keywords = <"Immunoelectrophoresis","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29586-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Immunoelectrophoresis panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Immunoelectrophoresis panel - Serum
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/29586-5> -- Immunoelectrophoresis panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/29586-5> -- Immunoelectrophoresis panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13169-8> -- Immunoelectrophoresis [interpretation] for Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/15182-9> -- IgA [Presence] in Serum by Immunoelectrophoresis
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/15184-5> -- IgG [Presence] in Serum by Immunoelectrophoresis
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/15186-0> -- IgM [Presence] in Serum by Immunoelectrophoresis
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/49274-4> -- Immunoelectrophoresis [interpretation] for Serum or Plasma Narrative
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/24351-9> -- Protein electrophoresis panel - Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/29586-5> -- Immunoelectrophoresis panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/29586-5> -- Immunoelectrophoresis panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13169-8> -- Immunoelectrophoresis [interpretation] for Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/15182-9> -- IgA [Presence] in Serum by Immunoelectrophoresis
+        ["id0.1.1.1.3"] = <http://loinc.org/id/15184-5> -- IgG [Presence] in Serum by Immunoelectrophoresis
+        ["id0.1.1.1.4"] = <http://loinc.org/id/15186-0> -- IgM [Presence] in Serum by Immunoelectrophoresis
+        ["id0.1.1.1.5"] = <http://loinc.org/id/49274-4> -- Immunoelectrophoresis [interpretation] for Serum or Plasma Narrative
+        ["id0.1.2.1.1"] = <http://loinc.org/id/24351-9> -- Protein electrophoresis panel - Serum or Plasma
       >
     >
   >

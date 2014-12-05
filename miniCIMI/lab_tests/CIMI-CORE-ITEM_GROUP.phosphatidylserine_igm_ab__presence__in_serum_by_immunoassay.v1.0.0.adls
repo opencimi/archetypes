@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay' concept">
         use = <"Use for Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay.">
         keywords = <"Phosphatidylserine","IgM","Ab","[Presence]","Serum","by","Immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9327-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay">>
-      ["at0.0.0.0.1"] = <text = <"Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay">>
+      ["id1.1.1.1.1.1"] = <text = <"Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay">>
+      ["at0.0.0.0.0.1"] = <text = <"Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/9327-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/9327-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/9327-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/9327-8>
       >
     >
   >

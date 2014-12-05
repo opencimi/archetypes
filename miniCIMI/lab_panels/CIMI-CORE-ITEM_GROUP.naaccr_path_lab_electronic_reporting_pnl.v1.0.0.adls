@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel' concept">
         use = <"Use for North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel.">
         keywords = <"North","American","Association","Central","Cancer","Registries,","Inc","(NAACCR,","Inc)","Pathology","Laboratory","Electronic","Reporting","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49143-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:44">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49143-1> -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49143-1> -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49143-1> -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49143-1> -- North American Association of Central Cancer Registries, Inc (NAACCR, Inc) Pathology Laboratory Electronic Reporting panel
       >
     >
   >

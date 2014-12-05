@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Erythrogram panel - Blood' concept">
         use = <"Use for Erythrogram panel - Blood.">
         keywords = <"Erythrogram","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48809-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Erythrogram panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Erythrogram panel - Blood
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48809-8> -- Erythrogram panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48809-8> -- Erythrogram panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/26453-1> -- Erythrocytes [#/volume] in Blood
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/24360-0> -- Hemoglobin and Hematocrit panel - Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48809-8> -- Erythrogram panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48809-8> -- Erythrogram panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/26453-1> -- Erythrocytes [#/volume] in Blood
+        ["id0.1.2.1.1"] = <http://loinc.org/id/24360-0> -- Hemoglobin and Hematocrit panel - Blood
       >
     >
   >

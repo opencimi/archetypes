@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation' concept">
         use = <"Use for Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation.">
         keywords = <"Coxsackievirus","A","Ab","panel","[Titer]","-","Serum","by","Complement","fixation">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41484-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/41484-7> -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/41484-7> -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/6688-6> -- Coxsackievirus A16 Ab [Titer] in Serum by Complement fixation
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/9750-1> -- Coxsackievirus A10 Ab [Titer] in Serum by Complement fixation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/9753-5> -- Coxsackievirus A2 Ab [Titer] in Serum by Complement fixation
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/9754-3> -- Coxsackievirus A4 Ab [Titer] in Serum by Complement fixation
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/9755-0> -- Coxsackievirus A7 Ab [Titer] in Serum by Complement fixation
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/9757-6> -- Coxsackievirus A9 Ab [Titer] in Serum by Complement fixation
+        ["id1.1.1.1.1"] = <http://loinc.org/id/41484-7> -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
+        ["at0.0.0.0.1"] = <http://loinc.org/id/41484-7> -- Coxsackievirus A Ab panel [Titer] - Serum by Complement fixation
+        ["id0.1.1.1.1"] = <http://loinc.org/id/6688-6> -- Coxsackievirus A16 Ab [Titer] in Serum by Complement fixation
+        ["id0.1.1.1.2"] = <http://loinc.org/id/9750-1> -- Coxsackievirus A10 Ab [Titer] in Serum by Complement fixation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/9753-5> -- Coxsackievirus A2 Ab [Titer] in Serum by Complement fixation
+        ["id0.1.1.1.4"] = <http://loinc.org/id/9754-3> -- Coxsackievirus A4 Ab [Titer] in Serum by Complement fixation
+        ["id0.1.1.1.5"] = <http://loinc.org/id/9755-0> -- Coxsackievirus A7 Ab [Titer] in Serum by Complement fixation
+        ["id0.1.1.1.6"] = <http://loinc.org/id/9757-6> -- Coxsackievirus A9 Ab [Titer] in Serum by Complement fixation
       >
     >
   >

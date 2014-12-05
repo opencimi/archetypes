@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis E virus IgG and IgM panel - Serum' concept">
         use = <"Use for Hepatitis E virus IgG and IgM panel - Serum.">
         keywords = <"Hepatitis","E","virus","IgG","IgM","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35680-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis E virus IgG and IgM panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis E virus IgG and IgM panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35680-8> -- Hepatitis E virus IgG and IgM panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35680-8> -- Hepatitis E virus IgG and IgM panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14211-7> -- Hepatitis E virus IgG Ab [Presence] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/14212-5> -- Hepatitis E virus IgM Ab [Presence] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35680-8> -- Hepatitis E virus IgG and IgM panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35680-8> -- Hepatitis E virus IgG and IgM panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14211-7> -- Hepatitis E virus IgG Ab [Presence] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/14212-5> -- Hepatitis E virus IgM Ab [Presence] in Serum
       >
     >
   >

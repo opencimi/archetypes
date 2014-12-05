@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)' concept">
         use = <"Use for Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC).">
         keywords = <"Lymphocyte","proliferation","antigen","panel","-","Blood","by","Flow","cytometry","(FC)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69042-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/69042-0> -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/69042-0> -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33193-4> -- Viable cells/100 cells in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/53810-8> -- Lymphocyte proliferation [interpretation] in Blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/69014-9> -- Lymphocyte proliferation.Candida albicans.maximum/CD45 in Blood by Flow cytometry (FC)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/69015-6> -- Lymphocyte proliferation.Candida albicans.maximum/CD3 in Blood by Flow cytometry (FC)
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/69016-4> -- Lymphocyte proliferation.tetanus toxoid.maximum/CD45 in Blood by Flow cytometry (FC)
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/69029-7> -- Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/69042-0> -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/69042-0> -- Lymphocyte proliferation antigen panel - Blood by Flow cytometry (FC)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33193-4> -- Viable cells/100 cells in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/53810-8> -- Lymphocyte proliferation [interpretation] in Blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/69014-9> -- Lymphocyte proliferation.Candida albicans.maximum/CD45 in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/69015-6> -- Lymphocyte proliferation.Candida albicans.maximum/CD3 in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/69016-4> -- Lymphocyte proliferation.tetanus toxoid.maximum/CD45 in Blood by Flow cytometry (FC)
+        ["id0.1.1.1.6"] = <http://loinc.org/id/69029-7> -- Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)
       >
     >
   >

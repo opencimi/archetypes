@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acylglycines panel [Mass Ratio] - Urine' concept">
         use = <"Use for Acylglycines panel [Mass Ratio] - Urine.">
         keywords = <"Acylglycines","panel","[Mass","Ratio]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50334-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acylglycines panel [Mass Ratio] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acylglycines panel [Mass Ratio] - Urine
@@ -85,24 +85,24 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50334-2> -- Acylglycines panel [Mass Ratio] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50334-2> -- Acylglycines panel [Mass Ratio] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13732-3> -- Dodecanedioate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13741-4> -- Ethylmalonate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/13748-9> -- Glutarate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/13753-9> -- Hexanoylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/13766-1> -- Isovalerylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/13777-8> -- Methylsuccinate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/13793-5> -- Phenylpropionylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/13811-5> -- Suberylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/27097-5> -- 2-Methylbutyrylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/27892-9> -- Butyrylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/38360-4> -- Isobutyrylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/38367-9> -- N-octanoylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/38417-2> -- Trans-cinnamoylglycine/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/50332-6> -- Hexadecanedioate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/50333-4> -- Tetradecanedioate/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/53718-3> -- Acylglycines [interpretation] in Urine Narrative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50334-2> -- Acylglycines panel [Mass Ratio] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50334-2> -- Acylglycines panel [Mass Ratio] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13732-3> -- Dodecanedioate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/13741-4> -- Ethylmalonate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/13748-9> -- Glutarate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/13753-9> -- Hexanoylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/13766-1> -- Isovalerylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/13777-8> -- Methylsuccinate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/13793-5> -- Phenylpropionylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/13811-5> -- Suberylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/27097-5> -- 2-Methylbutyrylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/27892-9> -- Butyrylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/38360-4> -- Isobutyrylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/38367-9> -- N-octanoylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/38417-2> -- Trans-cinnamoylglycine/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/50332-6> -- Hexadecanedioate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.15"] = <http://loinc.org/id/50333-4> -- Tetradecanedioate/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.16"] = <http://loinc.org/id/53718-3> -- Acylglycines [interpretation] in Urine Narrative
       >
     >
   >

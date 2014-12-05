@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous' concept">
         use = <"Use for Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous.">
         keywords = <"Electrolytes","1998","Venous","pH","panel","-","Serum","or","Plasma","+","Blood","venous">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34554-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34554-6> -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34554-6> -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2746-6> -- pH of Venous blood
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/24326-1> -- Electrolytes 1998 panel - Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34554-6> -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34554-6> -- Electrolytes 1998 and Venous pH panel - Serum or Plasma + Blood venous
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2746-6> -- pH of Venous blood
+        ["id0.1.2.1.1"] = <http://loinc.org/id/24326-1> -- Electrolytes 1998 panel - Serum or Plasma
       >
     >
   >

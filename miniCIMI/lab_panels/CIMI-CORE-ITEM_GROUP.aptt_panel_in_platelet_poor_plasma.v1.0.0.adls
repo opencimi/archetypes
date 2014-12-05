@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'aPTT panel - Platelet poor plasma' concept">
         use = <"Use for aPTT panel - Platelet poor plasma.">
         keywords = <"aPTT","panel","-","Platelet","poor","plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50197-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- aPTT panel - Platelet poor plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- aPTT panel - Platelet poor plasma
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50197-3> -- aPTT panel - Platelet poor plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50197-3> -- aPTT panel - Platelet poor plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14979-9> -- Activated partial thromboplastin time (aPTT) in Platelet poor plasma by Coagulation assay
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/5899-0> -- Activated partial thromboplastin time (aPTT) normal/actual in Platelet poor plasma by Coagulation assay
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50197-3> -- aPTT panel - Platelet poor plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50197-3> -- aPTT panel - Platelet poor plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14979-9> -- Activated partial thromboplastin time (aPTT) in Platelet poor plasma by Coagulation assay
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5899-0> -- Activated partial thromboplastin time (aPTT) normal/actual in Platelet poor plasma by Coagulation assay
       >
     >
   >

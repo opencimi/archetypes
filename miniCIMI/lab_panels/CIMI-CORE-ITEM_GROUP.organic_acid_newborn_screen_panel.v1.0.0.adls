@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Organic acid newborn screen panel' concept">
         use = <"Use for Organic acid newborn screen panel.">
         keywords = <"Organic","acid","newborn","screen","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57085-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Organic acid newborn screen panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Organic acid newborn screen panel
@@ -141,52 +141,52 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57085-3> -- Organic acid newborn screen panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57085-3> -- Organic acid newborn screen panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/45207-8> -- Glutarylcarnitine (C5-DC) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/45216-9> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/45222-7> -- Methylmalonylcarnitine (C4-DC) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/46744-9> -- Organic acidemias newborn screen interpretation
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/50106-4> -- 3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/50157-7> -- Acetylcarnitine (C2) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/53160-8> -- Propionylcarnitine (C3) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/53161-6> -- Propionylcarnitine (C3)/Methionine [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/53162-4> -- Propionylcarnitine (C3)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/53163-2> -- Propionylcarnitine (C3)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/53164-0> -- Propionylcarnitine (C3)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/53165-7> -- Formiminoglutamate [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/53166-5> -- Butyrylcarnitine+Isobutyrylcarnitine (C4) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/53167-3> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/53168-1> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Propionylcarnitine (C3) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/53169-9> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/53170-7> -- Tiglylcarnitine (C5:1) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/53171-5> -- 3-Hydroxyisovalerylcarnitine (C5-OH)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/53172-3> -- 3-Hydroxyisovalerylcarnitine (C5-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/53178-0> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/53179-8> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC)/Decanoylcarnitine (C10) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/53181-4> -- Methylmalonylcarnitine (C4-DC)/3-Hydroxyisovalerylcarnitine (C5-OH) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/53183-0> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/53184-8> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/3-Hydroxyisovalerylcarnitine (C5-OH) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/53185-5> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/53186-3> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/53187-1> -- Methylglutarylcarnitine (C6-DC) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/53237-4> -- Acrylylcarnitine (C3:1) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/53238-2> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/53239-0> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/53240-8> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Propionylcarnitine (C3) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/53401-6> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/53402-4> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC)/Butyrylcarnitine+Isobutyrylcarnitine (C4) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/53403-2> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Butyrylcarnitine+Isobutyrylcarnitine (C4) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/54462-7> -- Malonylcarnitine (C3-DC) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/57708-0> -- Organic acidemias defects newborn screening comment-discussion
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/57791-6> -- Organic acidemia conditions suspected [Identifier] in Dried blood spot
-        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/67701-3> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/67708-8> -- Malonylcarnitine (C3-DC)+3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/67709-6> -- Methylmalonylcarnitine (C4-DC)+3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.41"] = <configatron.adl.loinc.uri/67710-4> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.42"] = <configatron.adl.loinc.uri/67711-2> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.43"] = <configatron.adl.loinc.uri/75213-9> -- Malonylcarnitine (C3-DC)+3-Hydroxybutyrylcarnitine (C4-OH)/Decanoylcarnitine (C10) [Molar ratio] in Dried blood spot
-        ["id0.1.1.1.44"] = <configatron.adl.loinc.uri/75216-2> -- Glutarylcarnitine (C5-DC)/Malonylcarnitine (C3-DC) [Molar ratio] in Dried blood spot
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57085-3> -- Organic acid newborn screen panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57085-3> -- Organic acid newborn screen panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/45207-8> -- Glutarylcarnitine (C5-DC) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.2"] = <http://loinc.org/id/45216-9> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.3"] = <http://loinc.org/id/45222-7> -- Methylmalonylcarnitine (C4-DC) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/46744-9> -- Organic acidemias newborn screen interpretation
+        ["id0.1.1.1.5"] = <http://loinc.org/id/50106-4> -- 3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/50157-7> -- Acetylcarnitine (C2) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/53160-8> -- Propionylcarnitine (C3) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/53161-6> -- Propionylcarnitine (C3)/Methionine [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.9"] = <http://loinc.org/id/53162-4> -- Propionylcarnitine (C3)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.10"] = <http://loinc.org/id/53163-2> -- Propionylcarnitine (C3)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.11"] = <http://loinc.org/id/53164-0> -- Propionylcarnitine (C3)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.12"] = <http://loinc.org/id/53165-7> -- Formiminoglutamate [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.13"] = <http://loinc.org/id/53166-5> -- Butyrylcarnitine+Isobutyrylcarnitine (C4) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.14"] = <http://loinc.org/id/53167-3> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.15"] = <http://loinc.org/id/53168-1> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Propionylcarnitine (C3) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.16"] = <http://loinc.org/id/53169-9> -- Butyrylcarnitine+Isobutyrylcarnitine (C4)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.17"] = <http://loinc.org/id/53170-7> -- Tiglylcarnitine (C5:1) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.18"] = <http://loinc.org/id/53171-5> -- 3-Hydroxyisovalerylcarnitine (C5-OH)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.19"] = <http://loinc.org/id/53172-3> -- 3-Hydroxyisovalerylcarnitine (C5-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.20"] = <http://loinc.org/id/53178-0> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.21"] = <http://loinc.org/id/53179-8> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC)/Decanoylcarnitine (C10) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.22"] = <http://loinc.org/id/53181-4> -- Methylmalonylcarnitine (C4-DC)/3-Hydroxyisovalerylcarnitine (C5-OH) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.23"] = <http://loinc.org/id/53183-0> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.24"] = <http://loinc.org/id/53184-8> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/3-Hydroxyisovalerylcarnitine (C5-OH) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.25"] = <http://loinc.org/id/53185-5> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.26"] = <http://loinc.org/id/53186-3> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.27"] = <http://loinc.org/id/53187-1> -- Methylglutarylcarnitine (C6-DC) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.28"] = <http://loinc.org/id/53237-4> -- Acrylylcarnitine (C3:1) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.29"] = <http://loinc.org/id/53238-2> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Carnitine.free (C0) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.30"] = <http://loinc.org/id/53239-0> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Acetylcarnitine (C2) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.31"] = <http://loinc.org/id/53240-8> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Propionylcarnitine (C3) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.32"] = <http://loinc.org/id/53401-6> -- Isovalerylcarnitine+Methylbutyrylcarnitine (C5)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.33"] = <http://loinc.org/id/53402-4> -- 3-Hydroxyoctanoylcarnitine (C8-OH)+Malonylcarnitine (C3-DC)/Butyrylcarnitine+Isobutyrylcarnitine (C4) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.34"] = <http://loinc.org/id/53403-2> -- Glutarylcarnitine (C5-DC)+3-Hydroxydecanoylcarnitine (C10-OH)/Butyrylcarnitine+Isobutyrylcarnitine (C4) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.35"] = <http://loinc.org/id/54462-7> -- Malonylcarnitine (C3-DC) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.36"] = <http://loinc.org/id/57708-0> -- Organic acidemias defects newborn screening comment-discussion
+        ["id0.1.1.1.37"] = <http://loinc.org/id/57791-6> -- Organic acidemia conditions suspected [Identifier] in Dried blood spot
+        ["id0.1.1.1.38"] = <http://loinc.org/id/67701-3> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH)/Palmitoylcarnitine (C16) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.39"] = <http://loinc.org/id/67708-8> -- Malonylcarnitine (C3-DC)+3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.40"] = <http://loinc.org/id/67709-6> -- Methylmalonylcarnitine (C4-DC)+3-Hydroxyisovalerylcarnitine (C5-OH) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.41"] = <http://loinc.org/id/67710-4> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.42"] = <http://loinc.org/id/67711-2> -- Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH)/Octanoylcarnitine (C8) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.43"] = <http://loinc.org/id/75213-9> -- Malonylcarnitine (C3-DC)+3-Hydroxybutyrylcarnitine (C4-OH)/Decanoylcarnitine (C10) [Molar ratio] in Dried blood spot
+        ["id0.1.1.1.44"] = <http://loinc.org/id/75216-2> -- Glutarylcarnitine (C5-DC)/Malonylcarnitine (C3-DC) [Molar ratio] in Dried blood spot
       >
     >
   >

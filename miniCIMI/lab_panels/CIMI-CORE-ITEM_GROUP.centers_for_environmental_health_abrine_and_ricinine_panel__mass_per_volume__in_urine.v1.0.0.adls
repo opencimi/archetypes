@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine' concept">
         use = <"Use for Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine.">
         keywords = <"Centers","for","Environmental","Health","abrine","ricinine","panel","[Mass/volume]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54932-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54932-9> -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54932-9> -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/54933-7> -- Abrine [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/54934-5> -- Ricinine [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54932-9> -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54932-9> -- Centers for Environmental Health abrine and ricinine panel [Mass/volume] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/54933-7> -- Abrine [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54934-5> -- Ricinine [Mass/volume] in Urine
       >
     >
   >

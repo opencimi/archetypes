@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis C virus resistance panel by Genotype method' concept">
         use = <"Use for Hepatitis C virus resistance panel by Genotype method.">
         keywords = <"Hepatitis","C","virus","resistance","panel","by","Genotype","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72862-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:14">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis C virus resistance panel by Genotype method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis C virus resistance panel by Genotype method
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72862-6> -- Hepatitis C virus resistance panel by Genotype method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72862-6> -- Hepatitis C virus resistance panel by Genotype method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/72859-2> -- Boceprevir [Susceptibility] by Genotype method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/72860-0> -- Telaprevir [Susceptibility] by Genotype method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72862-6> -- Hepatitis C virus resistance panel by Genotype method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72862-6> -- Hepatitis C virus resistance panel by Genotype method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/72859-2> -- Boceprevir [Susceptibility] by Genotype method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/72860-0> -- Telaprevir [Susceptibility] by Genotype method
       >
     >
   >

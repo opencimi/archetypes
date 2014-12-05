@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cortisol challenge panel - Saliva (oral fluid)' concept">
         use = <"Use for Cortisol challenge panel - Saliva (oral fluid).">
         keywords = <"Cortisol","challenge","panel","-","Saliva","(oral","fluid)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54235-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cortisol challenge panel - Saliva (oral fluid)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cortisol challenge panel - Saliva (oral fluid)
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54235-7> -- Cortisol challenge panel - Saliva (oral fluid)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54235-7> -- Cortisol challenge panel - Saliva (oral fluid)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/51488-5> -- Cortisol [Mass/volume] in Saliva (oral fluid) --6th specimen post XXX challenge
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/51489-3> -- Cortisol [Mass/volume] in Saliva (oral fluid) --7th specimen post XXX challenge
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/51490-1> -- Cortisol [Mass/volume] in Saliva (oral fluid) --5th specimen post XXX challenge
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/51491-9> -- Cortisol [Mass/volume] in Saliva (oral fluid) --4th specimen post XXX challenge
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/51492-7> -- Cortisol [Mass/volume] in Saliva (oral fluid) --3rd specimen post XXX challenge
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/51493-5> -- Cortisol [Mass/volume] in Saliva (oral fluid) --2nd specimen post XXX challenge
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/51494-3> -- Cortisol [Mass/volume] in Saliva (oral fluid) --1st specimen post XXX challenge
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/51495-0> -- Cortisol [Mass/volume] in Saliva (oral fluid) --baseline
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54235-7> -- Cortisol challenge panel - Saliva (oral fluid)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54235-7> -- Cortisol challenge panel - Saliva (oral fluid)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/51488-5> -- Cortisol [Mass/volume] in Saliva (oral fluid) --6th specimen post XXX challenge
+        ["id0.1.1.1.2"] = <http://loinc.org/id/51489-3> -- Cortisol [Mass/volume] in Saliva (oral fluid) --7th specimen post XXX challenge
+        ["id0.1.1.1.3"] = <http://loinc.org/id/51490-1> -- Cortisol [Mass/volume] in Saliva (oral fluid) --5th specimen post XXX challenge
+        ["id0.1.1.1.4"] = <http://loinc.org/id/51491-9> -- Cortisol [Mass/volume] in Saliva (oral fluid) --4th specimen post XXX challenge
+        ["id0.1.1.1.5"] = <http://loinc.org/id/51492-7> -- Cortisol [Mass/volume] in Saliva (oral fluid) --3rd specimen post XXX challenge
+        ["id0.1.1.1.6"] = <http://loinc.org/id/51493-5> -- Cortisol [Mass/volume] in Saliva (oral fluid) --2nd specimen post XXX challenge
+        ["id0.1.1.1.7"] = <http://loinc.org/id/51494-3> -- Cortisol [Mass/volume] in Saliva (oral fluid) --1st specimen post XXX challenge
+        ["id0.1.1.1.8"] = <http://loinc.org/id/51495-0> -- Cortisol [Mass/volume] in Saliva (oral fluid) --baseline
       >
     >
   >

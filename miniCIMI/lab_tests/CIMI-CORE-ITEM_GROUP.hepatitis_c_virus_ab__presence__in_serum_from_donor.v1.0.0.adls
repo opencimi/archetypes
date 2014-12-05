@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis C virus Ab [Presence] in Serum from donor' concept">
         use = <"Use for Hepatitis C virus Ab [Presence] in Serum from donor.">
         keywords = <"Hepatitis","C","virus","Ab","[Presence]","Serum","from","donor">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/47441-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis C virus Ab [Presence] in Serum from donor
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis C virus Ab [Presence] in Serum from donor
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hepatitis C virus Ab [Presence] in Serum from donor
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Hepatitis C virus Ab [Presence] in Serum from donor
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Hepatitis C virus Ab [Presence] in Serum from donor">>
-      ["at0.0.0.0.1"] = <text = <"Hepatitis C virus Ab [Presence] in Serum from donor">>
+      ["id1.1.1.1.1.1"] = <text = <"Hepatitis C virus Ab [Presence] in Serum from donor">>
+      ["at0.0.0.0.0.1"] = <text = <"Hepatitis C virus Ab [Presence] in Serum from donor">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/47441-1>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/47441-1>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/47441-1>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/47441-1>
       >
     >
   >

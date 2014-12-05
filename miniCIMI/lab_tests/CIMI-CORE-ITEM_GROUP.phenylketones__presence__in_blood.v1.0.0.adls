@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Phenylketones [Presence] in Blood' concept">
         use = <"Use for Phenylketones [Presence] in Blood.">
         keywords = <"Phenylketones","[Presence]","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/2761-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:57:40">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Phenylketones [Presence] in Blood
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Phenylketones [Presence] in Blood
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Phenylketones [Presence] in Blood
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Phenylketones [Presence] in Blood
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Phenylketones [Presence] in Blood">>
-      ["at0.0.0.0.1"] = <text = <"Phenylketones [Presence] in Blood">>
+      ["id1.1.1.1.1.1"] = <text = <"Phenylketones [Presence] in Blood">>
+      ["at0.0.0.0.0.1"] = <text = <"Phenylketones [Presence] in Blood">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/2761-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/2761-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/2761-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/2761-5>
       >
     >
   >

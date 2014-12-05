@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method' concept">
         use = <"Use for Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method.">
         keywords = <"Bacterial","vaginosis","DNA","score","panel","-","Vaginal","fluid","by","Probe","target","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69571-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/69571-8> -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/69571-8> -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/69564-3> -- Bacterial vaginosis score [Presence] in Vaginal fluid by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/69565-0> -- Atopobium vaginae DNA [Presence] in Vaginal fluid by Probe and target amplification method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/69566-8> -- Bacterial vaginosis associated bacterium 2 DNA [Presence] in Vaginal fluid by Probe and target amplification method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/69567-6> -- Megasphaera sp type 1 DNA [Presence] in Vaginal fluid by Probe and target amplification method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/69568-4> -- Bacterial vaginosis [interpretation] in Vaginal fluid Qualitative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/69571-8> -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/69571-8> -- Bacterial vaginosis DNA and score panel - Vaginal fluid by Probe and target amplification method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/69564-3> -- Bacterial vaginosis score [Presence] in Vaginal fluid by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/69565-0> -- Atopobium vaginae DNA [Presence] in Vaginal fluid by Probe and target amplification method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/69566-8> -- Bacterial vaginosis associated bacterium 2 DNA [Presence] in Vaginal fluid by Probe and target amplification method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/69567-6> -- Megasphaera sp type 1 DNA [Presence] in Vaginal fluid by Probe and target amplification method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/69568-4> -- Bacterial vaginosis [interpretation] in Vaginal fluid Qualitative
       >
     >
   >

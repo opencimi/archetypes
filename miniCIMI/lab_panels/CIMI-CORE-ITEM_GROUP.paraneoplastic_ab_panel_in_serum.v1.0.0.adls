@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Paraneoplastic Ab panel - Serum' concept">
         use = <"Use for Paraneoplastic Ab panel - Serum.">
         keywords = <"Paraneoplastic","Ab","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43104-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Paraneoplastic Ab panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Paraneoplastic Ab panel - Serum
@@ -79,21 +79,21 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43104-9> -- Paraneoplastic Ab panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43104-9> -- Paraneoplastic Ab panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13997-2> -- Neuronal nuclear type 1 Ab [Titer] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/13998-0> -- Neuronal nuclear type 2 Ab [Titer] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/33924-2> -- Neuronal nuclear type 3 Ab [Titer] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/33925-9> -- Purkinje cells type 2 Ab [Titer] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/33926-7> -- Purkinje cells type Tr Ab [Titer] in Serum
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/33927-5> -- Amphiphysin Ab [Titer] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/33979-6> -- Voltage-gated calcium channel N type binding Ab [Moles/volume] in Serum
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/33980-4> -- Voltage-gated calcium channel P/Q type binding Ab [Moles/volume] in Serum
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/35386-2> -- CV2 IgG Ab [Titer] in Serum
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/57771-8> -- Paraneoplastic Ab [interpretation] in Serum Narrative
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/6970-8> -- Purkinje cells Ab [Titer] in Serum
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/8097-8> -- Striated muscle Ab [Titer] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/43104-9> -- Paraneoplastic Ab panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/43104-9> -- Paraneoplastic Ab panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/13997-2> -- Neuronal nuclear type 1 Ab [Titer] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/13998-0> -- Neuronal nuclear type 2 Ab [Titer] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/33924-2> -- Neuronal nuclear type 3 Ab [Titer] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/33925-9> -- Purkinje cells type 2 Ab [Titer] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/33926-7> -- Purkinje cells type Tr Ab [Titer] in Serum
+        ["id0.1.1.1.7"] = <http://loinc.org/id/33927-5> -- Amphiphysin Ab [Titer] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/33979-6> -- Voltage-gated calcium channel N type binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.9"] = <http://loinc.org/id/33980-4> -- Voltage-gated calcium channel P/Q type binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.10"] = <http://loinc.org/id/35386-2> -- CV2 IgG Ab [Titer] in Serum
+        ["id0.1.1.1.11"] = <http://loinc.org/id/57771-8> -- Paraneoplastic Ab [interpretation] in Serum Narrative
+        ["id0.1.1.1.12"] = <http://loinc.org/id/6970-8> -- Purkinje cells Ab [Titer] in Serum
+        ["id0.1.1.1.13"] = <http://loinc.org/id/8097-8> -- Striated muscle Ab [Titer] in Serum
       >
     >
   >

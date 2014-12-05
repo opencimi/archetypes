@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood' concept">
         use = <"Use for Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood.">
         keywords = <"Mycobacterium","tuberculosis","stimulated","gamma","interferon","spot","count","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74281-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74281-7> -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74281-7> -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/71773-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Presence] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/74277-5> -- Mycobacterium tuberculosis stimulated gamma interferon CFP10 Ag spot count [#] in Blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/74278-3> -- Mycobacterium tuberculosis stimulated gamma interferon ESAT-6 Ag spot count [#] in Blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/74279-1> -- Gamma interferon negative control spot count [#] in Blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/74280-9> -- Mitogen stimulated gamma interferon positive control spot count [#] in Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74281-7> -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74281-7> -- Mycobacterium tuberculosis stimulated gamma interferon and spot count panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/71773-6> -- Mycobacterium tuberculosis stimulated gamma interferon [Presence] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/74277-5> -- Mycobacterium tuberculosis stimulated gamma interferon CFP10 Ag spot count [#] in Blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/74278-3> -- Mycobacterium tuberculosis stimulated gamma interferon ESAT-6 Ag spot count [#] in Blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/74279-1> -- Gamma interferon negative control spot count [#] in Blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/74280-9> -- Mitogen stimulated gamma interferon positive control spot count [#] in Blood
       >
     >
   >

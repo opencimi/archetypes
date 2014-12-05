@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes' concept">
         use = <"Use for Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes.">
         keywords = <"Cerebroside","sulfatase","N-Acetylgalactosamine-4-Sulfatase","panel","[Enzymatic","activity/mass]","-","Leukocytes">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74978-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:54">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74978-8> -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74978-8> -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/24078-8> -- Cerebroside sulfatase [Enzymatic activity/mass] in Leukocytes
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/24094-5> -- N-Acetylgalactosamine-4-Sulfatase [Enzymatic activity/mass] in Leukocytes
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74978-8> -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74978-8> -- Cerebroside sulfatase and N-Acetylgalactosamine-4-Sulfatase panel [Enzymatic activity/mass] - Leukocytes
+        ["id0.1.1.1.1"] = <http://loinc.org/id/24078-8> -- Cerebroside sulfatase [Enzymatic activity/mass] in Leukocytes
+        ["id0.1.1.1.2"] = <http://loinc.org/id/24094-5> -- N-Acetylgalactosamine-4-Sulfatase [Enzymatic activity/mass] in Leukocytes
       >
     >
   >

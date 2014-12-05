@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Newborn screen card data panel' concept">
         use = <"Use for Newborn screen card data panel.">
         keywords = <"Newborn","screen","card","data","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57717-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Newborn screen card data panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Newborn screen card data panel
@@ -51,22 +51,16 @@ definition
           use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.body_weight_measured__when_specimen_taken.v1] occurrences matches {0..1} -- Body weight Measured --when specimen taken
           use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.hearing_loss_risk_indicators__identifier.v1] occurrences matches {0..1} -- Hearing loss risk indicators [Identifier]
           use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.date_of_last_blood_product_transfusion.v1] occurrences matches {0..1} -- Date of last blood product transfusion
-          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP..v1] occurrences matches {0..1} -- 
-          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_id__identifier__in_facility.v1] occurrences matches {0..1} -- Birth hospital facility ID [Identifier] in Facility
-          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_name.v1] occurrences matches {0..1} -- Birth hospital facility name
-          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_address.v1] occurrences matches {0..1} -- Birth hospital facility address
-          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_phone_number_in_facility.v1] occurrences matches {0..1} -- Birth hospital facility phone number in Facility
-          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.other_infant_nicu_factors_that_affect_newborn_screening_interpretation_narrative.v1] occurrences matches {0..1} -- Other infant NICU factors that affect newborn screening interpretation Narrative
-          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.feeding_types.v1] occurrences matches {1} -- Feeding types
-          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.other_feeding_types_narrative.v1] occurrences matches {0..1} -- Other feeding types Narrative
-          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.maternal_factors_that_affect_newborn_screening_interpretation.v1] occurrences matches {0..1} -- Maternal factors that affect newborn screening interpretation
-          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.other_maternal_factors_that_affect_newborn_screening_interpretation_narrative.v1] occurrences matches {0..1} -- Other maternal factors that affect newborn screening interpretation Narrative
-          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.birth_weight_measured.v1] occurrences matches {1} -- Birth weight Measured
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_id__identifier__in_facility.v1] occurrences matches {0..1} -- Birth hospital facility ID [Identifier] in Facility
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_name.v1] occurrences matches {0..1} -- Birth hospital facility name
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_address.v1] occurrences matches {0..1} -- Birth hospital facility address
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.birth_hospital_facility_phone_number_in_facility.v1] occurrences matches {0..1} -- Birth hospital facility phone number in Facility
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.other_infant_nicu_factors_that_affect_newborn_screening_interpretation_narrative.v1] occurrences matches {0..1} -- Other infant NICU factors that affect newborn screening interpretation Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.feeding_types.v1] occurrences matches {1} -- Feeding types
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.other_feeding_types_narrative.v1] occurrences matches {0..1} -- Other feeding types Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.maternal_factors_that_affect_newborn_screening_interpretation.v1] occurrences matches {0..1} -- Maternal factors that affect newborn screening interpretation
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.other_maternal_factors_that_affect_newborn_screening_interpretation_narrative.v1] occurrences matches {0..1} -- Other maternal factors that affect newborn screening interpretation Narrative
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.birth_weight_measured.v1] occurrences matches {1} -- Birth weight Measured
           use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
       }
     }
@@ -86,56 +80,44 @@ terminology
       ["id0.1.1.1.9"] = <text = <"Body weight Measured --when specimen taken">>
       ["id0.1.1.1.10"] = <text = <"Hearing loss risk indicators [Identifier]">>
       ["id0.1.1.1.11"] = <text = <"Date of last blood product transfusion">>
-      ["id0.1.1.1.12"] = <text = <"">>
-      ["id0.1.1.1.13"] = <text = <"">>
-      ["id0.1.1.1.14"] = <text = <"">>
-      ["id0.1.1.1.15"] = <text = <"">>
-      ["id0.1.1.1.16"] = <text = <"">>
-      ["id0.1.1.1.17"] = <text = <"">>
-      ["id0.1.1.1.18"] = <text = <"Birth hospital facility ID [Identifier] in Facility">>
-      ["id0.1.1.1.19"] = <text = <"Birth hospital facility name">>
-      ["id0.1.1.1.20"] = <text = <"Birth hospital facility address">>
-      ["id0.1.1.1.21"] = <text = <"Birth hospital facility phone number in Facility">>
-      ["id0.1.1.1.22"] = <text = <"Other infant NICU factors that affect newborn screening interpretation Narrative">>
-      ["id0.1.1.1.23"] = <text = <"Feeding types">>
-      ["id0.1.1.1.24"] = <text = <"Other feeding types Narrative">>
-      ["id0.1.1.1.25"] = <text = <"Maternal factors that affect newborn screening interpretation">>
-      ["id0.1.1.1.26"] = <text = <"Other maternal factors that affect newborn screening interpretation Narrative">>
-      ["id0.1.1.1.27"] = <text = <"Birth weight Measured">>
+      ["id0.1.1.1.12"] = <text = <"Birth hospital facility ID [Identifier] in Facility">>
+      ["id0.1.1.1.13"] = <text = <"Birth hospital facility name">>
+      ["id0.1.1.1.14"] = <text = <"Birth hospital facility address">>
+      ["id0.1.1.1.15"] = <text = <"Birth hospital facility phone number in Facility">>
+      ["id0.1.1.1.16"] = <text = <"Other infant NICU factors that affect newborn screening interpretation Narrative">>
+      ["id0.1.1.1.17"] = <text = <"Feeding types">>
+      ["id0.1.1.1.18"] = <text = <"Other feeding types Narrative">>
+      ["id0.1.1.1.19"] = <text = <"Maternal factors that affect newborn screening interpretation">>
+      ["id0.1.1.1.20"] = <text = <"Other maternal factors that affect newborn screening interpretation Narrative">>
+      ["id0.1.1.1.21"] = <text = <"Birth weight Measured">>
     >
   >
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57717-1> -- Newborn screen card data panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57717-1> -- Newborn screen card data panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/57711-4> -- Unique bar code number of Initial sample
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/57712-2> -- Mother's education
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/57713-0> -- Infant NICU factors that affect newborn screening interpretation
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57714-8> -- Obstetric estimation of gestational age
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57715-5> -- Birth time
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/57716-3> -- State printed on filter paper card [Identifier] in NBS card
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/57722-1> -- Birth plurality of Pregnancy
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/57723-9> -- Unique bar code number of Current sample
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/58229-6> -- Body weight Measured --when specimen taken
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/58232-0> -- Hearing loss risk indicators [Identifier]
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/62317-3> -- Date of last blood product transfusion
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/62323-1> -- 
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/62324-9> -- 
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/62325-6> -- 
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/62326-4> -- 
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/62327-2> -- 
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/62328-0> -- 
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/62329-8> -- Birth hospital facility ID [Identifier] in Facility
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/62330-6> -- Birth hospital facility name
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/62331-4> -- Birth hospital facility address
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/62332-2> -- Birth hospital facility phone number in Facility
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/67703-9> -- Other infant NICU factors that affect newborn screening interpretation Narrative
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/67704-7> -- Feeding types
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/67705-4> -- Other feeding types Narrative
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/67706-2> -- Maternal factors that affect newborn screening interpretation
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/67707-0> -- Other maternal factors that affect newborn screening interpretation Narrative
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/8339-4> -- Birth weight Measured
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57717-1> -- Newborn screen card data panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57717-1> -- Newborn screen card data panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/57711-4> -- Unique bar code number of Initial sample
+        ["id0.1.1.1.2"] = <http://loinc.org/id/57712-2> -- Mother's education
+        ["id0.1.1.1.3"] = <http://loinc.org/id/57713-0> -- Infant NICU factors that affect newborn screening interpretation
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57714-8> -- Obstetric estimation of gestational age
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57715-5> -- Birth time
+        ["id0.1.1.1.6"] = <http://loinc.org/id/57716-3> -- State printed on filter paper card [Identifier] in NBS card
+        ["id0.1.1.1.7"] = <http://loinc.org/id/57722-1> -- Birth plurality of Pregnancy
+        ["id0.1.1.1.8"] = <http://loinc.org/id/57723-9> -- Unique bar code number of Current sample
+        ["id0.1.1.1.9"] = <http://loinc.org/id/58229-6> -- Body weight Measured --when specimen taken
+        ["id0.1.1.1.10"] = <http://loinc.org/id/58232-0> -- Hearing loss risk indicators [Identifier]
+        ["id0.1.1.1.11"] = <http://loinc.org/id/62317-3> -- Date of last blood product transfusion
+        ["id0.1.1.1.12"] = <http://loinc.org/id/62329-8> -- Birth hospital facility ID [Identifier] in Facility
+        ["id0.1.1.1.13"] = <http://loinc.org/id/62330-6> -- Birth hospital facility name
+        ["id0.1.1.1.14"] = <http://loinc.org/id/62331-4> -- Birth hospital facility address
+        ["id0.1.1.1.15"] = <http://loinc.org/id/62332-2> -- Birth hospital facility phone number in Facility
+        ["id0.1.1.1.16"] = <http://loinc.org/id/67703-9> -- Other infant NICU factors that affect newborn screening interpretation Narrative
+        ["id0.1.1.1.17"] = <http://loinc.org/id/67704-7> -- Feeding types
+        ["id0.1.1.1.18"] = <http://loinc.org/id/67705-4> -- Other feeding types Narrative
+        ["id0.1.1.1.19"] = <http://loinc.org/id/67706-2> -- Maternal factors that affect newborn screening interpretation
+        ["id0.1.1.1.20"] = <http://loinc.org/id/67707-0> -- Other maternal factors that affect newborn screening interpretation Narrative
+        ["id0.1.1.1.21"] = <http://loinc.org/id/8339-4> -- Birth weight Measured
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Catecholamines 3 panel [Moles/volume] - Plasma' concept">
         use = <"Use for Catecholamines 3 panel [Moles/volume] - Plasma.">
         keywords = <"Catecholamines","3","panel","[Moles/volume]","-","Plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/73865-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Catecholamines 3 panel [Moles/volume] - Plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Catecholamines 3 panel [Moles/volume] - Plasma
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/73865-8> -- Catecholamines 3 panel [Moles/volume] - Plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/73865-8> -- Catecholamines 3 panel [Moles/volume] - Plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14703-3> -- Dopamine [Moles/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/14711-6> -- Epinephrine [Moles/volume] in Plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/14852-8> -- Norepinephrine [Moles/volume] in Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/73865-8> -- Catecholamines 3 panel [Moles/volume] - Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/73865-8> -- Catecholamines 3 panel [Moles/volume] - Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14703-3> -- Dopamine [Moles/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/14711-6> -- Epinephrine [Moles/volume] in Plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/14852-8> -- Norepinephrine [Moles/volume] in Plasma
       >
     >
   >

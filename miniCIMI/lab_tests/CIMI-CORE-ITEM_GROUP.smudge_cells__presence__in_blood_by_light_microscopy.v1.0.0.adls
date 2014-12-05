@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Smudge cells [Presence] in Blood by Light microscopy' concept">
         use = <"Use for Smudge cells [Presence] in Blood by Light microscopy.">
         keywords = <"Smudge","cells","[Presence]","Blood","by","Light","microscopy">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/7798-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:02:07">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Smudge cells [Presence] in Blood by Light microscopy
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Smudge cells [Presence] in Blood by Light microscopy
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Smudge cells [Presence] in Blood by Light microscopy
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Smudge cells [Presence] in Blood by Light microscopy
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Smudge cells [Presence] in Blood by Light microscopy">>
-      ["at0.0.0.0.1"] = <text = <"Smudge cells [Presence] in Blood by Light microscopy">>
+      ["id1.1.1.1.1.1"] = <text = <"Smudge cells [Presence] in Blood by Light microscopy">>
+      ["at0.0.0.0.0.1"] = <text = <"Smudge cells [Presence] in Blood by Light microscopy">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/7798-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/7798-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/7798-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/7798-2>
       >
     >
   >

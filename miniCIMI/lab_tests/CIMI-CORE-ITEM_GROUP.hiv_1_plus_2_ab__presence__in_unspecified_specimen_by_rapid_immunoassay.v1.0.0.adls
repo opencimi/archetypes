@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay' concept">
         use = <"Use for HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay.">
         keywords = <"HIV","1+2","Ab","[Presence]","Unspecified","specimen","by","Rapid","immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49580-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay">>
-      ["at0.0.0.0.1"] = <text = <"HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay">>
+      ["id1.1.1.1.1.1"] = <text = <"HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay">>
+      ["at0.0.0.0.0.1"] = <text = <"HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49580-4>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49580-4>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/49580-4>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/49580-4>
       >
     >
   >

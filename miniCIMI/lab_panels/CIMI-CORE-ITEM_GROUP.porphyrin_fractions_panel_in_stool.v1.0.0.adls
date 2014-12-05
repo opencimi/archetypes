@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Porphyrin fractions panel - Stool' concept">
         use = <"Use for Porphyrin fractions panel - Stool.">
         keywords = <"Porphyrin","fractions","panel","-","Stool">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74835-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:54">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Porphyrin fractions panel - Stool
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Porphyrin fractions panel - Stool
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74835-0> -- Porphyrin fractions panel - Stool
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74835-0> -- Porphyrin fractions panel - Stool
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/49290-0> -- Porphyrins [interpretation] in Stool Narrative
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/75024-0> -- Coproporphyrin 1/Porphyrins.total in Stool
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/75025-7> -- Coproporphyrin 3/Porphyrins.total in Stool
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/75026-5> -- Deuteroporphyrin/Porphyrins.total in Stool
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/75027-3> -- Mesoporphyrin/Porphyrins.total in Stool
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/75028-1> -- Protoporphyrin/Porphyrins.total in Stool
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74835-0> -- Porphyrin fractions panel - Stool
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74835-0> -- Porphyrin fractions panel - Stool
+        ["id0.1.1.1.1"] = <http://loinc.org/id/49290-0> -- Porphyrins [interpretation] in Stool Narrative
+        ["id0.1.1.1.2"] = <http://loinc.org/id/75024-0> -- Coproporphyrin 1/Porphyrins.total in Stool
+        ["id0.1.1.1.3"] = <http://loinc.org/id/75025-7> -- Coproporphyrin 3/Porphyrins.total in Stool
+        ["id0.1.1.1.4"] = <http://loinc.org/id/75026-5> -- Deuteroporphyrin/Porphyrins.total in Stool
+        ["id0.1.1.1.5"] = <http://loinc.org/id/75027-3> -- Mesoporphyrin/Porphyrins.total in Stool
+        ["id0.1.1.1.6"] = <http://loinc.org/id/75028-1> -- Protoporphyrin/Porphyrins.total in Stool
       >
     >
   >

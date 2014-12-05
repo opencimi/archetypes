@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Chloride and sodium panel [Moles/volume] - Sweat' concept">
         use = <"Use for Chloride and sodium panel [Moles/volume] - Sweat.">
         keywords = <"Chloride","sodium","panel","[Moles/volume]","-","Sweat">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74993-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:54">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Chloride and sodium panel [Moles/volume] - Sweat
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chloride and sodium panel [Moles/volume] - Sweat
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74993-7> -- Chloride and sodium panel [Moles/volume] - Sweat
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74993-7> -- Chloride and sodium panel [Moles/volume] - Sweat
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2077-6> -- Chloride [Moles/volume] in Sweat
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/2954-6> -- Sodium [Moles/volume] in Sweat
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74993-7> -- Chloride and sodium panel [Moles/volume] - Sweat
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74993-7> -- Chloride and sodium panel [Moles/volume] - Sweat
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2077-6> -- Chloride [Moles/volume] in Sweat
+        ["id0.1.1.1.2"] = <http://loinc.org/id/2954-6> -- Sodium [Moles/volume] in Sweat
       >
     >
   >

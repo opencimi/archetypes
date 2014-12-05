@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amoxicillin+Clavulanate [Susceptibility]' concept">
         use = <"Use for Amoxicillin+Clavulanate [Susceptibility].">
         keywords = <"Amoxicillin+Clavulanate","[Susceptibility]">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/18862-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Amoxicillin+Clavulanate [Susceptibility]
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amoxicillin+Clavulanate [Susceptibility]
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Amoxicillin+Clavulanate [Susceptibility]
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Amoxicillin+Clavulanate [Susceptibility]
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Amoxicillin+Clavulanate [Susceptibility]">>
-      ["at0.0.0.0.1"] = <text = <"Amoxicillin+Clavulanate [Susceptibility]">>
+      ["id1.1.1.1.1.1"] = <text = <"Amoxicillin+Clavulanate [Susceptibility]">>
+      ["at0.0.0.0.0.1"] = <text = <"Amoxicillin+Clavulanate [Susceptibility]">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/18862-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/18862-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/18862-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/18862-3>
       >
     >
   >

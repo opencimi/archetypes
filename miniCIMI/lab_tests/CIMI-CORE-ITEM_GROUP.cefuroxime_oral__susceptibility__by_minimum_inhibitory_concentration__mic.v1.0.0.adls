@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)' concept">
         use = <"Use for Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC).">
         keywords = <"Cefuroxime","Oral","[Susceptibility]","by","Minimum","inhibitory","concentration","(MIC)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20460-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:58:23">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
-      ["at0.0.0.0.1"] = <text = <"Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id1.1.1.1.1.1"] = <text = <"Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["at0.0.0.0.0.1"] = <text = <"Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/20460-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/20460-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/20460-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/20460-2>
       >
     >
   >

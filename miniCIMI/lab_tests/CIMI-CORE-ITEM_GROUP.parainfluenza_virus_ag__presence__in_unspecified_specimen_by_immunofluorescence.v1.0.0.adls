@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence' concept">
         use = <"Use for Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence.">
         keywords = <"Parainfluenza","virus","Ag","[Presence]","Unspecified","specimen","by","Immunofluorescence">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13327-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence">>
-      ["at0.0.0.0.1"] = <text = <"Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence">>
+      ["id1.1.1.1.1.1"] = <text = <"Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence">>
+      ["at0.0.0.0.0.1"] = <text = <"Parainfluenza virus Ag [Presence] in Unspecified specimen by Immunofluorescence">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/13327-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/13327-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/13327-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/13327-2>
       >
     >
   >

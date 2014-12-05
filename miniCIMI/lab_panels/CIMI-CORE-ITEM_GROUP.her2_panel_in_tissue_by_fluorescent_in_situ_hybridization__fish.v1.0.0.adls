@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)' concept">
         use = <"Use for HER2 panel - Tissue by Fluorescent in situ hybridization (FISH).">
         keywords = <"HER2","panel","-","Tissue","by","Fluorescent","situ","hybridization","(FISH)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74885-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:54">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74885-5> -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74885-5> -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/31150-6> -- HER2 [Presence] in Tissue by Fluorescent in situ hybridization (FISH)
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/48675-3> -- HER2 in Tissue by Fluorescent in situ hybridization (FISH) Nominal
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/49683-6> -- HER2/CEP17 [Ratio] in Tissue by Fluorescent in situ hybridization (FISH)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/74860-8> -- HER2 signals/nucleus [Entitic number] in Tissue by Fluorescent in situ hybridization (FISH)
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/74861-6> -- CEP17 signals/nucleus [Entitic number] in Tissue by Fluorescent in situ hybridization (FISH)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74885-5> -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74885-5> -- HER2 panel - Tissue by Fluorescent in situ hybridization (FISH)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/31150-6> -- HER2 [Presence] in Tissue by Fluorescent in situ hybridization (FISH)
+        ["id0.1.1.1.2"] = <http://loinc.org/id/48675-3> -- HER2 in Tissue by Fluorescent in situ hybridization (FISH) Nominal
+        ["id0.1.1.1.3"] = <http://loinc.org/id/49683-6> -- HER2/CEP17 [Ratio] in Tissue by Fluorescent in situ hybridization (FISH)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/74860-8> -- HER2 signals/nucleus [Entitic number] in Tissue by Fluorescent in situ hybridization (FISH)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/74861-6> -- CEP17 signals/nucleus [Entitic number] in Tissue by Fluorescent in situ hybridization (FISH)
       >
     >
   >

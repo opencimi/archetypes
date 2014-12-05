@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Immunoglobulin light chains.free panel - Serum' concept">
         use = <"Use for Immunoglobulin light chains.free panel - Serum.">
         keywords = <"Immunoglobulin","light","chains.free","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57778-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Immunoglobulin light chains.free panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Immunoglobulin light chains.free panel - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57778-3> -- Immunoglobulin light chains.free panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57778-3> -- Immunoglobulin light chains.free panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33944-0> -- Immunoglobulin light chains.lambda.free [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/36916-5> -- Immunoglobulin light chains.kappa.free [Mass/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/48378-4> -- Immunoglobulin light chains.kappa.free/Immunoglobulin light chains.lambda.free [Mass Ratio] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57778-3> -- Immunoglobulin light chains.free panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57778-3> -- Immunoglobulin light chains.free panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33944-0> -- Immunoglobulin light chains.lambda.free [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/36916-5> -- Immunoglobulin light chains.kappa.free [Mass/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/48378-4> -- Immunoglobulin light chains.kappa.free/Immunoglobulin light chains.lambda.free [Mass Ratio] in Serum
       >
     >
   >

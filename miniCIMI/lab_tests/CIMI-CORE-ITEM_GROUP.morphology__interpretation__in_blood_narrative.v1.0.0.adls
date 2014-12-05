@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Morphology [interpretation] in Blood Narrative' concept">
         use = <"Use for Morphology [interpretation] in Blood Narrative.">
         keywords = <"Morphology","[interpretation]","Blood","Narrative">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/18314-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Morphology [interpretation] in Blood Narrative
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Morphology [interpretation] in Blood Narrative
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Morphology [interpretation] in Blood Narrative
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Morphology [interpretation] in Blood Narrative
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Morphology [interpretation] in Blood Narrative">>
-      ["at0.0.0.0.1"] = <text = <"Morphology [interpretation] in Blood Narrative">>
+      ["id1.1.1.1.1.1"] = <text = <"Morphology [interpretation] in Blood Narrative">>
+      ["at0.0.0.0.0.1"] = <text = <"Morphology [interpretation] in Blood Narrative">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/18314-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/18314-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/18314-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/18314-5>
       >
     >
   >

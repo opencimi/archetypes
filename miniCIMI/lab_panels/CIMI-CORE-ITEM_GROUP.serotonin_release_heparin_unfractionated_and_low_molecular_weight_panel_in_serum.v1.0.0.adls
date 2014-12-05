@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Serotonin release.heparin.unfractionated and low molecular weight panel - Serum' concept">
         use = <"Use for Serotonin release.heparin.unfractionated and low molecular weight panel - Serum.">
         keywords = <"Serotonin","release.heparin.unfractionated","low","molecular","weight","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/68501-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
@@ -52,10 +52,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/68501-6> -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/68501-6> -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/50736-8> -- Serotonin release.heparin.unfractionated panel - Serum
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/50738-4> -- Serotonin release.heparin.low molecular weight panel - Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/68501-6> -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/68501-6> -- Serotonin release.heparin.unfractionated and low molecular weight panel - Serum
+        ["id0.1.2.1.1"] = <http://loinc.org/id/50736-8> -- Serotonin release.heparin.unfractionated panel - Serum
+        ["id0.1.2.1.2"] = <http://loinc.org/id/50738-4> -- Serotonin release.heparin.low molecular weight panel - Serum
       >
     >
   >

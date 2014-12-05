@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Blood product unit [Identifier]' concept">
         use = <"Use for Blood product unit [Identifier].">
         keywords = <"Blood","product","unit","[Identifier]">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/936-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Blood product unit [Identifier]
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Blood product unit [Identifier]
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Blood product unit [Identifier]
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Blood product unit [Identifier]
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Blood product unit [Identifier]">>
-      ["at0.0.0.0.1"] = <text = <"Blood product unit [Identifier]">>
+      ["id1.1.1.1.1.1"] = <text = <"Blood product unit [Identifier]">>
+      ["at0.0.0.0.0.1"] = <text = <"Blood product unit [Identifier]">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/936-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/936-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/936-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/936-5>
       >
     >
   >

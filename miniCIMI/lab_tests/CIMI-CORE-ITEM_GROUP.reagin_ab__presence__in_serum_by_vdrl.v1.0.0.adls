@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Reagin Ab [Presence] in Serum by VDRL' concept">
         use = <"Use for Reagin Ab [Presence] in Serum by VDRL.">
         keywords = <"Reagin","Ab","[Presence]","Serum","by","VDRL">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5292-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Reagin Ab [Presence] in Serum by VDRL
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Reagin Ab [Presence] in Serum by VDRL
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Reagin Ab [Presence] in Serum by VDRL
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Reagin Ab [Presence] in Serum by VDRL
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Reagin Ab [Presence] in Serum by VDRL">>
-      ["at0.0.0.0.1"] = <text = <"Reagin Ab [Presence] in Serum by VDRL">>
+      ["id1.1.1.1.1.1"] = <text = <"Reagin Ab [Presence] in Serum by VDRL">>
+      ["at0.0.0.0.0.1"] = <text = <"Reagin Ab [Presence] in Serum by VDRL">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/5292-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/5292-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5292-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5292-8>
       >
     >
   >

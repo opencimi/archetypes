@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Arbovirus IgG and IgM panel - Serum by Immunofluorescence' concept">
         use = <"Use for Arbovirus IgG and IgM panel - Serum by Immunofluorescence.">
         keywords = <"Arbovirus","IgG","IgM","panel","-","Serum","by","Immunofluorescence">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49093-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:44">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
@@ -77,20 +77,20 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49093-8> -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49093-8> -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/10896-9> -- Eastern equine encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/10898-5> -- Eastern equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/10904-1> -- La Crosse virus IgG Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/10905-8> -- La Crosse virus IgM Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/10906-6> -- Saint Louis encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/10907-4> -- Saint Louis encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/24006-9> -- Eastern equine encephalitis virus IgG and IgM [interpretation] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/49082-1> -- Western equine encephalitis virus IgG and IgM [interpretation] in Serum
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/49095-3> -- Saint Louis encephalitis virus IgG and IgM [interpretation] in Serum
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/49142-3> -- La Crosse virus IgG and IgM [interpretation] in Serum
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/6957-5> -- Western equine encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/6958-3> -- Western equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49093-8> -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49093-8> -- Arbovirus IgG and IgM panel - Serum by Immunofluorescence
+        ["id0.1.1.1.1"] = <http://loinc.org/id/10896-9> -- Eastern equine encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.2"] = <http://loinc.org/id/10898-5> -- Eastern equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.3"] = <http://loinc.org/id/10904-1> -- La Crosse virus IgG Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.4"] = <http://loinc.org/id/10905-8> -- La Crosse virus IgM Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.5"] = <http://loinc.org/id/10906-6> -- Saint Louis encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.6"] = <http://loinc.org/id/10907-4> -- Saint Louis encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.7"] = <http://loinc.org/id/24006-9> -- Eastern equine encephalitis virus IgG and IgM [interpretation] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/49082-1> -- Western equine encephalitis virus IgG and IgM [interpretation] in Serum
+        ["id0.1.1.1.9"] = <http://loinc.org/id/49095-3> -- Saint Louis encephalitis virus IgG and IgM [interpretation] in Serum
+        ["id0.1.1.1.10"] = <http://loinc.org/id/49142-3> -- La Crosse virus IgG and IgM [interpretation] in Serum
+        ["id0.1.1.1.11"] = <http://loinc.org/id/6957-5> -- Western equine encephalitis virus IgG Ab [Titer] in Serum by Immunofluorescence
+        ["id0.1.1.1.12"] = <http://loinc.org/id/6958-3> -- Western equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence
       >
     >
   >

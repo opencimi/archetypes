@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Galactosemia newborn screening panel (SI units)' concept">
         use = <"Use for Galactosemia newborn screening panel (SI units).">
         keywords = <"Galactosemia","newborn","screening","panel","(SI","units)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54080-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Galactosemia newborn screening panel (SI units)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Galactosemia newborn screening panel (SI units)
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54080-7> -- Galactosemia newborn screening panel (SI units)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54080-7> -- Galactosemia newborn screening panel (SI units)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33288-2> -- Galactose 1 phosphate uridyl transferase [Presence] in Dried blood spot
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/42906-8> -- Galactose 1 phosphate uridyl transferase [Enzymatic activity/volume] in Dried blood spot
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/46737-3> -- Galactosemias newborn screen interpretation
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/54085-6> -- Galactose [Moles/volume] in Dried blood spot
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57704-9> -- Galactosemias newborn screening comment-discussion
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54080-7> -- Galactosemia newborn screening panel (SI units)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54080-7> -- Galactosemia newborn screening panel (SI units)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33288-2> -- Galactose 1 phosphate uridyl transferase [Presence] in Dried blood spot
+        ["id0.1.1.1.2"] = <http://loinc.org/id/42906-8> -- Galactose 1 phosphate uridyl transferase [Enzymatic activity/volume] in Dried blood spot
+        ["id0.1.1.1.3"] = <http://loinc.org/id/46737-3> -- Galactosemias newborn screen interpretation
+        ["id0.1.1.1.4"] = <http://loinc.org/id/54085-6> -- Galactose [Moles/volume] in Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57704-9> -- Galactosemias newborn screening comment-discussion
       >
     >
   >

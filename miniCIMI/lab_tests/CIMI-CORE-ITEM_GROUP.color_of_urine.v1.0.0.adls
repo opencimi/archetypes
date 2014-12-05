@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Color of Urine' concept">
         use = <"Use for Color of Urine.">
         keywords = <"Color","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5778-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T06:00:45">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Color of Urine
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Color of Urine
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Color of Urine
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Color of Urine
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Color of Urine">>
-      ["at0.0.0.0.1"] = <text = <"Color of Urine">>
+      ["id1.1.1.1.1.1"] = <text = <"Color of Urine">>
+      ["at0.0.0.0.0.1"] = <text = <"Color of Urine">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/5778-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/5778-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5778-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5778-6>
       >
     >
   >

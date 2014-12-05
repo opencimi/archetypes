@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum' concept">
         use = <"Use for Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum.">
         keywords = <"Streptococcus","pneumoniae","14a","Corynebacterium","diphtheriae","toxin","Clostridium","tetani","toxin","Ab.IgG","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53932-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53932-0> -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53932-0> -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/48654-8> -- Corynebacterium diphtheriae toxin IgG Ab [Units/volume] in Serum by Immunoassay
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/53935-3> -- Clostridium tetani toxin IgG Ab [Units/volume] in Serum or Plasma by Immunoassay
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53932-0> -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53932-0> -- Streptococcus pneumoniae 14a and Corynebacterium diphtheriae toxin and Clostridium tetani toxin Ab.IgG panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/48654-8> -- Corynebacterium diphtheriae toxin IgG Ab [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.2"] = <http://loinc.org/id/53935-3> -- Clostridium tetani toxin IgG Ab [Units/volume] in Serum or Plasma by Immunoassay
+        ["id0.1.2.1.1"] = <http://loinc.org/id/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
       >
     >
   >

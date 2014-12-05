@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Drugs of abuse 5 panel - Urine' concept">
         use = <"Use for Drugs of abuse 5 panel - Urine.">
         keywords = <"Drugs","abuse","5","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24349-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Drugs of abuse 5 panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Drugs of abuse 5 panel - Urine
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24349-3> -- Drugs of abuse 5 panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24349-3> -- Drugs of abuse 5 panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/26760-9> -- Cannabinoids [Units/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/3394-4> -- Benzoylecgonine [Mass/volume] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/3937-0> -- Phencyclidine [Mass/volume] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/8150-5> -- Amphetamines [Mass/volume] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/8220-6> -- Opiates [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24349-3> -- Drugs of abuse 5 panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24349-3> -- Drugs of abuse 5 panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/26760-9> -- Cannabinoids [Units/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/3394-4> -- Benzoylecgonine [Mass/volume] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/3937-0> -- Phencyclidine [Mass/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/8150-5> -- Amphetamines [Mass/volume] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/8220-6> -- Opiates [Mass/volume] in Urine
       >
     >
   >

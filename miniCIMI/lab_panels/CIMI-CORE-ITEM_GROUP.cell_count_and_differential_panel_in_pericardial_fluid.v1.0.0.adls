@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cell count and Differential panel - Pericardial fluid' concept">
         use = <"Use for Cell count and Differential panel - Pericardial fluid.">
         keywords = <"Cell","count","Differential","panel","-","Pericardial","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/59257-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cell count and Differential panel - Pericardial fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cell count and Differential panel - Pericardial fluid
@@ -52,10 +52,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/59257-6> -- Cell count and Differential panel - Pericardial fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/59257-6> -- Cell count and Differential panel - Pericardial fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/69740-9> -- Cell count panel - Pericardial fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/69741-7> -- Differential panel - Pericardial fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/59257-6> -- Cell count and Differential panel - Pericardial fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/59257-6> -- Cell count and Differential panel - Pericardial fluid
+        ["id0.1.2.1.1"] = <http://loinc.org/id/69740-9> -- Cell count panel - Pericardial fluid
+        ["id0.1.2.1.2"] = <http://loinc.org/id/69741-7> -- Differential panel - Pericardial fluid
       >
     >
   >

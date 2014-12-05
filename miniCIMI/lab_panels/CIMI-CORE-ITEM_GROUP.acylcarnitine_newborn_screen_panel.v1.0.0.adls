@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acylcarnitine newborn screen panel' concept">
         use = <"Use for Acylcarnitine newborn screen panel.">
         keywords = <"Acylcarnitine","newborn","screen","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58092-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acylcarnitine newborn screen panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acylcarnitine newborn screen panel
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58092-8> -- Acylcarnitine newborn screen panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58092-8> -- Acylcarnitine newborn screen panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/58088-6> -- Acylcarnitine newborn screen interpretation
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/58093-6> -- Acylcarnitine newborn screening comment-discussion
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/57084-6> -- Fatty acid oxidation newborn screen panel
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/57085-3> -- Organic acid newborn screen panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58092-8> -- Acylcarnitine newborn screen panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58092-8> -- Acylcarnitine newborn screen panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/58088-6> -- Acylcarnitine newborn screen interpretation
+        ["id0.1.1.1.2"] = <http://loinc.org/id/58093-6> -- Acylcarnitine newborn screening comment-discussion
+        ["id0.1.2.1.1"] = <http://loinc.org/id/57084-6> -- Fatty acid oxidation newborn screen panel
+        ["id0.1.2.1.2"] = <http://loinc.org/id/57085-3> -- Organic acid newborn screen panel
       >
     >
   >

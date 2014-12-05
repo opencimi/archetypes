@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Bordetella pertussis IgA and IgG panel - Serum by Immunoassay' concept">
         use = <"Use for Bordetella pertussis IgA and IgG panel - Serum by Immunoassay.">
         keywords = <"Bordetella","pertussis","IgA","IgG","panel","-","Serum","by","Immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55161-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55161-4> -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55161-4> -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/9362-5> -- Bordetella pertussis IgA Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/9363-3> -- Bordetella pertussis IgG Ab [Units/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55161-4> -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55161-4> -- Bordetella pertussis IgA and IgG panel - Serum by Immunoassay
+        ["id0.1.1.1.1"] = <http://loinc.org/id/9362-5> -- Bordetella pertussis IgA Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/9363-3> -- Bordetella pertussis IgG Ab [Units/volume] in Serum
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Lymphocyte proliferation panel - Blood' concept">
         use = <"Use for Lymphocyte proliferation panel - Blood.">
         keywords = <"Lymphocyte","proliferation","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/59063-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Lymphocyte proliferation panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lymphocyte proliferation panel - Blood
@@ -85,24 +85,24 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/59063-8> -- Lymphocyte proliferation panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/59063-8> -- Lymphocyte proliferation panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/53810-8> -- Lymphocyte proliferation [interpretation] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/58717-0> -- Lymphocyte proliferation stimulated by concanavalin A [interpretation] in Blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/58718-8> -- Lymphocyte proliferation stimulated by 10 ug concanavalin A actual/normal in Blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/58719-6> -- Lymphocyte proliferation stimulated by 5 ug concanavalin A actual/normal in Blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/58720-4> -- Lymphocyte proliferation stimulated by 2.0 ug concanavalin A actual/normal in Blood
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/58721-2> -- Lymphocyte proliferation stimulated by 0.5 ug concanavalin A actual/normal in Blood
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/58722-0> -- Lymphocyte proliferation stimulated by pokeweed mitogen [interpretation] in Blood
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/58723-8> -- Lymphocyte proliferation stimulated by 10 ug pokeweed mitogen actual/normal in Blood
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/58724-6> -- Lymphocyte proliferation stimulated by 5 ug pokeweed mitogen actual/normal in Blood
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/58725-3> -- Lymphocyte proliferation stimulated by 1.0 ug pokeweed mitogen actual/normal in Blood
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/58726-1> -- Lymphocyte proliferation stimulated by 0.50 ug pokeweed mitogen actual/normal in Blood
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/58727-9> -- Lymphocyte proliferation stimulated by phytohemagglutinin [interpretation] in Blood Narrative
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/58728-7> -- Lymphocyte proliferation stimulated by 5 ug phytohemagglutin actual/normal in Blood
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/58729-5> -- Lymphocyte proliferation stimulated by 2.5 ug phytohemagglutin actual/normal in Blood
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/58730-3> -- Lymphocyte proliferation stimulated by 1.0 ug phytohemagglutinin actual/normal in Blood
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/58731-1> -- Lymphocyte proliferation stimulated by 0.5 ug phytohemagglutinin actual/normal in Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/59063-8> -- Lymphocyte proliferation panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/59063-8> -- Lymphocyte proliferation panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/53810-8> -- Lymphocyte proliferation [interpretation] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/58717-0> -- Lymphocyte proliferation stimulated by concanavalin A [interpretation] in Blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/58718-8> -- Lymphocyte proliferation stimulated by 10 ug concanavalin A actual/normal in Blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/58719-6> -- Lymphocyte proliferation stimulated by 5 ug concanavalin A actual/normal in Blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/58720-4> -- Lymphocyte proliferation stimulated by 2.0 ug concanavalin A actual/normal in Blood
+        ["id0.1.1.1.6"] = <http://loinc.org/id/58721-2> -- Lymphocyte proliferation stimulated by 0.5 ug concanavalin A actual/normal in Blood
+        ["id0.1.1.1.7"] = <http://loinc.org/id/58722-0> -- Lymphocyte proliferation stimulated by pokeweed mitogen [interpretation] in Blood
+        ["id0.1.1.1.8"] = <http://loinc.org/id/58723-8> -- Lymphocyte proliferation stimulated by 10 ug pokeweed mitogen actual/normal in Blood
+        ["id0.1.1.1.9"] = <http://loinc.org/id/58724-6> -- Lymphocyte proliferation stimulated by 5 ug pokeweed mitogen actual/normal in Blood
+        ["id0.1.1.1.10"] = <http://loinc.org/id/58725-3> -- Lymphocyte proliferation stimulated by 1.0 ug pokeweed mitogen actual/normal in Blood
+        ["id0.1.1.1.11"] = <http://loinc.org/id/58726-1> -- Lymphocyte proliferation stimulated by 0.50 ug pokeweed mitogen actual/normal in Blood
+        ["id0.1.1.1.12"] = <http://loinc.org/id/58727-9> -- Lymphocyte proliferation stimulated by phytohemagglutinin [interpretation] in Blood Narrative
+        ["id0.1.1.1.13"] = <http://loinc.org/id/58728-7> -- Lymphocyte proliferation stimulated by 5 ug phytohemagglutin actual/normal in Blood
+        ["id0.1.1.1.14"] = <http://loinc.org/id/58729-5> -- Lymphocyte proliferation stimulated by 2.5 ug phytohemagglutin actual/normal in Blood
+        ["id0.1.1.1.15"] = <http://loinc.org/id/58730-3> -- Lymphocyte proliferation stimulated by 1.0 ug phytohemagglutinin actual/normal in Blood
+        ["id0.1.1.1.16"] = <http://loinc.org/id/58731-1> -- Lymphocyte proliferation stimulated by 0.5 ug phytohemagglutinin actual/normal in Blood
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Rubella virus IgG and IgM panel - Cerebral spinal fluid' concept">
         use = <"Use for Rubella virus IgG and IgM panel - Cerebral spinal fluid.">
         keywords = <"Rubella","virus","IgG","IgM","panel","-","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34953-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34953-0> -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34953-0> -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13281-1> -- Rubella virus IgG Ab [Units/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13282-9> -- Rubella virus IgM Ab [Units/volume] in Cerebral spinal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34953-0> -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34953-0> -- Rubella virus IgG and IgM panel - Cerebral spinal fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13281-1> -- Rubella virus IgG Ab [Units/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/13282-9> -- Rubella virus IgM Ab [Units/volume] in Cerebral spinal fluid
       >
     >
   >

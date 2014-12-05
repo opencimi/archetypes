@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Lipid risk factors [Finding]' concept">
         use = <"Use for Lipid risk factors [Finding].">
         keywords = <"Lipid","risk","factors","[Finding]">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49062-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T06:00:05">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Lipid risk factors [Finding]
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lipid risk factors [Finding]
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Lipid risk factors [Finding]
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Lipid risk factors [Finding]
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Lipid risk factors [Finding]">>
-      ["at0.0.0.0.1"] = <text = <"Lipid risk factors [Finding]">>
+      ["id1.1.1.1.1.1"] = <text = <"Lipid risk factors [Finding]">>
+      ["at0.0.0.0.0.1"] = <text = <"Lipid risk factors [Finding]">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49062-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49062-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/49062-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/49062-3>
       >
     >
   >

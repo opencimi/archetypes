@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Meperidine and Normeperidine panel - Urine' concept">
         use = <"Use for Meperidine and Normeperidine panel - Urine.">
         keywords = <"Meperidine","Normeperidine","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58953-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Meperidine and Normeperidine panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Meperidine and Normeperidine panel - Urine
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58953-1> -- Meperidine and Normeperidine panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58953-1> -- Meperidine and Normeperidine panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/3747-3> -- Meperidine [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/3869-5> -- Normeperidine [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58953-1> -- Meperidine and Normeperidine panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58953-1> -- Meperidine and Normeperidine panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/3747-3> -- Meperidine [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/3869-5> -- Normeperidine [Mass/volume] in Urine
       >
     >
   >

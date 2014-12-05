@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Electrolytes 3 panel - Body fluid' concept">
         use = <"Use for Electrolytes 3 panel - Body fluid.">
         keywords = <"Electrolytes","3","panel","-","Body","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24327-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Electrolytes 3 panel - Body fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Electrolytes 3 panel - Body fluid
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24327-9> -- Electrolytes 3 panel - Body fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24327-9> -- Electrolytes 3 panel - Body fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14725-6> -- [Type] of Body fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/2072-7> -- Chloride [Moles/volume] in Body fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2821-7> -- Potassium [Moles/volume] in Body fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2950-4> -- Sodium [Moles/volume] in Body fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24327-9> -- Electrolytes 3 panel - Body fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24327-9> -- Electrolytes 3 panel - Body fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14725-6> -- [Type] of Body fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/2072-7> -- Chloride [Moles/volume] in Body fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2821-7> -- Potassium [Moles/volume] in Body fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2950-4> -- Sodium [Moles/volume] in Body fluid
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Beta lactamase organism identified in Isolate' concept">
         use = <"Use for Beta lactamase organism identified in Isolate.">
         keywords = <"Beta","lactamase","organism","identified","Isolate">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20423-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:39">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Beta lactamase organism identified in Isolate
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Beta lactamase organism identified in Isolate
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Beta lactamase organism identified in Isolate
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Beta lactamase organism identified in Isolate
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Beta lactamase organism identified in Isolate">>
-      ["at0.0.0.0.1"] = <text = <"Beta lactamase organism identified in Isolate">>
+      ["id1.1.1.1.1.1"] = <text = <"Beta lactamase organism identified in Isolate">>
+      ["at0.0.0.0.0.1"] = <text = <"Beta lactamase organism identified in Isolate">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/20423-0>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/20423-0>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/20423-0>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/20423-0>
       >
     >
   >

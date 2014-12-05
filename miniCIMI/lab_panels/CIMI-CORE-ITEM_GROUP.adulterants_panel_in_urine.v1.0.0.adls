@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Adulterants panel - Urine' concept">
         use = <"Use for Adulterants panel - Urine.">
         keywords = <"Adulterants","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58715-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Adulterants panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Adulterants panel - Urine
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58715-4> -- Adulterants panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58715-4> -- Adulterants panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2161-8> -- Creatinine [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/2756-5> -- pH of Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2965-2> -- Specific gravity of Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/32710-6> -- Nitrite [Presence] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/58714-7> -- Oxidants [Presence] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/59061-2> -- Adulterants [interpretation] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58715-4> -- Adulterants panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58715-4> -- Adulterants panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2161-8> -- Creatinine [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/2756-5> -- pH of Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2965-2> -- Specific gravity of Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/32710-6> -- Nitrite [Presence] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/58714-7> -- Oxidants [Presence] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/59061-2> -- Adulterants [interpretation] in Urine
       >
     >
   >

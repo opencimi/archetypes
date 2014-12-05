@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Uranium.depleted panel - 24 hour Urine' concept">
         use = <"Use for Uranium.depleted panel - 24 hour Urine.">
         keywords = <"Uranium.depleted","panel","-","24","hour","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49670-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Uranium.depleted panel - 24 hour Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Uranium.depleted panel - 24 hour Urine
@@ -73,18 +73,18 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49670-3> -- Uranium.depleted panel - 24 hour Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49670-3> -- Uranium.depleted panel - 24 hour Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13362-9> -- Collection duration of Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/21585-5> -- Uranium [Mass/volume] in 24 hour Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/21586-3> -- Uranium [Mass/time] in 24 hour Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/29989-1> -- Uranium/Creatinine [Mass Ratio] in 24 hour Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/3167-4> -- Volume of 24 hour Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/41164-5> -- Uranium depleted [Presence] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/41165-2> -- Uranium 235/Uranium 238 [Mass Ratio] in 24 hour Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/43267-4> -- Uranium depleted cutoff [Mass/volume] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/43420-9> -- Uranium dose assessment [interpretation] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49670-3> -- Uranium.depleted panel - 24 hour Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49670-3> -- Uranium.depleted panel - 24 hour Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13362-9> -- Collection duration of Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20624-3> -- Creatinine [Mass/volume] in 24 hour Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/21585-5> -- Uranium [Mass/volume] in 24 hour Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/21586-3> -- Uranium [Mass/time] in 24 hour Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/29989-1> -- Uranium/Creatinine [Mass Ratio] in 24 hour Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/3167-4> -- Volume of 24 hour Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/41164-5> -- Uranium depleted [Presence] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/41165-2> -- Uranium 235/Uranium 238 [Mass Ratio] in 24 hour Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/43267-4> -- Uranium depleted cutoff [Mass/volume] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/43420-9> -- Uranium dose assessment [interpretation] in Urine
       >
     >
   >

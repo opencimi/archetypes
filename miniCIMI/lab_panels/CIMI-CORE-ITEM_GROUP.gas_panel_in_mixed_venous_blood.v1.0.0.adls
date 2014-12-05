@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Gas panel - Mixed venous blood' concept">
         use = <"Use for Gas panel - Mixed venous blood.">
         keywords = <"Gas","panel","-","Mixed","venous","blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/51973-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Gas panel - Mixed venous blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Gas panel - Mixed venous blood
@@ -85,24 +85,24 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/51973-6> -- Gas panel - Mixed venous blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/51973-6> -- Gas panel - Mixed venous blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/19211-2> -- Oxygen [Partial pressure] in Mixed venous blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/19212-0> -- Carbon dioxide [Partial pressure] in Mixed venous blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/19213-8> -- pH of Mixed venous blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/19221-1> -- Oxygen content in Mixed venous blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/19223-7> -- Carbon dioxide, total [Moles/volume] in Mixed venous blood
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/19224-5> -- Oxygen saturation in Mixed venous blood
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/19229-4> -- Bicarbonate [Moles/volume] in Mixed venous blood
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/19234-4> -- Base excess in Mixed venous blood by calculation
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/19257-5> -- Oxygen [Partial pressure] adjusted to patients actual temperature in Mixed venous blood
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/30351-1> -- Hemoglobin [Mass/volume] in Mixed venous blood
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/3150-0> -- Inhaled oxygen concentration
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/3151-8> -- Inhaled oxygen flow rate
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/50980-2> -- pH of Mixed venous blood adjusted to patients actual temperature
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/50981-0> -- Carbon dioxide [Partial pressure] adjusted to patients actual temperature in Mixed venous blood
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/53116-0> -- Base deficit in Mixed venous blood
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/8310-5> -- Body temperature
+        ["id1.1.1.1.1"] = <http://loinc.org/id/51973-6> -- Gas panel - Mixed venous blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/51973-6> -- Gas panel - Mixed venous blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/19211-2> -- Oxygen [Partial pressure] in Mixed venous blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/19212-0> -- Carbon dioxide [Partial pressure] in Mixed venous blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/19213-8> -- pH of Mixed venous blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/19221-1> -- Oxygen content in Mixed venous blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/19223-7> -- Carbon dioxide, total [Moles/volume] in Mixed venous blood
+        ["id0.1.1.1.6"] = <http://loinc.org/id/19224-5> -- Oxygen saturation in Mixed venous blood
+        ["id0.1.1.1.7"] = <http://loinc.org/id/19229-4> -- Bicarbonate [Moles/volume] in Mixed venous blood
+        ["id0.1.1.1.8"] = <http://loinc.org/id/19234-4> -- Base excess in Mixed venous blood by calculation
+        ["id0.1.1.1.9"] = <http://loinc.org/id/19257-5> -- Oxygen [Partial pressure] adjusted to patients actual temperature in Mixed venous blood
+        ["id0.1.1.1.10"] = <http://loinc.org/id/30351-1> -- Hemoglobin [Mass/volume] in Mixed venous blood
+        ["id0.1.1.1.11"] = <http://loinc.org/id/3150-0> -- Inhaled oxygen concentration
+        ["id0.1.1.1.12"] = <http://loinc.org/id/3151-8> -- Inhaled oxygen flow rate
+        ["id0.1.1.1.13"] = <http://loinc.org/id/50980-2> -- pH of Mixed venous blood adjusted to patients actual temperature
+        ["id0.1.1.1.14"] = <http://loinc.org/id/50981-0> -- Carbon dioxide [Partial pressure] adjusted to patients actual temperature in Mixed venous blood
+        ["id0.1.1.1.15"] = <http://loinc.org/id/53116-0> -- Base deficit in Mixed venous blood
+        ["id0.1.1.1.16"] = <http://loinc.org/id/8310-5> -- Body temperature
       >
     >
   >

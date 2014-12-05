@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method' concept">
         use = <"Use for Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method.">
         keywords = <"Hepatitis","C","virus","RNA","panel","(viral","load)","Serum","or","Plasma","by","Probe","target","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50023-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50023-1> -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50023-1> -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11011-4> -- Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/38180-6> -- Hepatitis C virus RNA [log units/volume] (viral load) in Serum or Plasma by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50023-1> -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50023-1> -- Hepatitis C virus RNA panel (viral load) in Serum or Plasma by Probe and target amplification method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11011-4> -- Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/38180-6> -- Hepatitis C virus RNA [log units/volume] (viral load) in Serum or Plasma by Probe and target amplification method
       >
     >
   >

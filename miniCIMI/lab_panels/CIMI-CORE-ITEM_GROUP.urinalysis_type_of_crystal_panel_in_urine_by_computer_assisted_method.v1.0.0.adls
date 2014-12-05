@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis type of crystal panel - Urine by Computer assisted method' concept">
         use = <"Use for Urinalysis type of crystal panel - Urine by Computer assisted method.">
         keywords = <"Urinalysis","type","crystal","panel","-","Urine","by","Computer","assisted","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53325-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis type of crystal panel - Urine by Computer assisted method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis type of crystal panel - Urine by Computer assisted method
@@ -73,18 +73,18 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33233-8> -- Urate crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/33234-6> -- Calcium oxalate crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/33235-3> -- Calcium phosphate crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/33238-7> -- Triple phosphate crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/33240-3> -- Cystine crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/33241-1> -- Calcium carbonate crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/50232-8> -- Leucine crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/50238-5> -- Tyrosine crystals [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/53329-9> -- Crystals.amorphous [Presence] in Urine by Computer assisted method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/53334-9> -- Crystals unspecified [Presence] in Urine by Computer assisted method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33233-8> -- Urate crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/33234-6> -- Calcium oxalate crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/33235-3> -- Calcium phosphate crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/33238-7> -- Triple phosphate crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/33240-3> -- Cystine crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/33241-1> -- Calcium carbonate crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/50232-8> -- Leucine crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/50238-5> -- Tyrosine crystals [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/53329-9> -- Crystals.amorphous [Presence] in Urine by Computer assisted method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/53334-9> -- Crystals unspecified [Presence] in Urine by Computer assisted method
       >
     >
   >

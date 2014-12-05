@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Bacteria identified in Body fluid by Aerobe culture' concept">
         use = <"Use for Bacteria identified in Body fluid by Aerobe culture.">
         keywords = <"Bacteria","identified","Body","fluid","by","Aerobe","culture">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/610-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Bacteria identified in Body fluid by Aerobe culture
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bacteria identified in Body fluid by Aerobe culture
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Bacteria identified in Body fluid by Aerobe culture
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Bacteria identified in Body fluid by Aerobe culture
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Bacteria identified in Body fluid by Aerobe culture">>
-      ["at0.0.0.0.1"] = <text = <"Bacteria identified in Body fluid by Aerobe culture">>
+      ["id1.1.1.1.1.1"] = <text = <"Bacteria identified in Body fluid by Aerobe culture">>
+      ["at0.0.0.0.0.1"] = <text = <"Bacteria identified in Body fluid by Aerobe culture">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/610-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/610-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/610-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/610-6>
       >
     >
   >

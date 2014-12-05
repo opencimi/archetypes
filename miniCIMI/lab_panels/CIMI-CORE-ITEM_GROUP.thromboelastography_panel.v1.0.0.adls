@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Thromboelastography panel - Blood' concept">
         use = <"Use for Thromboelastography panel - Blood.">
         keywords = <"Thromboelastography","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/67790-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Thromboelastography panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Thromboelastography panel - Blood
@@ -71,17 +71,17 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/67790-6> -- Thromboelastography panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/67790-6> -- Thromboelastography panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/52768-9> -- Clot formation [Time] in Blood by Thromboelastography
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/52778-8> -- Maximum clot firmness [Length] in Blood by Thromboelastography
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/52789-5> -- Clotting time of Blood by Thromboelastography
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/66745-1> -- Clot Lysis [Length fraction] in Blood by Thromboelastography --30 minutes post maximum clot amplitude
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/66746-9> -- Specimen type
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/66748-5> -- Clot angle in Blood by Thromboelastography
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/66749-3> -- Circulatory assist status [Identifier]
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/66751-9> -- Clot strength in Blood by Thromboelastography
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/66759-2> -- Heparin neutralization [Presence] in Blood by Thromboelastography
+        ["id1.1.1.1.1"] = <http://loinc.org/id/67790-6> -- Thromboelastography panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/67790-6> -- Thromboelastography panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/52768-9> -- Clot formation [Time] in Blood by Thromboelastography
+        ["id0.1.1.1.2"] = <http://loinc.org/id/52778-8> -- Maximum clot firmness [Length] in Blood by Thromboelastography
+        ["id0.1.1.1.3"] = <http://loinc.org/id/52789-5> -- Clotting time of Blood by Thromboelastography
+        ["id0.1.1.1.4"] = <http://loinc.org/id/66745-1> -- Clot Lysis [Length fraction] in Blood by Thromboelastography --30 minutes post maximum clot amplitude
+        ["id0.1.1.1.5"] = <http://loinc.org/id/66746-9> -- Specimen type
+        ["id0.1.1.1.6"] = <http://loinc.org/id/66748-5> -- Clot angle in Blood by Thromboelastography
+        ["id0.1.1.1.7"] = <http://loinc.org/id/66749-3> -- Circulatory assist status [Identifier]
+        ["id0.1.1.1.8"] = <http://loinc.org/id/66751-9> -- Clot strength in Blood by Thromboelastography
+        ["id0.1.1.1.9"] = <http://loinc.org/id/66759-2> -- Heparin neutralization [Presence] in Blood by Thromboelastography
       >
     >
   >

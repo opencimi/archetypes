@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Galactosemias newborn screen interpretation' concept">
         use = <"Use for Galactosemias newborn screen interpretation.">
         keywords = <"Galactosemias","newborn","screen","interpretation">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/46737-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:59:55">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Galactosemias newborn screen interpretation
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Galactosemias newborn screen interpretation
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Galactosemias newborn screen interpretation
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Galactosemias newborn screen interpretation
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Galactosemias newborn screen interpretation">>
-      ["at0.0.0.0.1"] = <text = <"Galactosemias newborn screen interpretation">>
+      ["id1.1.1.1.1.1"] = <text = <"Galactosemias newborn screen interpretation">>
+      ["at0.0.0.0.0.1"] = <text = <"Galactosemias newborn screen interpretation">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/46737-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/46737-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/46737-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/46737-3>
       >
     >
   >

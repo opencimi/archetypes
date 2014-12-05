@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Polio virus Ab panel [Titer] - Serum by Neutralization test' concept">
         use = <"Use for Polio virus Ab panel [Titer] - Serum by Neutralization test.">
         keywords = <"Polio","virus","Ab","panel","[Titer]","-","Serum","by","Neutralization","test">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41506-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Polio virus Ab panel [Titer] - Serum by Neutralization test
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Polio virus Ab panel [Titer] - Serum by Neutralization test
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/41506-7> -- Polio virus Ab panel [Titer] - Serum by Neutralization test
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/41506-7> -- Polio virus Ab panel [Titer] - Serum by Neutralization test
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/5281-1> -- Polio virus 1 Ab [Titer] in Serum by Neutralization test
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/5283-7> -- Polio virus 2 Ab [Titer] in Serum by Neutralization test
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/5285-2> -- Polio virus 3 Ab [Titer] in Serum by Neutralization test
+        ["id1.1.1.1.1"] = <http://loinc.org/id/41506-7> -- Polio virus Ab panel [Titer] - Serum by Neutralization test
+        ["at0.0.0.0.1"] = <http://loinc.org/id/41506-7> -- Polio virus Ab panel [Titer] - Serum by Neutralization test
+        ["id0.1.1.1.1"] = <http://loinc.org/id/5281-1> -- Polio virus 1 Ab [Titer] in Serum by Neutralization test
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5283-7> -- Polio virus 2 Ab [Titer] in Serum by Neutralization test
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5285-2> -- Polio virus 3 Ab [Titer] in Serum by Neutralization test
       >
     >
   >

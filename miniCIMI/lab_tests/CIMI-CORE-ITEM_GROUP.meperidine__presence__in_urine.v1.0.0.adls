@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Meperidine [Presence] in Urine' concept">
         use = <"Use for Meperidine [Presence] in Urine.">
         keywords = <"Meperidine","[Presence]","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/3746-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:40">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Meperidine [Presence] in Urine
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Meperidine [Presence] in Urine
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Meperidine [Presence] in Urine
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Meperidine [Presence] in Urine
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Meperidine [Presence] in Urine">>
-      ["at0.0.0.0.1"] = <text = <"Meperidine [Presence] in Urine">>
+      ["id1.1.1.1.1.1"] = <text = <"Meperidine [Presence] in Urine">>
+      ["at0.0.0.0.0.1"] = <text = <"Meperidine [Presence] in Urine">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/3746-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/3746-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/3746-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/3746-5>
       >
     >
   >

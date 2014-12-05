@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Fluid intake and output panel 8 hour' concept">
         use = <"Use for Fluid intake and output panel 8 hour.">
         keywords = <"Fluid","intake","output","panel","8","hour">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34537-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Fluid intake and output panel 8 hour
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Fluid intake and output panel 8 hour
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34537-1> -- Fluid intake and output panel 8 hour
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34537-1> -- Fluid intake and output panel 8 hour
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34537-1> -- Fluid intake and output panel 8 hour
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34537-1> -- Fluid intake and output panel 8 hour
       >
     >
   >

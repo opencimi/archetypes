@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis microscopic panel - Urine Qualitative by Automated' concept">
         use = <"Use for Urinalysis microscopic panel - Urine Qualitative by Automated.">
         keywords = <"Urinalysis","microscopic","panel","-","Urine","Qualitative","by","Automated">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53315-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis microscopic panel - Urine Qualitative by Automated
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis microscopic panel - Urine Qualitative by Automated
@@ -75,19 +75,19 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33232-0> -- Spermatozoa [Presence] in Urine by Automated
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/50221-1> -- Bacteria [Presence] in Urine by Automated
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/50225-2> -- Epithelial cells.non-squamous [Presence] in Urine by Automated
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/50231-0> -- Hyaline casts [Presence] in Urine by Automated
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/53292-9> -- Erythrocytes [Presence] in Urine by Automated
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/53316-6> -- Leukocytes [Presence] in Urine by Automated
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/53317-4> -- Leukocyte clumps [Presence] in Urine by Automated
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/53318-2> -- Epithelial cells.squamous [Presence] in Urine by Automated
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/53319-0> -- Crystals [Presence] in Urine by Automated
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/53320-8> -- Casts [Presence] in Urine by Automated
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/53321-6> -- Mucus [Presence] in Urine by Automated
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33232-0> -- Spermatozoa [Presence] in Urine by Automated
+        ["id0.1.1.1.2"] = <http://loinc.org/id/50221-1> -- Bacteria [Presence] in Urine by Automated
+        ["id0.1.1.1.3"] = <http://loinc.org/id/50225-2> -- Epithelial cells.non-squamous [Presence] in Urine by Automated
+        ["id0.1.1.1.4"] = <http://loinc.org/id/50231-0> -- Hyaline casts [Presence] in Urine by Automated
+        ["id0.1.1.1.5"] = <http://loinc.org/id/53292-9> -- Erythrocytes [Presence] in Urine by Automated
+        ["id0.1.1.1.6"] = <http://loinc.org/id/53316-6> -- Leukocytes [Presence] in Urine by Automated
+        ["id0.1.1.1.7"] = <http://loinc.org/id/53317-4> -- Leukocyte clumps [Presence] in Urine by Automated
+        ["id0.1.1.1.8"] = <http://loinc.org/id/53318-2> -- Epithelial cells.squamous [Presence] in Urine by Automated
+        ["id0.1.1.1.9"] = <http://loinc.org/id/53319-0> -- Crystals [Presence] in Urine by Automated
+        ["id0.1.1.1.10"] = <http://loinc.org/id/53320-8> -- Casts [Presence] in Urine by Automated
+        ["id0.1.1.1.11"] = <http://loinc.org/id/53321-6> -- Mucus [Presence] in Urine by Automated
       >
     >
   >

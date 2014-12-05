@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Protein and Glucose panel - Urine by Test strip' concept">
         use = <"Use for Protein and Glucose panel - Urine by Test strip.">
         keywords = <"Protein","Glucose","panel","-","Urine","by","Test","strip">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/45060-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Protein and Glucose panel - Urine by Test strip
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Protein and Glucose panel - Urine by Test strip
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/45060-1> -- Protein and Glucose panel - Urine by Test strip
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/45060-1> -- Protein and Glucose panel - Urine by Test strip
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/20454-5> -- Protein [Presence] in Urine by Test strip
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/25428-4> -- Glucose [Presence] in Urine by Test strip
+        ["id1.1.1.1.1"] = <http://loinc.org/id/45060-1> -- Protein and Glucose panel - Urine by Test strip
+        ["at0.0.0.0.1"] = <http://loinc.org/id/45060-1> -- Protein and Glucose panel - Urine by Test strip
+        ["id0.1.1.1.1"] = <http://loinc.org/id/20454-5> -- Protein [Presence] in Urine by Test strip
+        ["id0.1.1.1.2"] = <http://loinc.org/id/25428-4> -- Glucose [Presence] in Urine by Test strip
       >
     >
   >

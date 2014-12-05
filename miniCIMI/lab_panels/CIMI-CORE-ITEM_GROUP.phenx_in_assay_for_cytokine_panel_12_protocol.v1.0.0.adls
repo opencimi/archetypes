@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'PhenX - assay for cytokine panel 12 protocol' concept">
         use = <"Use for PhenX - assay for cytokine panel 12 protocol.">
         keywords = <"PhenX","-","assay","for","cytokine","panel","12","protocol">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62867-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- PhenX - assay for cytokine panel 12 protocol
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- PhenX - assay for cytokine panel 12 protocol
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62867-7> -- PhenX - assay for cytokine panel 12 protocol
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62867-7> -- PhenX - assay for cytokine panel 12 protocol
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62867-7> -- PhenX - assay for cytokine panel 12 protocol
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62867-7> -- PhenX - assay for cytokine panel 12 protocol
       >
     >
   >

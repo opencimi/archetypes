@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain' concept">
         use = <"Use for Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain.">
         keywords = <"Alpha-1-Fetoprotein","Ag","[Presence]","Tissue","by","Immune","stain">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/10459-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain">>
-      ["at0.0.0.0.1"] = <text = <"Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain">>
+      ["id1.1.1.1.1.1"] = <text = <"Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain">>
+      ["at0.0.0.0.0.1"] = <text = <"Alpha-1-Fetoprotein Ag [Presence] in Tissue by Immune stain">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/10459-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/10459-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/10459-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/10459-6>
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Manganese panel - Urine' concept">
         use = <"Use for Manganese panel - Urine.">
         keywords = <"Manganese","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58736-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Manganese panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Manganese panel - Urine
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58736-0> -- Manganese panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58736-0> -- Manganese panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13362-9> -- Collection duration of Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/19153-6> -- Volume of unspecified time Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2161-8> -- Creatinine [Mass/volume] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/27367-2> -- Manganese/Creatinine [Mass Ratio] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/5684-6> -- Manganese [Mass/volume] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/8203-2> -- Manganese [Mass/time] in 24 hour Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58736-0> -- Manganese panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58736-0> -- Manganese panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13362-9> -- Collection duration of Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/19153-6> -- Volume of unspecified time Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2161-8> -- Creatinine [Mass/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2162-6> -- Creatinine [Mass/time] in 24 hour Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/27367-2> -- Manganese/Creatinine [Mass Ratio] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/5684-6> -- Manganese [Mass/volume] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/8203-2> -- Manganese [Mass/time] in 24 hour Urine
       >
     >
   >

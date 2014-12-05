@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Congenital adrenal hyperplasia newborn screening panel' concept">
         use = <"Use for Congenital adrenal hyperplasia newborn screening panel.">
         keywords = <"Congenital","adrenal","hyperplasia","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57086-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Congenital adrenal hyperplasia newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Congenital adrenal hyperplasia newborn screening panel
@@ -71,17 +71,17 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/38473-5> -- 17-Hydroxyprogesterone [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/46758-9> -- Congenital adrenal hyperplasia newborn screen interpretation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/53336-4> -- 17-Hydroxyprogesterone+Androstenedione/Cortisol [Mass Ratio] in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/53338-0> -- 11-Deoxycortisol [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/53341-4> -- 21-Deoxycortisol [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/53343-0> -- Androstenedione [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/53345-5> -- Cortisol [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/53347-1> -- 11-Deoxycorticosterone [Mass/volume] in Dried blood spot
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/57706-4> -- Congenital adrenal hyperplasia newborn screening comment-discussion
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57086-1> -- Congenital adrenal hyperplasia newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/38473-5> -- 17-Hydroxyprogesterone [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.2"] = <http://loinc.org/id/46758-9> -- Congenital adrenal hyperplasia newborn screen interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/53336-4> -- 17-Hydroxyprogesterone+Androstenedione/Cortisol [Mass Ratio] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/53338-0> -- 11-Deoxycortisol [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/53341-4> -- 21-Deoxycortisol [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/53343-0> -- Androstenedione [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/53345-5> -- Cortisol [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/53347-1> -- 11-Deoxycorticosterone [Mass/volume] in Dried blood spot
+        ["id0.1.1.1.9"] = <http://loinc.org/id/57706-4> -- Congenital adrenal hyperplasia newborn screening comment-discussion
       >
     >
   >

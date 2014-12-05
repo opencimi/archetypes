@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood' concept">
         use = <"Use for Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood.">
         keywords = <"Mycobacterium","bovis","tuberculin","stimulated","gamma","interferon","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53703-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53703-5> -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53703-5> -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/53702-7> -- Mycobacterium bovis tuberculin stimulated gamma interferon-Mycobacterium avium tuberculin stimulated gamma interferon [Units/volume] in Blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/53704-3> -- Mycobacterium bovis tuberculin stimulated gamma interferon-control stimulated gamma interferon [Units/volume] in Blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53703-5> -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53703-5> -- Mycobacterium bovis tuberculin stimulated gamma interferon panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/53702-7> -- Mycobacterium bovis tuberculin stimulated gamma interferon-Mycobacterium avium tuberculin stimulated gamma interferon [Units/volume] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/53704-3> -- Mycobacterium bovis tuberculin stimulated gamma interferon-control stimulated gamma interferon [Units/volume] in Blood
       >
     >
   >

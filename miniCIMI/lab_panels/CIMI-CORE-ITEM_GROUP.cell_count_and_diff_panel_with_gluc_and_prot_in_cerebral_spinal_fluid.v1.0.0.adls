@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid' concept">
         use = <"Use for Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid.">
         keywords = <"Cell","count","Diff","panel","with","Gluc","Prot","-","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54230-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
@@ -52,10 +52,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54230-8> -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54230-8> -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/34546-2> -- Protein and Glucose panel [Mass/volume] - Cerebral spinal fluid
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54230-8> -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54230-8> -- Cell count and Diff panel with Gluc and Prot - Cerebral spinal fluid
+        ["id0.1.2.1.1"] = <http://loinc.org/id/34546-2> -- Protein and Glucose panel [Mass/volume] - Cerebral spinal fluid
+        ["id0.1.2.1.2"] = <http://loinc.org/id/34564-5> -- Cell count and Differential panel - Cerebral spinal fluid
       >
     >
   >

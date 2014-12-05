@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'IgG synthesis rate [Mass/time] in Serum and CSF by calculation' concept">
         use = <"Use for IgG synthesis rate [Mass/time] in Serum and CSF by calculation.">
         keywords = <"IgG","synthesis","rate","[Mass/time]","Serum","CSF","by","calculation">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,33 +33,34 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14116-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:58:05">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- IgG synthesis rate [Mass/time] in Serum and CSF by calculation
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- IgG synthesis rate [Mass/time] in Serum and CSF by calculation
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units[id0.0.0.0.2] matches {[at0.0.0.0.2]} -- mg/(24.h)
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- IgG synthesis rate [Mass/time] in Serum and CSF by calculation
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- IgG synthesis rate [Mass/time] in Serum and CSF by calculation
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mg/(24.h)
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"IgG synthesis rate [Mass/time] in Serum and CSF by calculation">>
-      ["at0.0.0.0.1"] = <text = <"IgG synthesis rate [Mass/time] in Serum and CSF by calculation">>
-      ["at0.0.0.0.2"] = <text = <"Qn">>
+      ["id1.1.1.1.1.1"] = <text = <"IgG synthesis rate [Mass/time] in Serum and CSF by calculation">>
+      ["at0.0.0.0.0.1"] = <text = <"IgG synthesis rate [Mass/time] in Serum and CSF by calculation">>
+      ["at0.0.0.0.0.2"] = <text = <"Qn">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/14116-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/14116-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/14116-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/14116-8>
       >
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.2"] = <configatron.adl.snomed.uri/______> -- mg/(24.h)
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mg/(24.h)
       >
     >
   >

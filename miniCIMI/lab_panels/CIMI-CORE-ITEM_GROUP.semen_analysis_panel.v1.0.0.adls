@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Semen analysis panel' concept">
         use = <"Use for Semen analysis panel.">
         keywords = <"Semen","analysis","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13361-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Semen analysis panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Semen analysis panel
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/13361-1> -- Semen analysis panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/13361-1> -- Semen analysis panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/10569-2> -- Color of Semen
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/10580-9> -- Liquefaction [Time] in Semen
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2295-4> -- Fructose [Mass/volume] in Semen
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2752-4> -- pH of Semen
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/3160-9> -- Volume of Semen
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/32789-0> -- Viscosity of Semen Qualitative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/13361-1> -- Semen analysis panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/13361-1> -- Semen analysis panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/10569-2> -- Color of Semen
+        ["id0.1.1.1.2"] = <http://loinc.org/id/10580-9> -- Liquefaction [Time] in Semen
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2295-4> -- Fructose [Mass/volume] in Semen
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2752-4> -- pH of Semen
+        ["id0.1.1.1.5"] = <http://loinc.org/id/3160-9> -- Volume of Semen
+        ["id0.1.1.1.6"] = <http://loinc.org/id/32789-0> -- Viscosity of Semen Qualitative
       >
     >
   >

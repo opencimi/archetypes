@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma' concept">
         use = <"Use for Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma.">
         keywords = <"Short","Fibrin","D-dimer","FEU","DDU","panel","-","Platelet","poor","plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55398-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55398-2> -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55398-2> -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/29263-1> -- Fibrin degradation products [Presence] in Blood by Agglutination
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/48065-7> -- Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/48066-5> -- Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55398-2> -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55398-2> -- Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/29263-1> -- Fibrin degradation products [Presence] in Blood by Agglutination
+        ["id0.1.1.1.2"] = <http://loinc.org/id/48065-7> -- Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/48066-5> -- Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma
       >
     >
   >

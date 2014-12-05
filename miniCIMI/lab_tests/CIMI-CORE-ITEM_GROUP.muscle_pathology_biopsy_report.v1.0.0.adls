@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Muscle Pathology biopsy report' concept">
         use = <"Use for Muscle Pathology biopsy report.">
         keywords = <"Muscle","Pathology","biopsy","report">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/65751-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Muscle Pathology biopsy report
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Muscle Pathology biopsy report
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Muscle Pathology biopsy report
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Muscle Pathology biopsy report
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Muscle Pathology biopsy report">>
-      ["at0.0.0.0.1"] = <text = <"Muscle Pathology biopsy report">>
+      ["id1.1.1.1.1.1"] = <text = <"Muscle Pathology biopsy report">>
+      ["at0.0.0.0.0.1"] = <text = <"Muscle Pathology biopsy report">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/65751-0>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/65751-0>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/65751-0>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/65751-0>
       >
     >
   >

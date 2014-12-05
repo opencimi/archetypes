@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Herpes simplex virus Ab panel - Serum' concept">
         use = <"Use for Herpes simplex virus Ab panel - Serum.">
         keywords = <"Herpes","simplex","virus","Ab","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43112-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Herpes simplex virus Ab panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Herpes simplex virus Ab panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43112-2> -- Herpes simplex virus Ab panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43112-2> -- Herpes simplex virus Ab panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/16954-0> -- Herpes simplex virus 2 Ab [Presence] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/43111-4> -- Herpes simplex virus 1 Ab [Presence] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/43112-2> -- Herpes simplex virus Ab panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/43112-2> -- Herpes simplex virus Ab panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/16954-0> -- Herpes simplex virus 2 Ab [Presence] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/43111-4> -- Herpes simplex virus 1 Ab [Presence] in Serum
       >
     >
   >

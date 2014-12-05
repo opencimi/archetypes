@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Inflammatory bowel disease Ab 7 panel - Serum' concept">
         use = <"Use for Inflammatory bowel disease Ab 7 panel - Serum.">
         keywords = <"Inflammatory","bowel","disease","Ab","7","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/59059-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Inflammatory bowel disease Ab 7 panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Inflammatory bowel disease Ab 7 panel - Serum
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/59059-6> -- Inflammatory bowel disease Ab 7 panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/59059-6> -- Inflammatory bowel disease Ab 7 panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/17357-5> -- Neutrophil cytoplasmic Ab.perinuclear [Presence] in Serum by Immunofluorescence
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/37991-7> -- Neutrophil cytoplasmic Ab.perinuclear [Units/volume] in Serum by Immunoassay
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/47320-7> -- Baker's yeast IgA Ab [Units/volume] in Serum by Immunoassay
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/47321-5> -- Baker's yeast IgG Ab [Units/volume] in Serum by Immunoassay
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/50979-4> -- CBir1 Ab [Units/volume] in Serum by Immunoassay
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/53029-5> -- Neutrophil cytoplasmic Ab.perinuclear.atypical [Presence] in Serum by Immunofluorescence
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/58706-3> -- OmpC IgA Ab [Presence] in Serum by Immunoassay
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/59060-4> -- Inflammatory bowel disease Ab 7 [interpretation] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/59059-6> -- Inflammatory bowel disease Ab 7 panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/59059-6> -- Inflammatory bowel disease Ab 7 panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/17357-5> -- Neutrophil cytoplasmic Ab.perinuclear [Presence] in Serum by Immunofluorescence
+        ["id0.1.1.1.2"] = <http://loinc.org/id/37991-7> -- Neutrophil cytoplasmic Ab.perinuclear [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.3"] = <http://loinc.org/id/47320-7> -- Baker's yeast IgA Ab [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.4"] = <http://loinc.org/id/47321-5> -- Baker's yeast IgG Ab [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.5"] = <http://loinc.org/id/50979-4> -- CBir1 Ab [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.6"] = <http://loinc.org/id/53029-5> -- Neutrophil cytoplasmic Ab.perinuclear.atypical [Presence] in Serum by Immunofluorescence
+        ["id0.1.1.1.7"] = <http://loinc.org/id/58706-3> -- OmpC IgA Ab [Presence] in Serum by Immunoassay
+        ["id0.1.1.1.8"] = <http://loinc.org/id/59060-4> -- Inflammatory bowel disease Ab 7 [interpretation] in Serum
       >
     >
   >

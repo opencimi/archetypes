@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Differential panel - Bone marrow' concept">
         use = <"Use for Differential panel - Bone marrow.">
         keywords = <"Differential","panel","-","Bone","marrow">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/47286-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Differential panel - Bone marrow
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Differential panel - Bone marrow
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/47286-0> -- Differential panel - Bone marrow
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/47286-0> -- Differential panel - Bone marrow
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11111-2> -- Metamyelocytes/100 cells in Bone marrow by Manual count
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11127-8> -- Erythrocytes [Morphology] in Bone marrow
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/42215-4> -- Nucleated erythrocytes/100 cells in Bone marrow by Manual count
+        ["id1.1.1.1.1"] = <http://loinc.org/id/47286-0> -- Differential panel - Bone marrow
+        ["at0.0.0.0.1"] = <http://loinc.org/id/47286-0> -- Differential panel - Bone marrow
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11111-2> -- Metamyelocytes/100 cells in Bone marrow by Manual count
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11127-8> -- Erythrocytes [Morphology] in Bone marrow
+        ["id0.1.1.1.3"] = <http://loinc.org/id/42215-4> -- Nucleated erythrocytes/100 cells in Bone marrow by Manual count
       >
     >
   >

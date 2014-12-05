@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Cocaine panel - Urine' concept">
         use = <"Use for Cocaine panel - Urine.">
         keywords = <"Cocaine","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53747-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Cocaine panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Cocaine panel - Urine
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53747-2> -- Cocaine panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53747-2> -- Cocaine panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/16226-3> -- Benzoylecgonine [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/20519-5> -- Cocaine [Mass/volume] in Urine by Confirmatory method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/3393-6> -- Benzoylecgonine [Presence] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/53743-1> -- Cocaine metabolites.other [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53747-2> -- Cocaine panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53747-2> -- Cocaine panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/16226-3> -- Benzoylecgonine [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20519-5> -- Cocaine [Mass/volume] in Urine by Confirmatory method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/3393-6> -- Benzoylecgonine [Presence] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/53743-1> -- Cocaine metabolites.other [Mass/volume] in Urine
       >
     >
   >

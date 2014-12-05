@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis panel - Urine by Auto' concept">
         use = <"Use for Urinalysis panel - Urine by Auto.">
         keywords = <"Urinalysis","panel","-","Urine","by","Auto">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50564-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:10">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis panel - Urine by Auto
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis panel - Urine by Auto
@@ -69,27 +69,27 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50564-4> -- Urinalysis panel - Urine by Auto
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50564-4> -- Urinalysis panel - Urine by Auto
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/50556-0> -- Urinalysis dipstick panel - Urine by Automated test strip
-        ["idconfigatron.adl.test_use_archetype_at_prefix.3"] = <configatron.adl.loinc.uri/53263-0> -- Urinalysis yeast variants panel - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.4"] = <configatron.adl.loinc.uri/53264-8> -- Urinalysis yeast variants panel [#/volume] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.5"] = <configatron.adl.loinc.uri/53267-1> -- Urinalysis yeast variants panel [#/area] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.6"] = <configatron.adl.loinc.uri/53270-5> -- Urinalysis type of non-squamous epithelial cells panel - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.7"] = <configatron.adl.loinc.uri/53273-9> -- Urinalysis type of non-squamous epithelial cells panel [#/volume] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.8"] = <configatron.adl.loinc.uri/53276-2> -- Urinalysis type of non-squamous epithelial cells panel [#/area] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.9"] = <configatron.adl.loinc.uri/53277-0> -- Urinalysis type of cast panel - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.10"] = <configatron.adl.loinc.uri/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.11"] = <configatron.adl.loinc.uri/53293-7> -- Urinalysis microscopic panel [#/area] - Urine sediment by Automated count
-        ["idconfigatron.adl.test_use_archetype_at_prefix.12"] = <configatron.adl.loinc.uri/53295-2> -- Urinalysis type of crystal panel [#/volume] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.13"] = <configatron.adl.loinc.uri/53305-9> -- Urinalysis type of crystal panel [#/area] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.14"] = <configatron.adl.loinc.uri/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
-        ["idconfigatron.adl.test_use_archetype_at_prefix.15"] = <configatron.adl.loinc.uri/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.16"] = <configatron.adl.loinc.uri/53330-7> -- Urinalysis type of cast panel [#/area] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.17"] = <configatron.adl.loinc.uri/53333-1> -- Urinalysis other formed elements panel - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.18"] = <configatron.adl.loinc.uri/53351-3> -- Urinalysis other formed elements panel [#/volume] - Urine by Computer assisted method
-        ["idconfigatron.adl.test_use_archetype_at_prefix.19"] = <configatron.adl.loinc.uri/53353-9> -- Urinalysis other formed elements panel [#/area] - Urine by Computer assisted method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50564-4> -- Urinalysis panel - Urine by Auto
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50564-4> -- Urinalysis panel - Urine by Auto
+        ["id0.1.2.1.1"] = <http://loinc.org/id/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
+        ["id0.1.2.1.2"] = <http://loinc.org/id/50556-0> -- Urinalysis dipstick panel - Urine by Automated test strip
+        ["id0.1.2.1.3"] = <http://loinc.org/id/53263-0> -- Urinalysis yeast variants panel - Urine by Computer assisted method
+        ["id0.1.2.1.4"] = <http://loinc.org/id/53264-8> -- Urinalysis yeast variants panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.2.1.5"] = <http://loinc.org/id/53267-1> -- Urinalysis yeast variants panel [#/area] - Urine by Computer assisted method
+        ["id0.1.2.1.6"] = <http://loinc.org/id/53270-5> -- Urinalysis type of non-squamous epithelial cells panel - Urine by Computer assisted method
+        ["id0.1.2.1.7"] = <http://loinc.org/id/53273-9> -- Urinalysis type of non-squamous epithelial cells panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.2.1.8"] = <http://loinc.org/id/53276-2> -- Urinalysis type of non-squamous epithelial cells panel [#/area] - Urine by Computer assisted method
+        ["id0.1.2.1.9"] = <http://loinc.org/id/53277-0> -- Urinalysis type of cast panel - Urine by Computer assisted method
+        ["id0.1.2.1.10"] = <http://loinc.org/id/53281-2> -- Urinalysis type of cast panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.2.1.11"] = <http://loinc.org/id/53293-7> -- Urinalysis microscopic panel [#/area] - Urine sediment by Automated count
+        ["id0.1.2.1.12"] = <http://loinc.org/id/53295-2> -- Urinalysis type of crystal panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.2.1.13"] = <http://loinc.org/id/53305-9> -- Urinalysis type of crystal panel [#/area] - Urine by Computer assisted method
+        ["id0.1.2.1.14"] = <http://loinc.org/id/53315-8> -- Urinalysis microscopic panel - Urine Qualitative by Automated
+        ["id0.1.2.1.15"] = <http://loinc.org/id/53325-7> -- Urinalysis type of crystal panel - Urine by Computer assisted method
+        ["id0.1.2.1.16"] = <http://loinc.org/id/53330-7> -- Urinalysis type of cast panel [#/area] - Urine by Computer assisted method
+        ["id0.1.2.1.17"] = <http://loinc.org/id/53333-1> -- Urinalysis other formed elements panel - Urine by Computer assisted method
+        ["id0.1.2.1.18"] = <http://loinc.org/id/53351-3> -- Urinalysis other formed elements panel [#/volume] - Urine by Computer assisted method
+        ["id0.1.2.1.19"] = <http://loinc.org/id/53353-9> -- Urinalysis other formed elements panel [#/area] - Urine by Computer assisted method
       >
     >
   >

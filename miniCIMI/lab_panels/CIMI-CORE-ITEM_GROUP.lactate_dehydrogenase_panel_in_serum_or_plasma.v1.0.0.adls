@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Lactate dehydrogenase panel - Serum or Plasma' concept">
         use = <"Use for Lactate dehydrogenase panel - Serum or Plasma.">
         keywords = <"Lactate","dehydrogenase","panel","-","Serum","or","Plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/42929-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Lactate dehydrogenase panel - Serum or Plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lactate dehydrogenase panel - Serum or Plasma
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/42929-0> -- Lactate dehydrogenase panel - Serum or Plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/42929-0> -- Lactate dehydrogenase panel - Serum or Plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2532-0> -- Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/2536-1> -- Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2539-5> -- Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2542-9> -- Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/2545-2> -- Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/2548-6> -- Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/49279-3> -- Lactate dehydrogenase isoenzymes [interpretation] in Serum or Plasma Narrative
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/5910-5> -- Lactate dehydrogenase isoenzymes [interpretation] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/42929-0> -- Lactate dehydrogenase panel - Serum or Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/42929-0> -- Lactate dehydrogenase panel - Serum or Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2532-0> -- Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/2536-1> -- Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2539-5> -- Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2542-9> -- Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
+        ["id0.1.1.1.5"] = <http://loinc.org/id/2545-2> -- Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
+        ["id0.1.1.1.6"] = <http://loinc.org/id/2548-6> -- Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis
+        ["id0.1.1.1.7"] = <http://loinc.org/id/49279-3> -- Lactate dehydrogenase isoenzymes [interpretation] in Serum or Plasma Narrative
+        ["id0.1.1.1.8"] = <http://loinc.org/id/5910-5> -- Lactate dehydrogenase isoenzymes [interpretation] in Serum or Plasma
       >
     >
   >

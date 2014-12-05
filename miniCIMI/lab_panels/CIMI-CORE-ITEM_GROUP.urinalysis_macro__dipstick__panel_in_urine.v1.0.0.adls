@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis macro (dipstick) panel - Urine' concept">
         use = <"Use for Urinalysis macro (dipstick) panel - Urine.">
         keywords = <"Urinalysis","macro","(dipstick)","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24357-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis macro (dipstick) panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis macro (dipstick) panel - Urine
@@ -93,28 +93,28 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24357-6> -- Urinalysis macro (dipstick) panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24357-6> -- Urinalysis macro (dipstick) panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/20405-7> -- Urobilinogen [Mass/volume] in Urine by Test strip
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/20454-5> -- Protein [Presence] in Urine by Test strip
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/20505-4> -- Bilirubin.total [Mass/volume] in Urine by Test strip
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2514-8> -- Ketones [Presence] in Urine by Test strip
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/25428-4> -- Glucose [Presence] in Urine by Test strip
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/32167-9> -- Clarity of Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/34533-0> -- Odor of Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/5767-9> -- Appearance of Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/5770-3> -- Bilirubin.total [Presence] in Urine by Test strip
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/5778-6> -- Color of Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/5792-7> -- Glucose [Mass/volume] in Urine by Test strip
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/5794-3> -- Hemoglobin [Presence] in Urine by Test strip
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/5797-6> -- Ketones [Mass/volume] in Urine by Test strip
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/5799-2> -- Leukocyte esterase [Presence] in Urine by Test strip
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/5802-4> -- Nitrite [Presence] in Urine by Test strip
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/5803-2> -- pH of Urine by Test strip
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/5804-0> -- Protein [Mass/volume] in Urine by Test strip
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/5809-9> -- Reducing substances [Presence] in Urine
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/5811-5> -- Specific gravity of Urine by Test strip
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/58450-8> -- Bilirubin [Presence] in Urine by Confirmatory method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24357-6> -- Urinalysis macro (dipstick) panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24357-6> -- Urinalysis macro (dipstick) panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/20405-7> -- Urobilinogen [Mass/volume] in Urine by Test strip
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20454-5> -- Protein [Presence] in Urine by Test strip
+        ["id0.1.1.1.3"] = <http://loinc.org/id/20505-4> -- Bilirubin.total [Mass/volume] in Urine by Test strip
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2514-8> -- Ketones [Presence] in Urine by Test strip
+        ["id0.1.1.1.5"] = <http://loinc.org/id/25428-4> -- Glucose [Presence] in Urine by Test strip
+        ["id0.1.1.1.6"] = <http://loinc.org/id/32167-9> -- Clarity of Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/34533-0> -- Odor of Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/5767-9> -- Appearance of Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/5770-3> -- Bilirubin.total [Presence] in Urine by Test strip
+        ["id0.1.1.1.10"] = <http://loinc.org/id/5778-6> -- Color of Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/5792-7> -- Glucose [Mass/volume] in Urine by Test strip
+        ["id0.1.1.1.12"] = <http://loinc.org/id/5794-3> -- Hemoglobin [Presence] in Urine by Test strip
+        ["id0.1.1.1.13"] = <http://loinc.org/id/5797-6> -- Ketones [Mass/volume] in Urine by Test strip
+        ["id0.1.1.1.14"] = <http://loinc.org/id/5799-2> -- Leukocyte esterase [Presence] in Urine by Test strip
+        ["id0.1.1.1.15"] = <http://loinc.org/id/5802-4> -- Nitrite [Presence] in Urine by Test strip
+        ["id0.1.1.1.16"] = <http://loinc.org/id/5803-2> -- pH of Urine by Test strip
+        ["id0.1.1.1.17"] = <http://loinc.org/id/5804-0> -- Protein [Mass/volume] in Urine by Test strip
+        ["id0.1.1.1.18"] = <http://loinc.org/id/5809-9> -- Reducing substances [Presence] in Urine
+        ["id0.1.1.1.19"] = <http://loinc.org/id/5811-5> -- Specific gravity of Urine by Test strip
+        ["id0.1.1.1.20"] = <http://loinc.org/id/58450-8> -- Bilirubin [Presence] in Urine by Confirmatory method
       >
     >
   >

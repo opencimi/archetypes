@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amino acids panel [Moles/volume] - Cerebral spinal fluid' concept">
         use = <"Use for Amino acids panel [Moles/volume] - Cerebral spinal fluid.">
         keywords = <"Amino","acids","panel","[Moles/volume]","-","Cerebral","spinal","fluid">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35507-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
@@ -133,48 +133,48 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35507-3> -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35507-3> -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/22641-5> -- Glutamine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/22642-3> -- Tyrosine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/22643-1> -- Threonine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/22644-9> -- Serine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/22645-6> -- Proline [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/22646-4> -- Phenylalanine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/22647-2> -- Ornithine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/22648-0> -- Methionine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/22649-8> -- Valine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/22650-6> -- Glycine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/22651-4> -- Lysine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/22652-2> -- Glutamate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/22653-0> -- Cystine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/22654-8> -- Citrulline [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/22655-5> -- Aspartate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/22656-3> -- Arginine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/22657-1> -- Alanine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/22659-7> -- Isoleucine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/22660-5> -- Homocystine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/26584-3> -- 1-Methylhistidine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/26585-0> -- 3-Methylhistidine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/26586-8> -- Alpha aminobutyrate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/26587-6> -- Alpha aminoadipate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/26588-4> -- Anserine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/26589-2> -- Beta alanine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/26590-0> -- Beta aminoisobutyrate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/26591-8> -- Carnosine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/26592-6> -- Cystathionine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/26594-2> -- Gamma aminobutyrate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/26595-9> -- Hydroxylysine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/26596-7> -- Hydroxyproline [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/26597-5> -- Phosphoethanolamine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/26598-3> -- Sarcosine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/26602-3> -- Tryptophan [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/26603-1> -- Asparagine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/26614-8> -- Taurine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/26737-7> -- Phosphoserine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/27337-5> -- Amino beta guanidinopropionate [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/9412-8> -- Leucine [Moles/volume] in Cerebral spinal fluid
-        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/9453-2> -- Histidine [Moles/volume] in Cerebral spinal fluid
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35507-3> -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35507-3> -- Amino acids panel [Moles/volume] - Cerebral spinal fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/22641-5> -- Glutamine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/22642-3> -- Tyrosine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/22643-1> -- Threonine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/22644-9> -- Serine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.5"] = <http://loinc.org/id/22645-6> -- Proline [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.6"] = <http://loinc.org/id/22646-4> -- Phenylalanine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.7"] = <http://loinc.org/id/22647-2> -- Ornithine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.8"] = <http://loinc.org/id/22648-0> -- Methionine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.9"] = <http://loinc.org/id/22649-8> -- Valine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.10"] = <http://loinc.org/id/22650-6> -- Glycine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.11"] = <http://loinc.org/id/22651-4> -- Lysine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.12"] = <http://loinc.org/id/22652-2> -- Glutamate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.13"] = <http://loinc.org/id/22653-0> -- Cystine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.14"] = <http://loinc.org/id/22654-8> -- Citrulline [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.15"] = <http://loinc.org/id/22655-5> -- Aspartate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.16"] = <http://loinc.org/id/22656-3> -- Arginine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.17"] = <http://loinc.org/id/22657-1> -- Alanine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.18"] = <http://loinc.org/id/22659-7> -- Isoleucine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.19"] = <http://loinc.org/id/22660-5> -- Homocystine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.20"] = <http://loinc.org/id/26584-3> -- 1-Methylhistidine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.21"] = <http://loinc.org/id/26585-0> -- 3-Methylhistidine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.22"] = <http://loinc.org/id/26586-8> -- Alpha aminobutyrate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.23"] = <http://loinc.org/id/26587-6> -- Alpha aminoadipate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.24"] = <http://loinc.org/id/26588-4> -- Anserine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.25"] = <http://loinc.org/id/26589-2> -- Beta alanine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.26"] = <http://loinc.org/id/26590-0> -- Beta aminoisobutyrate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.27"] = <http://loinc.org/id/26591-8> -- Carnosine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.28"] = <http://loinc.org/id/26592-6> -- Cystathionine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.29"] = <http://loinc.org/id/26594-2> -- Gamma aminobutyrate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.30"] = <http://loinc.org/id/26595-9> -- Hydroxylysine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.31"] = <http://loinc.org/id/26596-7> -- Hydroxyproline [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.32"] = <http://loinc.org/id/26597-5> -- Phosphoethanolamine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.33"] = <http://loinc.org/id/26598-3> -- Sarcosine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.34"] = <http://loinc.org/id/26602-3> -- Tryptophan [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.35"] = <http://loinc.org/id/26603-1> -- Asparagine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.36"] = <http://loinc.org/id/26614-8> -- Taurine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.37"] = <http://loinc.org/id/26737-7> -- Phosphoserine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.38"] = <http://loinc.org/id/27337-5> -- Amino beta guanidinopropionate [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.39"] = <http://loinc.org/id/9412-8> -- Leucine [Moles/volume] in Cerebral spinal fluid
+        ["id0.1.1.1.40"] = <http://loinc.org/id/9453-2> -- Histidine [Moles/volume] in Cerebral spinal fluid
       >
     >
   >

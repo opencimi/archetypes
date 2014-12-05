@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method' concept">
         use = <"Use for Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method.">
         keywords = <"Chlamydia","trachomatis","Neisseria","gonorrhoeae","rRNA","panel","-","Urethra","by","Probe","target","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/70162-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/70162-3> -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/70162-3> -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/53925-4> -- Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/53927-0> -- Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/70162-3> -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/70162-3> -- Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Urethra by Probe and target amplification method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/53925-4> -- Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/53927-0> -- Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method
       >
     >
   >

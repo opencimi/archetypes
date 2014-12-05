@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'First trimester maternal screen with nuchal translucency panel' concept">
         use = <"Use for First trimester maternal screen with nuchal translucency panel.">
         keywords = <"First","trimester","maternal","screen","with","nuchal","translucency","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49086-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:44">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- First trimester maternal screen with nuchal translucency panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- First trimester maternal screen with nuchal translucency panel
@@ -91,27 +91,27 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49086-2> -- First trimester maternal screen with nuchal translucency panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49086-2> -- First trimester maternal screen with nuchal translucency panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11957-8> -- Fetal Crown Rump length US
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/12146-7> -- Fetal Nuchal fold Thickness US
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/19080-1> -- Choriogonadotropin [Units/volume] in Serum or Plasma
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/20465-1> -- Choriogonadotropin [Multiple of the median] in Serum or Plasma
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/32123-2> -- Pregnancy associated plasma protein A [Multiple of the median] in Serum or Plasma
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/32166-1> -- Choriogonadotropin [Multiple of the median] adjusted in Serum or Plasma
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/43994-3> -- Trisomy 18 risk in Fetus
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/43995-0> -- Trisomy 21 risk in Fetus
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/47223-3> -- Trisomy 18 risk based on maternal age in Fetus
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/48407-1> -- Pregnancy associated plasma protein A [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/49030-0> -- Trisomy 21 risk based on maternal age+Pregnancy associated plasma protein A+Choriogonadotropin+Nuchal translucency in Fetus
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/49035-9> -- Fetal Nuchal fold [Multiple of the median] Thickness US
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/49088-8> -- Sonographer name
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/49089-6> -- [Identifier] Sonographer
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/49090-4> -- Trisomy 21 risk based on maternal age in Fetus
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/49582-0> -- Trisomy 18 risk cutoff in Fetus
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/49583-8> -- Trisomy 21 risk cutoff in Fetus
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/50679-0> -- First trimester maternal screen with nuchal translucency [interpretation]
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/49087-0> -- Maternal screen clinical predictors panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49086-2> -- First trimester maternal screen with nuchal translucency panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49086-2> -- First trimester maternal screen with nuchal translucency panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11957-8> -- Fetal Crown Rump length US
+        ["id0.1.1.1.2"] = <http://loinc.org/id/12146-7> -- Fetal Nuchal fold Thickness US
+        ["id0.1.1.1.3"] = <http://loinc.org/id/19080-1> -- Choriogonadotropin [Units/volume] in Serum or Plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/20465-1> -- Choriogonadotropin [Multiple of the median] in Serum or Plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/32123-2> -- Pregnancy associated plasma protein A [Multiple of the median] in Serum or Plasma
+        ["id0.1.1.1.6"] = <http://loinc.org/id/32166-1> -- Choriogonadotropin [Multiple of the median] adjusted in Serum or Plasma
+        ["id0.1.1.1.7"] = <http://loinc.org/id/43994-3> -- Trisomy 18 risk in Fetus
+        ["id0.1.1.1.8"] = <http://loinc.org/id/43995-0> -- Trisomy 21 risk in Fetus
+        ["id0.1.1.1.9"] = <http://loinc.org/id/47223-3> -- Trisomy 18 risk based on maternal age in Fetus
+        ["id0.1.1.1.10"] = <http://loinc.org/id/48407-1> -- Pregnancy associated plasma protein A [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.11"] = <http://loinc.org/id/49030-0> -- Trisomy 21 risk based on maternal age+Pregnancy associated plasma protein A+Choriogonadotropin+Nuchal translucency in Fetus
+        ["id0.1.1.1.12"] = <http://loinc.org/id/49035-9> -- Fetal Nuchal fold [Multiple of the median] Thickness US
+        ["id0.1.1.1.13"] = <http://loinc.org/id/49088-8> -- Sonographer name
+        ["id0.1.1.1.14"] = <http://loinc.org/id/49089-6> -- [Identifier] Sonographer
+        ["id0.1.1.1.15"] = <http://loinc.org/id/49090-4> -- Trisomy 21 risk based on maternal age in Fetus
+        ["id0.1.1.1.16"] = <http://loinc.org/id/49582-0> -- Trisomy 18 risk cutoff in Fetus
+        ["id0.1.1.1.17"] = <http://loinc.org/id/49583-8> -- Trisomy 21 risk cutoff in Fetus
+        ["id0.1.1.1.18"] = <http://loinc.org/id/50679-0> -- First trimester maternal screen with nuchal translucency [interpretation]
+        ["id0.1.2.1.1"] = <http://loinc.org/id/49087-0> -- Maternal screen clinical predictors panel
       >
     >
   >

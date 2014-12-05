@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Home drug screening panel - Urine' concept">
         use = <"Use for Home drug screening panel - Urine.">
         keywords = <"Home","drug","screening","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55419-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Home drug screening panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Home drug screening panel - Urine
@@ -79,21 +79,21 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55419-6> -- Home drug screening panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55419-6> -- Home drug screening panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/14316-4> -- Benzodiazepines [Presence] in Urine by Screen method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/19270-8> -- Barbiturates [Presence] in Urine by Screen method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/19295-5> -- Opiates [Presence] in Urine by Screen method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/19312-8> -- Tricyclic antidepressants [Presence] in Urine by Screen method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/19343-3> -- Amphetamine [Presence] in Urine by Screen method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/19359-9> -- Cocaine [Presence] in Urine by Screen method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/19381-3> -- Carboxy tetrahydrocannabinol [Presence] in Urine by Screen method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/19550-3> -- Methadone [Presence] in Urine by Screen method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/19554-5> -- Methamphetamine [Presence] in Urine by Screen method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/19568-5> -- Methylenedioxymethamphetamine [Presence] in Urine by Screen method
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/19642-8> -- Oxycodone [Presence] in Urine by Screen method
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/19659-2> -- Phencyclidine [Presence] in Urine by Screen method
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/55428-7> -- Drug test kit name [Identifier] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55419-6> -- Home drug screening panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55419-6> -- Home drug screening panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14316-4> -- Benzodiazepines [Presence] in Urine by Screen method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/19270-8> -- Barbiturates [Presence] in Urine by Screen method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/19295-5> -- Opiates [Presence] in Urine by Screen method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/19312-8> -- Tricyclic antidepressants [Presence] in Urine by Screen method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/19343-3> -- Amphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/19359-9> -- Cocaine [Presence] in Urine by Screen method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/19381-3> -- Carboxy tetrahydrocannabinol [Presence] in Urine by Screen method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/19550-3> -- Methadone [Presence] in Urine by Screen method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/19554-5> -- Methamphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/19568-5> -- Methylenedioxymethamphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/19642-8> -- Oxycodone [Presence] in Urine by Screen method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/19659-2> -- Phencyclidine [Presence] in Urine by Screen method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/55428-7> -- Drug test kit name [Identifier] in Urine
       >
     >
   >

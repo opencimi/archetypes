@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum' concept">
         use = <"Use for Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum.">
         keywords = <"Streptococcus","pneumoniae","14a","IgG","panel","[Mass/volume]","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/42360-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
@@ -83,23 +83,23 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/25296-5> -- Streptococcus pneumoniae 51 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/27092-6> -- Streptococcus pneumoniae 1 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/27094-2> -- Streptococcus pneumoniae 4 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/27096-7> -- Streptococcus pneumoniae 3 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/27113-0> -- Streptococcus pneumoniae 8 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/27118-9> -- Streptococcus pneumoniae 26 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/27374-8> -- Streptococcus pneumoniae 12 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/27387-0> -- Streptococcus pneumoniae 14 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/27389-6> -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/27390-4> -- Streptococcus pneumoniae 19 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/27392-0> -- Streptococcus pneumoniae 9 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/27395-3> -- Streptococcus pneumoniae 56 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/30153-1> -- Streptococcus pneumoniae 68 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/31183-7> -- Streptococcus pneumoniae 5 IgG Ab [Mass/volume] in Serum
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/42771-6> -- Streptococcus pneumoniae serotype IgG Ab [interpretation] in Serum Narrative
+        ["id1.1.1.1.1"] = <http://loinc.org/id/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/42360-8> -- Streptococcus pneumoniae 14a IgG panel [Mass/volume] - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/25296-5> -- Streptococcus pneumoniae 51 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/27092-6> -- Streptococcus pneumoniae 1 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/27094-2> -- Streptococcus pneumoniae 4 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/27096-7> -- Streptococcus pneumoniae 3 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/27113-0> -- Streptococcus pneumoniae 8 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/27118-9> -- Streptococcus pneumoniae 26 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.7"] = <http://loinc.org/id/27374-8> -- Streptococcus pneumoniae 12 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/27387-0> -- Streptococcus pneumoniae 14 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.9"] = <http://loinc.org/id/27389-6> -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.10"] = <http://loinc.org/id/27390-4> -- Streptococcus pneumoniae 19 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.11"] = <http://loinc.org/id/27392-0> -- Streptococcus pneumoniae 9 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.12"] = <http://loinc.org/id/27395-3> -- Streptococcus pneumoniae 56 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.13"] = <http://loinc.org/id/30153-1> -- Streptococcus pneumoniae 68 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.14"] = <http://loinc.org/id/31183-7> -- Streptococcus pneumoniae 5 IgG Ab [Mass/volume] in Serum
+        ["id0.1.1.1.15"] = <http://loinc.org/id/42771-6> -- Streptococcus pneumoniae serotype IgG Ab [interpretation] in Serum Narrative
       >
     >
   >

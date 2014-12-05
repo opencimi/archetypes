@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Urinalysis microscopic panel [#/volume] - Urine by Automated count' concept">
         use = <"Use for Urinalysis microscopic panel [#/volume] - Urine by Automated count.">
         keywords = <"Urinalysis","microscopic","panel","[#/volume]","-","Urine","by","Automated","count">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50554-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:10">
+      ["time"] = <"2014-12-05T05:57:46">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
@@ -75,19 +75,19 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/33768-3> -- Leukocyte clumps [#/volume] in Urine by Automated count
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/51478-6> -- Mucus [#/volume] in Urine by Automated count
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/51479-4> -- Spermatozoa [#/volume] in Urine by Automated count
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/51480-2> -- Bacteria [#/volume] in Urine by Automated count
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/51482-8> -- Crystals [#/volume] in Urine by Automated count
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/51483-6> -- Casts [#/volume] in Urine by Automated count
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/51484-4> -- Hyaline casts [#/volume] in Urine by Automated count
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/51485-1> -- Epithelial cells.non-squamous [#/volume] in Urine by Automated count
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/51486-9> -- Epithelial cells.squamous [#/volume] in Urine by Automated count
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/51487-7> -- Leukocytes [#/volume] in Urine by Automated count
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/798-9> -- Erythrocytes [#/volume] in Urine by Automated count
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50554-5> -- Urinalysis microscopic panel [#/volume] - Urine by Automated count
+        ["id0.1.1.1.1"] = <http://loinc.org/id/33768-3> -- Leukocyte clumps [#/volume] in Urine by Automated count
+        ["id0.1.1.1.2"] = <http://loinc.org/id/51478-6> -- Mucus [#/volume] in Urine by Automated count
+        ["id0.1.1.1.3"] = <http://loinc.org/id/51479-4> -- Spermatozoa [#/volume] in Urine by Automated count
+        ["id0.1.1.1.4"] = <http://loinc.org/id/51480-2> -- Bacteria [#/volume] in Urine by Automated count
+        ["id0.1.1.1.5"] = <http://loinc.org/id/51482-8> -- Crystals [#/volume] in Urine by Automated count
+        ["id0.1.1.1.6"] = <http://loinc.org/id/51483-6> -- Casts [#/volume] in Urine by Automated count
+        ["id0.1.1.1.7"] = <http://loinc.org/id/51484-4> -- Hyaline casts [#/volume] in Urine by Automated count
+        ["id0.1.1.1.8"] = <http://loinc.org/id/51485-1> -- Epithelial cells.non-squamous [#/volume] in Urine by Automated count
+        ["id0.1.1.1.9"] = <http://loinc.org/id/51486-9> -- Epithelial cells.squamous [#/volume] in Urine by Automated count
+        ["id0.1.1.1.10"] = <http://loinc.org/id/51487-7> -- Leukocytes [#/volume] in Urine by Automated count
+        ["id0.1.1.1.11"] = <http://loinc.org/id/798-9> -- Erythrocytes [#/volume] in Urine by Automated count
       >
     >
   >

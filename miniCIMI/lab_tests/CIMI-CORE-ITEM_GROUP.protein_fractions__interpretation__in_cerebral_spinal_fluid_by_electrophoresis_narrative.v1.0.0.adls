@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative' concept">
         use = <"Use for Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative.">
         keywords = <"Protein","Fractions","[interpretation]","Cerebral","spinal","fluid","by","Electrophoresis","Narrative">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49295-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative">>
-      ["at0.0.0.0.1"] = <text = <"Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative">>
+      ["id1.1.1.1.1.1"] = <text = <"Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative">>
+      ["at0.0.0.0.0.1"] = <text = <"Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49295-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49295-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/49295-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/49295-9>
       >
     >
   >

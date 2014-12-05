@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hemoglobin A1c measurement device panel' concept">
         use = <"Use for Hemoglobin A1c measurement device panel.">
         keywords = <"Hemoglobin","A1c","measurement","device","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43150-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hemoglobin A1c measurement device panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hemoglobin A1c measurement device panel
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43150-2> -- Hemoglobin A1c measurement device panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43150-2> -- Hemoglobin A1c measurement device panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/43150-2> -- Hemoglobin A1c measurement device panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/43150-2> -- Hemoglobin A1c measurement device panel
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)' concept">
         use = <"Use for Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB).">
         keywords = <"Borrelia","burgdorferi","30kD","IgG","Ab","[Presence]","Serum","by","Immunoblot","(IB)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9591-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:02:13">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)">>
-      ["at0.0.0.0.1"] = <text = <"Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)">>
+      ["id1.1.1.1.1.1"] = <text = <"Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)">>
+      ["at0.0.0.0.0.1"] = <text = <"Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/9591-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/9591-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/9591-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/9591-9>
       >
     >
   >

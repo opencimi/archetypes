@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hydrocodone and hydromorphone panel - Urine by Confirmatory method' concept">
         use = <"Use for Hydrocodone and hydromorphone panel - Urine by Confirmatory method.">
         keywords = <"Hydrocodone","hydromorphone","panel","-","Urine","by","Confirmatory","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74760-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74760-0> -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74760-0> -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74760-0> -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74760-0> -- Hydrocodone and hydromorphone panel - Urine by Confirmatory method
       >
     >
   >

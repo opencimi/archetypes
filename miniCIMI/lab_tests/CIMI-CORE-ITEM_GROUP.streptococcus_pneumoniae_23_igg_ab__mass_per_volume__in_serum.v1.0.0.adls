@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum' concept">
         use = <"Use for Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum.">
         keywords = <"Streptococcus","pneumoniae","23","IgG","Ab","[Mass/volume]","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,33 +33,34 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/27389-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:58:45">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units[id0.0.0.0.2] matches {[at0.0.0.0.2]} -- ug/mL
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ug/mL
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum">>
-      ["at0.0.0.0.1"] = <text = <"Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum">>
-      ["at0.0.0.0.2"] = <text = <"Qn">>
+      ["id1.1.1.1.1.1"] = <text = <"Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum">>
+      ["at0.0.0.0.0.1"] = <text = <"Streptococcus pneumoniae 23 IgG Ab [Mass/volume] in Serum">>
+      ["at0.0.0.0.0.2"] = <text = <"Qn">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/27389-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/27389-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/27389-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/27389-6>
       >
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.2"] = <configatron.adl.snomed.uri/______> -- ug/mL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ug/mL
       >
     >
   >

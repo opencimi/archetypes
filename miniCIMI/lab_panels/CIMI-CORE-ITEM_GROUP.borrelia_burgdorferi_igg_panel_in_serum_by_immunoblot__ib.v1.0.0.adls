@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)' concept">
         use = <"Use for Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB).">
         keywords = <"Borrelia","burgdorferi","IgG","panel","-","Serum","by","Immunoblot","(IB)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/60342-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
@@ -77,20 +77,20 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13502-0> -- Borrelia burgdorferi Ab.IgG band pattern [interpretation] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/6320-6> -- Borrelia burgdorferi IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/9588-5> -- Borrelia burgdorferi 18kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/9589-3> -- Borrelia burgdorferi 23kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/9590-1> -- Borrelia burgdorferi 28kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/9591-9> -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/9592-7> -- Borrelia burgdorferi 39kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/9593-5> -- Borrelia burgdorferi 41kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/9594-3> -- Borrelia burgdorferi 45kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/9595-0> -- Borrelia burgdorferi 58kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/9596-8> -- Borrelia burgdorferi 66kD IgG Ab [Presence] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/9597-6> -- Borrelia burgdorferi 93kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13502-0> -- Borrelia burgdorferi Ab.IgG band pattern [interpretation] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.2"] = <http://loinc.org/id/6320-6> -- Borrelia burgdorferi IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.3"] = <http://loinc.org/id/9588-5> -- Borrelia burgdorferi 18kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/9589-3> -- Borrelia burgdorferi 23kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/9590-1> -- Borrelia burgdorferi 28kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.6"] = <http://loinc.org/id/9591-9> -- Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.7"] = <http://loinc.org/id/9592-7> -- Borrelia burgdorferi 39kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.8"] = <http://loinc.org/id/9593-5> -- Borrelia burgdorferi 41kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.9"] = <http://loinc.org/id/9594-3> -- Borrelia burgdorferi 45kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.10"] = <http://loinc.org/id/9595-0> -- Borrelia burgdorferi 58kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.11"] = <http://loinc.org/id/9596-8> -- Borrelia burgdorferi 66kD IgG Ab [Presence] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.12"] = <http://loinc.org/id/9597-6> -- Borrelia burgdorferi 93kD IgG Ab [Presence] in Serum by Immunoblot (IB)
       >
     >
   >

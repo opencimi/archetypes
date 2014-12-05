@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen' concept">
         use = <"Use for Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen.">
         keywords = <"Influenza","virus","B","Victoria","Yamagata","lineage","RNA","panel","-","Unspecified","specimen">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74787-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74787-3> -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74787-3> -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/74784-0> -- Influenza virus B lineage RNA [Identifier] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/74785-7> -- Influenza virus B Victoria lineage RNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/74786-5> -- Influenza virus B Yamagata lineage RNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74787-3> -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74787-3> -- Influenza virus B Victoria and Yamagata lineage RNA panel - Unspecified specimen
+        ["id0.1.1.1.1"] = <http://loinc.org/id/74784-0> -- Influenza virus B lineage RNA [Identifier] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/74785-7> -- Influenza virus B Victoria lineage RNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/74786-5> -- Influenza virus B Yamagata lineage RNA [Presence] in Unspecified specimen by Probe and target amplification method
       >
     >
   >

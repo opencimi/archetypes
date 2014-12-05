@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'KIR genotyping panel - Blood or Tissue' concept">
         use = <"Use for KIR genotyping panel - Blood or Tissue.">
         keywords = <"KIR","genotyping","panel","-","Blood","or","Tissue">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/64418-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- KIR genotyping panel - Blood or Tissue
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- KIR genotyping panel - Blood or Tissue
@@ -89,26 +89,26 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/64418-7> -- KIR genotyping panel - Blood or Tissue
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/64418-7> -- KIR genotyping panel - Blood or Tissue
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/64413-8> -- KIR gene allele 2DL1 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/64414-6> -- KIR gene allele 2DL2 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/64415-3> -- KIR gene allele 2DL3 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/64416-1> -- KIR gene allele 2DL4 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/64419-5> -- KIR gene allele 2DL5 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/64420-3> -- KIR gene allele 2DS1 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/64421-1> -- KIR gene allele 2DS2 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/64422-9> -- KIR gene allele 2DS3 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/64423-7> -- KIR gene allele 2DS4 FUL [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/64424-5> -- KIR gene allele 2DS4 DEL [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/64425-2> -- KIR gene allele 2DS5 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/64426-0> -- KIR gene allele 3DL1 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/64427-8> -- KIR gene allele 3DL2 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/64428-6> -- KIR gene allele 3DL3 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/64429-4> -- KIR gene allele 3DS1 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/64430-2> -- KIR gene allele 2DP1 [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/64431-0> -- KIR gene allele 3DP1 FUL [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/64432-8> -- KIR gene allele 3DP1 DEL [Presence] in Blood or Tissue by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/64418-7> -- KIR genotyping panel - Blood or Tissue
+        ["at0.0.0.0.1"] = <http://loinc.org/id/64418-7> -- KIR genotyping panel - Blood or Tissue
+        ["id0.1.1.1.1"] = <http://loinc.org/id/64413-8> -- KIR gene allele 2DL1 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/64414-6> -- KIR gene allele 2DL2 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/64415-3> -- KIR gene allele 2DL3 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/64416-1> -- KIR gene allele 2DL4 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/64419-5> -- KIR gene allele 2DL5 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/64420-3> -- KIR gene allele 2DS1 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/64421-1> -- KIR gene allele 2DS2 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/64422-9> -- KIR gene allele 2DS3 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/64423-7> -- KIR gene allele 2DS4 FUL [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/64424-5> -- KIR gene allele 2DS4 DEL [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/64425-2> -- KIR gene allele 2DS5 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/64426-0> -- KIR gene allele 3DL1 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/64427-8> -- KIR gene allele 3DL2 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.14"] = <http://loinc.org/id/64428-6> -- KIR gene allele 3DL3 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.15"] = <http://loinc.org/id/64429-4> -- KIR gene allele 3DS1 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.16"] = <http://loinc.org/id/64430-2> -- KIR gene allele 2DP1 [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.17"] = <http://loinc.org/id/64431-0> -- KIR gene allele 3DP1 FUL [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.18"] = <http://loinc.org/id/64432-8> -- KIR gene allele 3DP1 DEL [Presence] in Blood or Tissue by Molecular genetics method
       >
     >
   >

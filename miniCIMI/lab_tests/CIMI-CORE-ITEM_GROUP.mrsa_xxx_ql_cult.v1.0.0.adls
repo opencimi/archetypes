@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture' concept">
         use = <"Use for Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture.">
         keywords = <"Methicillin","resistant","Staphylococcus","aureus","[Presence]","Unspecified","specimen","by","Organism","specific","culture">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13317-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture">>
-      ["at0.0.0.0.1"] = <text = <"Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture">>
+      ["id1.1.1.1.1.1"] = <text = <"Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture">>
+      ["at0.0.0.0.0.1"] = <text = <"Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/13317-3>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/13317-3>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/13317-3>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/13317-3>
       >
     >
   >

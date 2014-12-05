@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture' concept">
         use = <"Use for Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture.">
         keywords = <"Ureaplasma","urealyticum","[Presence]","Unspecified","specimen","by","Organism","specific","culture">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/17852-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:38">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture">>
-      ["at0.0.0.0.1"] = <text = <"Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture">>
+      ["id1.1.1.1.1.1"] = <text = <"Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture">>
+      ["at0.0.0.0.0.1"] = <text = <"Ureaplasma urealyticum [Presence] in Unspecified specimen by Organism specific culture">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/17852-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/17852-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/17852-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/17852-5>
       >
     >
   >

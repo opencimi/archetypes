@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Phosphatidylserine IgA and IgG and IgM panel - Serum' concept">
         use = <"Use for Phosphatidylserine IgA and IgG and IgM panel - Serum.">
         keywords = <"Phosphatidylserine","IgA","IgG","IgM","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43101-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Phosphatidylserine IgA and IgG and IgM panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Phosphatidylserine IgA and IgG and IgM panel - Serum
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43101-5> -- Phosphatidylserine IgA and IgG and IgM panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43101-5> -- Phosphatidylserine IgA and IgG and IgM panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11568-3> -- Phosphatidylserine IgG Ab [Presence] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11569-1> -- Phosphatidylserine IgM Ab [Presence] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/13069-0> -- Phosphatidylserine IgA Ab [Units/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/14245-5> -- Phosphatidylserine IgG Ab [Units/volume] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/14246-3> -- Phosphatidylserine IgM Ab [Units/volume] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/30500-3> -- Phosphatidylserine IgA Ab [Presence] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/43101-5> -- Phosphatidylserine IgA and IgG and IgM panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/43101-5> -- Phosphatidylserine IgA and IgG and IgM panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11568-3> -- Phosphatidylserine IgG Ab [Presence] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11569-1> -- Phosphatidylserine IgM Ab [Presence] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/13069-0> -- Phosphatidylserine IgA Ab [Units/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/14245-5> -- Phosphatidylserine IgG Ab [Units/volume] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/14246-3> -- Phosphatidylserine IgM Ab [Units/volume] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/30500-3> -- Phosphatidylserine IgA Ab [Presence] in Serum
       >
     >
   >

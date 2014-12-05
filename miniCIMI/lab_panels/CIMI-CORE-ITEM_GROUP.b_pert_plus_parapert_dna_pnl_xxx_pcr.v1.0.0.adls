@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method' concept">
         use = <"Use for Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method.">
         keywords = <"Bordetella","pertussis","Bordetella","parapertussis","DNA","panel","-","Unspecified","specimen","by","Probe","target","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41875-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/41875-6> -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/41875-6> -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/23826-1> -- Bordetella pertussis DNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/29723-4> -- Bordetella parapertussis DNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/41875-6> -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/41875-6> -- Bordetella pertussis and Bordetella parapertussis DNA panel - Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/23826-1> -- Bordetella pertussis DNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/29723-4> -- Bordetella parapertussis DNA [Presence] in Unspecified specimen by Probe and target amplification method
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Leukocytes [#/volume] in Blood by Automated count' concept">
         use = <"Use for Leukocytes [#/volume] in Blood by Automated count.">
         keywords = <"Leukocytes","[#/volume]","Blood","by","Automated","count">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,33 +33,34 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6690-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:01:29">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Leukocytes [#/volume] in Blood by Automated count
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Leukocytes [#/volume] in Blood by Automated count
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units[id0.0.0.0.2] matches {[at0.0.0.0.2]} -- 10*3/uL
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Leukocytes [#/volume] in Blood by Automated count
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Leukocytes [#/volume] in Blood by Automated count
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- 10*3/uL
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Leukocytes [#/volume] in Blood by Automated count">>
-      ["at0.0.0.0.1"] = <text = <"Leukocytes [#/volume] in Blood by Automated count">>
-      ["at0.0.0.0.2"] = <text = <"Qn">>
+      ["id1.1.1.1.1.1"] = <text = <"Leukocytes [#/volume] in Blood by Automated count">>
+      ["at0.0.0.0.0.1"] = <text = <"Leukocytes [#/volume] in Blood by Automated count">>
+      ["at0.0.0.0.0.2"] = <text = <"Qn">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/6690-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/6690-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/6690-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/6690-2>
       >
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.2"] = <configatron.adl.snomed.uri/______> -- 10*3/uL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- 10*3/uL
       >
     >
   >

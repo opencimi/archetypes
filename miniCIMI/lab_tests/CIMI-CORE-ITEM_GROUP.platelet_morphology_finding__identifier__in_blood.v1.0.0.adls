@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Platelet morphology finding [Identifier] in Blood' concept">
         use = <"Use for Platelet morphology finding [Identifier] in Blood.">
         keywords = <"Platelet","morphology","finding","[Identifier]","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11125-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:01">
+      ["time"] = <"2014-12-05T05:57:57">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Platelet morphology finding [Identifier] in Blood
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Platelet morphology finding [Identifier] in Blood
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Platelet morphology finding [Identifier] in Blood
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Platelet morphology finding [Identifier] in Blood
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Platelet morphology finding [Identifier] in Blood">>
-      ["at0.0.0.0.1"] = <text = <"Platelet morphology finding [Identifier] in Blood">>
+      ["id1.1.1.1.1.1"] = <text = <"Platelet morphology finding [Identifier] in Blood">>
+      ["at0.0.0.0.0.1"] = <text = <"Platelet morphology finding [Identifier] in Blood">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/11125-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/11125-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/11125-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/11125-2>
       >
     >
   >

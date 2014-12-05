@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method.">
         keywords = <"Acute","chronic","leukemia","fusion","transcript","panel","-","Blood","or","Tissue","by","Molecular","genetics","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72103-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
@@ -107,35 +107,35 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/21551-7> -- t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/21800-8> -- t(1;19)(q23.3;p13.3)(PBX1,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/21802-4> -- t(11;19)(q23;p13.3)(MLL,MLLT1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/21806-5> -- t(12;21)(p13;q22.3)(ETV6,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/21815-6> -- t(4;11)(q21.3;q23)(AFF1,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/21816-4> -- t(5;12)(q33.1;p13)(PDGFRB,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/21817-2> -- t(6;9)(p23;q34)(DEK,NUP214) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/21819-8> -- t(8;21)(q22;q22.3)(RUNX1T1,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/21820-6> -- t(9;11)(p22;q23)(MLLT3,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/21821-4> -- t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/62203-5> -- t(10;11)(p12;q23)(MLLT10,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/70275-3> -- t(X;11)(q13.1;q23)(FOXO4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/70276-1> -- t(1;11)(p32;q23)(EPS15,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/70277-9> -- t(3;5)(q25.1;q35.1)(MLF1,NPM1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/70278-7> -- t(3;21)(q26;q22.3)(MECOM,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/70279-5> -- t(5;17)(q25.1;q21.1)(NPM1,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/70280-3> -- t(6;11)(q27;q23)(MLLT4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/70281-1> -- t(9;9)(q34;q34)(NUP214,SET) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/70282-9> -- t(9;12)(q34.1;p13)(ABL1,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/70283-7> -- t(11;17)(q23;q21)(MLL,MLLT6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/70284-5> -- t(11;17)(q23;q21.1)(ZBTB16,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/70285-2> -- t(11;19)(q23;p13.1)(MLL,ELL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/70286-0> -- t(12;22)(p13;q12.1)(ETV6,MN1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/70287-8> -- t(16;21)(p11.2;q22.3)(FUS,ERG) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/70288-6> -- t(17;19)(q22;p13.3)(HLF,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/70289-4> -- Del(1)(p32p32)(STIL,TAL1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/70291-0> -- inv(16)(p13.1;q22.1)(MYH11,CBFB) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/21551-7> -- t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/21800-8> -- t(1;19)(q23.3;p13.3)(PBX1,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/21802-4> -- t(11;19)(q23;p13.3)(MLL,MLLT1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/21806-5> -- t(12;21)(p13;q22.3)(ETV6,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/21815-6> -- t(4;11)(q21.3;q23)(AFF1,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/21816-4> -- t(5;12)(q33.1;p13)(PDGFRB,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/21817-2> -- t(6;9)(p23;q34)(DEK,NUP214) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/21819-8> -- t(8;21)(q22;q22.3)(RUNX1T1,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/21820-6> -- t(9;11)(p22;q23)(MLLT3,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/21821-4> -- t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/62203-5> -- t(10;11)(p12;q23)(MLLT10,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/70275-3> -- t(X;11)(q13.1;q23)(FOXO4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/70276-1> -- t(1;11)(p32;q23)(EPS15,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.14"] = <http://loinc.org/id/70277-9> -- t(3;5)(q25.1;q35.1)(MLF1,NPM1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.15"] = <http://loinc.org/id/70278-7> -- t(3;21)(q26;q22.3)(MECOM,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.16"] = <http://loinc.org/id/70279-5> -- t(5;17)(q25.1;q21.1)(NPM1,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.17"] = <http://loinc.org/id/70280-3> -- t(6;11)(q27;q23)(MLLT4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.18"] = <http://loinc.org/id/70281-1> -- t(9;9)(q34;q34)(NUP214,SET) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.19"] = <http://loinc.org/id/70282-9> -- t(9;12)(q34.1;p13)(ABL1,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.20"] = <http://loinc.org/id/70283-7> -- t(11;17)(q23;q21)(MLL,MLLT6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.21"] = <http://loinc.org/id/70284-5> -- t(11;17)(q23;q21.1)(ZBTB16,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.22"] = <http://loinc.org/id/70285-2> -- t(11;19)(q23;p13.1)(MLL,ELL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.23"] = <http://loinc.org/id/70286-0> -- t(12;22)(p13;q12.1)(ETV6,MN1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.24"] = <http://loinc.org/id/70287-8> -- t(16;21)(p11.2;q22.3)(FUS,ERG) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.25"] = <http://loinc.org/id/70288-6> -- t(17;19)(q22;p13.3)(HLF,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.26"] = <http://loinc.org/id/70289-4> -- Del(1)(p32p32)(STIL,TAL1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.27"] = <http://loinc.org/id/70291-0> -- inv(16)(p13.1;q22.1)(MYH11,CBFB) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
       >
     >
   >

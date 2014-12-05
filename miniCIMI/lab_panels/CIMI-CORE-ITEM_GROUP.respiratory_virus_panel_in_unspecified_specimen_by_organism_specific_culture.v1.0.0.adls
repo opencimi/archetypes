@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Respiratory virus panel - Unspecified specimen by Organism specific culture' concept">
         use = <"Use for Respiratory virus panel - Unspecified specimen by Organism specific culture.">
         keywords = <"Respiratory","virus","panel","-","Unspecified","specimen","by","Organism","specific","culture">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55101-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Respiratory virus panel - Unspecified specimen by Organism specific culture
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Respiratory virus panel - Unspecified specimen by Organism specific culture
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55101-0> -- Respiratory virus panel - Unspecified specimen by Organism specific culture
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55101-0> -- Respiratory virus panel - Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/38382-8> -- Influenza virus B [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/48310-7> -- Influenza virus A [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/55095-4> -- Adenovirus [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/55097-0> -- Parainfluenza virus 1 [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/55098-8> -- Parainfluenza virus 2 [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/55099-6> -- Parainfluenza virus 3 [Presence] in Unspecified specimen by Organism specific culture
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/55100-2> -- Respiratory syncytial virus [Presence] in Unspecified specimen by Organism specific culture
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55101-0> -- Respiratory virus panel - Unspecified specimen by Organism specific culture
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55101-0> -- Respiratory virus panel - Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.1"] = <http://loinc.org/id/38382-8> -- Influenza virus B [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.2"] = <http://loinc.org/id/48310-7> -- Influenza virus A [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.3"] = <http://loinc.org/id/55095-4> -- Adenovirus [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.4"] = <http://loinc.org/id/55097-0> -- Parainfluenza virus 1 [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.5"] = <http://loinc.org/id/55098-8> -- Parainfluenza virus 2 [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.6"] = <http://loinc.org/id/55099-6> -- Parainfluenza virus 3 [Presence] in Unspecified specimen by Organism specific culture
+        ["id0.1.1.1.7"] = <http://loinc.org/id/55100-2> -- Respiratory syncytial virus [Presence] in Unspecified specimen by Organism specific culture
       >
     >
   >

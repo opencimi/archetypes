@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Quality Reporting Document Architecture panel' concept">
         use = <"Use for Quality Reporting Document Architecture panel.">
         keywords = <"Quality","Reporting","Document","Architecture","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55181-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Quality Reporting Document Architecture panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Quality Reporting Document Architecture panel
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55181-2> -- Quality Reporting Document Architecture panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55181-2> -- Quality Reporting Document Architecture panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55181-2> -- Quality Reporting Document Architecture panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55181-2> -- Quality Reporting Document Architecture panel
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Reference lab test name' concept">
         use = <"Use for Reference lab test name.">
         keywords = <"Reference","lab","test","name">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19145-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:39">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Reference lab test name
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Reference lab test name
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Reference lab test name
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Reference lab test name
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Reference lab test name">>
-      ["at0.0.0.0.1"] = <text = <"Reference lab test name">>
+      ["id1.1.1.1.1.1"] = <text = <"Reference lab test name">>
+      ["at0.0.0.0.0.1"] = <text = <"Reference lab test name">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/19145-2>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/19145-2>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/19145-2>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/19145-2>
       >
     >
   >

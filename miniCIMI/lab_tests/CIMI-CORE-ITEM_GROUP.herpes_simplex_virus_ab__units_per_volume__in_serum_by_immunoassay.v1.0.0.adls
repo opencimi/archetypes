@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay' concept">
         use = <"Use for Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay.">
         keywords = <"Herpes","simplex","virus","Ab","[Units/volume]","Serum","by","Immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,33 +33,34 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5202-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units[id0.0.0.0.2] matches {[at0.0.0.0.2]} -- {Index_val}
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- {Index_val}
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay">>
-      ["at0.0.0.0.1"] = <text = <"Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay">>
-      ["at0.0.0.0.2"] = <text = <"Qn">>
+      ["id1.1.1.1.1.1"] = <text = <"Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay">>
+      ["at0.0.0.0.0.1"] = <text = <"Herpes simplex virus Ab [Units/volume] in Serum by Immunoassay">>
+      ["at0.0.0.0.0.2"] = <text = <"Qn">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/5202-7>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/5202-7>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5202-7>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5202-7>
       >
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.2"] = <configatron.adl.snomed.uri/______> -- {Index_val}
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- {Index_val}
       >
     >
   >

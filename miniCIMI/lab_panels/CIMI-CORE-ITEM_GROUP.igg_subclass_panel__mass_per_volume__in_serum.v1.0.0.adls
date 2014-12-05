@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'IgG subclass panel [Mass/volume] - Serum' concept">
         use = <"Use for IgG subclass panel [Mass/volume] - Serum.">
         keywords = <"IgG","subclass","panel","[Mass/volume]","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/47290-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- IgG subclass panel [Mass/volume] - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- IgG subclass panel [Mass/volume] - Serum
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/47290-2> -- IgG subclass panel [Mass/volume] - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/47290-2> -- IgG subclass panel [Mass/volume] - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/2466-1> -- IgG subclass 1 [Mass/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/2467-9> -- IgG subclass 2 [Mass/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/2468-7> -- IgG subclass 3 [Mass/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/2469-5> -- IgG subclass 4 [Mass/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/47290-2> -- IgG subclass panel [Mass/volume] - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/47290-2> -- IgG subclass panel [Mass/volume] - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/2466-1> -- IgG subclass 1 [Mass/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/2467-9> -- IgG subclass 2 [Mass/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/2468-7> -- IgG subclass 3 [Mass/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2469-5> -- IgG subclass 4 [Mass/volume] in Serum
       >
     >
   >

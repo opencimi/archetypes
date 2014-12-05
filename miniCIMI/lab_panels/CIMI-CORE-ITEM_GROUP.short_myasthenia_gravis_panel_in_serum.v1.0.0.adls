@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Short myasthenia gravis panel - Serum' concept">
         use = <"Use for Short myasthenia gravis panel - Serum.">
         keywords = <"Short","myasthenia","gravis","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55397-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Short myasthenia gravis panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Short myasthenia gravis panel - Serum
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55397-4> -- Short myasthenia gravis panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55397-4> -- Short myasthenia gravis panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11561-8> -- Acetylcholine receptor blocking Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/11562-6> -- Acetylcholine receptor modulation Ab [Units/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/30192-9> -- Acetylcholine receptor modulation Ab/Acetylcholine Ab.total in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/51763-1> -- Muscle specific receptor tyrosine kinase Ab [Titer] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55397-4> -- Short myasthenia gravis panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55397-4> -- Short myasthenia gravis panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11034-6> -- Acetylcholine receptor binding Ab [Moles/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11561-8> -- Acetylcholine receptor blocking Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/11562-6> -- Acetylcholine receptor modulation Ab [Units/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/30192-9> -- Acetylcholine receptor modulation Ab/Acetylcholine Ab.total in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/51763-1> -- Muscle specific receptor tyrosine kinase Ab [Titer] in Serum or Plasma
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Toxoplasma gondii IgG and IgM panel - Serum' concept">
         use = <"Use for Toxoplasma gondii IgG and IgM panel - Serum.">
         keywords = <"Toxoplasma","gondii","IgG","IgM","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57770-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Toxoplasma gondii IgG and IgM panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Toxoplasma gondii IgG and IgM panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57770-0> -- Toxoplasma gondii IgG and IgM panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57770-0> -- Toxoplasma gondii IgG and IgM panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/8039-0> -- Toxoplasma gondii IgG Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/8040-8> -- Toxoplasma gondii IgM Ab [Units/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57770-0> -- Toxoplasma gondii IgG and IgM panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57770-0> -- Toxoplasma gondii IgG and IgM panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/8039-0> -- Toxoplasma gondii IgG Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/8040-8> -- Toxoplasma gondii IgM Ab [Units/volume] in Serum
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Influenza virus susceptibility panel' concept">
         use = <"Use for Influenza virus susceptibility panel.">
         keywords = <"Influenza","virus","susceptibility","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50710-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:10">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Influenza virus susceptibility panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Influenza virus susceptibility panel
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/50710-3> -- Influenza virus susceptibility panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/50710-3> -- Influenza virus susceptibility panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/50698-0> -- Influenza virus A.adamantane resistance [Presence] by Phenotype method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/50699-8> -- Influenza virus A.adamantane resistance [Presence]
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/50700-4> -- Influenza virus A.adamantane resistant RNA [Presence] by Probe and target amplification method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/50703-8> -- Influenza virus A.neuraminidase inhibitor resistance [Susceptibility] Qualitative by Phenotype method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/50712-9> -- Influenza virus.neuraminidase inhibitor resistance [Susceptibility] Qualitative
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/50713-7> -- Influenza virus.neuraminidase inhibitor resistance [Susceptibility] by Genotype method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50710-3> -- Influenza virus susceptibility panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50710-3> -- Influenza virus susceptibility panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/50698-0> -- Influenza virus A.adamantane resistance [Presence] by Phenotype method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/50699-8> -- Influenza virus A.adamantane resistance [Presence]
+        ["id0.1.1.1.3"] = <http://loinc.org/id/50700-4> -- Influenza virus A.adamantane resistant RNA [Presence] by Probe and target amplification method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/50703-8> -- Influenza virus A.neuraminidase inhibitor resistance [Susceptibility] Qualitative by Phenotype method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/50712-9> -- Influenza virus.neuraminidase inhibitor resistance [Susceptibility] Qualitative
+        ["id0.1.1.1.6"] = <http://loinc.org/id/50713-7> -- Influenza virus.neuraminidase inhibitor resistance [Susceptibility] by Genotype method
       >
     >
   >

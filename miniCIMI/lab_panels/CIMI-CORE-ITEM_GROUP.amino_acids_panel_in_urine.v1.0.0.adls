@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Amino acids panel - Urine' concept">
         use = <"Use for Amino acids panel - Urine.">
         keywords = <"Amino","acids","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35087-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Amino acids panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Amino acids panel - Urine
@@ -135,49 +135,49 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35087-6> -- Amino acids panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35087-6> -- Amino acids panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/28588-2> -- Beta alanine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/28590-8> -- Alpha aminobutyrate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/28591-6> -- Amino beta guanidinopropionate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/28593-2> -- Gamma aminobutyrate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/28594-0> -- 3-Methylhistidine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/28595-7> -- Taurine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/28596-5> -- Anserine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/28597-3> -- Carnosine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/28598-1> -- Alpha aminoadipate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/28599-9> -- Cystathionine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/28600-5> -- Phosphoserine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/28601-3> -- Hydroxyproline/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/28602-1> -- Beta aminoisobutyrate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/28603-9> -- Asparagine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/28604-7> -- Phosphoethanolamine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/28606-2> -- 1-Methylhistidine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/28608-8> -- Tryptophan/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/28610-4> -- Sarcosine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/30047-5> -- Histidine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/30048-3> -- Lysine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/30049-1> -- Ornithine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/30050-9> -- Hydroxylysine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/30051-7> -- Homocystine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/30052-5> -- Isoleucine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/30053-3> -- Leucine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/30054-1> -- Tyrosine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/30055-8> -- Phenylalanine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/30056-6> -- Glutamine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/30057-4> -- Threonine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/30058-2> -- Serine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/30059-0> -- Glutamate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/30061-6> -- Aspartate/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/30062-4> -- Arginine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/30063-2> -- Methionine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/30064-0> -- Valine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/30065-7> -- Cystine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/30066-5> -- Glycine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/30067-3> -- Proline/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/30068-1> -- Alanine/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/30161-4> -- Citrulline/Creatinine [Ratio] in Urine
-        ["id0.1.1.1.41"] = <configatron.adl.loinc.uri/32296-6> -- Amino acid pattern [interpretation] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35087-6> -- Amino acids panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35087-6> -- Amino acids panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/28588-2> -- Beta alanine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/28590-8> -- Alpha aminobutyrate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/28591-6> -- Amino beta guanidinopropionate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/28593-2> -- Gamma aminobutyrate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/28594-0> -- 3-Methylhistidine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/28595-7> -- Taurine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/28596-5> -- Anserine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/28597-3> -- Carnosine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/28598-1> -- Alpha aminoadipate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/28599-9> -- Cystathionine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/28600-5> -- Phosphoserine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/28601-3> -- Hydroxyproline/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/28602-1> -- Beta aminoisobutyrate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/28603-9> -- Asparagine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.15"] = <http://loinc.org/id/28604-7> -- Phosphoethanolamine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.16"] = <http://loinc.org/id/28606-2> -- 1-Methylhistidine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.17"] = <http://loinc.org/id/28608-8> -- Tryptophan/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.18"] = <http://loinc.org/id/28610-4> -- Sarcosine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.19"] = <http://loinc.org/id/30047-5> -- Histidine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.20"] = <http://loinc.org/id/30048-3> -- Lysine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.21"] = <http://loinc.org/id/30049-1> -- Ornithine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.22"] = <http://loinc.org/id/30050-9> -- Hydroxylysine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.23"] = <http://loinc.org/id/30051-7> -- Homocystine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.24"] = <http://loinc.org/id/30052-5> -- Isoleucine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.25"] = <http://loinc.org/id/30053-3> -- Leucine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.26"] = <http://loinc.org/id/30054-1> -- Tyrosine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.27"] = <http://loinc.org/id/30055-8> -- Phenylalanine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.28"] = <http://loinc.org/id/30056-6> -- Glutamine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.29"] = <http://loinc.org/id/30057-4> -- Threonine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.30"] = <http://loinc.org/id/30058-2> -- Serine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.31"] = <http://loinc.org/id/30059-0> -- Glutamate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.32"] = <http://loinc.org/id/30061-6> -- Aspartate/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.33"] = <http://loinc.org/id/30062-4> -- Arginine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.34"] = <http://loinc.org/id/30063-2> -- Methionine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.35"] = <http://loinc.org/id/30064-0> -- Valine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.36"] = <http://loinc.org/id/30065-7> -- Cystine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.37"] = <http://loinc.org/id/30066-5> -- Glycine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.38"] = <http://loinc.org/id/30067-3> -- Proline/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.39"] = <http://loinc.org/id/30068-1> -- Alanine/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.40"] = <http://loinc.org/id/30161-4> -- Citrulline/Creatinine [Ratio] in Urine
+        ["id0.1.1.1.41"] = <http://loinc.org/id/32296-6> -- Amino acid pattern [interpretation] in Urine
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Microscopic observation [Identifier] in Unspecified specimen by India ink prep' concept">
         use = <"Use for Microscopic observation [Identifier] in Unspecified specimen by India ink prep.">
         keywords = <"Microscopic","observation","[Identifier]","Unspecified","specimen","by","India","ink","prep">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/666-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Microscopic observation [Identifier] in Unspecified specimen by India ink prep
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Microscopic observation [Identifier] in Unspecified specimen by India ink prep
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Microscopic observation [Identifier] in Unspecified specimen by India ink prep
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Microscopic observation [Identifier] in Unspecified specimen by India ink prep
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Microscopic observation [Identifier] in Unspecified specimen by India ink prep">>
-      ["at0.0.0.0.1"] = <text = <"Microscopic observation [Identifier] in Unspecified specimen by India ink prep">>
+      ["id1.1.1.1.1.1"] = <text = <"Microscopic observation [Identifier] in Unspecified specimen by India ink prep">>
+      ["at0.0.0.0.0.1"] = <text = <"Microscopic observation [Identifier] in Unspecified specimen by India ink prep">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/666-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/666-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/666-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/666-8>
       >
     >
   >

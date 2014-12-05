@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Epidemiologically important information for public health reporting panel' concept">
         use = <"Use for Epidemiologically important information for public health reporting panel.">
         keywords = <"Epidemiologically","important","information","for","public","health","reporting","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/68991-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Epidemiologically important information for public health reporting panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Epidemiologically important information for public health reporting panel
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/68991-9> -- Epidemiologically important information for public health reporting panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/68991-9> -- Epidemiologically important information for public health reporting panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11368-8> -- Illness or injury onset date and time
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/11449-6> -- Pregnancy status - Reported
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/21612-7> -- Age - Reported
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/30525-0> -- Age
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/30972-4> -- Age at onset of adverse event
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/54217-5> -- Public health notifiable condition
+        ["id1.1.1.1.1"] = <http://loinc.org/id/68991-9> -- Epidemiologically important information for public health reporting panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/68991-9> -- Epidemiologically important information for public health reporting panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11368-8> -- Illness or injury onset date and time
+        ["id0.1.1.1.2"] = <http://loinc.org/id/11449-6> -- Pregnancy status - Reported
+        ["id0.1.1.1.3"] = <http://loinc.org/id/21612-7> -- Age - Reported
+        ["id0.1.1.1.4"] = <http://loinc.org/id/30525-0> -- Age
+        ["id0.1.1.1.5"] = <http://loinc.org/id/30972-4> -- Age at onset of adverse event
+        ["id0.1.1.1.6"] = <http://loinc.org/id/54217-5> -- Public health notifiable condition
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Buprenorphine and Norbuprenorphine panel - Urine' concept">
         use = <"Use for Buprenorphine and Norbuprenorphine panel - Urine.">
         keywords = <"Buprenorphine","Norbuprenorphine","panel","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69033-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Buprenorphine and Norbuprenorphine panel - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Buprenorphine and Norbuprenorphine panel - Urine
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/69033-9> -- Buprenorphine and Norbuprenorphine panel - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/69033-9> -- Buprenorphine and Norbuprenorphine panel - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/3415-7> -- Buprenorphine [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/49753-7> -- Norbuprenorphine [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/69033-9> -- Buprenorphine and Norbuprenorphine panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/69033-9> -- Buprenorphine and Norbuprenorphine panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/3415-7> -- Buprenorphine [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/49753-7> -- Norbuprenorphine [Mass/volume] in Urine
       >
     >
   >

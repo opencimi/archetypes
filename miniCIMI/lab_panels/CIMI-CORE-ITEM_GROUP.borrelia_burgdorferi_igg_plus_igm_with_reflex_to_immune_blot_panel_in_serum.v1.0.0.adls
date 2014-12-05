@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum' concept">
         use = <"Use for Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum.">
         keywords = <"Borrelia","burgdorferi","IgG+IgM","with","reflex","to","immune","blot","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62341-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
@@ -65,14 +65,14 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62341-3> -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62341-3> -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/34148-7> -- Borrelia burgdorferi IgG+IgM Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/46248-1> -- Borrelia burgdorferi IgG and IgM [interpretation] in Serum by Immunoassay
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/62342-1> -- Borrelia burgdorferi IgG and IgM [interpretation] in Serum by Immunoblot (IB)
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/9586-9> -- Borrelia burgdorferi Ab [interpretation] in Serum
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
-        ["idconfigatron.adl.test_use_archetype_at_prefix.2"] = <configatron.adl.loinc.uri/60343-1> -- Borrelia burgdorferi IgM panel - Serum by Immunoblot (IB)
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62341-3> -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62341-3> -- Borrelia burgdorferi IgG+IgM with reflex to immune blot panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/34148-7> -- Borrelia burgdorferi IgG+IgM Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/46248-1> -- Borrelia burgdorferi IgG and IgM [interpretation] in Serum by Immunoassay
+        ["id0.1.1.1.3"] = <http://loinc.org/id/62342-1> -- Borrelia burgdorferi IgG and IgM [interpretation] in Serum by Immunoblot (IB)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/9586-9> -- Borrelia burgdorferi Ab [interpretation] in Serum
+        ["id0.1.2.1.1"] = <http://loinc.org/id/60342-3> -- Borrelia burgdorferi IgG panel - Serum by Immunoblot (IB)
+        ["id0.1.2.1.2"] = <http://loinc.org/id/60343-1> -- Borrelia burgdorferi IgM panel - Serum by Immunoblot (IB)
       >
     >
   >

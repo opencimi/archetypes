@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Infectious diseases newborn screening panel' concept">
         use = <"Use for Infectious diseases newborn screening panel.">
         keywords = <"Infectious","diseases","newborn","screening","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54082-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Infectious diseases newborn screening panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Infectious diseases newborn screening panel
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54082-3> -- Infectious diseases newborn screening panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54082-3> -- Infectious diseases newborn screening panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/54086-4> -- HIV 1+2 IgG Ab [Presence] in Dried blood spot
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/54087-2> -- Toxoplasma gondii IgG Ab [Presence] in Dried blood spot
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/54088-0> -- Toxoplasma gondii IgM Ab [Presence] in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57701-5> -- Infectious diseases newborn screening comment-discussion
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57702-3> -- Infectious diseases newborn screen interpretation
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54082-3> -- Infectious diseases newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54082-3> -- Infectious diseases newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/54086-4> -- HIV 1+2 IgG Ab [Presence] in Dried blood spot
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54087-2> -- Toxoplasma gondii IgG Ab [Presence] in Dried blood spot
+        ["id0.1.1.1.3"] = <http://loinc.org/id/54088-0> -- Toxoplasma gondii IgM Ab [Presence] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57701-5> -- Infectious diseases newborn screening comment-discussion
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57702-3> -- Infectious diseases newborn screen interpretation
       >
     >
   >

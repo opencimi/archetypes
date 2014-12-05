@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Differential panel - Cord blood' concept">
         use = <"Use for Differential panel - Cord blood.">
         keywords = <"Differential","panel","-","Cord","blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74413-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Differential panel - Cord blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Differential panel - Cord blood
@@ -85,24 +85,24 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74413-6> -- Differential panel - Cord blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74413-6> -- Differential panel - Cord blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/47281-1> -- Leukocytes [#/volume] in Cord blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/74394-8> -- Normoblasts [#/volume] in Cord blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/74395-5> -- Blasts [#/volume] in Cord blood
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/74398-9> -- Neutrophils [#/volume] in Cord blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/74399-7> -- Monocytes [#/volume] in Cord blood
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/74400-3> -- Monocytes/100 leukocytes in Cord blood
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/74401-1> -- Lymphocytes [#/volume] in Cord blood
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/74402-9> -- Lymphocytes/100 leukocytes in Cord blood
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/74403-7> -- Normoblasts/100 leukocytes in Cord blood
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/74404-5> -- Eosinophils [#/volume] in Cord blood
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/74405-2> -- Eosinophils/100 leukocytes in Cord blood
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/74406-0> -- Basophils [#/volume] in Cord blood
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/74407-8> -- Basophils/100 leukocytes in Cord blood
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/74450-8> -- Other cells [#/volume] in Cord blood
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/74455-7> -- Blasts/100 leukocytes in Cord blood
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/74457-3> -- Neutrophils/100 leukocytes in Cord blood
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74413-6> -- Differential panel - Cord blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74413-6> -- Differential panel - Cord blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/47281-1> -- Leukocytes [#/volume] in Cord blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/74394-8> -- Normoblasts [#/volume] in Cord blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/74395-5> -- Blasts [#/volume] in Cord blood
+        ["id0.1.1.1.4"] = <http://loinc.org/id/74398-9> -- Neutrophils [#/volume] in Cord blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/74399-7> -- Monocytes [#/volume] in Cord blood
+        ["id0.1.1.1.6"] = <http://loinc.org/id/74400-3> -- Monocytes/100 leukocytes in Cord blood
+        ["id0.1.1.1.7"] = <http://loinc.org/id/74401-1> -- Lymphocytes [#/volume] in Cord blood
+        ["id0.1.1.1.8"] = <http://loinc.org/id/74402-9> -- Lymphocytes/100 leukocytes in Cord blood
+        ["id0.1.1.1.9"] = <http://loinc.org/id/74403-7> -- Normoblasts/100 leukocytes in Cord blood
+        ["id0.1.1.1.10"] = <http://loinc.org/id/74404-5> -- Eosinophils [#/volume] in Cord blood
+        ["id0.1.1.1.11"] = <http://loinc.org/id/74405-2> -- Eosinophils/100 leukocytes in Cord blood
+        ["id0.1.1.1.12"] = <http://loinc.org/id/74406-0> -- Basophils [#/volume] in Cord blood
+        ["id0.1.1.1.13"] = <http://loinc.org/id/74407-8> -- Basophils/100 leukocytes in Cord blood
+        ["id0.1.1.1.14"] = <http://loinc.org/id/74450-8> -- Other cells [#/volume] in Cord blood
+        ["id0.1.1.1.15"] = <http://loinc.org/id/74455-7> -- Blasts/100 leukocytes in Cord blood
+        ["id0.1.1.1.16"] = <http://loinc.org/id/74457-3> -- Neutrophils/100 leukocytes in Cord blood
       >
     >
   >

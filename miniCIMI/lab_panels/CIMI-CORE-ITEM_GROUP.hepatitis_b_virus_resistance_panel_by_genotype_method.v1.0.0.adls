@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis B virus resistance panel by Genotype method' concept">
         use = <"Use for Hepatitis B virus resistance panel by Genotype method.">
         keywords = <"Hepatitis","B","virus","resistance","panel","by","Genotype","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49883-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis B virus resistance panel by Genotype method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis B virus resistance panel by Genotype method
@@ -101,32 +101,32 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49883-2> -- Hepatitis B virus resistance panel by Genotype method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49883-2> -- Hepatitis B virus resistance panel by Genotype method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/30283-6> -- Lamivudine [Susceptibility] by Genotype method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/30288-5> -- Adefovir [Susceptibility] by Genotype method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/41396-3> -- Tenofovir [Susceptibility] by Genotype method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/49877-4> -- Hepatitis B virus codon 173 [Identifier] by Genotype method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/49878-2> -- Hepatitis B virus codon 180 [Identifier] by Genotype method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/49879-0> -- Hepatitis B virus codon 181 [Identifier] by Genotype method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/49880-8> -- Hepatitis B virus codon 204 [Identifier] by Genotype method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/49881-6> -- Hepatitis B virus codon 236 [Identifier] by Genotype method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/49882-4> -- Hepatitis B virus codon 80 [Identifier] by Genotype method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/56791-7> -- Entecavir [Susceptibility] by Genotype method
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/56792-5> -- Telbivudine [Susceptibility] by Genotype method
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/72839-4> -- Famciclovir [Susceptibility] by Genotype method
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/72840-2> -- Hepatitis B virus codon 250 [Identifier] by Genotype method
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/72841-0> -- Hepatitis B virus codon 237 [Identifier] by Genotype method
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/72842-8> -- Hepatitis B virus codon 233 [Identifier] by Genotype method
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/72843-6> -- Hepatitis B virus codon 215 [Identifier] by Genotype method
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/72844-4> -- Hepatitis B virus codon 214 [Identifier] by Genotype method
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/72845-1> -- Hepatitis B virus codon 202 [Identifier] by Genotype method
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/72846-9> -- Hepatitis B virus codon 194 [Identifier] by Genotype method
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/72847-7> -- Hepatitis B virus codon 191 [Identifier] by Genotype method
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/72848-5> -- Hepatitis B virus codon 184 [Identifier] by Genotype method
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/72849-3> -- Hepatitis B virus codon 169 [Identifier] by Genotype method
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/72850-1> -- Hepatitis B virus codon 85 [Identifier] by Genotype method
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/72851-9> -- Hepatitis B virus codon 84 [Identifier] by Genotype method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49883-2> -- Hepatitis B virus resistance panel by Genotype method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49883-2> -- Hepatitis B virus resistance panel by Genotype method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/30283-6> -- Lamivudine [Susceptibility] by Genotype method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/30288-5> -- Adefovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/41396-3> -- Tenofovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/49877-4> -- Hepatitis B virus codon 173 [Identifier] by Genotype method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/49878-2> -- Hepatitis B virus codon 180 [Identifier] by Genotype method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/49879-0> -- Hepatitis B virus codon 181 [Identifier] by Genotype method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/49880-8> -- Hepatitis B virus codon 204 [Identifier] by Genotype method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/49881-6> -- Hepatitis B virus codon 236 [Identifier] by Genotype method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/49882-4> -- Hepatitis B virus codon 80 [Identifier] by Genotype method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/56791-7> -- Entecavir [Susceptibility] by Genotype method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/56792-5> -- Telbivudine [Susceptibility] by Genotype method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/72839-4> -- Famciclovir [Susceptibility] by Genotype method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/72840-2> -- Hepatitis B virus codon 250 [Identifier] by Genotype method
+        ["id0.1.1.1.14"] = <http://loinc.org/id/72841-0> -- Hepatitis B virus codon 237 [Identifier] by Genotype method
+        ["id0.1.1.1.15"] = <http://loinc.org/id/72842-8> -- Hepatitis B virus codon 233 [Identifier] by Genotype method
+        ["id0.1.1.1.16"] = <http://loinc.org/id/72843-6> -- Hepatitis B virus codon 215 [Identifier] by Genotype method
+        ["id0.1.1.1.17"] = <http://loinc.org/id/72844-4> -- Hepatitis B virus codon 214 [Identifier] by Genotype method
+        ["id0.1.1.1.18"] = <http://loinc.org/id/72845-1> -- Hepatitis B virus codon 202 [Identifier] by Genotype method
+        ["id0.1.1.1.19"] = <http://loinc.org/id/72846-9> -- Hepatitis B virus codon 194 [Identifier] by Genotype method
+        ["id0.1.1.1.20"] = <http://loinc.org/id/72847-7> -- Hepatitis B virus codon 191 [Identifier] by Genotype method
+        ["id0.1.1.1.21"] = <http://loinc.org/id/72848-5> -- Hepatitis B virus codon 184 [Identifier] by Genotype method
+        ["id0.1.1.1.22"] = <http://loinc.org/id/72849-3> -- Hepatitis B virus codon 169 [Identifier] by Genotype method
+        ["id0.1.1.1.23"] = <http://loinc.org/id/72850-1> -- Hepatitis B virus codon 85 [Identifier] by Genotype method
+        ["id0.1.1.1.24"] = <http://loinc.org/id/72851-9> -- Hepatitis B virus codon 84 [Identifier] by Genotype method
       >
     >
   >

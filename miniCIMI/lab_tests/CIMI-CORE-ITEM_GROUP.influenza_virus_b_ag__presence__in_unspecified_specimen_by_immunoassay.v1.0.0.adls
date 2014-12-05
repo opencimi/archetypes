@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay' concept">
         use = <"Use for Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay.">
         keywords = <"Influenza","virus","B","Ag","[Presence]","Unspecified","specimen","by","Immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5866-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay">>
-      ["at0.0.0.0.1"] = <text = <"Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay">>
+      ["id1.1.1.1.1.1"] = <text = <"Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay">>
+      ["at0.0.0.0.0.1"] = <text = <"Influenza virus B Ag [Presence] in Unspecified specimen by Immunoassay">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/5866-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/5866-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5866-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5866-9>
       >
     >
   >

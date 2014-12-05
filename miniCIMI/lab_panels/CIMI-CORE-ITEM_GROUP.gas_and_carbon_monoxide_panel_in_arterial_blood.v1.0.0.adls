@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Gas and Carbon monoxide panel - Arterial blood' concept">
         use = <"Use for Gas and Carbon monoxide panel - Arterial blood.">
         keywords = <"Gas","Carbon","monoxide","panel","-","Arterial","blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24341-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Gas and Carbon monoxide panel - Arterial blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Gas and Carbon monoxide panel - Arterial blood
@@ -91,27 +91,27 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24341-0> -- Gas and Carbon monoxide panel - Arterial blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24341-0> -- Gas and Carbon monoxide panel - Arterial blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/19218-7> -- Oxygen content in Arterial blood
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/1922-4> -- Base deficit in Arterial blood
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/1925-7> -- Base excess in Arterial blood by calculation
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/19255-9> -- Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/1960-4> -- Bicarbonate [Moles/volume] in Arterial blood
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/2019-8> -- Carbon dioxide [Partial pressure] in Arterial blood
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/2026-3> -- Carbon dioxide, total [Moles/volume] in Arterial blood
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/2030-5> -- Carboxyhemoglobin/Hemoglobin.total in Arterial blood
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/2615-3> -- Methemoglobin/Hemoglobin.total in Arterial blood
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/2703-7> -- Oxygen [Partial pressure] in Arterial blood
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/2708-6> -- Oxygen saturation in Arterial blood
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/2714-4> -- Fractional oxyhemoglobin in Arterial blood
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/2744-1> -- pH of Arterial blood
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/30313-1> -- Hemoglobin [Mass/volume] in Arterial blood
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/3150-0> -- Inhaled oxygen concentration
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/3151-8> -- Inhaled oxygen flow rate
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/32771-8> -- Carbon dioxide [Partial pressure] adjusted to patients actual temperature in Arterial blood
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/33254-4> -- pH of Arterial blood adjusted to patients actual temperature
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/8310-5> -- Body temperature
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24341-0> -- Gas and Carbon monoxide panel - Arterial blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24341-0> -- Gas and Carbon monoxide panel - Arterial blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/19218-7> -- Oxygen content in Arterial blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/1922-4> -- Base deficit in Arterial blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/1925-7> -- Base excess in Arterial blood by calculation
+        ["id0.1.1.1.4"] = <http://loinc.org/id/19255-9> -- Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood
+        ["id0.1.1.1.5"] = <http://loinc.org/id/1960-4> -- Bicarbonate [Moles/volume] in Arterial blood
+        ["id0.1.1.1.6"] = <http://loinc.org/id/2019-8> -- Carbon dioxide [Partial pressure] in Arterial blood
+        ["id0.1.1.1.7"] = <http://loinc.org/id/2026-3> -- Carbon dioxide, total [Moles/volume] in Arterial blood
+        ["id0.1.1.1.8"] = <http://loinc.org/id/2030-5> -- Carboxyhemoglobin/Hemoglobin.total in Arterial blood
+        ["id0.1.1.1.9"] = <http://loinc.org/id/2615-3> -- Methemoglobin/Hemoglobin.total in Arterial blood
+        ["id0.1.1.1.10"] = <http://loinc.org/id/2703-7> -- Oxygen [Partial pressure] in Arterial blood
+        ["id0.1.1.1.11"] = <http://loinc.org/id/2708-6> -- Oxygen saturation in Arterial blood
+        ["id0.1.1.1.12"] = <http://loinc.org/id/2714-4> -- Fractional oxyhemoglobin in Arterial blood
+        ["id0.1.1.1.13"] = <http://loinc.org/id/2744-1> -- pH of Arterial blood
+        ["id0.1.1.1.14"] = <http://loinc.org/id/30313-1> -- Hemoglobin [Mass/volume] in Arterial blood
+        ["id0.1.1.1.15"] = <http://loinc.org/id/3150-0> -- Inhaled oxygen concentration
+        ["id0.1.1.1.16"] = <http://loinc.org/id/3151-8> -- Inhaled oxygen flow rate
+        ["id0.1.1.1.17"] = <http://loinc.org/id/32771-8> -- Carbon dioxide [Partial pressure] adjusted to patients actual temperature in Arterial blood
+        ["id0.1.1.1.18"] = <http://loinc.org/id/33254-4> -- pH of Arterial blood adjusted to patients actual temperature
+        ["id0.1.1.1.19"] = <http://loinc.org/id/8310-5> -- Body temperature
       >
     >
   >

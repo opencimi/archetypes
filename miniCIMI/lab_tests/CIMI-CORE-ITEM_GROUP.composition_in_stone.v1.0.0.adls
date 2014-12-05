@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Composition in Stone' concept">
         use = <"Use for Composition in Stone.">
         keywords = <"Composition","Stone">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9795-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Composition in Stone
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Composition in Stone
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Composition in Stone
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Composition in Stone
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Composition in Stone">>
-      ["at0.0.0.0.1"] = <text = <"Composition in Stone">>
+      ["id1.1.1.1.1.1"] = <text = <"Composition in Stone">>
+      ["at0.0.0.0.0.1"] = <text = <"Composition in Stone">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/9795-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/9795-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/9795-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/9795-6>
       >
     >
   >

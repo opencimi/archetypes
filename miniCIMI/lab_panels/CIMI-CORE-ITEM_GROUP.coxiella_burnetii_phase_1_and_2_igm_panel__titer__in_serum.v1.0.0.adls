@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum' concept">
         use = <"Use for Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum.">
         keywords = <"Coxiella","burnetii","phase","1","2","IgM","panel","[Titer]","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41841-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/41841-8> -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/41841-8> -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/9710-5> -- Coxiella burnetii phase 1 IgM Ab [Titer] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/9711-3> -- Coxiella burnetii phase 2 IgM Ab [Titer] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/41841-8> -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/41841-8> -- Coxiella burnetii phase 1 and 2 IgM panel [Titer] - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/9710-5> -- Coxiella burnetii phase 1 IgM Ab [Titer] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/9711-3> -- Coxiella burnetii phase 2 IgM Ab [Titer] in Serum
       >
     >
   >

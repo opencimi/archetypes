@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Newborn Screening Report summary panel' concept">
         use = <"Use for Newborn Screening Report summary panel.">
         keywords = <"Newborn","Screening","Report","summary","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/57128-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Newborn Screening Report summary panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Newborn Screening Report summary panel
@@ -71,17 +71,17 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/57128-1> -- Newborn Screening Report summary panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/57128-1> -- Newborn Screening Report summary panel
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/57129-9> -- Full newborn screening summary report for display or printing
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/57130-7> -- Newborn screening report - overall interpretation
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/57131-5> -- Newborn conditions with positive markers [Identifier] in Dried blood spot
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/57718-9> -- Sample quality of Dried blood spot
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/57719-7> -- Conditions tested for in this newborn screening study [Identifier] in Dried blood spot
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/57720-5> -- Newborn conditions with equivocal markers [Identifier] in Dried blood spot
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/57721-3> -- Reason for lab test in Dried blood spot
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/57724-7> -- Newborn screening short narrative summary
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/69969-4> -- Newborn screening report overall laboratory comment
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57128-1> -- Newborn Screening Report summary panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57128-1> -- Newborn Screening Report summary panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/57129-9> -- Full newborn screening summary report for display or printing
+        ["id0.1.1.1.2"] = <http://loinc.org/id/57130-7> -- Newborn screening report - overall interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/57131-5> -- Newborn conditions with positive markers [Identifier] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57718-9> -- Sample quality of Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57719-7> -- Conditions tested for in this newborn screening study [Identifier] in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/57720-5> -- Newborn conditions with equivocal markers [Identifier] in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/57721-3> -- Reason for lab test in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/57724-7> -- Newborn screening short narrative summary
+        ["id0.1.1.1.9"] = <http://loinc.org/id/69969-4> -- Newborn screening report overall laboratory comment
       >
     >
   >

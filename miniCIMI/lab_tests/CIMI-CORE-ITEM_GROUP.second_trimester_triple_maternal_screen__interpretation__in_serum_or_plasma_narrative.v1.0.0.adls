@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative' concept">
         use = <"Use for Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative.">
         keywords = <"Second","trimester","triple","maternal","screen","[interpretation]","Serum","or","Plasma","Narrative">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49572-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T06:00:08">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative">>
-      ["at0.0.0.0.1"] = <text = <"Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative">>
+      ["id1.1.1.1.1.1"] = <text = <"Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative">>
+      ["at0.0.0.0.0.1"] = <text = <"Second trimester triple maternal screen [interpretation] in Serum or Plasma Narrative">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49572-1>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49572-1>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/49572-1>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/49572-1>
       >
     >
   >

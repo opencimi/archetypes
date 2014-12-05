@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence' concept">
         use = <"Use for Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence.">
         keywords = <"Lymphocytic","choriomeningitis","virus","IgG","IgM","panel","[Titer]","-","Cerebral","spinal","fluid","by","Immunofluorescence">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41843-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/41843-4> -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/41843-4> -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/9766-7> -- Lymphocytic choriomeningitis virus IgG Ab [Titer] in Cerebral spinal fluid by Immunofluorescence
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/9768-3> -- Lymphocytic choriomeningitis virus IgM Ab [Titer] in Cerebral spinal fluid by Immunofluorescence
+        ["id1.1.1.1.1"] = <http://loinc.org/id/41843-4> -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
+        ["at0.0.0.0.1"] = <http://loinc.org/id/41843-4> -- Lymphocytic choriomeningitis virus IgG and IgM panel [Titer] - Cerebral spinal fluid by Immunofluorescence
+        ["id0.1.1.1.1"] = <http://loinc.org/id/9766-7> -- Lymphocytic choriomeningitis virus IgG Ab [Titer] in Cerebral spinal fluid by Immunofluorescence
+        ["id0.1.1.1.2"] = <http://loinc.org/id/9768-3> -- Lymphocytic choriomeningitis virus IgM Ab [Titer] in Cerebral spinal fluid by Immunofluorescence
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay' concept">
         use = <"Use for Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay.">
         keywords = <"Parvovirus","B19","IgG","Ab","[Presence]","Serum","by","Immunoassay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29660-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:03">
+      ["time"] = <"2014-12-05T05:57:40">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay">>
-      ["at0.0.0.0.1"] = <text = <"Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay">>
+      ["id1.1.1.1.1.1"] = <text = <"Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay">>
+      ["at0.0.0.0.0.1"] = <text = <"Parvovirus B19 IgG Ab [Presence] in Serum by Immunoassay">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/29660-8>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/29660-8>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/29660-8>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/29660-8>
       >
     >
   >

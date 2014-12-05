@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Chromosome analysis panel - Blood or Tissue by Banding' concept">
         use = <"Use for Chromosome analysis panel - Blood or Tissue by Banding.">
         keywords = <"Chromosome","analysis","panel","-","Blood","or","Tissue","by","Banding">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62355-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Chromosome analysis panel - Blood or Tissue by Banding
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chromosome analysis panel - Blood or Tissue by Banding
@@ -77,20 +77,20 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62355-3> -- Chromosome analysis panel - Blood or Tissue by Banding
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62355-3> -- Chromosome analysis panel - Blood or Tissue by Banding
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/55199-4> -- Cells karyotyped.total [#] in Blood or Tissue
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/62358-7> -- ISCN band level [#] in Blood or Tissue Qualitative by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/62359-5> -- Molecular genetics method Chromosome banding method - Blood or Tissue
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/62360-3> -- Cells analyzed [#] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/62361-1> -- Cells counted [#] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/62362-9> -- Colonies counted [#] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/62363-7> -- Mosaicism detected in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/62364-5> -- Test performance information in Unspecified specimen Narrative
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/62365-2> -- Diagnostic impression [interpretation] in Unspecified specimen by Molecular genetics method Narrative
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/62366-0> -- Recommended action [Identifier]
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/62385-0> -- Recommendation [interpretation] Document
-        ["idconfigatron.adl.test_use_archetype_at_prefix.1"] = <configatron.adl.loinc.uri/62386-8> -- Chromosome analysis summary panel - Blood or Tissue by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62355-3> -- Chromosome analysis panel - Blood or Tissue by Banding
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62355-3> -- Chromosome analysis panel - Blood or Tissue by Banding
+        ["id0.1.1.1.1"] = <http://loinc.org/id/55199-4> -- Cells karyotyped.total [#] in Blood or Tissue
+        ["id0.1.1.1.2"] = <http://loinc.org/id/62358-7> -- ISCN band level [#] in Blood or Tissue Qualitative by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/62359-5> -- Molecular genetics method Chromosome banding method - Blood or Tissue
+        ["id0.1.1.1.4"] = <http://loinc.org/id/62360-3> -- Cells analyzed [#] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/62361-1> -- Cells counted [#] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/62362-9> -- Colonies counted [#] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/62363-7> -- Mosaicism detected in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/62364-5> -- Test performance information in Unspecified specimen Narrative
+        ["id0.1.1.1.9"] = <http://loinc.org/id/62365-2> -- Diagnostic impression [interpretation] in Unspecified specimen by Molecular genetics method Narrative
+        ["id0.1.1.1.10"] = <http://loinc.org/id/62366-0> -- Recommended action [Identifier]
+        ["id0.1.1.1.11"] = <http://loinc.org/id/62385-0> -- Recommendation [interpretation] Document
+        ["id0.1.2.1.1"] = <http://loinc.org/id/62386-8> -- Chromosome analysis summary panel - Blood or Tissue by Molecular genetics method
       >
     >
   >

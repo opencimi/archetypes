@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Benzoylecgonine [Presence] in Meconium' concept">
         use = <"Use for Benzoylecgonine [Presence] in Meconium.">
         keywords = <"Benzoylecgonine","[Presence]","Meconium">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8187-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:02:08">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Benzoylecgonine [Presence] in Meconium
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Benzoylecgonine [Presence] in Meconium
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Benzoylecgonine [Presence] in Meconium
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Benzoylecgonine [Presence] in Meconium
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Benzoylecgonine [Presence] in Meconium">>
-      ["at0.0.0.0.1"] = <text = <"Benzoylecgonine [Presence] in Meconium">>
+      ["id1.1.1.1.1.1"] = <text = <"Benzoylecgonine [Presence] in Meconium">>
+      ["at0.0.0.0.0.1"] = <text = <"Benzoylecgonine [Presence] in Meconium">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/8187-7>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/8187-7>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/8187-7>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/8187-7>
       >
     >
   >

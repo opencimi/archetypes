@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method' concept">
         use = <"Use for Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method.">
         keywords = <"Bacterial","vaginosis","vaginitis","DNA","panel","-","Vaginal","fluid","by","Probe","signal","amplification","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54145-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54145-8> -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54145-8> -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/54142-5> -- Candida sp DNA [Presence] in Vaginal fluid by Probe and signal amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/54143-3> -- Gardnerella vaginalis DNA [Presence] in Vaginal fluid by Probe and signal amplification method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/54144-1> -- Trichomonas vaginalis DNA [Presence] in Vaginal fluid by Probe and signal amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54145-8> -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54145-8> -- Bacterial vaginosis and vaginitis DNA panel - Vaginal fluid by Probe and signal amplification method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/54142-5> -- Candida sp DNA [Presence] in Vaginal fluid by Probe and signal amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54143-3> -- Gardnerella vaginalis DNA [Presence] in Vaginal fluid by Probe and signal amplification method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/54144-1> -- Trichomonas vaginalis DNA [Presence] in Vaginal fluid by Probe and signal amplification method
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction' concept">
         use = <"Use for ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction.">
         keywords = <"ABO","+","Rh","group","[Type]","Blood","from","Blood","product","unit--after","transfusion","reaction">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/46268-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction">>
-      ["at0.0.0.0.1"] = <text = <"ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction">>
+      ["id1.1.1.1.1.1"] = <text = <"ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction">>
+      ["at0.0.0.0.0.1"] = <text = <"ABO + Rh group [Type] in Blood from Blood product unit--after transfusion reaction">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/46268-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/46268-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/46268-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/46268-9>
       >
     >
   >

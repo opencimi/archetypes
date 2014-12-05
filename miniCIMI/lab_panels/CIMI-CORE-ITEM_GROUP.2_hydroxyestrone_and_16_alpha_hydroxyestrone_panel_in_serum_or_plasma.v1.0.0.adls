@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI '2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma' concept">
         use = <"Use for 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma.">
         keywords = <"2-Hydroxyestrone","16-Alpha","hydroxyestrone","panel","-","Serum","or","Plasma">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49828-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:08">
+      ["time"] = <"2014-12-05T05:57:45">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/49828-7> -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/49828-7> -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/49825-3> -- 16-Alpha hydroxyestrone [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/49826-1> -- 2-Hydroxyestrone [Mass/volume] in Serum or Plasma
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/49827-9> -- 2-Hydroxyestrone/16-Alpha hydroxyestrone [Mass Ratio] in Serum or Plasma
+        ["id1.1.1.1.1"] = <http://loinc.org/id/49828-7> -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/49828-7> -- 2-Hydroxyestrone and 16-Alpha hydroxyestrone panel - Serum or Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/49825-3> -- 16-Alpha hydroxyestrone [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/49826-1> -- 2-Hydroxyestrone [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/49827-9> -- 2-Hydroxyestrone/16-Alpha hydroxyestrone [Mass Ratio] in Serum or Plasma
       >
     >
   >

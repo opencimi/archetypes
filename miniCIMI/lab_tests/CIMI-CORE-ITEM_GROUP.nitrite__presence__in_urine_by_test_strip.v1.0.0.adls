@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Nitrite [Presence] in Urine by Test strip' concept">
         use = <"Use for Nitrite [Presence] in Urine by Test strip.">
         keywords = <"Nitrite","[Presence]","Urine","by","Test","strip">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5802-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:04">
+      ["time"] = <"2014-12-05T06:00:47">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Nitrite [Presence] in Urine by Test strip
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Nitrite [Presence] in Urine by Test strip
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Nitrite [Presence] in Urine by Test strip
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Nitrite [Presence] in Urine by Test strip
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Nitrite [Presence] in Urine by Test strip">>
-      ["at0.0.0.0.1"] = <text = <"Nitrite [Presence] in Urine by Test strip">>
+      ["id1.1.1.1.1.1"] = <text = <"Nitrite [Presence] in Urine by Test strip">>
+      ["at0.0.0.0.0.1"] = <text = <"Nitrite [Presence] in Urine by Test strip">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/5802-4>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/5802-4>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/5802-4>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/5802-4>
       >
     >
   >

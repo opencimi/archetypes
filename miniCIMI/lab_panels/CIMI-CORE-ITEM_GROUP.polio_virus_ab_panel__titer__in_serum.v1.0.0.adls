@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Polio virus Ab panel [Titer] - Serum' concept">
         use = <"Use for Polio virus Ab panel [Titer] - Serum.">
         keywords = <"Polio","virus","Ab","panel","[Titer]","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/68320-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Polio virus Ab panel [Titer] - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Polio virus Ab panel [Titer] - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/68320-1> -- Polio virus Ab panel [Titer] - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/68320-1> -- Polio virus Ab panel [Titer] - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/22446-9> -- Polio virus 1 Ab [Titer] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/22448-5> -- Polio virus 2 Ab [Titer] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/22450-1> -- Polio virus 3 Ab [Titer] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/68320-1> -- Polio virus Ab panel [Titer] - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/68320-1> -- Polio virus Ab panel [Titer] - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/22446-9> -- Polio virus 1 Ab [Titer] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/22448-5> -- Polio virus 2 Ab [Titer] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/22450-1> -- Polio virus 3 Ab [Titer] in Serum
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Crystals panel - Urine sediment' concept">
         use = <"Use for Crystals panel - Urine sediment.">
         keywords = <"Crystals","panel","-","Urine","sediment">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58433-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Crystals panel - Urine sediment
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Crystals panel - Urine sediment
@@ -143,53 +143,53 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/58433-4> -- Crystals panel - Urine sediment
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/58433-4> -- Crystals panel - Urine sediment
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/12453-7> -- Phosphate crystals amorphous [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/12454-5> -- Urate crystals amorphous [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/12512-0> -- Calcium hydrogen phosphate dihydrate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/25144-7> -- Ammonium urate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/25146-2> -- Bilirubin crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/25147-0> -- Calcium carbonate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/25148-8> -- Calcium oxalate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/25149-6> -- Calcium phosphate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/25150-4> -- Calcium sulfate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/25153-8> -- Cholesterol crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/25154-6> -- Unidentified crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/25155-3> -- Cystine crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/25161-1> -- Hippurate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/25163-7> -- Leucine crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/32145-5> -- Phosphate crystals amorphous [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/32150-5> -- Urate crystals amorphous [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/38459-4> -- Crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/43249-2> -- X ray dye crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/43628-7> -- Acetaminophen crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/46137-6> -- Triple phosphate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/46138-4> -- Urate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/49755-2> -- Crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/51213-7> -- Acetaminophen crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/53118-6> -- Sulfonamide crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/53119-4> -- Tyrosine crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/53129-3> -- Sodium urate crystals [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/53788-6> -- Sodium urate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/53975-9> -- Drug crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/55368-5> -- Crystals.amorphous [#/area] in Urine sediment by Microscopy high power field
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/5766-1> -- Ammonium urate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/5771-1> -- Bilirubin crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/5773-7> -- Calcium carbonate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/5774-5> -- Calcium oxalate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/5775-2> -- Calcium phosphate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.35"] = <configatron.adl.loinc.uri/5776-0> -- Calcium sulfate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.36"] = <configatron.adl.loinc.uri/5777-8> -- Cholesterol crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.37"] = <configatron.adl.loinc.uri/5782-8> -- Crystals [type] in Urine sediment by Light microscopy
-        ["id0.1.1.1.38"] = <configatron.adl.loinc.uri/5783-6> -- Unidentified crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.39"] = <configatron.adl.loinc.uri/5784-4> -- Cystine crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.40"] = <configatron.adl.loinc.uri/5795-0> -- Hippurate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.41"] = <configatron.adl.loinc.uri/5798-4> -- Leucine crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.42"] = <configatron.adl.loinc.uri/5812-3> -- Sulfonamide crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.43"] = <configatron.adl.loinc.uri/5814-9> -- Triple phosphate crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.44"] = <configatron.adl.loinc.uri/5815-6> -- Tyrosine crystals [Presence] in Urine sediment by Light microscopy
-        ["id0.1.1.1.45"] = <configatron.adl.loinc.uri/5817-2> -- Urate crystals [Presence] in Urine sediment by Light microscopy
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58433-4> -- Crystals panel - Urine sediment
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58433-4> -- Crystals panel - Urine sediment
+        ["id0.1.1.1.1"] = <http://loinc.org/id/12453-7> -- Phosphate crystals amorphous [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.2"] = <http://loinc.org/id/12454-5> -- Urate crystals amorphous [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.3"] = <http://loinc.org/id/12512-0> -- Calcium hydrogen phosphate dihydrate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.4"] = <http://loinc.org/id/25144-7> -- Ammonium urate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.5"] = <http://loinc.org/id/25146-2> -- Bilirubin crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.6"] = <http://loinc.org/id/25147-0> -- Calcium carbonate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.7"] = <http://loinc.org/id/25148-8> -- Calcium oxalate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.8"] = <http://loinc.org/id/25149-6> -- Calcium phosphate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.9"] = <http://loinc.org/id/25150-4> -- Calcium sulfate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.10"] = <http://loinc.org/id/25153-8> -- Cholesterol crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.11"] = <http://loinc.org/id/25154-6> -- Unidentified crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.12"] = <http://loinc.org/id/25155-3> -- Cystine crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.13"] = <http://loinc.org/id/25161-1> -- Hippurate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.14"] = <http://loinc.org/id/25163-7> -- Leucine crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.15"] = <http://loinc.org/id/32145-5> -- Phosphate crystals amorphous [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.16"] = <http://loinc.org/id/32150-5> -- Urate crystals amorphous [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.17"] = <http://loinc.org/id/38459-4> -- Crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.18"] = <http://loinc.org/id/43249-2> -- X ray dye crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.19"] = <http://loinc.org/id/43628-7> -- Acetaminophen crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.20"] = <http://loinc.org/id/46137-6> -- Triple phosphate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.21"] = <http://loinc.org/id/46138-4> -- Urate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.22"] = <http://loinc.org/id/49755-2> -- Crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.23"] = <http://loinc.org/id/51213-7> -- Acetaminophen crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.24"] = <http://loinc.org/id/53118-6> -- Sulfonamide crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.25"] = <http://loinc.org/id/53119-4> -- Tyrosine crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.26"] = <http://loinc.org/id/53129-3> -- Sodium urate crystals [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.27"] = <http://loinc.org/id/53788-6> -- Sodium urate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.28"] = <http://loinc.org/id/53975-9> -- Drug crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.29"] = <http://loinc.org/id/55368-5> -- Crystals.amorphous [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.30"] = <http://loinc.org/id/5766-1> -- Ammonium urate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.31"] = <http://loinc.org/id/5771-1> -- Bilirubin crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.32"] = <http://loinc.org/id/5773-7> -- Calcium carbonate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.33"] = <http://loinc.org/id/5774-5> -- Calcium oxalate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.34"] = <http://loinc.org/id/5775-2> -- Calcium phosphate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.35"] = <http://loinc.org/id/5776-0> -- Calcium sulfate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.36"] = <http://loinc.org/id/5777-8> -- Cholesterol crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.37"] = <http://loinc.org/id/5782-8> -- Crystals [type] in Urine sediment by Light microscopy
+        ["id0.1.1.1.38"] = <http://loinc.org/id/5783-6> -- Unidentified crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.39"] = <http://loinc.org/id/5784-4> -- Cystine crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.40"] = <http://loinc.org/id/5795-0> -- Hippurate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.41"] = <http://loinc.org/id/5798-4> -- Leucine crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.42"] = <http://loinc.org/id/5812-3> -- Sulfonamide crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.43"] = <http://loinc.org/id/5814-9> -- Triple phosphate crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.44"] = <http://loinc.org/id/5815-6> -- Tyrosine crystals [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.45"] = <http://loinc.org/id/5817-2> -- Urate crystals [Presence] in Urine sediment by Light microscopy
       >
     >
   >

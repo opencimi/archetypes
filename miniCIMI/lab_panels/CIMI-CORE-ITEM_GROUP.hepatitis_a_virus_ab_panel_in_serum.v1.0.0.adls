@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Hepatitis A virus Ab panel - Serum' concept">
         use = <"Use for Hepatitis A virus Ab panel - Serum.">
         keywords = <"Hepatitis","A","virus","Ab","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53775-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Hepatitis A virus Ab panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hepatitis A virus Ab panel - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/53775-3> -- Hepatitis A virus Ab panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/53775-3> -- Hepatitis A virus Ab panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/22312-3> -- Hepatitis A virus Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/22315-6> -- Hepatitis A virus IgM Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/53776-1> -- Hepatitis A virus IgM and total [interpretation] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53775-3> -- Hepatitis A virus Ab panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53775-3> -- Hepatitis A virus Ab panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/22312-3> -- Hepatitis A virus Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/22315-6> -- Hepatitis A virus IgM Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/53776-1> -- Hepatitis A virus IgM and total [interpretation] in Serum
       >
     >
   >

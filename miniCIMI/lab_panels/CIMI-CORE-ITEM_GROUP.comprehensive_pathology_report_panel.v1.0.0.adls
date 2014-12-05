@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Comprehensive pathology report panel' concept">
         use = <"Use for Comprehensive pathology report panel.">
         keywords = <"Comprehensive","pathology","report","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/60567-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Comprehensive pathology report panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Comprehensive pathology report panel
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/60567-5> -- Comprehensive pathology report panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/60567-5> -- Comprehensive pathology report panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/60567-5> -- Comprehensive pathology report panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/60567-5> -- Comprehensive pathology report panel
       >
     >
   >

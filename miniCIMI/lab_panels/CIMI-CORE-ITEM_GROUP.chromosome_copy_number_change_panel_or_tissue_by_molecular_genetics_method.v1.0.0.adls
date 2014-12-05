@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Chromosome copy number change panel - Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for Chromosome copy number change panel - Blood or Tissue by Molecular genetics method.">
         keywords = <"Chromosome","copy","number","change","panel","-","Blood","or","Tissue","by","Molecular","genetics","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/62377-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
@@ -67,15 +67,15 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/62377-7> -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/62377-7> -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/62378-5> -- Chromosome copy number change [Type] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/62379-3> -- Chromosome band involved start in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/62380-1> -- Chromosome band involved end in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/62381-9> -- Base pair start coordinate [#] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/62382-7> -- Base pair end coordinate [#] in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/62383-5> -- Flanking normal region before start in Blood or Tissue by Molecular genetics method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/62384-3> -- Flanking normal region after end in Blood or Tissue by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/62377-7> -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/62377-7> -- Chromosome copy number change panel - Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/62378-5> -- Chromosome copy number change [Type] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/62379-3> -- Chromosome band involved start in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/62380-1> -- Chromosome band involved end in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/62381-9> -- Base pair start coordinate [#] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/62382-7> -- Base pair end coordinate [#] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/62383-5> -- Flanking normal region before start in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/62384-3> -- Flanking normal region after end in Blood or Tissue by Molecular genetics method
       >
     >
   >

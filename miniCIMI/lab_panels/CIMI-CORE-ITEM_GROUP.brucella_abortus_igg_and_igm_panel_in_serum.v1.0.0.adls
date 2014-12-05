@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Brucella abortus IgG and IgM panel - Serum' concept">
         use = <"Use for Brucella abortus IgG and IgM panel - Serum.">
         keywords = <"Brucella","abortus","IgG","IgM","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43129-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Brucella abortus IgG and IgM panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Brucella abortus IgG and IgM panel - Serum
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/43129-6> -- Brucella abortus IgG and IgM panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/43129-6> -- Brucella abortus IgG and IgM panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/38243-2> -- Brucella abortus IgG Ab [Presence] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/38244-0> -- Brucella abortus IgM Ab [Presence] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/43129-6> -- Brucella abortus IgG and IgM panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/43129-6> -- Brucella abortus IgG and IgM panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/38243-2> -- Brucella abortus IgG Ab [Presence] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/38244-0> -- Brucella abortus IgM Ab [Presence] in Serum
       >
     >
   >

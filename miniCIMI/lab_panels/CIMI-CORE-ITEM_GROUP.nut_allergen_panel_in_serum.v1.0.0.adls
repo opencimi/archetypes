@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Nut allergen panel - Serum' concept">
         use = <"Use for Nut allergen panel - Serum.">
         keywords = <"Nut","allergen","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/63486-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:13">
+      ["time"] = <"2014-12-05T05:57:49">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Nut allergen panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Nut allergen panel - Serum
@@ -69,16 +69,16 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/63486-5> -- Nut allergen panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/63486-5> -- Nut allergen panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/6019-4> -- Almond IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/6050-9> -- Brazil Nut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/6136-6> -- Hazelnut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/6206-7> -- Peanut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/6208-3> -- Pecan or Hickory Nut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/6259-6> -- Chestnut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/6273-7> -- Walnut IgE Ab [Units/volume] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/6718-1> -- Cashew Nut IgE Ab [Units/volume] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/63486-5> -- Nut allergen panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/63486-5> -- Nut allergen panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/6019-4> -- Almond IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/6050-9> -- Brazil Nut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/6136-6> -- Hazelnut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/6206-7> -- Peanut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/6208-3> -- Pecan or Hickory Nut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/6259-6> -- Chestnut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.7"] = <http://loinc.org/id/6273-7> -- Walnut IgE Ab [Units/volume] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/6718-1> -- Cashew Nut IgE Ab [Units/volume] in Serum
       >
     >
   >

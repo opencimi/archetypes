@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method.">
         keywords = <"F2","gene","c.20210G>A","[Presence]","Blood","or","Tissue","by","Molecular","genetics","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24475-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:02">
+      ["time"] = <"2014-12-05T05:57:39">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method">>
-      ["at0.0.0.0.1"] = <text = <"F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id1.1.1.1.1.1"] = <text = <"F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["at0.0.0.0.0.1"] = <text = <"F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24475-6>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24475-6>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/24475-6>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/24475-6>
       >
     >
   >

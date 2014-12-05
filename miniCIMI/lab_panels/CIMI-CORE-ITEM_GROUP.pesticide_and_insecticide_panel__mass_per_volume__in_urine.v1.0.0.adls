@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Pesticide and Insecticide panel [Mass/volume] - Urine' concept">
         use = <"Use for Pesticide and Insecticide panel [Mass/volume] - Urine.">
         keywords = <"Pesticide","Insecticide","panel","[Mass/volume]","-","Urine">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35500-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Pesticide and Insecticide panel [Mass/volume] - Urine
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Pesticide and Insecticide panel [Mass/volume] - Urine
@@ -105,34 +105,34 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35500-8> -- Pesticide and Insecticide panel [Mass/volume] - Urine
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35500-8> -- Pesticide and Insecticide panel [Mass/volume] - Urine
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/16611-6> -- Chlorpyrifos [Mass/volume] in Urine
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/16768-4> -- Dichlorvos [Mass/volume] in Urine
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/17419-3> -- Parathion [Mass/volume] in Urine
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/18371-5> -- Methyl parathion [Mass/volume] in Urine
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/21088-0> -- Azinphos-methyl [Mass/volume] in Urine
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/21107-8> -- Bendiocarb [Mass/volume] in Urine
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/21138-3> -- Carbaryl [Mass/volume] in Urine
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/21139-1> -- Carbofuran [Mass/volume] in Urine
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/21140-9> -- Carbophenothion [Mass/volume] in Urine
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/21229-0> -- Coumaphos [Mass/volume] in Urine
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/21246-4> -- Dimethoate [Mass/volume] in Urine
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/21266-2> -- Ethion [Mass/volume] in Urine
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/21267-0> -- Ethyl O-(P-nitrophenyl) phenylphosphonothionate [Mass/volume] in Urine
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/21268-8> -- Fenchlorphos [Mass/volume] in Urine
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/21269-6> -- Fenthion [Mass/volume] in Urine
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/21280-3> -- Fonofos [Mass/volume] in Urine
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/21378-5> -- Malathion [Mass/volume] in Urine
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/21385-0> -- Metasystox [Mass/volume] in Urine
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/21388-4> -- Mevinphos [Mass/volume] in Urine
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/21443-7> -- Paraoxon [Mass/volume] in Urine
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/21457-7> -- Phorate [Mass/volume] in Urine
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/21480-9> -- Propoxur [Mass/volume] in Urine
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/21554-1> -- Terbufos [Mass/volume] in Urine
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/2727-6> -- Para nitrophenol [Mass/volume] in Urine
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/35479-5> -- Diazinon [Mass/volume] in Urine
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/35480-3> -- 1-Naphthol [Mass/volume] in Urine
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35500-8> -- Pesticide and Insecticide panel [Mass/volume] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35500-8> -- Pesticide and Insecticide panel [Mass/volume] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/16611-6> -- Chlorpyrifos [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/16768-4> -- Dichlorvos [Mass/volume] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/17419-3> -- Parathion [Mass/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/18371-5> -- Methyl parathion [Mass/volume] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/21088-0> -- Azinphos-methyl [Mass/volume] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/21107-8> -- Bendiocarb [Mass/volume] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/21138-3> -- Carbaryl [Mass/volume] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/21139-1> -- Carbofuran [Mass/volume] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/21140-9> -- Carbophenothion [Mass/volume] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/21229-0> -- Coumaphos [Mass/volume] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/21246-4> -- Dimethoate [Mass/volume] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/21266-2> -- Ethion [Mass/volume] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/21267-0> -- Ethyl O-(P-nitrophenyl) phenylphosphonothionate [Mass/volume] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/21268-8> -- Fenchlorphos [Mass/volume] in Urine
+        ["id0.1.1.1.15"] = <http://loinc.org/id/21269-6> -- Fenthion [Mass/volume] in Urine
+        ["id0.1.1.1.16"] = <http://loinc.org/id/21280-3> -- Fonofos [Mass/volume] in Urine
+        ["id0.1.1.1.17"] = <http://loinc.org/id/21378-5> -- Malathion [Mass/volume] in Urine
+        ["id0.1.1.1.18"] = <http://loinc.org/id/21385-0> -- Metasystox [Mass/volume] in Urine
+        ["id0.1.1.1.19"] = <http://loinc.org/id/21388-4> -- Mevinphos [Mass/volume] in Urine
+        ["id0.1.1.1.20"] = <http://loinc.org/id/21443-7> -- Paraoxon [Mass/volume] in Urine
+        ["id0.1.1.1.21"] = <http://loinc.org/id/21457-7> -- Phorate [Mass/volume] in Urine
+        ["id0.1.1.1.22"] = <http://loinc.org/id/21480-9> -- Propoxur [Mass/volume] in Urine
+        ["id0.1.1.1.23"] = <http://loinc.org/id/21554-1> -- Terbufos [Mass/volume] in Urine
+        ["id0.1.1.1.24"] = <http://loinc.org/id/2727-6> -- Para nitrophenol [Mass/volume] in Urine
+        ["id0.1.1.1.25"] = <http://loinc.org/id/35479-5> -- Diazinon [Mass/volume] in Urine
+        ["id0.1.1.1.26"] = <http://loinc.org/id/35480-3> -- 1-Naphthol [Mass/volume] in Urine
       >
     >
   >

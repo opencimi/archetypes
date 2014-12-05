@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Omaha System 2005 panel' concept">
         use = <"Use for Omaha System 2005 panel.">
         keywords = <"Omaha","System","2005","panel">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48547-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Omaha System 2005 panel
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Omaha System 2005 panel
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/48547-4> -- Omaha System 2005 panel
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/48547-4> -- Omaha System 2005 panel
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48547-4> -- Omaha System 2005 panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48547-4> -- Omaha System 2005 panel
       >
     >
   >

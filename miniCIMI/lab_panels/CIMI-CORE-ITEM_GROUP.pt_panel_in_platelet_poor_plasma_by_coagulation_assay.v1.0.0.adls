@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'PT panel - Platelet poor plasma by Coagulation assay' concept">
         use = <"Use for PT panel - Platelet poor plasma by Coagulation assay.">
         keywords = <"PT","panel","-","Platelet","poor","plasma","by","Coagulation","assay">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34528-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- PT panel - Platelet poor plasma by Coagulation assay
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- PT panel - Platelet poor plasma by Coagulation assay
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/34528-0> -- PT panel - Platelet poor plasma by Coagulation assay
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/34528-0> -- PT panel - Platelet poor plasma by Coagulation assay
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/5901-4> -- Prothrombin time (PT) in control Platelet poor plasma by Coagulation assay
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/5902-2> -- Prothrombin time (PT) in Platelet poor plasma by Coagulation assay
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/6301-6> -- INR in Platelet poor plasma by Coagulation assay
+        ["id1.1.1.1.1"] = <http://loinc.org/id/34528-0> -- PT panel - Platelet poor plasma by Coagulation assay
+        ["at0.0.0.0.1"] = <http://loinc.org/id/34528-0> -- PT panel - Platelet poor plasma by Coagulation assay
+        ["id0.1.1.1.1"] = <http://loinc.org/id/5901-4> -- Prothrombin time (PT) in control Platelet poor plasma by Coagulation assay
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5902-2> -- Prothrombin time (PT) in Platelet poor plasma by Coagulation assay
+        ["id0.1.1.1.3"] = <http://loinc.org/id/6301-6> -- INR in Platelet poor plasma by Coagulation assay
       >
     >
   >

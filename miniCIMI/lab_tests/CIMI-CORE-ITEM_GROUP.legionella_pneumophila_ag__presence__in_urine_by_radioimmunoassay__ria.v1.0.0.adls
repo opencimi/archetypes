@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)' concept">
         use = <"Use for Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA).">
         keywords = <"Legionella","pneumophila","Ag","[Presence]","Urine","by","Radioimmunoassay","(RIA)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6448-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:41">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)">>
-      ["at0.0.0.0.1"] = <text = <"Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)">>
+      ["id1.1.1.1.1.1"] = <text = <"Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)">>
+      ["at0.0.0.0.0.1"] = <text = <"Legionella pneumophila Ag [Presence] in Urine by Radioimmunoassay (RIA)">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/6448-5>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/6448-5>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/6448-5>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/6448-5>
       >
     >
   >

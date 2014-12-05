@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'MICA IgG panel - Serum' concept">
         use = <"Use for MICA IgG panel - Serum.">
         keywords = <"MICA","IgG","panel","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74409-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:17">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- MICA IgG panel - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- MICA IgG panel - Serum
@@ -109,36 +109,36 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74409-4> -- MICA IgG panel - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74409-4> -- MICA IgG panel - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/74319-5> -- MICA*051 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/74320-3> -- MICA*050 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/74321-1> -- MICA*046 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/74322-9> -- MICA*043 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/74323-7> -- MICA*042 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/74324-5> -- MICA*041 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/74325-2> -- MICA*037 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/74326-0> -- MICA*036 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/74327-8> -- MICA*033 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/74328-6> -- MICA*030 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/74329-4> -- MICA*029 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/74330-2> -- MICA*028 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/74331-0> -- MICA*024 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/74332-8> -- MICA*019 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/74333-6> -- MICA*018 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/74334-4> -- MICA*017 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/74335-1> -- MICA*016 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/74336-9> -- MICA*015 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/74337-7> -- MICA*012 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/74338-5> -- MICA*011 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/74339-3> -- MICA*009 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/74340-1> -- MICA*008 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/74341-9> -- MICA*007 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/74342-7> -- MICA*006 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/74343-5> -- MICA*005 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/74344-3> -- MICA*004 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/74345-0> -- MICA*002 IgG Ab [Presence] in Serum
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/74346-8> -- MICA*001 IgG Ab [Presence] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74409-4> -- MICA IgG panel - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74409-4> -- MICA IgG panel - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/74319-5> -- MICA*051 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.2"] = <http://loinc.org/id/74320-3> -- MICA*050 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/74321-1> -- MICA*046 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.4"] = <http://loinc.org/id/74322-9> -- MICA*043 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.5"] = <http://loinc.org/id/74323-7> -- MICA*042 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.6"] = <http://loinc.org/id/74324-5> -- MICA*041 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.7"] = <http://loinc.org/id/74325-2> -- MICA*037 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.8"] = <http://loinc.org/id/74326-0> -- MICA*036 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.9"] = <http://loinc.org/id/74327-8> -- MICA*033 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.10"] = <http://loinc.org/id/74328-6> -- MICA*030 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.11"] = <http://loinc.org/id/74329-4> -- MICA*029 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.12"] = <http://loinc.org/id/74330-2> -- MICA*028 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.13"] = <http://loinc.org/id/74331-0> -- MICA*024 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.14"] = <http://loinc.org/id/74332-8> -- MICA*019 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.15"] = <http://loinc.org/id/74333-6> -- MICA*018 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.16"] = <http://loinc.org/id/74334-4> -- MICA*017 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.17"] = <http://loinc.org/id/74335-1> -- MICA*016 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.18"] = <http://loinc.org/id/74336-9> -- MICA*015 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.19"] = <http://loinc.org/id/74337-7> -- MICA*012 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.20"] = <http://loinc.org/id/74338-5> -- MICA*011 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.21"] = <http://loinc.org/id/74339-3> -- MICA*009 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.22"] = <http://loinc.org/id/74340-1> -- MICA*008 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.23"] = <http://loinc.org/id/74341-9> -- MICA*007 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.24"] = <http://loinc.org/id/74342-7> -- MICA*006 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.25"] = <http://loinc.org/id/74343-5> -- MICA*005 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.26"] = <http://loinc.org/id/74344-3> -- MICA*004 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.27"] = <http://loinc.org/id/74345-0> -- MICA*002 IgG Ab [Presence] in Serum
+        ["id0.1.1.1.28"] = <http://loinc.org/id/74346-8> -- MICA*001 IgG Ab [Presence] in Serum
       >
     >
   >

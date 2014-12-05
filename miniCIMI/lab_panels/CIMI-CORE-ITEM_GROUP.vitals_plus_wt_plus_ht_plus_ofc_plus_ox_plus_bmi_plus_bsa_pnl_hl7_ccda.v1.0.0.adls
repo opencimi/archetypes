@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1' concept">
         use = <"Use for Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1.">
         keywords = <"Vital","signs,","weight,","height,","head","circumference,","oximetry,","BMI,","BSA","panel","-","HL7.CCDAr1.1">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74728-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:18">
+      ["time"] = <"2014-12-05T05:57:53">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/74728-7> -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/74728-7> -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
+        ["id1.1.1.1.1"] = <http://loinc.org/id/74728-7> -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
+        ["at0.0.0.0.1"] = <http://loinc.org/id/74728-7> -- Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1
       >
     >
   >

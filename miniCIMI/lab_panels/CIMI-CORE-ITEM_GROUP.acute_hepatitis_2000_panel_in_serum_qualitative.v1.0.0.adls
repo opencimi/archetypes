@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acute hepatitis 2000 panel - Serum Qualitative' concept">
         use = <"Use for Acute hepatitis 2000 panel - Serum Qualitative.">
         keywords = <"Acute","hepatitis","2000","panel","-","Serum","Qualitative">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24363-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T05:57:42">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acute hepatitis 2000 panel - Serum Qualitative
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acute hepatitis 2000 panel - Serum Qualitative
@@ -63,13 +63,13 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/24363-4> -- Acute hepatitis 2000 panel - Serum Qualitative
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/24363-4> -- Acute hepatitis 2000 panel - Serum Qualitative
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/13950-1> -- Hepatitis A virus IgM Ab [Presence] in Serum or Plasma by Immunoassay
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/13955-0> -- Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/24113-3> -- Hepatitis B virus core IgM Ab [Presence] in Serum or Plasma by Immunoassay
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/5196-1> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/65633-0> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24363-4> -- Acute hepatitis 2000 panel - Serum Qualitative
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24363-4> -- Acute hepatitis 2000 panel - Serum Qualitative
+        ["id0.1.1.1.1"] = <http://loinc.org/id/13950-1> -- Hepatitis A virus IgM Ab [Presence] in Serum or Plasma by Immunoassay
+        ["id0.1.1.1.2"] = <http://loinc.org/id/13955-0> -- Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay
+        ["id0.1.1.1.3"] = <http://loinc.org/id/24113-3> -- Hepatitis B virus core IgM Ab [Presence] in Serum or Plasma by Immunoassay
+        ["id0.1.1.1.4"] = <http://loinc.org/id/5196-1> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay
+        ["id0.1.1.1.5"] = <http://loinc.org/id/65633-0> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
       >
     >
   >

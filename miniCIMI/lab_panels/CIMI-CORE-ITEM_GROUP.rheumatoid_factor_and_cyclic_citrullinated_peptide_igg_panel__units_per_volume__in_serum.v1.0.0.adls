@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum' concept">
         use = <"Use for Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum.">
         keywords = <"Rheumatoid","Factor","Cyclic","Citrullinated","Peptide","IgG","panel","[Units/volume]","-","Serum">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/46437-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
@@ -59,11 +59,11 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/46437-0> -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/46437-0> -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/11572-5> -- Rheumatoid factor [Units/volume] in Serum or Plasma
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/33935-8> -- Cyclic citrullinated peptide IgG Ab [Units/volume] in Serum
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/46435-4> -- Rheumatoid factor and Cyclic citrullinated peptide IgG Ab [interpretation] in Serum
+        ["id1.1.1.1.1"] = <http://loinc.org/id/46437-0> -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
+        ["at0.0.0.0.1"] = <http://loinc.org/id/46437-0> -- Rheumatoid Factor and Cyclic Citrullinated Peptide IgG panel [Units/volume] - Serum
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11572-5> -- Rheumatoid factor [Units/volume] in Serum or Plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/33935-8> -- Cyclic citrullinated peptide IgG Ab [Units/volume] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/46435-4> -- Rheumatoid factor and Cyclic citrullinated peptide IgG Ab [interpretation] in Serum
       >
     >
   >

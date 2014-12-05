@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen' concept">
         use = <"Use for Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen.">
         keywords = <"Chlamydia","trachomatis","Neisseria","gonorrhoeae","DNA","panel","-","Unspecified","specimen">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72828-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:14">
+      ["time"] = <"2014-12-05T05:57:50">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/72828-7> -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/72828-7> -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/21613-5> -- Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/24111-7> -- Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72828-7> -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72828-7> -- Chlamydia trachomatis and Neisseria gonorrhoeae DNA panel - Unspecified specimen
+        ["id0.1.1.1.1"] = <http://loinc.org/id/21613-5> -- Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/24111-7> -- Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method
       >
     >
   >

@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen' concept">
         use = <"Use for Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen.">
         keywords = <"Eastern","equine","encephalitis","virus","IgG","IgM","panel","-","Unspecified","specimen">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35743-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:06">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
@@ -57,10 +57,10 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/35743-4> -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/35743-4> -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/38763-9> -- Eastern equine encephalitis virus IgM Ab [Units/volume] in Unspecified specimen
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/38764-7> -- Eastern equine encephalitis virus IgG Ab [Units/volume] in Unspecified specimen
+        ["id1.1.1.1.1"] = <http://loinc.org/id/35743-4> -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
+        ["at0.0.0.0.1"] = <http://loinc.org/id/35743-4> -- Eastern equine encephalitis virus IgG and IgM panel - Unspecified specimen
+        ["id0.1.1.1.1"] = <http://loinc.org/id/38763-9> -- Eastern equine encephalitis virus IgM Ab [Units/volume] in Unspecified specimen
+        ["id0.1.1.1.2"] = <http://loinc.org/id/38764-7> -- Eastern equine encephalitis virus IgG Ab [Units/volume] in Unspecified specimen
       >
     >
   >

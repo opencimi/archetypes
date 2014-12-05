@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Extrinsic coagulation system thromboelastography panel - Blood' concept">
         use = <"Use for Extrinsic coagulation system thromboelastography panel - Blood.">
         keywords = <"Extrinsic","coagulation","system","thromboelastography","panel","-","Blood">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/52763-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:47">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Extrinsic coagulation system thromboelastography panel - Blood
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Extrinsic coagulation system thromboelastography panel - Blood
@@ -61,12 +61,12 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/52763-0> -- Extrinsic coagulation system thromboelastography panel - Blood
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/52763-0> -- Extrinsic coagulation system thromboelastography panel - Blood
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/52770-5> -- Clot formation.extrinsic coagulation system activated [Time] in Blood by Thromboelastography
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/52773-9> -- Clotting time.extrinsic coagulation system activated of Blood by Thromboelastography
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/52783-8> -- Maximum clot firmness.extrinsic coagulation system activated [Length] in Blood by Thromboelastography
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/52786-1> -- Maximum lysis.extrinsic coagulation system activated [Length fraction] in Blood by Thromboelastography
+        ["id1.1.1.1.1"] = <http://loinc.org/id/52763-0> -- Extrinsic coagulation system thromboelastography panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/52763-0> -- Extrinsic coagulation system thromboelastography panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/52770-5> -- Clot formation.extrinsic coagulation system activated [Time] in Blood by Thromboelastography
+        ["id0.1.1.1.2"] = <http://loinc.org/id/52773-9> -- Clotting time.extrinsic coagulation system activated of Blood by Thromboelastography
+        ["id0.1.1.1.3"] = <http://loinc.org/id/52783-8> -- Maximum clot firmness.extrinsic coagulation system activated [Length] in Blood by Thromboelastography
+        ["id0.1.1.1.4"] = <http://loinc.org/id/52786-1> -- Maximum lysis.extrinsic coagulation system activated [Length fraction] in Blood by Thromboelastography
       >
     >
   >

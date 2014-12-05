@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Ceftriaxone [Susceptibility] by Gradient strip (E-test)' concept">
         use = <"Use for Ceftriaxone [Susceptibility] by Gradient strip (E-test).">
         keywords = <"Ceftriaxone","[Susceptibility]","by","Gradient","strip","(E-test)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,26 +33,27 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6998-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:05">
+      ["time"] = <"2014-12-05T06:01:45">
     >
+
 definition
-  ITEM_GROUP[id1.1.1.1.1] matches { -- Ceftriaxone [Susceptibility] by Gradient strip (E-test)
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Ceftriaxone [Susceptibility] by Gradient strip (E-test)
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Ceftriaxone [Susceptibility] by Gradient strip (E-test)
+    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Ceftriaxone [Susceptibility] by Gradient strip (E-test)
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1.1.1"] = <text = <"Ceftriaxone [Susceptibility] by Gradient strip (E-test)">>
-      ["at0.0.0.0.1"] = <text = <"Ceftriaxone [Susceptibility] by Gradient strip (E-test)">>
+      ["id1.1.1.1.1.1"] = <text = <"Ceftriaxone [Susceptibility] by Gradient strip (E-test)">>
+      ["at0.0.0.0.0.1"] = <text = <"Ceftriaxone [Susceptibility] by Gradient strip (E-test)">>
     >
   >
 
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/6998-9>
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/6998-9>
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/6998-9>
+        ["at0.0.0.0.0.1"] = <http://loinc.org/id/6998-9>
       >
     >
   >

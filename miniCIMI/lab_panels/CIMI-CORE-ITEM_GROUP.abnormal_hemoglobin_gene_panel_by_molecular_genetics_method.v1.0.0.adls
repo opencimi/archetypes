@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Abnormal hemoglobin gene panel - Blood by Molecular genetics method' concept">
         use = <"Use for Abnormal hemoglobin gene panel - Blood by Molecular genetics method.">
         keywords = <"Abnormal","hemoglobin","gene","panel","-","Blood","by","Molecular","genetics","method">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55235-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:12">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
@@ -73,18 +73,18 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/55235-6> -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/55235-6> -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/55239-8> -- HBB gene.c.441_442insAC [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/55240-6> -- HBB gene c.251G>A [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/55241-4> -- HBB gene c.19G>A [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/55242-2> -- HBB gene c.20A>T [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/55243-0> -- HBB gene c.364G>C [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/55244-8> -- HPFH-6 gene [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/55245-5> -- HBB gene c.220G>A [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/55246-3> -- HBA2 gene c.84G>C [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/55247-1> -- HBA1 gene c.223G>C [Presence] in Blood by Molecular genetics method
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/55248-9> -- HBB gene c.79G>A [Presence] in Blood by Molecular genetics method
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55235-6> -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55235-6> -- Abnormal hemoglobin gene panel - Blood by Molecular genetics method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/55239-8> -- HBB gene.c.441_442insAC [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/55240-6> -- HBB gene c.251G>A [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/55241-4> -- HBB gene c.19G>A [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/55242-2> -- HBB gene c.20A>T [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/55243-0> -- HBB gene c.364G>C [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/55244-8> -- HPFH-6 gene [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/55245-5> -- HBB gene c.220G>A [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/55246-3> -- HBA2 gene c.84G>C [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/55247-1> -- HBA1 gene c.223G>C [Presence] in Blood by Molecular genetics method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/55248-9> -- HBB gene c.79G>A [Presence] in Blood by Molecular genetics method
       >
     >
   >

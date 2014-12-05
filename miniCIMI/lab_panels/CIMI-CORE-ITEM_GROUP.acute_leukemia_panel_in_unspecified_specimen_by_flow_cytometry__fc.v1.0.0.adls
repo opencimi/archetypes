@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)' concept">
         use = <"Use for Acute leukemia panel - Unspecified specimen by Flow cytometry (FC).">
         keywords = <"Acute","leukemia","panel","-","Unspecified","specimen","by","Flow","cytometry","(FC)">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/45270-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:07">
+      ["time"] = <"2014-12-05T05:57:43">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
@@ -121,42 +121,42 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/45270-6> -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/45270-6> -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
-        ["id0.1.1.1.1"] = <configatron.adl.loinc.uri/20587-2> -- CD10 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.2"] = <configatron.adl.loinc.uri/20588-0> -- CD13 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.3"] = <configatron.adl.loinc.uri/20589-8> -- CD14 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.4"] = <configatron.adl.loinc.uri/20590-6> -- CD15 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.5"] = <configatron.adl.loinc.uri/20593-0> -- CD19 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.6"] = <configatron.adl.loinc.uri/20594-8> -- CD2 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.7"] = <configatron.adl.loinc.uri/20595-5> -- CD20 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.8"] = <configatron.adl.loinc.uri/20599-7> -- CD3 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.9"] = <configatron.adl.loinc.uri/20601-1> -- CD33 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.10"] = <configatron.adl.loinc.uri/20602-9> -- CD34 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.11"] = <configatron.adl.loinc.uri/20603-7> -- CD38 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.12"] = <configatron.adl.loinc.uri/20608-6> -- CD41 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.13"] = <configatron.adl.loinc.uri/20610-2> -- CD45 (Lymphs) cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.14"] = <configatron.adl.loinc.uri/20611-0> -- CD5 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.15"] = <configatron.adl.loinc.uri/20612-8> -- CD7 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.16"] = <configatron.adl.loinc.uri/20617-7> -- Kappa lymphocytes/100 lymphocytes in Unspecified specimen
-        ["id0.1.1.1.17"] = <configatron.adl.loinc.uri/20618-5> -- Lambda lymphocytes/100 lymphocytes in Unspecified specimen
-        ["id0.1.1.1.18"] = <configatron.adl.loinc.uri/21154-0> -- CD11c cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.19"] = <configatron.adl.loinc.uri/21166-4> -- CD56 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.20"] = <configatron.adl.loinc.uri/21169-8> -- CD71 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.21"] = <configatron.adl.loinc.uri/26563-7> -- CD1a cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.22"] = <configatron.adl.loinc.uri/32516-7> -- CD3+CD4+ (T4 helper) cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.23"] = <configatron.adl.loinc.uri/32518-3> -- CD3+CD8+ (T8 suppressor cells) cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.24"] = <configatron.adl.loinc.uri/32742-9> -- CD117 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.25"] = <configatron.adl.loinc.uri/32747-8> -- CD64 cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.26"] = <configatron.adl.loinc.uri/32750-2> -- CD235a cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.27"] = <configatron.adl.loinc.uri/32751-0> -- HLA-DR+ cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.28"] = <configatron.adl.loinc.uri/32758-5> -- CD11b cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.29"] = <configatron.adl.loinc.uri/32759-3> -- Myeloperoxidase cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.30"] = <configatron.adl.loinc.uri/33775-8> -- CD41a cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.31"] = <configatron.adl.loinc.uri/38435-4> -- Terminal deoxyribonucleotidyl transferase cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.32"] = <configatron.adl.loinc.uri/42933-2> -- CD79a cells/100 cells in Unspecified specimen
-        ["id0.1.1.1.33"] = <configatron.adl.loinc.uri/45267-2> -- Acute leukemia markers [interpretation] in Unspecified specimen Narrative
-        ["id0.1.1.1.34"] = <configatron.adl.loinc.uri/49312-2> -- Acute leukemia markers [interpretation] in Unspecified specimen
+        ["id1.1.1.1.1"] = <http://loinc.org/id/45270-6> -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/45270-6> -- Acute leukemia panel - Unspecified specimen by Flow cytometry (FC)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/20587-2> -- CD10 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20588-0> -- CD13 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.3"] = <http://loinc.org/id/20589-8> -- CD14 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.4"] = <http://loinc.org/id/20590-6> -- CD15 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.5"] = <http://loinc.org/id/20593-0> -- CD19 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.6"] = <http://loinc.org/id/20594-8> -- CD2 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.7"] = <http://loinc.org/id/20595-5> -- CD20 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.8"] = <http://loinc.org/id/20599-7> -- CD3 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.9"] = <http://loinc.org/id/20601-1> -- CD33 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.10"] = <http://loinc.org/id/20602-9> -- CD34 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.11"] = <http://loinc.org/id/20603-7> -- CD38 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.12"] = <http://loinc.org/id/20608-6> -- CD41 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.13"] = <http://loinc.org/id/20610-2> -- CD45 (Lymphs) cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.14"] = <http://loinc.org/id/20611-0> -- CD5 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.15"] = <http://loinc.org/id/20612-8> -- CD7 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.16"] = <http://loinc.org/id/20617-7> -- Kappa lymphocytes/100 lymphocytes in Unspecified specimen
+        ["id0.1.1.1.17"] = <http://loinc.org/id/20618-5> -- Lambda lymphocytes/100 lymphocytes in Unspecified specimen
+        ["id0.1.1.1.18"] = <http://loinc.org/id/21154-0> -- CD11c cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.19"] = <http://loinc.org/id/21166-4> -- CD56 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.20"] = <http://loinc.org/id/21169-8> -- CD71 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.21"] = <http://loinc.org/id/26563-7> -- CD1a cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.22"] = <http://loinc.org/id/32516-7> -- CD3+CD4+ (T4 helper) cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.23"] = <http://loinc.org/id/32518-3> -- CD3+CD8+ (T8 suppressor cells) cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.24"] = <http://loinc.org/id/32742-9> -- CD117 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.25"] = <http://loinc.org/id/32747-8> -- CD64 cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.26"] = <http://loinc.org/id/32750-2> -- CD235a cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.27"] = <http://loinc.org/id/32751-0> -- HLA-DR+ cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.28"] = <http://loinc.org/id/32758-5> -- CD11b cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.29"] = <http://loinc.org/id/32759-3> -- Myeloperoxidase cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.30"] = <http://loinc.org/id/33775-8> -- CD41a cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.31"] = <http://loinc.org/id/38435-4> -- Terminal deoxyribonucleotidyl transferase cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.32"] = <http://loinc.org/id/42933-2> -- CD79a cells/100 cells in Unspecified specimen
+        ["id0.1.1.1.33"] = <http://loinc.org/id/45267-2> -- Acute leukemia markers [interpretation] in Unspecified specimen Narrative
+        ["id0.1.1.1.34"] = <http://loinc.org/id/49312-2> -- Acute leukemia markers [interpretation] in Unspecified specimen
       >
     >
   >

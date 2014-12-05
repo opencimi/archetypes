@@ -18,7 +18,6 @@ description
         purpose = <"Archetype for CIMI 'Diseases history panel [USSG-FHT] family member' concept">
         use = <"Use for Diseases history panel [USSG-FHT] family member.">
         keywords = <"Diseases","history","panel","[USSG-FHT]","family","member">
-        copyright = <"Copyright 2014 CIMI - Clinical Information Modelling Initiative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -34,8 +33,9 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54117-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-03T22:20:11">
+      ["time"] = <"2014-12-05T05:57:48">
     >
+
 definition
     ITEM_GROUP[id1.1.1.1.1] matches { -- Diseases history panel [USSG-FHT] family member
       /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Diseases history panel [USSG-FHT] family member
@@ -50,8 +50,8 @@ terminology
   term_bindings = <
     ["loinc"] = <
       items = <
-        ["id1.1.1.1.1"] = <configatron.adl.loinc.uri/54117-7> -- Diseases history panel [USSG-FHT] family member
-        ["at0.0.0.0.1"] = <configatron.adl.loinc.uri/54117-7> -- Diseases history panel [USSG-FHT] family member
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54117-7> -- Diseases history panel [USSG-FHT] family member
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54117-7> -- Diseases history panel [USSG-FHT] family member
       >
     >
   >
