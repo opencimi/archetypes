@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1;rm_release=2.0.2)
-    CIMI-CORE-ITEM_GROUP.e_chaff_igg_plus_igm_pnl_?tm_titr_ser_if.v1.0.0
+    CIMI-CORE-ITEM_GROUP.e_chaff_igg_plus_igm_pnl__tm_titr_ser_if.v1.0.0
 
 specialize
     CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
