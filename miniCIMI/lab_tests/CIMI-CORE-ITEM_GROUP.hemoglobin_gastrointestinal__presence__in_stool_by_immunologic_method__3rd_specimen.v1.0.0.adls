@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.hemoglobin_gastrointestinal__presence__in_stool_by_immunologic_method__3rd_specimen.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/56491-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T06:00:39">
+      ["time"] = <"2014-12-08T06:15:45">
     >
 
 definition

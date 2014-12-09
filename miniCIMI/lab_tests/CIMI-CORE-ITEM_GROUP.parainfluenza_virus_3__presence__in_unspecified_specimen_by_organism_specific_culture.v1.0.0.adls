@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.parainfluenza_virus_3__presence__in_unspecified_specimen_by_organism_specific_culture.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/55099-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T06:00:33">
+      ["time"] = <"2014-12-08T06:15:42">
     >
 
 definition

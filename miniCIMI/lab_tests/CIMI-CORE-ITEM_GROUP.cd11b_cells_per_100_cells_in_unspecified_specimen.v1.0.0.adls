@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.cd11b_cells_per_100_cells_in_unspecified_specimen.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/32758-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T05:59:05">
+      ["time"] = <"2014-12-08T06:14:55">
     >
 
 definition

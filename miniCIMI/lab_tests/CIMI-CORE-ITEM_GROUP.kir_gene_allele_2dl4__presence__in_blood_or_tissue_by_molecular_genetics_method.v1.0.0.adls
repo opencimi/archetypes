@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.kir_gene_allele_2dl4__presence__in_blood_or_tissue_by_molecular_genetics_method.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/64416-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T06:01:16">
+      ["time"] = <"2014-12-08T06:16:00">
     >
 
 definition

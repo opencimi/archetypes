@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.hemoglobin_a2_per_hemoglobin_total_in_blood.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/4551-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T05:59:50">
+      ["time"] = <"2014-12-08T06:15:21">
     >
 
 definition

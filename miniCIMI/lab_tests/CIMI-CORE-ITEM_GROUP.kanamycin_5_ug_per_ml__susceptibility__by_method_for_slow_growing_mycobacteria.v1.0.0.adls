@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.kanamycin_5_ug_per_ml__susceptibility__by_method_for_slow_growing_mycobacteria.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/25182-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T05:58:37">
+      ["time"] = <"2014-12-08T06:14:38">
     >
 
 definition

@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.national__usa__pfge_cluster_code_or_cdc_cluster__identifier__in_isolate.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69581-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T06:01:43">
+      ["time"] = <"2014-12-08T06:16:11">
     >
 
 definition

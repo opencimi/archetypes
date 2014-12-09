@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.last_menstrual_period_start_date.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8665-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T06:02:09">
+      ["time"] = <"2014-12-08T06:16:25">
     >
 
 definition

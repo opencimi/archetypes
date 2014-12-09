@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.aureobasidium_pullulans_ige_ab__units_per_volume__in_serum.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6029-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T05:57:41">
+      ["time"] = <"2014-12-08T06:13:54">
     >
 
 definition

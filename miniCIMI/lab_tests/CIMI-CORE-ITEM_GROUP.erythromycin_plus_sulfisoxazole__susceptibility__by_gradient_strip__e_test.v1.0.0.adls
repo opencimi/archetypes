@@ -1,4 +1,4 @@
-archetype (adl_version=1.5.1;rm_release=2.0.2)
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
     CIMI-CORE-ITEM_GROUP.erythromycin_plus_sulfisoxazole__susceptibility__by_gradient_strip__e_test.v1.0.0
 
 specialize
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11576-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-05T05:57:58">
+      ["time"] = <"2014-12-08T06:14:10">
     >
 
 definition
