@@ -108,7 +108,7 @@ terminology
     >
   >
   term_bindings = <
-    ["SNOMED-CT"] = <
+    ["snomed-ct"] = <
       items = <
         ["id5.0.3"] = <http://snomed.info/id/363702006> -- Has focus
         ["id5.0.4"] = <http://snomed.info/id/260686004> -- Method

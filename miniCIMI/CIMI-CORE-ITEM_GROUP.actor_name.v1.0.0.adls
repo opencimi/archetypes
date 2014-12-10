@@ -45,7 +45,7 @@ terminology
     >
   >
   term_bindings = <
-    ["SNOMED-CT"] = <
+    ["snomed-ct"] = <
       items = <
         ["id1.1.1"] = <http://snomed.info/id/138875005>
       >

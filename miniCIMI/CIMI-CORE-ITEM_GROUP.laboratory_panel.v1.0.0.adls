@@ -80,7 +80,7 @@ terminology
     >
   >
   term_bindings = <
-    ["SNOMED-CT"] = <
+    ["snomed-ct"] = <
       items = <
         ["id4.0.0.1"] = <http://snomed.info/id/116686009> --  Has specimen
       >
