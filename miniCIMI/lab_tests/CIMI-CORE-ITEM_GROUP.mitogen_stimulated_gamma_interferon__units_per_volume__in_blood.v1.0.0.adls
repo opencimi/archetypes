@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/71772-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:16:15">
+      ["time"] = <"2014-12-16T15:57:11">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Mitogen stimulated gamma interferon [Units/volume] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"Mitogen stimulated gamma interferon [Units/volume] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"[IU]/mL">>
     >
   >
 

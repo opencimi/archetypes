@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6099-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:15:54">
+      ["time"] = <"2014-12-16T15:56:12">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Dog epithelium IgE Ab [Units/volume] in Serum">>
       ["at0.0.0.0.0.1"] = <text = <"Dog epithelium IgE Ab [Units/volume] in Serum">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"k[IU]/L">>
     >
   >
 

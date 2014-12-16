@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8248-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:16:24">
+      ["time"] = <"2014-12-16T15:57:38">
     >
 
 definition

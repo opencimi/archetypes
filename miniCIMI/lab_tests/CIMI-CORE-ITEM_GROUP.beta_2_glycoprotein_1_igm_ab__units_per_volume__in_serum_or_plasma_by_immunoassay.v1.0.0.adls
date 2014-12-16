@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/44449-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:13:53">
+      ["time"] = <"2014-12-16T15:52:46">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Beta 2 glycoprotein 1 IgM Ab [Units/volume] in Serum or Plasma by Immunoassay">>
       ["at0.0.0.0.0.1"] = <text = <"Beta 2 glycoprotein 1 IgM Ab [Units/volume] in Serum or Plasma by Immunoassay">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"[arb'U]/mL">>
     >
   >
 

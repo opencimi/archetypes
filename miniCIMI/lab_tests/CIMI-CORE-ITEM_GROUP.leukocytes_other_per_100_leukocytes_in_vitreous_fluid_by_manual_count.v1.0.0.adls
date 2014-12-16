@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/68432-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:16:09">
+      ["time"] = <"2014-12-16T15:56:52">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Leukocytes other/100 leukocytes in Vitreous fluid by Manual count">>
       ["at0.0.0.0.0.1"] = <text = <"Leukocytes other/100 leukocytes in Vitreous fluid by Manual count">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"%">>
     >
   >
 

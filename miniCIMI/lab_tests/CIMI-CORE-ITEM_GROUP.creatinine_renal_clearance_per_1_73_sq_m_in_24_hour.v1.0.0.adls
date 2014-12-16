@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12195-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:14:11">
+      ["time"] = <"2014-12-16T15:53:05">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
       ["at0.0.0.0.0.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"mL/min/{1.73_m2}">>
     >
   >
 

@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/35494-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-08T06:15:01">
+      ["time"] = <"2014-12-16T15:54:22">
     >
 
 definition
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Succinate dehydrogenase [Enzymatic activity/mass] in Tissue">>
       ["at0.0.0.0.0.1"] = <text = <"Succinate dehydrogenase [Enzymatic activity/mass] in Tissue">>
-      ["at0.0.0.0.0.2"] = <text = <"Qn">>
+      ["at0.0.0.0.0.2"] = <text = <"U/g">>
     >
   >
 
