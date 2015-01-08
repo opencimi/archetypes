@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/2779-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:52:45">
+      ["time"] = <"2015-01-07T16:44:12">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Phosphate [Mass/time] in 24 hour Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Phosphate [Mass/time] in 24 hour Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mg/(24.h)
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Milligram Per 24 Hour -- mg/24h
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Phosphate [Mass/time] in 24 hour Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Phosphate [Mass/time] in 24 hour Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"mg/(24.h)">>
+      ["at0.0.0.0.0.2"] = <text = <"mg/(24.h)">> -- Milligram Per 24 Hour -- mg/24h
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mg/(24.h)
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258836006> -- Milligram Per 24 Hour -- mg/24h
       >
     >
   >

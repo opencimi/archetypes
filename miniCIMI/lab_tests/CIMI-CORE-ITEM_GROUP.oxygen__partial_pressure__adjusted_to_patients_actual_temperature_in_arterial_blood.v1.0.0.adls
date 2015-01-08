@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19255-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:53:26">
+      ["time"] = <"2015-01-07T16:44:57">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mm[Hg]
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliMeters of Mercury [Blood Pressure Unit] -- mmHg
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood">>
       ["at0.0.0.0.0.1"] = <text = <"Oxygen [Partial pressure] adjusted to patients actual temperature in Arterial blood">>
-      ["at0.0.0.0.0.2"] = <text = <"mm[Hg]">>
+      ["at0.0.0.0.0.2"] = <text = <"mm[Hg]">> -- MilliMeters of Mercury [Blood Pressure Unit] -- mmHg
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mm[Hg]
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/259018001> -- MilliMeters of Mercury [Blood Pressure Unit] -- mmHg
       >
     >
   >

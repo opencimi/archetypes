@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13451-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:52:44">
+      ["time"] = <"2015-01-07T16:44:10">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Creatinine dialysis fluid clearance
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Creatinine dialysis fluid clearance
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mL/min
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Milliliter Per Minute -- mL/min
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Creatinine dialysis fluid clearance">>
       ["at0.0.0.0.0.1"] = <text = <"Creatinine dialysis fluid clearance">>
-      ["at0.0.0.0.0.2"] = <text = <"mL/min">>
+      ["at0.0.0.0.0.2"] = <text = <"mL/min">> -- Milliliter Per Minute -- mL/min
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mL/min
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258859000> -- Milliliter Per Minute -- mL/min
       >
     >
   >

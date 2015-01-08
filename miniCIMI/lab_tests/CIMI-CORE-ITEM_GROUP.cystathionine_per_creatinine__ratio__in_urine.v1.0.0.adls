@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/28599-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:53:59">
+      ["time"] = <"2015-01-07T16:45:22">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Cystathionine/Creatinine [Ratio] in Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Cystathionine/Creatinine [Ratio] in Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- umol/g{creat}
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} --  -- 
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Cystathionine/Creatinine [Ratio] in Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Cystathionine/Creatinine [Ratio] in Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"umol/g{creat}">>
+      ["at0.0.0.0.0.2"] = <text = <"umol/g{creat}">> --  -- 
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- umol/g{creat}
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/> --  -- 
       >
     >
   >

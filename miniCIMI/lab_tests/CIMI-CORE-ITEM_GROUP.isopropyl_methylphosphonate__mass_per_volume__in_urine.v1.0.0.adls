@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54098-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:55:39">
+      ["time"] = <"2015-01-07T16:46:33">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Isopropyl methylphosphonate [Mass/volume] in Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Isopropyl methylphosphonate [Mass/volume] in Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- pg/mL
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- PicoGrams Per MilliLiter [Mass Concentration Units] -- pg/mL
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Isopropyl methylphosphonate [Mass/volume] in Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Isopropyl methylphosphonate [Mass/volume] in Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"pg/mL">>
+      ["at0.0.0.0.0.2"] = <text = <"pg/mL">> -- PicoGrams Per MilliLiter [Mass Concentration Units] -- pg/mL
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- pg/mL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258808001> -- PicoGrams Per MilliLiter [Mass Concentration Units] -- pg/mL
       >
     >
   >

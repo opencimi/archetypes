@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5804-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:55:58">
+      ["time"] = <"2015-01-07T16:46:41">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Protein [Mass/volume] in Urine by Test strip
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Protein [Mass/volume] in Urine by Test strip
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mg/dL
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Protein [Mass/volume] in Urine by Test strip">>
       ["at0.0.0.0.0.1"] = <text = <"Protein [Mass/volume] in Urine by Test strip">>
-      ["at0.0.0.0.0.2"] = <text = <"mg/dL">>
+      ["at0.0.0.0.0.2"] = <text = <"mg/dL">> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mg/dL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258797006> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
       >
     >
   >

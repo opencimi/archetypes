@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49585-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:55:16">
+      ["time"] = <"2015-01-07T16:46:21">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Alpha-1-Fetoprotein multiple of the median cutoff [Multiple of the median] in Serum or Plasma
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Alpha-1-Fetoprotein multiple of the median cutoff [Multiple of the median] in Serum or Plasma
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- {M.o.M}
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Multiple Of The Median -- MoM
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Alpha-1-Fetoprotein multiple of the median cutoff [Multiple of the median] in Serum or Plasma">>
       ["at0.0.0.0.0.1"] = <text = <"Alpha-1-Fetoprotein multiple of the median cutoff [Multiple of the median] in Serum or Plasma">>
-      ["at0.0.0.0.0.2"] = <text = <"{M.o.M}">>
+      ["at0.0.0.0.0.2"] = <text = <"{M.o.M}">> -- Multiple Of The Median -- MoM
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- {M.o.M}
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/419736007> -- Multiple Of The Median -- MoM
       >
     >
   >

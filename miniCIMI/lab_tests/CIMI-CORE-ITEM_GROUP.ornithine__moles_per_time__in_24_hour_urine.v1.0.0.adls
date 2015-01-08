@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/25491-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:53:48">
+      ["time"] = <"2015-01-07T16:45:15">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Ornithine [Moles/time] in 24 hour Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Ornithine [Moles/time] in 24 hour Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mmol/(24.h)
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Millimole Per 24 Hour -- mmol/24h
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Ornithine [Moles/time] in 24 hour Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Ornithine [Moles/time] in 24 hour Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"mmol/(24.h)">>
+      ["at0.0.0.0.0.2"] = <text = <"mmol/(24.h)">> -- Millimole Per 24 Hour -- mmol/24h
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mmol/(24.h)
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258847004> -- Millimole Per 24 Hour -- mmol/24h
       >
     >
   >

@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6239-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:56:20">
+      ["time"] = <"2015-01-07T16:46:50">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Lenscale IgE Ab [Units/volume] in Serum
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Lenscale IgE Ab [Units/volume] in Serum
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- k[IU]/L
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Kilo International Unit Per Liter -- kIU/L
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Lenscale IgE Ab [Units/volume] in Serum">>
       ["at0.0.0.0.0.1"] = <text = <"Lenscale IgE Ab [Units/volume] in Serum">>
-      ["at0.0.0.0.0.2"] = <text = <"k[IU]/L">>
+      ["at0.0.0.0.0.2"] = <text = <"k[IU]/L">> -- Kilo International Unit Per Liter -- kIU/L
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- k[IU]/L
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/259003002> -- Kilo International Unit Per Liter -- kIU/L
       >
     >
   >

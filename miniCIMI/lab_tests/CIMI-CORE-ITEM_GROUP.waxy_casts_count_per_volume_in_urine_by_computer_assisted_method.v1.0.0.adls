@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41868-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:54:35">
+      ["time"] = <"2015-01-07T16:46:01">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Waxy casts [#/volume] in Urine by Computer assisted method
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Waxy casts [#/volume] in Urine by Computer assisted method
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- /uL
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Per MicroLiter [Number Concentration Units] -- /mcL
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Waxy casts [#/volume] in Urine by Computer assisted method">>
       ["at0.0.0.0.0.1"] = <text = <"Waxy casts [#/volume] in Urine by Computer assisted method">>
-      ["at0.0.0.0.0.2"] = <text = <"/uL">>
+      ["at0.0.0.0.0.2"] = <text = <"/uL">> -- Per MicroLiter [Number Concentration Units] -- /mcL
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- /uL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/420167005> -- Per MicroLiter [Number Concentration Units] -- /mcL
       >
     >
   >

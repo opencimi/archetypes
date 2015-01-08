@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48792-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:55:13">
+      ["time"] = <"2015-01-07T16:46:19">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Necroinflammatory activity score
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Necroinflammatory activity score
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- 
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} --  -- 
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Necroinflammatory activity score">>
       ["at0.0.0.0.0.1"] = <text = <"Necroinflammatory activity score">>
-      ["at0.0.0.0.0.2"] = <text = <"">>
+      ["at0.0.0.0.0.2"] = <text = <"">> --  -- 
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- 
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/> --  -- 
       >
     >
   >

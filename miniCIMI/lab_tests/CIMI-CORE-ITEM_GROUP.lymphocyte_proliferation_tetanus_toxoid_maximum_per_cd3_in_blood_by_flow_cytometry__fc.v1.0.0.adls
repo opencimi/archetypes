@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69029-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:56:56">
+      ["time"] = <"2015-01-07T16:47:03">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- %
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percent
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)">>
       ["at0.0.0.0.0.1"] = <text = <"Lymphocyte proliferation.tetanus toxoid.maximum/CD3 in Blood by Flow cytometry (FC)">>
-      ["at0.0.0.0.0.2"] = <text = <"%">>
+      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percent
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- %
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/118582008> -- Percent [fraction] -- Percent
       >
     >
   >

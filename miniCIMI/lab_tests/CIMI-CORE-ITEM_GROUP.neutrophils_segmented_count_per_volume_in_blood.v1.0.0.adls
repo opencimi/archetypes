@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/30451-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:54:07">
+      ["time"] = <"2015-01-07T16:45:27">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Neutrophils.segmented [#/volume] in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Neutrophils.segmented [#/volume] in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- 10*3/uL
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Neutrophils.segmented [#/volume] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"Neutrophils.segmented [#/volume] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"10*3/uL">>
+      ["at0.0.0.0.0.2"] = <text = <"10*3/uL">> -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- 10*3/uL
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/418247005> -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
       >
     >
   >

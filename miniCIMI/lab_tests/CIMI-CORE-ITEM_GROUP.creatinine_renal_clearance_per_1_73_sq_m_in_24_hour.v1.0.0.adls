@@ -33,13 +33,13 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12195-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2014-12-16T15:53:05">
+      ["time"] = <"2015-01-07T16:44:32">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Creatinine renal clearance/1.73 sq M in 24 hour
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Creatinine renal clearance/1.73 sq M in 24 hour
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- mL/min/{1.73_m2}
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Milliliter Per Minute Per 1.73 Square Meters -- mL/min/sq. m
   }
 
 terminology
@@ -47,7 +47,7 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
       ["at0.0.0.0.0.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
-      ["at0.0.0.0.0.2"] = <text = <"mL/min/{1.73_m2}">>
+      ["at0.0.0.0.0.2"] = <text = <"mL/min/{1.73_m2}">> -- Milliliter Per Minute Per 1.73 Square Meters -- mL/min/sq. m
     >
   >
 
@@ -60,7 +60,7 @@ terminology
     >
     ["snomed-ct"] = <
       items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- mL/min/{1.73_m2}
+        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258972003> -- Milliliter Per Minute Per 1.73 Square Meters -- mL/min/sq. m
       >
     >
   >
