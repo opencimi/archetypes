@@ -1,0 +1,99 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.home_drug_screening_panel_in_urine.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Home drug screening panel - Urine' concept">
+        use = <"Use for Home drug screening panel - Urine.">
+        keywords = <"Home","drug","screening","panel","-","Urine">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/55419-6.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:50">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Home drug screening panel - Urine
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Home drug screening panel - Urine
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.benzodiazepines__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Benzodiazepines [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.barbiturates__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Barbiturates [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.opiates__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Opiates [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.tricyclic_antidepressants__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Tricyclic antidepressants [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.amphetamine__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Amphetamine [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.cocaine__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Cocaine [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.carboxy_tetrahydrocannabinol__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Carboxy tetrahydrocannabinol [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.methadone__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Methadone [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.methamphetamine__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Methamphetamine [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.methylenedioxymethamphetamine__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Methylenedioxymethamphetamine [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.oxycodone__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Oxycodone [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.phencyclidine__presence__in_urine_by_screen_method.v1] occurrences matches {0..1} -- Phencyclidine [Presence] in Urine by Screen method
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.drug_test_kit_name__identifier__in_urine.v1] occurrences matches {0..1} -- Drug test kit name [Identifier] in Urine
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Home drug screening panel - Urine">>
+      ["at0.0.0.0.1"] = <text = <"Home drug screening panel - Urine">>
+      ["id0.1.1.1.1"] = <text = <"Benzodiazepines [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.2"] = <text = <"Barbiturates [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.3"] = <text = <"Opiates [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.4"] = <text = <"Tricyclic antidepressants [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.5"] = <text = <"Amphetamine [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.6"] = <text = <"Cocaine [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.7"] = <text = <"Carboxy tetrahydrocannabinol [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.8"] = <text = <"Methadone [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.9"] = <text = <"Methamphetamine [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.10"] = <text = <"Methylenedioxymethamphetamine [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.11"] = <text = <"Oxycodone [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.12"] = <text = <"Phencyclidine [Presence] in Urine by Screen method">>
+      ["id0.1.1.1.13"] = <text = <"Drug test kit name [Identifier] in Urine">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55419-6> -- Home drug screening panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55419-6> -- Home drug screening panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14316-4> -- Benzodiazepines [Presence] in Urine by Screen method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/19270-8> -- Barbiturates [Presence] in Urine by Screen method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/19295-5> -- Opiates [Presence] in Urine by Screen method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/19312-8> -- Tricyclic antidepressants [Presence] in Urine by Screen method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/19343-3> -- Amphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/19359-9> -- Cocaine [Presence] in Urine by Screen method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/19381-3> -- Carboxy tetrahydrocannabinol [Presence] in Urine by Screen method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/19550-3> -- Methadone [Presence] in Urine by Screen method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/19554-5> -- Methamphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/19568-5> -- Methylenedioxymethamphetamine [Presence] in Urine by Screen method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/19642-8> -- Oxycodone [Presence] in Urine by Screen method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/19659-2> -- Phencyclidine [Presence] in Urine by Screen method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/55428-7> -- Drug test kit name [Identifier] in Urine
+      >
+    >
+  >

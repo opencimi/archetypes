@@ -1,0 +1,87 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.newborn_screening_report_summary_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Newborn Screening Report summary panel' concept">
+        use = <"Use for Newborn Screening Report summary panel.">
+        keywords = <"Newborn","Screening","Report","summary","panel">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/57128-1.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:50">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Newborn Screening Report summary panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Newborn Screening Report summary panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.full_newborn_screening_summary_report_for_display_or_printing.v1] occurrences matches {0..1} -- Full newborn screening summary report for display or printing
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.newborn_screening_report_in_overall_interpretation.v1] occurrences matches {0..1} -- Newborn screening report - overall interpretation
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.newborn_conditions_with_positive_markers__identifier__in_dried_blood_spot.v1] occurrences matches {1} -- Newborn conditions with positive markers [Identifier] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.sample_quality_of_dried_blood_spot.v1] occurrences matches {1} -- Sample quality of Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.conditions_tested_for_in_this_newborn_screening_study__identifier__in_dried_blood_spot.v1] occurrences matches {1} -- Conditions tested for in this newborn screening study [Identifier] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.newborn_conditions_with_equivocal_markers__identifier__in_dried_blood_spot.v1] occurrences matches {1} -- Newborn conditions with equivocal markers [Identifier] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.reason_for_lab_test_in_dried_blood_spot.v1] occurrences matches {1} -- Reason for lab test in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.newborn_screening_short_narrative_summary.v1] occurrences matches {0..1} -- Newborn screening short narrative summary
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.newborn_screening_report_overall_laboratory_comment.v1] occurrences matches {0..1} -- Newborn screening report overall laboratory comment
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Newborn Screening Report summary panel">>
+      ["at0.0.0.0.1"] = <text = <"Newborn Screening Report summary panel">>
+      ["id0.1.1.1.1"] = <text = <"Full newborn screening summary report for display or printing">>
+      ["id0.1.1.1.2"] = <text = <"Newborn screening report - overall interpretation">>
+      ["id0.1.1.1.3"] = <text = <"Newborn conditions with positive markers [Identifier] in Dried blood spot">>
+      ["id0.1.1.1.4"] = <text = <"Sample quality of Dried blood spot">>
+      ["id0.1.1.1.5"] = <text = <"Conditions tested for in this newborn screening study [Identifier] in Dried blood spot">>
+      ["id0.1.1.1.6"] = <text = <"Newborn conditions with equivocal markers [Identifier] in Dried blood spot">>
+      ["id0.1.1.1.7"] = <text = <"Reason for lab test in Dried blood spot">>
+      ["id0.1.1.1.8"] = <text = <"Newborn screening short narrative summary">>
+      ["id0.1.1.1.9"] = <text = <"Newborn screening report overall laboratory comment">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/57128-1> -- Newborn Screening Report summary panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/57128-1> -- Newborn Screening Report summary panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/57129-9> -- Full newborn screening summary report for display or printing
+        ["id0.1.1.1.2"] = <http://loinc.org/id/57130-7> -- Newborn screening report - overall interpretation
+        ["id0.1.1.1.3"] = <http://loinc.org/id/57131-5> -- Newborn conditions with positive markers [Identifier] in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/57718-9> -- Sample quality of Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/57719-7> -- Conditions tested for in this newborn screening study [Identifier] in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/57720-5> -- Newborn conditions with equivocal markers [Identifier] in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/57721-3> -- Reason for lab test in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/57724-7> -- Newborn screening short narrative summary
+        ["id0.1.1.1.9"] = <http://loinc.org/id/69969-4> -- Newborn screening report overall laboratory comment
+      >
+    >
+  >

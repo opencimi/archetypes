@@ -1,0 +1,105 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.hemoglobinopathies_newborn_screening_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Hemoglobinopathies newborn screening panel' concept">
+        use = <"Use for Hemoglobinopathies newborn screening panel.">
+        keywords = <"Hemoglobinopathies","newborn","screening","panel">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/54081-5.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:50">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Hemoglobinopathies newborn screening panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Hemoglobinopathies newborn screening panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.hemoglobin_disorders_newborn_screen_interpretation.v1] occurrences matches {1} -- Hemoglobin disorders newborn screen interpretation
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.hemoglobin_o_in_arab_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin O - Arab/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.hemoglobin_barts_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin Barts/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.hemoglobin_d_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin D/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.hemoglobin_e_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin E/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.hemoglobin_a_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin A/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.hemoglobin_c_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin C/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.hemoglobin_f_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin F/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.hemoglobin_pattern_in_dried_blood_spot_by_electrophoresis.v1] occurrences matches {0..1} -- Hemoglobin pattern in Dried blood spot by Electrophoresis
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.hemoglobin_pattern_in_dried_blood_spot_by_hplc.v1] occurrences matches {0..1} -- Hemoglobin pattern in Dried blood spot by HPLC
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.hemoglobin_pattern_in_dried_blood_spot_by_isoelectric_focusing.v1] occurrences matches {0..1} -- Hemoglobin pattern in Dried blood spot by Isoelectric focusing
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.hemoglobin_s_per_hemoglobin_total_in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobin S/Hemoglobin.total in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.hemoglobin_disorders_newborn_screening_comment_discussion.v1] occurrences matches {0..1} -- Hemoglobin disorders newborn screening comment-discussion
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.hemoglobinopathies_conditions_suspected__identifier__in_dried_blood_spot.v1] occurrences matches {0..1} -- Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot
+          use_archetype ITEM_GROUP[id0.1.2.1.1, CIMI-CORE-ITEM_GROUP.hemoglobin_observations_newborn_screening_panel.v1] occurrences matches {0..1} -- Hemoglobin observations newborn screening panel
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Hemoglobinopathies newborn screening panel">>
+      ["at0.0.0.0.1"] = <text = <"Hemoglobinopathies newborn screening panel">>
+      ["id0.1.1.1.1"] = <text = <"Hemoglobin disorders newborn screen interpretation">>
+      ["id0.1.1.1.2"] = <text = <"Hemoglobin O - Arab/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.3"] = <text = <"Hemoglobin Barts/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.4"] = <text = <"Hemoglobin D/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.5"] = <text = <"Hemoglobin E/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.6"] = <text = <"Hemoglobin A/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.7"] = <text = <"Hemoglobin C/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.8"] = <text = <"Hemoglobin F/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.9"] = <text = <"Hemoglobin pattern in Dried blood spot by Electrophoresis">>
+      ["id0.1.1.1.10"] = <text = <"Hemoglobin pattern in Dried blood spot by HPLC">>
+      ["id0.1.1.1.11"] = <text = <"Hemoglobin pattern in Dried blood spot by Isoelectric focusing">>
+      ["id0.1.1.1.12"] = <text = <"Hemoglobin S/Hemoglobin.total in Dried blood spot">>
+      ["id0.1.1.1.13"] = <text = <"Hemoglobin disorders newborn screening comment-discussion">>
+      ["id0.1.1.1.14"] = <text = <"Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot">>
+      ["id0.1.2.1.1"] = <text = <"Hemoglobin observations newborn screening panel">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/54081-5> -- Hemoglobinopathies newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/54081-5> -- Hemoglobinopathies newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/46740-7> -- Hemoglobin disorders newborn screen interpretation
+        ["id0.1.1.1.2"] = <http://loinc.org/id/54068-2> -- Hemoglobin O - Arab/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.3"] = <http://loinc.org/id/54069-0> -- Hemoglobin Barts/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.4"] = <http://loinc.org/id/54070-8> -- Hemoglobin D/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.5"] = <http://loinc.org/id/54071-6> -- Hemoglobin E/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.6"] = <http://loinc.org/id/54072-4> -- Hemoglobin A/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.7"] = <http://loinc.org/id/54073-2> -- Hemoglobin C/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.8"] = <http://loinc.org/id/54074-0> -- Hemoglobin F/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.9"] = <http://loinc.org/id/54103-7> -- Hemoglobin pattern in Dried blood spot by Electrophoresis
+        ["id0.1.1.1.10"] = <http://loinc.org/id/54104-5> -- Hemoglobin pattern in Dried blood spot by HPLC
+        ["id0.1.1.1.11"] = <http://loinc.org/id/54105-2> -- Hemoglobin pattern in Dried blood spot by Isoelectric focusing
+        ["id0.1.1.1.12"] = <http://loinc.org/id/56476-5> -- Hemoglobin S/Hemoglobin.total in Dried blood spot
+        ["id0.1.1.1.13"] = <http://loinc.org/id/57703-1> -- Hemoglobin disorders newborn screening comment-discussion
+        ["id0.1.1.1.14"] = <http://loinc.org/id/71592-0> -- Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot
+        ["id0.1.2.1.1"] = <http://loinc.org/id/64116-7> -- Hemoglobin observations newborn screening panel
+      >
+    >
+  >

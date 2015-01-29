@@ -1,0 +1,69 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.close_tme_coll_plus_adp_and_epinep_pnl_bld.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood' concept">
+        use = <"Use for Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood.">
+        keywords = <"Platelet","function.collagen","+","Adenosine","diphosphate","induced","Epinephrine","induced","panel","-","Blood">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/72257-9.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:51">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.platelet_function__closure_time__collagen_plus_epinephrine_induced__time__in_blood.v1] occurrences matches {0..1} -- Platelet function (closure time) collagen+Epinephrine induced [Time] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.platelet_function__closure_time__collagen_plus_adp_induced__time__in_blood.v1] occurrences matches {0..1} -- Platelet function (closure time) collagen+ADP induced [Time] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.platelet_function__closure_time___interpretation__in_blood_narrative.v1] occurrences matches {0..1} -- Platelet function (closure time) [interpretation] in Blood Narrative
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood">>
+      ["at0.0.0.0.1"] = <text = <"Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood">>
+      ["id0.1.1.1.1"] = <text = <"Platelet function (closure time) collagen+Epinephrine induced [Time] in Blood">>
+      ["id0.1.1.1.2"] = <text = <"Platelet function (closure time) collagen+ADP induced [Time] in Blood">>
+      ["id0.1.1.1.3"] = <text = <"Platelet function (closure time) [interpretation] in Blood Narrative">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72257-9> -- Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72257-9> -- Platelet function.collagen + Adenosine diphosphate induced and Epinephrine induced panel - Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/24471-5> -- Platelet function (closure time) collagen+Epinephrine induced [Time] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/24472-3> -- Platelet function (closure time) collagen+ADP induced [Time] in Blood
+        ["id0.1.1.1.3"] = <http://loinc.org/id/49836-0> -- Platelet function (closure time) [interpretation] in Blood Narrative
+      >
+    >
+  >

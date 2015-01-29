@@ -1,0 +1,123 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.cchd_newborn_screening_panel.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'CCHD newborn screening panel' concept">
+        use = <"Use for CCHD newborn screening panel.">
+        keywords = <"CCHD","newborn","screening","panel">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/73805-4.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:55">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- CCHD newborn screening panel
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- CCHD newborn screening panel
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.oxygen_saturation_in_blood_preductal_by_pulse_oximetry.v1] occurrences matches {0..1} -- Oxygen saturation in Blood Preductal by Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.oxygen_saturation_in_blood_postductal_by_pulse_oximetry.v1] occurrences matches {0..1} -- Oxygen saturation in Blood Postductal by Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.sao2_percent__pre_post_mfrdiff_bld_pre_plus_post.v1] occurrences matches {0..1} -- Oxygen saturation.preductal-oxygen saturation.postductal [Mass fraction difference] in Bld.preductal and Bld.postductal
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.cchd_newborn_screening_protocol_used__type.v1] occurrences matches {0..1} -- CCHD newborn screening protocol used [Type]
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.reason_cchd_oxygen_saturation_screening_not_performed.v1] occurrences matches {0..1} -- Reason CCHD oxygen saturation screening not performed
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.number_of_prior_cchd_screens___number_of___qualitative.v1] occurrences matches {0..1} -- Number of prior CCHD screens [#] Qualitative
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cchd_newborn_screening_interpretation.v1] occurrences matches {1} -- CCHD newborn screening interpretation
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.infant_activity_during_postductal_oxygen_saturation_measurement.v1] occurrences matches {0..1} -- Infant activity during postductal oxygen saturation measurement
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.signal_quality_blood_postductal_pulse_oximetry.v1] occurrences matches {0..1} -- Signal quality Blood Postductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.perfusion_index_blood_postductal_pulse_oximetry.v1] occurrences matches {0..1} -- Perfusion index Blood Postductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.heart_rate_blood_postductal_pulse_oximetry.v1] occurrences matches {0..1} -- Heart rate Blood Postductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.infant_activity_during_preductal_oxygen_saturation_measurement.v1] occurrences matches {0..1} -- Infant activity during preductal oxygen saturation measurement
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.signal_quality_blood_preductal_pulse_oximetry.v1] occurrences matches {0..1} -- Signal quality Blood Preductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.perfusion_index_blood_preductal_pulse_oximetry.v1] occurrences matches {0..1} -- Perfusion index Blood Preductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.heart_rate_blood_preductal_pulse_oximetry.v1] occurrences matches {0..1} -- Heart rate Blood Preductal Pulse oximetry
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.oxygen_saturation_sensor_wrap_size.v1] occurrences matches {0..1} -- Oxygen saturation sensor wrap size
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.oxygen_saturation_sensor_wrap_type.v1] occurrences matches {0..1} -- Oxygen saturation sensor wrap type
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.oxygen_saturation_sensor_wrap_name.v1] occurrences matches {0..1} -- Oxygen saturation sensor wrap name
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.oxygen_saturation_sensor_type.v1] occurrences matches {0..1} -- Oxygen saturation sensor type
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.oxygen_saturation_sensor_name.v1] occurrences matches {0..1} -- Oxygen saturation sensor name
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.newborn_age_in_hours.v1] occurrences matches {0..1} -- Newborn age in hours
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"CCHD newborn screening panel">>
+      ["at0.0.0.0.1"] = <text = <"CCHD newborn screening panel">>
+      ["id0.1.1.1.1"] = <text = <"Oxygen saturation in Blood Preductal by Pulse oximetry">>
+      ["id0.1.1.1.2"] = <text = <"Oxygen saturation in Blood Postductal by Pulse oximetry">>
+      ["id0.1.1.1.3"] = <text = <"Oxygen saturation.preductal-oxygen saturation.postductal [Mass fraction difference] in Bld.preductal and Bld.postductal">>
+      ["id0.1.1.1.4"] = <text = <"CCHD newborn screening protocol used [Type]">>
+      ["id0.1.1.1.5"] = <text = <"Reason CCHD oxygen saturation screening not performed">>
+      ["id0.1.1.1.6"] = <text = <"Number of prior CCHD screens [#] Qualitative">>
+      ["id0.1.1.1.7"] = <text = <"CCHD newborn screening interpretation">>
+      ["id0.1.1.1.8"] = <text = <"Infant activity during postductal oxygen saturation measurement">>
+      ["id0.1.1.1.9"] = <text = <"Signal quality Blood Postductal Pulse oximetry">>
+      ["id0.1.1.1.10"] = <text = <"Perfusion index Blood Postductal Pulse oximetry">>
+      ["id0.1.1.1.11"] = <text = <"Heart rate Blood Postductal Pulse oximetry">>
+      ["id0.1.1.1.12"] = <text = <"Infant activity during preductal oxygen saturation measurement">>
+      ["id0.1.1.1.13"] = <text = <"Signal quality Blood Preductal Pulse oximetry">>
+      ["id0.1.1.1.14"] = <text = <"Perfusion index Blood Preductal Pulse oximetry">>
+      ["id0.1.1.1.15"] = <text = <"Heart rate Blood Preductal Pulse oximetry">>
+      ["id0.1.1.1.16"] = <text = <"Oxygen saturation sensor wrap size">>
+      ["id0.1.1.1.17"] = <text = <"Oxygen saturation sensor wrap type">>
+      ["id0.1.1.1.18"] = <text = <"Oxygen saturation sensor wrap name">>
+      ["id0.1.1.1.19"] = <text = <"Oxygen saturation sensor type">>
+      ["id0.1.1.1.20"] = <text = <"Oxygen saturation sensor name">>
+      ["id0.1.1.1.21"] = <text = <"Newborn age in hours">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/73805-4> -- CCHD newborn screening panel
+        ["at0.0.0.0.1"] = <http://loinc.org/id/73805-4> -- CCHD newborn screening panel
+        ["id0.1.1.1.1"] = <http://loinc.org/id/59407-7> -- Oxygen saturation in Blood Preductal by Pulse oximetry
+        ["id0.1.1.1.2"] = <http://loinc.org/id/59418-4> -- Oxygen saturation in Blood Postductal by Pulse oximetry
+        ["id0.1.1.1.3"] = <http://loinc.org/id/73696-7> -- Oxygen saturation.preductal-oxygen saturation.postductal [Mass fraction difference] in Bld.preductal and Bld.postductal
+        ["id0.1.1.1.4"] = <http://loinc.org/id/73697-5> -- CCHD newborn screening protocol used [Type]
+        ["id0.1.1.1.5"] = <http://loinc.org/id/73698-3> -- Reason CCHD oxygen saturation screening not performed
+        ["id0.1.1.1.6"] = <http://loinc.org/id/73699-1> -- Number of prior CCHD screens [#] Qualitative
+        ["id0.1.1.1.7"] = <http://loinc.org/id/73700-7> -- CCHD newborn screening interpretation
+        ["id0.1.1.1.8"] = <http://loinc.org/id/73792-4> -- Infant activity during postductal oxygen saturation measurement
+        ["id0.1.1.1.9"] = <http://loinc.org/id/73793-2> -- Signal quality Blood Postductal Pulse oximetry
+        ["id0.1.1.1.10"] = <http://loinc.org/id/73794-0> -- Perfusion index Blood Postductal Pulse oximetry
+        ["id0.1.1.1.11"] = <http://loinc.org/id/73795-7> -- Heart rate Blood Postductal Pulse oximetry
+        ["id0.1.1.1.12"] = <http://loinc.org/id/73796-5> -- Infant activity during preductal oxygen saturation measurement
+        ["id0.1.1.1.13"] = <http://loinc.org/id/73797-3> -- Signal quality Blood Preductal Pulse oximetry
+        ["id0.1.1.1.14"] = <http://loinc.org/id/73798-1> -- Perfusion index Blood Preductal Pulse oximetry
+        ["id0.1.1.1.15"] = <http://loinc.org/id/73799-9> -- Heart rate Blood Preductal Pulse oximetry
+        ["id0.1.1.1.16"] = <http://loinc.org/id/73800-5> -- Oxygen saturation sensor wrap size
+        ["id0.1.1.1.17"] = <http://loinc.org/id/73801-3> -- Oxygen saturation sensor wrap type
+        ["id0.1.1.1.18"] = <http://loinc.org/id/73802-1> -- Oxygen saturation sensor wrap name
+        ["id0.1.1.1.19"] = <http://loinc.org/id/73803-9> -- Oxygen saturation sensor type
+        ["id0.1.1.1.20"] = <http://loinc.org/id/73804-7> -- Oxygen saturation sensor name
+        ["id0.1.1.1.21"] = <http://loinc.org/id/73806-2> -- Newborn age in hours
+      >
+    >
+  >

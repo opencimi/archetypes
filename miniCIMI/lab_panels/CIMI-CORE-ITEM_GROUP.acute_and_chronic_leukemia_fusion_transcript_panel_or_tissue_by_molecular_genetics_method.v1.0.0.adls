@@ -1,0 +1,141 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.acute_and_chronic_leukemia_fusion_transcript_panel_or_tissue_by_molecular_genetics_method.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method' concept">
+        use = <"Use for Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method.">
+        keywords = <"Acute","chronic","leukemia","fusion","transcript","panel","-","Blood","or","Tissue","by","Molecular","genetics","method">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/72103-5.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:51">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.t_15_17__pml__rara__bld_per_t_ql.v1] occurrences matches {0..1} -- t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.t_1_19__pbx1__tcf3__bld_per_t_ql.v1] occurrences matches {0..1} -- t(1;19)(q23.3;p13.3)(PBX1,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.t_11_19__mll__mllt1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(11;19)(q23;p13.3)(MLL,MLLT1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.t_12_21__etv6__runx1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(12;21)(p13;q22.3)(ETV6,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.t_4_11__aff1__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(4;11)(q21.3;q23)(AFF1,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.t_5_12__pdgfrb__etv6__bld_per_t_ql.v1] occurrences matches {0..1} -- t(5;12)(q33.1;p13)(PDGFRB,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.t_6_9__dek__nup214__bld_per_t_ql.v1] occurrences matches {0..1} -- t(6;9)(p23;q34)(DEK,NUP214) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.t_8_21__runx1t1__runx1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(8;21)(q22;q22.3)(RUNX1T1,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.t_9_11__mllt3__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(9;11)(p22;q23)(MLLT3,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.t_9_22__abl1__bcr__bld_per_t_ql.v1] occurrences matches {0..1} -- t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.t_10_11__mllt10__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(10;11)(p12;q23)(MLLT10,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.t_x_11__foxo4__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(X;11)(q13.1;q23)(FOXO4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.t_1_11__eps15__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(1;11)(p32;q23)(EPS15,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.t_3_5__mlf1__npm1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(3;5)(q25.1;q35.1)(MLF1,NPM1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.t_3_21__mecom__runx1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(3;21)(q26;q22.3)(MECOM,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.t_5_17__npm1__rara__bld_per_t_ql.v1] occurrences matches {0..1} -- t(5;17)(q25.1;q21.1)(NPM1,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.t_6_11__mllt4__mll__bld_per_t_ql.v1] occurrences matches {0..1} -- t(6;11)(q27;q23)(MLLT4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.t_9_9__nup214__set__bld_per_t_ql.v1] occurrences matches {0..1} -- t(9;9)(q34;q34)(NUP214,SET) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.t_9_12__abl1__etv6__bld_per_t_ql.v1] occurrences matches {0..1} -- t(9;12)(q34.1;p13)(ABL1,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.t_11_17__mll__mllt6__bld_per_t_ql.v1] occurrences matches {0..1} -- t(11;17)(q23;q21)(MLL,MLLT6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.t_11_17__zbtb16__rara__bld_per_t_ql.v1] occurrences matches {0..1} -- t(11;17)(q23;q21.1)(ZBTB16,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.t_11_19__mll__ell__bld_per_t_ql.v1] occurrences matches {0..1} -- t(11;19)(q23;p13.1)(MLL,ELL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.t_12_22__etv6__mn1__bld_per_t_ql.v1] occurrences matches {0..1} -- t(12;22)(p13;q12.1)(ETV6,MN1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.t_16_21__fus__erg__bld_per_t_ql.v1] occurrences matches {0..1} -- t(16;21)(p11.2;q22.3)(FUS,ERG) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.t_17_19__hlf__tcf3__bld_per_t_ql.v1] occurrences matches {0..1} -- t(17;19)(q22;p13.3)(HLF,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.del_1p32__stil__tal1__bld_per_t_ql.v1] occurrences matches {0..1} -- Del(1)(p32p32)(STIL,TAL1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.inv_16__p13_q22__bld_per_t_ql.v1] occurrences matches {0..1} -- inv(16)(p13.1;q22.1)(MYH11,CBFB) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method">>
+      ["at0.0.0.0.1"] = <text = <"Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.1"] = <text = <"t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.2"] = <text = <"t(1;19)(q23.3;p13.3)(PBX1,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.3"] = <text = <"t(11;19)(q23;p13.3)(MLL,MLLT1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.4"] = <text = <"t(12;21)(p13;q22.3)(ETV6,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.5"] = <text = <"t(4;11)(q21.3;q23)(AFF1,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.6"] = <text = <"t(5;12)(q33.1;p13)(PDGFRB,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.7"] = <text = <"t(6;9)(p23;q34)(DEK,NUP214) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.8"] = <text = <"t(8;21)(q22;q22.3)(RUNX1T1,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.9"] = <text = <"t(9;11)(p22;q23)(MLLT3,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.10"] = <text = <"t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.11"] = <text = <"t(10;11)(p12;q23)(MLLT10,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.12"] = <text = <"t(X;11)(q13.1;q23)(FOXO4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.13"] = <text = <"t(1;11)(p32;q23)(EPS15,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.14"] = <text = <"t(3;5)(q25.1;q35.1)(MLF1,NPM1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.15"] = <text = <"t(3;21)(q26;q22.3)(MECOM,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.16"] = <text = <"t(5;17)(q25.1;q21.1)(NPM1,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.17"] = <text = <"t(6;11)(q27;q23)(MLLT4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.18"] = <text = <"t(9;9)(q34;q34)(NUP214,SET) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.19"] = <text = <"t(9;12)(q34.1;p13)(ABL1,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.20"] = <text = <"t(11;17)(q23;q21)(MLL,MLLT6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.21"] = <text = <"t(11;17)(q23;q21.1)(ZBTB16,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.22"] = <text = <"t(11;19)(q23;p13.1)(MLL,ELL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.23"] = <text = <"t(12;22)(p13;q12.1)(ETV6,MN1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.24"] = <text = <"t(16;21)(p11.2;q22.3)(FUS,ERG) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.25"] = <text = <"t(17;19)(q22;p13.3)(HLF,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.26"] = <text = <"Del(1)(p32p32)(STIL,TAL1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+      ["id0.1.1.1.27"] = <text = <"inv(16)(p13.1;q22.1)(MYH11,CBFB) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+        ["at0.0.0.0.1"] = <http://loinc.org/id/72103-5> -- Acute and chronic leukemia fusion transcript panel - Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.1"] = <http://loinc.org/id/21551-7> -- t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.2"] = <http://loinc.org/id/21800-8> -- t(1;19)(q23.3;p13.3)(PBX1,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.3"] = <http://loinc.org/id/21802-4> -- t(11;19)(q23;p13.3)(MLL,MLLT1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.4"] = <http://loinc.org/id/21806-5> -- t(12;21)(p13;q22.3)(ETV6,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.5"] = <http://loinc.org/id/21815-6> -- t(4;11)(q21.3;q23)(AFF1,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/21816-4> -- t(5;12)(q33.1;p13)(PDGFRB,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.7"] = <http://loinc.org/id/21817-2> -- t(6;9)(p23;q34)(DEK,NUP214) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.8"] = <http://loinc.org/id/21819-8> -- t(8;21)(q22;q22.3)(RUNX1T1,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.9"] = <http://loinc.org/id/21820-6> -- t(9;11)(p22;q23)(MLLT3,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.10"] = <http://loinc.org/id/21821-4> -- t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.11"] = <http://loinc.org/id/62203-5> -- t(10;11)(p12;q23)(MLLT10,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.12"] = <http://loinc.org/id/70275-3> -- t(X;11)(q13.1;q23)(FOXO4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.13"] = <http://loinc.org/id/70276-1> -- t(1;11)(p32;q23)(EPS15,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.14"] = <http://loinc.org/id/70277-9> -- t(3;5)(q25.1;q35.1)(MLF1,NPM1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.15"] = <http://loinc.org/id/70278-7> -- t(3;21)(q26;q22.3)(MECOM,RUNX1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.16"] = <http://loinc.org/id/70279-5> -- t(5;17)(q25.1;q21.1)(NPM1,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.17"] = <http://loinc.org/id/70280-3> -- t(6;11)(q27;q23)(MLLT4,MLL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.18"] = <http://loinc.org/id/70281-1> -- t(9;9)(q34;q34)(NUP214,SET) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.19"] = <http://loinc.org/id/70282-9> -- t(9;12)(q34.1;p13)(ABL1,ETV6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.20"] = <http://loinc.org/id/70283-7> -- t(11;17)(q23;q21)(MLL,MLLT6) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.21"] = <http://loinc.org/id/70284-5> -- t(11;17)(q23;q21.1)(ZBTB16,RARA) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.22"] = <http://loinc.org/id/70285-2> -- t(11;19)(q23;p13.1)(MLL,ELL) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.23"] = <http://loinc.org/id/70286-0> -- t(12;22)(p13;q12.1)(ETV6,MN1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.24"] = <http://loinc.org/id/70287-8> -- t(16;21)(p11.2;q22.3)(FUS,ERG) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.25"] = <http://loinc.org/id/70288-6> -- t(17;19)(q22;p13.3)(HLF,TCF3) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.26"] = <http://loinc.org/id/70289-4> -- Del(1)(p32p32)(STIL,TAL1) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+        ["id0.1.1.1.27"] = <http://loinc.org/id/70291-0> -- inv(16)(p13.1;q22.1)(MYH11,CBFB) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method
+      >
+    >
+  >

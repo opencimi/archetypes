@@ -1,0 +1,147 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.lactose_challenge__hydrogen_breath_test__panel_in_exhaled_gas.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Lactose challenge (hydrogen breath test) panel - Exhaled gas' concept">
+        use = <"Use for Lactose challenge (hydrogen breath test) panel - Exhaled gas.">
+        keywords = <"Lactose","challenge","(hydrogen","breath","test)","panel","-","Exhaled","gas">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/50584-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:49">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Lactose challenge (hydrogen breath test) panel - Exhaled gas
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Lactose challenge (hydrogen breath test) panel - Exhaled gas
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.lactose_po__mass__of_dose.v1] occurrences matches {0..1} -- Lactose.PO [Mass] of Dose
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__2_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__2_5_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__3_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_3h_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__pre_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__30_minutes_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__1_hour_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__1_5_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__2_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__2_5_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__3_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__pre_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__30_minutes_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__1_hour_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.methane_per_expired_gas__volume_fraction__in_exhaled_gas__1_5_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_30m_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_1_5h_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_2h_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_pre_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_1h_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.breath_h2_plus_methane_2_5h_p_lac_po.v1] occurrences matches {0..1} -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__45_minutes_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --45 minutes post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__15_minutes_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --15 minutes post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__2_75_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.75 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__2_25_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.25 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__1_75_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.75 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.hydrogen_per_expired_gas__volume_fraction__in_exhaled_gas__1_25_hours_post_dose_lactose_po.v1] occurrences matches {0..1} -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.25 hours post dose lactose PO
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.lactose_challenge__hydrogen_breath_test___interpretation__in_exhaled_gas.v1] occurrences matches {0..1} -- Lactose challenge (hydrogen breath test) [interpretation] in Exhaled gas
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Lactose challenge (hydrogen breath test) panel - Exhaled gas">>
+      ["at0.0.0.0.1"] = <text = <"Lactose challenge (hydrogen breath test) panel - Exhaled gas">>
+      ["id0.1.1.1.1"] = <text = <"Lactose.PO [Mass] of Dose">>
+      ["id0.1.1.1.2"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO">>
+      ["id0.1.1.1.3"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO">>
+      ["id0.1.1.1.4"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO">>
+      ["id0.1.1.1.5"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO">>
+      ["id0.1.1.1.6"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO">>
+      ["id0.1.1.1.7"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO">>
+      ["id0.1.1.1.8"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO">>
+      ["id0.1.1.1.9"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO">>
+      ["id0.1.1.1.10"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO">>
+      ["id0.1.1.1.11"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO">>
+      ["id0.1.1.1.12"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO">>
+      ["id0.1.1.1.13"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO">>
+      ["id0.1.1.1.14"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO">>
+      ["id0.1.1.1.15"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO">>
+      ["id0.1.1.1.16"] = <text = <"Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO">>
+      ["id0.1.1.1.17"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO">>
+      ["id0.1.1.1.18"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO">>
+      ["id0.1.1.1.19"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO">>
+      ["id0.1.1.1.20"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO">>
+      ["id0.1.1.1.21"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO">>
+      ["id0.1.1.1.22"] = <text = <"Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO">>
+      ["id0.1.1.1.23"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --45 minutes post dose lactose PO">>
+      ["id0.1.1.1.24"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --15 minutes post dose lactose PO">>
+      ["id0.1.1.1.25"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.75 hours post dose lactose PO">>
+      ["id0.1.1.1.26"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.25 hours post dose lactose PO">>
+      ["id0.1.1.1.27"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.75 hours post dose lactose PO">>
+      ["id0.1.1.1.28"] = <text = <"Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.25 hours post dose lactose PO">>
+      ["id0.1.1.1.29"] = <text = <"Lactose challenge (hydrogen breath test) [interpretation] in Exhaled gas">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50584-2> -- Lactose challenge (hydrogen breath test) panel - Exhaled gas
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50584-2> -- Lactose challenge (hydrogen breath test) panel - Exhaled gas
+        ["id0.1.1.1.1"] = <http://loinc.org/id/14806-4> -- Lactose.PO [Mass] of Dose
+        ["id0.1.1.1.2"] = <http://loinc.org/id/33480-5> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+        ["id0.1.1.1.3"] = <http://loinc.org/id/33481-3> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+        ["id0.1.1.1.4"] = <http://loinc.org/id/33482-1> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+        ["id0.1.1.1.5"] = <http://loinc.org/id/33489-6> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+        ["id0.1.1.1.6"] = <http://loinc.org/id/33490-4> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+        ["id0.1.1.1.7"] = <http://loinc.org/id/33491-2> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+        ["id0.1.1.1.8"] = <http://loinc.org/id/33492-0> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+        ["id0.1.1.1.9"] = <http://loinc.org/id/33493-8> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+        ["id0.1.1.1.10"] = <http://loinc.org/id/33494-6> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+        ["id0.1.1.1.11"] = <http://loinc.org/id/33495-3> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+        ["id0.1.1.1.12"] = <http://loinc.org/id/33496-1> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --3 hours post dose lactose PO
+        ["id0.1.1.1.13"] = <http://loinc.org/id/33497-9> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+        ["id0.1.1.1.14"] = <http://loinc.org/id/33498-7> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+        ["id0.1.1.1.15"] = <http://loinc.org/id/33499-5> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+        ["id0.1.1.1.16"] = <http://loinc.org/id/33500-0> -- Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+        ["id0.1.1.1.17"] = <http://loinc.org/id/33501-8> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --30 minutes post dose lactose PO
+        ["id0.1.1.1.18"] = <http://loinc.org/id/33502-6> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1.5 hours post dose lactose PO
+        ["id0.1.1.1.19"] = <http://loinc.org/id/33503-4> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2 hours post dose lactose PO
+        ["id0.1.1.1.20"] = <http://loinc.org/id/33504-2> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --pre dose lactose PO
+        ["id0.1.1.1.21"] = <http://loinc.org/id/33505-9> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --1 hour post dose lactose PO
+        ["id0.1.1.1.22"] = <http://loinc.org/id/33506-7> -- Hydrogen+Methane/Expired gas [Volume Fraction] in Exhaled gas --2.5 hours post dose lactose PO
+        ["id0.1.1.1.23"] = <http://loinc.org/id/48612-6> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --45 minutes post dose lactose PO
+        ["id0.1.1.1.24"] = <http://loinc.org/id/48613-4> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --15 minutes post dose lactose PO
+        ["id0.1.1.1.25"] = <http://loinc.org/id/60232-6> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.75 hours post dose lactose PO
+        ["id0.1.1.1.26"] = <http://loinc.org/id/60233-4> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --2.25 hours post dose lactose PO
+        ["id0.1.1.1.27"] = <http://loinc.org/id/60234-2> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.75 hours post dose lactose PO
+        ["id0.1.1.1.28"] = <http://loinc.org/id/60235-9> -- Hydrogen/Expired gas [Volume Fraction] in Exhaled gas --1.25 hours post dose lactose PO
+        ["id0.1.1.1.29"] = <http://loinc.org/id/74803-8> -- Lactose challenge (hydrogen breath test) [interpretation] in Exhaled gas
+      >
+    >
+  >

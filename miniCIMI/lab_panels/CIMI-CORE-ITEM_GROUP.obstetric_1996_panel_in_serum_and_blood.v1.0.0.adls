@@ -1,0 +1,84 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.obstetric_1996_panel_in_serum_and_blood.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Obstetric 1996 panel - Serum and Blood' concept">
+        use = <"Use for Obstetric 1996 panel - Serum and Blood.">
+        keywords = <"Obstetric","1996","panel","-","Serum","Blood">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/24364-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:44">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Obstetric 1996 panel - Serum and Blood
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Obstetric 1996 panel - Serum and Blood
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.rh__type__in_blood.v1] occurrences matches {1} -- Rh [Type] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.reagin_ab__presence__in_serum.v1] occurrences matches {1} -- Reagin Ab [Presence] in Serum
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_surface_ag__presence__in_serum_or_plasma_by_immunoassay.v1] occurrences matches {1} -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.rubella_virus_igg_ab__units_per_volume__in_serum_by_immunoassay.v1] occurrences matches {1} -- Rubella virus IgG Ab [Units/volume] in Serum by Immunoassay
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.hepatitis_b_virus_surface_ag__presence__in_serum_or_plasma_by_confirmatory_method.v1] occurrences matches {0..1} -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.abo_group__type__in_blood.v1] occurrences matches {1} -- ABO group [Type] in Blood
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.blood_group_antibody_screen__presence__in_serum_or_plasma.v1] occurrences matches {1} -- Blood group antibody screen [Presence] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.2.1.1, CIMI-CORE-ITEM_GROUP.complete_blood_count_with_auto_differential_panel.v1] occurrences matches {1} -- CBC W Auto Differential panel - Blood
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Obstetric 1996 panel - Serum and Blood">>
+      ["at0.0.0.0.1"] = <text = <"Obstetric 1996 panel - Serum and Blood">>
+      ["id0.1.1.1.1"] = <text = <"Rh [Type] in Blood">>
+      ["id0.1.1.1.2"] = <text = <"Reagin Ab [Presence] in Serum">>
+      ["id0.1.1.1.3"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay">>
+      ["id0.1.1.1.4"] = <text = <"Rubella virus IgG Ab [Units/volume] in Serum by Immunoassay">>
+      ["id0.1.1.1.5"] = <text = <"Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method">>
+      ["id0.1.1.1.6"] = <text = <"ABO group [Type] in Blood">>
+      ["id0.1.1.1.7"] = <text = <"Blood group antibody screen [Presence] in Serum or Plasma">>
+      ["id0.1.2.1.1"] = <text = <"CBC W Auto Differential panel - Blood">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/24364-2> -- Obstetric 1996 panel - Serum and Blood
+        ["at0.0.0.0.1"] = <http://loinc.org/id/24364-2> -- Obstetric 1996 panel - Serum and Blood
+        ["id0.1.1.1.1"] = <http://loinc.org/id/10331-7> -- Rh [Type] in Blood
+        ["id0.1.1.1.2"] = <http://loinc.org/id/22461-8> -- Reagin Ab [Presence] in Serum
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5196-1> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay
+        ["id0.1.1.1.4"] = <http://loinc.org/id/5334-8> -- Rubella virus IgG Ab [Units/volume] in Serum by Immunoassay
+        ["id0.1.1.1.5"] = <http://loinc.org/id/65633-0> -- Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method
+        ["id0.1.1.1.6"] = <http://loinc.org/id/883-9> -- ABO group [Type] in Blood
+        ["id0.1.1.1.7"] = <http://loinc.org/id/890-4> -- Blood group antibody screen [Presence] in Serum or Plasma
+        ["id0.1.2.1.1"] = <http://loinc.org/id/57021-8> -- CBC W Auto Differential panel - Blood
+      >
+    >
+  >

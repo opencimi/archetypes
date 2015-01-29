@@ -1,0 +1,906 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.bacterial_susceptibility_panel_by_minimum_inhibitory_concentration__mic.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)' concept">
+        use = <"Use for Bacterial susceptibility panel by Minimum inhibitory concentration (MIC).">
+        keywords = <"Bacterial","susceptibility","panel","by","Minimum","inhibitory","concentration","(MIC)">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/50545-3.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:46">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.cefoperazone__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.ceforanide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceforanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.clotrimazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clotrimazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.nystatin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nystatin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.terbinafine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Terbinafine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.cefotaxime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cefotetan__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.cefoxitin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.amikacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.cefpodoxime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefpodoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.cefprozil__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefprozil [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.cefsulodin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefsulodin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.ceftazidime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.ceftizoxime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftizoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.ceftriaxone__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.para_aminosalicylate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Para aminosalicylate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.cefuroxime_parenteral__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.cephalexin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephalexin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.cephaloglycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephaloglycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.cephaloridine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephaloridine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.amoxicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Amoxicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.ethionamide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ethionamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.cephalothin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.rifabutin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rifabutin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.rifabutin_plus_ethambutol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rifabutin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.azithromycin_plus_ethambutol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Azithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.cephapirin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephapirin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.clarithromycin_plus_ethambutol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clarithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.clofazimine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clofazimine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.erythromycin_plus_ethambutol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Erythromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.ethambutol_plus_rifampin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ethambutol+Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.cephradine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephradine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.chloramphenicol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.chlortetracycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Chlortetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.cinoxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cinoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.ciprofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.clarithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clarithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.clindamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.39, CIMI-CORE-ITEM_GROUP.cloxacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.40, CIMI-CORE-ITEM_GROUP.amoxicillin_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.41, CIMI-CORE-ITEM_GROUP.colistimethate_by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Colistimethate by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.42, CIMI-CORE-ITEM_GROUP.levofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Levofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.43, CIMI-CORE-ITEM_GROUP.sparfloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sparfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.44, CIMI-CORE-ITEM_GROUP.cefuroxime_oral__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.45, CIMI-CORE-ITEM_GROUP.colistin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.46, CIMI-CORE-ITEM_GROUP.cyclacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cyclacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.47, CIMI-CORE-ITEM_GROUP.other_antibiotic__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Other Antibiotic [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.48, CIMI-CORE-ITEM_GROUP.cycloserine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cycloserine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.49, CIMI-CORE-ITEM_GROUP.demeclocycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Demeclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.50, CIMI-CORE-ITEM_GROUP.dicloxacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Dicloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.51, CIMI-CORE-ITEM_GROUP.doxycycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Doxycycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.52, CIMI-CORE-ITEM_GROUP.enoxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Enoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.53, CIMI-CORE-ITEM_GROUP.erythromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.54, CIMI-CORE-ITEM_GROUP.cefdinir__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefdinir [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.55, CIMI-CORE-ITEM_GROUP.grepafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Grepafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.56, CIMI-CORE-ITEM_GROUP.quinupristin_plus_dalfopristin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Quinupristin+Dalfopristin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.57, CIMI-CORE-ITEM_GROUP.trovafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Trovafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.58, CIMI-CORE-ITEM_GROUP.erythromycin_plus_sulfisoxazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Erythromycin+Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.59, CIMI-CORE-ITEM_GROUP.amphotericin_b__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Amphotericin B [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.60, CIMI-CORE-ITEM_GROUP.ethambutol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.61, CIMI-CORE-ITEM_GROUP.floxacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Floxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.62, CIMI-CORE-ITEM_GROUP.fluconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Fluconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.63, CIMI-CORE-ITEM_GROUP.5_fluorocytosine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- 5-Fluorocytosine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.64, CIMI-CORE-ITEM_GROUP.fleroxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Fleroxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.65, CIMI-CORE-ITEM_GROUP.itraconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Itraconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.66, CIMI-CORE-ITEM_GROUP.econazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Econazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.67, CIMI-CORE-ITEM_GROUP.fosfomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.68, CIMI-CORE-ITEM_GROUP.josamycine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Josamycine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.69, CIMI-CORE-ITEM_GROUP.miconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Miconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.70, CIMI-CORE-ITEM_GROUP.nitroxoline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nitroxoline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.71, CIMI-CORE-ITEM_GROUP.framycetin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Framycetin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.72, CIMI-CORE-ITEM_GROUP.fusidate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.73, CIMI-CORE-ITEM_GROUP.gentamicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.gramicidin_d__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Gramicidin D [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.75, CIMI-CORE-ITEM_GROUP.hetacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Hetacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.76, CIMI-CORE-ITEM_GROUP.imipenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.77, CIMI-CORE-ITEM_GROUP.ampicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.78, CIMI-CORE-ITEM_GROUP.isoniazid__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Isoniazid [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.79, CIMI-CORE-ITEM_GROUP.kanamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Kanamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.80, CIMI-CORE-ITEM_GROUP.linezolid__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Linezolid [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.81, CIMI-CORE-ITEM_GROUP.ketoconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ketoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.82, CIMI-CORE-ITEM_GROUP.lincomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Lincomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.83, CIMI-CORE-ITEM_GROUP.almecillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Almecillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.84, CIMI-CORE-ITEM_GROUP.lomefloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Lomefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.85, CIMI-CORE-ITEM_GROUP.loracarbef__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Loracarbef [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.86, CIMI-CORE-ITEM_GROUP.gatifloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Gatifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.87, CIMI-CORE-ITEM_GROUP.moxifloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Moxifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.88, CIMI-CORE-ITEM_GROUP.lymecycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Lymecycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.89, CIMI-CORE-ITEM_GROUP.cefotaxime_meningitis__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotaxime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.90, CIMI-CORE-ITEM_GROUP.ceftriaxone_meningitis__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftriaxone.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.91, CIMI-CORE-ITEM_GROUP.cefepime_meningitis__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefepime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.92, CIMI-CORE-ITEM_GROUP.meclocycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Meclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.93, CIMI-CORE-ITEM_GROUP.methacycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Methacycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.94, CIMI-CORE-ITEM_GROUP.ampicillin_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.95, CIMI-CORE-ITEM_GROUP.methicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Methicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.96, CIMI-CORE-ITEM_GROUP.metronidazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Metronidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.97, CIMI-CORE-ITEM_GROUP.mezlocillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Mezlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.98, CIMI-CORE-ITEM_GROUP.minocycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Minocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.99, CIMI-CORE-ITEM_GROUP.miocamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Miocamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.100, CIMI-CORE-ITEM_GROUP.moxalactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Moxalactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.101, CIMI-CORE-ITEM_GROUP.nafcillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nafcillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.102, CIMI-CORE-ITEM_GROUP.nalidixate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nalidixate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.103, CIMI-CORE-ITEM_GROUP.neomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Neomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.104, CIMI-CORE-ITEM_GROUP.avilamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Avilamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.105, CIMI-CORE-ITEM_GROUP.cefditoren__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefditoren [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.106, CIMI-CORE-ITEM_GROUP.cefetamet__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefetamet [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.107, CIMI-CORE-ITEM_GROUP.cefotaxime_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotaxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.108, CIMI-CORE-ITEM_GROUP.cefotiam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotiam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.109, CIMI-CORE-ITEM_GROUP.ceftazidime_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftazidime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.110, CIMI-CORE-ITEM_GROUP.ceftibuten__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftibuten [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.111, CIMI-CORE-ITEM_GROUP.ceftiofur__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftiofur [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.112, CIMI-CORE-ITEM_GROUP.clinafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clinafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.113, CIMI-CORE-ITEM_GROUP.daptomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Daptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.114, CIMI-CORE-ITEM_GROUP.difloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Difloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.115, CIMI-CORE-ITEM_GROUP.dirithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Dirithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.116, CIMI-CORE-ITEM_GROUP.enrofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Enrofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.117, CIMI-CORE-ITEM_GROUP.ertapenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.118, CIMI-CORE-ITEM_GROUP.bambermycins__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Bambermycins [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.119, CIMI-CORE-ITEM_GROUP.florfenicol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Florfenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.120, CIMI-CORE-ITEM_GROUP.garenoxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Garenoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.121, CIMI-CORE-ITEM_GROUP.gemifloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Gemifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.122, CIMI-CORE-ITEM_GROUP.isepamicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Isepamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.123, CIMI-CORE-ITEM_GROUP.mupirocin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Mupirocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.124, CIMI-CORE-ITEM_GROUP.orbifloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Orbifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.125, CIMI-CORE-ITEM_GROUP.pirlimycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pirlimycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.126, CIMI-CORE-ITEM_GROUP.pristinamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pristinamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.127, CIMI-CORE-ITEM_GROUP.salinomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Salinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.128, CIMI-CORE-ITEM_GROUP.telithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Telithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.129, CIMI-CORE-ITEM_GROUP.tiamulin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tiamulin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.130, CIMI-CORE-ITEM_GROUP.tilmicosin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tilmicosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.131, CIMI-CORE-ITEM_GROUP.trospectinomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Trospectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.132, CIMI-CORE-ITEM_GROUP.tylosin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tylosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.133, CIMI-CORE-ITEM_GROUP.virginiamycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Virginiamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.134, CIMI-CORE-ITEM_GROUP.voriconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Voriconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.135, CIMI-CORE-ITEM_GROUP.penicillin_plus_novobiocin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin+Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.136, CIMI-CORE-ITEM_GROUP.netilmicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Netilmicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.137, CIMI-CORE-ITEM_GROUP.azithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.138, CIMI-CORE-ITEM_GROUP.nitrofurantoin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.139, CIMI-CORE-ITEM_GROUP.norfloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Norfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.140, CIMI-CORE-ITEM_GROUP.novobiocin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.141, CIMI-CORE-ITEM_GROUP.ofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.142, CIMI-CORE-ITEM_GROUP.oleandomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Oleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.143, CIMI-CORE-ITEM_GROUP.oxacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.144, CIMI-CORE-ITEM_GROUP.oxytetracycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Oxytetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.145, CIMI-CORE-ITEM_GROUP.pefloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.146, CIMI-CORE-ITEM_GROUP.penicillin_g__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin G [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.147, CIMI-CORE-ITEM_GROUP.penicillin_v__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin V [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.148, CIMI-CORE-ITEM_GROUP.azlocillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Azlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.149, CIMI-CORE-ITEM_GROUP.phenethicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Phenethicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.150, CIMI-CORE-ITEM_GROUP.pipemidate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pipemidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.151, CIMI-CORE-ITEM_GROUP.piperacillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.152, CIMI-CORE-ITEM_GROUP.piperacillin_plus_tazobactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.153, CIMI-CORE-ITEM_GROUP.pivampicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pivampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.154, CIMI-CORE-ITEM_GROUP.abt492__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- ABT492 [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.155, CIMI-CORE-ITEM_GROUP.aztreonam_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Aztreonam+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.156, CIMI-CORE-ITEM_GROUP.biapenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Biapenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.157, CIMI-CORE-ITEM_GROUP.cefotetan_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotetan+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.158, CIMI-CORE-ITEM_GROUP.cefoxitin_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefoxitin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.159, CIMI-CORE-ITEM_GROUP.cefpodoxime_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefpodoxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.160, CIMI-CORE-ITEM_GROUP.ceftriaxone_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftriaxone+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.161, CIMI-CORE-ITEM_GROUP.clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.162, CIMI-CORE-ITEM_GROUP.dalbavancin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Dalbavancin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.163, CIMI-CORE-ITEM_GROUP.everninomicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Everninomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.164, CIMI-CORE-ITEM_GROUP.oritavancin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Oritavancin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.165, CIMI-CORE-ITEM_GROUP.ramoplanin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ramoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.166, CIMI-CORE-ITEM_GROUP.rosamicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rosamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.167, CIMI-CORE-ITEM_GROUP.sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.168, CIMI-CORE-ITEM_GROUP.tazobactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.169, CIMI-CORE-ITEM_GROUP.thiamphenicol__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Thiamphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.170, CIMI-CORE-ITEM_GROUP.polymyxin_b__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Polymyxin B [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.171, CIMI-CORE-ITEM_GROUP.cefepime_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefepime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.172, CIMI-CORE-ITEM_GROUP.tigecycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.173, CIMI-CORE-ITEM_GROUP.pyrazinamide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Pyrazinamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.174, CIMI-CORE-ITEM_GROUP.rifampin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.175, CIMI-CORE-ITEM_GROUP.ristocetin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ristocetin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.176, CIMI-CORE-ITEM_GROUP.ceftobiprole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftobiprole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.177, CIMI-CORE-ITEM_GROUP.rolitetracycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rolitetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.178, CIMI-CORE-ITEM_GROUP.aztreonam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.179, CIMI-CORE-ITEM_GROUP.rosoxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rosoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.180, CIMI-CORE-ITEM_GROUP.roxithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Roxithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.181, CIMI-CORE-ITEM_GROUP.sisomicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sisomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.182, CIMI-CORE-ITEM_GROUP.spectinomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Spectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.183, CIMI-CORE-ITEM_GROUP.spiramycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Spiramycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.184, CIMI-CORE-ITEM_GROUP.streptomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Streptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.185, CIMI-CORE-ITEM_GROUP.sulfadiazine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulfadiazine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.186, CIMI-CORE-ITEM_GROUP.sulfamethoxazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.187, CIMI-CORE-ITEM_GROUP.sulfisoxazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.188, CIMI-CORE-ITEM_GROUP.sulfonamide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulfonamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.189, CIMI-CORE-ITEM_GROUP.bacampicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Bacampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.190, CIMI-CORE-ITEM_GROUP.talampicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Talampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.191, CIMI-CORE-ITEM_GROUP.teicoplanin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Teicoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.192, CIMI-CORE-ITEM_GROUP.temafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Temafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.193, CIMI-CORE-ITEM_GROUP.temocillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Temocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.194, CIMI-CORE-ITEM_GROUP.tetracycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.195, CIMI-CORE-ITEM_GROUP.ticarcillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.196, CIMI-CORE-ITEM_GROUP.ticarcillin_plus_clavulanate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ticarcillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.197, CIMI-CORE-ITEM_GROUP.tobramycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.198, CIMI-CORE-ITEM_GROUP.trimethoprim__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.199, CIMI-CORE-ITEM_GROUP.tmp_smx_islt_mic.v1] occurrences matches {0..1} -- Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.200, CIMI-CORE-ITEM_GROUP.butirosin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Butirosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.201, CIMI-CORE-ITEM_GROUP.troleandomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Troleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.202, CIMI-CORE-ITEM_GROUP.vancomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.203, CIMI-CORE-ITEM_GROUP.viomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Viomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.204, CIMI-CORE-ITEM_GROUP.micafungin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Micafungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.205, CIMI-CORE-ITEM_GROUP.arbekacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Arbekacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.206, CIMI-CORE-ITEM_GROUP.cefozopran__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefozopran [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.207, CIMI-CORE-ITEM_GROUP.flomoxef__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Flomoxef [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.208, CIMI-CORE-ITEM_GROUP.panipenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Panipenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.209, CIMI-CORE-ITEM_GROUP.paromomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Paromomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.210, CIMI-CORE-ITEM_GROUP.cefoperazone_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefoperazone+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.211, CIMI-CORE-ITEM_GROUP.imipenem_plus_edta__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Imipenem+EDTA [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.212, CIMI-CORE-ITEM_GROUP.caspofungin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Caspofungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.213, CIMI-CORE-ITEM_GROUP.posaconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Posaconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.214, CIMI-CORE-ITEM_GROUP.cefotaxime_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotaxime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.215, CIMI-CORE-ITEM_GROUP.mezlocillin_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Mezlocillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.216, CIMI-CORE-ITEM_GROUP.piperacillin_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Piperacillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.217, CIMI-CORE-ITEM_GROUP.griseofulvin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Griseofulvin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.218, CIMI-CORE-ITEM_GROUP.cefmenoxime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefmenoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.219, CIMI-CORE-ITEM_GROUP.thiacetazone__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Thiacetazone [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.220, CIMI-CORE-ITEM_GROUP.penicillin_parenteral__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.221, CIMI-CORE-ITEM_GROUP.penicillin_parenteral_meningitis__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin Parenteral.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.222, CIMI-CORE-ITEM_GROUP.sulopenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sulopenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.223, CIMI-CORE-ITEM_GROUP.linopristin_plus_flopristin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Linopristin+Flopristin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.224, CIMI-CORE-ITEM_GROUP.anidulafungin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Anidulafungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.225, CIMI-CORE-ITEM_GROUP.atovaquone__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Atovaquone [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.226, CIMI-CORE-ITEM_GROUP.cefacetrile__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefacetrile [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.227, CIMI-CORE-ITEM_GROUP.cephalothin_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cephalothin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.228, CIMI-CORE-ITEM_GROUP.cefamandole_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefamandole+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.229, CIMI-CORE-ITEM_GROUP.ceftazidime_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftazidime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.230, CIMI-CORE-ITEM_GROUP.clindamycin_high_potency__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Clindamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.231, CIMI-CORE-ITEM_GROUP.dibekacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Dibekacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.232, CIMI-CORE-ITEM_GROUP.flumequine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Flumequine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.233, CIMI-CORE-ITEM_GROUP.isoconazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Isoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.234, CIMI-CORE-ITEM_GROUP.ornidazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ornidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.235, CIMI-CORE-ITEM_GROUP.oxolinate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Oxolinate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.236, CIMI-CORE-ITEM_GROUP.piromidate__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Piromidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.237, CIMI-CORE-ITEM_GROUP.ticarcillin_plus_sulbactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ticarcillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.238, CIMI-CORE-ITEM_GROUP.tinidazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tinidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.239, CIMI-CORE-ITEM_GROUP.cefotiam_hexetil__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefotiam hexetil [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.240, CIMI-CORE-ITEM_GROUP.capreomycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Capreomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.241, CIMI-CORE-ITEM_GROUP.doripenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Doripenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.242, CIMI-CORE-ITEM_GROUP.carbenicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Carbenicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.243, CIMI-CORE-ITEM_GROUP.cefadroxil__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefadroxil [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.244, CIMI-CORE-ITEM_GROUP.cefepime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.245, CIMI-CORE-ITEM_GROUP.meropenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.246, CIMI-CORE-ITEM_GROUP.cefamandole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefamandole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.247, CIMI-CORE-ITEM_GROUP.bacitracin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Bacitracin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.248, CIMI-CORE-ITEM_GROUP.penicillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.249, CIMI-CORE-ITEM_GROUP.streptomycin_high_potency__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Streptomycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.250, CIMI-CORE-ITEM_GROUP.gentamicin_high_potency__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Gentamicin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.251, CIMI-CORE-ITEM_GROUP.kanamycin_high_potency__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Kanamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.252, CIMI-CORE-ITEM_GROUP.cefatrizine__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefatrizine [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.253, CIMI-CORE-ITEM_GROUP.tizoxanide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tizoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.254, CIMI-CORE-ITEM_GROUP.tedizolid__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Tedizolid [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.255, CIMI-CORE-ITEM_GROUP.solithromycin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Solithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.256, CIMI-CORE-ITEM_GROUP.sarafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Sarafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.257, CIMI-CORE-ITEM_GROUP.rifaximin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Rifaximin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.258, CIMI-CORE-ITEM_GROUP.razupenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Razupenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.259, CIMI-CORE-ITEM_GROUP.premafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Premafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.260, CIMI-CORE-ITEM_GROUP.plazomicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Plazomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.261, CIMI-CORE-ITEM_GROUP.ormetroprim_plus_sulfamethoxazole_islt_mic.v1] occurrences matches {0..1} -- Ormetroprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.262, CIMI-CORE-ITEM_GROUP.omadacycline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Omadacycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.263, CIMI-CORE-ITEM_GROUP.nitazoxanide__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Nitazoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.264, CIMI-CORE-ITEM_GROUP.marbofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Marbofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.265, CIMI-CORE-ITEM_GROUP.iclaprim__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Iclaprim [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.266, CIMI-CORE-ITEM_GROUP.finafloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Finafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.267, CIMI-CORE-ITEM_GROUP.fidaxomicin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Fidaxomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.268, CIMI-CORE-ITEM_GROUP.faropenem__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Faropenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.269, CIMI-CORE-ITEM_GROUP.danofloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Danofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.270, CIMI-CORE-ITEM_GROUP.ceftolozane_plus_tazobactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftolozane+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.271, CIMI-CORE-ITEM_GROUP.ceftazidime_plus_avibactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftazidime+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.272, CIMI-CORE-ITEM_GROUP.ceftaroline_plus_avibactam__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftaroline+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.273, CIMI-CORE-ITEM_GROUP.ceftaroline__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Ceftaroline [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.274, CIMI-CORE-ITEM_GROUP.besifloxacin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Besifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.275, CIMI-CORE-ITEM_GROUP.cefazolin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.276, CIMI-CORE-ITEM_GROUP.amdinocillin__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Amdinocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.277, CIMI-CORE-ITEM_GROUP.cefixime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefixime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.278, CIMI-CORE-ITEM_GROUP.cefpirome__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefpirome [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.279, CIMI-CORE-ITEM_GROUP.cefaclor__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefaclor [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.280, CIMI-CORE-ITEM_GROUP.cefmetazole__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefmetazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.281, CIMI-CORE-ITEM_GROUP.cefodizime__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefodizime [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.1.1.282, CIMI-CORE-ITEM_GROUP.cefonicid__susceptibility__by_minimum_inhibitory_concentration__mic.v1] occurrences matches {0..1} -- Cefonicid [Susceptibility] by Minimum inhibitory concentration (MIC)
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)">>
+      ["at0.0.0.0.1"] = <text = <"Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.1"] = <text = <"Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.2"] = <text = <"Ceforanide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.3"] = <text = <"Clotrimazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.4"] = <text = <"Nystatin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.5"] = <text = <"Terbinafine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.6"] = <text = <"Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.7"] = <text = <"Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.8"] = <text = <"Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.9"] = <text = <"Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.10"] = <text = <"Cefpodoxime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.11"] = <text = <"Cefprozil [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.12"] = <text = <"Cefsulodin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.13"] = <text = <"Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.14"] = <text = <"Ceftizoxime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.15"] = <text = <"Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.16"] = <text = <"Para aminosalicylate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.17"] = <text = <"Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.18"] = <text = <"Cephalexin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.19"] = <text = <"Cephaloglycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.20"] = <text = <"Cephaloridine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.21"] = <text = <"Amoxicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.22"] = <text = <"Ethionamide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.23"] = <text = <"Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.24"] = <text = <"Rifabutin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.25"] = <text = <"Rifabutin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.26"] = <text = <"Azithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.27"] = <text = <"Cephapirin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.28"] = <text = <"Clarithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.29"] = <text = <"Clofazimine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.30"] = <text = <"Erythromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.31"] = <text = <"Ethambutol+Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.32"] = <text = <"Cephradine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.33"] = <text = <"Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.34"] = <text = <"Chlortetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.35"] = <text = <"Cinoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.36"] = <text = <"Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.37"] = <text = <"Clarithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.38"] = <text = <"Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.39"] = <text = <"Cloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.40"] = <text = <"Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.41"] = <text = <"Colistimethate by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.42"] = <text = <"Levofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.43"] = <text = <"Sparfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.44"] = <text = <"Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.45"] = <text = <"Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.46"] = <text = <"Cyclacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.47"] = <text = <"Other Antibiotic [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.48"] = <text = <"Cycloserine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.49"] = <text = <"Demeclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.50"] = <text = <"Dicloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.51"] = <text = <"Doxycycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.52"] = <text = <"Enoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.53"] = <text = <"Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.54"] = <text = <"Cefdinir [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.55"] = <text = <"Grepafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.56"] = <text = <"Quinupristin+Dalfopristin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.57"] = <text = <"Trovafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.58"] = <text = <"Erythromycin+Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.59"] = <text = <"Amphotericin B [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.60"] = <text = <"Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.61"] = <text = <"Floxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.62"] = <text = <"Fluconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.63"] = <text = <"5-Fluorocytosine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.64"] = <text = <"Fleroxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.65"] = <text = <"Itraconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.66"] = <text = <"Econazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.67"] = <text = <"Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.68"] = <text = <"Josamycine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.69"] = <text = <"Miconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.70"] = <text = <"Nitroxoline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.71"] = <text = <"Framycetin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.72"] = <text = <"Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.73"] = <text = <"Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.74"] = <text = <"Gramicidin D [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.75"] = <text = <"Hetacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.76"] = <text = <"Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.77"] = <text = <"Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.78"] = <text = <"Isoniazid [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.79"] = <text = <"Kanamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.80"] = <text = <"Linezolid [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.81"] = <text = <"Ketoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.82"] = <text = <"Lincomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.83"] = <text = <"Almecillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.84"] = <text = <"Lomefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.85"] = <text = <"Loracarbef [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.86"] = <text = <"Gatifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.87"] = <text = <"Moxifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.88"] = <text = <"Lymecycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.89"] = <text = <"Cefotaxime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.90"] = <text = <"Ceftriaxone.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.91"] = <text = <"Cefepime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.92"] = <text = <"Meclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.93"] = <text = <"Methacycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.94"] = <text = <"Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.95"] = <text = <"Methicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.96"] = <text = <"Metronidazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.97"] = <text = <"Mezlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.98"] = <text = <"Minocycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.99"] = <text = <"Miocamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.100"] = <text = <"Moxalactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.101"] = <text = <"Nafcillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.102"] = <text = <"Nalidixate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.103"] = <text = <"Neomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.104"] = <text = <"Avilamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.105"] = <text = <"Cefditoren [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.106"] = <text = <"Cefetamet [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.107"] = <text = <"Cefotaxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.108"] = <text = <"Cefotiam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.109"] = <text = <"Ceftazidime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.110"] = <text = <"Ceftibuten [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.111"] = <text = <"Ceftiofur [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.112"] = <text = <"Clinafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.113"] = <text = <"Daptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.114"] = <text = <"Difloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.115"] = <text = <"Dirithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.116"] = <text = <"Enrofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.117"] = <text = <"Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.118"] = <text = <"Bambermycins [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.119"] = <text = <"Florfenicol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.120"] = <text = <"Garenoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.121"] = <text = <"Gemifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.122"] = <text = <"Isepamicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.123"] = <text = <"Mupirocin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.124"] = <text = <"Orbifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.125"] = <text = <"Pirlimycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.126"] = <text = <"Pristinamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.127"] = <text = <"Salinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.128"] = <text = <"Telithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.129"] = <text = <"Tiamulin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.130"] = <text = <"Tilmicosin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.131"] = <text = <"Trospectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.132"] = <text = <"Tylosin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.133"] = <text = <"Virginiamycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.134"] = <text = <"Voriconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.135"] = <text = <"Penicillin+Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.136"] = <text = <"Netilmicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.137"] = <text = <"Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.138"] = <text = <"Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.139"] = <text = <"Norfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.140"] = <text = <"Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.141"] = <text = <"Ofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.142"] = <text = <"Oleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.143"] = <text = <"Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.144"] = <text = <"Oxytetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.145"] = <text = <"Pefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.146"] = <text = <"Penicillin G [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.147"] = <text = <"Penicillin V [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.148"] = <text = <"Azlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.149"] = <text = <"Phenethicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.150"] = <text = <"Pipemidate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.151"] = <text = <"Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.152"] = <text = <"Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.153"] = <text = <"Pivampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.154"] = <text = <"ABT492 [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.155"] = <text = <"Aztreonam+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.156"] = <text = <"Biapenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.157"] = <text = <"Cefotetan+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.158"] = <text = <"Cefoxitin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.159"] = <text = <"Cefpodoxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.160"] = <text = <"Ceftriaxone+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.161"] = <text = <"Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.162"] = <text = <"Dalbavancin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.163"] = <text = <"Everninomicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.164"] = <text = <"Oritavancin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.165"] = <text = <"Ramoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.166"] = <text = <"Rosamicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.167"] = <text = <"Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.168"] = <text = <"Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.169"] = <text = <"Thiamphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.170"] = <text = <"Polymyxin B [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.171"] = <text = <"Cefepime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.172"] = <text = <"Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.173"] = <text = <"Pyrazinamide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.174"] = <text = <"Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.175"] = <text = <"Ristocetin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.176"] = <text = <"Ceftobiprole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.177"] = <text = <"Rolitetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.178"] = <text = <"Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.179"] = <text = <"Rosoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.180"] = <text = <"Roxithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.181"] = <text = <"Sisomicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.182"] = <text = <"Spectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.183"] = <text = <"Spiramycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.184"] = <text = <"Streptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.185"] = <text = <"Sulfadiazine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.186"] = <text = <"Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.187"] = <text = <"Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.188"] = <text = <"Sulfonamide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.189"] = <text = <"Bacampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.190"] = <text = <"Talampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.191"] = <text = <"Teicoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.192"] = <text = <"Temafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.193"] = <text = <"Temocillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.194"] = <text = <"Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.195"] = <text = <"Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.196"] = <text = <"Ticarcillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.197"] = <text = <"Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.198"] = <text = <"Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.199"] = <text = <"Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.200"] = <text = <"Butirosin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.201"] = <text = <"Troleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.202"] = <text = <"Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.203"] = <text = <"Viomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.204"] = <text = <"Micafungin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.205"] = <text = <"Arbekacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.206"] = <text = <"Cefozopran [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.207"] = <text = <"Flomoxef [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.208"] = <text = <"Panipenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.209"] = <text = <"Paromomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.210"] = <text = <"Cefoperazone+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.211"] = <text = <"Imipenem+EDTA [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.212"] = <text = <"Caspofungin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.213"] = <text = <"Posaconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.214"] = <text = <"Cefotaxime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.215"] = <text = <"Mezlocillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.216"] = <text = <"Piperacillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.217"] = <text = <"Griseofulvin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.218"] = <text = <"Cefmenoxime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.219"] = <text = <"Thiacetazone [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.220"] = <text = <"Penicillin Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.221"] = <text = <"Penicillin Parenteral.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.222"] = <text = <"Sulopenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.223"] = <text = <"Linopristin+Flopristin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.224"] = <text = <"Anidulafungin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.225"] = <text = <"Atovaquone [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.226"] = <text = <"Cefacetrile [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.227"] = <text = <"Cephalothin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.228"] = <text = <"Cefamandole+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.229"] = <text = <"Ceftazidime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.230"] = <text = <"Clindamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.231"] = <text = <"Dibekacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.232"] = <text = <"Flumequine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.233"] = <text = <"Isoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.234"] = <text = <"Ornidazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.235"] = <text = <"Oxolinate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.236"] = <text = <"Piromidate [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.237"] = <text = <"Ticarcillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.238"] = <text = <"Tinidazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.239"] = <text = <"Cefotiam hexetil [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.240"] = <text = <"Capreomycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.241"] = <text = <"Doripenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.242"] = <text = <"Carbenicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.243"] = <text = <"Cefadroxil [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.244"] = <text = <"Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.245"] = <text = <"Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.246"] = <text = <"Cefamandole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.247"] = <text = <"Bacitracin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.248"] = <text = <"Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.249"] = <text = <"Streptomycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.250"] = <text = <"Gentamicin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.251"] = <text = <"Kanamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.252"] = <text = <"Cefatrizine [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.253"] = <text = <"Tizoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.254"] = <text = <"Tedizolid [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.255"] = <text = <"Solithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.256"] = <text = <"Sarafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.257"] = <text = <"Rifaximin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.258"] = <text = <"Razupenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.259"] = <text = <"Premafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.260"] = <text = <"Plazomicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.261"] = <text = <"Ormetroprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.262"] = <text = <"Omadacycline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.263"] = <text = <"Nitazoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.264"] = <text = <"Marbofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.265"] = <text = <"Iclaprim [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.266"] = <text = <"Finafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.267"] = <text = <"Fidaxomicin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.268"] = <text = <"Faropenem [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.269"] = <text = <"Danofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.270"] = <text = <"Ceftolozane+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.271"] = <text = <"Ceftazidime+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.272"] = <text = <"Ceftaroline+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.273"] = <text = <"Ceftaroline [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.274"] = <text = <"Besifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.275"] = <text = <"Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.276"] = <text = <"Amdinocillin [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.277"] = <text = <"Cefixime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.278"] = <text = <"Cefpirome [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.279"] = <text = <"Cefaclor [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.280"] = <text = <"Cefmetazole [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.281"] = <text = <"Cefodizime [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+      ["id0.1.1.1.282"] = <text = <"Cefonicid [Susceptibility] by Minimum inhibitory concentration (MIC)">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/50545-3> -- Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)
+        ["at0.0.0.0.1"] = <http://loinc.org/id/50545-3> -- Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.1"] = <http://loinc.org/id/100-8> -- Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.2"] = <http://loinc.org/id/104-0> -- Ceforanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.3"] = <http://loinc.org/id/10653-4> -- Clotrimazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.4"] = <http://loinc.org/id/10697-1> -- Nystatin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.5"] = <http://loinc.org/id/10720-1> -- Terbinafine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.6"] = <http://loinc.org/id/108-1> -- Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.7"] = <http://loinc.org/id/112-3> -- Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.8"] = <http://loinc.org/id/116-4> -- Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.9"] = <http://loinc.org/id/12-5> -- Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.10"] = <http://loinc.org/id/120-6> -- Cefpodoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.11"] = <http://loinc.org/id/124-8> -- Cefprozil [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.12"] = <http://loinc.org/id/128-9> -- Cefsulodin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.13"] = <http://loinc.org/id/133-9> -- Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.14"] = <http://loinc.org/id/137-0> -- Ceftizoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.15"] = <http://loinc.org/id/141-2> -- Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.16"] = <http://loinc.org/id/14332-1> -- Para aminosalicylate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.17"] = <http://loinc.org/id/145-3> -- Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.18"] = <http://loinc.org/id/149-5> -- Cephalexin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.19"] = <http://loinc.org/id/153-7> -- Cephaloglycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.20"] = <http://loinc.org/id/157-8> -- Cephaloridine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.21"] = <http://loinc.org/id/16-6> -- Amoxicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.22"] = <http://loinc.org/id/16099-4> -- Ethionamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.23"] = <http://loinc.org/id/161-0> -- Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.24"] = <http://loinc.org/id/16100-0> -- Rifabutin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.25"] = <http://loinc.org/id/16387-3> -- Rifabutin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.26"] = <http://loinc.org/id/16421-0> -- Azithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.27"] = <http://loinc.org/id/165-1> -- Cephapirin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.28"] = <http://loinc.org/id/16620-7> -- Clarithromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.29"] = <http://loinc.org/id/16623-1> -- Clofazimine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.30"] = <http://loinc.org/id/16830-2> -- Erythromycin+Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.31"] = <http://loinc.org/id/16841-9> -- Ethambutol+Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.32"] = <http://loinc.org/id/169-3> -- Cephradine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.33"] = <http://loinc.org/id/173-5> -- Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.34"] = <http://loinc.org/id/177-6> -- Chlortetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.35"] = <http://loinc.org/id/181-8> -- Cinoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.36"] = <http://loinc.org/id/185-9> -- Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.37"] = <http://loinc.org/id/189-1> -- Clarithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.38"] = <http://loinc.org/id/193-3> -- Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.39"] = <http://loinc.org/id/197-4> -- Cloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.40"] = <http://loinc.org/id/20-8> -- Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.41"] = <http://loinc.org/id/201-4> -- Colistimethate by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.42"] = <http://loinc.org/id/20396-8> -- Levofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.43"] = <http://loinc.org/id/20397-6> -- Sparfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.44"] = <http://loinc.org/id/20460-2> -- Cefuroxime Oral [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.45"] = <http://loinc.org/id/205-5> -- Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.46"] = <http://loinc.org/id/209-7> -- Cyclacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.47"] = <http://loinc.org/id/21070-8> -- Other Antibiotic [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.48"] = <http://loinc.org/id/213-9> -- Cycloserine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.49"] = <http://loinc.org/id/217-0> -- Demeclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.50"] = <http://loinc.org/id/221-2> -- Dicloxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.51"] = <http://loinc.org/id/225-3> -- Doxycycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.52"] = <http://loinc.org/id/229-5> -- Enoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.53"] = <http://loinc.org/id/233-7> -- Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.54"] = <http://loinc.org/id/23637-2> -- Cefdinir [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.55"] = <http://loinc.org/id/23639-8> -- Grepafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.56"] = <http://loinc.org/id/23641-4> -- Quinupristin+Dalfopristin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.57"] = <http://loinc.org/id/23643-0> -- Trovafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.58"] = <http://loinc.org/id/237-8> -- Erythromycin+Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.59"] = <http://loinc.org/id/24-0> -- Amphotericin B [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.60"] = <http://loinc.org/id/241-0> -- Ethambutol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.61"] = <http://loinc.org/id/245-1> -- Floxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.62"] = <http://loinc.org/id/249-3> -- Fluconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.63"] = <http://loinc.org/id/253-5> -- 5-Fluorocytosine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.64"] = <http://loinc.org/id/25411-0> -- Fleroxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.65"] = <http://loinc.org/id/25452-4> -- Itraconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.66"] = <http://loinc.org/id/25637-0> -- Econazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.67"] = <http://loinc.org/id/25653-7> -- Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.68"] = <http://loinc.org/id/25702-2> -- Josamycine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.69"] = <http://loinc.org/id/25722-0> -- Miconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.70"] = <http://loinc.org/id/25723-8> -- Nitroxoline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.71"] = <http://loinc.org/id/258-4> -- Framycetin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.72"] = <http://loinc.org/id/262-6> -- Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.73"] = <http://loinc.org/id/267-5> -- Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.74"] = <http://loinc.org/id/271-7> -- Gramicidin D [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.75"] = <http://loinc.org/id/275-8> -- Hetacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.76"] = <http://loinc.org/id/279-0> -- Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.77"] = <http://loinc.org/id/28-1> -- Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.78"] = <http://loinc.org/id/287-3> -- Isoniazid [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.79"] = <http://loinc.org/id/291-5> -- Kanamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.80"] = <http://loinc.org/id/29254-0> -- Linezolid [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.81"] = <http://loinc.org/id/295-6> -- Ketoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.82"] = <http://loinc.org/id/299-8> -- Lincomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.83"] = <http://loinc.org/id/3-4> -- Almecillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.84"] = <http://loinc.org/id/303-8> -- Lomefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.85"] = <http://loinc.org/id/307-9> -- Loracarbef [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.86"] = <http://loinc.org/id/31036-7> -- Gatifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.87"] = <http://loinc.org/id/31037-5> -- Moxifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.88"] = <http://loinc.org/id/311-1> -- Lymecycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.89"] = <http://loinc.org/id/31138-1> -- Cefotaxime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.90"] = <http://loinc.org/id/31140-7> -- Ceftriaxone.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.91"] = <http://loinc.org/id/31142-3> -- Cefepime.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.92"] = <http://loinc.org/id/315-2> -- Meclocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.93"] = <http://loinc.org/id/319-4> -- Methacycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.94"] = <http://loinc.org/id/32-3> -- Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.95"] = <http://loinc.org/id/323-6> -- Methicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.96"] = <http://loinc.org/id/327-7> -- Metronidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.97"] = <http://loinc.org/id/331-9> -- Mezlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.98"] = <http://loinc.org/id/335-0> -- Minocycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.99"] = <http://loinc.org/id/339-2> -- Miocamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.100"] = <http://loinc.org/id/343-4> -- Moxalactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.101"] = <http://loinc.org/id/347-5> -- Nafcillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.102"] = <http://loinc.org/id/351-7> -- Nalidixate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.103"] = <http://loinc.org/id/355-8> -- Neomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.104"] = <http://loinc.org/id/35755-8> -- Avilamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.105"] = <http://loinc.org/id/35761-6> -- Cefditoren [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.106"] = <http://loinc.org/id/35765-7> -- Cefetamet [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.107"] = <http://loinc.org/id/35770-7> -- Cefotaxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.108"] = <http://loinc.org/id/35773-1> -- Cefotiam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.109"] = <http://loinc.org/id/35775-6> -- Ceftazidime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.110"] = <http://loinc.org/id/35778-0> -- Ceftibuten [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.111"] = <http://loinc.org/id/35781-4> -- Ceftiofur [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.112"] = <http://loinc.org/id/35786-3> -- Clinafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.113"] = <http://loinc.org/id/35788-9> -- Daptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.114"] = <http://loinc.org/id/35791-3> -- Difloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.115"] = <http://loinc.org/id/35794-7> -- Dirithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.116"] = <http://loinc.org/id/35798-8> -- Enrofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.117"] = <http://loinc.org/id/35801-0> -- Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.118"] = <http://loinc.org/id/35804-4> -- Bambermycins [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.119"] = <http://loinc.org/id/35808-5> -- Florfenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.120"] = <http://loinc.org/id/35812-7> -- Garenoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.121"] = <http://loinc.org/id/35815-0> -- Gemifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.122"] = <http://loinc.org/id/35821-8> -- Isepamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.123"] = <http://loinc.org/id/35823-4> -- Mupirocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.124"] = <http://loinc.org/id/35826-7> -- Orbifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.125"] = <http://loinc.org/id/35830-9> -- Pirlimycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.126"] = <http://loinc.org/id/35834-1> -- Pristinamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.127"] = <http://loinc.org/id/35837-4> -- Salinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.128"] = <http://loinc.org/id/35844-0> -- Telithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.129"] = <http://loinc.org/id/35847-3> -- Tiamulin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.130"] = <http://loinc.org/id/35850-7> -- Tilmicosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.131"] = <http://loinc.org/id/35853-1> -- Trospectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.132"] = <http://loinc.org/id/35857-2> -- Tylosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.133"] = <http://loinc.org/id/35860-6> -- Virginiamycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.134"] = <http://loinc.org/id/35863-0> -- Voriconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.135"] = <http://loinc.org/id/35873-9> -- Penicillin+Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.136"] = <http://loinc.org/id/359-0> -- Netilmicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.137"] = <http://loinc.org/id/36-4> -- Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.138"] = <http://loinc.org/id/363-2> -- Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.139"] = <http://loinc.org/id/367-3> -- Norfloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.140"] = <http://loinc.org/id/371-5> -- Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.141"] = <http://loinc.org/id/375-6> -- Ofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.142"] = <http://loinc.org/id/379-8> -- Oleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.143"] = <http://loinc.org/id/383-0> -- Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.144"] = <http://loinc.org/id/387-1> -- Oxytetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.145"] = <http://loinc.org/id/390-5> -- Pefloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.146"] = <http://loinc.org/id/392-1> -- Penicillin G [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.147"] = <http://loinc.org/id/396-2> -- Penicillin V [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.148"] = <http://loinc.org/id/40-6> -- Azlocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.149"] = <http://loinc.org/id/400-2> -- Phenethicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.150"] = <http://loinc.org/id/404-4> -- Pipemidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.151"] = <http://loinc.org/id/408-5> -- Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.152"] = <http://loinc.org/id/412-7> -- Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.153"] = <http://loinc.org/id/416-8> -- Pivampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.154"] = <http://loinc.org/id/41658-6> -- ABT492 [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.155"] = <http://loinc.org/id/41662-8> -- Aztreonam+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.156"] = <http://loinc.org/id/41665-1> -- Biapenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.157"] = <http://loinc.org/id/41672-7> -- Cefotetan+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.158"] = <http://loinc.org/id/41675-0> -- Cefoxitin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.159"] = <http://loinc.org/id/41679-2> -- Cefpodoxime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.160"] = <http://loinc.org/id/41681-8> -- Ceftriaxone+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.161"] = <http://loinc.org/id/41687-5> -- Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.162"] = <http://loinc.org/id/41689-1> -- Dalbavancin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.163"] = <http://loinc.org/id/41694-1> -- Everninomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.164"] = <http://loinc.org/id/41708-9> -- Oritavancin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.165"] = <http://loinc.org/id/41710-5> -- Ramoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.166"] = <http://loinc.org/id/41713-9> -- Rosamicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.167"] = <http://loinc.org/id/41718-8> -- Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.168"] = <http://loinc.org/id/41721-2> -- Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.169"] = <http://loinc.org/id/41725-3> -- Thiamphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.170"] = <http://loinc.org/id/420-0> -- Polymyxin B [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.171"] = <http://loinc.org/id/42351-7> -- Cefepime+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.172"] = <http://loinc.org/id/42355-8> -- Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.173"] = <http://loinc.org/id/424-2> -- Pyrazinamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.174"] = <http://loinc.org/id/428-3> -- Rifampin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.175"] = <http://loinc.org/id/432-5> -- Ristocetin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.176"] = <http://loinc.org/id/43271-6> -- Ceftobiprole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.177"] = <http://loinc.org/id/436-6> -- Rolitetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.178"] = <http://loinc.org/id/44-8> -- Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.179"] = <http://loinc.org/id/440-8> -- Rosoxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.180"] = <http://loinc.org/id/444-0> -- Roxithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.181"] = <http://loinc.org/id/448-1> -- Sisomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.182"] = <http://loinc.org/id/452-3> -- Spectinomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.183"] = <http://loinc.org/id/456-4> -- Spiramycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.184"] = <http://loinc.org/id/460-6> -- Streptomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.185"] = <http://loinc.org/id/464-8> -- Sulfadiazine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.186"] = <http://loinc.org/id/468-9> -- Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.187"] = <http://loinc.org/id/472-1> -- Sulfisoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.188"] = <http://loinc.org/id/476-2> -- Sulfonamide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.189"] = <http://loinc.org/id/48-9> -- Bacampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.190"] = <http://loinc.org/id/480-4> -- Talampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.191"] = <http://loinc.org/id/484-6> -- Teicoplanin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.192"] = <http://loinc.org/id/488-7> -- Temafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.193"] = <http://loinc.org/id/492-9> -- Temocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.194"] = <http://loinc.org/id/496-0> -- Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.195"] = <http://loinc.org/id/500-9> -- Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.196"] = <http://loinc.org/id/504-1> -- Ticarcillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.197"] = <http://loinc.org/id/508-2> -- Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.198"] = <http://loinc.org/id/512-4> -- Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.199"] = <http://loinc.org/id/516-5> -- Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.200"] = <http://loinc.org/id/52-1> -- Butirosin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.201"] = <http://loinc.org/id/520-7> -- Troleandomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.202"] = <http://loinc.org/id/524-9> -- Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.203"] = <http://loinc.org/id/528-0> -- Viomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.204"] = <http://loinc.org/id/53812-4> -- Micafungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.205"] = <http://loinc.org/id/53818-1> -- Arbekacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.206"] = <http://loinc.org/id/53820-7> -- Cefozopran [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.207"] = <http://loinc.org/id/53822-3> -- Flomoxef [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.208"] = <http://loinc.org/id/53823-1> -- Panipenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.209"] = <http://loinc.org/id/53824-9> -- Paromomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.210"] = <http://loinc.org/id/54167-2> -- Cefoperazone+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.211"] = <http://loinc.org/id/54171-4> -- Imipenem+EDTA [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.212"] = <http://loinc.org/id/54176-3> -- Caspofungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.213"] = <http://loinc.org/id/54187-0> -- Posaconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.214"] = <http://loinc.org/id/54192-0> -- Cefotaxime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.215"] = <http://loinc.org/id/54195-3> -- Mezlocillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.216"] = <http://loinc.org/id/54198-7> -- Piperacillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.217"] = <http://loinc.org/id/54201-9> -- Griseofulvin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.218"] = <http://loinc.org/id/54203-5> -- Cefmenoxime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.219"] = <http://loinc.org/id/54204-3> -- Thiacetazone [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.220"] = <http://loinc.org/id/55136-6> -- Penicillin Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.221"] = <http://loinc.org/id/55137-4> -- Penicillin Parenteral.meningitis [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.222"] = <http://loinc.org/id/55290-1> -- Sulopenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.223"] = <http://loinc.org/id/55293-5> -- Linopristin+Flopristin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.224"] = <http://loinc.org/id/55343-8> -- Anidulafungin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.225"] = <http://loinc.org/id/55618-3> -- Atovaquone [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.226"] = <http://loinc.org/id/55624-1> -- Cefacetrile [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.227"] = <http://loinc.org/id/55630-8> -- Cephalothin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.228"] = <http://loinc.org/id/55634-0> -- Cefamandole+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.229"] = <http://loinc.org/id/55648-0> -- Ceftazidime+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.230"] = <http://loinc.org/id/55660-5> -- Clindamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.231"] = <http://loinc.org/id/55669-6> -- Dibekacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.232"] = <http://loinc.org/id/55675-3> -- Flumequine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.233"] = <http://loinc.org/id/55681-1> -- Isoconazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.234"] = <http://loinc.org/id/55694-4> -- Ornidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.235"] = <http://loinc.org/id/55695-1> -- Oxolinate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.236"] = <http://loinc.org/id/55705-8> -- Piromidate [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.237"] = <http://loinc.org/id/55716-5> -- Ticarcillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.238"] = <http://loinc.org/id/55720-7> -- Tinidazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.239"] = <http://loinc.org/id/55737-1> -- Cefotiam hexetil [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.240"] = <http://loinc.org/id/56-2> -- Capreomycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.241"] = <http://loinc.org/id/56031-8> -- Doripenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.242"] = <http://loinc.org/id/60-4> -- Carbenicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.243"] = <http://loinc.org/id/64-6> -- Cefadroxil [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.244"] = <http://loinc.org/id/6644-9> -- Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.245"] = <http://loinc.org/id/6652-2> -- Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.246"] = <http://loinc.org/id/68-7> -- Cefamandole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.247"] = <http://loinc.org/id/6827-0> -- Bacitracin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.248"] = <http://loinc.org/id/6932-8> -- Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.249"] = <http://loinc.org/id/6933-6> -- Streptomycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.250"] = <http://loinc.org/id/7018-5> -- Gentamicin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.251"] = <http://loinc.org/id/7024-3> -- Kanamycin.high potency [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.252"] = <http://loinc.org/id/72-9> -- Cefatrizine [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.253"] = <http://loinc.org/id/73607-4> -- Tizoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.254"] = <http://loinc.org/id/73608-2> -- Tedizolid [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.255"] = <http://loinc.org/id/73609-0> -- Solithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.256"] = <http://loinc.org/id/73610-8> -- Sarafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.257"] = <http://loinc.org/id/73611-6> -- Rifaximin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.258"] = <http://loinc.org/id/73612-4> -- Razupenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.259"] = <http://loinc.org/id/73613-2> -- Premafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.260"] = <http://loinc.org/id/73614-0> -- Plazomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.261"] = <http://loinc.org/id/73615-7> -- Ormetroprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.262"] = <http://loinc.org/id/73616-5> -- Omadacycline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.263"] = <http://loinc.org/id/73617-3> -- Nitazoxanide [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.264"] = <http://loinc.org/id/73618-1> -- Marbofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.265"] = <http://loinc.org/id/73619-9> -- Iclaprim [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.266"] = <http://loinc.org/id/73620-7> -- Finafloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.267"] = <http://loinc.org/id/73621-5> -- Fidaxomicin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.268"] = <http://loinc.org/id/73622-3> -- Faropenem [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.269"] = <http://loinc.org/id/73623-1> -- Danofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.270"] = <http://loinc.org/id/73624-9> -- Ceftolozane+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.271"] = <http://loinc.org/id/73625-6> -- Ceftazidime+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.272"] = <http://loinc.org/id/73626-4> -- Ceftaroline+Avibactam [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.273"] = <http://loinc.org/id/73627-2> -- Ceftaroline [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.274"] = <http://loinc.org/id/73628-0> -- Besifloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.275"] = <http://loinc.org/id/76-0> -- Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.276"] = <http://loinc.org/id/8-3> -- Amdinocillin [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.277"] = <http://loinc.org/id/80-2> -- Cefixime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.278"] = <http://loinc.org/id/8275-0> -- Cefpirome [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.279"] = <http://loinc.org/id/84-4> -- Cefaclor [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.280"] = <http://loinc.org/id/88-5> -- Cefmetazole [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.281"] = <http://loinc.org/id/92-7> -- Cefodizime [Susceptibility] by Minimum inhibitory concentration (MIC)
+        ["id0.1.1.1.282"] = <http://loinc.org/id/96-8> -- Cefonicid [Susceptibility] by Minimum inhibitory concentration (MIC)
+      >
+    >
+  >

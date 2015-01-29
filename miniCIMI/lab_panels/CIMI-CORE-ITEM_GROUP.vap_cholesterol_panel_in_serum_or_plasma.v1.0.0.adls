@@ -1,0 +1,126 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.vap_cholesterol_panel_in_serum_or_plasma.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'VAP cholesterol panel - Serum or Plasma' concept">
+        use = <"Use for VAP cholesterol panel - Serum or Plasma.">
+        keywords = <"VAP","cholesterol","panel","-","Serum","or","Plasma">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/53575-7.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:49">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- VAP cholesterol panel - Serum or Plasma
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- VAP cholesterol panel - Serum or Plasma
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.cholesterol_in_ldl__mass_per_volume__in_serum_or_plasma_by_direct_assay.v1] occurrences matches {1} -- Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.apolipoprotein_a_i__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Apolipoprotein A-I [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.apolipoprotein_b_100__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Apolipoprotein B-100 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.cholesterol_in_hdl__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in HDL [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.cholesterol_in_idl__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in IDL [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.cholesterol_in_vldl__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in VLDL [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cholesterol__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.triglyceride__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Triglyceride [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.cholesterol__in_lipoprotein__a___mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol. in Lipoprotein (a) [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.ldl_1__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- LDL 1 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.ldl_4__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- LDL 4 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.cholesterol_non_hdl__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol non HDL [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.ldl_2__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- LDL 2 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.ldl_3__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- LDL 3 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.cholesterol_in_vldl_3__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.cholesterol_in_ldl_real_size_pattern__identifier__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in LDL real size pattern [Identifier] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.lipid_risk_factors__finding.v1] occurrences matches {1} -- Lipid risk factors [Finding]
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.cholesterol_in_vldl_1_plus_2__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in VLDL 1+2 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.cholesterol_in_idl_plus_cholesterol_in_vldl_3__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in IDL+Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.cholesterol_in_ldl__real___mass_per_volume__in_serum_or_plasma_by_vap.v1] occurrences matches {1} -- Cholesterol.in LDL (real) [Mass/volume] in Serum or Plasma by VAP
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.cholesterol_in_hdl_2__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.cholesterol_in_hdl_3__mass_per_volume__in_serum_or_plasma.v1] occurrences matches {1} -- Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"VAP cholesterol panel - Serum or Plasma">>
+      ["at0.0.0.0.1"] = <text = <"VAP cholesterol panel - Serum or Plasma">>
+      ["id0.1.1.1.1"] = <text = <"Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay">>
+      ["id0.1.1.1.2"] = <text = <"Apolipoprotein A-I [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.3"] = <text = <"Apolipoprotein B-100 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.4"] = <text = <"Cholesterol in HDL [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.5"] = <text = <"Cholesterol in IDL [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.6"] = <text = <"Cholesterol in VLDL [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.7"] = <text = <"Cholesterol [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.8"] = <text = <"Triglyceride [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.9"] = <text = <"Cholesterol. in Lipoprotein (a) [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.10"] = <text = <"LDL 1 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.11"] = <text = <"LDL 4 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.12"] = <text = <"Cholesterol non HDL [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.13"] = <text = <"LDL 2 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.14"] = <text = <"LDL 3 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.15"] = <text = <"Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.16"] = <text = <"Cholesterol in LDL real size pattern [Identifier] in Serum or Plasma">>
+      ["id0.1.1.1.17"] = <text = <"Lipid risk factors [Finding]">>
+      ["id0.1.1.1.18"] = <text = <"Cholesterol in VLDL 1+2 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.19"] = <text = <"Cholesterol in IDL+Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.20"] = <text = <"Cholesterol.in LDL (real) [Mass/volume] in Serum or Plasma by VAP">>
+      ["id0.1.1.1.21"] = <text = <"Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma">>
+      ["id0.1.1.1.22"] = <text = <"Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/53575-7> -- VAP cholesterol panel - Serum or Plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/53575-7> -- VAP cholesterol panel - Serum or Plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/18262-6> -- Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay
+        ["id0.1.1.1.2"] = <http://loinc.org/id/1869-7> -- Apolipoprotein A-I [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/1871-3> -- Apolipoprotein B-100 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/2085-9> -- Cholesterol in HDL [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/2087-5> -- Cholesterol in IDL [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.6"] = <http://loinc.org/id/2091-7> -- Cholesterol in VLDL [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.7"] = <http://loinc.org/id/2093-3> -- Cholesterol [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.8"] = <http://loinc.org/id/2571-8> -- Triglyceride [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.9"] = <http://loinc.org/id/35388-8> -- Cholesterol. in Lipoprotein (a) [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.10"] = <http://loinc.org/id/43392-0> -- LDL 1 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.11"] = <http://loinc.org/id/43393-8> -- LDL 4 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.12"] = <http://loinc.org/id/43396-1> -- Cholesterol non HDL [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.13"] = <http://loinc.org/id/46984-1> -- LDL 2 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.14"] = <http://loinc.org/id/46985-8> -- LDL 3 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.15"] = <http://loinc.org/id/46986-6> -- Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.16"] = <http://loinc.org/id/47213-4> -- Cholesterol in LDL real size pattern [Identifier] in Serum or Plasma
+        ["id0.1.1.1.17"] = <http://loinc.org/id/49062-3> -- Lipid risk factors [Finding]
+        ["id0.1.1.1.18"] = <http://loinc.org/id/49624-0> -- Cholesterol in VLDL 1+2 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.19"] = <http://loinc.org/id/50194-0> -- Cholesterol in IDL+Cholesterol in VLDL 3 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.20"] = <http://loinc.org/id/55440-2> -- Cholesterol.in LDL (real) [Mass/volume] in Serum or Plasma by VAP
+        ["id0.1.1.1.21"] = <http://loinc.org/id/9832-7> -- Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma
+        ["id0.1.1.1.22"] = <http://loinc.org/id/9833-5> -- Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma
+      >
+    >
+  >

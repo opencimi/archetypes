@@ -1,0 +1,96 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.centers_for_environmental_health_trace_metals_screen_panel__mass_per_volume__in_urine.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine' concept">
+        use = <"Use for Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine.">
+        keywords = <"Centers","for","Environmental","Health","trace","metals","screen","panel","[Mass/volume]","-","Urine">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/55117-6.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:50">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.tungsten__mass_per_volume__in_urine.v1] occurrences matches {1} -- Tungsten [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.antimony__mass_per_volume__in_urine.v1] occurrences matches {1} -- Antimony [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.barium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Barium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.beryllium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Beryllium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.cadmium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Cadmium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.cesium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Cesium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.cobalt__mass_per_volume__in_urine.v1] occurrences matches {1} -- Cobalt [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.lead__mass_per_volume__in_urine.v1] occurrences matches {1} -- Lead [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.molybdenum__mass_per_volume__in_urine.v1] occurrences matches {1} -- Molybdenum [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.platinum__mass_per_volume__in_urine.v1] occurrences matches {1} -- Platinum [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.thallium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Thallium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.uranium__mass_per_volume__in_urine.v1] occurrences matches {1} -- Uranium [Mass/volume] in Urine
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine">>
+      ["at0.0.0.0.1"] = <text = <"Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine">>
+      ["id0.1.1.1.1"] = <text = <"Tungsten [Mass/volume] in Urine">>
+      ["id0.1.1.1.2"] = <text = <"Antimony [Mass/volume] in Urine">>
+      ["id0.1.1.1.3"] = <text = <"Barium [Mass/volume] in Urine">>
+      ["id0.1.1.1.4"] = <text = <"Beryllium [Mass/volume] in Urine">>
+      ["id0.1.1.1.5"] = <text = <"Cadmium [Mass/volume] in Urine">>
+      ["id0.1.1.1.6"] = <text = <"Cesium [Mass/volume] in Urine">>
+      ["id0.1.1.1.7"] = <text = <"Cobalt [Mass/volume] in Urine">>
+      ["id0.1.1.1.8"] = <text = <"Lead [Mass/volume] in Urine">>
+      ["id0.1.1.1.9"] = <text = <"Molybdenum [Mass/volume] in Urine">>
+      ["id0.1.1.1.10"] = <text = <"Platinum [Mass/volume] in Urine">>
+      ["id0.1.1.1.11"] = <text = <"Thallium [Mass/volume] in Urine">>
+      ["id0.1.1.1.12"] = <text = <"Uranium [Mass/volume] in Urine">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/55117-6> -- Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/55117-6> -- Centers for Environmental Health trace metals screen panel [Mass/volume] - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/54941-0> -- Tungsten [Mass/volume] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5581-4> -- Antimony [Mass/volume] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5590-5> -- Barium [Mass/volume] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/5595-4> -- Beryllium [Mass/volume] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/5611-9> -- Cadmium [Mass/volume] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/5618-4> -- Cesium [Mass/volume] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/5628-3> -- Cobalt [Mass/volume] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/5676-2> -- Lead [Mass/volume] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/5699-4> -- Molybdenum [Mass/volume] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/5715-8> -- Platinum [Mass/volume] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/5745-5> -- Thallium [Mass/volume] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/5752-1> -- Uranium [Mass/volume] in Urine
+      >
+    >
+  >

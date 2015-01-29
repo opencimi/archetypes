@@ -1,0 +1,75 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.platelet_aggregation_panel_in_platelet_rich_plasma.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Platelet aggregation panel - Platelet rich plasma' concept">
+        use = <"Use for Platelet aggregation panel - Platelet rich plasma.">
+        keywords = <"Platelet","aggregation","panel","-","Platelet","rich","plasma">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/48805-6.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:45">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Platelet aggregation panel - Platelet rich plasma
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Platelet aggregation panel - Platelet rich plasma
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.platelet_aggregation__interpretation__in_platelet_poor_plasma.v1] occurrences matches {0..1} -- Platelet aggregation [interpretation] in Platelet poor plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.platelet_aggregation_adp_induced__substance_threshold__in_platelet_rich_plasma.v1] occurrences matches {1} -- Platelet aggregation ADP induced [Substance threshold] in Platelet rich plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.platelet_aggregation_arachidonate_induced__substance_threshold__in_platelet_rich_plasma.v1] occurrences matches {1} -- Platelet aggregation arachidonate induced [Substance threshold] in Platelet rich plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.platelet_aggregation_collagen_induced__mass_threshold__in_platelet_rich_plasma.v1] occurrences matches {1} -- Platelet aggregation collagen induced [Mass threshold] in Platelet rich plasma
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.platelet_aggregation_ristocetin_induced__mass_threshold__in_platelet_rich_plasma.v1] occurrences matches {1} -- Platelet aggregation ristocetin induced [Mass threshold] in Platelet rich plasma
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Platelet aggregation panel - Platelet rich plasma">>
+      ["at0.0.0.0.1"] = <text = <"Platelet aggregation panel - Platelet rich plasma">>
+      ["id0.1.1.1.1"] = <text = <"Platelet aggregation [interpretation] in Platelet poor plasma">>
+      ["id0.1.1.1.2"] = <text = <"Platelet aggregation ADP induced [Substance threshold] in Platelet rich plasma">>
+      ["id0.1.1.1.3"] = <text = <"Platelet aggregation arachidonate induced [Substance threshold] in Platelet rich plasma">>
+      ["id0.1.1.1.4"] = <text = <"Platelet aggregation collagen induced [Mass threshold] in Platelet rich plasma">>
+      ["id0.1.1.1.5"] = <text = <"Platelet aggregation ristocetin induced [Mass threshold] in Platelet rich plasma">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48805-6> -- Platelet aggregation panel - Platelet rich plasma
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48805-6> -- Platelet aggregation panel - Platelet rich plasma
+        ["id0.1.1.1.1"] = <http://loinc.org/id/21027-8> -- Platelet aggregation [interpretation] in Platelet poor plasma
+        ["id0.1.1.1.2"] = <http://loinc.org/id/5992-3> -- Platelet aggregation ADP induced [Substance threshold] in Platelet rich plasma
+        ["id0.1.1.1.3"] = <http://loinc.org/id/5993-1> -- Platelet aggregation arachidonate induced [Substance threshold] in Platelet rich plasma
+        ["id0.1.1.1.4"] = <http://loinc.org/id/5995-6> -- Platelet aggregation collagen induced [Mass threshold] in Platelet rich plasma
+        ["id0.1.1.1.5"] = <http://loinc.org/id/5998-0> -- Platelet aggregation ristocetin induced [Mass threshold] in Platelet rich plasma
+      >
+    >
+  >

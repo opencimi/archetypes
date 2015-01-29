@@ -1,0 +1,291 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.organic_acids_panel_in_urine.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Organic acids panel - Urine' concept">
+        use = <"Use for Organic acids panel - Urine.">
+        keywords = <"Organic","acids","panel","-","Urine">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/48797-5.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-01-20T22:53:45">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Organic acids panel - Urine
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Organic acids panel - Urine
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.orotate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Orotate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.homovanillate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Homovanillate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.3_methylcrotonylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Methylcrotonylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.hexanoylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Hexanoylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.isovalerylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Isovalerylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.phenylpropionylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Phenylpropionylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.propionylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Propionylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.suberylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Suberylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.tiglylglycine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Tiglylglycine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.2_methyl__3_hydroxybutyrate__c5_oh__per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-methyl,3-hydroxybutyrate (C5-OH)/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.2_oxo__3_methylvalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Oxo,3-Methylvalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.2_oxoisocaproate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Oxoisocaproate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.2_oxoisovalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Oxoisovalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.3_methylglutaconate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Methylglutaconate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.4_hydroxyphenylacetate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 4-Hydroxyphenylacetate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.4_hydroxyphenyllactate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 4-Hydroxyphenyllactate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.benzoate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Benzoate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.decadienediate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Decadienediate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.decenediate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Decenediate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.dodecanedioate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Dodecanedioate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.ethylmalonate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Ethylmalonate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.fumarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Fumarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.glutaconate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Glutaconate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.glutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Glutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.glycerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Glycerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.glycolate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Glycolate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.glyoxylate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Glyoxylate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.hydroxydecanedioate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Hydroxydecanedioate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.isocitrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Isocitrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.lactate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Lactate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.malate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Malate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.2_methylcitrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Methylcitrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.methylmalonate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Methylmalonate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.methylsuccinate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Methylsuccinate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.mevalonate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Mevalonate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.n_acetyltyrosine_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- N-acetyltyrosine/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.octanoate__c8_0__per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Octanoate (C8:0)/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.octenedioate__c8_1__per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Octenedioate (C8:1)/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.39, CIMI-CORE-ITEM_GROUP.phenylacetate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Phenylacetate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.40, CIMI-CORE-ITEM_GROUP.phenyllactate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Phenyllactate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.41, CIMI-CORE-ITEM_GROUP.phenylpyruvate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Phenylpyruvate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.42, CIMI-CORE-ITEM_GROUP.pyruvate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Pyruvate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.43, CIMI-CORE-ITEM_GROUP.sebacate__c8__per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Sebacate (C8)/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.44, CIMI-CORE-ITEM_GROUP.suberate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Suberate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.45, CIMI-CORE-ITEM_GROUP.succinate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Succinate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.46, CIMI-CORE-ITEM_GROUP.succinylacetone_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Succinylacetone/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.47, CIMI-CORE-ITEM_GROUP.uracil_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Uracil/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.48, CIMI-CORE-ITEM_GROUP.3_hydroxy__3_methylglutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxy,3-Methylglutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.49, CIMI-CORE-ITEM_GROUP.2_hydroxyadipate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Hydroxyadipate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.50, CIMI-CORE-ITEM_GROUP.2_hydroxyglutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Hydroxyglutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.51, CIMI-CORE-ITEM_GROUP.2_hydroxyisocaproate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Hydroxyisocaproate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.52, CIMI-CORE-ITEM_GROUP.2_hydroxyisovalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.53, CIMI-CORE-ITEM_GROUP.2_hydroxy_3_methylvalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Hydroxy-3-Methylvalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.54, CIMI-CORE-ITEM_GROUP.2_oxoadipate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Oxoadipate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.55, CIMI-CORE-ITEM_GROUP.alpha_ketoglutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Alpha ketoglutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.56, CIMI-CORE-ITEM_GROUP.3_hydroxyadipate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxyadipate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.57, CIMI-CORE-ITEM_GROUP.beta_hydroxybutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Beta hydroxybutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.58, CIMI-CORE-ITEM_GROUP.3_hydroxyglutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxyglutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.59, CIMI-CORE-ITEM_GROUP.3_hydroxyisobutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxyisobutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.60, CIMI-CORE-ITEM_GROUP.3_hydroxyisovalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.61, CIMI-CORE-ITEM_GROUP.3_hydroxypropionate__3_oh_c3__per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxypropionate (3-OH-C3)/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.62, CIMI-CORE-ITEM_GROUP.3_hydroxyvalerate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Hydroxyvalerate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.63, CIMI-CORE-ITEM_GROUP.3_methylglutarate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 3-Methylglutarate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.64, CIMI-CORE-ITEM_GROUP.4_hydroxyphenylpyruvate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 4-Hydroxyphenylpyruvate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.65, CIMI-CORE-ITEM_GROUP.5_hydroxyindoleacetate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 5-Hydroxyindoleacetate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.66, CIMI-CORE-ITEM_GROUP.5_hydroxyhexanoate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 5-Hydroxyhexanoate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.67, CIMI-CORE-ITEM_GROUP.5_oxoproline_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 5-Oxoproline/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.68, CIMI-CORE-ITEM_GROUP.2_ethyl_3_hydroxypropionate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- 2-Ethyl-3-Hydroxypropionate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.69, CIMI-CORE-ITEM_GROUP.acetoacetate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Acetoacetate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.70, CIMI-CORE-ITEM_GROUP.aconitate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Aconitate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.71, CIMI-CORE-ITEM_GROUP.azelate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Azelate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.72, CIMI-CORE-ITEM_GROUP.citrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Citrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.73, CIMI-CORE-ITEM_GROUP.hippurate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Hippurate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.74, CIMI-CORE-ITEM_GROUP.alpha_hydroxybutyrate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Alpha hydroxybutyrate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.75, CIMI-CORE-ITEM_GROUP.adipate_per_creatinine__molar_ratio__in_urine.v1] occurrences matches {1} -- Adipate/Creatinine [Molar ratio] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.76, CIMI-CORE-ITEM_GROUP.organic_acids_pattern__interpretation__in_urine.v1] occurrences matches {0..1} -- Organic acids pattern [interpretation] in Urine
+          use_archetype ITEM_GROUP[id0.1.1.1.77, CIMI-CORE-ITEM_GROUP.organic_acids_pattern__interpretation__in_urine_narrative.v1] occurrences matches {0..1} -- Organic acids pattern [interpretation] in Urine Narrative
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Organic acids panel - Urine">>
+      ["at0.0.0.0.1"] = <text = <"Organic acids panel - Urine">>
+      ["id0.1.1.1.1"] = <text = <"Orotate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.2"] = <text = <"Homovanillate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.3"] = <text = <"3-Methylcrotonylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.4"] = <text = <"Hexanoylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.5"] = <text = <"Isovalerylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.6"] = <text = <"Phenylpropionylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.7"] = <text = <"Propionylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.8"] = <text = <"Suberylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.9"] = <text = <"Tiglylglycine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.10"] = <text = <"2-methyl,3-hydroxybutyrate (C5-OH)/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.11"] = <text = <"2-Oxo,3-Methylvalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.12"] = <text = <"2-Oxoisocaproate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.13"] = <text = <"2-Oxoisovalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.14"] = <text = <"3-Methylglutaconate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.15"] = <text = <"4-Hydroxyphenylacetate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.16"] = <text = <"4-Hydroxyphenyllactate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.17"] = <text = <"Benzoate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.18"] = <text = <"Decadienediate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.19"] = <text = <"Decenediate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.20"] = <text = <"Dodecanedioate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.21"] = <text = <"Ethylmalonate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.22"] = <text = <"Fumarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.23"] = <text = <"Glutaconate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.24"] = <text = <"Glutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.25"] = <text = <"Glycerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.26"] = <text = <"Glycolate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.27"] = <text = <"Glyoxylate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.28"] = <text = <"Hydroxydecanedioate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.29"] = <text = <"Isocitrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.30"] = <text = <"Lactate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.31"] = <text = <"Malate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.32"] = <text = <"2-Methylcitrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.33"] = <text = <"Methylmalonate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.34"] = <text = <"Methylsuccinate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.35"] = <text = <"Mevalonate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.36"] = <text = <"N-acetyltyrosine/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.37"] = <text = <"Octanoate (C8:0)/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.38"] = <text = <"Octenedioate (C8:1)/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.39"] = <text = <"Phenylacetate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.40"] = <text = <"Phenyllactate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.41"] = <text = <"Phenylpyruvate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.42"] = <text = <"Pyruvate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.43"] = <text = <"Sebacate (C8)/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.44"] = <text = <"Suberate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.45"] = <text = <"Succinate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.46"] = <text = <"Succinylacetone/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.47"] = <text = <"Uracil/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.48"] = <text = <"3-Hydroxy,3-Methylglutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.49"] = <text = <"2-Hydroxyadipate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.50"] = <text = <"2-Hydroxyglutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.51"] = <text = <"2-Hydroxyisocaproate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.52"] = <text = <"2-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.53"] = <text = <"2-Hydroxy-3-Methylvalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.54"] = <text = <"2-Oxoadipate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.55"] = <text = <"Alpha ketoglutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.56"] = <text = <"3-Hydroxyadipate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.57"] = <text = <"Beta hydroxybutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.58"] = <text = <"3-Hydroxyglutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.59"] = <text = <"3-Hydroxyisobutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.60"] = <text = <"3-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.61"] = <text = <"3-Hydroxypropionate (3-OH-C3)/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.62"] = <text = <"3-Hydroxyvalerate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.63"] = <text = <"3-Methylglutarate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.64"] = <text = <"4-Hydroxyphenylpyruvate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.65"] = <text = <"5-Hydroxyindoleacetate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.66"] = <text = <"5-Hydroxyhexanoate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.67"] = <text = <"5-Oxoproline/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.68"] = <text = <"2-Ethyl-3-Hydroxypropionate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.69"] = <text = <"Acetoacetate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.70"] = <text = <"Aconitate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.71"] = <text = <"Azelate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.72"] = <text = <"Citrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.73"] = <text = <"Hippurate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.74"] = <text = <"Alpha hydroxybutyrate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.75"] = <text = <"Adipate/Creatinine [Molar ratio] in Urine">>
+      ["id0.1.1.1.76"] = <text = <"Organic acids pattern [interpretation] in Urine">>
+      ["id0.1.1.1.77"] = <text = <"Organic acids pattern [interpretation] in Urine Narrative">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/48797-5> -- Organic acids panel - Urine
+        ["at0.0.0.0.1"] = <http://loinc.org/id/48797-5> -- Organic acids panel - Urine
+        ["id0.1.1.1.1"] = <http://loinc.org/id/17869-9> -- Orotate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.2"] = <http://loinc.org/id/22708-2> -- Homovanillate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.3"] = <http://loinc.org/id/24436-8> -- 3-Methylcrotonylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.4"] = <http://loinc.org/id/24438-4> -- Hexanoylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.5"] = <http://loinc.org/id/24440-0> -- Isovalerylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.6"] = <http://loinc.org/id/24441-8> -- Phenylpropionylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.7"] = <http://loinc.org/id/24442-6> -- Propionylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.8"] = <http://loinc.org/id/24443-4> -- Suberylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.9"] = <http://loinc.org/id/24444-2> -- Tiglylglycine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.10"] = <http://loinc.org/id/25082-9> -- 2-methyl,3-hydroxybutyrate (C5-OH)/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.11"] = <http://loinc.org/id/25083-7> -- 2-Oxo,3-Methylvalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.12"] = <http://loinc.org/id/25084-5> -- 2-Oxoisocaproate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.13"] = <http://loinc.org/id/25085-2> -- 2-Oxoisovalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.14"] = <http://loinc.org/id/25087-8> -- 3-Methylglutaconate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.15"] = <http://loinc.org/id/25088-6> -- 4-Hydroxyphenylacetate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.16"] = <http://loinc.org/id/25089-4> -- 4-Hydroxyphenyllactate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.17"] = <http://loinc.org/id/25090-2> -- Benzoate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.18"] = <http://loinc.org/id/25093-6> -- Decadienediate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.19"] = <http://loinc.org/id/25094-4> -- Decenediate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.20"] = <http://loinc.org/id/25097-7> -- Dodecanedioate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.21"] = <http://loinc.org/id/25099-3> -- Ethylmalonate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.22"] = <http://loinc.org/id/25101-7> -- Fumarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.23"] = <http://loinc.org/id/25103-3> -- Glutaconate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.24"] = <http://loinc.org/id/25104-1> -- Glutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.25"] = <http://loinc.org/id/25105-8> -- Glycerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.26"] = <http://loinc.org/id/25106-6> -- Glycolate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.27"] = <http://loinc.org/id/25107-4> -- Glyoxylate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.28"] = <http://loinc.org/id/25108-2> -- Hydroxydecanedioate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.29"] = <http://loinc.org/id/25111-6> -- Isocitrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.30"] = <http://loinc.org/id/25112-4> -- Lactate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.31"] = <http://loinc.org/id/25113-2> -- Malate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.32"] = <http://loinc.org/id/25114-0> -- 2-Methylcitrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.33"] = <http://loinc.org/id/25116-5> -- Methylmalonate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.34"] = <http://loinc.org/id/25117-3> -- Methylsuccinate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.35"] = <http://loinc.org/id/25118-1> -- Mevalonate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.36"] = <http://loinc.org/id/25119-9> -- N-acetyltyrosine/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.37"] = <http://loinc.org/id/25120-7> -- Octanoate (C8:0)/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.38"] = <http://loinc.org/id/25121-5> -- Octenedioate (C8:1)/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.39"] = <http://loinc.org/id/25124-9> -- Phenylacetate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.40"] = <http://loinc.org/id/25125-6> -- Phenyllactate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.41"] = <http://loinc.org/id/25126-4> -- Phenylpyruvate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.42"] = <http://loinc.org/id/25132-2> -- Pyruvate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.43"] = <http://loinc.org/id/25134-8> -- Sebacate (C8)/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.44"] = <http://loinc.org/id/25135-5> -- Suberate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.45"] = <http://loinc.org/id/25136-3> -- Succinate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.46"] = <http://loinc.org/id/25137-1> -- Succinylacetone/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.47"] = <http://loinc.org/id/25140-5> -- Uracil/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.48"] = <http://loinc.org/id/26583-5> -- 3-Hydroxy,3-Methylglutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.49"] = <http://loinc.org/id/29500-6> -- 2-Hydroxyadipate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.50"] = <http://loinc.org/id/29502-2> -- 2-Hydroxyglutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.51"] = <http://loinc.org/id/29503-0> -- 2-Hydroxyisocaproate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.52"] = <http://loinc.org/id/29504-8> -- 2-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.53"] = <http://loinc.org/id/29505-5> -- 2-Hydroxy-3-Methylvalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.54"] = <http://loinc.org/id/29506-3> -- 2-Oxoadipate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.55"] = <http://loinc.org/id/29507-1> -- Alpha ketoglutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.56"] = <http://loinc.org/id/29508-9> -- 3-Hydroxyadipate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.57"] = <http://loinc.org/id/29509-7> -- Beta hydroxybutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.58"] = <http://loinc.org/id/29510-5> -- 3-Hydroxyglutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.59"] = <http://loinc.org/id/29511-3> -- 3-Hydroxyisobutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.60"] = <http://loinc.org/id/29514-7> -- 3-Hydroxyisovalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.61"] = <http://loinc.org/id/29515-4> -- 3-Hydroxypropionate (3-OH-C3)/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.62"] = <http://loinc.org/id/29516-2> -- 3-Hydroxyvalerate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.63"] = <http://loinc.org/id/29518-8> -- 3-Methylglutarate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.64"] = <http://loinc.org/id/29519-6> -- 4-Hydroxyphenylpyruvate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.65"] = <http://loinc.org/id/29520-4> -- 5-Hydroxyindoleacetate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.66"] = <http://loinc.org/id/29521-2> -- 5-Hydroxyhexanoate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.67"] = <http://loinc.org/id/29522-0> -- 5-Oxoproline/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.68"] = <http://loinc.org/id/29523-8> -- 2-Ethyl-3-Hydroxypropionate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.69"] = <http://loinc.org/id/29524-6> -- Acetoacetate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.70"] = <http://loinc.org/id/29525-3> -- Aconitate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.71"] = <http://loinc.org/id/29526-1> -- Azelate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.72"] = <http://loinc.org/id/29527-9> -- Citrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.73"] = <http://loinc.org/id/29528-7> -- Hippurate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.74"] = <http://loinc.org/id/29858-8> -- Alpha hydroxybutyrate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.75"] = <http://loinc.org/id/29859-6> -- Adipate/Creatinine [Molar ratio] in Urine
+        ["id0.1.1.1.76"] = <http://loinc.org/id/33477-1> -- Organic acids pattern [interpretation] in Urine
+        ["id0.1.1.1.77"] = <http://loinc.org/id/49287-6> -- Organic acids pattern [interpretation] in Urine Narrative
+      >
+    >
+  >
