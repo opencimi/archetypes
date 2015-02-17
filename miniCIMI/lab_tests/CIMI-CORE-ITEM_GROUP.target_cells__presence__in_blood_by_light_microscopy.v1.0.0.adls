@@ -1,0 +1,138 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.target_cells__presence__in_blood_by_light_microscopy.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Target cells [Presence] in Blood by Light microscopy' concept">
+        use = <"Use for Target cells [Presence] in Blood by Light microscopy.">
+        keywords = <"Target","cells","[Presence]","Blood","by","Light","microscopy">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/10381-2.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-02-17T06:05:05">
+    >
+
+definition
+  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Target cells [Presence] in Blood by Light microscopy
+    /item[id5.0.2.1]/value[id0.0.102] matches {[ac0.0.0.0.0.1]} -- Target cells [Presence] in Blood by Light microscopy
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1.1"] = <text = <"Target cells [Presence] in Blood by Light microscopy">>
+      ["ac0.0.0.0.0.1"] = <text = <"LaboratoryOrdinalValues_VALUESET_CODE">>
+      ["at0.0.0.0.0.1"] = <text = <"1+">>
+      ["at0.0.0.0.0.2"] = <text = <"100 (2+)">>
+      ["at0.0.0.0.0.3"] = <text = <"100 (Trace)">>
+      ["at0.0.0.0.0.4"] = <text = <"15 (1+)">>
+      ["at0.0.0.0.0.5"] = <text = <"2+">>
+      ["at0.0.0.0.0.6"] = <text = <"250 (1+)">>
+      ["at0.0.0.0.0.7"] = <text = <"3+">>
+      ["at0.0.0.0.0.8"] = <text = <"30 (1+)">>
+      ["at0.0.0.0.0.9"] = <text = <"4+">>
+      ["at0.0.0.0.0.10"] = <text = <"40 (2+)">>
+      ["at0.0.0.0.0.11"] = <text = <"500 (2+)">>
+      ["at0.0.0.0.0.12"] = <text = <"< 25% Atypical or reactive lymphs">>
+      ["at0.0.0.0.0.13"] = <text = <"> 25% Atypical or reactive lymphs">>
+      ["at0.0.0.0.0.14"] = <text = <">=1000 (3+)">>
+      ["at0.0.0.0.0.15"] = <text = <">=300 (3+)">>
+      ["at0.0.0.0.0.16"] = <text = <">=80 (3+)">>
+      ["at0.0.0.0.0.17"] = <text = <"Abnormal">>
+      ["at0.0.0.0.0.18"] = <text = <"Adequate">>
+      ["at0.0.0.0.0.19"] = <text = <"Agrees with count">>
+      ["at0.0.0.0.0.20"] = <text = <"Decreased">>
+      ["at0.0.0.0.0.21"] = <text = <"Detected">>
+      ["at0.0.0.0.0.22"] = <text = <"Detected: methicillin resistant">>
+      ["at0.0.0.0.0.23"] = <text = <"Does NOT agree with count">>
+      ["at0.0.0.0.0.24"] = <text = <"Equivocal">>
+      ["at0.0.0.0.0.25"] = <text = <"Few">>
+      ["at0.0.0.0.0.26"] = <text = <"Gray zone reactive">>
+      ["at0.0.0.0.0.27"] = <text = <"Immune">>
+      ["at0.0.0.0.0.28"] = <text = <"Increased">>
+      ["at0.0.0.0.0.29"] = <text = <"Indeterminate">>
+      ["at0.0.0.0.0.30"] = <text = <"Large">>
+      ["at0.0.0.0.0.31"] = <text = <"Many">>
+      ["at0.0.0.0.0.32"] = <text = <"Markedly decreased">>
+      ["at0.0.0.0.0.33"] = <text = <"Markedly increased">>
+      ["at0.0.0.0.0.34"] = <text = <"Moderate">>
+      ["at0.0.0.0.0.35"] = <text = <"Moderately Decreased">>
+      ["at0.0.0.0.0.36"] = <text = <"Moderately Increased">>
+      ["at0.0.0.0.0.37"] = <text = <"Negative">>
+      ["at0.0.0.0.0.38"] = <text = <"Negative Positive Values">>
+      ["at0.0.0.0.0.39"] = <text = <"No">>
+      ["at0.0.0.0.0.40"] = <text = <"No platelet clumping seen">>
+      ["at0.0.0.0.0.41"] = <text = <"None">>
+      ["at0.0.0.0.0.42"] = <text = <"None Seen">>
+      ["at0.0.0.0.0.43"] = <text = <"Nonreactive">>
+      ["at0.0.0.0.0.44"] = <text = <"Normal">>
+      ["at0.0.0.0.0.45"] = <text = <"Not Detected">>
+      ["at0.0.0.0.0.46"] = <text = <"Not Detected: Methicillin Sensitive">>
+      ["at0.0.0.0.0.47"] = <text = <"Not immune">>
+      ["at0.0.0.0.0.48"] = <text = <"Not present">>
+      ["at0.0.0.0.0.49"] = <text = <"Observed">>
+      ["at0.0.0.0.0.50"] = <text = <"Occasional">>
+      ["at0.0.0.0.0.51"] = <text = <"Platelet Estimate Values">>
+      ["at0.0.0.0.0.52"] = <text = <"Platelet clumps present.  Interpret platelet count/indices with caution.">>
+      ["at0.0.0.0.0.53"] = <text = <"Platelet estimate may not be accurate due to clumping">>
+      ["at0.0.0.0.0.54"] = <text = <"Positive">>
+      ["at0.0.0.0.0.55"] = <text = <"Present">>
+      ["at0.0.0.0.0.56"] = <text = <"Rare">>
+      ["at0.0.0.0.0.57"] = <text = <"Reactive">>
+      ["at0.0.0.0.0.58"] = <text = <"Repeat reactive by EIA.">>
+      ["at0.0.0.0.0.59"] = <text = <"Slightly decreased.">>
+      ["at0.0.0.0.0.60"] = <text = <"Slightly increased.">>
+      ["at0.0.0.0.0.61"] = <text = <"Small">>
+      ["at0.0.0.0.0.62"] = <text = <"Trace">>
+      ["at0.0.0.0.0.63"] = <text = <"Unknown">>
+      ["at0.0.0.0.0.64"] = <text = <"Urine Protein Values">>
+      ["at0.0.0.0.0.65"] = <text = <"Urine glucose coded value">>
+      ["at0.0.0.0.0.66"] = <text = <"Urine ketone coded value">>
+      ["at0.0.0.0.0.67"] = <text = <"Urine protein coded value">>
+      ["at0.0.0.0.0.68"] = <text = <"Weakly Reactive">>
+      ["at0.0.0.0.0.69"] = <text = <"Yes">>
+      ["at0.0.0.0.0.70"] = <text = <"Yes No Unknown">>
+      ["at0.0.0.0.0.71"] = <text = <"Yes/No Indicator">>
+
+    >
+  >
+
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1.1"] = <http://loinc.org/id/10381-2>
+        ["ac0.0.0.0.0.1"] = <http://loinc.org/id/10381-2>
+      >
+    >
+  >
+
+  value_sets = <
+    ["ac0.0.0.0.0.1"] = <
+      id= <"ac0.0.0.0.0.1">
+      members = <"at0.0.0.0.0.1","at0.0.0.0.0.2","at0.0.0.0.0.3","at0.0.0.0.0.4","at0.0.0.0.0.5","at0.0.0.0.0.6","at0.0.0.0.0.7","at0.0.0.0.0.8","at0.0.0.0.0.9","at0.0.0.0.0.10","at0.0.0.0.0.11","at0.0.0.0.0.12","at0.0.0.0.0.13","at0.0.0.0.0.14","at0.0.0.0.0.15","at0.0.0.0.0.16","at0.0.0.0.0.17","at0.0.0.0.0.18","at0.0.0.0.0.19","at0.0.0.0.0.20","at0.0.0.0.0.21","at0.0.0.0.0.22","at0.0.0.0.0.23","at0.0.0.0.0.24","at0.0.0.0.0.25","at0.0.0.0.0.26","at0.0.0.0.0.27","at0.0.0.0.0.28","at0.0.0.0.0.29","at0.0.0.0.0.30","at0.0.0.0.0.31","at0.0.0.0.0.32","at0.0.0.0.0.33","at0.0.0.0.0.34","at0.0.0.0.0.35","at0.0.0.0.0.36","at0.0.0.0.0.37","at0.0.0.0.0.38","at0.0.0.0.0.39","at0.0.0.0.0.40","at0.0.0.0.0.41","at0.0.0.0.0.42","at0.0.0.0.0.43","at0.0.0.0.0.44","at0.0.0.0.0.45","at0.0.0.0.0.46","at0.0.0.0.0.47","at0.0.0.0.0.48","at0.0.0.0.0.49","at0.0.0.0.0.50","at0.0.0.0.0.51","at0.0.0.0.0.52","at0.0.0.0.0.53","at0.0.0.0.0.54","at0.0.0.0.0.55","at0.0.0.0.0.56","at0.0.0.0.0.57","at0.0.0.0.0.58","at0.0.0.0.0.59","at0.0.0.0.0.60","at0.0.0.0.0.61","at0.0.0.0.0.62","at0.0.0.0.0.63","at0.0.0.0.0.64","at0.0.0.0.0.65","at0.0.0.0.0.66","at0.0.0.0.0.67","at0.0.0.0.0.68","at0.0.0.0.0.69","at0.0.0.0.0.70","at0.0.0.0.0.71">
+    >
+  >  
