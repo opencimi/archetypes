@@ -1,0 +1,225 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.differential_panel_in_body_fluid.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Differential panel - Body fluid' concept">
+        use = <"Use for Differential panel - Body fluid.">
+        keywords = <"Differential","panel","-","Body","fluid">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/29580-8.html>">
+      ["tool"] = <"loincer v0.0.1">
+      ["time"] = <"2015-02-18T01:46:06">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Differential panel - Body fluid
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Differential panel - Body fluid
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.lymphocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.promyelocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Promyelocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.myelocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Myelocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.metamyelocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Metamyelocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.prolymphocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Prolymphocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.plasma_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Plasma cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.promonocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Promonocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.cells_identified_in_body_fluid.v1] occurrences matches {0..1} -- Cells identified in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.cell_fractions_per_differential__interpretation__in_body_fluid.v1] occurrences matches {0..1} -- Cell Fractions/Differential [interpretation] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.blasts_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Blasts/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.eosinophils_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Eosinophils/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.leukocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Leukocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.leukocytes_other_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Leukocytes other/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.lymphocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.monocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Monocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.16, CIMI-CORE-ITEM_GROUP.mononuclear_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Mononuclear cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.17, CIMI-CORE-ITEM_GROUP.mononuclear_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Mononuclear cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.18, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils.band form/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.19, CIMI-CORE-ITEM_GROUP.neutrophils_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.20, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Polymorphonuclear cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.21, CIMI-CORE-ITEM_GROUP.basophils_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Basophils/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.22, CIMI-CORE-ITEM_GROUP.mesothelial_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Mesothelial cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.23, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes Variant/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.24, CIMI-CORE-ITEM_GROUP.macrophages_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Macrophages/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.25, CIMI-CORE-ITEM_GROUP.monocytes_plus_macrophages_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Monocytes+Macrophages/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.26, CIMI-CORE-ITEM_GROUP.neutrophils_segmented_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils.segmented [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.27, CIMI-CORE-ITEM_GROUP.neutrophils_segmented_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils.segmented/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.28, CIMI-CORE-ITEM_GROUP.nonhematic_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Nonhematic cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.29, CIMI-CORE-ITEM_GROUP.unspecified_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Unspecified cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.30, CIMI-CORE-ITEM_GROUP.neutrophils_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.31, CIMI-CORE-ITEM_GROUP.unidentified_cells_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Unidentified cells/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.32, CIMI-CORE-ITEM_GROUP.unidentified_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Unidentified cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.33, CIMI-CORE-ITEM_GROUP.promyelocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Promyelocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.34, CIMI-CORE-ITEM_GROUP.promonocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Promonocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.35, CIMI-CORE-ITEM_GROUP.prolymphocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Prolymphocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.36, CIMI-CORE-ITEM_GROUP.polymorphonuclear_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Polymorphonuclear cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.37, CIMI-CORE-ITEM_GROUP.plasma_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Plasma cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.38, CIMI-CORE-ITEM_GROUP.nonhematic_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Nonhematic cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.39, CIMI-CORE-ITEM_GROUP.neutrophils_band_form_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Neutrophils.band form [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.40, CIMI-CORE-ITEM_GROUP.myelocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Myelocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.41, CIMI-CORE-ITEM_GROUP.metamyelocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Metamyelocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.42, CIMI-CORE-ITEM_GROUP.macrophages_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Macrophages [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.43, CIMI-CORE-ITEM_GROUP.lymphocytes_variant_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes Variant [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.44, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes Abnormal [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.45, CIMI-CORE-ITEM_GROUP.leukocytes_other_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Leukocytes other [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.46, CIMI-CORE-ITEM_GROUP.histiocytes_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Histiocytes/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.47, CIMI-CORE-ITEM_GROUP.histiocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Histiocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.48, CIMI-CORE-ITEM_GROUP.eosinophils_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Eosinophils [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.49, CIMI-CORE-ITEM_GROUP.blasts_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Blasts [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.50, CIMI-CORE-ITEM_GROUP.basophils_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Basophils [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.51, CIMI-CORE-ITEM_GROUP.monocytes_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Monocytes [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.52, CIMI-CORE-ITEM_GROUP.lymphocytes_abnormal_per_100_leukocytes_in_body_fluid.v1] occurrences matches {0..1} -- Lymphocytes Abnormal/100 leukocytes in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.53, CIMI-CORE-ITEM_GROUP.unspecified_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Unspecified cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.54, CIMI-CORE-ITEM_GROUP.mesothelial_cells_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Mesothelial cells [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.1.1.55, CIMI-CORE-ITEM_GROUP.monocytes_plus_macrophages_count_per_volume_in_body_fluid.v1] occurrences matches {0..1} -- Monocytes+Macrophages [#/volume] in Body fluid
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Differential panel - Body fluid">>
+      ["at0.0.0.0.1"] = <text = <"Differential panel - Body fluid">>
+      ["id0.1.1.1.1"] = <text = <"Lymphocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.2"] = <text = <"Promyelocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.3"] = <text = <"Myelocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.4"] = <text = <"Metamyelocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.5"] = <text = <"Prolymphocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.6"] = <text = <"Plasma cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.7"] = <text = <"Promonocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.8"] = <text = <"Cells identified in Body fluid">>
+      ["id0.1.1.1.9"] = <text = <"Cell Fractions/Differential [interpretation] in Body fluid">>
+      ["id0.1.1.1.10"] = <text = <"Blasts/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.11"] = <text = <"Eosinophils/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.12"] = <text = <"Leukocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.13"] = <text = <"Leukocytes other/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.14"] = <text = <"Lymphocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.15"] = <text = <"Monocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.16"] = <text = <"Mononuclear cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.17"] = <text = <"Mononuclear cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.18"] = <text = <"Neutrophils.band form/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.19"] = <text = <"Neutrophils/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.20"] = <text = <"Polymorphonuclear cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.21"] = <text = <"Basophils/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.22"] = <text = <"Mesothelial cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.23"] = <text = <"Lymphocytes Variant/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.24"] = <text = <"Macrophages/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.25"] = <text = <"Monocytes+Macrophages/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.26"] = <text = <"Neutrophils.segmented [#/volume] in Body fluid">>
+      ["id0.1.1.1.27"] = <text = <"Neutrophils.segmented/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.28"] = <text = <"Nonhematic cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.29"] = <text = <"Unspecified cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.30"] = <text = <"Neutrophils [#/volume] in Body fluid">>
+      ["id0.1.1.1.31"] = <text = <"Unidentified cells/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.32"] = <text = <"Unidentified cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.33"] = <text = <"Promyelocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.34"] = <text = <"Promonocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.35"] = <text = <"Prolymphocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.36"] = <text = <"Polymorphonuclear cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.37"] = <text = <"Plasma cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.38"] = <text = <"Nonhematic cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.39"] = <text = <"Neutrophils.band form [#/volume] in Body fluid">>
+      ["id0.1.1.1.40"] = <text = <"Myelocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.41"] = <text = <"Metamyelocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.42"] = <text = <"Macrophages [#/volume] in Body fluid">>
+      ["id0.1.1.1.43"] = <text = <"Lymphocytes Variant [#/volume] in Body fluid">>
+      ["id0.1.1.1.44"] = <text = <"Lymphocytes Abnormal [#/volume] in Body fluid">>
+      ["id0.1.1.1.45"] = <text = <"Leukocytes other [#/volume] in Body fluid">>
+      ["id0.1.1.1.46"] = <text = <"Histiocytes/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.47"] = <text = <"Histiocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.48"] = <text = <"Eosinophils [#/volume] in Body fluid">>
+      ["id0.1.1.1.49"] = <text = <"Blasts [#/volume] in Body fluid">>
+      ["id0.1.1.1.50"] = <text = <"Basophils [#/volume] in Body fluid">>
+      ["id0.1.1.1.51"] = <text = <"Monocytes [#/volume] in Body fluid">>
+      ["id0.1.1.1.52"] = <text = <"Lymphocytes Abnormal/100 leukocytes in Body fluid">>
+      ["id0.1.1.1.53"] = <text = <"Unspecified cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.54"] = <text = <"Mesothelial cells [#/volume] in Body fluid">>
+      ["id0.1.1.1.55"] = <text = <"Monocytes+Macrophages [#/volume] in Body fluid">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/29580-8> -- Differential panel - Body fluid
+        ["at0.0.0.0.1"] = <http://loinc.org/id/29580-8> -- Differential panel - Body fluid
+        ["id0.1.1.1.1"] = <http://loinc.org/id/11031-2> -- Lymphocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.2"] = <http://loinc.org/id/17799-8> -- Promyelocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.3"] = <http://loinc.org/id/17800-4> -- Myelocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.4"] = <http://loinc.org/id/17801-2> -- Metamyelocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.5"] = <http://loinc.org/id/17802-0> -- Prolymphocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.6"] = <http://loinc.org/id/17803-8> -- Plasma cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.7"] = <http://loinc.org/id/17804-6> -- Promonocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.8"] = <http://loinc.org/id/19077-7> -- Cells identified in Body fluid
+        ["id0.1.1.1.9"] = <http://loinc.org/id/20999-9> -- Cell Fractions/Differential [interpretation] in Body fluid
+        ["id0.1.1.1.10"] = <http://loinc.org/id/26448-1> -- Blasts/100 leukocytes in Body fluid
+        ["id0.1.1.1.11"] = <http://loinc.org/id/26452-3> -- Eosinophils/100 leukocytes in Body fluid
+        ["id0.1.1.1.12"] = <http://loinc.org/id/26466-3> -- Leukocytes [#/volume] in Body fluid
+        ["id0.1.1.1.13"] = <http://loinc.org/id/26473-9> -- Leukocytes other/100 leukocytes in Body fluid
+        ["id0.1.1.1.14"] = <http://loinc.org/id/26476-2> -- Lymphocytes [#/volume] in Body fluid
+        ["id0.1.1.1.15"] = <http://loinc.org/id/26487-9> -- Monocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.16"] = <http://loinc.org/id/26490-3> -- Mononuclear cells [#/volume] in Body fluid
+        ["id0.1.1.1.17"] = <http://loinc.org/id/26493-7> -- Mononuclear cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.18"] = <http://loinc.org/id/26510-8> -- Neutrophils.band form/100 leukocytes in Body fluid
+        ["id0.1.1.1.19"] = <http://loinc.org/id/26513-2> -- Neutrophils/100 leukocytes in Body fluid
+        ["id0.1.1.1.20"] = <http://loinc.org/id/26518-1> -- Polymorphonuclear cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.21"] = <http://loinc.org/id/28543-7> -- Basophils/100 leukocytes in Body fluid
+        ["id0.1.1.1.22"] = <http://loinc.org/id/28544-5> -- Mesothelial cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.23"] = <http://loinc.org/id/30417-0> -- Lymphocytes Variant/100 leukocytes in Body fluid
+        ["id0.1.1.1.24"] = <http://loinc.org/id/30427-9> -- Macrophages/100 leukocytes in Body fluid
+        ["id0.1.1.1.25"] = <http://loinc.org/id/30437-8> -- Monocytes+Macrophages/100 leukocytes in Body fluid
+        ["id0.1.1.1.26"] = <http://loinc.org/id/30452-7> -- Neutrophils.segmented [#/volume] in Body fluid
+        ["id0.1.1.1.27"] = <http://loinc.org/id/30453-5> -- Neutrophils.segmented/100 leukocytes in Body fluid
+        ["id0.1.1.1.28"] = <http://loinc.org/id/30457-6> -- Nonhematic cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.29"] = <http://loinc.org/id/30469-1> -- Unspecified cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.30"] = <http://loinc.org/id/32709-8> -- Neutrophils [#/volume] in Body fluid
+        ["id0.1.1.1.31"] = <http://loinc.org/id/34985-2> -- Unidentified cells/100 leukocytes in Body fluid
+        ["id0.1.1.1.32"] = <http://loinc.org/id/34988-6> -- Unidentified cells [#/volume] in Body fluid
+        ["id0.1.1.1.33"] = <http://loinc.org/id/34996-9> -- Promyelocytes [#/volume] in Body fluid
+        ["id0.1.1.1.34"] = <http://loinc.org/id/34997-7> -- Promonocytes [#/volume] in Body fluid
+        ["id0.1.1.1.35"] = <http://loinc.org/id/34998-5> -- Prolymphocytes [#/volume] in Body fluid
+        ["id0.1.1.1.36"] = <http://loinc.org/id/35002-5> -- Polymorphonuclear cells [#/volume] in Body fluid
+        ["id0.1.1.1.37"] = <http://loinc.org/id/35006-6> -- Plasma cells [#/volume] in Body fluid
+        ["id0.1.1.1.38"] = <http://loinc.org/id/35008-2> -- Nonhematic cells [#/volume] in Body fluid
+        ["id0.1.1.1.39"] = <http://loinc.org/id/35014-0> -- Neutrophils.band form [#/volume] in Body fluid
+        ["id0.1.1.1.40"] = <http://loinc.org/id/35016-5> -- Myelocytes [#/volume] in Body fluid
+        ["id0.1.1.1.41"] = <http://loinc.org/id/35031-4> -- Metamyelocytes [#/volume] in Body fluid
+        ["id0.1.1.1.42"] = <http://loinc.org/id/35036-3> -- Macrophages [#/volume] in Body fluid
+        ["id0.1.1.1.43"] = <http://loinc.org/id/35045-4> -- Lymphocytes Variant [#/volume] in Body fluid
+        ["id0.1.1.1.44"] = <http://loinc.org/id/35046-2> -- Lymphocytes Abnormal [#/volume] in Body fluid
+        ["id0.1.1.1.45"] = <http://loinc.org/id/35051-2> -- Leukocytes other [#/volume] in Body fluid
+        ["id0.1.1.1.46"] = <http://loinc.org/id/35055-3> -- Histiocytes/100 leukocytes in Body fluid
+        ["id0.1.1.1.47"] = <http://loinc.org/id/35057-9> -- Histiocytes [#/volume] in Body fluid
+        ["id0.1.1.1.48"] = <http://loinc.org/id/35063-7> -- Eosinophils [#/volume] in Body fluid
+        ["id0.1.1.1.49"] = <http://loinc.org/id/35067-8> -- Blasts [#/volume] in Body fluid
+        ["id0.1.1.1.50"] = <http://loinc.org/id/35071-0> -- Basophils [#/volume] in Body fluid
+        ["id0.1.1.1.51"] = <http://loinc.org/id/35076-9> -- Monocytes [#/volume] in Body fluid
+        ["id0.1.1.1.52"] = <http://loinc.org/id/35077-7> -- Lymphocytes Abnormal/100 leukocytes in Body fluid
+        ["id0.1.1.1.53"] = <http://loinc.org/id/35078-5> -- Unspecified cells [#/volume] in Body fluid
+        ["id0.1.1.1.54"] = <http://loinc.org/id/35079-3> -- Mesothelial cells [#/volume] in Body fluid
+        ["id0.1.1.1.55"] = <http://loinc.org/id/35099-1> -- Monocytes+Macrophages [#/volume] in Body fluid
+      >
+    >
+  >
