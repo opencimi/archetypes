@@ -35,8 +35,10 @@ description
 
 definition
   ITEM_GROUP[id1.1.1] matches { -- Clinical activity
-    participation matches {
-      PARTICIPATION[id2.0.1] -- Subject of care
+    item matches {
+      ELEMENT[id2.0.1] -- Subject of care
+    }
+    participation {
       PARTICIPATION[id3.0.1] -- Information subject
     }
   }

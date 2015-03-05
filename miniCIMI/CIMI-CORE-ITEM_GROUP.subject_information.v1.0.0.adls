@@ -35,13 +35,11 @@ definition
   ITEM_GROUP[id1] matches {  -- Subject information
     item matches {
       ELEMENT[id2] occurrences matches {0..1} matches { -- Subject coded
-        value matches {
-          CODED_TEXT[id3] -- matches {[at1]}
-        }
+        value matches {[at1]}
       }
     }
     participation matches {
-      PARTICIPATION[id4] occurrences matches {0..1} matches { -- Subject participation
+      PARTICIPATION[id3] occurrences matches {0..1} matches { -- Subject participation
         function matches {[at2]}
       }
     }
@@ -53,7 +51,7 @@ terminology
       ["id1"] = <text = <"Subject information">>
       ["at1"] = <text = <"Subject coded">>
       ["id2"] = <text = <"Subject coded">>
-      ["id4"] = <text = <"Subject participation">>
+      ["id3"] = <text = <"Subject participation">>
       ["at2"] = <text = <"Subject information">>
     >
   >

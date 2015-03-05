@@ -35,8 +35,10 @@ description
 
 definition
   ITEM_GROUP[id1.1.1.1] matches { -- Patient encounter summary
+    item matches {
+      ELEMENT[id2.0.1.1] -- Subject of care
+    }
     participation matches {
-      PARTICIPATION[id2.0.1.1] -- Subject of care
       PARTICIPATION[id3.0.1.1] -- Information subject
     }
   }
