@@ -54,12 +54,12 @@ terminology
       ["at1"] = <text = <"Subject coded">>
       ["id2"] = <text = <"Subject coded">>
       ["id4"] = <text = <"Subject participation">>
-      ["at2"] = <text = <"Subject participation">>
+      ["at2"] = <text = <"Subject information">>
     >
   >
   term_bindings = <
     ["snomed-ct"] = <
       ["at1"] = <http://snomed.info/id/_________> -- Subject coded (CIMI extension)
-      ["at2"] = <http://snomed.info/id/_________> -- Subject participation
+      ["at2"] = <http://snomed.info/id/_________> -- Subject information
     >
   >
