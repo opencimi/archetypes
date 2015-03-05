@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.clinical_statement.v1.0.0
+  CIMI-CORE-ITEM_GROUP.subject_information.v1.0.0
 
 language
   original_language = <[ISO_639-1::en]>
@@ -9,14 +9,14 @@ description
     ["name"] = <"Patrick Langford">
     ["organisation"] = <"Intermountain Healthcare">
     ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
+    ["date"] = <"03/04/2015">
   >
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Top-level reference archetype for CIMI 'clinical statement' concept">
+      purpose = <"Top-level reference archetype for CIMI 'information information' concept">
       use = <"Use as a specialisation precursor for other high-level reference archetypes.">
-      keywords = <"clinical","statement">
+      keywords = <"information","subject">
     >
   >
   other_details = <["model_level"] = <"reference">>
@@ -32,25 +32,34 @@ description
   >
 
 definition
-  ITEM_GROUP[id1] matches {  -- Clinical Statment
+  ITEM_GROUP[id1] matches {  -- Subject information
     item matches {
-      use_archetype ITEM_GROUP[id2, CIMI-CORE-ITEM_GROUP.subject_information.v1] occurrences matches {0..*} 
-      use_archetype ITEM_GROUP[id4, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
-      ELEMENT[id5] occurrences matches {0..*}   -- Element
+      ELEMENT[id2] occurrences matches {0..1} matches { -- Subject coded
+        value matches {
+          CODED_TEXT[id3] -- matches {[at1]}
+        }
+      }
+    }
+    participation matches {
+      PARTICIPATION[id4] occurrences matches {0..1} matches { -- Subject participation
+        function matches {[at2]}
+      }
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1"] = <text = <"Clinical Statment">>
-      ["id2"] = <text = <"Subject information">>
-      ["id4"] = <text = <"Cluster">>
-      ["id5"] = <text = <"Element">>
+      ["id1"] = <text = <"Subject information">>
+      ["at1"] = <text = <"Subject coded">>
+      ["id2"] = <text = <"Subject coded">>
+      ["id4"] = <text = <"Subject participation">>
+      ["at2"] = <text = <"Subject participation">>
     >
   >
   term_bindings = <
     ["snomed-ct"] = <
-      ["id2"] = <http://snomed.info/id/131195008> -- Subject of information
+      ["at1"] = <http://snomed.info/id/_________> -- Subject coded (CIMI extension)
+      ["at2"] = <http://snomed.info/id/_________> -- Subject participation
     >
   >
