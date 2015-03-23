@@ -37,7 +37,7 @@ definition
   ROLE[id1.1] matches { -- Role
     details matches {
       ELEMENT[id0.1] occurrences matches {1} matches { -- Role type
-        value matches {
+        value existence matches {1} matches {
           CODED_TEXT[id0.5] matches {*}
         }
         null_flavor existence matches {0}

@@ -75,7 +75,7 @@ definition
         }
       }
       ELEMENT[id0.0.9] occurrences matches {1} matches { -- Organization type
-        value matches {
+        value existence matches {1} matches {
           CODED_TEXT[id0.0.18] matches {*}
         }
         null_flavor existence matches {0}

@@ -42,7 +42,7 @@ definition
         }
       }
         ELEMENT[id0.0.2] occurrences matches {1} matches { -- Value
-          value matches {
+          value existence matches {1} matches {
             CODED_TEXT[id0.0.8] matches {*}
           }
           null_flavor existence matches {0}

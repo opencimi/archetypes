@@ -37,7 +37,7 @@ definition
   PARTY_RELATIONSHIP[id1.1] matches { -- Organization relationship
     details matches {
       ELEMENT[id0.2] occurrences matches {1} matches { -- Scoping status
-        value matches {
+        value existence matches {1} matches {
           CODED_TEXT[id0.4]
         }
         null_flavor existence matches {0}

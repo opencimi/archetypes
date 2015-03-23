@@ -49,7 +49,7 @@ definition
       ITEM_GROUP[id0.3] matches { -- Location Name
         item matches {
           ELEMENT[id0.4] occurrences matches {1} matches { -- Value
-            value matches {
+            value existence matches {1} matches {
               PLAIN_TEXT[id0.25]
             }
             null_flavor existence matches {0}

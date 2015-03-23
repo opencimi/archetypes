@@ -63,7 +63,7 @@ definition
       ITEM_GROUP[id0.0.0.6] matches { -- Use
         item matches {
           ELEMENT[id0.0.0.7] occurrences matches {1} matches { -- Value
-            value matches {
+            value existence matches {1} matches {
               TEXT[id0.0.0.17]
             }
             null_flavor existence matches {0}

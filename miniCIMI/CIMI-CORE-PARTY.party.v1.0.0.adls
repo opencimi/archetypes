@@ -36,7 +36,7 @@ definition
       ITEM_GROUP[id2] matches {  -- Identifier
         item matches {
           ELEMENT[id3] occurrences matches {1} matches { -- Value
-            value matches {
+            value existence matches {1} matches {
               IDENTIFIER[id9]
             }
             null_flavor existence matches {0}
@@ -47,7 +47,7 @@ definition
       use_archetype ITEM_GROUP [id5, CIMI-CORE-ITEM_GROUP.address.v2] -- Address
       use_archetype ITEM_GROUP [id6, CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
       ELEMENT[id7] occurrences matches {1} matches { -- Party type
-        value matches {
+        value existence matches {1} matches {
           CODED_TEXT[id10]
         }
         null_flavor existence matches {0}
