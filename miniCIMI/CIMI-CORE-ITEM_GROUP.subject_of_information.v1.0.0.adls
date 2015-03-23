@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.clinical_statement.v1.0.0
+  CIMI-CORE-ITEM_GROUP.subject_of_information.v1.0.0
 
 language
   original_language = <[ISO_639-1::en]>
@@ -9,14 +9,14 @@ description
     ["name"] = <"Patrick Langford">
     ["organisation"] = <"Intermountain Healthcare">
     ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
+    ["date"] = <"03/04/2015">
   >
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Top-level reference archetype for CIMI 'clinical statement' concept">
+      purpose = <"Top-level reference archetype for CIMI 'information information' concept">
       use = <"Use as a specialisation precursor for other high-level reference archetypes.">
-      keywords = <"clinical","statement">
+      keywords = <"information","subject">
     >
   >
   other_details = <["model_level"] = <"reference">>
@@ -32,26 +32,37 @@ description
   >
 
 definition
-  ITEM_GROUP[id1] matches {  -- Clinical Statment
+  ITEM_GROUP[id1] matches {  -- Subject of information
     item matches {
-      use_archetype ITEM_GROUP[id2, CIMI-CORE-ITEM_GROUP.subject_of_information.v1] occurrences matches {1} 
-      use_archetype ITEM_GROUP[id4, CIMI-CORE-ITEM_GROUP.cluster.v1] occurrences matches {0..*} 
-      ELEMENT[id5] occurrences matches {0..*}   -- Element
+      ELEMENT[id2] occurrences matches {1} matches { -- Subject relationship
+        value existence matches {1} matches {[ac1]}
+        link existence matches {0}
+        null_flavor existence matches {0}
+      }
+    }
+    participation matches {
+      PARTICIPATION[id3] occurrences matches {0..1} matches { -- Subject party
+        participation_type matches {[ac2]}
+        link existence matches {0}
+        details existence matches {0}
+      }
     }
   }
 
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1"] = <text = <"Clinical Statment">>
-      ["id2"] = <text = <"Subject of information">>
-      ["id4"] = <text = <"Cluster">>
-      ["id5"] = <text = <"Element">>
+      ["id1"] = <text = <"Subject of information">>
+      ["ac1"] = <text = <"Subject relationship">>
+      ["id2"] = <text = <"Subject relationship">>
+      ["id3"] = <text = <"Subject party">>
+      ["ac2"] = <text = <"Subject information">>
     >
   >
   term_bindings = <
     ["snomed-ct"] = <
-      ["id2"] = <http://snomed.info/id/131195008> -- Subject of information
+      ["ac1"] = <http://snomed.info/id/_________> -- Subject relationship (CIMI extension)
+      ["ac2"] = <http://snomed.info/id/_________> -- Subject information
     >
   >
 
