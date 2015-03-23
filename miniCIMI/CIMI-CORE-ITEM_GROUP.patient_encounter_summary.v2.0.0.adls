@@ -34,12 +34,7 @@ description
   >
 
 definition
-  ITEM_GROUP[id1.1.1.1] matches { -- Patient encounter summary
-    participation matches {
-      PARTICIPATION[id2.0.1.1] -- Subject of care
-      PARTICIPATION[id3.0.1.1] -- Information subject
-    }
-  }
+  ITEM_GROUP[id1.1.1.1] -- Patient encounter summary
 
 terminology
   term_definitions = <
@@ -47,20 +42,12 @@ terminology
       ["id1.1.1.1"] = <
         text = <"Patient encounter summary">
       >
-      ["id2.0.1.1"] = <
-        text = <"Subject of care">
-      >
-      ["id3.0.1.1"] = <
-        text = <"Information subject">
-      >
     >
   >
   term_bindings = <
     ["snomed-ct"] = <
       items = <
         ["id1.1.1.1"] = <http://snomed.info/id/308335008>
-        ["id2.0.1.1"] = <http://snomed.info/id/125676002>
-        ["id3.0.1.1"] = <http://snomed.info/id/125676002>
       >
     >
   >

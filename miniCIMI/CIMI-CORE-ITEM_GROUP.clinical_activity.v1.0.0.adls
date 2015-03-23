@@ -35,9 +35,8 @@ description
 
 definition
   ITEM_GROUP[id1.1.1] matches { -- Clinical activity
-    participation matches {
-      PARTICIPATION[id2.0.1] -- Subject of care
-      PARTICIPATION[id3.0.1] -- Information subject
+    item matches {
+      use_archetype ITEM_GROUP[id2.0.1, CIMI-CORE-ITEM_GROUP.subject_of_information.v1] -- Information subject
     }
   }
 
@@ -48,9 +47,6 @@ terminology
         text = <"Clinical activity">
       >
       ["id2.0.1"] = <
-        text = <"Subject of care">
-      >
-      ["id3.0.1"] = <
         text = <"Information subject">
       >
     >
@@ -60,7 +56,6 @@ terminology
       items = <
         ["id1.1.1"] = <http://snomed.info/id/71388002>
         ["id2.0.1"] = <http://snomed.info/id/125676002>
-        ["id3.0.1"] = <http://snomed.info/id/125676002>
       >
     >
   >
