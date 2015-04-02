@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Erythrocyte enzyme panel - Red Blood Cells' concept">
         use = <"Use for Erythrocyte enzyme panel - Red Blood Cells.">
-        keywords = <"Erythrocyte","enzyme","panel","-","Red","Blood","Cells">
+        keywords = <"RBC enzy pnl","Erythrocytes","Red blood corpusles","Red blood corpuscle","Red blood cell","Red cell","Red cells","Discocyte","Erc","Red blood cells","Point in time","Random","Pnl","Pan","Panl","Enzymes","Enz","PANEL.CHEMISTRY","PANEL.CHEMISTRY","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72695-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:08">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

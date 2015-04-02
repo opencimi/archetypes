@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Urinalysis microscopic panel [#/volume] - Urine by Automated count' concept">
         use = <"Use for Urinalysis microscopic panel [#/volume] - Urine by Automated count.">
-        keywords = <"Urinalysis","microscopic","panel","[#/volume]","-","Urine","by","Automated","count">
+        keywords = <"UA Microscopic Pnl","#","Number concentration","Count/volume","ABS","CT","absolute","absolutes","Cnt","Point in time","Random","Ur","UR","Urn","Quantitative","QNT","Quant","Quan","Auto","Pan","Panl","PANEL.URINALYSIS","PANEL.URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50554-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:07">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

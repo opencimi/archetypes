@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Differential panel - Cord blood' concept">
         use = <"Use for Differential panel - Cord blood.">
-        keywords = <"Differential","panel","-","Cord","blood">
+        keywords = <"Diff Pnl","Point in time","Random","Cord (umbilical) blood","Cord bld","Cord blood","Quantitative","QNT","Quant","Quan","Pan","Panl","Differl","Differn","PANEL.HEMATOLOGY& CELL COUNTS","PANEL.HEMATOLOGY& CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/74413-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:09">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

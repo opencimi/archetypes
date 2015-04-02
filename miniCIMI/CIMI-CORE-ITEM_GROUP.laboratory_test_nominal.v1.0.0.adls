@@ -37,7 +37,7 @@ definition
   ITEM_GROUP[id1.1.1.1.1] matches { -- Laboratory test nominal
     item matches {
       ELEMENT[id5.0.8.0.1] occurrences matches {1} matches { -- Result value
-        value existence matches {1} matches {
+        value matches {
           CODED_TEXT[id0.0.0.0.1]
         }
         null_flavor existence matches {0}

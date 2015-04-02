@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Differential panel - Vitreous fluid' concept">
         use = <"Use for Differential panel - Vitreous fluid.">
-        keywords = <"Differential","panel","-","Vitreous","fluid">
+        keywords = <"Diff Pnl","Point in time","Random","Vitf","Vitreous fluid","VitF","Vitreous humor","Vitreous humour","Pan","Panl","Differl","Differn","PANEL.HEMATOLOGY& CELL COUNTS","PANEL.HEMATOLOGY& CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/72395-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:08">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

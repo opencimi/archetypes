@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Differential panel - Pericardial fluid' concept">
         use = <"Use for Differential panel - Pericardial fluid.">
-        keywords = <"Differential","panel","-","Pericardial","fluid">
+        keywords = <"Diff Pnl","Point in time","Random","Pcar","PCAR","Pericardial fluid","Pan","Panl","Differl","Differn","PANEL.HEMATOLOGY& CELL COUNTS","PANEL.HEMATOLOGY& CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/69741-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:08">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

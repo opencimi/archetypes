@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Urinalysis microscopic panel - Urine sediment' concept">
         use = <"Use for Urinalysis microscopic panel - Urine sediment.">
-        keywords = <"Urinalysis","microscopic","panel","-","Urine","sediment">
+        keywords = <"UA Microscopic Pnl","Point in time","Random","UrnS","Urine sediment","UR","Urn","Pan","Panl","PANEL.URINALYSIS","PANEL.URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24365-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

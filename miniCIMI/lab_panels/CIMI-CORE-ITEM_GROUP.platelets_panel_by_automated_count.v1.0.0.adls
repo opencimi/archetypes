@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Platelets panel - Blood by Automated count' concept">
         use = <"Use for Platelets panel - Blood by Automated count.">
-        keywords = <"Platelets","panel","-","Blood","by","Automated","count">
+        keywords = <"Platelets Pnl","Plt","Platelet","Thrombocytes","Platelt","Thrb","Thrombocyte","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Auto","Pan","Panl","PANEL.HEMATOLOGY& CELL COUNTS","PANEL.HEMATOLOGY& CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53800-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:07">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Complete blood count (hemogram) panel - Blood by Automated count' concept">
         use = <"Use for Complete blood count (hemogram) panel - Blood by Automated count.">
-        keywords = <"Complete","blood","count","(hemogram)","panel","-","Blood","by","Automated","count">
+        keywords = <"CBC (hemogram)","Point in time","Random","WB","Whole blood","Auto","Pnl","Pan","Panl","PANEL.HEMATOLOGY& CELL COUNTS","PANEL.HEMATOLOGY& CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58410-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:08">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition

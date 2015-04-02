@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Gas and Carbon monoxide panel - Arterial blood' concept">
         use = <"Use for Gas and Carbon monoxide panel - Arterial blood.">
-        keywords = <"Gas","Carbon","monoxide","panel","-","Arterial","blood">
+        keywords = <"Gas + CO Pnl","co-oximetry","co-oximetry panel","cooximetry","Point in time","Random","Arterial blood","ART","Art blood","Art bld","ABG","Quantitative","QNT","Quant","Quan","Gases","Pan","Panl","PANEL.CHEMISTRY","PANEL.CHEMISTRY","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24341-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

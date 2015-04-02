@@ -45,6 +45,11 @@ definition
         participation_type matches {[ac2]}
         link existence matches {0}
         details existence matches {0}
+        party matches {
+          PARTY[id4] matches {
+            relationship existence matches {0}
+          }
+        }
       }
     }
   }
@@ -57,10 +62,13 @@ terminology
       ["id2"] = <text = <"Subject relationship">>
       ["id3"] = <text = <"Subject party">>
       ["ac2"] = <text = <"Subject information">>
+      ["id4"] = <text = <"Party">>
     >
   >
   term_bindings = <
     ["snomed-ct"] = <
+      ["id1"] = <http://snomed.info/id/131195008> -- Subject of information
+      ["id2"] = <http://snomed.info/id/408732007> -- Subject relationship
       ["ac1"] = <http://snomed.info/id/_________> -- Subject relationship (CIMI extension)
       ["ac2"] = <http://snomed.info/id/_________> -- Subject information
     >

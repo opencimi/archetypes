@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Creatinine 24H renal clearance adjusted for body surface area panel' concept">
         use = <"Use for Creatinine 24H renal clearance adjusted for body surface area panel.">
-        keywords = <"Creatinine","24H","renal","clearance","adjusted","for","body","surface","area","panel">
+        keywords = <"Creat Cl BSA adj Pnl","Crea","CR","Bdy surface","1 day","24 hours","24HR","Ur+SerPl","Ur+SerPl","UR","Urn","UA","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Quantitative","QNT","Quant","Quan","Surf","Kidney","Pan","Panl","Clear","Clearanc","Clearances","Clr","bod","Bodies","PANEL.CHEMISTRY","PANEL.CHEMISTRY","Chemistry","UCr">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58446-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:08">
+      ["time"] = <"2015-03-24T22:20:20">
     >
 
 definition
