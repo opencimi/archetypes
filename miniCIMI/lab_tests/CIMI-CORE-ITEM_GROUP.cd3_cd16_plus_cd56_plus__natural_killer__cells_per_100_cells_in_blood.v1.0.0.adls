@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood' concept">
         use = <"Use for CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood.">
-        keywords = <"CD3-CD16+CD56+","(Natural","killer)","cells/100","cells","Blood">
+        keywords = <"CD3-CD16+CD56+ Cells","Natural killer cells","CD3-CD16+CD56+ Cells","CD3+CD16+CD56+ Cells","CD3-CD16+ Cells","CD3+CD16+ Cells","CD3 Cells","Cell","Cellularity","Leu19","Leu-19","NKH1","Neural cell adhesion molecule","NCAM","Leu-4","Leu4","T3","Leu-11","Leu11","Leu11b","Leu-11B","Gated cells","Number fraction","Percent","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","CELL MARKERS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8112-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percentage unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"CD3-CD16+CD56+ (Natural killer) cells/100 cells in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/8112-5>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/8112-5>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
       >
     >
   >

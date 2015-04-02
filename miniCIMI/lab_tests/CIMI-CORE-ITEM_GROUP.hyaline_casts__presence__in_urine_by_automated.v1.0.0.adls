@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hyaline casts [Presence] in Urine by Automated' concept">
         use = <"Use for Hyaline casts [Presence] in Urine by Automated.">
-        keywords = <"Hyaline","casts","[Presence]","Urine","by","Automated">
+        keywords = <"Cast","Arbitrary concentration","Point in time","Random","Ur","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Auto","URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/50231-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:00">
+      ["time"] = <"2015-03-24T22:21:02">
     >
 
 definition

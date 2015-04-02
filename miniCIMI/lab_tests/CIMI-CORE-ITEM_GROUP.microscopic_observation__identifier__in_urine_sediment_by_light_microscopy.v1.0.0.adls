@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Microscopic observation [Identifier] in Urine sediment by Light microscopy' concept">
         use = <"Use for Microscopic observation [Identifier] in Urine sediment by Light microscopy.">
-        keywords = <"Microscopic","observation","[Identifier]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Micro","Identity or presence","Point in time","Random","UrnS","Urine sediment","UR","Urn","Nominal","LM","Micros","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12235-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:13">
+      ["time"] = <"2015-03-24T22:20:22">
     >
 
 definition

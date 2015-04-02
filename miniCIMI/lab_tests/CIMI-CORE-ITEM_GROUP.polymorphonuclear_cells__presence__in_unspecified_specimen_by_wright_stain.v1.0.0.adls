@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Polymorphonuclear cells [Presence] in Unspecified specimen by Wright stain' concept">
         use = <"Use for Polymorphonuclear cells [Presence] in Unspecified specimen by Wright stain.">
-        keywords = <"Polymorphonuclear","cells","[Presence]","Unspecified","specimen","by","Wright","stain">
+        keywords = <"Polys","PMN","Poly","Segmented WBC","Cell","Cellularity","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Wright Stn","Wrights","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20473-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

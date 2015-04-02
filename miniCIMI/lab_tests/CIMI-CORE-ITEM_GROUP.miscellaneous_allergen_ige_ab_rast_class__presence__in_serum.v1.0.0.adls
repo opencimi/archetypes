@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Miscellaneous allergen IgE Ab RAST class [Presence] in Serum' concept">
         use = <"Use for Miscellaneous allergen IgE Ab RAST class [Presence] in Serum.">
-        keywords = <"Miscellaneous","allergen","IgE","Ab","RAST","class","[Presence]","Serum">
+        keywords = <"Immune globulin E","Immunoglobulin E","Misc Allergen","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Allergens","Alrgen","ALLERGY TESTING">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/33536-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Jo-1 extractable nuclear Ab [Units/volume] in Serum' concept">
         use = <"Use for Jo-1 extractable nuclear Ab [Units/volume] in Serum.">
-        keywords = <"Jo-1","extractable","nuclear","Ab","[Units/volume]","Serum">
+        keywords = <"ANA","Nuc","ANF","NA","Antinuclear antibody","Histidyl-tRNA synthease","ENA Jo1","Arbitrary concentration","Point in time","Random","Serum","SR","Quantitative","QNT","Quant","Quan","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","I","Serology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11565-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Jo-1 extractable nuclear Ab [Units/volume] in Serum
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Jo-1 extractable nuclear Ab [Units/volume] in Serum
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Arbitrary Unit(s) Per Milliliter -- A unit/mL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Jo-1 extractable nuclear Ab [Units/volume] in Serum">>
       ["at0.0.0.0.0.1"] = <text = <"Jo-1 extractable nuclear Ab [Units/volume] in Serum">>
-      ["at0.0.0.0.0.2"] = <text = <"[arb'U]/mL">> -- Arbitrary Unit(s) Per Milliliter -- A unit/mL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/11565-9>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/11565-9>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/418913000> -- Arbitrary Unit(s) Per Milliliter -- A unit/mL
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'MTHFR gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal' concept">
         use = <"Use for MTHFR gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal.">
-        keywords = <"MTHFR","gene","mutations","found","[Identifier]","Blood","or","Tissue","by","Molecular","genetics","method","Nominal">
+        keywords = <"Vascular risk","NADPH","5,10-methylenetetrahydrofolate reductase gene","Identity or presence","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Nominal","PCR","Molecular genetics","Mut Anal","Mutations","MOLPATH.MUTATIONS","MOLPATH.MUTATIONS","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21709-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

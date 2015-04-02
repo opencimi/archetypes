@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column' concept">
         use = <"Use for Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column.">
-        keywords = <"Hemoglobin","A2/Hemoglobin.total","Blood","by","Chromatography","column">
+        keywords = <"Hgb A2","Hb","Haemoglobin","Mass fraction","Percent","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Column Chrom","Tot","Totl","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34660-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percentage unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column">>
       ["at0.0.0.0.0.1"] = <text = <"Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/34660-1>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/34660-1>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
       >
     >
   >

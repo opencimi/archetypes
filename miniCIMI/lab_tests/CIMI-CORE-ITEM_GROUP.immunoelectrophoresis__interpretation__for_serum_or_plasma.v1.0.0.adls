@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Immunoelectrophoresis [interpretation] for Serum or Plasma' concept">
         use = <"Use for Immunoelectrophoresis [interpretation] for Serum or Plasma.">
-        keywords = <"Immunoelectrophoresis","[interpretation]","for","Serum","or","Plasma">
+        keywords = <"Interp","Intrp","Interpret","Interpt","Impression","Impressions","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Nominal","IEP","Immunoelect","Imm elect","Chemistry","SIEP","SIE">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13169-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

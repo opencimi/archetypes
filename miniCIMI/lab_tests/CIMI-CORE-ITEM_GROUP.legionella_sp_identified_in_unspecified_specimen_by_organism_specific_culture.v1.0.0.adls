@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Legionella sp identified in Unspecified specimen by Organism specific culture' concept">
         use = <"Use for Legionella sp identified in Unspecified specimen by Organism specific culture.">
-        keywords = <"Legionella","sp","identified","Unspecified","specimen","by","Organism","specific","culture">
+        keywords = <"Identity or presence","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Nominal","Cult","Cultures","C&S","Isolated","species","spp","Legionela","Legion","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/593-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

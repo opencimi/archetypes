@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Acid citrate dextrose [Volume] in Blood product unit' concept">
         use = <"Use for Acid citrate dextrose [Volume] in Blood product unit.">
-        keywords = <"Acid","citrate","dextrose","[Volume]","Blood","product","unit">
+        keywords = <"Citric acid","ACD","Volume","Point in time","Random","Blood product unit","Quantitative","QNT","Quant","Quan","Acids","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49540-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Acid citrate dextrose [Volume] in Blood product unit
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Acid citrate dextrose [Volume] in Blood product unit
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliLiter [SI Volume Units] -- mL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Acid citrate dextrose [Volume] in Blood product unit">>
       ["at0.0.0.0.0.1"] = <text = <"Acid citrate dextrose [Volume] in Blood product unit">>
-      ["at0.0.0.0.0.2"] = <text = <"mL">> -- MilliLiter [SI Volume Units] -- mL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/49540-8>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/49540-8>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258773002> -- MilliLiter [SI Volume Units] -- mL
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Epithelial casts [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Epithelial casts [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Epithelial","casts","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Epith Casts","Cast","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Epithelia","Epi","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/25157-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:24">
+      ["time"] = <"2015-03-24T22:20:36">
     >
 
 definition

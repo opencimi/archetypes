@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Streptococcus pyogenes Ag [Presence] in Throat by Immunoassay' concept">
         use = <"Use for Streptococcus pyogenes Ag [Presence] in Throat by Immunoassay.">
-        keywords = <"Streptococcus","pyogenes","Ag","[Presence]","Throat","by","Immunoassay">
+        keywords = <"S pyo","S pyogenes","GAS","Steptococcus Group A","Group A Strep","Streptococci group A","Streptococcus group A","Arbitrary concentration","Point in time","Random","Throat","Upper respiratory","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","Antigen","Antigens","Strept","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6556-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

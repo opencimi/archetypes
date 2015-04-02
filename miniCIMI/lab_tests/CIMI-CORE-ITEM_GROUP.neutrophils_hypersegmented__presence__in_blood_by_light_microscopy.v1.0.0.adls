@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Neutrophils.hypersegmented [Presence] in Blood by Light microscopy' concept">
         use = <"Use for Neutrophils.hypersegmented [Presence] in Blood by Light microscopy.">
-        keywords = <"Neutrophils.hypersegmented","[Presence]","Blood","by","Light","microscopy">
+        keywords = <"Neuts Hyperseg","Hypersegs","PNM","Neutrophil","Neutr","PMN","Neut","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Hyper-Seg","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/765-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Bacteria identified in Stool by Culture' concept">
         use = <"Use for Bacteria identified in Stool by Culture.">
-        keywords = <"Bacteria","identified","Stool","by","Culture">
+        keywords = <"Bact","Identity or presence","Point in time","Random","Stl","Feces","Faeces","Bowel movement","Fecal","Faecal","Nominal","Cult","Cultures","C&S","Isolated","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/625-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

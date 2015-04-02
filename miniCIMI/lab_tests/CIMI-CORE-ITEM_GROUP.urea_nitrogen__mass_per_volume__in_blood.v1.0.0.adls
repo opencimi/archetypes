@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Urea nitrogen [Mass/volume] in Blood' concept">
         use = <"Use for Urea nitrogen [Mass/volume] in Blood.">
-        keywords = <"Urea","nitrogen","[Mass/volume]","Blood">
+        keywords = <"Urea nit","UN","Blood urea nitrogen","N2","Nit","N","Mass concentration","Level","Point in time","Random","WB","Whole blood","Quantitative","QNT","Quant","Quan","Chemistry","BUN">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6299-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Urea nitrogen [Mass/volume] in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Urea nitrogen [Mass/volume] in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Urea nitrogen [Mass/volume] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"Urea nitrogen [Mass/volume] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"mg/dL">> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/6299-2>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/6299-2>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258797006> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
       >
     >
   >

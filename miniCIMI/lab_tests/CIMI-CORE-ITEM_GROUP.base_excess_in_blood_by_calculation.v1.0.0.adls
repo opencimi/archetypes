@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Base excess in Blood by calculation' concept">
         use = <"Use for Base excess in Blood by calculation.">
-        keywords = <"Base","excess","Blood","by","calculation">
+        keywords = <"Base ex","BSE","BE","Substance concentration","Level","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Calc","Calculation","EXS","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11555-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:12">
+      ["time"] = <"2015-03-24T22:20:22">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Base excess in Blood by calculation
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Base excess in Blood by calculation
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliMoles Per Liter [Substance Concentration Units] -- mmol/L
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Base excess in Blood by calculation">>
       ["at0.0.0.0.0.1"] = <text = <"Base excess in Blood by calculation">>
-      ["at0.0.0.0.0.2"] = <text = <"mmol/L">> -- MilliMoles Per Liter [Substance Concentration Units] -- mmol/L
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/11555-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/11555-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258813002> -- MilliMoles Per Liter [Substance Concentration Units] -- mmol/L
       >
     >
   >

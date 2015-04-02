@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Opiates tested for in Urine by Screen method Nominal' concept">
         use = <"Use for Opiates tested for in Urine by Screen method Nominal.">
-        keywords = <"Opiates","tested","for","Urine","by","Screen","method","Nominal">
+        keywords = <"Opi","Opiate","OP","Heroin","Identity or presence","Point in time","Random","Ur","UR","Urn","UA","Nominal","Scn","Scr","Scrn","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19296-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method' concept">
         use = <"Use for Borrelia burgdorferi DNA [Presence] in Unspecified specimen by Probe and target amplification method.">
-        keywords = <"Borrelia","burgdorferi","DNA","[Presence]","Unspecified","specimen","by","Probe","target","amplification","method">
+        keywords = <"Deoxyribonucleic acid","B burgdor","B burg","B burgdorferi","Lymes","Burgdorf","Lyme","Bb","Lyme disease","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Polymerase chain reaction","Transcription mediated amplification","NASBA","Nucleic acid sequence based analysis","SDA","Strand Displacement Amplification","LAT","Ligation-activated transcription","3SR SR","3 Self-Sustaining Sequence Replication","LCR","Ligase chain reaction","QBR","Probe with target amplification","NAAT","TMA","Amp Prb","Probe with ampification","DNA probe","Amplified","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/4991-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

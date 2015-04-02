@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobin.gastrointestinal [Presence] in Stool --3rd specimen' concept">
         use = <"Use for Hemoglobin.gastrointestinal [Presence] in Stool --3rd specimen.">
-        keywords = <"Hemoglobin.gastrointestinal","[Presence]","Stool","--3rd","specimen">
+        keywords = <"Hemoccult","Gastrocult","Hemocult","Fecal occult blood","FOB","Occult blood","Guiac","Gastrointest blood","Occult blood in stool","Hgb","Hb","Haemoglobin","GI","sp3","Arbitrary concentration","Point in time","Random","Stl","Feces","Faeces","Bowel movement","Faecal","Ql","Ordinal","QL","Qualitative","Qual","Screen","Spec","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14565-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

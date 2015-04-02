@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Fetal lung maturity [interpretation] in Amniotic fluid' concept">
         use = <"Use for Fetal lung maturity [interpretation] in Amniotic fluid.">
-        keywords = <"Fetal","lung","maturity","[interpretation]","Amniotic","fluid">
+        keywords = <"FLM","Interpretation","Interp","Impression","Impressions","Point in time","Random","Amn","Amniotic fluid","Amn fl","Amniotic flu","AF","Nominal","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/47226-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Platelet aggregation [interpretation] in Platelet poor plasma' concept">
         use = <"Use for Platelet aggregation [interpretation] in Platelet poor plasma.">
-        keywords = <"Platelet","aggregation","[interpretation]","Platelet","poor","plasma">
+        keywords = <"PA","Plt","Pl","Platelets","Thrombocytes","Platelt","Thrombocyte","Interpretation","Interp","Impression","Impressions","Point in time","Random","Platelet poor plasma","Plas","Nominal","Agg","Aggr","COAGULATION">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21027-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:20">
+      ["time"] = <"2015-03-24T22:20:30">
     >
 
 definition

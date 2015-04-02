@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Fifth most predominant hemoglobin in Dried blood spot' concept">
         use = <"Use for Fifth most predominant hemoglobin in Dried blood spot.">
-        keywords = <"Fifth","most","predominant","hemoglobin","Dried","blood","spot">
+        keywords = <"Most predominant Hb","Hgb","Haemoglobin","5th most predominant Hb","Finding","Findings","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Nominal","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/64121-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:11">
+      ["time"] = <"2015-03-24T22:21:15">
     >
 
 definition

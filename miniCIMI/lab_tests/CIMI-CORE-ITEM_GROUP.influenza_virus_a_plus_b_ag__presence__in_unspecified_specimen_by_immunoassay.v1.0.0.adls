@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Influenza virus A+B Ag [Presence] in Unspecified specimen by Immunoassay' concept">
         use = <"Use for Influenza virus A+B Ag [Presence] in Unspecified specimen by Immunoassay.">
-        keywords = <"Influenza","virus","A+B","Ag","[Presence]","Unspecified","specimen","by","Immunoassay">
+        keywords = <"FLUAV+FLUBV","FLUAV and FLUBV","Avian influenza","Fowl plague","Influenza A virus","FLUA","Bird flu","FLUV","Influ","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","Antigen","Antigens","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6437-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

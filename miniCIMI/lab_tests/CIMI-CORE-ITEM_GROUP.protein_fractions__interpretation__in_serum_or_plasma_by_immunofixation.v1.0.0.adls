@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Protein Fractions [interpretation] in Serum or Plasma by Immunofixation' concept">
         use = <"Use for Protein Fractions [interpretation] in Serum or Plasma by Immunofixation.">
-        keywords = <"Protein","Fractions","[interpretation]","Serum","or","Plasma","by","Immunofixation">
+        keywords = <"Prot Pattern","Protein fractions","PR","Interpretation","Interp","Impression","Impressions","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Nominal","IFE","Ifix","Immunofixation electrophoresis","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14895-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

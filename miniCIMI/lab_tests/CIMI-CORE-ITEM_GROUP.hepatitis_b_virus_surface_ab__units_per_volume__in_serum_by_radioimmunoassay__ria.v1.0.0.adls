@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA)' concept">
         use = <"Use for Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA).">
-        keywords = <"Hepatitis","B","virus","surface","Ab","[Units/volume]","Serum","by","Radioimmunoassay","(RIA)">
+        keywords = <"HBsAB","anti-HBsAg","Hep Bs","HBs","HBV surface","HepB","Hep B","Arbitrary concentration","Point in time","Random","Serum","SR","Quantitative","QNT","Quant","Quan","Radioimmunoassay","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Surf","Hepatit","Hepatis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5194-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA)
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA)
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA)">>
       ["at0.0.0.0.0.1"] = <text = <"Hepatitis B virus surface Ab [Units/volume] in Serum by Radioimmunoassay (RIA)">>
-      ["at0.0.0.0.0.2"] = <text = <"{Index_val}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/5194-6>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/5194-6>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

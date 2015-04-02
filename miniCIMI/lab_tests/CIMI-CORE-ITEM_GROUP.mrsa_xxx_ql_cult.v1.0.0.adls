@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture' concept">
         use = <"Use for Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture.">
-        keywords = <"Methicillin","resistant","Staphylococcus","aureus","[Presence]","Unspecified","specimen","by","Organism","specific","culture">
+        keywords = <"MRSA","MRSA screen","S aureus","o71","Dimethoxypenicillin","Metacillin","Celbenin","Metin","Staficyn","Staphicillin","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Cult","Cultures","C&S","Staph","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13317-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

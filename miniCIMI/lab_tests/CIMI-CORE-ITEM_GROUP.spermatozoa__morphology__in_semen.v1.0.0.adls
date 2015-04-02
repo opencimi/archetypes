@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Spermatozoa [Morphology] in Semen' concept">
         use = <"Use for Spermatozoa [Morphology] in Semen.">
-        keywords = <"Spermatozoa","[Morphology]","Semen">
+        keywords = <"Sperm","Morphology","Point in time","Random","Smn","Ejaculate","Seminal fluid","SMPLS","Sem","Nominal","FERTILITY TESTING">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9704-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

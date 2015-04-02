@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence' concept">
         use = <"Use for Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence.">
-        keywords = <"Herpes","simplex","virus","2","IgM","Ab","[Titer]","Serum","by","Immunofluorescence">
+        keywords = <"Immune globulin M","Immunoglobulin M","HSV2","Herpes simplex virus type 2","Herpes simplex virus type II","Herp splx","HSV","Dilution factor","Titer","Titre","Ttr","Titered","Point in time","Random","Serum","SR","Quantitative","QNT","Quant","Quan","ACIF","FA","Fluorescent antibody","Immune fluorescence","Fluoresent","Immunoflour","Immunofluor","Immunofluorescence","IFA","Time Resolved Fluorescence","Anticomplement Immunofluorescence","TRF","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/26927-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Titer -- Titer
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence">>
       ["at0.0.0.0.0.1"] = <text = <"Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence">>
-      ["at0.0.0.0.0.2"] = <text = <"{titer}">> -- Titer -- Titer
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/26927-4>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/26927-4>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/118590008> -- Titer -- Titer
       >
     >
   >

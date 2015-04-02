@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Neutralization test' concept">
         use = <"Use for Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Neutralization test.">
-        keywords = <"Hepatitis","B","virus","surface","Ag","[Presence]","Serum","or","Plasma","by","Neutralization","test">
+        keywords = <"Australia antigen","HBsAG","HBV surface","Hep Bs","HBs","HepB","Hep B","Arbitrary concentration","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Screen","Nt","NT","Neutralization test","Antigen","Antigens","Surf","Hepatit","Hepatis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/7905-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

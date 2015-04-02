@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Calculus analysis [interpretation] in Stone' concept">
         use = <"Use for Calculus analysis [interpretation] in Stone.">
-        keywords = <"Calculus","analysis","[interpretation]","Stone">
+        keywords = <"Stone Analysis","Interpretation","Interp","Impression","Impressions","Point in time","Random","Calc","Stn","Stones","Calculi","Nominal","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14638-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

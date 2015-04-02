@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Ribonucleoprotein extractable nuclear Ab [Presence] in Serum' concept">
         use = <"Use for Ribonucleoprotein extractable nuclear Ab [Presence] in Serum.">
-        keywords = <"Ribonucleoprotein","extractable","nuclear","Ab","[Presence]","Serum">
+        keywords = <"Ro","ENA RNP","ANA","Nuc","ANF","NA","Antinuclear antibody","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Ribonuclear protein","Serology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8091-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

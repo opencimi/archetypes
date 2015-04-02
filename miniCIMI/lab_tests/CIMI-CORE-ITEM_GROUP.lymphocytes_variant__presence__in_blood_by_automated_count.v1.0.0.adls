@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Lymphocytes Variant [Presence] in Blood by Automated count' concept">
         use = <"Use for Lymphocytes Variant [Presence] in Blood by Automated count.">
-        keywords = <"Lymphocytes","Variant","[Presence]","Blood","by","Automated","count">
+        keywords = <"Variant Lymphs","Atypical lymphocytes","Reactive lymphocytes","Variant lymphocytes","Lymph","Lymphocyte","Lympho","Lymphs%","Lymp","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Auto","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/15192-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

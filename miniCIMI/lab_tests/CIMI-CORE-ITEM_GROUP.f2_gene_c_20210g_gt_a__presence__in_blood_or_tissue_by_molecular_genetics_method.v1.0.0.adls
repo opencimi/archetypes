@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for F2 gene c.20210G>A [Presence] in Blood or Tissue by Molecular genetics method.">
-        keywords = <"F2","gene","c.20210G>A","[Presence]","Blood","or","Tissue","by","Molecular","genetics","method">
+        keywords = <"F2 c.20210G>A","Prothrombin precursor","Coagulation Factor 2 gene","Prothrombin gene","Coagulation Factor II gene","Arbitrary","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Molecular genetics","MOLPATH.MUTATIONS","MOLPATH.MUTATIONS","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/24475-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

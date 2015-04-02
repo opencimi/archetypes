@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Turbidity of Synovial fluid Qualitative' concept">
         use = <"Use for Turbidity of Synovial fluid Qualitative.">
-        keywords = <"Turbidity","Synovial","fluid","Qualitative">
+        keywords = <"Arbitrary concentration","Point in time","Random","Snv","Joint fluid","Joint aspirate","Synovial fluid","Syn fl","Joint fld","Joint flu","Synov","SNV","SF","Ql","Ordinal","QL","Qualitative","Qual","Screen">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/48053-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

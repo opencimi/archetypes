@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Food Allergen Mix 2 (Cod+Blue Mussel+Shrimp+Salmon+Tuna) IgE Ab [Presence] in Serum by Multidisk' concept">
         use = <"Use for Food Allergen Mix 2 (Cod+Blue Mussel+Shrimp+Salmon+Tuna) IgE Ab [Presence] in Serum by Multidisk.">
-        keywords = <"Food","Allergen","Mix","2","(Cod+Blue","Mussel+Shrimp+Salmon+Tuna)","IgE","Ab","[Presence]","Serum","by","Multidisk">
+        keywords = <"Tuna","f040","f40","Yellow fin","Salmon","Atlantic salmon","f041","f41","Shrimp","Prawns","f024","f24","Blue mussel","f037","f37","Immune globulin E","Immunoglobulin E","Food Allerg Mix2","fx2","Food mix (sea food)","Fish mix","Codfish","Cod","f003","f3","Scrod","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Allerscan","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","ALLERGY TESTING","Allergens","Allergen">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/15218-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

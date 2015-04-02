@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Acetone [Presence] in Serum or Plasma by Screen method' concept">
         use = <"Use for Acetone [Presence] in Serum or Plasma by Screen method.">
-        keywords = <"Acetone","[Presence]","Serum","or","Plasma","by","Screen","method">
+        keywords = <"2-propanone","Me2CO","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Scn","Scr","Scrn","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20469-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

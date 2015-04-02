@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 't(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript [Presence] in Blood or Tissue by Molecular genetics method.">
-        keywords = <"t(9;22)(q34.1;q11)(ABL1,BCR)","fusion","transcript","[Presence]","Blood","or","Tissue","by","Molecular","genetics","method">
+        keywords = <"t(9;22)(ABL1,BCR)","Philadelphia chromosome","bcr-abl1","bcr/abl","t(9,22)(ABL1,BCR) gene translocation","t(9,22)(ABL1,BCR) Translocation","t(9,22)(q34,q11)","Ph chromosome","Arbitrary","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Molecular genetics","gene fusion","RNA","DNA","T prime","ALL","BCR1","Chronic myeloid leukemia","CML","Breakpoint cluster region","D22S11","D22S662","PHL","v-abl Abelson murine leukemia viral oncogene homolog 1","ABL","JTK7","p150","MOLPATH.TRANSLOCATION","MOLPATH.TRANSLOCATION","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21821-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'INR in Platelet poor plasma by Coagulation assay' concept">
         use = <"Use for INR in Platelet poor plasma by Coagulation assay.">
-        keywords = <"INR","Platelet","poor","plasma","by","Coagulation","assay">
+        keywords = <"PT INR","Prothrombin time INR","Protime INR","Pro time","RlTm","Point in time","Random","Platelet poor plasma","Plas","Quantitative","QNT","Quant","Quan","Coagulation assay","Clot","Tilt tube","Clottable","International normal ratio","Internat norm ratio","International normalization ratio","International normalized ratio","Fac","Fact">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6301-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- INR in Platelet poor plasma by Coagulation assay
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- INR in Platelet poor plasma by Coagulation assay
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"INR in Platelet poor plasma by Coagulation assay">>
       ["at0.0.0.0.0.1"] = <text = <"INR in Platelet poor plasma by Coagulation assay">>
-      ["at0.0.0.0.0.2"] = <text = <"{INR}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/6301-6>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/6301-6>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Insulin dependent diabetes mellitus [Presence]' concept">
         use = <"Use for Insulin dependent diabetes mellitus [Presence].">
-        keywords = <"Insulin","dependent","diabetes","mellitus","[Presence]">
+        keywords = <"IDDM","Insul","Humulin","HUM","IH7","Lente","NPH","Semilente","Ultralente","Sliding","DM","Arbitrary concentration","Point in time","Random","Ql","Ordinal","QL","Qualitative","Qual","Screen">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/44877-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Fungus # 3 identified in Unspecified specimen by Culture' concept">
         use = <"Use for Fungus # 3 identified in Unspecified specimen by Culture.">
-        keywords = <"Fungus","#","3","identified","Unspecified","specimen","by","Culture">
+        keywords = <"Fungal","Fung","Fungi","Identity or presence","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Nominal","Cult","Cultures","C&S","Isolated","III","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/17948-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine' concept">
         use = <"Use for Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine.">
-        keywords = <"Microalbumin/Creatinine","[Mass","Ratio]","24","hour","Urine">
+        keywords = <"Protein.albumin","Alb","Creat","Crea","CR","Mass concentration ratio","Mass ratio","MCRto","1 day","24 hours","24HR","Ur","UR","Urn","UA","Quantitative","QNT","Quant","Quan","DL=20 mg/L","DL=20 mg/L","Chemistry","MA","Malb","Micro albumin","Microalbumin","UCr">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14958-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"mg/g{creat}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/14958-3>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/14958-3>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

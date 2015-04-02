@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Phenylalanine [Moles/volume] in Dried blood spot' concept">
         use = <"Use for Phenylalanine [Moles/volume] in Dried blood spot.">
-        keywords = <"Phenylalanine","[Moles/volume]","Dried","blood","spot">
+        keywords = <"Phe","PPA","Substance concentration","Level","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Chemistry","PKU">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29573-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Phenylalanine [Moles/volume] in Dried blood spot
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Phenylalanine [Moles/volume] in Dried blood spot
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MicroMoles Per Liter [Substance Concentration Units] -- umol/L
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Phenylalanine [Moles/volume] in Dried blood spot">>
       ["at0.0.0.0.0.1"] = <text = <"Phenylalanine [Moles/volume] in Dried blood spot">>
-      ["at0.0.0.0.0.2"] = <text = <"umol/L">> -- MicroMoles Per Liter [Substance Concentration Units] -- umol/L
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/29573-3>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/29573-3>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258814008> -- MicroMoles Per Liter [Substance Concentration Units] -- umol/L
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Thrombin time [interpretation] in Blood' concept">
         use = <"Use for Thrombin time [interpretation] in Blood.">
-        keywords = <"Thrombin","time","[interpretation]","Blood">
+        keywords = <"TT","Thrombin time","Thrombin clotting time","TCT","Interpretation","Interp","Impression","Impressions","Point in time","Random","Blood","WB","Whole blood","Nominal","Throm">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21032-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

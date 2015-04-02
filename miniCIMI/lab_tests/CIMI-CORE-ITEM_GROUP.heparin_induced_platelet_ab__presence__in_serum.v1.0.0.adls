@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Heparin induced platelet Ab [Presence] in Serum' concept">
         use = <"Use for Heparin induced platelet Ab [Presence] in Serum.">
-        keywords = <"Heparin","induced","platelet","Ab","[Presence]","Serum">
+        keywords = <"PF4-heparin Ab","Heparin dependent antibodies","Heparin induced thromocytopenia","Heparin associated thrombycytopenia","HAT","HITA","Platelet Ab.heparin induced","HIT","PF4 heparin cmplx","PI-factor 4","Platelet type heparin inactivator","PF","Plt","Pl","Platelets","Thrombocytes","Platelt","Thrombocyte","Hep","Heparn","Hepar","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Fac","Fact","Compx","Serology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/34701-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

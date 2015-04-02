@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'History of neural tube defect Narrative' concept">
         use = <"Use for History of neural tube defect Narrative.">
-        keywords = <"History","neural","tube","defect","Narrative">
+        keywords = <"ONTD","Neural tube def","Neural tube defct","Open spina bifida","OSB","Anencephaly","NTD","Neural tube defect Hx","Finding","Findings","Point in time","Random","Narrative","Report","H/O","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49053-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot' concept">
         use = <"Use for Hemoglobinopathies conditions suspected [Identifier] in Dried blood spot.">
-        keywords = <"Hemoglobinopathies","conditions","suspected","[Identifier]","Dried","blood","spot">
+        keywords = <"Hemoglobinopathies suspected","Identity or presence","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Nominal","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/71592-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:17">
+      ["time"] = <"2015-03-24T22:21:29">
     >
 
 definition

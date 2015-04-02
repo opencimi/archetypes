@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Protein Fractions [interpretation] in Urine by Electrophoresis' concept">
         use = <"Use for Protein Fractions [interpretation] in Urine by Electrophoresis.">
-        keywords = <"Protein","Fractions","[interpretation]","Urine","by","Electrophoresis">
+        keywords = <"Prot Pattern","Protein fractions","PR","Interpretation","Interp","Impression","Impressions","Point in time","Random","Ur","UR","Urn","UA","Nominal","Elph","Elp","Elect","Electrophrs","Electrophhrs","Electr","Elec","Ep","Electro","Chemistry","PEUR","UPEP">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13438-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Gardnerella vaginalis rRNA [Presence] in Genital specimen by DNA probe' concept">
         use = <"Use for Gardnerella vaginalis rRNA [Presence] in Genital specimen by DNA probe.">
-        keywords = <"Gardnerella","vaginalis","rRNA","[Presence]","Genital","specimen","by","DNA","probe">
+        keywords = <"G vaginalis","Arbitrary concentration","Point in time","Random","Gen","Genital tract","Urogenit","Urogenital","Ql","Ordinal","QL","Qualitative","Qual","Screen","Prb","DNA probe","ribosomal RNA","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6410-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

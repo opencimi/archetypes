@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Neisseria gonorrhoeae rRNA [Presence] in Urine by Probe and target amplification method' concept">
         use = <"Use for Neisseria gonorrhoeae rRNA [Presence] in Urine by Probe and target amplification method.">
-        keywords = <"Neisseria","gonorrhoeae","rRNA","[Presence]","Urine","by","Probe","target","amplification","method">
+        keywords = <"N gonorrhoea","N gonorrhoeae","Gono","GC","Gonorrhea","Arbitrary concentration","Point in time","Random","Ur","UR","Urn","UA","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Polymerase chain reaction","Transcription mediated amplification","NASBA","Nucleic acid sequence based analysis","SDA","Strand Displacement Amplification","LAT","Ligation-activated transcription","3SR SR","3 Self-Sustaining Sequence Replication","LCR","Ligase chain reaction","QBR","Probe with target amplification","NAAT","TMA","Amp Prb","Probe with ampification","DNA probe","Amplified","ribosomal RNA","Microbiology","Gen-Probe">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/60256-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

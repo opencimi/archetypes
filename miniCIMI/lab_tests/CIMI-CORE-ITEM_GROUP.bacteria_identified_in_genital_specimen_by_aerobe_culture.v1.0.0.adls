@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Bacteria identified in Genital specimen by Aerobe culture' concept">
         use = <"Use for Bacteria identified in Genital specimen by Aerobe culture.">
-        keywords = <"Bacteria","identified","Genital","specimen","by","Aerobe","culture">
+        keywords = <"Bact","Identity or presence","Point in time","Random","Gen","Genital tract","Urogenit","Urogenital","Nominal","Aerobe Cult","Aerobed","Cultures","C&S","Isolated","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/10352-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

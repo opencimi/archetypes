@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cancer Ag 125 [Presence] in Serum or Plasma' concept">
         use = <"Use for Cancer Ag 125 [Presence] in Serum or Plasma.">
-        keywords = <"Cancer","Ag","125","[Presence]","Serum","or","Plasma">
+        keywords = <"Cancer Ag125","Carbohydrate antigen 125","OC125","CA 125","Cancer antigen 125","Arbitrary concentration","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Screen","Antigen","Antigens","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/2006-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

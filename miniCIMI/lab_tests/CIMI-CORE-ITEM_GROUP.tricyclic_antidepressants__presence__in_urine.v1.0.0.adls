@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Tricyclic antidepressants [Presence] in Urine' concept">
         use = <"Use for Tricyclic antidepressants [Presence] in Urine.">
-        keywords = <"Tricyclic","antidepressants","[Presence]","Urine">
+        keywords = <"Tricyclics","TCA","Antidepressant","Antidepres","Point in time","Random","Ur","UR","Urn","UA","Ql","Ordinal","QL","Qualitative","Qual","Screen","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11004-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

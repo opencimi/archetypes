@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Histoplasma capsulatum Ag [Presence] in Serum' concept">
         use = <"Use for Histoplasma capsulatum Ag [Presence] in Serum.">
-        keywords = <"Histoplasma","capsulatum","Ag","[Presence]","Serum">
+        keywords = <"H capsul","H capsulatum","H farciminosum","Histoplasma farciminosum","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Antigen","Antigens","Histo","Histopl","Histoplasmos","Histoplasmosis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19108-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

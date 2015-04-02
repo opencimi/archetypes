@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Epithelial cells.squamous [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Epithelial cells.squamous [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Epithelial","cells.squamous","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Squamous epithelial cells","Squamous epithelial cell","Squamous cell","SEC","Epi Cells","Cell","Cellularity","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Sq","Epith","Epithelia","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12258-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:13">
+      ["time"] = <"2015-03-24T22:20:22">
     >
 
 definition

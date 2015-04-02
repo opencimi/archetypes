@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobins that can be presumptively identified based on available controls in Dried blood spot' concept">
         use = <"Use for Hemoglobins that can be presumptively identified based on available controls in Dried blood spot.">
-        keywords = <"Hemoglobins","that","can","be","presumptively","identified","based","on","available","controls","Dried","blood","spot">
+        keywords = <"Hb pres ID based on avail contr","Finding","Findings","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Nominal","Isolated","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/64122-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:11">
+      ["time"] = <"2015-03-24T22:21:15">
     >
 
 definition

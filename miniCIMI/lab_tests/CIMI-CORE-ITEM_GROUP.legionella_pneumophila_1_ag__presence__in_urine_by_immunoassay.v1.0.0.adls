@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Legionella pneumophila 1 Ag [Presence] in Urine by Immunoassay' concept">
         use = <"Use for Legionella pneumophila 1 Ag [Presence] in Urine by Immunoassay.">
-        keywords = <"Legionella","pneumophila","1","Ag","[Presence]","Urine","by","Immunoassay">
+        keywords = <"L pneumo1","Philadelphia 1","Legionella pneumophila serogroup 1","L pneumonphila","Arbitrary concentration","Point in time","Random","Ur","UR","Urn","UA","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","Antigen","Antigens","Pneumophilia","pneum","Pneu","Legionela","Legion","I","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41499-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

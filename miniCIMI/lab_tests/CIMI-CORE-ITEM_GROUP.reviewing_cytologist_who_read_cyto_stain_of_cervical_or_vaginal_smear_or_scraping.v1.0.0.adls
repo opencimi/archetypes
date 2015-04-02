@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Reviewing cytologist who read Cyto stain of Cervical or vaginal smear or scraping' concept">
         use = <"Use for Reviewing cytologist who read Cyto stain of Cervical or vaginal smear or scraping.">
-        keywords = <"Reviewing","cytologist","who","read","Cyto","stain","Cervical","or","vaginal","smear","or","scraping">
+        keywords = <"Reviewing Cyto","Identifier","Ident","Point in time","Random","Genital tract","Genital vaginal","Vagina","Vaginal fluid","Vag fluid","Vag fld","Cervix","Nominal","Pap Smear","Pap Stain","Cytostain","Cytology stain","Papanicolaou smear">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19768-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

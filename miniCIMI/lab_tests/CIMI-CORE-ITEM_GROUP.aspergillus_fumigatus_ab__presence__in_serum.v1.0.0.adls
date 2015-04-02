@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Aspergillus fumigatus Ab [Presence] in Serum' concept">
         use = <"Use for Aspergillus fumigatus Ab [Presence] in Serum.">
-        keywords = <"Aspergillus","fumigatus","Ab","[Presence]","Serum">
+        keywords = <"A fumigatus","m003","m3","Farmers lung","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Fum","Aspergil","Asperg","Aspergils","Aspergilus","Aspergilis","Aspergilla","Aspergillin","Aspergillosis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9632-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

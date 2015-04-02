@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Weight of Sweat' concept">
         use = <"Use for Weight of Sweat.">
-        keywords = <"Weight","Sweat">
+        keywords = <"Wt","Specimen wt","Point in time","Random","SWT","Quantitative","QNT","Quant","Quan">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/33247-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Weight of Sweat
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Weight of Sweat
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Weight of Sweat">>
       ["at0.0.0.0.0.1"] = <text = <"Weight of Sweat">>
-      ["at0.0.0.0.0.2"] = <text = <"mg">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/33247-8>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/33247-8>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Burr cells [Presence] in Blood by Light microscopy' concept">
         use = <"Use for Burr cells [Presence] in Blood by Light microscopy.">
-        keywords = <"Burr","cells","[Presence]","Blood","by","Light","microscopy">
+        keywords = <"Cell","Cellularity","Sea urchin cells","Erythrocytes.crenated","Echinocytes","Echinocyte","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/7790-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:22">
+      ["time"] = <"2015-03-24T22:21:35">
     >
 
 definition

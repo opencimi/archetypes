@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Phencyclidine [Presence] in Meconium by Screen method' concept">
         use = <"Use for Phencyclidine [Presence] in Meconium by Screen method.">
-        keywords = <"Phencyclidine","[Presence]","Meconium","by","Screen","method">
+        keywords = <"PCP","Sernylan","Angel dust","Point in time","Random","Mec","Ql","Ordinal","QL","Qualitative","Qual","Scn","Scr","Scrn","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8234-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

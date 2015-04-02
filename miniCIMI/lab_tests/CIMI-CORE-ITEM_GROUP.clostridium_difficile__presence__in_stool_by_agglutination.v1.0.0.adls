@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Clostridium difficile [Presence] in Stool by Agglutination' concept">
         use = <"Use for Clostridium difficile [Presence] in Stool by Agglutination.">
-        keywords = <"Clostridium","difficile","[Presence]","Stool","by","Agglutination">
+        keywords = <"C dif","C diff","C difficile","Arbitrary concentration","Point in time","Random","Stl","Feces","Faeces","Bowel movement","Fecal","Faecal","Ql","Ordinal","QL","Qualitative","Qual","Screen","Agglutination","Agg","Agglut","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20761-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

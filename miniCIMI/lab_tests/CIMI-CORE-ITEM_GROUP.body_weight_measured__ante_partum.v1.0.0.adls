@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Body weight Measured --ante partum' concept">
         use = <"Use for Body weight Measured --ante partum.">
-        keywords = <"Body","weight","Measured","--ante","partum">
+        keywords = <"Wt","Bdy weight","Point in time","Random","Quantitative","QNT","Quant","Quan","bod","Bodies","BODY WEIGHT.MOLEC","BODY WEIGHT.MOLEC">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8338-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Body weight Measured --ante partum
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Body weight Measured --ante partum
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Pound [mass] -- lb
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Body weight Measured --ante partum">>
       ["at0.0.0.0.0.1"] = <text = <"Body weight Measured --ante partum">>
-      ["at0.0.0.0.0.2"] = <text = <"[lb_av]">> -- Pound [mass] -- lb
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/8338-6>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/8338-6>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258693003> -- Pound [mass] -- lb
       >
     >
   >

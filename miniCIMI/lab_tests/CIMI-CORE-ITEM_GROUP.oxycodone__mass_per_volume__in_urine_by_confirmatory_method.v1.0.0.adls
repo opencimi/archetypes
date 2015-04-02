@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Oxycodone [Mass/volume] in Urine by Confirmatory method' concept">
         use = <"Use for Oxycodone [Mass/volume] in Urine by Confirmatory method.">
-        keywords = <"Oxycodone","[Mass/volume]","Urine","by","Confirmatory","method">
+        keywords = <"OxyContin","Percocet","Vicodin","Lortab","Percodan","Mass concentration","Level","Point in time","Random","Ur","UR","Urn","UA","Quantitative","QNT","Quant","Quan","Cfm","CNFR","CNFRM","Conf","Confirmation","GCMS","Confirmatory","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/16249-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxycodone [Mass/volume] in Urine by Confirmatory method
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Oxycodone [Mass/volume] in Urine by Confirmatory method
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Oxycodone [Mass/volume] in Urine by Confirmatory method">>
       ["at0.0.0.0.0.1"] = <text = <"Oxycodone [Mass/volume] in Urine by Confirmatory method">>
-      ["at0.0.0.0.0.2"] = <text = <"ng/mL">> -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/16249-5>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/16249-5>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258806002> -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Other elements in Urine sediment' concept">
         use = <"Use for Other elements in Urine sediment.">
-        keywords = <"Other","elements","Urine","sediment">
+        keywords = <"Point in time","Random","UrnS","Urine sediment","UR","Urn","Othr","PANEL.URINALYSIS","URINALYSIS","PANEL.URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/58441-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:07">
+      ["time"] = <"2015-03-24T22:21:08">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hepatitis C virus Ag [Presence] in Blood or Marrow from donor' concept">
         use = <"Use for Hepatitis C virus Ag [Presence] in Blood or Marrow from donor.">
-        keywords = <"Hepatitis","C","virus","Ag","[Presence]","Blood","or","Marrow","from","donor">
+        keywords = <"HCV","Hep C","Arbitrary concentration","Point in time","Random","BM","Bone marrow","BON","Bld/Mar","Blood","WB","Whole blood","Donr","Ql","Ordinal","QL","Qualitative","Qual","Screen","Antigen","Antigens","Hepatit","Hepatis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49846-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

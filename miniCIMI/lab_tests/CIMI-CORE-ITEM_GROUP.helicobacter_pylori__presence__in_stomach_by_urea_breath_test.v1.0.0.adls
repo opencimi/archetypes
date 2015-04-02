@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Helicobacter pylori [Presence] in Stomach by urea breath test' concept">
         use = <"Use for Helicobacter pylori [Presence] in Stomach by urea breath test.">
-        keywords = <"Helicobacter","pylori","[Presence]","Stomach","by","urea","breath","test">
+        keywords = <"CO2","Carbonic anhydride","p urea","carbamide","p dose","Arbitrary concentration","Point in time","Random","ExG","Breath","Exhaled gas","Ql","Ordinal","QL","Qualitative","Qual","Screen","Gases","PST","After","Microbiology","Urea breath test","Helicobacter pylori breath test","UBT">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29891-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

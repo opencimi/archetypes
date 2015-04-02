@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay' concept">
         use = <"Use for Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay.">
-        keywords = <"Cardiolipin","IgG","Ab","[Units/volume]","Serum","by","Immunoassay">
+        keywords = <"Immune globulin G","Immunoglobulin G","Cardiolip","Cardio","Cardiolipn","Cardiolpn","ACA","aCL","Anticardiolipin","CL","Arbitrary concentration","Point in time","Random","Serum","SR","Quantitative","QNT","Quant","Quan","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","COAGULATION">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/3181-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- GPL unit [biologic activity of anticardiolipin IgG] -- GPL unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay">>
       ["at0.0.0.0.0.1"] = <text = <"Cardiolipin IgG Ab [Units/volume] in Serum by Immunoassay">>
-      ["at0.0.0.0.0.2"] = <text = <"[GPL'U]">> -- GPL unit [biologic activity of anticardiolipin IgG] -- GPL unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/3181-5>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/3181-5>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/420126000> -- GPL unit [biologic activity of anticardiolipin IgG] -- GPL unit
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood' concept">
         use = <"Use for CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood.">
-        keywords = <"CD3+CD4+","(T4","helper)","cells/CD3+CD8+","(T8","suppressor","cells)","cells","[#","Ratio]","Blood">
+        keywords = <"T4 helper/inducer cells","CD4+ T cells","CD3+CD8+ Cells","Suppressor/cytotoxic T cells","CD8 T cells","T8 suppressor cells","CD3 Cells","Cell","Cellularity","Leu-4","Leu4","T3","CD3+CD8+ Cells","Number ratio","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Leu-2","T-8","Leu2","Suppressor T cells","Tsuppressor","Leu-3","T-4","Leu3","W3/25","Helper T cells","Inducer T cells","L3T4","CELL MARKERS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54218-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percentage unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/54218-3>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/54218-3>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
       >
     >
   >

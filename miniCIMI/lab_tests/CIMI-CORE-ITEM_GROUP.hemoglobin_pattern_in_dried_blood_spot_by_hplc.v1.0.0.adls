@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobin pattern in Dried blood spot by HPLC' concept">
         use = <"Use for Hemoglobin pattern in Dried blood spot by HPLC.">
-        keywords = <"Hemoglobin","pattern","Dried","blood","spot","by","HPLC">
+        keywords = <"Hgb Fract","Hb","Haemoglobin","Finding","Findings","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Nominal","High pressure liquid chromatography","High performance liquid chromatography","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/54104-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:04">
+      ["time"] = <"2015-03-24T22:21:05">
     >
 
 definition

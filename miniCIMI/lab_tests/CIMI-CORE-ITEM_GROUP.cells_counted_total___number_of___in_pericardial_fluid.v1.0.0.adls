@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cells Counted Total [#] in Pericardial fluid' concept">
         use = <"Use for Cells Counted Total [#] in Pericardial fluid.">
-        keywords = <"Cells","Counted","Total","[#]","Pericardial","fluid">
+        keywords = <"Total Cells Counted","Total cells","Cell","Cellularity","Number","Count","Cnt","Point in time","Random","Pcar","PCAR","Pericardial fluid","Quantitative","QNT","Quant","Quan","Tot","Totl","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/32165-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:35">
+      ["time"] = <"2015-03-24T22:20:45">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Cells Counted Total [#] in Pericardial fluid
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Cells Counted Total [#] in Pericardial fluid
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Cells Counted Total [#] in Pericardial fluid">>
       ["at0.0.0.0.0.1"] = <text = <"Cells Counted Total [#] in Pericardial fluid">>
-      ["at0.0.0.0.0.2"] = <text = <"">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/32165-3>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/32165-3>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis' concept">
         use = <"Use for Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis.">
-        keywords = <"Alpha","2","globulin/Protein.total","unspecified","time","Urine","by","Electrophoresis">
+        keywords = <"Alpha2 Glob","Protein.alpha 2 globulin","Prot","PR","GLB","Globulins","Glob%","Globul","TP","Mass fraction","Percent","?Tm","Ur","UR","Urn","UA","Quantitative","QNT","Quant","Quan","Elph","Elp","Elect","Electrophrs","Electrophhrs","Electr","Elec","Ep","Electro","Tot","Totl","A2","Alfa","II","Chemistry","PEUR","UPEP">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/17813-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percentage unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis">>
       ["at0.0.0.0.0.1"] = <text = <"Alpha 2 globulin/Protein.total in unspecified time Urine by Electrophoresis">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/17813-7>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/17813-7>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
       >
     >
   >

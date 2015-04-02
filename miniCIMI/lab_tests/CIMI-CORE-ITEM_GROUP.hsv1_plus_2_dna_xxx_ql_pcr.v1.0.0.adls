@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Herpes simplex virus 1+2 DNA [Presence] in Unspecified specimen by Probe and target amplification method' concept">
         use = <"Use for Herpes simplex virus 1+2 DNA [Presence] in Unspecified specimen by Probe and target amplification method.">
-        keywords = <"Herpes","simplex","virus","1+2","DNA","[Presence]","Unspecified","specimen","by","Probe","target","amplification","method">
+        keywords = <"HSV1+2","Herpes simplex virus type 1+2","Herpes simplex virus type I+II","HSV 1 and 2","HSV1","Herpes simplex virus type 1","Herpes simplex virus type I","Herp splx","Deoxyribonucleic acid","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Polymerase chain reaction","Transcription mediated amplification","NASBA","Nucleic acid sequence based analysis","SDA","Strand Displacement Amplification","LAT","Ligation-activated transcription","3SR SR","3 Self-Sustaining Sequence Replication","LCR","Ligase chain reaction","QBR","Probe with target amplification","NAAT","TMA","Amp Prb","Probe with ampification","DNA probe","Amplified","II","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20444-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

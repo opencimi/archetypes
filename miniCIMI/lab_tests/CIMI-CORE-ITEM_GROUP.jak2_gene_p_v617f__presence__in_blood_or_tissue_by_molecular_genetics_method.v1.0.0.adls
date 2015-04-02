@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'JAK2 gene p.V617F [Presence] in Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for JAK2 gene p.V617F [Presence] in Blood or Tissue by Molecular genetics method.">
-        keywords = <"JAK2","gene","p.V617F","[Presence]","Blood","or","Tissue","by","Molecular","genetics","method">
+        keywords = <"JAK2 p.V617F","PV","Janus kinase 2 gene","Erythrocytosis","Polycythemia vera","Arbitrary","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Molecular genetics","P prime","MOLPATH.MUTATIONS","MOLPATH.MUTATIONS","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43399-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

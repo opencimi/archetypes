@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Lupus anticoagulant neutralization dilute phospholipid [Presence] in Platelet poor plasma' concept">
         use = <"Use for Lupus anticoagulant neutralization dilute phospholipid [Presence] in Platelet poor plasma.">
-        keywords = <"Lupus","anticoagulant","neutralization","dilute","phospholipid","[Presence]","Platelet","poor","plasma">
+        keywords = <"Pl","Phoslpd","Phospholipids","Lipid","LA Nt dPL","TTIT","Dilute prothrombin time","dPT","TTI","Tissue thromboplastin inhibition","dRVVT","LAC","Lupus inhibitor","Coagulation inhibiting antibody","Anti-phospholipid antibody","Arbitrary concentration","Point in time","Random","Platelet poor plasma","Plas","Ql","Ordinal","QL","Qualitative","Qual","Screen","Neutr","Neut","Dil","Dilut","Anticoag">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/15191-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

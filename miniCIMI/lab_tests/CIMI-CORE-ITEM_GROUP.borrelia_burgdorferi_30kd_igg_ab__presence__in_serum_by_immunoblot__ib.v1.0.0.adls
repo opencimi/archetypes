@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB)' concept">
         use = <"Use for Borrelia burgdorferi 30kD IgG Ab [Presence] in Serum by Immunoblot (IB).">
-        keywords = <"Borrelia","burgdorferi","30kD","IgG","Ab","[Presence]","Serum","by","Immunoblot","(IB)">
+        keywords = <"Immune globulin G","Immunoglobulin G","B burgdor30kD","B burg","B burgdorferi","Lymes","Burgdorf","Lyme","Bb","Lyme disease","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Western blot","WB","Immune blot","Immunobl","Blt","WBLOT","West blt","West blot","RIBA","Immunoblot","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9591-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

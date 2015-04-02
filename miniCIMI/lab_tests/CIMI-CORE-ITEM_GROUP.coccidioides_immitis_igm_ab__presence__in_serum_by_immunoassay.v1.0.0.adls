@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay' concept">
         use = <"Use for Coccidioides immitis IgM Ab [Presence] in Serum by Immunoassay.">
-        keywords = <"Coccidioides","immitis","IgM","Ab","[Presence]","Serum","by","Immunoassay">
+        keywords = <"Immune globulin M","Immunoglobulin M","C immitis","Coccio","Coccidioides esteriformis","C esteriformis","Blastomycoides immitis","B immitis","Geotrichum immite","G immite","Glenospora metaeuropea","G metaeuropea","Glenosporum louisianoideum","G louisianoideum","Posadasia esteriformis","P esteriformis","Pseudococcidioides mazzai","P mazzai","Trichosporon proteolyticum","T proteolyticum","Coccidiomycosis","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13948-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

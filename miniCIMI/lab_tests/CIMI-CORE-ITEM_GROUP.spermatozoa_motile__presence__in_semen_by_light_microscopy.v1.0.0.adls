@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Spermatozoa Motile [Presence] in Semen by Light microscopy' concept">
         use = <"Use for Spermatozoa Motile [Presence] in Semen by Light microscopy.">
-        keywords = <"Spermatozoa","Motile","[Presence]","Semen","by","Light","microscopy">
+        keywords = <"Sperm Motile","Arbitrary concentration","Point in time","Random","Smn","Ejaculate","Seminal fluid","SMPLS","Sem","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Mot","FERTILITY TESTING","Sperm motility grade">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13942-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Rh [Type] in Cord blood' concept">
         use = <"Use for Rh [Type] in Cord blood.">
-        keywords = <"Rh","[Type]","Cord","blood">
+        keywords = <"Rh typing","D typing","Rh phenotyping","D phenotyping","Typ","Point in time","Random","Cord (umbilical) blood","Cord bld","Cord blood","Nominal","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14906-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

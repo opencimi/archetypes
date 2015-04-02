@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Blood product unit [Identifier]' concept">
         use = <"Use for Blood product unit [Identifier].">
-        keywords = <"Blood","product","unit","[Identifier]">
+        keywords = <"Bld Unit Id","Ident","Point in time","Random","Nominal","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/936-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

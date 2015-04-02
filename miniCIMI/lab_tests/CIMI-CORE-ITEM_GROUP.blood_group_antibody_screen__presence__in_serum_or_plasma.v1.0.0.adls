@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Blood group antibody screen [Presence] in Serum or Plasma' concept">
         use = <"Use for Blood group antibody screen [Presence] in Serum or Plasma.">
-        keywords = <"Blood","group","antibody","screen","[Presence]","Serum","or","Plasma">
+        keywords = <"Bld gp Ab Scn","Ab Scr","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Scrn","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/890-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

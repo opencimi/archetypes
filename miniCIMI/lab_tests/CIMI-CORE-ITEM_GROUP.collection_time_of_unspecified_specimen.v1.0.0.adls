@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Collection time of Unspecified specimen' concept">
         use = <"Use for Collection time of Unspecified specimen.">
-        keywords = <"Collection","time","Unspecified","specimen">
+        keywords = <"Collect Tme","Time stamp","Date and time","Timestamp","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Quantitative","QNT","Quant","Quan","Coll","Collected">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49049-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Collection time of Unspecified specimen
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Collection time of Unspecified specimen
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Collection time of Unspecified specimen">>
       ["at0.0.0.0.0.1"] = <text = <"Collection time of Unspecified specimen">>
-      ["at0.0.0.0.0.2"] = <text = <"{clock_time}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/49049-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/49049-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

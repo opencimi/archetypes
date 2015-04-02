@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Mitochondria Ab [Presence] in Serum by Immunofluorescence' concept">
         use = <"Use for Mitochondria Ab [Presence] in Serum by Immunofluorescence.">
-        keywords = <"Mitochondria","Ab","[Presence]","Serum","by","Immunofluorescence">
+        keywords = <"Mitochondrial","Mito","Mitochond","Mitochon","M2","S","Antibodies to Microtubule Associated Protein 2","Mitochondrial Ab","MA","AMA","Antimitochondrial antibodies","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ACIF","FA","Fluorescent antibody","Immune fluorescence","Fluoresent","Immunoflour","Immunofluor","Immunofluorescence","IFA","Time Resolved Fluorescence","Anticomplement Immunofluorescence","TRF","ABS","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Serology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/17284-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

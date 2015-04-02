@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Leukocyte clumps [Presence] in Urine by Automated' concept">
         use = <"Use for Leukocyte clumps [Presence] in Urine by Automated.">
-        keywords = <"Leukocyte","clumps","[Presence]","Urine","by","Automated">
+        keywords = <"WBC clumps","Arbitrary concentration","Point in time","Random","Ur","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Auto","White blood cell","Leuc","Leuk","Lkcs","Leukocytes","White blood cells","WBCs","URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53317-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:03">
+      ["time"] = <"2015-03-24T22:21:04">
     >
 
 definition

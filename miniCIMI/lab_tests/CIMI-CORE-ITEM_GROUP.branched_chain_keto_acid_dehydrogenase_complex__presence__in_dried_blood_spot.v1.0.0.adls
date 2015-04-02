@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Branched chain keto-acid dehydrogenase complex [Presence] in Dried blood spot' concept">
         use = <"Use for Branched chain keto-acid dehydrogenase complex [Presence] in Dried blood spot.">
-        keywords = <"Branched","chain","keto-acid","dehydrogenase","complex","[Presence]","Dried","blood","spot">
+        keywords = <"BCKAD","BCKADH","BCKDH","BCKDC","Branch chain ketoaciduria","Maple syrup urine disease","MSUD","Arbitrary concentration","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Dehydrog","Dehyrdogenase","Compx","Chn","Chains","Acd","Acids","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/38479-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

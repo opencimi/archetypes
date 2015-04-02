@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Trichomonas vaginalis [Presence] in Genital specimen by Wet preparation' concept">
         use = <"Use for Trichomonas vaginalis [Presence] in Genital specimen by Wet preparation.">
-        keywords = <"Trichomonas","vaginalis","[Presence]","Genital","specimen","by","Wet","preparation">
+        keywords = <"T vaginalis","Trichimoniasis","Arbitrary concentration","Point in time","Random","Gen","Genital tract","Urogenit","Urogenital","Ql","Ordinal","QL","Qualitative","Qual","Screen","Wet Prep","Wet mount","Wet prep","Trich","Tric","Trichomonad","Trichomonads","Trichomoniasis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6565-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Helicobacter pylori Ab [Presence] in Serum' concept">
         use = <"Use for Helicobacter pylori Ab [Presence] in Serum.">
-        keywords = <"Helicobacter","pylori","Ab","[Presence]","Serum">
+        keywords = <"H pylori","H pyl","C pylori","Campylobacter pylori","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/22310-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

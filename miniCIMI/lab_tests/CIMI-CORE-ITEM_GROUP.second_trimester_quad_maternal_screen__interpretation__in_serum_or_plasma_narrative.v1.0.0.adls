@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Second trimester quad maternal screen [interpretation] in Serum or Plasma Narrative' concept">
         use = <"Use for Second trimester quad maternal screen [interpretation] in Serum or Plasma Narrative.">
-        keywords = <"Second","trimester","quad","maternal","screen","[interpretation]","Serum","or","Plasma","Narrative">
+        keywords = <"2nd trimester 4 screen","Alpha-1-fetoprotein & Choriogonadotropin & Estriol.unconjugated & Inhibin A","Maternal screen 4","Tetra screen","Quadruple screen","Interpretation","Interp","Impression","Impressions","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Narrative","Report","Scr","Scn","Scrn","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49092-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine' concept">
         use = <"Use for Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine.">
-        keywords = <"Collagen","crosslinked","N-telopeptide/Creatinine","[Molar","ratio]","Urine">
+        keywords = <"Collagen NTx","N-Telopeptide of Type I Collagen","Aminoterminal cross-linking telopeptide of bone collagen","Creat","Crea","CR","Substance concentration ratio","Substance ratio","Scrto","Point in time","Random","Ur","UR","Urn","UA","Quantitative","QNT","Quant","Quan","Chemistry","UCr">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14115-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine">>
       ["at0.0.0.0.0.1"] = <text = <"Collagen crosslinked N-telopeptide/Creatinine [Molar ratio] in Urine">>
-      ["at0.0.0.0.0.2"] = <text = <"nmol/mmol{creat}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/14115-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/14115-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

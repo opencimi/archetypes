@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cefepime [Susceptibility]' concept">
         use = <"Use for Cefepime [Susceptibility].">
-        keywords = <"Cefepime","[Susceptibility]">
+        keywords = <"Maxipime","Cefipime","Susceptibility","Susceptibilty","Sus","Suscept","Susceptibilities","AST","Point in time","Random","Islt","Isol","ANTIBIOTIC SUSCEPTIBILITIES">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/18879-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

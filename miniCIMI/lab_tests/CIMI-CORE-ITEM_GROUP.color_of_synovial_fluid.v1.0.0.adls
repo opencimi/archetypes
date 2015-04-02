@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Color of Synovial fluid' concept">
         use = <"Use for Color of Synovial fluid.">
-        keywords = <"Color","Synovial","fluid">
+        keywords = <"Colour","Appearance","Typ","Point in time","Random","Snv","Joint fluid","Joint aspirate","Synovial fluid","Syn fl","Joint fld","Joint flu","Synov","SNV","SF","Nominal">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14664-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

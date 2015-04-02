@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'ABO group [Type] in Cord blood' concept">
         use = <"Use for ABO group [Type] in Cord blood.">
-        keywords = <"ABO","group","[Type]","Cord","blood">
+        keywords = <"Typ","Point in time","Random","Cord (umbilical) blood","Cord bld","Cord blood","Nominal","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/51892-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

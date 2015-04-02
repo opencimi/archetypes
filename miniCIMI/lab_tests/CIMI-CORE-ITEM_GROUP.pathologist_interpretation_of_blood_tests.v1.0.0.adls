@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Pathologist interpretation of Blood tests' concept">
         use = <"Use for Pathologist interpretation of Blood tests.">
-        keywords = <"Pathologist","interpretation","Blood","tests">
+        keywords = <"Path Interp","Intrp","Interpret","Interpt","Impression","Impressions","Point in time","Random","Blood","WB","Whole blood","Nominal","PATHOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21026-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

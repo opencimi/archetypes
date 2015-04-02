@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Streptococcus agalactiae Ag [Presence] in Unspecified specimen' concept">
         use = <"Use for Streptococcus agalactiae Ag [Presence] in Unspecified specimen.">
-        keywords = <"Streptococcus","agalactiae","Ag","[Presence]","Unspecified","specimen">
+        keywords = <"Gp B Strep","Strep group B","Strep B","S agalactiae","Group B","GBS","Steptococcus Group B","Group B Strep","Streptococci group B","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Antigen","Antigens","Strept","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11266-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

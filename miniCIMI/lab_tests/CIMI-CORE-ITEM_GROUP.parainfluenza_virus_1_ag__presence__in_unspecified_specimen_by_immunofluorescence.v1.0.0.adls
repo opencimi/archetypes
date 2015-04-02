@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence' concept">
         use = <"Use for Parainfluenza virus 1 Ag [Presence] in Unspecified specimen by Immunofluorescence.">
-        keywords = <"Parainfluenza","virus","1","Ag","[Presence]","Unspecified","specimen","by","Immunofluorescence">
+        keywords = <"HPIV1","PI1","Parainfluenza type 1","Parainfluenza type I","HPIV","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","ACIF","FA","Fluorescent antibody","Immune fluorescence","Fluoresent","Immunoflour","Immunofluor","Immunofluorescence","IFA","Time Resolved Fluorescence","Anticomplement Immunofluorescence","TRF","Antigen","Antigens","Parainflu","Para","Microbiology","DFA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5869-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

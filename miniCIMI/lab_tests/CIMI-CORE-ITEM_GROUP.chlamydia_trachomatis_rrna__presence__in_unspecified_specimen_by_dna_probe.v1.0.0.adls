@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe' concept">
         use = <"Use for Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe.">
-        keywords = <"Chlamydia","trachomatis","rRNA","[Presence]","Unspecified","specimen","by","DNA","probe">
+        keywords = <"C trach","C trac","C trachomatis","Chlam trac","C tracho","CT","Trachoma","Lymphogranuloma venereum","LGV","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Prb","DNA probe","ribosomal RNA","Chlamid","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/4993-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

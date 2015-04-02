@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Newborn screening recommended follow-up [interpretation]' concept">
         use = <"Use for Newborn screening recommended follow-up [interpretation].">
-        keywords = <"Newborn","screening","recommended","follow-up","[interpretation]">
+        keywords = <"Recom F/U","Pap Smear","Papinacolou Smear","Pap Stain","NB screen recommended f/u","NBS","Interpretation","Interp","Impression","Impressions","Point in time","Random","Nominal","SCN","Asymptomatic","Asympt","New born","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49544-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

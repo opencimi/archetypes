@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Biotinidase [Presence] in Dried blood spot' concept">
         use = <"Use for Biotinidase [Presence] in Dried blood spot.">
-        keywords = <"Biotinidase","[Presence]","Dried","blood","spot">
+        keywords = <"Arbitrary concentration","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/38478-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

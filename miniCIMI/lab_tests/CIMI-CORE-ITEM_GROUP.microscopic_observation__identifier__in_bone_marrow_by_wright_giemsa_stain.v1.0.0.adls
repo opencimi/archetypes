@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Microscopic observation [Identifier] in Bone marrow by Wright Giemsa stain' concept">
         use = <"Use for Microscopic observation [Identifier] in Bone marrow by Wright Giemsa stain.">
-        keywords = <"Microscopic","observation","[Identifier]","Bone","marrow","by","Wright","Giemsa","stain">
+        keywords = <"Identity or presence","Point in time","Random","BM","Bone marrow","BON","Nominal","Wright Gie Stn","GMS","Wrights","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/10355-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

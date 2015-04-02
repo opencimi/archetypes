@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative' concept">
         use = <"Use for Protein Fractions [interpretation] in Cerebral spinal fluid by Electrophoresis Narrative.">
-        keywords = <"Protein","Fractions","[interpretation]","Cerebral","spinal","fluid","by","Electrophoresis","Narrative">
+        keywords = <"Prot Pattern","Protein fractions","PR","Interpretation","Interp","Impression","Impressions","Point in time","Random","Cerebral spinal fluid","Spinal Fluid","Cerebrospinal Fl","Spinal Flu","Spinal Fld","Narrative","Report","Elph","Elp","Elect","Electrophrs","Electrophhrs","Electr","Elec","Ep","Electro","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49295-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

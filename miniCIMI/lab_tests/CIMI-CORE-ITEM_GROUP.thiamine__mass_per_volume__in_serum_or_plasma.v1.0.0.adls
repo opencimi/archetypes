@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Thiamine [Mass/volume] in Serum or Plasma' concept">
         use = <"Use for Thiamine [Mass/volume] in Serum or Plasma.">
-        keywords = <"Thiamine","[Mass/volume]","Serum","or","Plasma">
+        keywords = <"Vit B1","c238","Vitamin B-1","Vit B-1","Vitamin B1","Mass concentration","Level","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Quantitative","QNT","Quant","Quan","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/2999-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Thiamine [Mass/volume] in Serum or Plasma
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Thiamine [Mass/volume] in Serum or Plasma
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Thiamine [Mass/volume] in Serum or Plasma">>
       ["at0.0.0.0.0.1"] = <text = <"Thiamine [Mass/volume] in Serum or Plasma">>
-      ["at0.0.0.0.0.2"] = <text = <"ug/dL">> -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/2999-1>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/2999-1>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258800008> -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
       >
     >
   >

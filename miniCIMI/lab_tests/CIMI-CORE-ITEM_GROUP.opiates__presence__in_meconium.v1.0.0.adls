@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Opiates [Presence] in Meconium' concept">
         use = <"Use for Opiates [Presence] in Meconium.">
-        keywords = <"Opiates","[Presence]","Meconium">
+        keywords = <"Opi","Opiate","OP","Heroin","Point in time","Random","Mec","Ql","Ordinal","QL","Qualitative","Qual","Screen","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8214-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Human papilloma virus DNA [Presence] in Unspecified specimen by Probe and signal amplification method' concept">
         use = <"Use for Human papilloma virus DNA [Presence] in Unspecified specimen by Probe and signal amplification method.">
-        keywords = <"Human","papilloma","virus","DNA","[Presence]","Unspecified","specimen","by","Probe","signal","amplification","method">
+        keywords = <"HPV","Human papillomavirus","Genital warts","Deoxyribonucleic acid","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","bDNA","HPA","Hybidization Protection Assay","Bdn-A","Branched Chain DNA","Hybrid Capture","Probe with signal amplification","Hybrid Capture nucleic acid hybridization","HC","Amp Prb","Probe with ampification","DNA probe","Amplification","Amplified","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/44547-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

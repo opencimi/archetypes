@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Salmonella sp/Shigella sp identified in Stool by Organism specific culture' concept">
         use = <"Use for Salmonella sp/Shigella sp identified in Stool by Organism specific culture.">
-        keywords = <"Salmonella","sp/Shigella","sp","identified","Stool","by","Organism","specific","culture">
+        keywords = <"Salm/Shig","Identity or presence","Point in time","Random","Stl","Feces","Faeces","Bowel movement","Fecal","Faecal","Nominal","Cult","Cultures","C&S","Isolated","species","spp","Shigellosis","Sal","Salmonel","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43371-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

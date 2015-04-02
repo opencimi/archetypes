@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cardiolipin IgM Ab [interpretation] in Serum' concept">
         use = <"Use for Cardiolipin IgM Ab [interpretation] in Serum.">
-        keywords = <"Cardiolipin","IgM","Ab","[interpretation]","Serum">
+        keywords = <"Immune globulin M","Immunoglobulin M","Cardiolip","Cardio","Cardiolipn","Cardiolpn","ACA","aCL","Anticardiolipin","CL","Interpretation","Interp","Impression","Impressions","Point in time","Random","Serum","SR","Nominal","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","COAGULATION">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20425-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

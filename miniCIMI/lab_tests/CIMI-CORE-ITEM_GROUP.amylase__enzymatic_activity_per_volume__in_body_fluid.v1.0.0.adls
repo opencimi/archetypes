@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Amylase [Enzymatic activity/volume] in Body fluid' concept">
         use = <"Use for Amylase [Enzymatic activity/volume] in Body fluid.">
-        keywords = <"Amylase","[Enzymatic","activity/volume]","Body","fluid">
+        keywords = <"Amyl","k87","Ams","Diastase","Alpha amylase","Catalytic Concentration","Point in time","Random","BF","Fluid","Body fluid","B/F","FLU","Fl","Quantitative","QNT","Quant","Quan","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/1795-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Amylase [Enzymatic activity/volume] in Body fluid
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Amylase [Enzymatic activity/volume] in Body fluid
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Enzyme Unit Per Liter -- U/L
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Amylase [Enzymatic activity/volume] in Body fluid">>
       ["at0.0.0.0.0.1"] = <text = <"Amylase [Enzymatic activity/volume] in Body fluid">>
-      ["at0.0.0.0.0.2"] = <text = <"U/L">> -- Enzyme Unit Per Liter -- U/L
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/1795-4>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/1795-4>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258947003> -- Enzyme Unit Per Liter -- U/L
       >
     >
   >

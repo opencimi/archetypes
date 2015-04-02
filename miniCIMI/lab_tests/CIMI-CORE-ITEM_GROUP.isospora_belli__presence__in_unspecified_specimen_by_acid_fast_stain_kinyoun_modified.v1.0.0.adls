@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Isospora belli [Presence] in Unspecified specimen by Acid fast stain.Kinyoun modified' concept">
         use = <"Use for Isospora belli [Presence] in Unspecified specimen by Acid fast stain.Kinyoun modified.">
-        keywords = <"Isospora","belli","[Presence]","Unspecified","specimen","by","Acid","fast","stain.Kinyoun","modified">
+        keywords = <"I belli","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Acid fast Mod Kiny Stn","Acid fast Kiny Stn","Acid fast Stn","AFB stain","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/10853-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

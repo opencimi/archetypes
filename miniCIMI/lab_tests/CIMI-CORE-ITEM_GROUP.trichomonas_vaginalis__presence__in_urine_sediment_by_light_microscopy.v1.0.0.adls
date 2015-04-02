@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Trichomonas vaginalis [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Trichomonas vaginalis [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Trichomonas","vaginalis","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"T vaginalis","Trichimoniasis","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Trich","Tric","Trichomonad","Trichomonads","Trichomoniasis","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5813-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

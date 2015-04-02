@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe' concept">
         use = <"Use for Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe.">
-        keywords = <"Human","papilloma","virus","16+18+31+33+35+45+51+52+56","DNA","[Presence]","Cervix","by","DNA","probe">
+        keywords = <"HPV I/H Risk","Papilloma virus intermediate/high risk","HPV16+18","Papilloma virus high risk","HPV 16 & 18","Human papillomavirus","Genital warts","Deoxyribonucleic acid","Arbitrary concentration","Point in time","Random","Cervix","Genital tract","Ql","Ordinal","QL","Qualitative","Qual","Screen","Prb","DNA probe","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/21440-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

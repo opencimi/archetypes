@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method' concept">
         use = <"Use for von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method.">
-        keywords = <"von","Willebrand","factor","(vWf)","Ag","[Units/volume]","Platelet","poor","plasma","by","Immunologic","method">
+        keywords = <"vWF:Ag","vWf","Arbitrary concentration","Point in time","Random","Platelet poor plasma","Plas","Quantitative","QNT","Quant","Quan","Immunology","Immunol","Antigen","Antigens","Vonwillebrand","Von will","Fac","Fact","COAGULATION">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6012-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method">>
       ["at0.0.0.0.0.1"] = <text = <"von Willebrand factor (vWf) Ag [Units/volume] in Platelet poor plasma by Immunologic method">>
-      ["at0.0.0.0.0.2"] = <text = <"[IU]/mL">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/6012-9>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/6012-9>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'First trimester maternal screen with nuchal translucency [interpretation] Narrative' concept">
         use = <"Use for First trimester maternal screen with nuchal translucency [interpretation] Narrative.">
-        keywords = <"First","trimester","maternal","screen","with","nuchal","translucency","[interpretation]","Narrative">
+        keywords = <"1st trimester scn+NT","Choriogonadotropin & Pregnancy associated plasma protein A & Nuchal translucency","1st trimester maternal scn","Interpretation","Interp","Impression","Impressions","Point in time","Random","Narrative","Report","Scr","Scn","Scrn","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49588-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

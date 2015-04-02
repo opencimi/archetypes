@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay' concept">
         use = <"Use for Phosphatidylserine IgM Ab [Presence] in Serum by Immunoassay.">
-        keywords = <"Phosphatidylserine","IgM","Ab","[Presence]","Serum","by","Immunoassay">
+        keywords = <"PS","aPS","Phosphatidyl serine","Immune globulin M","Immunoglobulin M","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","COAGULATION">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/9327-8.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Histiocytes [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Histiocytes [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Histiocytes","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Histiocyte","Histocytes","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/38994-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:44">
+      ["time"] = <"2015-03-24T22:20:53">
     >
 
 definition

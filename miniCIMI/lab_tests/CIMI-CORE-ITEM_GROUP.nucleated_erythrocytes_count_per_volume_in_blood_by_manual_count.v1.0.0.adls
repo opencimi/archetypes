@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Nucleated erythrocytes [#/volume] in Blood by Manual count' concept">
         use = <"Use for Nucleated erythrocytes [#/volume] in Blood by Manual count.">
-        keywords = <"Nucleated","erythrocytes","[#/volume]","Blood","by","Manual","count">
+        keywords = <"nRBC","nRBCs","Normoblasts","Erythroblasts","RBC","Red blood corpusles","Red blood corpuscle","Erthrocyte","Erythrocyte","Red blood cell","Red cell","Red cells","Discocytes","Red blood cells","RBCS","#","Number concentration","Count/volume","ABS","CT","absolute","absolutes","Cnt","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Manl","Nuc","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/772-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Nucleated erythrocytes [#/volume] in Blood by Manual count
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Nucleated erythrocytes [#/volume] in Blood by Manual count
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Nucleated erythrocytes [#/volume] in Blood by Manual count">>
       ["at0.0.0.0.0.1"] = <text = <"Nucleated erythrocytes [#/volume] in Blood by Manual count">>
-      ["at0.0.0.0.0.2"] = <text = <"10*3/uL">> -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/772-4>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/772-4>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/418247005> -- Thousands Per MicroLiter [Number Concentration Units] -- thou/mcL
       >
     >
   >

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Creatinine renal clearance/1.73 sq M in 24 hour' concept">
         use = <"Use for Creatinine renal clearance/1.73 sq M in 24 hour.">
-        keywords = <"Creatinine","renal","clearance/1.73","sq","M","24","hour">
+        keywords = <"Creat","Crea","CR","BSA","CrCl/BSA","Volume rate/area","1 day","24 hours","24HR","Ur+SerPl","Ur+SerPl","UR","Urn","UA","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Quantitative","QNT","Quant","Quan","Cl","Chemistry","UCr">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12195-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:13">
+      ["time"] = <"2015-03-24T22:20:22">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Creatinine renal clearance/1.73 sq M in 24 hour
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Creatinine renal clearance/1.73 sq M in 24 hour
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
       ["at0.0.0.0.0.1"] = <text = <"Creatinine renal clearance/1.73 sq M in 24 hour">>
-      ["at0.0.0.0.0.2"] = <text = <"mL/min/{1.73_m2}">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/12195-4>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/12195-4>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

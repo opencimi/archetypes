@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Calcium phosphate crystals [Presence] in Stone by Infrared spectroscopy' concept">
         use = <"Use for Calcium phosphate crystals [Presence] in Stone by Infrared spectroscopy.">
-        keywords = <"Calcium","phosphate","crystals","[Presence]","Stone","by","Infrared","spectroscopy">
+        keywords = <"Phos","Phosphrous","Phosphorous","Pi","i Phos","PO4","Phosphorus","Inorganic phosphate","Phosphate total","Cryst","Crys","Crystal","Ca Phos Cry","CaP","Cal","Point in time","Random","Stone","Calc","Stn","Stones","Calculi","Ql","Ordinal","QL","Qualitative","Qual","Screen","IR","Infared spectoscopy","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/16268-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

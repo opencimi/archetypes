@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Smudge cells/100 leukocytes in Blood by Manual count' concept">
         use = <"Use for Smudge cells/100 leukocytes in Blood by Manual count.">
-        keywords = <"Smudge","cells/100","leukocytes","Blood","by","Manual","count">
+        keywords = <"Basket cells","WBC","White blood cell","Leuc","Leuk","Leukocyte","Lkcs","White blood cells","WBCs","Cell","Cellularity","100WBC","Number fraction","Percent","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Manl","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14912-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Smudge cells/100 leukocytes in Blood by Manual count
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Smudge cells/100 leukocytes in Blood by Manual count
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Percent [fraction] -- Percentage unit
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Smudge cells/100 leukocytes in Blood by Manual count">>
       ["at0.0.0.0.0.1"] = <text = <"Smudge cells/100 leukocytes in Blood by Manual count">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/14912-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/14912-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
       >
     >
   >

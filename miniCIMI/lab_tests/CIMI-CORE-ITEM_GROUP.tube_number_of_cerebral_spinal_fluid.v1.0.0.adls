@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Tube number of Cerebral spinal fluid' concept">
         use = <"Use for Tube number of Cerebral spinal fluid.">
-        keywords = <"Tube","number","Cerebral","spinal","fluid">
+        keywords = <"Tube #","Num","No","Identifier","Ident","Point in time","Random","Cerebral spinal fluid","Spinal Fluid","Cerebrospinal Fl","Spinal Flu","Spinal Fld","Nominal">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/19157-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

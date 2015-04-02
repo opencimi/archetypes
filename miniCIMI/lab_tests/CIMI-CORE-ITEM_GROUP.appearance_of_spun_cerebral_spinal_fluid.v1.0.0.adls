@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Appearance of Spun Cerebral spinal fluid' concept">
         use = <"Use for Appearance of Spun Cerebral spinal fluid.">
-        keywords = <"Appearance","Spun","Cerebral","spinal","fluid">
+        keywords = <"Appr","Appear","Point in time","Random","spun CSF","Supernat","Supernate","Cerebral spinal fluid","Spinal Fluid","Cerebrospinal Fl","Spinal Flu","Spinal Fld","Nominal">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11135-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

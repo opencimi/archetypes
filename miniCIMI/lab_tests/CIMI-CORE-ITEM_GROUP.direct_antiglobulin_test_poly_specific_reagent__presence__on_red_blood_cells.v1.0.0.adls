@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Direct antiglobulin test.poly specific reagent [Presence] on Red Blood Cells' concept">
         use = <"Use for Direct antiglobulin test.poly specific reagent [Presence] on Red Blood Cells.">
-        keywords = <"Direct","antiglobulin","test.poly","specific","reagent","[Presence]","on","Red","Blood","Cells">
+        keywords = <"DAT Poly-Sp Reag","Direct antiglobulin test.non specific reagent","Direct coombs test","DCT","DAGT","Direct Coomb","Point in time","Random","Erythrocytes","Red blood corpusles","Red blood cells","Ql","Ordinal","QL","Qualitative","Qual","Screen","Dir","Antiglob","Spec","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/1007-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

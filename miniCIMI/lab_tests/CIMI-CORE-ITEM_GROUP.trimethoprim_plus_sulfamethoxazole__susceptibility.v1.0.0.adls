@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Trimethoprim+Sulfamethoxazole [Susceptibility]' concept">
         use = <"Use for Trimethoprim+Sulfamethoxazole [Susceptibility].">
-        keywords = <"Trimethoprim+Sulfamethoxazole","[Susceptibility]">
+        keywords = <"TMP SMX","Cotrimoxazole","SXT","Bactrim","Septra","SMX-TMP","Co-trimoxazole","Cotrim","Trimpex","Trimeth","c202","C62","c242","Proloprim","Polytrim","Sulfa","Sulfamethox","c203","Acetylsulfamethoxazole","C61","c223","Gantanol","Susceptibility","Susceptibilty","Sus","Suscept","Susceptibilities","AST","Point in time","Random","Islt","Isol","ANTIBIOTIC SUSCEPTIBILITIES">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/18998-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

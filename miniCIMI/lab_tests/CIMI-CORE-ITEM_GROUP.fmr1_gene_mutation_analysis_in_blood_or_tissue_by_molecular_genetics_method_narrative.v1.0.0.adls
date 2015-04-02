@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'FMR1 gene mutation analysis in Blood or Tissue by Molecular genetics method Narrative' concept">
         use = <"Use for FMR1 gene mutation analysis in Blood or Tissue by Molecular genetics method Narrative.">
-        keywords = <"FMR1","gene","mutation","analysis","Blood","or","Tissue","by","Molecular","genetics","method","Narrative">
+        keywords = <"Fragile X syndrome","Fragile X mental retardation 1","FRAXA","Identity or presence","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Narrative","Report","PCR","Molecular genetics","Mut Anal","Mutations","MOLPATH.MUTATIONS","MOLPATH.MUTATIONS","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/36913-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

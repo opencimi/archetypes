@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI '17-Hydroxyprogesterone [Presence] in Dried blood spot' concept">
         use = <"Use for 17-Hydroxyprogesterone [Presence] in Dried blood spot.">
-        keywords = <"17-Hydroxyprogesterone","[Presence]","Dried","blood","spot">
+        keywords = <"17OHP","Hydroxyproges","17-P","17-OHP","17-hydroxy-progest","17-OH Progesterone","17-Hydroxypregn-4-en-3,20-dione","17-alpha-hydroxyprogesterone","Arbitrary concentration","Point in time","Random","DBS","Filter paper","FP","Dried blood spot","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Hydroxyprogstron","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/32854-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field' concept">
         use = <"Use for Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field.">
-        keywords = <"Mixed","cellular","casts","[#/area]","Urine","sediment","by","Microscopy","low","power","field">
+        keywords = <"Mixed Cell Casts","Cast","#/area","Number areic","Point in time","Random","UrnS","Urine sediment","UR","Urn","Quantitative","QNT","Quant","Quan","Micro","LM","Micros","Microscopic","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/38995-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:44">
+      ["time"] = <"2015-03-24T22:20:53">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Per High Powered Field -- /HPF
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field">>
       ["at0.0.0.0.0.1"] = <text = <"Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field">>
-      ["at0.0.0.0.0.2"] = <text = <"/[HPF]">> -- Per High Powered Field -- /HPF
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/38995-7>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/38995-7>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/259034003> -- Per High Powered Field -- /HPF
       >
     >
   >

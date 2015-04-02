@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hemoglobin S [Presence] in Blood by Solubility test' concept">
         use = <"Use for Hemoglobin S [Presence] in Blood by Solubility test.">
-        keywords = <"Hemoglobin","S","[Presence]","Blood","by","Solubility","test">
+        keywords = <"Hgb S","Sickle cell","Sickle cells","HbS","Hb","Haemoglobin","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Soly","S prime","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS","Sickle cell screen","Sicklequik","Sickledex">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/6864-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

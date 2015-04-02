@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Ventilation mode [Identifier] Ventilator' concept">
         use = <"Use for Ventilation mode [Identifier] Ventilator.">
-        keywords = <"Ventilation","mode","[Identifier]","Ventilator">
+        keywords = <"Identity or presence","Point in time","Random","Vent","Nominal","PULMONARY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20124-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

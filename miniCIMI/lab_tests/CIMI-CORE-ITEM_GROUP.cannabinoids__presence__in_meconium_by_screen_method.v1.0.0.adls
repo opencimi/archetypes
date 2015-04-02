@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cannabinoids [Presence] in Meconium by Screen method' concept">
         use = <"Use for Cannabinoids [Presence] in Meconium by Screen method.">
-        keywords = <"Cannabinoids","[Presence]","Meconium","by","Screen","method">
+        keywords = <"Cannabinoid","THC","Delta-9-tetrahydrocannabinol","Marijuana","Point in time","Random","Mec","Ql","Ordinal","QL","Qualitative","Qual","Scn","Scr","Scrn","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/31080-5.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

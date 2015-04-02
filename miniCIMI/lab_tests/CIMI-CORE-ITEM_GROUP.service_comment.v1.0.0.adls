@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Service comment' concept">
         use = <"Use for Service comment.">
-        keywords = <"Service","comment">
+        keywords = <"Service Cmnt","Comments","Remarks","Interpretation","Interp","Impression","Impressions","Point in time","Random","Miscellaneous","Unspecified","Other","Nominal","Com","Comm","Commt","cmnt","cmmt">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/8251-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:06">
+      ["time"] = <"2015-03-24T22:20:19">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cell Fractions/Differential [interpretation] in Blood' concept">
         use = <"Use for Cell Fractions/Differential [interpretation] in Blood.">
-        keywords = <"Cell","Fractions/Differential","[interpretation]","Blood">
+        keywords = <"Cell Fract","Differential count","Interpretation","Interp","Impression","Impressions","Point in time","Random","Blood","WB","Whole blood","Nominal","Frac","Fractionation","Fraction","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/33255-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:36">
+      ["time"] = <"2015-03-24T22:20:47">
     >
 
 definition

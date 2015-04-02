@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Howell-Jolly bodies [Presence] in Blood by Light microscopy' concept">
         use = <"Use for Howell-Jolly bodies [Presence] in Blood by Light microscopy.">
-        keywords = <"Howell-Jolly","bodies","[Presence]","Blood","by","Light","microscopy">
+        keywords = <"Howell-Jolly Bod","H J bodies","HJBody","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","Body","bod","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/7793-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:22">
+      ["time"] = <"2015-03-24T22:21:35">
     >
 
 definition

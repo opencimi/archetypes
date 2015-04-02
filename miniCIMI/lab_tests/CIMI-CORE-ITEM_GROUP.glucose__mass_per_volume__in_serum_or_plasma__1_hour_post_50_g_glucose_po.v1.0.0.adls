@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO' concept">
         use = <"Use for Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO.">
-        keywords = <"Glucose","[Mass/volume]","Serum","or","Plasma","--1","hour","post","50","g","glucose","PO">
+        keywords = <"Glu","Gluc","Glucoseur","1h p 50 g Glc PO","Mass concentration","Level","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Quantitative","QNT","Quant","Quan","Oral","PST","After","1 hour","60 minutes","60M","1.0Hr","60 min","60min","CHEMISTRY.CHALLENGE TESTING","CHEMISTRY.CHALLENGE TESTING","GTT","Glu tol","Glucose tolerance">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/1504-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO">>
       ["at0.0.0.0.0.1"] = <text = <"Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO">>
-      ["at0.0.0.0.0.2"] = <text = <"mg/dL">> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/1504-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/1504-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258797006> -- MilliGrams Per Deci Liter [Mass Concentration Units] -- mg/dL
       >
     >
   >

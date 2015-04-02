@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Cell Fractions/Differential [interpretation] in Cerebral spinal fluid' concept">
         use = <"Use for Cell Fractions/Differential [interpretation] in Cerebral spinal fluid.">
-        keywords = <"Cell","Fractions/Differential","[interpretation]","Cerebral","spinal","fluid">
+        keywords = <"Cell Fract","Differential count","Interpretation","Interp","Impression","Impressions","Point in time","Random","Cerebral spinal fluid","Spinal Fluid","Cerebrospinal Fl","Spinal Flu","Spinal Fld","Nominal","Frac","Fractionation","Fraction","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/20998-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:20">
+      ["time"] = <"2015-03-24T22:20:30">
     >
 
 definition

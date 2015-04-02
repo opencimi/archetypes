@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method' concept">
         use = <"Use for Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method.">
-        keywords = <"Human","papilloma","virus","16+18+31+33+35+39+45+51+52+56+58+59+68","DNA","[Presence]","Cervix","by","Probe","signal","amplification","method">
+        keywords = <"HPV I/H Risk 1","Papilloma virus intermediate/high risk","HPV IHR","HPV16+18","Papilloma virus high risk","HPV 16 & 18","Human papillomavirus","Genital warts","Deoxyribonucleic acid","Arbitrary concentration","Point in time","Random","Cervix","Genital tract","Ql","Ordinal","QL","Qualitative","Qual","Screen","bDNA","HPA","Hybidization Protection Assay","Bdn-A","Branched Chain DNA","Hybrid Capture","Probe with signal amplification","Hybrid Capture nucleic acid hybridization","HC","Amp Prb","Probe with ampification","DNA probe","Amplification","Amplified","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/30167-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

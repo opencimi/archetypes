@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hepatitis B virus e Ag [Presence] in Serum by Immunoassay' concept">
         use = <"Use for Hepatitis B virus e Ag [Presence] in Serum by Immunoassay.">
-        keywords = <"Hepatitis","B","virus","e","Ag","[Presence]","Serum","by","Immunoassay">
+        keywords = <"HBV e Ag","HBEAG","Hbe","Hep Be","HepB","Hep B","Arbitrary concentration","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","Antigen","Antigens","Hepatit","Hepatis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13954-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

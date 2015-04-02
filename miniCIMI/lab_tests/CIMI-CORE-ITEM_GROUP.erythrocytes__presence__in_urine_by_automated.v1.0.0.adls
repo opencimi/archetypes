@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Erythrocytes [Presence] in Urine by Automated' concept">
         use = <"Use for Erythrocytes [Presence] in Urine by Automated.">
-        keywords = <"Erythrocytes","[Presence]","Urine","by","Automated">
+        keywords = <"RBC","Red blood corpusles","Red blood corpuscle","Erthrocyte","Erythrocyte","Red blood cell","Red cell","Red cells","Discocytes","Red blood cells","RBCS","Arbitrary concentration","Point in time","Random","Ur","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Auto","URINALYSIS">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53292-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:03">
+      ["time"] = <"2015-03-24T22:21:04">
     >
 
 definition

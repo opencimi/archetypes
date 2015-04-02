@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'HIV genotype [Susceptibility] in Isolate by Genotype method Narrative' concept">
         use = <"Use for HIV genotype [Susceptibility] in Isolate by Genotype method Narrative.">
-        keywords = <"HIV","genotype","[Susceptibility]","Isolate","by","Genotype","method","Narrative">
+        keywords = <"AIDS","Human immunodeficiency virus","Susceptibility","Susceptibilty","Sus","Suscept","Susceptibilities","AST","Point in time","Random","Islt","Isol","Narrative","Report","Genotyp","Genotypic","Gentyp","ANTIBIOTIC SUSCEPTIBILITIES">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49573-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Sweet gum IgE Ab RAST class [Presence] in Serum' concept">
         use = <"Use for Sweet gum IgE Ab RAST class [Presence] in Serum.">
-        keywords = <"Sweet","gum","IgE","Ab","RAST","class","[Presence]","Serum">
+        keywords = <"Sweet gum","Liquida styraciflua","Sweetgum","Rt211","t211","Immune globulin E","Immunoglobulin E","Point in time","Random","Serum","SR","Ql","Ordinal","QL","Qualitative","Qual","Screen","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","ALLERGY TESTING","Allergens","Allergen">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/15761-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

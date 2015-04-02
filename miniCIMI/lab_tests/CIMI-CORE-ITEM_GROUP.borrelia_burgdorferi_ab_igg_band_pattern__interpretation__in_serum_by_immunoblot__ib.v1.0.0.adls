@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Borrelia burgdorferi Ab.IgG band pattern [interpretation] in Serum by Immunoblot (IB)' concept">
         use = <"Use for Borrelia burgdorferi Ab.IgG band pattern [interpretation] in Serum by Immunoblot (IB).">
-        keywords = <"Borrelia","burgdorferi","Ab.IgG","band","pattern","[interpretation]","Serum","by","Immunoblot","(IB)">
+        keywords = <"Immune globulin G","Immunoglobulin G","B burg","B burgdorferi","Lymes","Burgdorf","Lyme","Bb","Lyme disease","Interpretation","Interp","Impression","Impressions","Point in time","Random","Serum","SR","Nominal","Western blot","WB","Immune blot","Immunobl","Blt","WBLOT","West blt","West blot","RIBA","Immunoblot","Patrn","IgG Patrn","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","Bands","bnd","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/13502-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

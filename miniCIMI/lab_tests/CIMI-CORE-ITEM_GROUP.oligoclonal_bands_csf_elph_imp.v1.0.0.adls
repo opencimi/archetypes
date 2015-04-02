@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Protein fractions.oligoclonal bands [interpretation] in Cerebral spinal fluid by Electrophoresis' concept">
         use = <"Use for Protein fractions.oligoclonal bands [interpretation] in Cerebral spinal fluid by Electrophoresis.">
-        keywords = <"Protein","fractions.oligoclonal","bands","[interpretation]","Cerebral","spinal","fluid","by","Electrophoresis">
+        keywords = <"M-spikes","Prot","PR","Interpretation","Interp","Impression","Impressions","Point in time","Random","Cerebral spinal fluid","Spinal Fluid","Cerebrospinal Fl","Spinal Flu","Spinal Fld","Nominal","Elph","Elp","Elect","Electrophrs","Electrophhrs","Electr","Elec","Ep","Electro","Frac","Fract","Fractionation","Fraction","Chemistry">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/12782-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Yeast [Presence] in Body fluid by Light microscopy' concept">
         use = <"Use for Yeast [Presence] in Body fluid by Light microscopy.">
-        keywords = <"Yeast","[Presence]","Body","fluid","by","Light","microscopy">
+        keywords = <"Arbitrary concentration","Point in time","Random","BF","Fluid","Body fluid","B/F","FLU","Fl","Ql","Ordinal","QL","Qualitative","Qual","Screen","LM","Micros","Microscopic","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/41222-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

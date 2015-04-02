@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Sirolimus [Mass/volume] in Blood' concept">
         use = <"Use for Sirolimus [Mass/volume] in Blood.">
-        keywords = <"Sirolimus","[Mass/volume]","Blood">
+        keywords = <"SRL","Rapamycin","Rapamune","Mass concentration","Level","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/29247-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Sirolimus [Mass/volume] in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Sirolimus [Mass/volume] in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Sirolimus [Mass/volume] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"Sirolimus [Mass/volume] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"ng/mL">> -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/29247-4>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/29247-4>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258806002> -- NanoGrams Per MilliLiter [Mass Concentration Units] -- ng/mL
       >
     >
   >

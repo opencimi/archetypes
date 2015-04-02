@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Hepatitis C virus RNA [Presence] in Serum or Plasma by Probe and target amplification method' concept">
         use = <"Use for Hepatitis C virus RNA [Presence] in Serum or Plasma by Probe and target amplification method.">
-        keywords = <"Hepatitis","C","virus","RNA","[Presence]","Serum","or","Plasma","by","Probe","target","amplification","method">
+        keywords = <"Ribonucleic acid","HCV","Hep C","Arbitrary concentration","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Polymerase chain reaction","Transcription mediated amplification","NASBA","Nucleic acid sequence based analysis","SDA","Strand Displacement Amplification","LAT","Ligation-activated transcription","3SR SR","3 Self-Sustaining Sequence Replication","LCR","Ligase chain reaction","QBR","Probe with target amplification","NAAT","TMA","Amp Prb","Probe with ampification","DNA probe","Amplified","Hepatit","Hepatis","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11259-9.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

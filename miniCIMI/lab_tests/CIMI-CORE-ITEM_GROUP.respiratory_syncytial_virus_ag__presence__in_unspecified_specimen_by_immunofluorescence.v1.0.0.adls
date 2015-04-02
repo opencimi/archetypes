@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Respiratory syncytial virus Ag [Presence] in Unspecified specimen by Immunofluorescence' concept">
         use = <"Use for Respiratory syncytial virus Ag [Presence] in Unspecified specimen by Immunofluorescence.">
-        keywords = <"Respiratory","syncytial","virus","Ag","[Presence]","Unspecified","specimen","by","Immunofluorescence">
+        keywords = <"RSV","HRSV","Arbitrary concentration","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","ACIF","FA","Fluorescent antibody","Immune fluorescence","Fluoresent","Immunoflour","Immunofluor","Immunofluorescence","IFA","Time Resolved Fluorescence","Anticomplement Immunofluorescence","TRF","Antigen","Antigens","Microbiology","DFA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5877-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

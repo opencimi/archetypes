@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma' concept">
         use = <"Use for Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma.">
-        keywords = <"Indirect","antiglobulin","test.complement","specific","reagent","[Presence]","Serum","or","Plasma">
+        keywords = <"IAT Comp-Sp Reag","Ind Coombs","IDC","IAGT","Indirect Coomb","Indirect Coombs","Complmt","Comp","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Ql","Ordinal","QL","Qualitative","Qual","Screen","Antiglob","Spec","Indir","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/1003-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:02">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Platelets Large [Presence] in Blood by Light microscopy' concept">
         use = <"Use for Platelets Large [Presence] in Blood by Light microscopy.">
-        keywords = <"Platelets","Large","[Presence]","Blood","by","Light","microscopy">
+        keywords = <"Lg Platelets","Plt","Platelet","Thrombocytes","Platelt","Thrb","Thrombocyte","Arbitrary concentration","Point in time","Random","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","HEMATOLOGY/CELL COUNTS","HEMATOLOGY/CELL COUNTS","Platelet adequacy","Platelet estimate">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/32146-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:35">
+      ["time"] = <"2015-03-24T22:20:45">
     >
 
 definition

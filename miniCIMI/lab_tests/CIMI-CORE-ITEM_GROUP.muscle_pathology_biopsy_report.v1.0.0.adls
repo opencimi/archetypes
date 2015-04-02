@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Muscle Pathology biopsy report' concept">
         use = <"Use for Muscle Pathology biopsy report.">
-        keywords = <"Muscle","Pathology","biopsy","report">
+        keywords = <"Path Bx report","Finding","Findings","Point in time","Random","Narrative">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/65751-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

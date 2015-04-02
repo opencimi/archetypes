@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Major crossmatch [interpretation] by Low ionic strength saline (LISS)' concept">
         use = <"Use for Major crossmatch [interpretation] by Low ionic strength saline (LISS).">
-        keywords = <"Major","crossmatch","[interpretation]","by","Low","ionic","strength","saline","(LISS)">
+        keywords = <"Maj XM","Compatability testing","Interpretation","Interp","Impression","Impressions","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Nominal","Low ionic strength saline","BLOOD BANK">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/38168-1.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

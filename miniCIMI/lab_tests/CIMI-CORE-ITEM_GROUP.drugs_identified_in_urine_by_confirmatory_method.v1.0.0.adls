@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Drugs identified in Urine by Confirmatory method' concept">
         use = <"Use for Drugs identified in Urine by Confirmatory method.">
-        keywords = <"Drugs","identified","Urine","by","Confirmatory","method">
+        keywords = <"Identity or presence","Point in time","Random","Ur","UR","Urn","UA","Nominal","Cfm","CNFR","CNFRM","Conf","Confirmation","GCMS","Confirmatory","Isolated","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/40464-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

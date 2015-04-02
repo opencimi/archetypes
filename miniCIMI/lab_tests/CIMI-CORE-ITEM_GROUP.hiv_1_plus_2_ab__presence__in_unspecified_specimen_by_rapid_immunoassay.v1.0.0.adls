@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay' concept">
         use = <"Use for HIV 1+2 Ab [Presence] in Unspecified specimen by Rapid immunoassay.">
-        keywords = <"HIV","1+2","Ab","[Presence]","Unspecified","specimen","by","Rapid","immunoassay">
+        keywords = <"HIV 1 and 2 Ab","HIV1+2","HIV1","HIV type 1","HIV type I","AIDS","Human immunodeficiency virus","Point in time","Random","Misc","Miscellaneous","Unspecified","Other","Ql","Ordinal","QL","Qualitative","Qual","Screen","Enzyme immunoassay","ELISA","MEIA","SUDS","ELFA","IAA","ABS","Antibodies","Autoantibody","Antibody","Autoantibodies","Antby","Aby","Anti","II","Microbiology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/49580-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Acetaminophen crystals [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Acetaminophen crystals [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Acetaminophen","crystals","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Cryst","Crys","Crystal","Acetamin Cry","APAP","Acetaminoph","ACET","Paracetamol","Acetamidophenol","Hydroxyacetanilide","Acetominophen","p-Hydroxyacetanilide","p-Acetamidophenol","N-Acetyl-p-aminophenol","N-(4-Hydroxyphenyl)acetanilide","c209","C55","u209","Tylenol","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/43628-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:51">
+      ["time"] = <"2015-03-24T22:20:57">
     >
 
 definition

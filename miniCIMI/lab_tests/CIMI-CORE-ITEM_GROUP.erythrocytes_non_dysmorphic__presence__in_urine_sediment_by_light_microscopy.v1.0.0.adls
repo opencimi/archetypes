@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Erythrocytes.non-dysmorphic [Presence] in Urine sediment by Light microscopy' concept">
         use = <"Use for Erythrocytes.non-dysmorphic [Presence] in Urine sediment by Light microscopy.">
-        keywords = <"Erythrocytes.non-dysmorphic","[Presence]","Urine","sediment","by","Light","microscopy">
+        keywords = <"Non-dysmorphic RBC","Nondysmorphic RBC","Isomorphic RBC","Red blood corpusles","Red blood corpuscle","Erthrocyte","Erythrocyte","Red blood cell","Red cell","Red cells","Discocytes","Red blood cells","RBCS","Arbitrary concentration","Point in time","Random","UrnS","Urine sediment","UR","Urn","Ql","Ordinal","QL","Qualitative","Qual","Screen","Micro","LM","Micros","Microscopic","URINALYSIS","UA">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/53968-4.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:47:04">
+      ["time"] = <"2015-03-24T22:21:05">
     >
 
 definition

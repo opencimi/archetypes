@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L' concept">
         use = <"Use for Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L.">
-        keywords = <"Thyrotropin","[Units/volume]","Serum","or","Plasma","by","Detection","limit","<=","0.05","mIU/L">
+        keywords = <"TSH","Thyrotropic hormone","Thyroid stimulating hormone","Arbitrary concentration","Point in time","Random","SerPl","SerPlas","SerP","Serum","SR","Plasma","Pl","Plsm","Quantitative","QNT","Quant","Quan","DL<=0.05 mIU/L","DL<=0.05 mIU/L","Chemistry","2nd generation TSH">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/11579-0.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:17">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- ______ -- ______
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L">>
       ["at0.0.0.0.0.1"] = <text = <"Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L">>
-      ["at0.0.0.0.0.2"] = <text = <"m[IU]/L">> -- ______ -- ______
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/11579-0>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/11579-0>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/______> -- ______ -- ______
       >
     >
   >

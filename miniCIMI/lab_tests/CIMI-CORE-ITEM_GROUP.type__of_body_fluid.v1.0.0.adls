@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI '[Type] of Body fluid' concept">
         use = <"Use for [Type] of Body fluid.">
-        keywords = <"[Type]","Body","fluid">
+        keywords = <"Typ","Point in time","Random","BF","Body fluid","B/F","FLU","Fl","Nominal">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/14725-6.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

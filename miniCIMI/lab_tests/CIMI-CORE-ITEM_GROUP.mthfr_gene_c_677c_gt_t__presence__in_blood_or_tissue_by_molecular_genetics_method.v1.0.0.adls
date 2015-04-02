@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'MTHFR gene c.677C>T [Presence] in Blood or Tissue by Molecular genetics method' concept">
         use = <"Use for MTHFR gene c.677C>T [Presence] in Blood or Tissue by Molecular genetics method.">
-        keywords = <"MTHFR","gene","c.677C>T","[Presence]","Blood","or","Tissue","by","Molecular","genetics","method">
+        keywords = <"MTHFR c.677C>T","Vascular risk","NADPH","5,10-methylenetetrahydrofolate reductase gene","Arbitrary","Point in time","Random","Bld/T","Tissue","Bld/T","Blood","WB","Whole blood","Ql","Ordinal","QL","Qualitative","Qual","Screen","PCR","Molecular genetics","T prime","MOLPATH.MUTATIONS","MOLPATH.MUTATIONS","Molecular pathology">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/28005-7.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:04">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition

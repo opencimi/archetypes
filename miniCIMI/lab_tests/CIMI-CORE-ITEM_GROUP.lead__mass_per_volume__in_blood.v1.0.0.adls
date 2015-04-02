@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Lead [Mass/volume] in Blood' concept">
         use = <"Use for Lead [Mass/volume] in Blood.">
-        keywords = <"Lead","[Mass/volume]","Blood">
+        keywords = <"PB","Mass concentration","Level","Point in time","Random","Blood","WB","Whole blood","Quantitative","QNT","Quant","Quan","Drugs","DRUG/TOXICOLOGY","DRUG/TOXICOLOGY">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,13 +33,12 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/5671-3.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:05">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Lead [Mass/volume] in Blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Lead [Mass/volume] in Blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
   }
 
 terminology
@@ -47,7 +46,6 @@ terminology
     ["en"] = <
       ["id1.1.1.1.1.1"] = <text = <"Lead [Mass/volume] in Blood">>
       ["at0.0.0.0.0.1"] = <text = <"Lead [Mass/volume] in Blood">>
-      ["at0.0.0.0.0.2"] = <text = <"ug/dL">> -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
     >
   >
 
@@ -56,11 +54,6 @@ terminology
       items = <
         ["id1.1.1.1.1.1"] = <http://loinc.org/id/5671-3>
         ["at0.0.0.0.0.1"] = <http://loinc.org/id/5671-3>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/258800008> -- MicroGrams Per DeciLiter [Mass Concentration Units] -- ug/dL
       >
     >
   >

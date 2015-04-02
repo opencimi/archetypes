@@ -17,7 +17,7 @@ description
         language = <[ISO_639-1::en]>
         purpose = <"Archetype for CIMI 'Gentamicin [Susceptibility]' concept">
         use = <"Use for Gentamicin [Susceptibility].">
-        keywords = <"Gentamicin","[Susceptibility]">
+        keywords = <"c213","Gent","Garamycin","Genj","Genirr","Susceptibility","Susceptibilty","Sus","Suscept","Susceptibilities","AST","Point in time","Random","Islt","Isol","ANTIBIOTIC SUSCEPTIBILITIES">
       >
     >
     lifecycle_state = <"unmanaged">
@@ -33,7 +33,7 @@ description
     conversion_details = <
       ["source_model"] = <"<http://s.details.loinc.org/LOINC/18928-2.html>">
       ["tool"] = <"loincer v0.0.1">
-      ["time"] = <"2015-02-18T01:46:03">
+      ["time"] = <"2015-03-24T22:20:18">
     >
 
 definition
