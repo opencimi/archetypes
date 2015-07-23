@@ -1,0 +1,105 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+    CIMI-CORE-ITEM_GROUP.microrganisms_pnl_urns.v1.0.0
+
+specialize
+    CIMI-CORE-ITEM_GROUP.laboratory_panel.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    >
+    details = <
+      ["en"] = <
+        language = <[ISO_639-1::en]>
+        purpose = <"Archetype for CIMI 'Microorganisms panel - Urine sediment' concept">
+        use = <"Use for Microorganisms panel - Urine sediment.">
+        keywords = <"Microrganisms Pnl","Point in time","Random","UrnS","Urine sediment","UR","Urn","Pan","Panl","PANEL.URINALYSIS","URINALYSIS","PANEL.URINALYSIS">
+      >
+    >
+    lifecycle_state = <"unmanaged">
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    ip_acknowledgements = <
+      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    conversion_details = <
+      ["source_model"] = <"<http://s.details.loinc.org/LOINC/58435-9.html>">
+      ["tool"] = <"cimi-gen v0.0.1">
+      ["time"] = <"2015-07-23T01:47:59">
+    >
+
+definition
+    ITEM_GROUP[id1.1.1.1.1] matches { -- Microorganisms panel - Urine sediment
+      /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.1]} -- Microorganisms panel - Urine sediment
+      item matches {
+          use_archetype ITEM_GROUP[id0.1.1.1.1, CIMI-CORE-ITEM_GROUP.yeast_like_fungi_urns_ql_micro.v1] occurrences matches {0..1} -- Fungi.yeastlike [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.2, CIMI-CORE-ITEM_GROUP.filament_fungi_urns_ql_micro.v1] occurrences matches {0..1} -- Fungi.filamentous [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.3, CIMI-CORE-ITEM_GROUP.yeast_budding_urns_ql.v1] occurrences matches {0..1} -- Yeast.budding [Presence] in Urine sediment
+          use_archetype ITEM_GROUP[id0.1.1.1.4, CIMI-CORE-ITEM_GROUP.bacteria_urns_ql_micro.v1] occurrences matches {0..1} -- Bacteria [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.5, CIMI-CORE-ITEM_GROUP.yeast_urns_ql_micro.v1] occurrences matches {0..1} -- Yeast [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.6, CIMI-CORE-ITEM_GROUP.trichomonas_ur_ql_micro.v1] occurrences matches {0..1} -- Trichomonas sp [Presence] in Urine by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.7, CIMI-CORE-ITEM_GROUP.parasites_num_per_area_urns_lpf.v1] occurrences matches {0..1} -- Parasites [#/area] in Urine sediment by Microscopy low power field
+          use_archetype ITEM_GROUP[id0.1.1.1.8, CIMI-CORE-ITEM_GROUP.trichomonas_num_per_area_urns_hpf.v1] occurrences matches {0..1} -- Trichomonas sp [#/area] in Urine sediment by Microscopy high power field
+          use_archetype ITEM_GROUP[id0.1.1.1.9, CIMI-CORE-ITEM_GROUP.yeast_pseudohyphae_urns_ql_micro.v1] occurrences matches {0..1} -- Yeast.pseudohyphae [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.10, CIMI-CORE-ITEM_GROUP.yeast_hyphae_urns_ql_micro.v1] occurrences matches {0..1} -- Yeast.hyphae [Presence] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.1.1.11, CIMI-CORE-ITEM_GROUP.bacteria_num_per_area_urns_hpf.v1] occurrences matches {0..1} -- Bacteria [#/area] in Urine sediment by Microscopy high power field
+          use_archetype ITEM_GROUP[id0.1.1.1.12, CIMI-CORE-ITEM_GROUP.filament_fungi_num_per_area_urns_hpf.v1] occurrences matches {0..1} -- Fungi.filamentous [#/area] in Urine sediment by Microscopy high power field
+          use_archetype ITEM_GROUP[id0.1.1.1.13, CIMI-CORE-ITEM_GROUP.yeast_like_fungi_num_per_area_urns_hpf.v1] occurrences matches {0..1} -- Fungi.yeastlike [#/area] in Urine sediment by Microscopy high power field
+          use_archetype ITEM_GROUP[id0.1.1.1.14, CIMI-CORE-ITEM_GROUP.yeast_num_per_area_urns_hpf.v1] occurrences matches {0..1} -- Yeast [#/area] in Urine sediment by Microscopy high power field
+          use_archetype ITEM_GROUP[id0.1.1.1.15, CIMI-CORE-ITEM_GROUP.microorganisms_urns_micro.v1] occurrences matches {0..1} -- Microorganisms seen [Type] in Urine sediment by Light microscopy
+          use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1] occurrences matches {0}
+      }
+    }
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1.1"] = <text = <"Microorganisms panel - Urine sediment">>
+      ["at0.0.0.0.1"] = <text = <"Microorganisms panel - Urine sediment">>
+      ["id0.1.1.1.1"] = <text = <"Fungi.yeastlike [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.2"] = <text = <"Fungi.filamentous [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.3"] = <text = <"Yeast.budding [Presence] in Urine sediment">>
+      ["id0.1.1.1.4"] = <text = <"Bacteria [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.5"] = <text = <"Yeast [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.6"] = <text = <"Trichomonas sp [Presence] in Urine by Light microscopy">>
+      ["id0.1.1.1.7"] = <text = <"Parasites [#/area] in Urine sediment by Microscopy low power field">>
+      ["id0.1.1.1.8"] = <text = <"Trichomonas sp [#/area] in Urine sediment by Microscopy high power field">>
+      ["id0.1.1.1.9"] = <text = <"Yeast.pseudohyphae [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.10"] = <text = <"Yeast.hyphae [Presence] in Urine sediment by Light microscopy">>
+      ["id0.1.1.1.11"] = <text = <"Bacteria [#/area] in Urine sediment by Microscopy high power field">>
+      ["id0.1.1.1.12"] = <text = <"Fungi.filamentous [#/area] in Urine sediment by Microscopy high power field">>
+      ["id0.1.1.1.13"] = <text = <"Fungi.yeastlike [#/area] in Urine sediment by Microscopy high power field">>
+      ["id0.1.1.1.14"] = <text = <"Yeast [#/area] in Urine sediment by Microscopy high power field">>
+      ["id0.1.1.1.15"] = <text = <"Microorganisms seen [Type] in Urine sediment by Light microscopy">>
+    >
+  >
+  term_bindings = <
+    ["loinc"] = <
+      items = <
+        ["id1.1.1.1.1"] = <http://loinc.org/id/58435-9> -- Microorganisms panel - Urine sediment
+        ["at0.0.0.0.1"] = <http://loinc.org/id/58435-9> -- Microorganisms panel - Urine sediment
+        ["id0.1.1.1.1"] = <http://loinc.org/id/20456-0> -- Fungi.yeastlike [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.2"] = <http://loinc.org/id/20457-8> -- Fungi.filamentous [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.3"] = <http://loinc.org/id/21033-6> -- Yeast.budding [Presence] in Urine sediment
+        ["id0.1.1.1.4"] = <http://loinc.org/id/25145-4> -- Bacteria [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.5"] = <http://loinc.org/id/32356-8> -- Yeast [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.6"] = <http://loinc.org/id/32724-7> -- Trichomonas sp [Presence] in Urine by Light microscopy
+        ["id0.1.1.1.7"] = <http://loinc.org/id/33017-5> -- Parasites [#/area] in Urine sediment by Microscopy low power field
+        ["id0.1.1.1.8"] = <http://loinc.org/id/33905-1> -- Trichomonas sp [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.9"] = <http://loinc.org/id/41863-2> -- Yeast.pseudohyphae [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.10"] = <http://loinc.org/id/41865-7> -- Yeast.hyphae [Presence] in Urine sediment by Light microscopy
+        ["id0.1.1.1.11"] = <http://loinc.org/id/5769-5> -- Bacteria [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.12"] = <http://loinc.org/id/5790-1> -- Fungi.filamentous [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.13"] = <http://loinc.org/id/5791-9> -- Fungi.yeastlike [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.14"] = <http://loinc.org/id/5822-2> -- Yeast [#/area] in Urine sediment by Microscopy high power field
+        ["id0.1.1.1.15"] = <http://loinc.org/id/58437-5> -- Microorganisms seen [Type] in Urine sediment by Light microscopy
+      >
+    >
+  >
