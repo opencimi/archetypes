@@ -111,7 +111,7 @@ terminology
     ["snomed-ct"] = <
       items = <
         ["id5.0.3"] = <http://snomed.info/id/363702006> -- Has focus
-        ["id5.0.4"] = <http://snomed.info/id/260686004> -- Method
+        ["id5.0.4"] = <http://snomed.info/id/246501002> -- Method
         ["id5.0.5"] = <http://snomed.info/id/408730004> -- Procedure context
         ["id5.0.6"] = <http://snomed.info/id/260870009> -- Priority
         ["id5.0.7"] = <http://snomed.info/id/363713009> -- Has interpretation
