@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archetype xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:im="http://www.openehr.org/1.0.2" is_generated="true" adl_version="2.0.5" rm_release="2.0.2">
+ <original_language>ISO_639-1::en</original_language>
+ <description>
+  <lifecycle_state>unmanaged</lifecycle_state>
+  <original_author id="name">Patrick Langford &lt;patrick@neuronsong.com&gt;</original_author>
+  <original_author id="organisation">Intermountain Healthcare &lt;http://intermountainhealthcare.org&gt;</original_author>
+  <custodian_namespace>org.opencimi</custodian_namespace>
+  <custodian_organisation>Clinical Information Modeling Initiative &lt;http://opencimi.org&gt;</custodian_organisation>
+  <copyright>Copyright (c) Clinical Information Modelling Initiative &lt;http://opencimi.org&gt;</copyright>
+  <licence>Creative Commons CC-BY &lt;https://creativecommons.org/licenses/by/3.0/&gt;</licence>
+  <ip_acknowledgements id="loinc">This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</ip_acknowledgements>
+  <ip_acknowledgements id="snomed">This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. &apos;SNOMED&apos; and &apos;SNOMED CT&apos; are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.</ip_acknowledgements>
+  <conversion_details id="source_model">&lt;http://s.details.loinc.org/LOINC/3093-2.html&gt;</conversion_details>
+  <conversion_details id="tool">cimi-gen v0.0.1</conversion_details>
+  <conversion_details id="time">2015-08-05T22:26:39</conversion_details>
+  <details id="en">
+   <language>ISO_639-1::en</language>
+   <purpose>Archetype for CIMI &apos;Urea nitrogen [Mass/volume] in Body fluid&apos; concept</purpose>
+   <use>Use for Urea nitrogen [Mass/volume] in Body fluid.</use>
+   <keywords>Urea nit</keywords>
+   <keywords>UN</keywords>
+   <keywords>Blood urea nitrogen</keywords>
+   <keywords>N2</keywords>
+   <keywords>Nit</keywords>
+   <keywords>N</keywords>
+   <keywords>Mass concentration</keywords>
+   <keywords>Level</keywords>
+   <keywords>Point in time</keywords>
+   <keywords>Random</keywords>
+   <keywords>BF</keywords>
+   <keywords>Fluid</keywords>
+   <keywords>Body fluid</keywords>
+   <keywords>B/F</keywords>
+   <keywords>FLU</keywords>
+   <keywords>Fl</keywords>
+   <keywords>Quantitative</keywords>
+   <keywords>QNT</keywords>
+   <keywords>Quant</keywords>
+   <keywords>Quan</keywords>
+   <keywords>Chemistry</keywords>
+  </details>
+  <other_contributors>Linda Bird &lt;lbi@ihtsdo.org&gt;</other_contributors>
+  <other_contributors>Joey Coyle &lt;joey@xcoyle.com&gt;</other_contributors>
+  <other_contributors>Stan Huff &lt;Stan.Huff@imail.org&gt;</other_contributors>
+  <other_contributors>Harold Solbrig &lt;Solbrig.Harold@mayo.edu&gt;</other_contributors>
+  <other_contributors>Thomas Beale &lt;thomas.beale@oceaninformatics.com&gt;</other_contributors>
+ </description>
+ <artefact_type>archetype</artefact_type>
+ <archetype_id rm_publisher="CIMI" rm_package="CORE" rm_class="ITEM_GROUP" release_version="1.0.0" version_status="0" build_count="0" physical_id="CIMI-CORE-ITEM_GROUP.urea_nit_fldmcnc.v1.0.0">
+  <concept_id>urea_nit_fldmcnc</concept_id>
+ </archetype_id>
+ <parent_archetype_id>CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1</parent_archetype_id>
+ <definition xsi:type="P_C_COMPLEX_OBJECT" node_id="id1.1.1.1.1.1" rm_type_name="ITEM_GROUP">
+  <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id2" rm_type_name="ITEM_GROUP" occurrences="1">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.subject_of_information.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id4" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.cluster.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5" rm_type_name="ELEMENT" occurrences="0..*">
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.1" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.101" rm_type_name="IDENTIFIER">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.2.1" rm_type_name="ELEMENT" occurrences="1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+     <children xsi:type="P_C_TERMINOLOGY_CODE" node_id="id9999" rm_type_name="CODED_TEXT">
+      <constraint>at0.0.0.0.0.1</constraint>
+     </children>
+    </attributes>
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.0.1" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.0.101" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id4.0.0.1" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.specimen.v3</archetype_ref>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.0.2" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.0.102" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.0.3" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.0.103" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.0.4" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.0.104" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.3" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.103" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.4" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.104" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.5" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.105" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.6" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.106" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.7" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.107" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.8.0.1" rm_type_name="ELEMENT" occurrences="1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_TERMINOLOGY_CODE" node_id="id9999" rm_type_name="CODED_TEXT">
+      <constraint>at0.0.0.0.0.2</constraint>
+     </children>
+    </attributes>
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.9" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.109" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.10" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.110" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.11" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.111" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.12" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.112" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.13" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.113" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id5.0.14" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.114" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id4.0.1" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.observation_action_set.v1</archetype_ref>
+   </children>
+  </attributes>
+ </definition>
+ <terminology original_language="ISO_639-1::en">
+  <term_definitions id="en">
+   <items id="id1">
+    <text>Clinical Statment</text>
+   </items>
+   <items id="id2">
+    <text>Subject of information</text>
+   </items>
+   <items id="id4">
+    <text>Cluster</text>
+   </items>
+   <items id="id5">
+    <text>Element</text>
+   </items>
+   <items id="id1.1">
+    <text>Indivisible clinical statement</text>
+   </items>
+   <items id="id1.1.1">
+    <text>Observation</text>
+   </items>
+   <items id="id4.0.1">
+    <text>Action set</text>
+   </items>
+   <items id="id5.0.1">
+    <text>Identifier</text>
+   </items>
+   <items id="id5.0.10">
+    <text>Reference range</text>
+   </items>
+   <items id="id5.0.11">
+    <text>Sequence</text>
+   </items>
+   <items id="id5.0.12">
+    <text>Delta flag</text>
+   </items>
+   <items id="id5.0.13">
+    <text>Signal flag</text>
+   </items>
+   <items id="id5.0.14">
+    <text>Comment</text>
+   </items>
+   <items id="id5.0.2">
+    <text>Code</text>
+   </items>
+   <items id="id5.0.3">
+    <text>Reason</text>
+   </items>
+   <items id="id5.0.4">
+    <text>Method</text>
+   </items>
+   <items id="id5.0.5">
+    <text>Status</text>
+   </items>
+   <items id="id5.0.6">
+    <text>Priority</text>
+   </items>
+   <items id="id5.0.7">
+    <text>Interpretation category</text>
+   </items>
+   <items id="id5.0.8">
+    <text>Result</text>
+   </items>
+   <items id="id5.0.9">
+    <text>Normal range</text>
+   </items>
+   <items id="id1.1.1.1">
+    <text>Laboratory test</text>
+   </items>
+   <items id="id4.0.0.1">
+    <text>Specimen</text>
+   </items>
+   <items id="id5.0.0.1">
+    <text>Diagnostic service</text>
+   </items>
+   <items id="id5.0.0.2">
+    <text>Poct indicator</text>
+   </items>
+   <items id="id5.0.0.3">
+    <text>Diagnosis</text>
+   </items>
+   <items id="id5.0.0.4">
+    <text>Conclusion</text>
+   </items>
+   <items id="id5.0.2.1">
+    <text>Test code</text>
+   </items>
+   <items id="id0.0.0.0.1">
+    <text>Qn</text>
+   </items>
+   <items id="id1.1.1.1.1">
+    <text>Laboratory test quantitative</text>
+   </items>
+   <items id="id5.0.8.0.1">
+    <text>Result value</text>
+   </items>
+   <items id="at0.0.0.0.0.1">
+    <text>Urea nitrogen [Mass/volume] in Body fluid</text>
+   </items>
+   <items id="at0.0.0.0.0.2">
+    <text>mg/dL</text>
+   </items>
+   <items id="id1.1.1.1.1.1">
+    <text>Urea nitrogen [Mass/volume] in Body fluid</text>
+   </items>
+  </term_definitions>
+  <term_bindings id="snomed-ct">
+   <items id="id2">http://snomed.info/id/131195008</items>
+   <items id="id5.0.3">http://snomed.info/id/363702006</items>
+   <items id="id5.0.4">http://snomed.info/id/246501002</items>
+   <items id="id5.0.5">http://snomed.info/id/408730004</items>
+   <items id="id5.0.6">http://snomed.info/id/260870009</items>
+   <items id="id5.0.7">http://snomed.info/id/363713009</items>
+   <items id="id4.0.0.1">http://snomed.info/id/116686009</items>
+   <items id="id0.0.0.0.1">http://snomed.info/id/________</items>
+   <items id="at0.0.0.0.0.2">http://snomed.org/id/258797006</items>
+  </term_bindings>
+  <term_bindings id="loinc">
+   <items id="id1.1.1.1.1.1">http://loinc.org/id/3093-2</items>
+   <items id="at0.0.0.0.0.1">http://loinc.org/id/3093-2</items>
+  </term_bindings>
+ </terminology>
+ <is_controlled>false</is_controlled>
+</archetype>
