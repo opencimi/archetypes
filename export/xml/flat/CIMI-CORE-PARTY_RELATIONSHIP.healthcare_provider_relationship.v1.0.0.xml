@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archetype xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:im="http://www.openehr.org/1.0.2" is_generated="true" adl_version="2.0.5" rm_release="2.0.2">
+ <original_language>ISO_639-1::en</original_language>
+ <description>
+  <lifecycle_state>unmanaged</lifecycle_state>
+  <original_author id="name">Patrick Langford</original_author>
+  <original_author id="organisation">Intermountain Healthcare</original_author>
+  <original_author id="email">patrick@neuronsong.com</original_author>
+  <original_author id="date">10/06/2014</original_author>
+  <custodian_namespace>org.opencimi</custodian_namespace>
+  <custodian_organisation>Clinical Information Modeling Initiative &lt;http://opencimi.org&gt;</custodian_organisation>
+  <copyright>Copyright (c) Clinical Information Modelling Initiative &lt;http://opencimi.org&gt;</copyright>
+  <licence>Creative Commons CC-BY &lt;https://creativecommons.org/licenses/by/3.0/&gt;</licence>
+  <ip_acknowledgements id="loinc">This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</ip_acknowledgements>
+  <ip_acknowledgements id="snomed">This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. &apos;SNOMED&apos; and &apos;SNOMED CT&apos; are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.</ip_acknowledgements>
+  <details id="en">
+   <language>ISO_639-1::en</language>
+   <purpose>Archetype for CIMI &apos;healthcare provider relationship&apos; concept</purpose>
+   <use>Use for healthcare provider relationship.</use>
+   <keywords>healthcare</keywords>
+   <keywords>provider</keywords>
+   <keywords>relationship</keywords>
+  </details>
+  <other_contributors>Linda Bird &lt;lbi@ihtsdo.org&gt;</other_contributors>
+  <other_contributors>Joey Coyle &lt;joey@xcoyle.com&gt;</other_contributors>
+  <other_contributors>Stan Huff &lt;Stan.Huff@imail.org&gt;</other_contributors>
+  <other_contributors>Harold Solbrig &lt;Solbrig.Harold@mayo.edu&gt;</other_contributors>
+  <other_contributors>Thomas Beale &lt;thomas.beale@oceaninformatics.com&gt;</other_contributors>
+ </description>
+ <artefact_type>archetype</artefact_type>
+ <archetype_id rm_publisher="CIMI" rm_package="CORE" rm_class="PARTY_RELATIONSHIP" release_version="1.0.0" version_status="0" build_count="0" physical_id="CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1.0.0">
+  <concept_id>healthcare_provider_relationship</concept_id>
+ </archetype_id>
+ <parent_archetype_id>CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1</parent_archetype_id>
+ <definition xsi:type="P_C_COMPLEX_OBJECT" node_id="id1.1" rm_type_name="PARTY_RELATIONSHIP">
+  <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="details" is_multiple="true">
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.2" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.6" rm_type_name="INTERVAL_VALUE&lt;DATE_TIME&gt;">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.3" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.7" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.4" rm_type_name="ELEMENT">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.8" rm_type_name="IDENTIFIER">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.5" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.9" rm_type_name="COUNT">
+     </children>
+    </attributes>
+   </children>
+  </attributes>
+ </definition>
+ <terminology original_language="ISO_639-1::en">
+  <term_definitions id="en">
+   <items id="id1">
+    <text>Party relationship</text>
+   </items>
+   <items id="id0.2">
+    <text>Datetime range</text>
+   </items>
+   <items id="id0.3">
+    <text>Status</text>
+   </items>
+   <items id="id0.4">
+    <text>Identifier</text>
+   </items>
+   <items id="id0.5">
+    <text>Priority</text>
+   </items>
+   <items id="id1.1">
+    <text>Accreditation organization</text>
+   </items>
+  </term_definitions>
+  <term_bindings id="snomed-ct">
+   <items id="id1.1">http://snomed.info/id/138875005</items>
+   <items id="id0.2">http://snomed.info/id/138875005</items>
+   <items id="id0.3">http://snomed.info/id/138875005</items>
+   <items id="id0.4">http://snomed.info/id/138875005</items>
+  </term_bindings>
+ </terminology>
+ <is_controlled>false</is_controlled>
+</archetype>

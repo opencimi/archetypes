@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archetype xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:im="http://www.openehr.org/1.0.2" is_generated="true" adl_version="2.0.5" rm_release="2.0.2">
+ <original_language>ISO_639-1::en</original_language>
+ <description>
+  <lifecycle_state>unmanaged</lifecycle_state>
+  <original_author id="name">Patrick Langford</original_author>
+  <original_author id="organisation">Intermountain Healthcare</original_author>
+  <original_author id="email">patrick@neuronsong.com</original_author>
+  <original_author id="date">10/06/2014</original_author>
+  <custodian_namespace>org.opencimi</custodian_namespace>
+  <custodian_organisation>Clinical Information Modeling Initiative &lt;http://opencimi.org&gt;</custodian_organisation>
+  <copyright>Copyright (c) Clinical Information Modelling Initiative &lt;http://opencimi.org&gt;</copyright>
+  <licence>Creative Commons CC-BY &lt;https://creativecommons.org/licenses/by/3.0/&gt;</licence>
+  <ip_acknowledgements id="loinc">This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</ip_acknowledgements>
+  <ip_acknowledgements id="snomed">This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. &apos;SNOMED&apos; and &apos;SNOMED CT&apos; are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.</ip_acknowledgements>
+  <details id="en">
+   <language>ISO_639-1::en</language>
+   <purpose>Archetype for CIMI &apos;person&apos; concept</purpose>
+   <use>Use for person.</use>
+   <keywords>person</keywords>
+  </details>
+  <other_contributors>Linda Bird &lt;lbi@ihtsdo.org&gt;</other_contributors>
+  <other_contributors>Joey Coyle &lt;joey@xcoyle.com&gt;</other_contributors>
+  <other_contributors>Stan Huff &lt;Stan.Huff@imail.org&gt;</other_contributors>
+  <other_contributors>Harold Solbrig &lt;Solbrig.Harold@mayo.edu&gt;</other_contributors>
+  <other_contributors>Thomas Beale &lt;thomas.beale@oceaninformatics.com&gt;</other_contributors>
+ </description>
+ <artefact_type>archetype</artefact_type>
+ <archetype_id rm_publisher="CIMI" rm_package="CORE" rm_class="ACTOR" release_version="2.0.0" version_status="0" build_count="0" physical_id="CIMI-CORE-ACTOR.person.v2.0.0">
+  <concept_id>person</concept_id>
+ </archetype_id>
+ <parent_archetype_id>CIMI-CORE-ACTOR.actor.v1</parent_archetype_id>
+ <definition xsi:type="P_C_COMPLEX_OBJECT" node_id="id1.1.1" rm_type_name="ACTOR">
+  <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="details" is_multiple="true">
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id2" rm_type_name="ITEM_GROUP">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id3" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id9" rm_type_name="IDENTIFIER">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id4" rm_type_name="ITEM_GROUP">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.party_name.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id5" rm_type_name="ITEM_GROUP">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.address.v2</archetype_ref>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id6" rm_type_name="ITEM_GROUP">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.electronic_contact.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id7" rm_type_name="ELEMENT" occurrences="1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id10" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.2" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.5" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.3" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.6" rm_type_name="PLAIN_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.4" rm_type_name="ELEMENT" occurrences="1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.7" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id2.0.1" rm_type_name="ITEM_GROUP">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id3.0.1" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id9" rm_type_name="IDENTIFIER">
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.101" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id3.0.2" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id9" rm_type_name="IDENTIFIER">
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.102" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id4.0.1" rm_type_name="ITEM_GROUP">
+    <archetype_ref>CIMI-CORE-ITEM_GROUP.person_name.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.1" rm_type_name="ITEM_GROUP" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.2" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.103" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id0.0.3" rm_type_name="ITEM_GROUP">
+      <archetype_ref>CIMI-CORE-ITEM_GROUP.person_name.v1</archetype_ref>
+     </children>
+     <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id0.0.4" rm_type_name="ITEM_GROUP">
+      <archetype_ref>CIMI-CORE-ITEM_GROUP.electronic_contact.v1</archetype_ref>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.5" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.104" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.6" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.105" rm_type_name="IDENTIFIER">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.7" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.106" rm_type_name="PLAIN_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.8" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.107" rm_type_name="PLAIN_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.9" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.108" rm_type_name="PLAIN_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.10" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.109" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.11" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.110" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.12" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.111" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.13" rm_type_name="ELEMENT" occurrences="1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.112" rm_type_name="TEXT">
+     </children>
+    </attributes>
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.14" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.113" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.15" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.16" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.114" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.17" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.115" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.18" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.19" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.116" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.20" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.117" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.21" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.118" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.22" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.119" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.23" rm_type_name="ITEM_GROUP" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.24" rm_type_name="ITEM_GROUP" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.25" rm_type_name="ELEMENT" occurrences="1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.120" rm_type_name="DATE_TIME">
+         </children>
+        </attributes>
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.26" rm_type_name="ELEMENT" occurrences="0..*">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.121" rm_type_name="CODED_TEXT">
+         </children>
+        </attributes>
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.27" rm_type_name="ELEMENT" occurrences="0..1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.122" rm_type_name="CODED_TEXT">
+         </children>
+        </attributes>
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.28" rm_type_name="ITEM_GROUP" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.29" rm_type_name="ELEMENT" occurrences="1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.123" rm_type_name="DURATION">
+         </children>
+        </attributes>
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+        </attributes>
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.30" rm_type_name="ELEMENT" occurrences="0..*">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.124" rm_type_name="CODED_TEXT">
+         </children>
+        </attributes>
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.31" rm_type_name="ELEMENT" occurrences="0..1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.125" rm_type_name="CODED_TEXT">
+         </children>
+        </attributes>
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id0.0.91" rm_type_name="ITEM_GROUP">
+      <archetype_ref>CIMI-CORE-ITEM_GROUP.address.v2</archetype_ref>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.32" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.126" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.33" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.127" rm_type_name="COUNT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.34" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.128" rm_type_name="COUNT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.35" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.129" rm_type_name="PLAIN_TEXT">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.36" rm_type_name="ITEM_GROUP" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.37" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.130" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.38" rm_type_name="ITEM_GROUP" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.39" rm_type_name="ELEMENT" occurrences="1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.131" rm_type_name="DATE_TIME">
+         </children>
+        </attributes>
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+        </attributes>
+       </children>
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.40" rm_type_name="ELEMENT" occurrences="0..1">
+        <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+         <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.132" rm_type_name="CODED_TEXT">
+         </children>
+        </attributes>
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.41" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.133" rm_type_name="DURATION">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.42" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.134" rm_type_name="IDENTIFIER">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.43" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.135" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id0.0.44" rm_type_name="ITEM_GROUP">
+      <archetype_ref>CIMI-CORE-ITEM_GROUP.address.v2</archetype_ref>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.45" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.136" rm_type_name="PLAIN_TEXT">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.46" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.47" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.137" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.48" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.138" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.49" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.139" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.50" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.140" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.51" rm_type_name="ELEMENT" occurrences="0..*">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.141" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.52" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.142" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.53" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.143" rm_type_name="IDENTIFIER">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.54" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.144" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.55" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.145" rm_type_name="DATE">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.56" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.57" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.146" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.58" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.147" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.59" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.148" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.60" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.149" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.61" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.150" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.62" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.151" rm_type_name="CODED_TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.63" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.152" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.64" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.153" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.65" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.154" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.66" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.67" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.155" rm_type_name="TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.68" rm_type_name="ELEMENT" occurrences="0..*">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.156" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.69" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.157" rm_type_name="DURATION">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.70" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.71" rm_type_name="ELEMENT" occurrences="1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value" existence="1">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.158" rm_type_name="TEXT">
+       </children>
+      </attributes>
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="null_flavor" existence="0">
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.72" rm_type_name="ELEMENT" occurrences="0..*">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.159" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.73" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.160" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.74" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.75" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.161" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.76" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.162" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.77" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.163" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.78" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.164" rm_type_name="MULTIMEDIA">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.79" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.165" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.80" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.166" rm_type_name="CODED_TEXT">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.81" rm_type_name="ITEM_GROUP" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="item" is_multiple="true">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.82" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.167" rm_type_name="IDENTIFIER">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.83" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.168" rm_type_name="TEXT">
+       </children>
+      </attributes>
+     </children>
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.84" rm_type_name="ELEMENT" occurrences="0..1">
+      <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+       <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.169" rm_type_name="INTERVAL_VALUE&lt;DATE&gt;">
+       </children>
+      </attributes>
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.85" rm_type_name="ELEMENT" occurrences="0..*">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.170" rm_type_name="TEXT">
+     </children>
+    </attributes>
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.86" rm_type_name="ELEMENT" occurrences="0..1">
+    <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="value">
+     <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.171" rm_type_name="PLAIN_TEXT">
+     </children>
+    </attributes>
+   </children>
+  </attributes>
+  <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="relationship" is_multiple="true">
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id8" rm_type_name="PARTY_RELATIONSHIP">
+    <archetype_ref>CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1</archetype_ref>
+   </children>
+   <children xsi:type="P_C_ARCHETYPE_ROOT" node_id="id0.0.87" rm_type_name="PARTY_RELATIONSHIP">
+    <archetype_ref>CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1</archetype_ref>
+   </children>
+  </attributes>
+  <attributes xsi:type="P_C_ATTRIBUTE" rm_attribute_name="link" is_multiple="true">
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.88" rm_type_name="LINK" occurrences="0..*">
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.89" rm_type_name="LINK" occurrences="0..1">
+   </children>
+   <children xsi:type="P_C_COMPLEX_OBJECT" node_id="id0.0.90" rm_type_name="LINK" occurrences="0..1">
+   </children>
+  </attributes>
+ </definition>
+ <terminology original_language="ISO_639-1::en">
+  <term_definitions id="en">
+   <items id="id1">
+    <text>Party</text>
+   </items>
+   <items id="id2">
+    <text>Identifier</text>
+   </items>
+   <items id="id3">
+    <text>Value</text>
+   </items>
+   <items id="id4">
+    <text>Name</text>
+   </items>
+   <items id="id5">
+    <text>Address</text>
+   </items>
+   <items id="id6">
+    <text>Contact</text>
+   </items>
+   <items id="id7">
+    <text>Party type</text>
+   </items>
+   <items id="id8">
+    <text>Relationship</text>
+   </items>
+   <items id="id0.2">
+    <text>Language</text>
+   </items>
+   <items id="id0.3">
+    <text>Description</text>
+   </items>
+   <items id="id0.4">
+    <text>Actor type</text>
+   </items>
+   <items id="id1.1">
+    <text>Actor</text>
+   </items>
+   <items id="id0.0.1">
+    <text>Contact person</text>
+   </items>
+   <items id="id0.0.10">
+    <text>Marital status</text>
+   </items>
+   <items id="id0.0.11">
+    <text>Race</text>
+   </items>
+   <items id="id0.0.12">
+    <text>Ethnicity</text>
+   </items>
+   <items id="id0.0.13">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.14">
+    <text>Date range</text>
+   </items>
+   <items id="id0.0.15">
+    <text>Citizenship</text>
+   </items>
+   <items id="id0.0.16">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.17">
+    <text>Date range</text>
+   </items>
+   <items id="id0.0.18">
+    <text>Residency</text>
+   </items>
+   <items id="id0.0.19">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.2">
+    <text>Type</text>
+   </items>
+   <items id="id0.0.20">
+    <text>Datetime range</text>
+   </items>
+   <items id="id0.0.21">
+    <text>Religion</text>
+   </items>
+   <items id="id0.0.22">
+    <text>Organ donor type</text>
+   </items>
+   <items id="id0.0.23">
+    <text>Birth data</text>
+   </items>
+   <items id="id0.0.24">
+    <text>Birth datetime</text>
+   </items>
+   <items id="id0.0.25">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.26">
+    <text>Accuracy</text>
+   </items>
+   <items id="id0.0.27">
+    <text>Followup required</text>
+   </items>
+   <items id="id0.0.28">
+    <text>Age</text>
+   </items>
+   <items id="id0.0.29">
+    <text>Value**</text>
+   </items>
+   <items id="id0.0.3">
+    <text>Name</text>
+   </items>
+   <items id="id0.0.30">
+    <text>Accuracy</text>
+   </items>
+   <items id="id0.0.31">
+    <text>Age group**</text>
+   </items>
+   <items id="id0.0.32">
+    <text>Multiple birth indicator</text>
+   </items>
+   <items id="id0.0.33">
+    <text>Birth plurality</text>
+   </items>
+   <items id="id0.0.34">
+    <text>Birth order</text>
+   </items>
+   <items id="id0.0.35">
+    <text>Birth certificate number</text>
+   </items>
+   <items id="id0.0.36">
+    <text>Death data</text>
+   </items>
+   <items id="id0.0.37">
+    <text>Deceased indicator</text>
+   </items>
+   <items id="id0.0.38">
+    <text>Death datetime</text>
+   </items>
+   <items id="id0.0.39">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.4">
+    <text>Contact</text>
+   </items>
+   <items id="id0.0.40">
+    <text>Accuracy</text>
+   </items>
+   <items id="id0.0.41">
+    <text>Age at death**</text>
+   </items>
+   <items id="id0.0.42">
+    <text>Death information provider</text>
+   </items>
+   <items id="id0.0.43">
+    <text>Death notification source</text>
+   </items>
+   <items id="id0.0.44">
+    <text>Death address</text>
+   </items>
+   <items id="id0.0.45">
+    <text>Death certificate number</text>
+   </items>
+   <items id="id0.0.46">
+    <text>Biometric data</text>
+   </items>
+   <items id="id0.0.47">
+    <text>Biometric type</text>
+   </items>
+   <items id="id0.0.48">
+    <text>Biometric data template</text>
+   </items>
+   <items id="id0.0.49">
+    <text>Biometric quality</text>
+   </items>
+   <items id="id0.0.5">
+    <text>Administrative gender</text>
+   </items>
+   <items id="id0.0.50">
+    <text>Biometric creating authority</text>
+   </items>
+   <items id="id0.0.51">
+    <text>Location of biometric identifier</text>
+   </items>
+   <items id="id0.0.52">
+    <text>Biometric schema</text>
+   </items>
+   <items id="id0.0.53">
+    <text>Biometric device identification</text>
+   </items>
+   <items id="id0.0.54">
+    <text>Biometric version</text>
+   </items>
+   <items id="id0.0.55">
+    <text>Biometric creation date</text>
+   </items>
+   <items id="id0.0.56">
+    <text>Language</text>
+   </items>
+   <items id="id0.0.57">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.58">
+    <text>Mode</text>
+   </items>
+   <items id="id0.0.59">
+    <text>Proficiency</text>
+   </items>
+   <items id="id0.0.6">
+    <text>Mothers identifier</text>
+   </items>
+   <items id="id0.0.60">
+    <text>Translator required</text>
+   </items>
+   <items id="id0.0.61">
+    <text>Preference indicator</text>
+   </items>
+   <items id="id0.0.62">
+    <text>Translator required</text>
+   </items>
+   <items id="id0.0.63">
+    <text>Education level</text>
+   </items>
+   <items id="id0.0.64">
+    <text>Qualification</text>
+   </items>
+   <items id="id0.0.65">
+    <text>Disability</text>
+   </items>
+   <items id="id0.0.66">
+    <text>Occupation</text>
+   </items>
+   <items id="id0.0.67">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.68">
+    <text>Qualifier</text>
+   </items>
+   <items id="id0.0.69">
+    <text>Years</text>
+   </items>
+   <items id="id0.0.7">
+    <text>Mothers family name</text>
+   </items>
+   <items id="id0.0.70">
+    <text>Industry</text>
+   </items>
+   <items id="id0.0.71">
+    <text>Value</text>
+   </items>
+   <items id="id0.0.72">
+    <text>Qualifier</text>
+   </items>
+   <items id="id0.0.73">
+    <text>Student category</text>
+   </items>
+   <items id="id0.0.74">
+    <text>Advance directive</text>
+   </items>
+   <items id="id0.0.75">
+    <text>Category</text>
+   </items>
+   <items id="id0.0.76">
+    <text>Comments</text>
+   </items>
+   <items id="id0.0.77">
+    <text>Datetime range</text>
+   </items>
+   <items id="id0.0.78">
+    <text>Image</text>
+   </items>
+   <items id="id0.0.79">
+    <text>Paper location</text>
+   </items>
+   <items id="id0.0.8">
+    <text>Fathers name</text>
+   </items>
+   <items id="id0.0.80">
+    <text>Status</text>
+   </items>
+   <items id="id0.0.81">
+    <text>Entitlement</text>
+   </items>
+   <items id="id0.0.82">
+    <text>Number</text>
+   </items>
+   <items id="id0.0.83">
+    <text>Type</text>
+   </items>
+   <items id="id0.0.84">
+    <text>Datetime range</text>
+   </items>
+   <items id="id0.0.85">
+    <text>Identification comment</text>
+   </items>
+   <items id="id0.0.86">
+    <text>Description</text>
+   </items>
+   <items id="id0.0.87">
+    <text>Healthcare provider</text>
+   </items>
+   <items id="id0.0.88">
+    <text>Related observations</text>
+   </items>
+   <items id="id0.0.89">
+    <text>Birth certificate</text>
+   </items>
+   <items id="id0.0.9">
+    <text>Spouse name</text>
+   </items>
+   <items id="id0.0.90">
+    <text>Death certificate</text>
+   </items>
+   <items id="id0.0.91">
+    <text>Birth address</text>
+   </items>
+   <items id="id1.1.1">
+    <text>Person</text>
+   </items>
+   <items id="id2.0.1">
+    <text>Identifier</text>
+   </items>
+   <items id="id3.0.1">
+    <text>Use</text>
+   </items>
+   <items id="id3.0.2">
+    <text>Datetime range</text>
+   </items>
+   <items id="id4.0.1">
+    <text>Name</text>
+   </items>
+  </term_definitions>
+  <term_bindings id="snomed-ct">
+   <items id="id1.1">http://snomed.info/id/138875005</items>
+   <items id="id0.2">http://snomed.info/id/138875005</items>
+   <items id="id0.3">http://snomed.info/id/138875005</items>
+   <items id="id0.4">http://snomed.info/id/138875005</items>
+  </term_bindings>
+ </terminology>
+ <is_controlled>false</is_controlled>
+</archetype>
