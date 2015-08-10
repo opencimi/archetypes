@@ -1,0 +1,113 @@
+{
+	"title":" address (cluster)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.address.v2.0.0"}
+	,"li_attr":{"title":" id1.1\nsnomed-ct = http://snomed.info/id/397635003"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+						,{
+							"title":" No fixed address indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Use","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Preference indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Address part","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.7 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.8 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.9 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.10 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Address line","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.11 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Line number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.12 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+													,"li_attr":{"title":" id0.13 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.14 | ELEMENT"}
+												}
+												,{
+													"title":" Address part","data":{"jstree":{"opened":false,"icon":"item_group"}}
+													,"li_attr":{"title":" id0.15 | ITEM_GROUP"}
+													,"children":[
+															{
+																"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+																,"children":[
+																		{
+																			"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+																			,"li_attr":{"title":" id0.16 | ELEMENT"}
+																		}
+																		,{
+																			"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+																			,"li_attr":{"title":" id0.17 | ELEMENT"}
+																		}
+																		,{
+																			"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.18 | ELEMENT"}
+																		}
+																]
+															}
+													]
+												}
+										]
+									}
+							]
+						}
+				]
+			}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	"title":" specimen (material_entity)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.specimen.v3.0.0"}
+	,"li_attr":{"title":" id1.1.1\nsnomed-ct = http://snomed.info/id/123038009"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id2.1 | ELEMENT"}
+						}
+						,{
+							"title":" Name [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.2 | ELEMENT"}
+						}
+						,{
+							"title":" Description [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.3 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen identifier [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Container identifier [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Source specimen identifier [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen description [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen volume [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen weight [0..*]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen dimension [0..*]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen size description [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence number [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.10 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen additive [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.11 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen handling risk [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.12 | ELEMENT"}
+						}
+						,{
+							"title":" Special handling instructions [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.13 | ELEMENT"}
+						}
+						,{
+							"title":" Collect action | CIMI-CORE-ITEM_GROUP.collect_action.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.0.14 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Receive action | CIMI-CORE-ITEM_GROUP.receive_action.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.0.15 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

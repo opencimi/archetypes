@@ -1,0 +1,619 @@
+{
+	"title":" person (actor)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ACTOR.person.v2.0.0"}
+	,"li_attr":{"title":" id1.1.1\n"}
+	,"children":[
+			{
+				"title":" details","data":{"jstree":{"opened":false,"icon":"details"}}
+				,"children":[
+						{
+							"title":" Identifier","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id3 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Name | CIMI-CORE-ITEM_GROUP.party_name.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Address | CIMI-CORE-ITEM_GROUP.address.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Contact | CIMI-CORE-ITEM_GROUP.electronic_contact.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Party type [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id7 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Language [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Description [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Actor type [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.4 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Identifier","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id2.0.1 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Use [1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id3.0.1 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Datetime range [1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id3.0.2 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Name | CIMI-CORE-ITEM_GROUP.person_name.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Contact person [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.1 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.2 | ELEMENT"}
+												}
+												,{
+													"title":" Name | CIMI-CORE-ITEM_GROUP.person_name.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+													,"li_attr":{"title":" id0.0.3 | ITEM_GROUP"}
+												}
+												,{
+													"title":" Contact | CIMI-CORE-ITEM_GROUP.electronic_contact.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+													,"li_attr":{"title":" id0.0.4 | ITEM_GROUP"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Administrative gender [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Mothers identifier [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id0.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Mothers family name [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Fathers name [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Spouse name [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Marital status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.10 | ELEMENT"}
+						}
+						,{
+							"title":" Race [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.11 | ELEMENT"}
+						}
+						,{
+							"title":" Ethnicity [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.12 | ELEMENT"}
+						}
+						,{
+							"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.13 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Date range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.14 | ELEMENT"}
+						}
+						,{
+							"title":" Citizenship [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.15 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.16 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Date range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.17 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Residency [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.18 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.19 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.20 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Religion [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.21 | ELEMENT"}
+						}
+						,{
+							"title":" Organ donor type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.0.22 | ELEMENT"}
+						}
+						,{
+							"title":" Birth data [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.23 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Birth datetime [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+													,"li_attr":{"title":" id0.0.24 | ITEM_GROUP"}
+													,"children":[
+															{
+																"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+																,"children":[
+																		{
+																			"title":" Value [1]","data":{"jstree":{"opened":false,"icon":""}}
+																			,"li_attr":{"title":" id0.0.25 | ELEMENT"}
+																		}
+																		,{
+																			"title":" Accuracy [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.0.26 | ELEMENT"}
+																		}
+																		,{
+																			"title":" Followup required [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.0.27 | ELEMENT"}
+																		}
+																]
+															}
+													]
+												}
+												,{
+													"title":" Age [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+													,"li_attr":{"title":" id0.0.28 | ITEM_GROUP"}
+													,"children":[
+															{
+																"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+																,"children":[
+																		{
+																			"title":" Value** [1]","data":{"jstree":{"opened":false,"icon":""}}
+																			,"li_attr":{"title":" id0.0.29 | ELEMENT"}
+																			,"children":[
+																					{
+																						"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+																					}
+																			]
+																		}
+																		,{
+																			"title":" Accuracy [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.0.30 | ELEMENT"}
+																		}
+																		,{
+																			"title":" Age group** [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.0.31 | ELEMENT"}
+																		}
+																]
+															}
+													]
+												}
+												,{
+													"title":" Birth address | CIMI-CORE-ITEM_GROUP.address.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+													,"li_attr":{"title":" id0.0.91 | ITEM_GROUP"}
+												}
+												,{
+													"title":" Multiple birth indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.32 | ELEMENT"}
+												}
+												,{
+													"title":" Birth plurality [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.33 | ELEMENT"}
+												}
+												,{
+													"title":" Birth order [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.34 | ELEMENT"}
+												}
+												,{
+													"title":" Birth certificate number [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+													,"li_attr":{"title":" id0.0.35 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Death data [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.36 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Deceased indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.37 | ELEMENT"}
+												}
+												,{
+													"title":" Death datetime [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+													,"li_attr":{"title":" id0.0.38 | ITEM_GROUP"}
+													,"children":[
+															{
+																"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+																,"children":[
+																		{
+																			"title":" Value [1]","data":{"jstree":{"opened":false,"icon":""}}
+																			,"li_attr":{"title":" id0.0.39 | ELEMENT"}
+																			,"children":[
+																					{
+																						"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+																					}
+																			]
+																		}
+																		,{
+																			"title":" Accuracy [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+																			,"li_attr":{"title":" id0.0.40 | ELEMENT"}
+																		}
+																]
+															}
+													]
+												}
+												,{
+													"title":" Age at death** [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.41 | ELEMENT"}
+												}
+												,{
+													"title":" Death information provider [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id0.0.42 | ELEMENT"}
+												}
+												,{
+													"title":" Death notification source [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.43 | ELEMENT"}
+												}
+												,{
+													"title":" Death address | CIMI-CORE-ITEM_GROUP.address.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+													,"li_attr":{"title":" id0.0.44 | ITEM_GROUP"}
+												}
+												,{
+													"title":" Death certificate number [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+													,"li_attr":{"title":" id0.0.45 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Biometric data [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.46 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Biometric type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.47 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric data template [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.48 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric quality [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.49 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric creating authority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.50 | ELEMENT"}
+												}
+												,{
+													"title":" Location of biometric identifier [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.51 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric schema [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.52 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric device identification [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id0.0.53 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric version [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.54 | ELEMENT"}
+												}
+												,{
+													"title":" Biometric creation date [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.55 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Language [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.56 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.57 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Mode [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.58 | ELEMENT"}
+												}
+												,{
+													"title":" Proficiency [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.59 | ELEMENT"}
+												}
+												,{
+													"title":" Translator required [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.60 | ELEMENT"}
+												}
+												,{
+													"title":" Preference indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.61 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Translator required [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.0.62 | ELEMENT"}
+						}
+						,{
+							"title":" Education level [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.63 | ELEMENT"}
+						}
+						,{
+							"title":" Qualification [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.64 | ELEMENT"}
+						}
+						,{
+							"title":" Disability [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.65 | ELEMENT"}
+						}
+						,{
+							"title":" Occupation [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.66 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.67 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Qualifier [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.68 | ELEMENT"}
+												}
+												,{
+													"title":" Years [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.69 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Industry [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.70 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.71 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Qualifier [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.72 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Student category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.73 | ELEMENT"}
+						}
+						,{
+							"title":" Advance directive [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.74 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.75 | ELEMENT"}
+												}
+												,{
+													"title":" Comments [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.76 | ELEMENT"}
+												}
+												,{
+													"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.77 | ELEMENT"}
+												}
+												,{
+													"title":" Image [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.78 | ELEMENT"}
+												}
+												,{
+													"title":" Paper location [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.79 | ELEMENT"}
+												}
+												,{
+													"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.80 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Entitlement [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.81 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Number [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id0.0.82 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.83 | ELEMENT"}
+												}
+												,{
+													"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.84 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Identification comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.85 | ELEMENT"}
+						}
+						,{
+							"title":" Description [0..1]","data":{"jstree":{"opened":false,"icon":"plain_text"}}
+							,"li_attr":{"title":" id0.0.86 | ELEMENT"}
+						}
+				]
+			}
+			,{
+				"title":" relationship","data":{"jstree":{"opened":false,"icon":"relationship"}}
+				,"children":[
+						{
+							"title":" Relationship | CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1","data":{"jstree":{"opened":false,"icon":"party_relationship"}}
+							,"li_attr":{"title":" id8 | PARTY_RELATIONSHIP"}
+						}
+						,{
+							"title":" Healthcare provider | CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1","data":{"jstree":{"opened":false,"icon":"party_relationship"}}
+							,"li_attr":{"title":" id0.0.87 | PARTY_RELATIONSHIP"}
+						}
+				]
+			}
+			,{
+				"title":" link","data":{"jstree":{"opened":false,"icon":"link"}}
+				,"children":[
+						{
+							"title":" Related observations [0..*]","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.0.88 | LINK"}
+						}
+						,{
+							"title":" Birth certificate [0..1]","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.0.89 | LINK"}
+						}
+						,{
+							"title":" Death certificate [0..1]","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.0.90 | LINK"}
+						}
+				]
+			}
+	]
+}

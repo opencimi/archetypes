@@ -1,0 +1,20 @@
+{
+	"title":" cluster ()","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.cluster.v1.0.0"}
+	,"li_attr":{"title":" id1\n"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+				]
+			}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"title":" casts_pnl_urns (laboratory_panel)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.casts_pnl_urns.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1\nloinc = http://loinc.org/id/58432-6"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject of information | CIMI-CORE-ITEM_GROUP.subject_of_information.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id5 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id5.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Panel code [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Diagnostic service [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen | CIMI-CORE-ITEM_GROUP.specimen.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Poct indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusion [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Laboratory test | CIMI-CORE-ITEM_GROUP.laboratory_test.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Interpretation category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Action set | CIMI-CORE-ITEM_GROUP.observation_action_set.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Broad casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.broad_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Epithelial casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.epith_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Fatty casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.fatty_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granular casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.gran_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hyaline casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.hyaline_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Broad casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.broad_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.7 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Coarse Granular Casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.coarse_gran_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.8 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Fine Granular Casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.fine_gran_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.9 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Fine Granular Casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.fine_gran_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.10 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Pseudocasts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.pseudocasts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.11 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Coarse Granular Casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.coarse_gran_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.12 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Bacterial casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.bacterial_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.13 | ITEM_GROUP"}
+						}
+						,{
+							"title":" RBC casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.rbc_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.14 | ITEM_GROUP"}
+						}
+						,{
+							"title":" WBC casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.wbc_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.15 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Waxy casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.waxy_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.16 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mixed cellular casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.mixed_cell_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.17 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hemoglobin casts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.hgb_casts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.18 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mixed cellular casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.mixed_cell_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.19 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Bacterial casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.bacterial_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.20 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Pseudocasts [Presence] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.pseudocasts_urns_ql_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.21 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Epithelial casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.epith_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.22 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Fatty casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.fatty_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.23 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granular casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.gran_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.24 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hyaline casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.hyaline_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.25 | ITEM_GROUP"}
+						}
+						,{
+							"title":" RBC casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.rbc_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.26 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Waxy casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.waxy_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.27 | ITEM_GROUP"}
+						}
+						,{
+							"title":" WBC casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.wbc_casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.28 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Casts [Type] in Urine sediment by Light microscopy | CIMI-CORE-ITEM_GROUP.casts_urns_micro.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.29 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Casts [#/area] in Urine sediment by Microscopy low power field | CIMI-CORE-ITEM_GROUP.casts_num_per_area_urns_lpf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.30 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

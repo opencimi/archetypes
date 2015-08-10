@@ -1,0 +1,107 @@
+{
+	"title":" receive_action (action)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.receive_action.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1\n"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+						,{
+							"title":" Action type [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id2.2 | ELEMENT"}
+						}
+						,{
+							"title":" Received datetime [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.3.1 | ELEMENT"}
+						}
+						,{
+							"title":" Received datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.4.1 | ELEMENT"}
+						}
+						,{
+							"title":" Received duration [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.5.1 | ELEMENT"}
+						}
+						,{
+							"title":" Received timing offset [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.6.1 | ELEMENT"}
+						}
+						,{
+							"title":" Recevied timing offset origin [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.7.1 | ELEMENT"}
+						}
+						,{
+							"title":" Timing [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2.8 | ELEMENT"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2.9 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2.10 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id2.11 | ELEMENT"}
+						}
+				]
+			}
+			,{
+				"title":" participation","data":{"jstree":{"opened":false,"icon":"participation"}}
+				,"children":[
+						{
+							"title":" Location","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id0.109 | PARTICIPATION"}
+						}
+						,{
+							"title":" Receiver","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id0.109.1 | PARTICIPATION"}
+						}
+						,{
+							"title":" Locationof subject [0..1]","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id0.109.2 | PARTICIPATION"}
+						}
+						,{
+							"title":" Location of receiver [0..1]","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id0.109.3 | PARTICIPATION"}
+						}
+				]
+			}
+			,{
+				"title":" link","data":{"jstree":{"opened":false,"icon":"link"}}
+				,"children":[
+						{
+							"title":" Associated activity [0..1]","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.110 | LINK"}
+						}
+						,{
+							"title":" Previous action","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.111 | LINK"}
+						}
+						,{
+							"title":" Subsequent action","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.112 | LINK"}
+						}
+				]
+			}
+	]
+}

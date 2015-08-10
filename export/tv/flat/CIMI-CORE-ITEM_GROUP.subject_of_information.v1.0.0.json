@@ -1,0 +1,61 @@
+{
+	"title":" subject_of_information ()","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.subject_of_information.v1.0.0"}
+	,"li_attr":{"title":" id1\nsnomed-ct = http://snomed.info/id/131195008"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject relationship [1]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+							,"children":[
+									{
+										"title":" value","data":{"jstree":{"opened":false,"icon":"value"}}
+									}
+									,{
+										"title":" link (REMOVED)","data":{"jstree":{"opened":false,"icon":"link"}}
+									}
+									,{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+				]
+			}
+			,{
+				"title":" participation","data":{"jstree":{"opened":false,"icon":"participation"}}
+				,"children":[
+						{
+							"title":" Subject party [0..1]","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id3 | PARTICIPATION"}
+							,"children":[
+									{
+										"title":" participation_type","data":{"jstree":{"opened":false,"icon":""}}
+									}
+									,{
+										"title":" link (REMOVED)","data":{"jstree":{"opened":false,"icon":"link"}}
+									}
+									,{
+										"title":" details (REMOVED)","data":{"jstree":{"opened":false,"icon":"details"}}
+									}
+									,{
+										"title":" party","data":{"jstree":{"opened":false,"icon":""}}
+										,"children":[
+												{
+													"title":" Party","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id4 | PARTY"}
+													,"children":[
+															{
+																"title":" relationship (REMOVED)","data":{"jstree":{"opened":false,"icon":"relationship"}}
+															}
+													]
+												}
+										]
+									}
+							]
+						}
+				]
+			}
+	]
+}

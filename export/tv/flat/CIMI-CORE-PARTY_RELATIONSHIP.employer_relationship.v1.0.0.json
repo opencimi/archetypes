@@ -1,0 +1,45 @@
+{
+	"title":" employer_relationship (organization_relationship)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1\n"}
+	,"children":[
+			{
+				"title":" details","data":{"jstree":{"opened":false,"icon":"details"}}
+				,"children":[
+						{
+							"title":" Scoping status [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Location | CIMI-CORE-ITEM_GROUP.location.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Role [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Rank [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Occupation [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Salary type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Salary quantity [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.5 | ELEMENT"}
+						}
+				]
+			}
+	]
+}

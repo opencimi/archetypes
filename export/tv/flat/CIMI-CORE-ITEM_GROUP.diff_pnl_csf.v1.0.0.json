@@ -1,0 +1,289 @@
+{
+	"title":" diff_pnl_csf (laboratory_panel)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.diff_pnl_csf.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1\nloinc = http://loinc.org/id/29584-0"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject of information | CIMI-CORE-ITEM_GROUP.subject_of_information.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id5 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id5.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Panel code [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Diagnostic service [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen | CIMI-CORE-ITEM_GROUP.specimen.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Poct indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusion [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Laboratory test | CIMI-CORE-ITEM_GROUP.laboratory_test.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Interpretation category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Action set | CIMI-CORE-ITEM_GROUP.observation_action_set.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cells Counted Total [#] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.total_cells_counted_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Histiocytes/100 cells in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.histiocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cell Fractions/Differential [interpretation] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.cell_fract_csfimp.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Blasts/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.blasts_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.eosinophil_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.wbc_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes other [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.wbc_other_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.7 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes other/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.wbc_other_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.8 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.lymphocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.9 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.lymphocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.10 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.monocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.11 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mononuclear cells [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.mononuc_cells_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.12 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mononuclear cells/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.mononuc_cells_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.13 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neutrophils_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.14 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.segmented/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neuts_seg_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.15 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.band form/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neuts_band_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.16 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neutrophils_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.17 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Polymorphonuclear cells/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.polys_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.18 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Metamyelocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.metamyelocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.19 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.basophils_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.20 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Abnormal/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.lymph_abn_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.21 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Variant/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.variant_lymphs_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.22 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Macrophages/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.macrophages_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.23 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mesothelial cells/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.mesothl_cell_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.24 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes+Macrophages/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.monos_plus_macros_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.25 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myelocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.myelocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.26 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Nonhematic cells/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.nonhematic_cells_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.27 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promyelocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.promyelocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.28 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Unidentified cells/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.unident_cells_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.29 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granulocytes/100 leukocytes in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.granulocytes_nfr_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.30 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.eosinophil_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.31 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Unidentified cells [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.unident_cells_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.32 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promyelocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.promyelocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.33 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Polymorphonuclear cells [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.polys_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.34 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Nonhematic cells [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.nonhematic_cells_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.35 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.segmented [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neuts_seg_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.36 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.band form [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.neuts_band_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.37 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myelocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.myelocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.38 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes+Macrophages [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.monos_plus_macros_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.39 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.monocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.40 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Metamyelocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.metamyelocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.41 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mesothelial cells [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.mesothl_cell_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.42 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Macrophages [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.macrophages_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.43 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Variant [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.variant_lymphs_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.44 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Abnormal [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.lymph_abn_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.45 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Histiocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.histiocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.46 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granulocytes [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.granulocytes_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.47 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Blasts [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.blasts_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.48 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils [#/volume] in Cerebral spinal fluid | CIMI-CORE-ITEM_GROUP.basophils_num_csf.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.49 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"title":" histiocytes_num_per_area_urns_hpf (laboratory_test_quantitative)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.histiocytes_num_per_area_urns_hpf.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1.1\nloinc = http://loinc.org/id/26027-3"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject of information | CIMI-CORE-ITEM_GROUP.subject_of_information.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id5 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id5.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Test code [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Diagnostic service [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen | CIMI-CORE-ITEM_GROUP.specimen.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Poct indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusion [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Interpretation category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Result value [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.8.0.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Normal range [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Reference range [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.10 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.11 | ELEMENT"}
+						}
+						,{
+							"title":" Delta flag [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.12 | ELEMENT"}
+						}
+						,{
+							"title":" Signal flag [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.13 | ELEMENT"}
+						}
+						,{
+							"title":" Comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.14 | ELEMENT"}
+						}
+						,{
+							"title":" Action set | CIMI-CORE-ITEM_GROUP.observation_action_set.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

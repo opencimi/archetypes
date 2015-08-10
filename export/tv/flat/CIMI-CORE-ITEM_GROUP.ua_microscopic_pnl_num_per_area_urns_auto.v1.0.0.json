@@ -1,0 +1,157 @@
+{
+	"title":" ua_microscopic_pnl_num_per_area_urns_auto (laboratory_panel)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.ua_microscopic_pnl_num_per_area_urns_auto.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1\nloinc = http://loinc.org/id/53293-7"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject of information | CIMI-CORE-ITEM_GROUP.subject_of_information.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id5 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id5.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Panel code [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Diagnostic service [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen | CIMI-CORE-ITEM_GROUP.specimen.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Poct indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusion [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Laboratory test | CIMI-CORE-ITEM_GROUP.laboratory_test.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Interpretation category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Action set | CIMI-CORE-ITEM_GROUP.observation_action_set.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Bacteria [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.bacteria_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Epithelial cells.squamous [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.squamous_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Oval fat bodies (globules) [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.oval_fat_bodies_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hyaline casts [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.hyaline_casts_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Fine Granular Casts [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.fine_gran_casts_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Coarse Granular Casts [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.coarse_gran_casts_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Epithelial cells [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.epi_cells_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.7 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Casts [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.casts_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.8 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Erythrocytes [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.rbc_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.9 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.wbc_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.10 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Erythrocyte clumps [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.rbc_clumps_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.11 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocyte clumps [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.wbc_clumps_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.12 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Mucus [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.mucous_threads_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.13 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Epithelial cells.non-squamous [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.nonsq_epi_cells_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.14 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Crystals [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.crystals_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.15 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Spermatozoa [#/area] in Urine sediment by Automated count | CIMI-CORE-ITEM_GROUP.sperm_num_per_area_urns_auto.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.16 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

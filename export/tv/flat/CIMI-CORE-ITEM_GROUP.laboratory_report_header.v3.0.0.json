@@ -1,0 +1,76 @@
+{
+	"title":" laboratory_report_header (clinical_report_header)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3.0.0"}
+	,"li_attr":{"title":" id1.1.1\nsnomed-ct = http://snomed.info/id/364712009"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+						,{
+							"title":" Report id [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id2.1 | ELEMENT"}
+						}
+						,{
+							"title":" Versioned report id [0..1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id2.2 | ELEMENT"}
+						}
+						,{
+							"title":" Report version [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.3 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id2.4 | ELEMENT"}
+						}
+						,{
+							"title":" Report type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.5 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusions [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.6 | ELEMENT"}
+						}
+						,{
+							"title":" Recommendations [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.7 | ELEMENT"}
+						}
+						,{
+							"title":" Comments [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.8 | ELEMENT"}
+						}
+						,{
+							"title":" Report representation [0..*]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.9 | ELEMENT"}
+						}
+						,{
+							"title":" Report link [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id2.10 | ELEMENT"}
+						}
+						,{
+							"title":" Author action | CIMI-CORE-ITEM_GROUP.author_action.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Issue action | CIMI-CORE-ITEM_GROUP.issue_action.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Report type","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.2 | ELEMENT"}
+						}
+				]
+			}
+	]
+}

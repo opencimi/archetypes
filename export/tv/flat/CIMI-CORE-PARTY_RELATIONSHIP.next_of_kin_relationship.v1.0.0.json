@@ -1,0 +1,28 @@
+{
+	"title":" next_of_kin_relationship (party_relationship)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-PARTY_RELATIONSHIP.next_of_kin_relationship.v1.0.0"}
+	,"li_attr":{"title":" id1.1\nsnomed-ct = http://snomed.info/id/138875005"}
+	,"children":[
+			{
+				"title":" details","data":{"jstree":{"opened":false,"icon":"details"}}
+				,"children":[
+						{
+							"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.5 | ELEMENT"}
+						}
+				]
+			}
+	]
+}

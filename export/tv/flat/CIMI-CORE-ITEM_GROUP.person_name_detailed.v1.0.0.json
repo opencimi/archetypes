@@ -1,0 +1,202 @@
+{
+	"title":" person_name_detailed (person_name)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.person_name_detailed.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1\nsnomed-ct = http://snomed.info/id/138875005"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Identifier [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id2.1.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Part","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.2 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.3 | ELEMENT"}
+												}
+												,{
+													"title":" Value","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.4 | ELEMENT"}
+												}
+												,{
+													"title":" Type","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.5 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Use","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.6 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.7 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+												,{
+													"title":" Datetime range","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.8 | ELEMENT"}
+												}
+												,{
+													"title":" Identifier","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id0.0.0.9 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Datetime range","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.0.10 | ELEMENT"}
+						}
+						,{
+							"title":" Usage conditions","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.0.11 | ELEMENT"}
+						}
+						,{
+							"title":" Status","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.0.0.12 | ELEMENT"}
+						}
+						,{
+							"title":" Preferred flag","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.0.0.13 | ELEMENT"}
+						}
+						,{
+							"title":" Title","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.0.1 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.0.2 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.0.3 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.0.4 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Given name","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.0.5 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.0.6 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.0.7 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.0.8 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Middle name","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.0.9 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.0.10 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.0.11 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.0.12 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Family name","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.0.13 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.0.14 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.0.15 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.0.16 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Suffix","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.0.0.0.17 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Part number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+													,"li_attr":{"title":" id0.0.0.0.18 | ELEMENT"}
+												}
+												,{
+													"title":" Value [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.0.0.0.19 | ELEMENT"}
+												}
+												,{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.0.0.0.20 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+				]
+			}
+	]
+}

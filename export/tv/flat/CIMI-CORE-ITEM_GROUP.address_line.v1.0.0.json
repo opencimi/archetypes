@@ -1,0 +1,472 @@
+{
+	"title":" address_line (cluster)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.address_line.v1.0.0"}
+	,"li_attr":{"title":" id1.1\n"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id2 | ELEMENT"}
+						}
+						,{
+							"title":" Line number [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Additional locator [0..*]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.4 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.5 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Site name [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.6 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.7 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Unit number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.8 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.9 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Unit type [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.10 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.11 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Postal box number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.12 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.13 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Floor/level number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.14 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.15 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Floor/level type [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.16 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.17 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Lot number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.18 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.19 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Street [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.20 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.21 | ELEMENT"}
+												}
+												,{
+													"title":" Name [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.22 | ELEMENT"}
+												}
+												,{
+													"title":" Street type [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.23 | ELEMENT"}
+												}
+												,{
+													"title":" Direction [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.24 | ELEMENT"}
+												}
+												,{
+													"title":" Suffix [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.25 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Street number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.26 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.27 | ELEMENT"}
+												}
+												,{
+													"title":" Numeric [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.28 | ELEMENT"}
+												}
+												,{
+													"title":" Suffix [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+													,"li_attr":{"title":" id0.29 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Intersection description [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.30 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.31 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Visualisation [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.32 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.33 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Census area [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.34 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.35 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery point identifier [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.36 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.37 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery number [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.38 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.39 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery installation type [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.40 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.41 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery installation area [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.42 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.43 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery installation qualifier [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.44 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.45 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery mode [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.46 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.47 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delivery mode identifier [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.48 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.49 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Postal code [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.50 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.51 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" District TEXT [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.52 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.53 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Suburb/town/locality [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.54 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.55 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" City [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.56 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.57 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" State/territory/province [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.58 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.59 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Country [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.60 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.61 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Care of [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.62 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.63 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Delimiter [0..1]","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id0.64 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Type [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+													,"li_attr":{"title":" id0.65 | ELEMENT"}
+												}
+										]
+									}
+							]
+						}
+				]
+			}
+	]
+}

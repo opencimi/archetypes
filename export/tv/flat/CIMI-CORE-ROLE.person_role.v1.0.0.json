@@ -1,0 +1,95 @@
+{
+	"title":" person_role (role)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ROLE.person_role.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1\n"}
+	,"children":[
+			{
+				"title":" details","data":{"jstree":{"opened":false,"icon":"details"}}
+				,"children":[
+						{
+							"title":" Identifier","data":{"jstree":{"opened":false,"icon":"item_group"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+							,"children":[
+									{
+										"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+										,"children":[
+												{
+													"title":" Value [1]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+													,"li_attr":{"title":" id3 | ELEMENT"}
+													,"children":[
+															{
+																"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+															}
+													]
+												}
+										]
+									}
+							]
+						}
+						,{
+							"title":" Name | CIMI-CORE-ITEM_GROUP.party_name.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Address | CIMI-CORE-ITEM_GROUP.address.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Contact | CIMI-CORE-ITEM_GROUP.electronic_contact.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Party type [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id7 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Role type [1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.1.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Preferred written communication format","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Preferred contact method","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Preferred contact time [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Datetime range [0..1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Confidentialty level [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id0.4 | ELEMENT"}
+						}
+				]
+			}
+			,{
+				"title":" relationship","data":{"jstree":{"opened":false,"icon":"relationship"}}
+				,"children":[
+						{
+							"title":" Relationship | CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1","data":{"jstree":{"opened":false,"icon":"party_relationship"}}
+							,"li_attr":{"title":" id8 | PARTY_RELATIONSHIP"}
+						}
+				]
+			}
+	]
+}

@@ -1,0 +1,389 @@
+{
+	"title":" diff_pnl__unspecified_bld (laboratory_panel)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.diff_pnl__unspecified_bld.v1.0.0"}
+	,"li_attr":{"title":" id1.1.1.1.1\nloinc = http://loinc.org/id/69738-3"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Subject of information | CIMI-CORE-ITEM_GROUP.subject_of_information.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cluster | CIMI-CORE-ITEM_GROUP.cluster.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Element [0..*]","data":{"jstree":{"opened":false,"icon":"element"}}
+							,"li_attr":{"title":" id5 | ELEMENT"}
+						}
+						,{
+							"title":" Identifier [0..*]","data":{"jstree":{"opened":false,"icon":"identifier"}}
+							,"li_attr":{"title":" id5.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Panel code [1]","data":{"jstree":{"opened":false,"icon":""}}
+							,"li_attr":{"title":" id5.0.2.1 | ELEMENT"}
+							,"children":[
+									{
+										"title":" null_flavor (REMOVED)","data":{"jstree":{"opened":false,"icon":"null_flavor"}}
+									}
+							]
+						}
+						,{
+							"title":" Diagnostic service [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.0.1 | ELEMENT"}
+						}
+						,{
+							"title":" Specimen | CIMI-CORE-ITEM_GROUP.specimen.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Poct indicator [0..1]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.2 | ELEMENT"}
+						}
+						,{
+							"title":" Diagnosis [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Conclusion [0..*]","data":{"jstree":{"opened":false,"icon":"coded_text"}}
+							,"li_attr":{"title":" id5.0.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Laboratory test | CIMI-CORE-ITEM_GROUP.laboratory_test.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Reason [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.3 | ELEMENT"}
+						}
+						,{
+							"title":" Method [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.4 | ELEMENT"}
+						}
+						,{
+							"title":" Status [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.5 | ELEMENT"}
+						}
+						,{
+							"title":" Priority [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.6 | ELEMENT"}
+						}
+						,{
+							"title":" Interpretation category [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.7 | ELEMENT"}
+						}
+						,{
+							"title":" Sequence [0..1]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.8 | ELEMENT"}
+						}
+						,{
+							"title":" Comment [0..*]","data":{"jstree":{"opened":false,"icon":"text"}}
+							,"li_attr":{"title":" id5.0.9 | ELEMENT"}
+						}
+						,{
+							"title":" Action set | CIMI-CORE-ITEM_GROUP.observation_action_set.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id4.0.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Variant/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.variant_lymphs_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Plasma cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.plasma_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.basophils_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Blasts/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.blasts_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.4 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.eosinophil_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.5 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.eosinophil_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.6 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Large unstained cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.luc_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.7 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Large unstained cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.luc_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.8 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.wbc_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.9 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes other/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.wbc_other_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.10 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.lymphocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.11 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Variant [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.variant_lymphs_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.12 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.lymphocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.13 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.monocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.14 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.monocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.15 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myelocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.myelocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.16 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.neutrophils_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.17 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.segmented/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.neuts_seg_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.18 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.band form [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.neuts_band_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.19 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.band form/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.neuts_band_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.20 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.neutrophils_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.21 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promyelocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.promyelocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.22 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promyelocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.promyelocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.23 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Metamyelocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.metamyelocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.24 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.basophils_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.25 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Blasts [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.blasts_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.26 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granulocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.granulocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.27 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Granulocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.granulocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.28 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hairy cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.hairy_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.29 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Leukocytes other [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.wbc_other_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.30 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Abnormal [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.lymph_abn_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.31 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Abnormal/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.lymph_abn_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.32 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Large Granular/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.lg_gran_lymphs_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.33 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphoma cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.lymphoma_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.34 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphoma cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.lymphoma_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.35 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Metamyelocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.metamyelocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.36 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes Abnormal [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.abn_monocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.37 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monocytes Abnormal/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.abn_monocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.38 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myeloblasts [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.myeloblasts_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.39 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myeloblasts/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.myeloblasts_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.40 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Myelocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.myelocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.41 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.hypersegmented [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.neuts_hyperseg_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.42 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.hypersegmented/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.neuts_hyperseg_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.43 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Neutrophils.segmented [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.neuts_seg_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.44 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Plasma cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.plasma_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.45 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Prolymphocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.prolymphocytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.46 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Prolymphocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.prolymphocytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.47 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promonocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.promonycytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.48 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Cell Fractions/Differential [interpretation] in Blood | CIMI-CORE-ITEM_GROUP.cell_fract_bldimp.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.49 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils Immature [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.imm_basophils_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.50 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Basophils Immature/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.imm_basophils_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.51 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils Immature [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.imm_eosinophil_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.52 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Eosinophils Immature/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.imm_eosinophil_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.53 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Malignant cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.malignant_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.54 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Malignant cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.malignant_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.55 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Plasma cell precursor [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.plasma_cell_prec_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.56 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Plasma cell precursor/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.plasma_cell_prec_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.57 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Sezary cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.sezary_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.58 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Sezary cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.sezary_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.59 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Plasmacytoid/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.plasmacoid_lymphs_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.60 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphoblasts/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.lymphoblasts_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.61 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monoblasts/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.monoblasts_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.62 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Immature monocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.imm_moncytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.63 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Immature monocytes/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.imm_moncytes_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.64 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Promonocytes [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.promonycytes_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.65 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Smudge cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.smudge_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.66 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Smudge cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.smudge_cells_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.67 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Polymorphonuclear cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.polys_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.68 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Polymorphonuclear cells [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.polys_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.69 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Monoblasts [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.monoblasts_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.70 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Plasmacytoid [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.plasmacoid_lymphs_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.71 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphoblasts [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.lymphoblasts_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.72 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Hairy cells/100 leukocytes in Blood | CIMI-CORE-ITEM_GROUP.hairy_cells_nfr_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.73 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Lymphocytes Large Granular [#/volume] in Blood | CIMI-CORE-ITEM_GROUP.lg_gran_lymphs_num_bld.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.1.1.1.74 | ITEM_GROUP"}
+						}
+				]
+			}
+	]
+}

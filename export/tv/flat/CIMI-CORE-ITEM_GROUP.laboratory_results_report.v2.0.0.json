@@ -1,0 +1,46 @@
+{
+	"title":" laboratory_results_report (clinical_document)","data":{"jstree":{"opened":true,"icon":"archetype"}}
+	,"a_attr":{"href":"#/20150204/CIMI/CIMI-CORE-ITEM_GROUP.laboratory_results_report.v2.0.0"}
+	,"li_attr":{"title":" id1.1\nsnomed-ct = http://snomed.info/id/371528001"}
+	,"children":[
+			{
+				"title":" item","data":{"jstree":{"opened":false,"icon":"item"}}
+				,"children":[
+						{
+							"title":" Report header | CIMI-CORE-ITEM_GROUP.clinical_report_header.v1","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Laboratory Report Header | CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id3.1 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Patient Encounter Summary | CIMI-CORE-ITEM_GROUP.patient_encounter_summary.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.2 | ITEM_GROUP"}
+						}
+						,{
+							"title":" Laboratory Test Request Summary | CIMI-CORE-ITEM_GROUP.laboratory_test_request_summary.v2","data":{"jstree":{"opened":false,"icon":"item_group_reference"}}
+							,"li_attr":{"title":" id0.3 | ITEM_GROUP"}
+						}
+				]
+			}
+			,{
+				"title":" participation","data":{"jstree":{"opened":false,"icon":"participation"}}
+				,"children":[
+						{
+							"title":" Subject of care [0..1]","data":{"jstree":{"opened":false,"icon":"participation"}}
+							,"li_attr":{"title":" id2 | PARTICIPATION"}
+						}
+				]
+			}
+			,{
+				"title":" link","data":{"jstree":{"opened":false,"icon":"link"}}
+				,"children":[
+						{
+							"title":" Patient encounter [0..*]","data":{"jstree":{"opened":false,"icon":"link"}}
+							,"li_attr":{"title":" id0.1 | LINK"}
+						}
+				]
+			}
+	]
+}
