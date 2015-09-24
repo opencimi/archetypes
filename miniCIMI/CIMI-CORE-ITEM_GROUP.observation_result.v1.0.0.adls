@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.observation.v1.0.0
+  CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0
 
 specialize
   CIMI-CORE-ITEM_GROUP.indivisible_clinical_statement.v1
@@ -12,14 +12,14 @@ description
     ["name"] = <"Patrick Langford">
     ["organisation"] = <"Intermountain Healthcare">
     ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
+    ["date"] = <"9/24/2015">
   >
   details = <
     ["en"] = <
       language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'observation' concept">
-      use = <"Use for observation archetypes.">
-      keywords = <"observation">
+      purpose = <"Archetype for CIMI 'observation result' concept">
+      use = <"Use for observation result archetypes.">
+      keywords = <"observation","result">
     >
   >
   lifecycle_state = <"unmanaged">
@@ -34,7 +34,7 @@ description
   >
 
 definition
-  ITEM_GROUP[id1.1.1] matches {-- Observation
+  ITEM_GROUP[id1.1.1] matches {-- Observation Result
     item matches {
       ELEMENT[id5.0.1] matches { -- Identifier
         value matches {
@@ -49,27 +49,27 @@ definition
       }
       ELEMENT[id5.0.3] matches { -- Reason
         value matches {
-          TEXT[id0.0.103]
+          CODED_TEXT[id0.0.103]
         }
       }
       ELEMENT[id5.0.4] matches { -- Method
         value matches {
-          TEXT[id0.0.104]
+          CODED_TEXT[id0.0.104]
         }
       }
       ELEMENT[id5.0.5] occurrences matches {0..1} matches { -- Status
         value matches {
-          TEXT[id0.0.105]
+          CODED_TEXT[id0.0.105]
         }
       }
       ELEMENT[id5.0.6] occurrences matches {0..1} matches { -- Priority
         value matches {
-          TEXT[id0.0.106]
+          CODED_TEXT[id0.0.106]
         }
       }
       ELEMENT[id5.0.7] occurrences matches {0..1} matches { -- Interpretation category
         value matches {
-          TEXT[id0.0.107]
+          CODED_TEXT[id0.0.107]
         }
       }
       ELEMENT[id5.0.8] occurrences matches {0..1} -- Result
@@ -85,17 +85,17 @@ definition
       }
       ELEMENT[id5.0.11] occurrences matches {0..1} matches { -- Sequence
         value matches {
-          TEXT[id0.0.111]
+          CODED_TEXT[id0.0.111]
         }
       }
       ELEMENT[id5.0.12] occurrences matches {0..1} matches { -- Delta flag
         value matches {
-          TEXT[id0.0.112]
+          CODED_TEXT[id0.0.112]
         }
       }
       ELEMENT[id5.0.13] occurrences matches {0..1} matches { -- Signal flag
         value matches {
-          TEXT[id0.0.113]
+          CODED_TEXT[id0.0.113]
         }
       }
       ELEMENT[id5.0.14] matches { -- Comment
@@ -110,7 +110,7 @@ definition
 terminology
   term_definitions = <
     ["en"] = <
-      ["id1.1.1"] = < text = <"Observation"> >
+      ["id1.1.1"] = < text = <"Observation Result"> >
       ["id5.0.1"] = < text = <"Identifier"> >
       ["id5.0.2"] = < text = <"Code"> >
       ["id5.0.3"] = < text = <"Reason"> >

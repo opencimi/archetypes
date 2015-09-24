@@ -2,7 +2,7 @@ archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
   CIMI-CORE-ITEM_GROUP.laboratory_test.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.observation.v1
+  CIMI-CORE-ITEM_GROUP.observation_result.v1
 
 language
   original_language = <[ISO_639-1::en]>
