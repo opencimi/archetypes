@@ -60,7 +60,7 @@ definition
       }
       use_archetype ITEM_GROUP[id0.1.1.1, CIMI-CORE-ITEM_GROUP.laboratory_test.v1]
       use_archetype ITEM_GROUP[id0.1.2.1, CIMI-CORE-ITEM_GROUP.laboratory_panel.v1]
-      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1] occurrences matches {0}
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation_result.v1] occurrences matches {0}
       use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1] occurrences matches {0}
     }
   }

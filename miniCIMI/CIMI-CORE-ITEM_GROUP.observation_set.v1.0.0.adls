@@ -67,7 +67,7 @@ definition
           TEXT[id0.0.106]
         }
       }
-      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation.v1] -- Observation
+      use_archetype ITEM_GROUP[id0.1.1, CIMI-CORE-ITEM_GROUP.observation_result.v1] -- Observation
       use_archetype ITEM_GROUP[id0.1.2, CIMI-CORE-ITEM_GROUP.observation_set.v1] -- Observation set
       ELEMENT[id5.0.7] occurrences matches {0..1} matches { -- Interpretation category
         value matches {
