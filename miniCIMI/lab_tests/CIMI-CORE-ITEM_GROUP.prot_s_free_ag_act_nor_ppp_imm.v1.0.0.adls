@@ -6,61 +6,65 @@ specialize
 
 language
     original_language = <[ISO_639-1::en]>
-
+    
 description
-    original_author = <
-      ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
-      ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
+    conversion_details = <
+        ["source_model"] = <"<http://s.details.loinc.org/LOINC/27821-8.html>">
+        ["tool"] = <"cimi-gen v0.0.1">
+        ["time"] = <"2015-08-05T22:26:39">
     >
-    details = <
-      ["en"] = <
-        language = <[ISO_639-1::en]>
-        purpose = <"Archetype for CIMI 'Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method' concept">
-        use = <"Use for Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method.">
-        keywords = <"Prot S Free","PS","PR","Nor","Relative mass concentration","RLMCNC","Point in time","Random","Platelet poor plasma","Plas","Quantitative","QNT","Quant","Quan","Immunology","Immunol","Ag Act/Nor","Antigen","Antigens","Act/Nor","S prime","Control","FR","Non-protein bound","COAGULATION">
-      >
-    >
-    lifecycle_state = <"unmanaged">
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
     custodian_namespace = <"org.opencimi">
     custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    details = <
+        ["en"] = <
+            keywords = <"Prot S Free", "PS", "PR", "Nor", "Relative mass concentration", "RLMCNC", "Point in time", "Random", "Platelet poor plasma", "Plas", "Quantitative", "QNT", "Quant", "Quan", "Immunology", "Immunol", "Ag Act/Nor", "Antigen", "Antigens", "Act/Nor", "S prime", "Control", "FR", "Non-protein bound", "COAGULATION">
+            language = <[ISO_639-1::en]>
+            purpose = <"Archetype for CIMI 'Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method' concept">
+            use = <"Use for Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method.">
+        >
+    >
     ip_acknowledgements = <
-      ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-      ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
     >
-    conversion_details = <
-      ["source_model"] = <"<http://s.details.loinc.org/LOINC/27821-8.html>">
-      ["tool"] = <"cimi-gen v0.0.1">
-      ["time"] = <"2015-08-05T22:26:39">
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Patrick Langford <patrick@neuronsong.com>">
+        ["organisation"] = <"Intermountain Healthcare <http://intermountainhealthcare.org>">
     >
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1.1.1] matches { -- Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method
-    /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Units
-  }
+    ITEM_GROUP[id1.1.1.1.1.1] matches {    -- Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method
+        value[id0.0.102] matches {[at0.0.0.0.0.1]}
+        value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]}
+    }
 
 terminology
-  term_definitions = <
-    ["en"] = <
-      ["id1.1.1.1.1.1"] = <text = <"Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method">>
-      ["at0.0.0.0.0.1"] = <text = <"Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method">>
-      ["at0.0.0.0.0.2"] = <text = <"%">> -- Percent [fraction] -- Percentage unit
+    term_bindings = <
+        ["loinc"] = <
+            ["id1.1.1.1.1.1"] = <http://loinc.org/id/27821-8>
+            ["at0.0.0.0.0.1"] = <http://loinc.org/id/27821-8>
+        
+        >
+        ["snomed-ct"] = <
+            ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009>
+        
+        >
     >
-  >
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1.1.1.1"] = <
+                text = <"Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method">
+            >
+            ["at0.0.0.0.0.1"] = <
+                text = <"Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method">
+            >
+            ["at0.0.0.0.0.2"] = <
+                text = <"%">
+            >
+        >
+    >
 
-  term_bindings = <
-    ["loinc"] = <
-      items = <
-        ["id1.1.1.1.1.1"] = <http://loinc.org/id/27821-8>
-        ["at0.0.0.0.0.1"] = <http://loinc.org/id/27821-8>
-      >
-    >
-    ["snomed-ct"] = <
-      items = <
-        ["at0.0.0.0.0.2"] = <http://snomed.org/id/415067009> -- Percent [fraction] -- Percentage unit
-      >
-    >
-  >

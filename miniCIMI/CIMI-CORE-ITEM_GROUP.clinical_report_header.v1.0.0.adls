@@ -1,146 +1,145 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.clinical_report_header.v1.0.0
+    CIMI-CORE-ITEM_GROUP.clinical_report_header.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.cluster.v1
+    CIMI-CORE-ITEM_GROUP.cluster.v1
 
 language
-  original_language = <[ISO_639-1::en]>
-
+    original_language = <[ISO_639-1::en]>
+    
 description
-  original_author = <
-    ["name"] = <"Patrick Langford">
-    ["organisation"] = <"Intermountain Healthcare">
-    ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
-  >
-  details = <
-    ["en"] = <
-      language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'clinical report header' concept">
-      use = <"Use for clinical report header.">
-      keywords = <"clinical","report","header">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    details = <
+        ["en"] = <
+            keywords = <"clinical", "report", "header">
+            language = <[ISO_639-1::en]>
+            purpose = <"Archetype for CIMI 'clinical report header' concept">
+            use = <"Use for clinical report header.">
+        >
     >
-  >
-  lifecycle_state = <"unmanaged">
-  other_details = <["model_level"] = <"reference">>
-  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
-  custodian_namespace = <"org.opencimi">
-  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-  ip_acknowledgements = <
-    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-  >
+    ip_acknowledgements = <
+        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Patrick Langford">
+        ["organisation"] = <"Intermountain Healthcare">
+        ["email"] = <"patrick@neuronsong.com">
+        ["date"] = <"10/06/2014">
+    >
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1] matches { -- Clinical report header
-    item matches {
-      ELEMENT[id2.1] occurrences matches {0..1} matches { -- Report id
-        value matches {
-          IDENTIFIER[id0.11]
+    ITEM_GROUP[id1.1] matches {    -- Clinical report header
+        item matches {
+            ELEMENT[id2.1] occurrences matches {0..1} matches {    -- Report id
+                value matches {
+                    IDENTIFIER[id0.11] 
+                }
+            }
+            ELEMENT[id2.2] occurrences matches {0..1} matches {    -- Versioned report id
+                value matches {
+                    IDENTIFIER[id0.12] 
+                }
+            }
+            ELEMENT[id2.3] occurrences matches {0..1} matches {    -- Report version
+                value matches {
+                    TEXT[id0.13] 
+                }
+            }
+            ELEMENT[id2.4] occurrences matches {0..1} matches {    -- Status
+                value matches {
+                    CODED_TEXT[id0.14] 
+                }
+            }
+            ELEMENT[id2.5] occurrences matches {0..1} matches {    -- Report type
+                value matches {
+                    TEXT[id0.15] 
+                }
+            }
+            ELEMENT[id2.6] occurrences matches {0..1} matches {    -- Conclusions
+                value matches {
+                    TEXT[id0.16] 
+                }
+            }
+            ELEMENT[id2.7] matches {    -- Recommendations
+                value matches {
+                    TEXT[id0.17] 
+                }
+            }
+            ELEMENT[id2.8] matches {    -- Comments
+                value matches {
+                    TEXT[id0.18] 
+                }
+            }
+            ELEMENT[id2.9] matches {    -- Report representation
+                value matches {
+                    MULTIMEDIA[id0.19] 
+                }
+            }
+            ELEMENT[id2.10] occurrences matches {0..1} matches {    -- Report link
+                value matches {
+                    URI_VALUE[id0.20] 
+                }
+            }
+            use_archetype ITEM_GROUP[id0.1, CIMI-CORE-ITEM_GROUP.author_action.v1]
+            use_archetype ITEM_GROUP[id0.2, CIMI-CORE-ITEM_GROUP.issue_action.v1]
         }
-      }
-      ELEMENT[id2.2] occurrences matches {0..1} matches { -- Versioned report id
-        value matches {
-          IDENTIFIER[id0.12]
-        }
-      }
-      ELEMENT[id2.3] occurrences matches {0..1} matches { -- Report version
-        value matches {
-          TEXT[id0.13]
-        }
-      }
-      ELEMENT[id2.4] occurrences matches {0..1} matches { -- Status
-        value matches {
-          CODED_TEXT[id0.14]
-        }
-      }
-      ELEMENT[id2.5] occurrences matches {0..1} matches { -- Report type
-        value matches {
-          TEXT[id0.15]
-        }
-      }
-      ELEMENT[id2.6] occurrences matches {0..1} matches { -- Conclusions
-        value matches {
-          TEXT[id0.16]
-        }
-      }
-      ELEMENT[id2.7] matches { -- Recommendations
-        value matches {
-          TEXT[id0.17]
-        }
-      }
-      ELEMENT[id2.8] matches { -- Comments
-        value matches {
-          TEXT[id0.18]
-        }
-      }
-      ELEMENT[id2.9] matches { -- Report representation
-        value matches {
-          MULTIMEDIA[id0.19]
-        }
-      }
-      ELEMENT[id2.10] occurrences matches {0..1} matches { -- Report link
-        value matches {
-          URI_VALUE[id0.20]
-        }
-      }
-      use_archetype ITEM_GROUP [id0.1, CIMI-CORE-ITEM_GROUP.author_action.v1] -- Author action
-      use_archetype ITEM_GROUP [id0.2, CIMI-CORE-ITEM_GROUP.issue_action.v1] -- Issue action
     }
-  }
 
 terminology
-  term_definitions = <
-    ["en"] = <
-      ["id1.1"] = <
-        text = <"Clinical report header">
-      >
-      ["id2.1"] = <
-        text = <"Report id">
-      >
-      ["id2.2"] = <
-        text = <"Versioned report id">
-      >
-      ["id2.3"] = <
-        text = <"Report version">
-      >
-      ["id2.4"] = <
-        text = <"Status">
-      >
-      ["id2.5"] = <
-        text = <"Report type">
-      >
-      ["id2.6"] = <
-        text = <"Conclusions">
-      >
-      ["id2.7"] = <
-        text = <"Recommendations">
-      >
-      ["id2.8"] = <
-        text = <"Comments">
-      >
-      ["id2.9"] = <
-        text = <"Report representation">
-      >
-      ["id2.10"] = <
-        text = <"Report link">
-      >
-      ["id0.1"] = <
-        text = <"Author action">
-      >
-      ["id0.2"] = <
-        text = <"Issue action">
-      >
+    term_bindings = <
+        ["snomed-ct"] = <
+            ["id1.1"] = <http://snomed.info/id/423901009>
+            ["id2.1"] = <http://snomed.info/id/423901009>
+        
+        >
     >
-  >
-  term_bindings = <
-    ["snomed-ct"] = <
-      items = <
-        ["id1.1"] = <http://snomed.info/id/423901009>
-        ["id2.1"] = <http://snomed.info/id/423901009>
-      >
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Clinical report header">
+            >
+            ["id2.1"] = <
+                text = <"Report id">
+            >
+            ["id2.2"] = <
+                text = <"Versioned report id">
+            >
+            ["id2.3"] = <
+                text = <"Report version">
+            >
+            ["id2.4"] = <
+                text = <"Status">
+            >
+            ["id2.5"] = <
+                text = <"Report type">
+            >
+            ["id2.6"] = <
+                text = <"Conclusions">
+            >
+            ["id2.7"] = <
+                text = <"Recommendations">
+            >
+            ["id2.8"] = <
+                text = <"Comments">
+            >
+            ["id2.9"] = <
+                text = <"Report representation">
+            >
+            ["id2.10"] = <
+                text = <"Report link">
+            >
+            ["id0.1"] = <
+                text = <"Author action">
+            >
+            ["id0.2"] = <
+                text = <"Issue action">
+            >
+        >
     >
-  >
+

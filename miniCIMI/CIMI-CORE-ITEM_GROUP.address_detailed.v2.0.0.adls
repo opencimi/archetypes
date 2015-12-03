@@ -5,153 +5,236 @@ specialize
     CIMI-CORE-ITEM_GROUP.address.v2
 
 language
-  original_language = <[ISO_639-1::en]>
-
+    original_language = <[ISO_639-1::en]>
+    
 description
-  original_author = <
-    ["name"] = <"Patrick Langford">
-    ["organisation"] = <"Intermountain Healthcare">
-    ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
-  >
-  details = <
-    ["en"] = <
-      language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'address detailed' concept">
-      use = <"Use for address detailed.">
-      keywords = <"address","detailed">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    details = <
+        ["en"] = <
+            keywords = <"address", "detailed">
+            language = <[ISO_639-1::en]>
+            purpose = <"Archetype for CIMI 'address detailed' concept">
+            use = <"Use for address detailed.">
+        >
     >
-  >
-  lifecycle_state = <"unmanaged">
-  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
-  custodian_namespace = <"org.opencimi">
-  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-  ip_acknowledgements = <
-    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-  >
+    ip_acknowledgements = <
+        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Patrick Langford">
+        ["organisation"] = <"Intermountain Healthcare">
+        ["email"] = <"patrick@neuronsong.com">
+        ["date"] = <"10/06/2014">
+    >
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-    ITEM_GROUP[id1.1.1] matches { -- Address detailed
+    ITEM_GROUP[id1.1.1] matches {    -- Address detailed
         item matches {
-            ITEM_GROUP[id0.7.1] -- Additional locator type
-            ITEM_GROUP[id0.7.2] -- Site name
-            ITEM_GROUP[id0.7.3] -- Unit number
-            ITEM_GROUP[id0.7.4] -- Unit type
-            ITEM_GROUP[id0.7.5] -- Postal box number
-            ITEM_GROUP[id0.7.6] -- Floor/level number
-            ITEM_GROUP[id0.7.7] -- Floor/level type
-            ITEM_GROUP[id0.7.8] -- Lot number
-            ITEM_GROUP[id0.7.9] matches { -- Street
+            ITEM_GROUP[id0.7.1]     -- Additional locator
+            ITEM_GROUP[id0.7.2]     -- Site name
+            ITEM_GROUP[id0.7.3]     -- Unit number
+            ITEM_GROUP[id0.7.4]     -- Unit type
+            ITEM_GROUP[id0.7.5]     -- Postal box number
+            ITEM_GROUP[id0.7.6]     -- Floor/level number
+            ITEM_GROUP[id0.7.7]     -- Floor/level type
+            ITEM_GROUP[id0.7.8]     -- Lot number
+            ITEM_GROUP[id0.7.9] matches {    -- Street
                 item matches {
-                    ELEMENT[id0.0.1]  matches { -- Name
+                    ELEMENT[id0.0.1] matches {    -- Name
                         value matches {
-                            CODED_TEXT[id0.0.101]
+                            CODED_TEXT[id0.0.101] 
                         }
                     }
-                    ELEMENT[id0.0.2] matches { -- Street type
+                    ELEMENT[id0.0.2] matches {    -- Street type
                         value matches {
-                            TEXT[id0.0.102]
+                            TEXT[id0.0.102] 
                         }
                     }
-                    ELEMENT[id0.0.3] matches { -- Direction
+                    ELEMENT[id0.0.3] matches {    -- Direction
                         value matches {
-                            CODED_TEXT[id0.0.103]
+                            CODED_TEXT[id0.0.103] 
                         }
                     }
-                    ELEMENT[id0.0.4] matches { -- Suffix
+                    ELEMENT[id0.0.4] matches {    -- Suffix
                         value matches {
-                            TEXT[id0.0.104]
+                            TEXT[id0.0.104] 
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.10] matches { -- Street number
+            ITEM_GROUP[id0.7.10] matches {    -- Street number
                 item matches {
-                    ELEMENT[id0.0.5] matches { -- Numeric
+                    ELEMENT[id0.0.5] matches {    -- Numeric
                         value matches {
-                            TEXT[id0.0.105]
+                            TEXT[id0.0.105] 
                         }
                     }
-                    ELEMENT[id0.0.6] matches { -- Suffix
+                    ELEMENT[id0.0.6] matches {    -- Suffix
                         value matches {
-                            TEXT[id0.0.106]
+                            TEXT[id0.0.106] 
                         }
                     }
                 }
             }
-            ITEM_GROUP[id0.7.11] -- Intersection description
-            ITEM_GROUP[id0.7.12] -- Visualisation
-            ITEM_GROUP[id0.7.13] -- Census area
-            ITEM_GROUP[id0.7.14] -- Delivery point identifier
-            ITEM_GROUP[id0.7.15] -- Delivery number
-            ITEM_GROUP[id0.7.16] -- Delivery installation type
-            ITEM_GROUP[id0.7.17] -- Delivery installation area
-            ITEM_GROUP[id0.7.18] -- Delivery installation qualifier
-            ITEM_GROUP[id0.7.19] -- Delivery mode
-            ITEM_GROUP[id0.7.20] -- Delivery mode identifier
-            ITEM_GROUP[id0.7.21] -- Postal code
-            ITEM_GROUP[id0.7.22] -- District
-            ITEM_GROUP[id0.7.23] -- Suburb/town/locality
-            ITEM_GROUP[id0.7.24] -- City
-            ITEM_GROUP[id0.7.25] -- State/territory/province
-            ITEM_GROUP[id0.7.26] -- Country
-            ITEM_GROUP[id0.7.27] -- Care of
-            ITEM_GROUP[id0.7.28] -- Delimiter
-            use_archetype ITEM_GROUP [id0.0.7, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 1
-            use_archetype ITEM_GROUP [id0.0.8, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 2
-            use_archetype ITEM_GROUP [id0.0.9, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 3
-            use_archetype ITEM_GROUP [id0.0.10, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Address line 4
-            use_archetype ITEM_GROUP [id0.0.11, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Street address line
-            use_archetype ITEM_GROUP [id0.0.12, CIMI-CORE-ITEM_GROUP.address_line.v1] -- Delivery address line
+            ITEM_GROUP[id0.7.11]     -- Intersection description
+            ITEM_GROUP[id0.7.12]     -- Visualisation
+            ITEM_GROUP[id0.7.13]     -- Census area
+            ITEM_GROUP[id0.7.14]     -- Delivery point identifier
+            ITEM_GROUP[id0.7.15]     -- Delivery number
+            ITEM_GROUP[id0.7.16]     -- Delivery installation type
+            ITEM_GROUP[id0.7.17]     -- Delivery installation area
+            ITEM_GROUP[id0.7.18]     -- Delivery installation qualifier
+            ITEM_GROUP[id0.7.19]     -- Delivery mode
+            ITEM_GROUP[id0.7.20]     -- Delivery mode identifier
+            ITEM_GROUP[id0.7.21]     -- Postal code
+            ITEM_GROUP[id0.7.22]     -- District TEXT
+            ITEM_GROUP[id0.7.23]     -- Suburb/town/locality
+            ITEM_GROUP[id0.7.24]     -- City
+            ITEM_GROUP[id0.7.25]     -- State/territory/province
+            ITEM_GROUP[id0.7.26]     -- Country
+            ITEM_GROUP[id0.7.27]     -- Care of
+            ITEM_GROUP[id0.7.28]     -- Delimiter
+            use_archetype ITEM_GROUP[id0.0.7, CIMI-CORE-ITEM_GROUP.address_line.v1]
+            use_archetype ITEM_GROUP[id0.0.8, CIMI-CORE-ITEM_GROUP.address_line.v1]
+            use_archetype ITEM_GROUP[id0.0.9, CIMI-CORE-ITEM_GROUP.address_line.v1]
+            use_archetype ITEM_GROUP[id0.0.10, CIMI-CORE-ITEM_GROUP.address_line.v1]
+            use_archetype ITEM_GROUP[id0.0.11, CIMI-CORE-ITEM_GROUP.address_line.v1]
+            use_archetype ITEM_GROUP[id0.0.12, CIMI-CORE-ITEM_GROUP.address_line.v1]
         }
     }
 
 terminology
     term_definitions = <
         ["en"] = <
-            ["id1.1.1"] = < text = <"Address detailed"> >
-            ["id0.7.1"] = < text = <"Additional locator"> >
-            ["id0.7.2"] = < text = <"Site name"> >
-            ["id0.7.3"] = < text = <"Unit number"> >
-            ["id0.7.4"] = < text = <"Unit type"> >
-            ["id0.7.5"] = < text = <"Postal box number"> >
-            ["id0.7.6"] = < text = <"Floor/level number"> >
-            ["id0.7.7"] = < text = <"Floor/level type"> >
-            ["id0.7.8"] = < text = <"Lot number"> >
-            ["id0.7.9"] = < text = <"Street"> >
-            ["id0.0.1"] = < text = <"Name"> >
-            ["id0.0.2"] = < text = <"Street type"> >
-            ["id0.0.3"] = < text = <"Direction"> >
-            ["id0.0.4"] = < text = <"Suffix"> >
-            ["id0.7.10"] = < text = <"Street number"> >
-            ["id0.0.5"] = < text = <"Numeric"> >
-            ["id0.0.6"] = < text = <"Suffix"> >
-            ["id0.7.11"] = < text = <"Intersection description"> >
-            ["id0.7.12"] = < text = <"Visualisation"> >
-            ["id0.7.13"] = < text = <"Census area"> >
-            ["id0.7.14"] = < text = <"Delivery point identifier"> >
-            ["id0.7.15"] = < text = <"Delivery number"> >
-            ["id0.7.16"] = < text = <"Delivery installation type"> >
-            ["id0.7.17"] = < text = <"Delivery installation area"> >
-            ["id0.7.18"] = < text = <"Delivery installation qualifier"> >
-            ["id0.7.19"] = < text = <"Delivery mode"> >
-            ["id0.7.20"] = < text = <"Delivery mode identifier"> >
-            ["id0.7.21"] = < text = <"Postal code"> >
-            ["id0.7.22"] = < text = <"District TEXT"> >
-            ["id0.7.23"] = < text = <"Suburb/town/locality"> >
-            ["id0.7.24"] = < text = <"City"> >
-            ["id0.7.25"] = < text = <"State/territory/province"> >
-            ["id0.7.26"] = < text = <"Country"> >
-            ["id0.7.27"] = < text = <"Care of"> >
-            ["id0.7.28"] = < text = <"Delimiter"> >
-            ["id0.0.7"] = < text = <"Address line 1"> >
-            ["id0.0.8"] = < text = <"Address line 2"> >
-            ["id0.0.9"] = < text = <"Address line 3"> >
-            ["id0.0.10"] = < text = <"Address line 4"> >
-            ["id0.0.11"] = < text = <"Street address line"> >
-            ["id0.0.12"] = < text = <"Delivery address line"> >
+            ["id1.1.1"] = <
+                text = <"Address detailed">
+            >
+            ["id0.7.1"] = <
+                text = <"Additional locator">
+            >
+            ["id0.7.2"] = <
+                text = <"Site name">
+            >
+            ["id0.7.3"] = <
+                text = <"Unit number">
+            >
+            ["id0.7.4"] = <
+                text = <"Unit type">
+            >
+            ["id0.7.5"] = <
+                text = <"Postal box number">
+            >
+            ["id0.7.6"] = <
+                text = <"Floor/level number">
+            >
+            ["id0.7.7"] = <
+                text = <"Floor/level type">
+            >
+            ["id0.7.8"] = <
+                text = <"Lot number">
+            >
+            ["id0.7.9"] = <
+                text = <"Street">
+            >
+            ["id0.0.1"] = <
+                text = <"Name">
+            >
+            ["id0.0.2"] = <
+                text = <"Street type">
+            >
+            ["id0.0.3"] = <
+                text = <"Direction">
+            >
+            ["id0.0.4"] = <
+                text = <"Suffix">
+            >
+            ["id0.7.10"] = <
+                text = <"Street number">
+            >
+            ["id0.0.5"] = <
+                text = <"Numeric">
+            >
+            ["id0.0.6"] = <
+                text = <"Suffix">
+            >
+            ["id0.7.11"] = <
+                text = <"Intersection description">
+            >
+            ["id0.7.12"] = <
+                text = <"Visualisation">
+            >
+            ["id0.7.13"] = <
+                text = <"Census area">
+            >
+            ["id0.7.14"] = <
+                text = <"Delivery point identifier">
+            >
+            ["id0.7.15"] = <
+                text = <"Delivery number">
+            >
+            ["id0.7.16"] = <
+                text = <"Delivery installation type">
+            >
+            ["id0.7.17"] = <
+                text = <"Delivery installation area">
+            >
+            ["id0.7.18"] = <
+                text = <"Delivery installation qualifier">
+            >
+            ["id0.7.19"] = <
+                text = <"Delivery mode">
+            >
+            ["id0.7.20"] = <
+                text = <"Delivery mode identifier">
+            >
+            ["id0.7.21"] = <
+                text = <"Postal code">
+            >
+            ["id0.7.22"] = <
+                text = <"District TEXT">
+            >
+            ["id0.7.23"] = <
+                text = <"Suburb/town/locality">
+            >
+            ["id0.7.24"] = <
+                text = <"City">
+            >
+            ["id0.7.25"] = <
+                text = <"State/territory/province">
+            >
+            ["id0.7.26"] = <
+                text = <"Country">
+            >
+            ["id0.7.27"] = <
+                text = <"Care of">
+            >
+            ["id0.7.28"] = <
+                text = <"Delimiter">
+            >
+            ["id0.0.7"] = <
+                text = <"Address line 1">
+            >
+            ["id0.0.8"] = <
+                text = <"Address line 2">
+            >
+            ["id0.0.9"] = <
+                text = <"Address line 3">
+            >
+            ["id0.0.10"] = <
+                text = <"Address line 4">
+            >
+            ["id0.0.11"] = <
+                text = <"Street address line">
+            >
+            ["id0.0.12"] = <
+                text = <"Delivery address line">
+            >
         >
     >
+

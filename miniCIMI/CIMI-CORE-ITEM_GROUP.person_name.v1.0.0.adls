@@ -1,172 +1,172 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.person_name.v1.0.0
+    CIMI-CORE-ITEM_GROUP.person_name.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.actor_name.v1
+    CIMI-CORE-ITEM_GROUP.actor_name.v1
 
 language
-  original_language = <[ISO_639-1::en]>
-
+    original_language = <[ISO_639-1::en]>
+    
 description
-  original_author = <
-    ["name"] = <"Patrick Langford">
-    ["organisation"] = <"Intermountain Healthcare">
-    ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
-  >
-  details = <
-    ["en"] = <
-      language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'person name' concept">
-      use = <"Use for person name.">
-      keywords = <"person","name">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    details = <
+        ["en"] = <
+            keywords = <"person", "name">
+            language = <[ISO_639-1::en]>
+            purpose = <"Archetype for CIMI 'person name' concept">
+            use = <"Use for person name.">
+        >
     >
-  >
-  lifecycle_state = <"unmanaged">
-  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
-  custodian_namespace = <"org.opencimi">
-  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-  ip_acknowledgements = <
-    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-  >
+    ip_acknowledgements = <
+        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Patrick Langford">
+        ["organisation"] = <"Intermountain Healthcare">
+        ["email"] = <"patrick@neuronsong.com">
+        ["date"] = <"10/06/2014">
+    >
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1.1.1] matches { -- Person name
-    item matches {
-      ELEMENT[id2.1.0.2] matches { -- Identifier
-        value matches {
-          IDENTIFIER[id0.0.0.1]
-        }
-      }
-      ITEM_GROUP[id0.0.0.2] matches {-- Part
+    ITEM_GROUP[id1.1.1.1] matches {    -- Person name
         item matches {
-          ELEMENT[id0.0.0.3] matches { -- Part number
-            value matches {
-              COUNT[id0.0.0.14]
+            ELEMENT[id2.1.0.2] matches {    -- Identifier
+                value matches {
+                    IDENTIFIER[id0.0.0.1] 
+                }
             }
-          }
-          ELEMENT[id0.0.0.4] matches { -- Value
-            value matches {
-              TEXT[id0.0.0.15]
+            ITEM_GROUP[id0.0.0.2] matches {    -- Part
+                item matches {
+                    ELEMENT[id0.0.0.3] matches {    -- Part number
+                        value matches {
+                            COUNT[id0.0.0.14] 
+                        }
+                    }
+                    ELEMENT[id0.0.0.4] matches {    -- Value
+                        value matches {
+                            TEXT[id0.0.0.15] 
+                        }
+                    }
+                    ELEMENT[id0.0.0.5] matches {    -- Type
+                        value matches {
+                            CODED_TEXT[id0.0.0.16] 
+                        }
+                    }
+                }
             }
-          }
-          ELEMENT[id0.0.0.5] matches { -- Type
-            value matches {
-              CODED_TEXT[id0.0.0.16]
+            ITEM_GROUP[id0.0.0.6] matches {    -- Use
+                item matches {
+                    ELEMENT[id0.0.0.7] occurrences matches {1} matches {    -- Value
+                        value existence matches {1} matches {
+                            TEXT[id0.0.0.17] 
+                        }
+                        null_flavor existence matches {0}
+                    }
+                    ELEMENT[id0.0.0.8] matches {    -- Datetime range
+                        value matches {
+                            DATE_TIME[id0.0.0.18] 
+                        }
+                    }
+                    ELEMENT[id0.0.0.9] matches {    -- Identifier
+                        value matches {
+                            IDENTIFIER[id0.0.0.19] 
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-      ITEM_GROUP[id0.0.0.6] matches { -- Use
-        item matches {
-          ELEMENT[id0.0.0.7] occurrences matches {1} matches { -- Value
-            value existence matches {1} matches {
-              TEXT[id0.0.0.17]
+            ELEMENT[id0.0.0.10] matches {    -- Datetime range
+                value matches {
+                    INTERVAL_VALUE<DATE>[id0.0.0.20] 
+                }
             }
-            null_flavor existence matches {0}
-          }
-          ELEMENT[id0.0.0.8] matches { -- Datetime range
-            value matches {
-              DATE_TIME[id0.0.0.18]
+            ELEMENT[id0.0.0.11] matches {    -- Usage conditions
+                value matches {
+                    TEXT[id0.0.0.21] 
+                }
             }
-          }
-          ELEMENT[id0.0.0.9] matches { -- Identifier
-            value matches {
-              IDENTIFIER[id0.0.0.19]
+            ELEMENT[id0.0.0.12] matches {    -- Status
+                value matches {
+                    CODED_TEXT[id0.0.0.22] 
+                }
             }
-          }
+            ELEMENT[id0.0.0.13] matches {    -- Preferred flag
+                value matches {
+                    CODED_TEXT[id0.0.0.23] 
+                }
+            }
         }
-      }
-      ELEMENT[id0.0.0.10] matches { -- Datetime range
-        value matches {
-          INTERVAL_VALUE<DATE>[id0.0.0.20]
-        }
-      }
-      ELEMENT[id0.0.0.11] matches { -- Usage conditions
-        value matches {
-          TEXT[id0.0.0.21]
-        }
-      }
-      ELEMENT[id0.0.0.12] matches { -- Status
-        value matches {
-          CODED_TEXT[id0.0.0.22]
-        }
-      }
-      ELEMENT[id0.0.0.13] matches { -- Preferred flag
-        value matches {
-          CODED_TEXT[id0.0.0.23]
-        }
-      }
     }
-  }
 
 terminology
-  term_definitions = <
-    ["en"] = <
-      ["id1.1.1.1"] = <
-        text = <"Person name">
-      >
-      ["id2.1.0.2"] = <
-        text = <"Identifier">
-      >
-      ["id0.0.0.2"] = <
-        text = <"Part">
-      >
-      ["id0.0.0.3"] = <
-        text = <"Part number">
-      >
-      ["id0.0.0.4"] = <
-        text = <"Value">
-      >
-      ["id0.0.0.5"] = <
-        text = <"Type">
-      >
-      ["id0.0.0.6"] = <
-        text = <"Use">
-      >
-      ["id0.0.0.7"] = <
-        text = <"Value">
-      >
-      ["id0.0.0.8"] = <
-        text = <"Datetime range">
-      >
-      ["id0.0.0.9"] = <
-        text = <"Identifier">
-      >
-      ["id0.0.0.10"] = <
-        text = <"Datetime range">
-      >
-      ["id0.0.0.11"] = <
-        text = <"Usage conditions">
-      >
-      ["id0.0.0.12"] = <
-        text = <"Status">
-      >
-      ["id0.0.0.13"] = <
-        text = <"Preferred flag">
-      >
+    term_bindings = <
+        ["snomed-ct"] = <
+            ["id1.1.1.1"] = <http://snomed.info/id/138875005>
+            ["id2.1.0.2"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.2"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.3"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.4"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.5"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.6"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.7"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.8"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.9"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.10"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.11"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.12"] = <http://snomed.info/id/138875005>
+            ["id0.0.0.13"] = <http://snomed.info/id/138875005>
+        
+        >
     >
-  >
-  term_bindings = <
-    ["snomed-ct"] = <
-      items = <
-        ["id1.1.1.1"] = <http://snomed.info/id/138875005>
-        ["id2.1.0.2"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.2"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.3"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.4"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.5"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.6"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.7"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.8"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.9"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.10"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.11"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.12"] = <http://snomed.info/id/138875005>
-        ["id0.0.0.13"] = <http://snomed.info/id/138875005>
-      >
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1.1"] = <
+                text = <"Person name">
+            >
+            ["id2.1.0.2"] = <
+                text = <"Identifier">
+            >
+            ["id0.0.0.2"] = <
+                text = <"Part">
+            >
+            ["id0.0.0.3"] = <
+                text = <"Part number">
+            >
+            ["id0.0.0.4"] = <
+                text = <"Value">
+            >
+            ["id0.0.0.5"] = <
+                text = <"Type">
+            >
+            ["id0.0.0.6"] = <
+                text = <"Use">
+            >
+            ["id0.0.0.7"] = <
+                text = <"Value">
+            >
+            ["id0.0.0.8"] = <
+                text = <"Datetime range">
+            >
+            ["id0.0.0.9"] = <
+                text = <"Identifier">
+            >
+            ["id0.0.0.10"] = <
+                text = <"Datetime range">
+            >
+            ["id0.0.0.11"] = <
+                text = <"Usage conditions">
+            >
+            ["id0.0.0.12"] = <
+                text = <"Status">
+            >
+            ["id0.0.0.13"] = <
+                text = <"Preferred flag">
+            >
+        >
     >
-  >
+

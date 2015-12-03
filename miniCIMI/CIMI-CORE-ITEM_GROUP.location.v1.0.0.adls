@@ -1,242 +1,242 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.location.v1.0.0
+    CIMI-CORE-ITEM_GROUP.location.v1.0.0
 
 specialize
-  CIMI-CORE-ITEM_GROUP.cluster.v1
-  
-language
-  original_language = <[ISO_639-1::en]>
+    CIMI-CORE-ITEM_GROUP.cluster.v1
 
+language
+    original_language = <[ISO_639-1::en]>
+    
 description
-  original_author = <
-    ["name"] = <"Patrick Langford">
-    ["organisation"] = <"Intermountain Healthcare">
-    ["email"] = <"patrick@neuronsong.com">
-    ["date"] = <"10/06/2014">
-  >
-  details = <
-    ["en"] = <
-      language = <[ISO_639-1::en]>
-      purpose = <"Archetype for CIMI 'location' concept">
-      use = <"Use for location.">
-      keywords = <"location">
+    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+    custodian_namespace = <"org.opencimi">
+    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+    details = <
+        ["en"] = <
+            keywords = <"location">
+            language = <[ISO_639-1::en]>
+            purpose = <"Archetype for CIMI 'location' concept">
+            use = <"Use for location.">
+        >
     >
-  >
-  lifecycle_state = <"unmanaged">
-  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
-  custodian_namespace = <"org.opencimi">
-  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-  ip_acknowledgements = <
-    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-  >
+    ip_acknowledgements = <
+        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+    >
+    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Patrick Langford">
+        ["organisation"] = <"Intermountain Healthcare">
+        ["email"] = <"patrick@neuronsong.com">
+        ["date"] = <"10/06/2014">
+    >
+    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
 
 definition
-  ITEM_GROUP[id1.1] matches { -- Location
-    item matches {
-      ELEMENT[id0.1] matches { -- Identifier
-        value matches {
-          IDENTIFIER[id0.23]
-        }
-      }
-      ELEMENT[id0.2] occurrences matches {0..1} matches { -- Description
-        value matches {
-          PLAIN_TEXT[id0.24]
-        }
-      }
-      ITEM_GROUP[id0.3] matches { -- Location Name
+    ITEM_GROUP[id1.1] matches {    -- Location
         item matches {
-          ELEMENT[id0.4] occurrences matches {1} matches { -- Value
-            value existence matches {1} matches {
-              PLAIN_TEXT[id0.25]
+            ELEMENT[id0.1] matches {    -- Identifier
+                value matches {
+                    IDENTIFIER[id0.23] 
+                }
             }
-            null_flavor existence matches {0}
-          }
-          ELEMENT[id0.5] occurrences matches {0..1} matches { -- Use
-            value matches {
-              CODED_TEXT[id0.26]
+            ELEMENT[id0.2] occurrences matches {0..1} matches {    -- Description
+                value matches {
+                    PLAIN_TEXT[id0.24] 
+                }
             }
-          }
-          ELEMENT[id0.6] occurrences matches {0..1} matches { -- Datetime range
-            value matches {
-              INTERVAL_VALUE<DATE_TIME>[id0.27]
+            ITEM_GROUP[id0.3] matches {    -- Location Name
+                item matches {
+                    ELEMENT[id0.4] occurrences matches {1} matches {    -- Value
+                        value existence matches {1} matches {
+                            PLAIN_TEXT[id0.25] 
+                        }
+                        null_flavor existence matches {0}
+                    }
+                    ELEMENT[id0.5] occurrences matches {0..1} matches {    -- Use
+                        value matches {
+                            CODED_TEXT[id0.26] 
+                        }
+                    }
+                    ELEMENT[id0.6] occurrences matches {0..1} matches {    -- Datetime range
+                        value matches {
+                            INTERVAL_VALUE<DATE_TIME>[id0.27] 
+                        }
+                    }
+                }
             }
-          }
+            ELEMENT[id0.7] occurrences matches {0..1} matches {    -- Type
+                value matches {
+                    TEXT[id0.28] 
+                }
+            }
+            ELEMENT[id0.8] occurrences matches {0..1} matches {    -- Condition
+                value matches {
+                    TEXT[id0.29] 
+                }
+            }
+            use_archetype ITEM_GROUP[id0.9, CIMI-CORE-ITEM_GROUP.address.v2]
+            use_archetype ITEM_GROUP[id0.10, CIMI-CORE-ITEM_GROUP.electronic_contact.v1]
+            ELEMENT[id0.11] occurrences matches {0..1} matches {    -- Datetime range
+                value matches {
+                    INTERVAL_VALUE<DATE_TIME>[id0.30] 
+                }
+            }
+            ELEMENT[id0.12] occurrences matches {0..1} matches {    -- Status
+                value matches {
+                    CODED_TEXT[id0.31] 
+                }
+            }
+            ELEMENT[id0.13] occurrences matches {0..1} matches {    -- Mobile indicator
+                value matches {
+                    CODED_TEXT[id0.32] 
+                }
+            }
+            ELEMENT[id0.14] occurrences matches {0..1} matches {    -- Directions
+                value matches {
+                    TEXT[id0.33] 
+                }
+            }
+            ELEMENT[id0.15] occurrences matches {0..1} matches {    -- Position
+                value matches {
+                    TEXT[id0.34] 
+                }
+            }
+            ELEMENT[id0.16] occurrences matches {0..1} matches {    -- Gps location
+                value matches {
+                    TEXT[id0.35] 
+                }
+            }
+            ELEMENT[id0.17] occurrences matches {0..1} matches {    -- Point of care
+                value matches {
+                    TEXT[id0.36] 
+                }
+            }
+            ELEMENT[id0.18] occurrences matches {0..1} matches {    -- Room
+                value matches {
+                    TEXT[id0.37] 
+                }
+            }
+            ELEMENT[id0.19] occurrences matches {0..1} matches {    -- Bed
+                value matches {
+                    TEXT[id0.38] 
+                }
+            }
+            ELEMENT[id0.20] occurrences matches {0..1} matches {    -- Floor
+                value matches {
+                    TEXT[id0.39] 
+                }
+            }
+            ELEMENT[id0.21] occurrences matches {0..1} matches {    -- Building
+                value matches {
+                    TEXT[id0.40] 
+                }
+            }
         }
-      }
-      ELEMENT[id0.7] occurrences matches {0..1} matches { -- Type
-        value matches {
-          TEXT[id0.28]
+        participation matches {
+            PARTICIPATION[id0.22] occurrences matches {0..1}     -- Organization
         }
-      }
-      ELEMENT[id0.8] occurrences matches {0..1} matches { -- Condition
-        value matches {
-          TEXT[id0.29]
-        }
-      }
-      use_archetype ITEM_GROUP [id0.9, CIMI-CORE-ITEM_GROUP.address.v2] -- Address
-      use_archetype ITEM_GROUP [id0.10, CIMI-CORE-ITEM_GROUP.electronic_contact.v1] -- Contact
-      ELEMENT[id0.11] occurrences matches {0..1} matches { -- Datetime range
-        value matches {
-          INTERVAL_VALUE<DATE_TIME>[id0.30]
-        }
-      }
-      ELEMENT[id0.12] occurrences matches {0..1} matches { -- Status
-        value matches {
-          CODED_TEXT[id0.31]
-        }
-      }
-      ELEMENT[id0.13] occurrences matches {0..1} matches { -- Mobile indicator
-        value matches {
-          CODED_TEXT[id0.32]
-        }
-      }
-      ELEMENT[id0.14] occurrences matches {0..1} matches { -- Directions
-        value matches {
-          TEXT[id0.33]
-        }
-      }
-      ELEMENT[id0.15] occurrences matches {0..1} matches { -- Position
-        value matches {
-          TEXT[id0.34]
-        }
-      }
-      ELEMENT[id0.16] occurrences matches {0..1} matches { -- Gps location
-        value matches {
-          TEXT[id0.35]
-        }
-      }
-      ELEMENT[id0.17] occurrences matches {0..1} matches { -- Point of care
-        value matches {
-          TEXT[id0.36]
-        }
-      }
-      ELEMENT[id0.18] occurrences matches {0..1} matches { -- Room
-        value matches {
-          TEXT[id0.37]
-        }
-      }
-      ELEMENT[id0.19] occurrences matches {0..1} matches { -- Bed
-        value matches {
-          TEXT[id0.38]
-        }
-      }
-      ELEMENT[id0.20] occurrences matches {0..1} matches { -- Floor
-        value matches {
-          TEXT[id0.39]
-        }
-      }
-      ELEMENT[id0.21] occurrences matches {0..1} matches { -- Building
-        value matches {
-          TEXT[id0.40]
-        }
-      }
     }
-    participation matches {
-      PARTICIPATION[id0.22] occurrences matches {0..1} -- Organization
-    }
-  }
 
 terminology
-  term_definitions = <
-    ["en"] = <
-      ["id1.1"] = <
-        text = <"Location">
-      >
-      ["id0.1"] = <
-        text = <"Identifier">
-      >
-      ["id0.2"] = <
-        text = <"Description">
-      >
-      ["id0.3"] = <
-        text = <"Location Name">
-      >
-      ["id0.4"] = <
-        text = <"Value">
-      >
-      ["id0.5"] = <
-        text = <"Use">
-      >
-      ["id0.6"] = <
-        text = <"Datetime range">
-      >
-      ["id0.7"] = <
-        text = <"Type">
-      >
-      ["id0.8"] = <
-        text = <"Condition">
-      >
-      ["id0.9"] = <
-        text = <"Address">
-      >
-      ["id0.10"] = <
-        text = <"Contact">
-      >
-      ["id0.11"] = <
-        text = <"Datetime range">
-      >
-      ["id0.12"] = <
-        text = <"Status">
-      >
-      ["id0.13"] = <
-        text = <"Mobile indicator">
-      >
-      ["id0.14"] = <
-        text = <"Directions">
-      >
-      ["id0.15"] = <
-        text = <"Position">
-      >
-      ["id0.16"] = <
-        text = <"Gps location">
-      >
-      ["id0.17"] = <
-        text = <"Point of care">
-      >
-      ["id0.18"] = <
-        text = <"Room">
-      >
-      ["id0.19"] = <
-        text = <"Bed">
-      >
-      ["id0.20"] = <
-        text = <"Floor">
-      >
-      ["id0.21"] = <
-        text = <"Building">
-      >
-      ["id0.22"] = <
-        text = <"Organization">
-      >
+    term_bindings = <
+        ["snomed-ct"] = <
+            ["id1.1"] = <http://snomed.info/id/129264002>
+            ["id0.1"] = <http://snomed.info/id/138875005>
+            ["id0.2"] = <http://snomed.info/id/138875005>
+            ["id0.3"] = <http://snomed.info/id/138875005>
+            ["id0.4"] = <http://snomed.info/id/129264002>
+            ["id0.5"] = <http://snomed.info/id/129264002>
+            ["id0.6"] = <http://snomed.info/id/364713004>
+            ["id0.7"] = <http://snomed.info/id/138875005>
+            ["id0.8"] = <http://snomed.info/id/138875005>
+            ["id0.9"] = <http://snomed.info/id/138875005>
+            ["id0.10"] = <http://snomed.info/id/138875005>
+            ["id0.11"] = <http://snomed.info/id/138875005>
+            ["id0.12"] = <http://snomed.info/id/138875005>
+            ["id0.13"] = <http://snomed.info/id/138875005>
+            ["id0.14"] = <http://snomed.info/id/138875005>
+            ["id0.15"] = <http://snomed.info/id/138875005>
+            ["id0.16"] = <http://snomed.info/id/138875005>
+            ["id0.17"] = <http://snomed.info/id/138875005>
+            ["id0.18"] = <http://snomed.info/id/138875005>
+            ["id0.19"] = <http://snomed.info/id/138875005>
+            ["id0.20"] = <http://snomed.info/id/138875005>
+        
+        >
     >
-  >
-  term_bindings = <
-    ["snomed-ct"] = <
-      items = <
-        ["id1.1"] = <http://snomed.info/id/129264002>
-        ["id0.1"] = <http://snomed.info/id/138875005>
-        ["id0.2"] = <http://snomed.info/id/138875005>
-        ["id0.3"] = <http://snomed.info/id/138875005>
-        ["id0.4"] = <http://snomed.info/id/129264002>
-        ["id0.5"] = <http://snomed.info/id/129264002>
-        ["id0.6"] = <http://snomed.info/id/364713004>
-        ["id0.7"] = <http://snomed.info/id/138875005>
-        ["id0.8"] = <http://snomed.info/id/138875005>
-        ["id0.9"] = <http://snomed.info/id/138875005>
-        ["id0.10"] = <http://snomed.info/id/138875005>
-        ["id0.11"] = <http://snomed.info/id/138875005>
-        ["id0.12"] = <http://snomed.info/id/138875005>
-        ["id0.13"] = <http://snomed.info/id/138875005>
-        ["id0.14"] = <http://snomed.info/id/138875005>
-        ["id0.15"] = <http://snomed.info/id/138875005>
-        ["id0.16"] = <http://snomed.info/id/138875005>
-        ["id0.17"] = <http://snomed.info/id/138875005>
-        ["id0.18"] = <http://snomed.info/id/138875005>
-        ["id0.19"] = <http://snomed.info/id/138875005>
-        ["id0.20"] = <http://snomed.info/id/138875005>
-      >
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Location">
+            >
+            ["id0.1"] = <
+                text = <"Identifier">
+            >
+            ["id0.2"] = <
+                text = <"Description">
+            >
+            ["id0.3"] = <
+                text = <"Location Name">
+            >
+            ["id0.4"] = <
+                text = <"Value">
+            >
+            ["id0.5"] = <
+                text = <"Use">
+            >
+            ["id0.6"] = <
+                text = <"Datetime range">
+            >
+            ["id0.7"] = <
+                text = <"Type">
+            >
+            ["id0.8"] = <
+                text = <"Condition">
+            >
+            ["id0.9"] = <
+                text = <"Address">
+            >
+            ["id0.10"] = <
+                text = <"Contact">
+            >
+            ["id0.11"] = <
+                text = <"Datetime range">
+            >
+            ["id0.12"] = <
+                text = <"Status">
+            >
+            ["id0.13"] = <
+                text = <"Mobile indicator">
+            >
+            ["id0.14"] = <
+                text = <"Directions">
+            >
+            ["id0.15"] = <
+                text = <"Position">
+            >
+            ["id0.16"] = <
+                text = <"Gps location">
+            >
+            ["id0.17"] = <
+                text = <"Point of care">
+            >
+            ["id0.18"] = <
+                text = <"Room">
+            >
+            ["id0.19"] = <
+                text = <"Bed">
+            >
+            ["id0.20"] = <
+                text = <"Floor">
+            >
+            ["id0.21"] = <
+                text = <"Building">
+            >
+            ["id0.22"] = <
+                text = <"Organization">
+            >
+        >
     >
-  >
+
