@@ -1,123 +1,97 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-    CIMI-CORE-ITEM_GROUP.collect_action.v1.0.0
+  CIMI-CORE-ITEM_GROUP.collect_action.v1.0.0
 
 specialize
-    CIMI-CORE-ITEM_GROUP.action.v1
+  CIMI-CORE-ITEM_GROUP.action.v1
 
 language
-    original_language = <[ISO_639-1::en]>
-    
+  original_language = <[ISO_639-1::en]>
+
 description
-    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-    custodian_namespace = <"org.opencimi">
-    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-    details = <
-        ["en"] = <
-            keywords = <"collect", "action">
-            language = <[ISO_639-1::en]>
-            purpose = <"Archetype for CIMI 'collect action' concept">
-            use = <"Use for collect action.">
-        >
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'collect action' concept">
+      use = <"Use for collect action.">
+      keywords = <"collect","action">
     >
-    ip_acknowledgements = <
-        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-    >
-    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-    lifecycle_state = <"unmanaged">
-    original_author = <
-        ["name"] = <"Patrick Langford">
-        ["organisation"] = <"Intermountain Healthcare">
-        ["email"] = <"patrick@neuronsong.com">
-        ["date"] = <"10/06/2014">
-    >
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+  custodian_namespace = <"org.opencimi">
+  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+  ip_acknowledgements = <
+    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+  >
 
 definition
-    ITEM_GROUP[id1.1.1] matches {    -- Collect action
-        item matches {
-            ELEMENT[id2.3.1]     -- Collection datetime
-            ELEMENT[id2.4.1]     -- Collection datetime range
-            ELEMENT[id2.5.1]     -- Collection duration
-            ELEMENT[id2.6.1]     -- Collection timing offset
-            ELEMENT[id2.7.1]     -- Collection timing offset origin
-            ELEMENT[id0.0.1] matches {    -- Collection description
-                value matches {
-                    TEXT[id0.0.5] 
-                }
-            }
-            use_archetype ITEM_GROUP[id0.0.2, CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1]
-            ELEMENT[id0.0.3] matches {    -- Collection priority
-                value matches {
-                    TEXT[id0.0.6] 
-                }
-            }
+  ITEM_GROUP[id1.1.1] matches { -- Collect action
+    item matches {
+      ELEMENT[id2.3.1] -- Collection datetime
+      ELEMENT[id2.4.1] -- Collection datetime range
+      ELEMENT[id2.5.1] -- Collection duration
+      ELEMENT[id2.6.1] -- Collection timing offset
+      ELEMENT[id2.7.1] -- Collection timing offset origin
+      ELEMENT[id0.0.1] matches { -- Collection description
+        value matches {
+          TEXT[id0.0.5]
         }
-        link matches {
-            LINK[id0.0.4] occurrences matches {0..1}     -- Collection procedure
+      }
+      use_archetype ITEM_GROUP [id0.0.2, CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1] -- Collection body site
+      ELEMENT[id0.0.3] matches { -- Collection priority
+        value matches {
+          TEXT[id0.0.6]
         }
-        participation matches {
-            PARTICIPATION[id0.109.1]     -- Collector
-            PARTICIPATION[id0.109.2] occurrences matches {0..1}     -- Locationof subject
-            PARTICIPATION[id0.109.3] occurrences matches {0..1}     -- Locationof collector
-        }
+      }
     }
+    link matches {
+      LINK[id0.0.4] occurrences matches {0..1} -- Collection procedure
+    }
+    participation matches {
+      PARTICIPATION[id0.109.1] -- Collector
+      PARTICIPATION[id0.109.2] occurrences matches {0..1} -- Locationof subject
+      PARTICIPATION[id0.109.3] occurrences matches {0..1} -- Locationof collector
+    }
+  }
 
 terminology
-    term_bindings = <
-        ["snomed-ct"] = <
-            ["id2.3.1"] = <http://snomed.info/id/252129004>
-            ["id2.4.1"] = <http://snomed.info/id/442371002>
-            ["id2.5.1"] = <http://snomed.info/id/138875005>
-            ["id2.6.1"] = <http://snomed.info/id/138875005>
-            ["id2.7.1"] = <http://snomed.info/id/138875005>
-            ["id0.109.1"] = <http://snomed.info/id/125676002>
-            ["id0.109.2"] = <http://snomed.info/id/308916002>
-            ["id0.109.3"] = <http://snomed.info/id/308916002>
-        
-        >
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1"] = < text = <"Collect action"> >
+      ["id2.3.1"] = < text = <"Collection datetime"> >
+      ["id2.4.1"] = < text = <"Collection datetime range"> >
+      ["id2.5.1"] = < text = <"Collection duration"> >
+      ["id2.6.1"] = < text = <"Collection timing offset"> >
+      ["id2.7.1"] = < text = <"Collection timing offset origin"> >
+      ["id0.0.1"] = < text = <"Collection description"> >
+      ["id0.0.2"] = < text = <"Collection body site"> >
+      ["id0.0.3"] = < text = <"Collection priority"> >
+      ["id0.0.4"] = < text = <"Collection procedure"> >
+      ["id0.109.1"] = < text = <"Collector"> >
+      ["id0.109.2"] = < text = <"Locationof subject"> >
+      ["id0.109.3"] = < text = <"Locationof collector"> >
     >
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1"] = <
-                text = <"Collect action">
-            >
-            ["id2.3.1"] = <
-                text = <"Collection datetime">
-            >
-            ["id2.4.1"] = <
-                text = <"Collection datetime range">
-            >
-            ["id2.5.1"] = <
-                text = <"Collection duration">
-            >
-            ["id2.6.1"] = <
-                text = <"Collection timing offset">
-            >
-            ["id2.7.1"] = <
-                text = <"Collection timing offset origin">
-            >
-            ["id0.0.1"] = <
-                text = <"Collection description">
-            >
-            ["id0.0.2"] = <
-                text = <"Collection body site">
-            >
-            ["id0.0.3"] = <
-                text = <"Collection priority">
-            >
-            ["id0.0.4"] = <
-                text = <"Collection procedure">
-            >
-            ["id0.109.1"] = <
-                text = <"Collector">
-            >
-            ["id0.109.2"] = <
-                text = <"Locationof subject">
-            >
-            ["id0.109.3"] = <
-                text = <"Locationof collector">
-            >
-        >
+  >
+  term_bindings = <
+    ["snomed-ct"] = <
+      items = <
+        ["id2.3.1"] = <http://snomed.info/id/252129004>
+        ["id2.4.1"] = <http://snomed.info/id/442371002>
+        ["id2.5.1"] = <http://snomed.info/id/138875005>
+        ["id2.6.1"] = <http://snomed.info/id/138875005>
+        ["id2.7.1"] = <http://snomed.info/id/138875005>
+        ["id0.109.1"] = <http://snomed.info/id/125676002>
+        ["id0.109.2"] = <http://snomed.info/id/308916002>
+        ["id0.109.3"] = <http://snomed.info/id/308916002>
+      >
     >
-
+  >

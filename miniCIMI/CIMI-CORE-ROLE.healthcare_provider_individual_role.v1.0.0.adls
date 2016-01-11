@@ -1,150 +1,147 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-    CIMI-CORE-ROLE.healthcare_provider_individual_role.v1.0.0
+  CIMI-CORE-ROLE.healthcare_provider_individual_role.v1.0.0
 
 specialize
-    CIMI-CORE-ROLE.healthcare_provider_role.v1
+  CIMI-CORE-ROLE.healthcare_provider_role.v1
 
 language
-    original_language = <[ISO_639-1::en]>
-    
+  original_language = <[ISO_639-1::en]>
+
 description
-    copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
-    custodian_namespace = <"org.opencimi">
-    custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
-    details = <
-        ["en"] = <
-            keywords = <"healthcare", "provider", "individual", "role">
-            language = <[ISO_639-1::en]>
-            purpose = <"Archetype for CIMI 'healthcare provider individual role' concept">
-            use = <"Use for healthcare provider individual role.">
-        >
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/06/2014">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'healthcare provider individual role' concept">
+      use = <"Use for healthcare provider individual role.">
+      keywords = <"healthcare","provider","individual","role">
     >
-    ip_acknowledgements = <
-        ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
-        ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
-    >
-    licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
-    lifecycle_state = <"unmanaged">
-    original_author = <
-        ["name"] = <"Patrick Langford">
-        ["organisation"] = <"Intermountain Healthcare">
-        ["email"] = <"patrick@neuronsong.com">
-        ["date"] = <"10/06/2014">
-    >
-    other_contributors = <"Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>">
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+  custodian_namespace = <"org.opencimi">
+  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+  ip_acknowledgements = <
+    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+  >
 
 definition
-    ROLE[id1.1.1.1] matches {    -- Healthcare provider individual role
-        details matches {
-            ITEM_GROUP[id0.0.0.1] matches {    -- Registration
-                item matches {
-                    ELEMENT[id0.0.0.2] occurrences matches {0..1} matches {    -- Identifier
-                        value matches {
-                            TEXT[id0.0.0.14] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.3] occurrences matches {0..1} matches {    -- Registering organization
-                        value matches {
-                            TEXT[id0.0.0.15] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.4] occurrences matches {0..1} matches {    -- Status
-                        value matches {
-                            CODED_TEXT[id0.0.0.16] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.5] occurrences matches {0..1} matches {    -- Datetime range
-                        value matches {
-                            INTERVAL_VALUE<DATE_TIME>[id0.0.0.16] 
-                        }
-                    }
-                }
-            }
-            ITEM_GROUP[id0.0.0.6] matches {    -- Qualification
-                item matches {
-                    ELEMENT[id0.0.0.7] occurrences matches {1} matches {    -- Name
-                        value matches {
-                            TEXT[id0.0.0.17] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.8] occurrences matches {0..1} matches {    -- Level
-                        value matches {
-                            CODED_TEXT[id0.0.0.18] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.9] occurrences matches {0..1} matches {    -- Issuing institution
-                        value matches {
-                            TEXT[id0.0.0.19] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.10] occurrences matches {0..1} matches {    -- Issuing country
-                        value matches {
-                            CODED_TEXT[id0.0.0.20] 
-                        }
-                    }
-                    ELEMENT[id0.0.0.11] occurrences matches {0..1} matches {    -- Date
-                        value matches {
-                            DATE[id0.0.0.21] 
-                        }
-                    }
-                }
-            }
-            ELEMENT[id0.0.0.12] occurrences matches {0..*} matches {    -- Role
-                value matches {
-                    TEXT[id0.0.0.22] 
-                }
-            }
+  ROLE[id1.1.1.1] matches { -- Healthcare provider individual role
+    details matches {
+      ITEM_GROUP[id0.0.0.1] matches { -- Registration
+      item matches {
+        ELEMENT[id0.0.0.2] occurrences matches {0..1} matches { -- Identifier
+          value matches {
+            TEXT[id0.0.0.14]
+          }
         }
-        relationship matches {
-            use_archetype PARTY_RELATIONSHIP[id0.0.0.13, CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1]
+        ELEMENT[id0.0.0.3] occurrences matches {0..1} matches { -- Registering organization
+          value matches {
+            TEXT[id0.0.0.15]
+          }
         }
+        ELEMENT[id0.0.0.4] occurrences matches {0..1} matches { -- Status
+          value matches {
+            CODED_TEXT[id0.0.0.16]
+          }
+        }
+        ELEMENT[id0.0.0.5] occurrences matches {0..1} matches { -- Datetime range
+          value matches {
+            INTERVAL_VALUE<DATE_TIME>[id0.0.0.16]
+          }
+        }
+      }}
+      ITEM_GROUP[id0.0.0.6] matches { -- Qualification
+      item matches {
+        ELEMENT[id0.0.0.7] occurrences matches {1} matches { -- Name
+          value matches {
+            TEXT[id0.0.0.17]
+          }
+        }
+        ELEMENT[id0.0.0.8] occurrences matches {0..1} matches { -- Level
+          value matches {
+            CODED_TEXT[id0.0.0.18]
+          }
+        }
+        ELEMENT[id0.0.0.9] occurrences matches {0..1} matches { -- Issuing institution
+          value matches {
+            TEXT[id0.0.0.19]
+          }
+        }
+        ELEMENT[id0.0.0.10] occurrences matches {0..1} matches { -- Issuing country
+          value matches {
+            CODED_TEXT[id0.0.0.20]
+          }
+        }
+        ELEMENT[id0.0.0.11] occurrences matches {0..1} matches { -- Date
+          value matches {
+            DATE[id0.0.0.21]
+          }
+        }
+      }}
+      ELEMENT[id0.0.0.12] occurrences matches {0..*} matches { -- Role
+        value matches {
+          TEXT[id0.0.0.22]
+        }
+      }
     }
+    relationship matches {
+      use_archetype PARTY_RELATIONSHIP [id0.0.0.13, CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1] -- Employer
+    }
+  }
 
 terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1.1.1"] = <
-                text = <"Healthcare provider individual role">
-            >
-            ["id0.0.0.1"] = <
-                text = <"Registration">
-            >
-            ["id0.0.0.2"] = <
-                text = <"Identifier">
-            >
-            ["id0.0.0.3"] = <
-                text = <"Registering organization">
-            >
-            ["id0.0.0.4"] = <
-                text = <"Status">
-            >
-            ["id0.0.0.5"] = <
-                text = <"Datetime range">
-            >
-            ["id0.0.0.6"] = <
-                text = <"Qualification">
-            >
-            ["id0.0.0.7"] = <
-                text = <"Name">
-            >
-            ["id0.0.0.8"] = <
-                text = <"Level">
-            >
-            ["id0.0.0.9"] = <
-                text = <"Issuing institution">
-            >
-            ["id0.0.0.10"] = <
-                text = <"Issuing country">
-            >
-            ["id0.0.0.11"] = <
-                text = <"Date">
-            >
-            ["id0.0.0.12"] = <
-                text = <"Role">
-            >
-            ["id0.0.0.13"] = <
-                text = <"Employer">
-            >
-        >
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1"] = <
+        text = <"Healthcare provider individual role">
+      >
+      ["id0.0.0.1"] = <
+        text = <"Registration">
+      >
+      ["id0.0.0.2"] = <
+        text = <"Identifier">
+      >
+      ["id0.0.0.3"] = <
+        text = <"Registering organization">
+      >
+      ["id0.0.0.4"] = <
+        text = <"Status">
+      >
+      ["id0.0.0.5"] = <
+        text = <"Datetime range">
+      >
+      ["id0.0.0.6"] = <
+        text = <"Qualification">
+      >
+      ["id0.0.0.7"] = <
+        text = <"Name">
+      >
+      ["id0.0.0.8"] = <
+        text = <"Level">
+      >
+      ["id0.0.0.9"] = <
+        text = <"Issuing institution">
+      >
+      ["id0.0.0.10"] = <
+        text = <"Issuing country">
+      >
+      ["id0.0.0.11"] = <
+        text = <"Date">
+      >
+      ["id0.0.0.12"] = <
+        text = <"Role">
+      >
+      ["id0.0.0.13"] = <
+        text = <"Employer">
+      >
     >
-
+  >
