@@ -42,7 +42,7 @@ definition
     }
     participation matches {
       PARTICIPATION[id3] occurrences matches {0..1} matches { -- Subject party
-        participation_type matches {[ac2]}
+        type matches {[ac2]}
         link existence matches {0}
         details existence matches {0}
         party matches {
