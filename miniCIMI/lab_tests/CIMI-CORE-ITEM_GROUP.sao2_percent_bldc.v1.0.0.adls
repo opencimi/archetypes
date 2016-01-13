@@ -39,7 +39,7 @@ description
 definition
   ITEM_GROUP[id1.1.1.1.1.1] matches { -- Oxygen saturation in Capillary blood
     /item[id5.0.2.1]/value[id0.0.102] matches {[at0.0.0.0.0.1]} -- Oxygen saturation in Capillary blood
-    /item[id5.0.8.0.1]/value[id0.0.0.0.1] matches {[at0.0.0.0.0.2]} -- Units
+    /item[id5.0.8.0.1]/value[id0.0.0.0.1]/units matches {[at0.0.0.0.0.2]} -- Units
     /item[id5.0.4]/value[id0.0.104] matches {[at0.0.0.0.0.3]} -- Method
   }
 
